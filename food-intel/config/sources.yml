@@ -1,0 +1,56 @@
+sources:
+  - id: restaurant_dive
+    name: Restaurant Dive
+    type: rss
+    feed_url: https://www.restaurantdive.com/feeds/news/
+    homepage: https://www.restaurantdive.com/
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [restaurant_industry]
+    enabled: true
+
+  - id: food_dive
+    name: Food Dive
+    type: rss
+    feed_url: https://www.fooddive.com/feeds/news/
+    homepage: https://www.fooddive.com/
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [food_industry]
+    enabled: true
+
+  - id: qsr_magazine
+    name: QSR Magazine
+    type: discovery
+    homepage: https://www.qsrmagazine.com/
+    rss_directory: https://www.qsrmagazine.com/rss-feeds/
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [qsr_fast_food]
+    enabled: false
+    note: Activate after selecting and verifying the most useful sectional RSS feeds.
+
+  - id: nations_restaurant_news
+    name: Nation's Restaurant News
+    type: discovery
+    homepage: https://www.nrn.com/
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [restaurant_industry]
+    enabled: false
+    note: Feed endpoint to be verified before activation.
+
+  - id: food_business_news
+    name: Food Business News
+    type: discovery
+    homepage: https://www.foodbusinessnews.net/
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [food_manufacturing]
+    enabled: false
+    note: Site exposes topic RSS links; activate verified topic feeds in the next source-expansion pass.
