@@ -55,9 +55,12 @@ def retry_item(item: dict, translator: PersianTranslator) -> bool:
     if not title:
         return False
 
+    # Retry title separately so a broken summary cannot contaminate the headline.
     title_fa = editorialize_title(translator.translate(title, 260))
     summary_fa = ""
     if summary:
+        # Smaller source chunks usually produce much clearer Persian than one long
+        # machine-translated block while preserving source order and factual detail.
         translated_summary = _translate_source(translator, summary, max_chunks=3)
         summary_fa = compact_words(editorialize_summary(translated_summary, 3), 90)
 
@@ -77,6 +80,29 @@ def retry_item(item: dict, translator: PersianTranslator) -> bool:
     }
     item["editorial"] = editorial_meta("quality-retry")
     return bool(title_fa and summary_fa)
+
+
+def _quarantine(item: dict) -> None:
+    """Hide bad public Persian without deleting the failed attempt.
+
+    The archived attempt remains available for diagnostics, while blank public fields
+    make the existing UI omit the item. On the next collector run, the missing
+    title_fa causes the normal translation queue to pick the article up again.
+    """
+    quality = item.get("translation_quality") or {}
+    item["translation_quarantine"] = {
+        "title_fa": item.get("title_fa", ""),
+        "summary_fa": item.get("summary_fa", ""),
+        "report_fa": item.get("report_fa", ""),
+        "quality": quality,
+    }
+    item["title_fa"] = ""
+    item["summary_fa"] = ""
+    item["report_fa"] = ""
+    item["translation"] = {
+        **(item.get("translation") or {}),
+        "status": "quality-quarantined",
+    }
 
 
 def main() -> None:
@@ -122,16 +148,25 @@ def main() -> None:
             item["quality_retry_error"] = str(exc)[:160]
             retry_failed += 1
 
-    # Re-assess every item after retries so UI filtering and dataset stats are aligned.
+    # Re-assess every item after retries so quality metadata and publication state are
+    # based on the final text produced in this run.
     for item in items:
         item["translation_quality"] = assess_item(item)
 
     stats = quality_stats(items)
+    quarantined = 0
+    for item in items:
+        quality = item.get("translation_quality") or {}
+        if not quality.get("publishable", False) and item.get("language") != "fa":
+            _quarantine(item)
+            quarantined += 1
+
     stats.update({
         "retry_candidates": len(candidates),
         "retried": retried,
         "improved": improved,
         "retry_failed": retry_failed,
+        "quarantined": quarantined,
     })
     payload["schema_version"] = "0.13"
     payload["translation_quality_stats"] = stats
@@ -141,7 +176,8 @@ def main() -> None:
         "Translation quality: "
         f"{stats.get('pass', 0)} pass; {stats.get('warn', 0)} warn; "
         f"{stats.get('retry', 0)} retry; {stats.get('block', 0)} block; "
-        f"{retried} retried; {improved} improved; {retry_failed} retry failures."
+        f"{retried} retried; {improved} improved; {retry_failed} retry failures; "
+        f"{quarantined} quarantined from public feed."
     )
 
 
