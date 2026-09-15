@@ -1,8 +1,8 @@
 {
   "schema_version": "0.4",
-  "generated_at": "2026-09-15T11:52:37Z",
-  "articles_24h": 50,
-  "articles_previous_6d": 173,
+  "generated_at": "2026-09-15T12:04:05Z",
+  "articles_24h": 51,
+  "articles_previous_6d": 174,
   "trending_topics": [
     {
       "id": "loyalty",
@@ -21,9 +21,9 @@
     {
       "id": "consumer_behavior",
       "label_fa": "رفتار مصرف‌کننده",
-      "count_24h": 7,
+      "count_24h": 8,
       "previous_daily_avg": 2.33,
-      "acceleration": 3.0
+      "acceleration": 3.43
     },
     {
       "id": "labor_management",
@@ -40,13 +40,6 @@
       "acceleration": 2.62
     },
     {
-      "id": "POS",
-      "label_fa": "سیستم فروش",
-      "count_24h": 14,
-      "previous_daily_avg": 6.17,
-      "acceleration": 2.27
-    },
-    {
       "id": "equipment_automation",
       "label_fa": "تجهیزات و اتوماسیون",
       "count_24h": 6,
@@ -54,25 +47,32 @@
       "acceleration": 2.25
     },
     {
-      "id": "menu_product_innovation",
-      "label_fa": "نوآوری منو و محصول",
-      "count_24h": 6,
-      "previous_daily_avg": 2.67,
-      "acceleration": 2.25
+      "id": "POS",
+      "label_fa": "سیستم فروش",
+      "count_24h": 14,
+      "previous_daily_avg": 6.33,
+      "acceleration": 2.21
     },
     {
       "id": "AI",
       "label_fa": "هوش مصنوعی",
       "count_24h": 19,
-      "previous_daily_avg": 9.0,
-      "acceleration": 2.11
+      "previous_daily_avg": 9.17,
+      "acceleration": 2.07
     },
     {
-      "id": "restaurant_industry",
-      "label_fa": "صنعت رستوران",
-      "count_24h": 19,
-      "previous_daily_avg": 9.5,
+      "id": "retail_food",
+      "label_fa": "خرده‌فروشی غذا",
+      "count_24h": 2,
+      "previous_daily_avg": 1.0,
       "acceleration": 2.0
+    },
+    {
+      "id": "restaurant_technology_ai",
+      "label_fa": "فناوری رستوران و هوش مصنوعی",
+      "count_24h": 15,
+      "previous_daily_avg": 8.0,
+      "acceleration": 1.88
     }
   ],
   "trending_brands": [],
