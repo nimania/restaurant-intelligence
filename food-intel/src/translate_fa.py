@@ -10,6 +10,7 @@ from urllib.request import Request, urlopen
 
 PERSIAN_RE = re.compile(r"[\u0600-\u06FF]")
 DEFAULT_TRANSLATION_LIMIT = 180
+MAX_CONSECUTIVE_FAILURES = 4
 GOOGLE_ENDPOINT = "https://translate.googleapis.com/translate_a/single"
 MYMEMORY_ENDPOINT = "https://api.mymemory.translated.net/get"
 SPLIT_MARKER = "[[[NIMA_SPLIT_9F7C]]]"
@@ -44,12 +45,11 @@ class TranslationStats:
 class PersianTranslator:
     """Lightweight HTTP English→Persian translator with a no-key fallback.
 
-    Translations are persisted in news.json by the collector, so successful text is
-    requested only once. The primary endpoint is used without an API key and can be
-    rate-limited; MyMemory is only a small fallback for short text.
+    Successful translations are persisted in news.json and reused. Translation is a
+    best-effort enrichment: network/rate-limit problems never block news collection.
     """
 
-    def __init__(self, timeout: int = 12, pause: float = 0.08) -> None:
+    def __init__(self, timeout: int = 4, pause: float = 0.08) -> None:
         self.timeout = timeout
         self.pause = pause
 
@@ -85,8 +85,7 @@ class PersianTranslator:
 
     def _mymemory(self, text: str) -> str:
         # MyMemory limits a single q parameter to roughly 500 bytes.
-        raw = text.encode("utf-8")
-        if len(raw) > 450:
+        if len(text.encode("utf-8")) > 450:
             raise RuntimeError("fallback text is too long")
         query = urlencode({"q": text, "langpair": "en|fa"})
         payload = self._read_json(f"{MYMEMORY_ENDPOINT}?{query}")
@@ -112,7 +111,7 @@ class PersianTranslator:
                     time.sleep(self.pause)
                     return compact(translated, limit + 180)
                 last_error = RuntimeError("translation result is not Persian")
-            except Exception as exc:  # network/rate-limit failures must not stop collection
+            except Exception as exc:
                 last_error = exc
         raise RuntimeError(str(last_error or "translation failed"))
 
@@ -122,9 +121,6 @@ class PersianTranslator:
         if not summary:
             return self.translate(title, 240), ""
 
-        # Usually one HTTP call per article. The marker is deliberately unusual so
-        # translation services normally preserve it. If it is altered, fall back to
-        # two independent calls.
         combined = f"{title}\n\n{SPLIT_MARKER}\n\n{summary}"
         try:
             translated = self.translate(combined, 820)
@@ -153,7 +149,6 @@ def apply_persian_translation(
     previous_by_id = previous_by_id or {}
     stats = TranslationStats()
     translator = PersianTranslator()
-
     pending: list[dict] = []
 
     for item in items:
@@ -188,13 +183,12 @@ def apply_persian_translation(
         item["translation"] = {"status": "queued", "engine": "http-en-fa"}
         pending.append(item)
 
-    # Translate the most useful cards first. Later runs reuse these cached results and
-    # automatically work through the remaining queue.
     pending.sort(
         key=lambda x: (x.get("relevance_score") or 0, x.get("published_at") or ""),
         reverse=True,
     )
     limit = _translation_limit()
+    consecutive_failures = 0
 
     for index, item in enumerate(pending):
         if index >= limit:
@@ -209,6 +203,7 @@ def apply_persian_translation(
             item["summary_fa"] = summary_fa
             item["translation"] = {"status": "translated", "engine": "http-en-fa"}
             stats.translated += 1
+            consecutive_failures = 0
         except Exception as exc:
             item["translation"] = {
                 "status": "failed",
@@ -216,5 +211,16 @@ def apply_persian_translation(
                 "error": str(exc)[:160],
             }
             stats.failed += 1
+            consecutive_failures += 1
+
+            # If the external service is unavailable, fail fast. All untouched items
+            # remain queued and will be retried automatically next run.
+            if consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
+                remaining = min(limit, len(pending)) - index - 1
+                if remaining > 0:
+                    stats.queued += remaining
+                if len(pending) > limit:
+                    stats.queued += len(pending) - limit
+                break
 
     return stats
