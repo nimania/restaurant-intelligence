@@ -1,9 +1,9 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-09-15T17:18:08Z",
-  "articles_24h": 53,
+  "generated_at": "2026-09-15T18:19:08Z",
+  "articles_24h": 57,
   "articles_previous_6d": 192,
-  "images_24h": 41,
+  "images_24h": 45,
   "trending_topics": [
     {
       "id": "loyalty",
@@ -24,9 +24,9 @@
     {
       "id": "equipment_automation",
       "label_fa": "تجهیزات و اتوماسیون",
-      "count_24h": 8,
+      "count_24h": 9,
       "previous_daily_avg": 2.83,
-      "acceleration": 2.82,
+      "acceleration": 3.18,
       "series_7d": [
         5,
         5,
@@ -34,7 +34,23 @@
         0,
         0,
         5,
-        6
+        7
+      ]
+    },
+    {
+      "id": "ingredients_rd",
+      "label_fa": "مواد اولیه و تحقیق‌وتوسعه",
+      "count_24h": 8,
+      "previous_daily_avg": 3.33,
+      "acceleration": 2.4,
+      "series_7d": [
+        5,
+        7,
+        5,
+        1,
+        1,
+        4,
+        5
       ]
     },
     {
@@ -54,27 +70,11 @@
       ]
     },
     {
-      "id": "POS",
-      "label_fa": "سیستم فروش",
-      "count_24h": 15,
-      "previous_daily_avg": 7.0,
-      "acceleration": 2.14,
-      "series_7d": [
-        11,
-        9,
-        7,
-        0,
-        2,
-        15,
-        11
-      ]
-    },
-    {
       "id": "AI",
       "label_fa": "هوش مصنوعی",
-      "count_24h": 22,
-      "previous_daily_avg": 10.5,
-      "acceleration": 2.1,
+      "count_24h": 24,
+      "previous_daily_avg": 10.33,
+      "acceleration": 2.32,
       "series_7d": [
         15,
         13,
@@ -82,23 +82,23 @@
         3,
         2,
         17,
-        21
+        23
       ]
     },
     {
-      "id": "ingredients_rd",
-      "label_fa": "مواد اولیه و تحقیق‌وتوسعه",
+      "id": "menu_product_innovation",
+      "label_fa": "نوآوری منو و محصول",
       "count_24h": 7,
-      "previous_daily_avg": 3.33,
-      "acceleration": 2.1,
+      "previous_daily_avg": 3.17,
+      "acceleration": 2.21,
       "series_7d": [
-        5,
         7,
-        5,
-        1,
+        4,
+        4,
+        0,
         1,
         4,
-        4
+        6
       ]
     },
     {
@@ -118,22 +118,6 @@
       ]
     },
     {
-      "id": "restaurant_technology_ai",
-      "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 17,
-      "previous_daily_avg": 8.5,
-      "acceleration": 2.0,
-      "series_7d": [
-        15,
-        13,
-        8,
-        0,
-        2,
-        15,
-        13
-      ]
-    },
-    {
       "id": "beverage",
       "label_fa": "نوشیدنی",
       "count_24h": 7,
@@ -150,23 +134,56 @@
       ]
     },
     {
-      "id": "food_safety",
-      "label_fa": "ایمنی غذا",
+      "id": "menu",
+      "label_fa": "منو",
       "count_24h": 6,
       "previous_daily_avg": 3.0,
       "acceleration": 2.0,
       "series_7d": [
-        1,
+        7,
         3,
-        5,
-        2,
-        2,
-        5,
+        4,
+        0,
+        1,
+        4,
         5
+      ]
+    },
+    {
+      "id": "consumer_behavior",
+      "label_fa": "رفتار مصرف‌کننده",
+      "count_24h": 6,
+      "previous_daily_avg": 3.0,
+      "acceleration": 2.0,
+      "series_7d": [
+        2,
+        4,
+        4,
+        0,
+        2,
+        6,
+        6
       ]
     }
   ],
-  "trending_brands": [],
+  "trending_brands": [
+    {
+      "id": "dominos",
+      "label_fa": "دومینوز",
+      "count_24h": 2,
+      "previous_daily_avg": 0.33,
+      "acceleration": 4.0,
+      "series_7d": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2
+      ]
+    }
+  ],
   "dashboard": [
     {
       "id": "iran_market",
@@ -185,7 +202,7 @@
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 17,
+      "count_24h": 16,
       "series_7d": [
         15,
         13,
@@ -199,7 +216,7 @@
     {
       "id": "equipment_automation",
       "label_fa": "تجهیزات و اتوماسیون",
-      "count_24h": 8,
+      "count_24h": 9,
       "series_7d": [
         5,
         5,
@@ -207,7 +224,7 @@
         0,
         0,
         5,
-        6
+        7
       ]
     },
     {
@@ -241,7 +258,7 @@
     {
       "id": "marketing_branding",
       "label_fa": "بازاریابی و برندینگ",
-      "count_24h": 2,
+      "count_24h": 3,
       "series_7d": [
         1,
         4,
@@ -249,9 +266,9 @@
         0,
         0,
         1,
-        2
+        3
       ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: وفاداری مشتری، تجهیزات و اتوماسیون، پروتئین."
+  "radar_fa": "موضوع‌های رو به رشد: وفاداری مشتری، تجهیزات و اتوماسیون، مواد اولیه و تحقیق‌وتوسعه؛ برندهای پرتکرار: دومینوز."
 }
