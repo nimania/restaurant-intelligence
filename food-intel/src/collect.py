@@ -16,6 +16,7 @@ from dateutil import parser as date_parser
 from classify import classify
 from classify_fa import classify_fa
 from entities import detect_brands, load_brands
+from geo import enrich_geo
 from score import relevance_score
 from signals import build_signals
 from translate_fa import apply_persian_translation
@@ -194,6 +195,7 @@ def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | No
     published_at = entry_datetime(entry)
     source_market = source.get("market") or ("iran" if iran_score >= 70 else None)
     publisher = entry_publisher(entry) if source.get("aggregator") else None
+    geo = enrich_geo(title, summary, source)
 
     item = {
         "id": article_id(url, title, source["id"]),
@@ -217,6 +219,7 @@ def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | No
         "region": source.get("region"),
         "country": source.get("country"),
         "market": source_market,
+        "geo": geo,
         "summary": summary,
         "categories": categories,
         "topics": topics,
@@ -229,7 +232,7 @@ def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | No
 
 
 def collect_source(source: dict, brand_catalog: list[dict]) -> tuple[list[dict], dict]:
-    feed = feedparser.parse(source["feed_url"], agent="FoodIndustryIntelligence/0.6 (+GitHub)")
+    feed = feedparser.parse(source["feed_url"], agent="FoodIndustryIntelligence/0.7 (+GitHub)")
     matched = 0
     status = {
         "source_id": source["id"],
@@ -279,13 +282,14 @@ def main() -> None:
             by_id[item["id"]] = item
             processed += 1
 
-    # Re-enrich the retained dataset so new entity and Iran rules apply immediately.
+    # Re-enrich the retained dataset so new entity, Iran and geographic rules apply immediately.
     for item in by_id.values():
         source = source_by_id.get(item.get("source", {}).get("id"), item.get("source", {}))
         item["brands"] = detect_brands(item.get("title", ""), item.get("summary", ""), brand_catalog)
         item["iran_relevance_score"] = iran_relevance_score(
             item.get("title", ""), item.get("summary", ""), source, item["brands"]
         )
+        item["geo"] = enrich_geo(item.get("title", ""), item.get("summary", ""), source)
         if source.get("market"):
             item["market"] = source.get("market")
         elif item["iran_relevance_score"] >= 70:
@@ -303,7 +307,7 @@ def main() -> None:
     generated_at = utc_now()
     iran_items = [item for item in items if item.get("market") == "iran" or (item.get("iran_relevance_score") or 0) >= 70]
     payload = {
-        "schema_version": "0.6",
+        "schema_version": "0.7",
         "generated_at": generated_at,
         "count": len(items),
         "iran_count": len(iran_items),
@@ -333,6 +337,9 @@ def main() -> None:
         f"{translation_stats.persian_original} Persian originals; {translation_stats.failed} failed."
     )
     print(f"Detected {sum(len(i.get('brands', [])) for i in items)} brand mentions in retained articles.")
+    geo_count = sum(1 for i in items if (i.get("geo") or {}).get("primary_country"))
+    city_count = sum(1 for i in items if (i.get("geo") or {}).get("cities"))
+    print(f"Geography: {geo_count} stories with a country; {city_count} with an Iranian city.")
     for status in source_status:
         print(
             f"- {status['name']}: {status['entries_seen']} seen; "
