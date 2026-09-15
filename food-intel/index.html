@@ -3,14 +3,18 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>رادار صنعت غذا</title>
-<meta name="description" content="رادار فارسی اخبار، ترندها، برندها و جغرافیای صنعت غذا و رستوران.">
+<meta name="description" content="رادار تصویری فارسی اخبار، ترندها، برندها و جغرافیای صنعت غذا و رستوران.">
 <link rel="stylesheet" href="ui.css">
+<link rel="stylesheet" href="visual-v3.css">
 </head>
 <body>
 <header class="topbar"><div class="topbar-inner"><a class="brandmark" href="./"><div class="logo">F</div><div><b>رادار صنعت غذا</b><small>Food Industry Intelligence</small></div></a><div class="top-actions"><a class="pill-btn hide-mobile" href="map.html?view=iran">🗺️ نقشه ایران</a><a class="pill-btn hide-mobile" href="map.html?view=world">🌍 نقشه جهان</a><a class="pill-btn" href="?country=IR#feed">🇮🇷 ایران</a><button class="icon-btn" data-theme-toggle title="تغییر تم"><span data-theme-icon>🌙</span></button></div></div></header>
-<main class="shell"><div id="mobileTrends" class="mobile-trends"></div><div class="layout">
+<main class="shell">
+<div id="mobileTrends" class="mobile-trends"></div>
+<div id="dashboardStrip" class="dashboard-strip"></div>
+<div class="layout">
 <aside class="filters side"><div class="side-card"><h3>فیلتر خبرها</h3><label>جست‌وجو</label><input id="search" type="search" placeholder="تیتر، برند، موضوع…"><label>موضوع</label><select id="category"><option value="">همه موضوع‌ها</option></select><label>کشور</label><select id="country"><option value="">همه کشورها</option></select><label>شهر ایران</label><select id="city"><option value="">همه شهرها</option></select><label>برند</label><select id="brand"><option value="">همه برندها</option></select><label>منبع</label><select id="source"><option value="">همه منابع</option></select><label>مرتب‌سازی</label><select id="sort"><option value="newest">جدیدترین</option><option value="score">مهم‌ترین</option><option value="iran">مرتبط‌ترین با ایران</option></select></div><div class="side-card"><h3>وضعیت رادار</h3><div class="mini-stat"><span>خبر فارسی آماده</span><b id="count">—</b></div><div class="mini-stat"><span>منبع</span><b id="sources">—</b></div><div class="mini-stat"><span>۲۴ ساعت اخیر</span><b id="today">—</b></div><div class="mini-stat"><span>امتیاز ۸۰+</span><b id="high">—</b></div><p id="generated" style="margin-top:10px">در حال بارگذاری…</p><a class="map-teaser" href="map.html?view=iran"><b>نقشه خبرهای ایران</b><span>خبرها را شهر به شهر ببین</span></a></div></aside>
-<section class="feed" id="feed"><div class="feed-head"><div><h1>فید خبرها</h1><div class="sub">خواندن سریع از بالا به پایین؛ ایران با پس‌زمینه متفاوت مشخص شده است.</div></div><div id="visibleCount">—</div></div><div id="feedList"><div class="loading">در حال دریافت خبرها…</div></div></section>
+<section class="feed" id="feed"><div class="feed-head"><div><h1>فید صنعت غذا</h1><div class="sub">خبر، برند، عملیات، تجهیزات و فناوری؛ برای تصمیم‌گیری سریع مدیران و اپراتورها.</div></div><div id="visibleCount">—</div></div><div class="visual-feed-note">خبرهای مهم به شکل Featured نمایش داده می‌شوند و بین خبرها کارت‌های Insight بر اساس داده واقعی رادار قرار می‌گیرند.</div><div id="feedList"><div class="loading">در حال دریافت خبرها…</div></div></section>
 <aside class="trends side"><div class="side-card"><h3>ترندهای صنعت غذا</h3><div id="trendTopics">در حال محاسبه…</div></div><div class="side-card"><h3>برندهای خبرساز</h3><div id="trendBrands">در حال محاسبه…</div></div><div class="side-card"><h3>خبرهای مهم</h3><div id="hotNews" class="hot-list"></div></div><a class="map-teaser" href="map.html?view=world"><b>رادار جغرافیایی جهان</b><span>خبرها را کشور به کشور دنبال کن</span></a></aside>
 </div></main>
 <script src="common.js"></script><script src="feed.js"></script>

@@ -33,6 +33,23 @@ def compact(text: str, limit: int) -> str:
     return value[:limit].rsplit(" ", 1)[0].rstrip("،؛,:-. ") + "…"
 
 
+def compact_words(text: str, max_words: int = 190) -> str:
+    value = re.sub(r"\s+", " ", (text or "")).strip()
+    words = value.split()
+    if len(words) <= max_words:
+        return value
+    return " ".join(words[:max_words]).rstrip("،؛,:-. ") + "…"
+
+
+def coverage_label(source_chars: int | None) -> str:
+    n = int(source_chars or 0)
+    if n >= 1200:
+        return "گسترده"
+    if n >= 500:
+        return "متوسط"
+    return "خلاصه منبع"
+
+
 @dataclass
 class TranslationStats:
     translated: int = 0
@@ -57,7 +74,7 @@ class PersianTranslator:
         request = Request(
             url,
             headers={
-                "User-Agent": "FoodIndustryIntelligence/0.6 (+https://github.com/nimania/restaurant-intelligence)",
+                "User-Agent": "FoodIndustryIntelligence/0.9 (+https://github.com/nimania/restaurant-intelligence)",
                 "Accept": "application/json,text/plain,*/*",
             },
         )
@@ -84,7 +101,6 @@ class PersianTranslator:
         return translated
 
     def _mymemory(self, text: str) -> str:
-        # MyMemory limits a single q parameter to roughly 500 bytes.
         if len(text.encode("utf-8")) > 450:
             raise RuntimeError("fallback text is too long")
         query = urlencode({"q": text, "langpair": "en|fa"})
@@ -109,17 +125,34 @@ class PersianTranslator:
                 translated = engine(text)
                 if translated and looks_persian(translated):
                     time.sleep(self.pause)
-                    return compact(translated, limit + 180)
+                    return compact(translated, limit + 220)
                 last_error = RuntimeError("translation result is not Persian")
             except Exception as exc:
                 last_error = exc
         raise RuntimeError(str(last_error or "translation failed"))
 
-    def translate_article(self, title: str, summary: str) -> tuple[str, str]:
+    def translate_article(self, title: str, summary: str, report_source: str = "") -> tuple[str, str, str]:
         title = compact(title, 240)
         summary = compact(summary, 520)
+        body = compact(report_source or summary, 1200)
+
+        if body:
+            combined = f"{title}\n\n{SPLIT_MARKER}\n\n{body}"
+            try:
+                translated = self.translate(combined, 1550)
+                if SPLIT_MARKER in translated:
+                    title_fa, body_fa = translated.split(SPLIT_MARKER, 1)
+                    title_fa = compact(title_fa, 420).strip()
+                    body_fa = compact_words(body_fa, 190).strip()
+                    if title_fa and looks_persian(title_fa) and body_fa:
+                        summary_fa = compact_words(body_fa, 85)
+                        return title_fa, summary_fa, body_fa
+            except Exception:
+                pass
+
         if not summary:
-            return self.translate(title, 240), ""
+            title_fa = self.translate(title, 240)
+            return title_fa, "", ""
 
         combined = f"{title}\n\n{SPLIT_MARKER}\n\n{summary}"
         try:
@@ -127,13 +160,15 @@ class PersianTranslator:
             if SPLIT_MARKER in translated:
                 title_fa, summary_fa = translated.split(SPLIT_MARKER, 1)
                 title_fa = compact(title_fa, 420).strip()
-                summary_fa = compact(summary_fa, 700).strip()
+                summary_fa = compact_words(summary_fa, 85).strip()
                 if title_fa and looks_persian(title_fa):
-                    return title_fa, summary_fa
+                    return title_fa, summary_fa, summary_fa
         except Exception:
             pass
 
-        return self.translate(title, 240), self.translate(summary, 520)
+        title_fa = self.translate(title, 240)
+        summary_fa = compact_words(self.translate(summary, 520), 85)
+        return title_fa, summary_fa, summary_fa
 
 
 def _translation_limit() -> int:
@@ -155,10 +190,13 @@ def apply_persian_translation(
         title = item.get("title", "")
         summary = item.get("summary", "")
         previous = previous_by_id.get(item.get("id", ""), {})
+        source_chars = item.get("source_detail_chars") or len(summary)
 
         if item.get("language") == "fa" or looks_persian(title):
             item["title_fa"] = title
             item["summary_fa"] = compact(summary, 520)
+            item["report_fa"] = compact_words(summary, 150)
+            item["report_coverage"] = "خلاصه منبع"
             item["translation"] = {"status": "original-fa", "engine": None}
             stats.persian_original += 1
             continue
@@ -168,9 +206,11 @@ def apply_persian_translation(
             and previous.get("summary") == summary
             and previous.get("title_fa")
         )
-        if same_source_text:
+        if same_source_text and previous.get("report_fa"):
             item["title_fa"] = previous.get("title_fa")
             item["summary_fa"] = previous.get("summary_fa", "")
+            item["report_fa"] = previous.get("report_fa", previous.get("summary_fa", ""))
+            item["report_coverage"] = previous.get("report_coverage") or coverage_label(source_chars)
             item["translation"] = previous.get("translation") or {
                 "status": "translated",
                 "engine": "http-en-fa",
@@ -178,8 +218,15 @@ def apply_persian_translation(
             stats.reused += 1
             continue
 
-        item["title_fa"] = ""
-        item["summary_fa"] = ""
+        if same_source_text:
+            item["title_fa"] = previous.get("title_fa", "")
+            item["summary_fa"] = previous.get("summary_fa", "")
+            item["report_fa"] = previous.get("report_fa", "")
+        else:
+            item["title_fa"] = ""
+            item["summary_fa"] = ""
+            item["report_fa"] = ""
+        item["report_coverage"] = coverage_label(source_chars)
         item["translation"] = {"status": "queued", "engine": "http-en-fa"}
         pending.append(item)
 
@@ -196,11 +243,15 @@ def apply_persian_translation(
             continue
 
         try:
-            title_fa, summary_fa = translator.translate_article(
-                item.get("title", ""), item.get("summary", "")
+            title_fa, summary_fa, report_fa = translator.translate_article(
+                item.get("title", ""),
+                item.get("summary", ""),
+                item.get("_report_source", ""),
             )
-            item["title_fa"] = title_fa
-            item["summary_fa"] = summary_fa
+            item["title_fa"] = title_fa or item.get("title_fa", "")
+            item["summary_fa"] = summary_fa or item.get("summary_fa", "")
+            item["report_fa"] = report_fa or item.get("summary_fa", "")
+            item["report_coverage"] = coverage_label(item.get("source_detail_chars"))
             item["translation"] = {"status": "translated", "engine": "http-en-fa"}
             stats.translated += 1
             consecutive_failures = 0
@@ -213,8 +264,6 @@ def apply_persian_translation(
             stats.failed += 1
             consecutive_failures += 1
 
-            # If the external service is unavailable, fail fast. All untouched items
-            # remain queued and will be retried automatically next run.
             if consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
                 remaining = min(limit, len(pending)) - index - 1
                 if remaining > 0:
