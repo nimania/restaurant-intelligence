@@ -1,16 +1,32 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-09-15T14:34:57Z",
-  "articles_24h": 46,
-  "articles_previous_6d": 185,
-  "images_24h": 36,
+  "generated_at": "2026-09-15T17:08:16Z",
+  "articles_24h": 52,
+  "articles_previous_6d": 192,
+  "images_24h": 40,
   "trending_topics": [
+    {
+      "id": "loyalty",
+      "label_fa": "وفاداری مشتری",
+      "count_24h": 3,
+      "previous_daily_avg": 0.83,
+      "acceleration": 3.6,
+      "series_7d": [
+        1,
+        0,
+        2,
+        0,
+        0,
+        2,
+        3
+      ]
+    },
     {
       "id": "equipment_automation",
       "label_fa": "تجهیزات و اتوماسیون",
       "count_24h": 8,
-      "previous_daily_avg": 2.67,
-      "acceleration": 3.0,
+      "previous_daily_avg": 2.83,
+      "acceleration": 2.82,
       "series_7d": [
         5,
         5,
@@ -18,31 +34,31 @@
         0,
         0,
         5,
-        3
+        6
       ]
     },
     {
-      "id": "labor_management",
-      "label_fa": "نیروی انسانی و مدیریت",
+      "id": "protein",
+      "label_fa": "پروتئین",
       "count_24h": 2,
-      "previous_daily_avg": 0.67,
-      "acceleration": 3.0,
+      "previous_daily_avg": 0.83,
+      "acceleration": 2.4,
       "series_7d": [
-        1,
-        1,
         2,
         0,
-        0,
         2,
-        0
+        0,
+        1,
+        1,
+        1
       ]
     },
     {
       "id": "food_industry",
       "label_fa": "صنعت غذا",
-      "count_24h": 8,
-      "previous_daily_avg": 2.83,
-      "acceleration": 2.82,
+      "count_24h": 7,
+      "previous_daily_avg": 3.33,
+      "acceleration": 2.1,
       "series_7d": [
         1,
         7,
@@ -50,31 +66,31 @@
         3,
         0,
         7,
-        3
+        5
       ]
     },
     {
-      "id": "beverage",
-      "label_fa": "نوشیدنی",
-      "count_24h": 7,
-      "previous_daily_avg": 3.17,
-      "acceleration": 2.21,
+      "id": "AI",
+      "label_fa": "هوش مصنوعی",
+      "count_24h": 21,
+      "previous_daily_avg": 10.5,
+      "acceleration": 2.0,
       "series_7d": [
+        15,
+        13,
+        12,
         3,
-        8,
-        3,
-        0,
-        0,
-        8,
-        4
+        2,
+        17,
+        20
       ]
     },
     {
       "id": "POS",
       "label_fa": "سیستم فروش",
-      "count_24h": 15,
+      "count_24h": 14,
       "previous_daily_avg": 7.0,
-      "acceleration": 2.14,
+      "acceleration": 2.0,
       "series_7d": [
         11,
         9,
@@ -83,6 +99,22 @@
         2,
         15,
         10
+      ]
+    },
+    {
+      "id": "beverage",
+      "label_fa": "نوشیدنی",
+      "count_24h": 7,
+      "previous_daily_avg": 3.5,
+      "acceleration": 2.0,
+      "series_7d": [
+        3,
+        8,
+        3,
+        0,
+        0,
+        8,
+        6
       ]
     },
     {
@@ -114,81 +146,32 @@
         1,
         0,
         1,
-        1
+        2
       ]
     },
     {
-      "id": "restaurant_technology_ai",
-      "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 16,
-      "previous_daily_avg": 8.5,
-      "acceleration": 1.88,
+      "id": "consumer_behavior",
+      "label_fa": "رفتار مصرف‌کننده",
+      "count_24h": 6,
+      "previous_daily_avg": 3.17,
+      "acceleration": 1.89,
       "series_7d": [
-        15,
-        13,
-        8,
-        0,
         2,
-        15,
-        11
-      ]
-    },
-    {
-      "id": "food_manufacturing",
-      "label_fa": "تولید صنایع غذایی",
-      "count_24h": 8,
-      "previous_daily_avg": 4.5,
-      "acceleration": 1.78,
-      "series_7d": [
         4,
-        10,
+        4,
+        0,
         2,
-        2,
-        2,
-        5,
-        7
-      ]
-    },
-    {
-      "id": "AI",
-      "label_fa": "هوش مصنوعی",
-      "count_24h": 17,
-      "previous_daily_avg": 10.0,
-      "acceleration": 1.7,
-      "series_7d": [
-        15,
-        13,
-        12,
-        3,
-        2,
-        17,
-        13
+        6,
+        6
       ]
     }
   ],
-  "trending_brands": [
-    {
-      "id": "dominos",
-      "label_fa": "دومینوز",
-      "count_24h": 2,
-      "previous_daily_avg": 0.17,
-      "acceleration": 4.0,
-      "series_7d": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1
-      ]
-    }
-  ],
+  "trending_brands": [],
   "dashboard": [
     {
       "id": "iran_market",
       "label_fa": "بازار ایران",
-      "count_24h": 8,
+      "count_24h": 7,
       "series_7d": [
         1,
         2,
@@ -210,7 +193,7 @@
         0,
         2,
         15,
-        11
+        12
       ]
     },
     {
@@ -224,7 +207,7 @@
         0,
         0,
         5,
-        3
+        6
       ]
     },
     {
@@ -244,7 +227,7 @@
     {
       "id": "restaurant_operations",
       "label_fa": "عملیات رستوران",
-      "count_24h": 2,
+      "count_24h": 3,
       "series_7d": [
         3,
         3,
@@ -252,7 +235,7 @@
         1,
         0,
         1,
-        2
+        3
       ]
     },
     {
@@ -270,5 +253,5 @@
       ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: تجهیزات و اتوماسیون، نیروی انسانی و مدیریت، صنعت غذا؛ برندهای پرتکرار: دومینوز."
+  "radar_fa": "موضوع‌های رو به رشد: وفاداری مشتری، تجهیزات و اتوماسیون، پروتئین."
 }
