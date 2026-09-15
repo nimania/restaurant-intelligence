@@ -46,7 +46,7 @@ brands:
   - id: cava
     name: CAVA
     fa: کاوا
-    aliases: ["cava"]
+    aliases: ["cava group", "cava restaurant", "cava"]
   - id: sweetgreen
     name: Sweetgreen
     fa: سوییت‌گرین
@@ -58,7 +58,7 @@ brands:
   - id: subway
     name: Subway
     fa: ساب‌وی
-    aliases: ["subway"]
+    aliases: ["subway restaurants", "subway restaurant", "subway"]
   - id: chickfila
     name: Chick-fil-A
     fa: چیک‌فیل‌ای
@@ -122,7 +122,7 @@ brands:
   - id: rational
     name: RATIONAL
     fa: رشنال
-    aliases: ["rational ag", "rational oven", "rational cooking", "rational"]
+    aliases: ["rational ag", "rational oven", "rational cooking"]
   - id: middleby
     name: Middleby
     fa: میدلبی
@@ -158,7 +158,7 @@ brands:
   - id: tyson_foods
     name: Tyson Foods
     fa: تایسون فودز
-    aliases: ["tyson foods", "tyson"]
+    aliases: ["tyson foods"]
   - id: general_mills
     name: General Mills
     fa: جنرال میلز
