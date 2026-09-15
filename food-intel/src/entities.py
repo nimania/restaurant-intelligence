@@ -11,6 +11,21 @@ BRAND_PATHS = [
     ROOT / "config" / "brands_iran.yml",
 ]
 
+# High-frequency public names that are shorter than the legal/company name in the
+# catalog. Keeping them here avoids overly broad YAML aliases such as ordinary words.
+EXTRA_ALIASES = {
+    "pepsico": ["pepsi"],
+    "coca_cola": ["coke", "coca‑cola"],
+    "mcdonalds": ["mcdonald’s", "mcdonald’s restaurants"],
+    "starbucks": ["starbucks coffee"],
+    "rbi": ["restaurant brands"],
+    "dunkin": ["dunkin donuts", "dunkin’"],
+    "dominos": ["domino’s"],
+    "chickfila": ["chick fil-a"],
+    "snappfood": ["اسنپفود"],
+    "mihan_dairy": ["میهن"],
+}
+
 CATEGORY_FA = {
     "qsr_fast_food": "فست‌فود و QSR",
     "fast_casual": "فست‌کژوال",
@@ -86,6 +101,7 @@ def _normalized(text: str) -> str:
         .replace("‘", "'")
         .replace("–", "-")
         .replace("—", "-")
+        .replace("‑", "-")
         .replace("\u200c", " ")
         .replace("ي", "ی")
         .replace("ك", "ک")
@@ -105,7 +121,8 @@ def detect_brands(title: str, summary: str, catalog: list[dict] | None = None) -
     haystack = _normalized(f"{title} {summary}")
     matches = []
     for brand in catalog or load_brands():
-        if any(_contains_alias(haystack, alias) for alias in brand.get("aliases", [])):
+        aliases = [*(brand.get("aliases", []) or []), *EXTRA_ALIASES.get(brand.get("id"), [])]
+        if any(_contains_alias(haystack, alias) for alias in aliases):
             match = {
                 "id": brand["id"],
                 "name": brand["name"],

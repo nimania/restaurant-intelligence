@@ -6,13 +6,14 @@ import re
 from pathlib import Path
 
 from body_reader import enrich_article_bodies
+from fa_polish import polish_persian
 from translate_fa import PersianTranslator, compact_words, looks_persian
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "news.json"
 MAX_REPORT_WORDS = 210
-MAX_CHUNKS = 3
-CHUNK_CHARS = 900
+MAX_CHUNKS = 4
+CHUNK_CHARS = 650
 
 
 def _chunks(text: str) -> list[str]:
@@ -37,16 +38,11 @@ def translate_report(translator: PersianTranslator, source: str) -> str:
     translated: list[str] = []
     for chunk in _chunks(source):
         translated.append(translator.translate(chunk, CHUNK_CHARS))
-    return compact_words(" ".join(translated), MAX_REPORT_WORDS)
+    return compact_words(polish_persian(" ".join(translated)), MAX_REPORT_WORDS)
 
 
 def _previous_snapshot(items: list[dict]) -> dict[str, dict]:
-    """Build a reusable cache view even when the collector refreshed an RSS item.
-
-    collect.py preserves report_fa/report_coverage on refreshed feed entries but older
-    body-reader metadata may be absent. A report explicitly marked as body-based is
-    therefore sufficient evidence to avoid downloading the same article again.
-    """
+    """Build a reusable cache view even when the collector refreshed an RSS item."""
     result: dict[str, dict] = {}
     for item in items:
         item_id = item.get("id")
@@ -79,7 +75,7 @@ def main() -> None:
             continue
 
         # Persian publisher text is not republished as an extract. Until an abstractive
-        # summarizer is available, keep the existing publisher-supplied Persian summary.
+        # summarizer is available, keep the publisher/feed summary as the public report.
         if item.get("language") == "fa" or looks_persian(item.get("title", "")):
             item["report_basis"] = "feed-summary"
             continue
@@ -87,18 +83,18 @@ def main() -> None:
         try:
             report = translate_report(translator, source)
             if report:
-                item["report_fa"] = report
+                item["report_fa"] = polish_persian(report)
                 if not item.get("summary_fa"):
-                    item["summary_fa"] = compact_words(report, 85)
+                    item["summary_fa"] = compact_words(item["report_fa"], 85)
                 item["report_coverage"] = "بر پایه بدنه مقاله"
                 item["report_basis"] = "article-body-summary"
-                item["report_word_count"] = len(report.split())
+                item["report_word_count"] = len(item["report_fa"].split())
                 report_upgraded += 1
         except Exception as exc:
             item["body_report_error"] = str(exc)[:140]
             report_failed += 1
 
-    payload["schema_version"] = "0.10.1"
+    payload["schema_version"] = "0.11"
     payload["article_body_stats"] = {
         "attempted": stats.attempted,
         "extracted": stats.extracted,
