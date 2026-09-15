@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>تازه‌رسیده‌ها | رادار صنعت غذا</title>
+<meta name="description" content="تازه‌ترین خبرهای صنعت غذا و رستوران از ایران و جهان در شش ساعت اخیر.">
+<link rel="stylesheet" href="ui.css">
+<link rel="stylesheet" href="visual-v3.css">
+<link rel="stylesheet" href="polish-v011.css">
+<link rel="stylesheet" href="scope-v015.css">
+</head>
+<body data-feed-scope="latest">
+<header class="topbar"><div class="topbar-inner"><a class="brandmark" href="./"><div class="logo">F</div><div><b>رادار صنعت غذا</b><small>Food Industry Intelligence</small></div></a><nav class="scope-tabs" aria-label="بخش خبرها"><a href="./">🌍 جهان</a><a href="iran.html">🇮🇷 ایران</a><a class="active" href="latest.html">🆕 تازه‌رسیده‌ها</a><a href="institutions.html">🏛️ نهادها و تشکل‌ها</a></nav><div class="top-actions"><button class="icon-btn" data-theme-toggle title="تغییر تم"><span data-theme-icon>🌙</span></button></div></div></header>
+<main class="shell">
+<div class="scope-banner"><div><b>تازه‌رسیده‌ها</b><span> جدیدترین خبرهای آماده و قابل‌انتشار ایران و جهان در ۶ ساعت اخیر، مرتب‌شده بر اساس زمان انتشار.</span></div><a class="pill-btn" href="./">فید کامل جهان ←</a></div>
+<div id="mobileTrends" class="mobile-trends"></div>
+<div id="dashboardStrip" class="dashboard-strip"></div>
+<div class="layout">
+<aside class="filters side"><div class="side-card"><h3>فیلتر تازه‌رسیده‌ها</h3><label>جست‌وجو</label><input id="search" type="search" placeholder="تیتر، برند، موضوع…"><label>موضوع</label><select id="category"><option value="">همه موضوع‌ها</option></select><label>کشور</label><select id="country"><option value="">همه کشورها</option></select><label>برند</label><select id="brand"><option value="">همه برندها</option></select><label>منبع</label><select id="source"><option value="">همه منابع</option></select><label>مرتب‌سازی</label><select id="sort"><option value="newest">جدیدترین</option><option value="score">مهم‌ترین</option></select></div><div class="side-card"><h3>وضعیت تازه‌رسیده‌ها</h3><div class="mini-stat"><span>خبر تازه</span><b id="count">—</b></div><div class="mini-stat"><span>منبع</span><b id="sources">—</b></div><div class="mini-stat"><span>۲۴ ساعت اخیر</span><b id="today">—</b></div><div class="mini-stat"><span>امتیاز ۸۰+</span><b id="high">—</b></div><p id="generated" style="margin-top:10px">در حال بارگذاری…</p></div></aside>
+<section class="feed" id="feed"><div class="feed-head"><div><h1>آخرین خبرها</h1><div class="sub">فقط خبرهای ۶ ساعت اخیر؛ ایران و جهان در یک فهرست زمانی.</div></div><div id="visibleCount">—</div></div><div class="visual-feed-note">این صفحه برای دیدن سریع خبرهایی است که در چند ساعت اخیر وارد رادار شده‌اند.</div><div id="feedList"><div class="loading">در حال دریافت تازه‌ترین خبرها…</div></div></section>
+<aside class="trends side"><div class="side-card"><h3>موضوعات تازه</h3><div id="trendTopics">در حال محاسبه…</div></div><div class="side-card"><h3>برندهای تازه خبرساز</h3><div id="trendBrands">در حال محاسبه…</div></div><div class="side-card"><h3>مهم‌ترین تازه‌رسیده‌ها</h3><div id="hotNews" class="hot-list"></div></div></aside>
+</div></main>
+<script src="common.js"></script><script src="scope-v015.js"></script><script src="feed.js"></script>
+</body></html>
