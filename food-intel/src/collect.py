@@ -17,6 +17,7 @@ from classify import classify
 from classify_fa import classify_fa
 from entities import detect_brands, load_brands
 from geo import enrich_geo
+from media import entry_image_url
 from score import relevance_score
 from signals import build_signals
 from translate_fa import apply_persian_translation
@@ -196,6 +197,7 @@ def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | No
     source_market = source.get("market") or ("iran" if iran_score >= 70 else None)
     publisher = entry_publisher(entry) if source.get("aggregator") else None
     geo = enrich_geo(title, summary, source)
+    image_url = entry_image_url(entry)
 
     item = {
         "id": article_id(url, title, source["id"]),
@@ -220,6 +222,8 @@ def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | No
         "country": source.get("country"),
         "market": source_market,
         "geo": geo,
+        "image_url": image_url,
+        "image_source": "feed" if image_url else None,
         "summary": summary,
         "categories": categories,
         "topics": topics,
@@ -232,7 +236,7 @@ def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | No
 
 
 def collect_source(source: dict, brand_catalog: list[dict]) -> tuple[list[dict], dict]:
-    feed = feedparser.parse(source["feed_url"], agent="FoodIndustryIntelligence/0.7 (+GitHub)")
+    feed = feedparser.parse(source["feed_url"], agent="FoodIndustryIntelligence/0.8 (+GitHub)")
     matched = 0
     status = {
         "source_id": source["id"],
@@ -279,6 +283,9 @@ def main() -> None:
                 for field in ("title_fa", "summary_fa", "translation"):
                     if previous.get(field) is not None:
                         item[field] = previous.get(field)
+                if not item.get("image_url") and previous.get("image_url"):
+                    item["image_url"] = previous.get("image_url")
+                    item["image_source"] = previous.get("image_source")
             by_id[item["id"]] = item
             processed += 1
 
@@ -307,7 +314,7 @@ def main() -> None:
     generated_at = utc_now()
     iran_items = [item for item in items if item.get("market") == "iran" or (item.get("iran_relevance_score") or 0) >= 70]
     payload = {
-        "schema_version": "0.7",
+        "schema_version": "0.8",
         "generated_at": generated_at,
         "count": len(items),
         "iran_count": len(iran_items),
@@ -339,7 +346,9 @@ def main() -> None:
     print(f"Detected {sum(len(i.get('brands', [])) for i in items)} brand mentions in retained articles.")
     geo_count = sum(1 for i in items if (i.get("geo") or {}).get("primary_country"))
     city_count = sum(1 for i in items if (i.get("geo") or {}).get("cities"))
+    image_count = sum(1 for i in items if i.get("image_url"))
     print(f"Geography: {geo_count} stories with a country; {city_count} with an Iranian city.")
+    print(f"Visuals: {image_count} stories with publisher-provided feed images.")
     for status in source_status:
         print(
             f"- {status['name']}: {status['entries_seen']} seen; "
