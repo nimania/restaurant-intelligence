@@ -14,6 +14,7 @@ import yaml
 from dateutil import parser as date_parser
 
 from classify import classify
+from score import relevance_score
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES_PATH = ROOT / "config" / "sources.yml"
@@ -57,7 +58,6 @@ def entry_datetime(entry) -> str:
         if value:
             dt = datetime.fromtimestamp(calendar.timegm(value), tz=timezone.utc)
             return dt.replace(microsecond=0).isoformat().replace("+00:00", "Z")
-
     for attr in ("published", "updated"):
         value = getattr(entry, attr, None)
         if value:
@@ -68,50 +68,34 @@ def entry_datetime(entry) -> str:
                 return dt.astimezone(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
             except (ValueError, TypeError, OverflowError):
                 pass
-
     return utc_now()
 
 
 def load_sources() -> list[dict]:
     payload = yaml.safe_load(SOURCES_PATH.read_text(encoding="utf-8")) or {}
-    return [
-        source for source in payload.get("sources", [])
-        if source.get("enabled") and source.get("type") == "rss" and source.get("feed_url")
-    ]
+    return [s for s in payload.get("sources", []) if s.get("enabled") and s.get("type") == "rss" and s.get("feed_url")]
 
 
 def load_existing() -> dict:
     if not DATA_PATH.exists():
-        return {"generated_at": None, "count": 0, "items": []}
+        return {"items": []}
     try:
         return json.loads(DATA_PATH.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError):
-        return {"generated_at": None, "count": 0, "items": []}
+        return {"items": []}
 
 
 def normalize_entry(entry, source: dict) -> dict | None:
     title = clean_text(getattr(entry, "title", ""))
-    raw_url = getattr(entry, "link", "") or ""
-    url = canonicalize_url(raw_url)
+    url = canonicalize_url(getattr(entry, "link", "") or "")
     if not title or not url:
         return None
 
-    summary = clean_text(
-        getattr(entry, "summary", "")
-        or getattr(entry, "description", "")
-    )[:1200]
-
-    categories, topics = classify(
-        title,
-        summary,
-        defaults=source.get("default_categories", []),
-    )
-
-    author = clean_text(getattr(entry, "author", ""))
+    summary = clean_text(getattr(entry, "summary", "") or getattr(entry, "description", ""))[:1200]
+    categories, topics = classify(title, summary, defaults=source.get("default_categories", []))
     published_at = entry_datetime(entry)
-    collected_at = utc_now()
 
-    return {
+    item = {
         "id": article_id(url, title, source["id"]),
         "title": title,
         "url": url,
@@ -120,10 +104,11 @@ def normalize_entry(entry, source: dict) -> dict | None:
             "name": source["name"],
             "homepage": source.get("homepage"),
             "class": source.get("source_class"),
+            "priority": source.get("priority", 3),
         },
-        "author": author or None,
+        "author": clean_text(getattr(entry, "author", "")) or None,
         "published_at": published_at,
-        "collected_at": collected_at,
+        "collected_at": utc_now(),
         "language": source.get("language", "en"),
         "region": source.get("region"),
         "summary": summary,
@@ -133,34 +118,33 @@ def normalize_entry(entry, source: dict) -> dict | None:
         "relevance_score": None,
         "summary_fa": None,
     }
+    item["relevance_score"] = relevance_score(item, source)
+    return item
 
 
 def collect_source(source: dict) -> tuple[list[dict], dict]:
-    feed = feedparser.parse(source["feed_url"], agent="FoodIndustryIntelligence/0.1 (+GitHub)")
+    feed = feedparser.parse(source["feed_url"], agent="FoodIndustryIntelligence/0.3 (+GitHub)")
     status = {
-        "source_id": source["id"],
-        "name": source["name"],
-        "feed_url": source["feed_url"],
-        "entries_seen": len(feed.entries),
-        "bozo": bool(getattr(feed, "bozo", False)),
+        "source_id": source["id"], "name": source["name"], "feed_url": source["feed_url"],
+        "entries_seen": len(feed.entries), "bozo": bool(getattr(feed, "bozo", False)),
     }
     if getattr(feed, "bozo_exception", None):
         status["warning"] = str(feed.bozo_exception)[:300]
-
     items = []
     for entry in feed.entries:
-        normalized = normalize_entry(entry, source)
-        if normalized:
-            items.append(normalized)
+        item = normalize_entry(entry, source)
+        if item:
+            items.append(item)
     return items, status
 
 
 def main() -> None:
     sources = load_sources()
+    source_by_id = {s["id"]: s for s in sources}
     existing = load_existing()
     by_id = {item["id"]: item for item in existing.get("items", []) if item.get("id")}
     source_status = []
-    collected = 0
+    processed = 0
 
     for source in sources:
         items, status = collect_source(source)
@@ -170,24 +154,22 @@ def main() -> None:
             if previous:
                 item["collected_at"] = previous.get("collected_at", item["collected_at"])
             by_id[item["id"]] = item
-            collected += 1
+            processed += 1
 
-    items = sorted(
-        by_id.values(),
-        key=lambda item: item.get("published_at") or "",
-        reverse=True,
-    )[:MAX_ITEMS]
+    for item in by_id.values():
+        source = source_by_id.get(item.get("source", {}).get("id"), {})
+        item["relevance_score"] = relevance_score(item, source)
 
+    items = sorted(by_id.values(), key=lambda x: (x.get("published_at") or "", x.get("relevance_score") or 0), reverse=True)[:MAX_ITEMS]
     payload = {
-        "schema_version": "0.1",
+        "schema_version": "0.3",
         "generated_at": utc_now(),
         "count": len(items),
         "active_sources": len(sources),
-        "entries_processed_this_run": collected,
+        "entries_processed_this_run": processed,
         "source_status": source_status,
         "items": items,
     }
-
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     DATA_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Stored {len(items)} unique articles from {len(sources)} active sources.")
