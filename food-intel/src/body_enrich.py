@@ -6,6 +6,7 @@ import re
 from pathlib import Path
 
 from body_reader import enrich_article_bodies
+from fa_editor import editorial_meta, editorialize_report, editorialize_summary
 from fa_polish import polish_persian
 from translate_fa import PersianTranslator, compact_words, looks_persian
 
@@ -38,7 +39,8 @@ def translate_report(translator: PersianTranslator, source: str) -> str:
     translated: list[str] = []
     for chunk in _chunks(source):
         translated.append(translator.translate(chunk, CHUNK_CHARS))
-    return compact_words(polish_persian(" ".join(translated)), MAX_REPORT_WORDS)
+    raw = compact_words(polish_persian(" ".join(translated)), MAX_REPORT_WORDS)
+    return editorialize_report(raw)
 
 
 def _previous_snapshot(items: list[dict]) -> dict[str, dict]:
@@ -74,27 +76,28 @@ def main() -> None:
         if not source or item.get("report_source_kind") != "article_body":
             continue
 
-        # Persian publisher text is not republished as an extract. Until an abstractive
-        # summarizer is available, keep the publisher/feed summary as the public report.
+        # Persian publisher text is not editorially rewritten; only normalized, so
+        # the publisher's original wording is not altered by our newsroom layer.
         if item.get("language") == "fa" or looks_persian(item.get("title", "")):
             item["report_basis"] = "feed-summary"
+            item["editorial"] = editorial_meta("source-fa-normalized")
             continue
 
         try:
             report = translate_report(translator, source)
             if report:
-                item["report_fa"] = polish_persian(report)
-                if not item.get("summary_fa"):
-                    item["summary_fa"] = compact_words(item["report_fa"], 85)
+                item["report_fa"] = report
+                item["summary_fa"] = compact_words(editorialize_summary(report, 3), 85)
                 item["report_coverage"] = "بر پایه بدنه مقاله"
                 item["report_basis"] = "article-body-summary"
-                item["report_word_count"] = len(item["report_fa"].split())
+                item["report_word_count"] = len(report.split())
+                item["editorial"] = editorial_meta("edited-body")
                 report_upgraded += 1
         except Exception as exc:
             item["body_report_error"] = str(exc)[:140]
             report_failed += 1
 
-    payload["schema_version"] = "0.11"
+    payload["schema_version"] = "0.12"
     payload["article_body_stats"] = {
         "attempted": stats.attempted,
         "extracted": stats.extracted,
