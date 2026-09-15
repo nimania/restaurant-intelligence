@@ -1,14 +1,14 @@
 {
   "schema_version": "0.6",
-  "generated_at": "2026-09-15T12:51:05Z",
+  "generated_at": "2026-09-15T12:54:51Z",
   "count": 1052,
   "iran_count": 26,
   "active_sources": 31,
   "active_iran_sources": 13,
   "entries_processed_this_run": 1113,
   "translation_stats": {
-    "translated": 48,
-    "reused": 96,
+    "translated": 52,
+    "reused": 142,
     "persian_original": 26,
     "failed": 4
   },
@@ -398,10 +398,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "پیتزاهای مربعی سیسیلی معروف پرینس سنت پیتزا به صورت تک نفره عرضه می‌شوند",
+      "summary_fa": "این برند محبوب پیتزاهای نیویورکی، در 18 سپتامبر از «پای پرنس شخصی» رونمایی می‌کند، یک سفارش آنلاین که با سس مخصوص رایگان ارائه می‌شود و دلیلی برای اشتراک‌گذاری ندارد. این پست اولین بار در RestaurantNews.com منتشر شد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -479,10 +479,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "«نتوانستم پرو را با خود بیاورم، پس آتش را آوردم»",
+      "summary_fa": "مرغ ویوا با به اشتراک گذاشتن اینکه چگونه یک سفر ۲۰۰ دلاری، یک دستور غذای خانوادگی ۶۰ ساله و بیش از پنج میلیون مرغ بریان، میراث پرو را به پیش می‌برند، ماه میراث اسپانیایی را گرامی می‌دارد. پست «نتوانستم پرو را با خود بیاورم، پس آتش را آوردم» اولین بار در RestaurantNews.com منتشر شد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -1485,10 +1485,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "انتظارات از کرپ: سوئیت پاریس ویسکز اولین شعبه خود در کارولینای شمالی را در کری افتتاح می‌کند",
+      "summary_fa": "کرپری و کافه محبوب، جشن افتتاحیه باشکوهی را برای ۱۹ سپتامبر تدارک می‌بیند. این پست با عنوان انتظارات از کرپ: سوئیت پاریس ویسکز اولین شعبه خود در کارولینای شمالی را در کری افتتاح می‌کند، برای اولین بار در RestaurantNews.com منتشر شد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -1562,10 +1562,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "اسلایدرهای اسمالز با بازگشت دکتر پپر سویرل و یک دکتر پپر کثیف جدید، اوضاع را متحول می‌کنند",
+      "summary_fa": "دو راه برای نوشیدن زمین در سراسر کشور این پست که اسلایدرهای اسمالز با بازگشت دکتر پپر سویرل و یک دکتر پپر کثیف جدید، اوضاع را متحول می‌کنند، اولین بار در RestaurantNews.com منتشر شد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -1672,7 +1672,7 @@
       "region": "US",
       "country": null,
       "market": null,
-      "summary": "Lucy Brady joins the beverage brand as its parent company reshufflesother positions in its C-suite.",
+      "summary": "Lucy Brady joins the beverage brand as its parent company reshuffles other positions in its C-suite.",
       "categories": [
         "qsr_fast_food",
         "restaurant_technology_ai",
@@ -1721,7 +1721,7 @@
       "region": "US",
       "country": null,
       "market": null,
-      "summary": "A resealability issue in the product’s packaging was responsible for “the vast majority of the problem,” the company’s CEO said.",
+      "summary": "A resealability issue in the product's packaging was responsible for \"the vast majority of the problem,\" the company's CEO said.",
       "categories": [
         "food_industry"
       ],
@@ -2722,7 +2722,7 @@
       "region": "US",
       "country": null,
       "market": null,
-      "summary": "The pancake chain is hoping to give fans more of what they want — in this case vanilla sweet cream filling — while remaining close to its historic breakfast identity.",
+      "summary": "The pancake chain hopes to give fans more of what they want — vanilla sweet cream filling — while sticking close to its historic breakfast identity.",
       "categories": [
         "restaurant_industry"
       ],
@@ -3985,10 +3985,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "مرکز کنترل و پیشگیری از بیماری‌ها (CDC) می‌گوید شیوع سیکلوسپورا مرتبط با کاهوی آیسبرگ پایان یافته است",
+      "summary_fa": "تحقیقات سازمان غذا و داروی آمریکا (FDA) در مورد عملیات کشت و فرآوری مزارع تیلور در مکزیک ادامه دارد",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -4298,10 +4298,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
+      "title_fa": "کافه بزرگ یونانی با Deliverect و Thanx برای ساده‌سازی سفارش دیجیتال همکاری می‌کند",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -4737,10 +4737,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
+      "title_fa": "شیوع سیکلوسپورا به پایان خود نزدیک می‌شود",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -5267,10 +5267,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "از برنامه‌های وفاداری مشتریان بهره ببرید",
+      "summary_fa": "به هر طریقی، همه ما عضو برنامه‌های وفاداری مشتریان هستیم. رستوران‌ها، هتل‌ها، خطوط هوایی، سفرهای اشتراکی، فروشگاه‌های مواد غذایی، داروخانه‌ها و حتی پمپرز. اکثر رستوران‌های فست فود برنامه‌های وفاداری مشتریان ارائه می‌دهند و این روند در بین رستوران‌های کوچک رو به گسترش است. طبق تحقیقات صنعتی، استفاده از برنامه‌های وفاداری مشتریان رستوران بین سال ۲۰۱۹ دو برابر شده است…",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -6025,10 +6025,10 @@
       ],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "رستوران‌های زنجیره‌ای کارل جونیور استاندارد «پخت سفارشی» را برقرار کردند",
+      "summary_fa": "این رستوران زنجیره‌ای به برگر کینگ، مک‌دونالد و وندیز می‌پیوندد و برای افزایش تعداد شعبه‌ها و فروش، کیفیت غذا را بهبود می‌بخشد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -6683,10 +6683,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "نهادهای نظارتی کالیفرنیا، آتش را شعله‌ورتر می‌کنند",
+      "summary_fa": "خلاصه کلام: وزارت حفاظت مالی و نوآوری ایالت، در یک بیانیه مطبوعاتی کم‌سابقه، جریمه‌های صادر شده برای رستوران زنجیره‌ای باربیکیو دیکیز را اعلام کرد و قول نظارت سختگیرانه‌تر را داد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -7761,10 +7761,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "رستوران چیکن سالاد چیک به ایالت بیست و هفتم نقل مکان می‌کند",
+      "summary_fa": "این واحد که این ماه افتتاح می‌شود، اولین واحد از ۲۵ واحدی است که تحت بزرگترین قرارداد توسعه فرانشیز این برند تا به امروز افتتاح می‌شود.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -7839,10 +7839,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "پس از یک دهه توسعه، آشپزخانه بی‌سیم Ki به همراه ظروف پخت‌وپز هوشمند در راه است",
+      "summary_fa": "تقریباً یک دهه پیش، یک سازمان استاندارد که بیشتر به خاطر توسعه فناوری شارژ تلفن بدون کابل شناخته می‌شود، یک گزارش کوتاه منتشر کرد که در آن برنامه‌های خود برای استفاده از شارژ بی‌سیم را شرح می‌داد […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -9022,10 +9022,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "تل-ترو از ابتکاری برای کمک به تقویت برنامه‌های ایمنی مواد غذایی رونمایی می‌کند",
+      "summary_fa": "کمپین «هر درجه اهمیت دارد» بر خطاهای کوچک اندازه‌گیری دما تمرکز دارد که می‌توانند پیامدهای قابل توجهی برای ایمنی مواد غذایی، کیفیت محصول، رعایت مقررات و عملکرد تجاری داشته باشند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -9502,7 +9502,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 68,
       "title_fa": "",
       "summary_fa": "",
       "translation": {
@@ -12830,10 +12830,10 @@
       ],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
+      "title_fa": "صاحب امتیاز رستوران تاکو بل، هوش مصنوعی اسکار را برای عملیات رستوران به کار می‌گیرد.",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -20798,10 +20798,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "آغاز سفر کد دوبعدی برای تقویت ایمنی مواد غذایی",
+      "summary_fa": "همزمان با نزدیک شدن تولیدکنندگان مواد غذایی به نقطه عطفی در کاربرد، تأیید و به اشتراک گذاری داده‌های محصول، یک نقشه راه عملی می‌تواند از اجرای سریع‌تر، نتایج انطباق قوی‌تر و بهره‌وری عملیاتی قابل اندازه‌گیری پشتیبانی کند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -22464,10 +22464,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "با سرو بیش از ۱۰۰ میلیون وعده غذایی، شرکت Chef Robotics امیدوار است به داستان موفقیت تعریف‌کننده‌ی دسته‌بندی رباتیک غذایی تبدیل شود",
+      "summary_fa": "وقتی ۸ سال پیش برای اولین بار با راجات باگریا آشنا شدم، او بی‌سروصدا به من اطلاع داد که او نیز در حال ساخت یک شرکت رباتیک غذایی است. و برای نیم دهه‌ی آینده، این […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -22621,10 +22621,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "با توجه به اینکه MAHA و GLP-1 در پشت سر او قرار دارند، اوبلی به دنبال ساخت «سیستم‌های شیرین‌کننده» نسل بعدی است",
+      "summary_fa": "در سال ۲۰۲۳، زمانی که اوبلی شروع به تولید خط تولید چای‌های شیرین و شکلات‌های خود کرد تا به خاطر شیرین‌کننده تخمیر دقیق خود توجه‌ها را به خود جلب کند، در نقطه تلاقی پروتئین و […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -22662,10 +22662,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "با ورود فناوری مواد غذایی به عصر هوش مصنوعی، Afresh پلتفرم خود را در سراسر فروشگاه گسترش می‌دهد",
+      "summary_fa": "هفته گذشته، استارتاپ هوش مصنوعی مواد غذایی Afresh اعلام کرد که فراتر از تمرکز اولیه خود بر روی قفسه‌های مواد غذایی تازه، به مدیریت موجودی، سفارش و پر کردن مجدد در کل فروشگاه می‌پردازد. […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -22743,10 +22743,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "براوا، سازنده فر هوشمند «با نور آشپزی کنید»، تعطیل می‌شود",
+      "summary_fa": "یکی دیگر از شرکت‌های تولیدکننده فر هوشمند در حال خداحافظی است. براوا، تولیدکننده فرهای رومیزی که با نور آشپزی می‌کنند، امروز اعلام کرد که تعطیل خواهد شد. در پستی که در فیسبوک خود به اشتراک گذاشته […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -23087,10 +23087,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "چگونه یادگیری در مورد شیر والابی، دکتر نورا خلدی را به ایجاد یک پلتفرم کشف مواد تشکیل دهنده مبتنی بر هوش مصنوعی سوق داد",
+      "summary_fa": "وقتی The Spoon برای اولین بار در سال 2021 در مورد Nuritas نوشت، این استارتاپ متولد دوبلین به تازگی 45 میلیون دلار برای توسعه پلتفرم کشف پپتید خود جمع‌آوری کرده بود. در آن زمان، این شرکت در موقعیتی قرار داشت […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -23624,10 +23624,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت Gambit Robotics امیدوار است عصر جدیدی از آشپزی هدایت‌شده بدون ربات‌ها را آغاز کند (هنوز)",
+      "summary_fa": "با رونمایی از CES در اوایل این ماه، ممکن است فکر کنید که یک دستیار آشپزخانه جدید از یک استارتاپ به نام Gambit Robotics چیزی شبیه به ده‌ها ربات انسان‌نما باشد که در […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -23936,10 +23936,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "ما با Nectar در مورد برنامه‌هایشان برای ساخت یک هوش مصنوعی برای تشخیص بهتر پروتئین‌های جایگزین صحبت کردیم",
+      "summary_fa": "چند هفته پیش، پلتفرم سرمایه‌گذاری بشردوستانه Food System Innovations اعلام کرد که 2 میلیون دلار کمک مالی از صندوق زمین بزوس دریافت کرده است. گروه غیرانتفاعی FSI، NECTAR، در حال ساخت […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -23976,10 +23976,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "الیوت هوروویتز، بنیانگذار MongoDB، در مورد ساخت وردپرس برای رباتیک (و اینکه چرا او نسبت به ربات‌های انسان‌نما در آشپزخانه بدبین است)",
+      "summary_fa": "تقریباً دو دهه پیش، الیوت هوروویتز با چند بنیانگذار دیگر شرکتی را راه‌اندازی کرد که در روزهای اولیه کلان‌داده نقشی محوری داشت و به ایجاد داده‌های مقیاس‌پذیرتر کمک کرد […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -24213,10 +24213,10 @@
       ],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "DoorDash ربات تحویل و یک پلتفرم هماهنگ‌سازی تحویل مبتنی بر هوش مصنوعی را عرضه می‌کند",
+      "summary_fa": "یک ربات تحویل جدید در شهر وجود دارد و نام آن Dot است. DoorDash امروز ربات تحویل جدید را معرفی کرد و ماه‌ها شایعات مبنی بر اینکه آنها به صورت مستقل کار می‌کنند را تأیید کرد […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -24402,10 +24402,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "موفق‌ترین استارتاپ ربات‌های غذایی ژاپن، ربات‌های انسان‌نما را به عنوان پدیده بزرگ بعدی در نظر دارد",
+      "summary_fa": "یکی از ویژگی‌های بارز ربات‌های غذایی موفق اولیه، تمرکز بوده است. چه ربات همبرگرپز Flippy باشد، چه پیشخدمت‌های رباتیک Bear در رستوران، یا ربات هسته‌گیر و فرآوری‌کننده آووکادو Autocado، […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -24597,10 +24597,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "یک به‌روزرسانی نرم‌افزاری برخی از فرهای دقیق آنووا را از کار انداخت. راه‌حل آنووا شامل فویل و نوار چسب است",
+      "summary_fa": "در 28 جولای، برخی از دارندگان فر دقیق آنووا با لوازم از کار افتاده مواجه شدند. طبق پست‌های منتشر شده در ردیت و یک گروه فیسبوک برای فر ترکیبی پیشرفته این شرکت، مشتریان […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -25642,10 +25642,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "یک هفته در رم: جلسات محرمانه، قهوه و تأملاتی در باب اخلاق هوش مصنوعی در سیستم غذایی ما",
+      "summary_fa": "هفته گذشته، من برای کارگاهی در مورد پیامدهای اخلاقی و اجتماعی هوش مصنوعی و اتوماسیون در سیستم غذایی ما، در رم و در واتیکان بودم. این کارگاه […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -25990,10 +25990,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "ClearCOGS نرم‌افزار پیش‌بینی مبتنی بر هوش مصنوعی خود را که به رستوران‌ها در کاهش ضایعات کمک می‌کند، ۳.۸ میلیون دلار جمع‌آوری کرد",
+      "summary_fa": "استارتاپ پیش‌بینی رستوران مبتنی بر هوش مصنوعی ClearCOGS در دور اولیه جذب سرمایه که بیش از حد تقاضا داشت، به رهبری Closed Loop Partners و با مشارکت Myriad Venture Partners و Hearst&#39;s Level Up Ventures، ۳.۸ میلیون دلار جمع‌آوری کرد. […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -28022,10 +28022,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "آیا سهام اکثریت ال‌جی در شرکت Bear Robotics نشانه‌ای از این است که Food Robotics به زودی به اوج خود خواهد رسید؟",
+      "summary_fa": "اواخر هفته گذشته، ال‌جی الکترونیکس اعلام کرد که سهام اکثریت Bear Robotics را خریداری کرده و مالکیت خود را در این استارتاپ مستقر در سانفرانسیسکو از ۲۱٪ به ۵۱٪ افزایش داده است. به گفته South […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -28063,10 +28063,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "با تمرکز روزافزون آمریکایی‌ها بر سلامت میکروبیوم، آیا فیبر نقش اصلی را در کنار پروتئین در رژیم‌های غذایی به دست خواهد آورد؟",
+      "summary_fa": "در CES هفته گذشته، The Spoon میزبان هیئتی از متخصصان بود تا در مورد نقش تغذیه شخصی‌سازی‌شده در پرداختن به چالش‌های مهم سلامت جهانی، از جمله چاقی، دیابت و بیماری‌های مزمن، بحث کنند. […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -28558,10 +28558,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "آنووا با عرضه‌ی فر دقیق آنووا ۲.۰، کمک شایانی به هوش مصنوعی می‌کند",
+      "summary_fa": "هفته‌ی گذشته، آنووا نسل دوم فر دقیق خود را، کمی بیش از چهار سال پس از شروع عرضه‌ی نسل اول فر دقیق، معرفی کرد. فر دقیق آنووا ۲.۰ […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -28909,10 +28909,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "استارت‌آپ تحویل ربات Starship با شرکت تحویل غذای اروپایی Bolt همکاری می‌کند",
+      "summary_fa": "تحویل رباتیک پیاده‌رو Starship Technologies این هفته اعلام کرد که با Bolt، یک شرکت تحویل چند پلتفرمی اروپایی، برای راه‌اندازی یک سرویس تحویل غذای جدید با استفاده از ربات‌های خودران Starship همکاری می‌کند […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -30090,10 +30090,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "VDC نرم‌افزار «لایه ارزش» Linked Eats را که عملیات رستوران‌های مجازی را بهینه می‌کند، عرضه می‌کند",
+      "summary_fa": "بر کسی پوشیده نیست که فضای رستوران‌های مجازی در چند سال گذشته با مشکلاتی مواجه بوده است. اپراتورهای قدیمی مانند Reef، Kitchen United و NextBite کارمندان خود را اخراج کرده‌اند، شعب خود را تعطیل کرده‌اند، […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -30285,10 +30285,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت Chef Robotics برای نمایش ربات و معرفی مشتریان اولیه از حالت مخفی خارج شد",
+      "summary_fa": "این هفته، Chef Robotics، استارتاپ رباتیک غذایی مستقر در سانفرانسیسکو که توسط راجات باگریا تأسیس شده است، با رونمایی از ربات خود و افشای برخی از […] از حالت مخفی خارج شد و در کانون توجه قرار گرفت.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -30366,12 +30366,11 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت ConverseNow، متخصص هوش مصنوعی صوتی مخصوص سفارش‌های درون‌برنامه‌ای، یعنی Valyant AI را خریداری کرد",
+      "summary_fa": "امروز، شرکت ConverseNow اعلام کرد که متخصص هوش مصنوعی محاوره‌ای مخصوص سفارش‌های درون‌برنامه‌ای، یعنی Valyant AI را خریداری کرده است. طبق اعلامیه مربوط به این معامله - که شرایط آن فاش نشده است - […]",
       "translation": {
-        "status": "failed",
-        "engine": "http-en-fa",
-        "error": "HTTP Error 429: Too Many Requests"
+        "status": "translated",
+        "engine": "http-en-fa"
       }
     },
     {
@@ -30875,12 +30874,11 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "پیتزای MOTO با Cibotica برای کاسه‌های سالاد همکاری می‌کند و به دنبال گسترش پیتزای منجمد برای خرده‌فروشی است",
+      "summary_fa": "این هفته، رستوران زنجیره‌ای MOTO Pizza که به سرعت در حال رشد است، اعلام کرد که به زودی با کمک Cibotica، یک استارتاپ متخصص در سالاد و […]، سالاد را به منوی رستوران‌های منتخب خود اضافه خواهد کرد.",
       "translation": {
-        "status": "failed",
-        "engine": "http-en-fa",
-        "error": "HTTP Error 429: Too Many Requests"
+        "status": "translated",
+        "engine": "http-en-fa"
       }
     },
     {
@@ -31146,12 +31144,11 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "اسپیدی ایتس (Speedy Eats) اولین شعبه فروشگاه رفاه بدون متصدی (بدون راننده) خود را برای راه‌اندازی در تابستان آماده می‌کند",
+      "summary_fa": "اسپیدی ایتس، سازنده دستگاه‌های فروش خودکار و فناوری خرده‌فروشی، تابستان امسال اولین شعبه خود را با یک مشتری راه‌اندازی خواهد کرد. این شرکت که مفهوم خرده‌فروشی بدون متصدی خود را […]",
       "translation": {
-        "status": "failed",
-        "engine": "http-en-fa",
-        "error": "HTTP Error 429: Too Many Requests"
+        "status": "translated",
+        "engine": "http-en-fa"
       }
     },
     {
@@ -31301,10 +31298,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت Waring and Planit Protein دستگاه تخمیر جدیدی را برای سرآشپزها جهت تولید پروتئین‌های گیاهی عرضه کرد",
+      "summary_fa": "این هفته در نمایشگاه ملی رستوران‌ها، شرکت Waring and Planit Protein، ارائه‌دهنده تجهیزات تجاری، از یک سیستم تخمیر تجاری جدید برای تولید پروتئین‌های گیاهی در آشپزخانه‌های تجاری رونمایی کرد. این سیستم جدید، […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -31419,10 +31416,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "پیش‌نمایش SKS 2024: کلیتون وود درباره وضعیت فعلی رباتیک غذایی صحبت می‌کند",
+      "summary_fa": "ما فقط یک ماه تا اجلاس آشپزخانه هوشمند فاصله داریم، بنابراین قرار است نظرات برخی از سخنرانان را بررسی و بشنویم. اولین نفر کلیتون وود است، که مدت‌هاست […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -31500,10 +31497,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 74,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "«آمازون برای پروتئین‌ها»: شیرو بازار مبتنی بر هوش مصنوعی برای پروتئین‌ها راه‌اندازی می‌کند",
+      "summary_fa": "شیرو، شرکتی که از هوش مصنوعی برای کشف پروتئین‌های جدید گیاهی استفاده می‌کند، بازار جدیدی را در ProteinDiscovery.ai معرفی کرده است که به هر کسی امکان جستجو، کشف، هدایت و خرید مولکول‌ها برای غذا، کشاورزی، […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -31544,8 +31541,9 @@
       "title_fa": "",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
-        "engine": "http-en-fa"
+        "status": "failed",
+        "engine": "http-en-fa",
+        "error": "HTTP Error 429: Too Many Requests"
       }
     },
     {
@@ -31738,8 +31736,9 @@
       "title_fa": "",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
-        "engine": "http-en-fa"
+        "status": "failed",
+        "engine": "http-en-fa",
+        "error": "HTTP Error 429: Too Many Requests"
       }
     },
     {
@@ -31814,12 +31813,11 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "گزارش: مشتریان رستوران‌ها در حالی که اهمیت کمتری به تحویل توسط شرکت‌های ثالث می‌دهند، اپلیکیشن‌ها و کیوسک‌های مخصوص رستوران را انتخاب می‌کنند",
+      "summary_fa": "گزارش جدیدی که توسط Tillster منتشر شده است نشان می‌دهد که مشتریان رستوران‌های فست فود به طور فزاینده‌ای استفاده از اپلیکیشن‌های مخصوص رستوران را به اپلیکیشن‌های تحویل توسط شرکت‌های ثالث ترجیح می‌دهند. این گزارش که نتایج […]",
       "translation": {
-        "status": "failed",
-        "engine": "http-en-fa",
-        "error": "HTTP Error 429: Too Many Requests"
+        "status": "translated",
+        "engine": "http-en-fa"
       }
     },
     {
@@ -32722,10 +32720,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "اعلام آزمایشگاه مشترک هوش مصنوعی غذا، همکاری جدید بین The Spoon و موسسه Future Food",
+      "summary_fa": "اگر قرار باشد یک چیز را هنگام برگزاری اولین اجلاس هوش مصنوعی غذا در اکتبر گذشته یاد بگیریم، آن چیز این است که تقریباً هر شرکت غذایی معتقد است که تجارت آنها اساساً […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -33275,8 +33273,9 @@
       "title_fa": "",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
-        "engine": "http-en-fa"
+        "status": "failed",
+        "engine": "http-en-fa",
+        "error": "HTTP Error 429: Too Many Requests"
       }
     },
     {
@@ -34513,8 +34512,9 @@
       "title_fa": "",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
-        "engine": "http-en-fa"
+        "status": "failed",
+        "engine": "http-en-fa",
+        "error": "HTTP Error 429: Too Many Requests"
       }
     },
     {
@@ -35435,10 +35435,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بن لونتال در مورد جمع‌آوری ۲۴ میلیون دلار برای پلتفرم وفاداری رستوران Web3، بلک‌برد، صحبت می‌کند",
+      "summary_fa": "این هفته، بلک‌برد، استارتاپی که در حال ساخت یک پلتفرم وفاداری رستوران مبتنی بر Web3 است، اعلام کرد که دور اول جذب سرمایه ۲۴ میلیون دلاری را به رهبری تیم کریپتوی a16z و با مشارکت […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -36146,10 +36146,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت Pairwise، متخصص CRISPR، همکاری خود را با شرکت Bayer برای تمرکز بر ذرت ویرایش ژنی شده تجدید می‌کند",
+      "summary_fa": "امروز، Pairwise پس از اعلام دستاوردهای حاصل از همکاری اولیه این دو شرکت، از همکاری پنج ساله جدید خود با غول کشاورزی Bayer خبر داد. به گفته این متخصص ویرایش ژن، همکاری اولیه – […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -36199,10 +36199,10 @@
       ],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "غول‌های تحویل غذا، DoorDash و Uber Eats، به جمع شتاب‌زده‌ی ادغام هوش مصنوعی در پلتفرم‌های سفارش‌دهی پیوستند",
+      "summary_fa": "در طول شش ماه گذشته، شاهد بوده‌ایم که ظاهراً هر رستوران زنجیره‌ای با خدمات سریع، سوار قطار حمل بار هوش مصنوعی شده و فناوری جدید هوش مصنوعی مولد را در برنامه‌ها، چت‌بات‌ها و سفارش صوتی ادغام می‌کند […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -37189,10 +37189,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "گوشت کشت‌شده در حال فروش است، اما گران است. یک مطالعه جدید نشان می‌دهد که چگونه می‌توان هزینه را کاهش داد",
+      "summary_fa": "اکنون که صنعت گوشت کشت‌شده به نقطه عطف مورد انتظار فروش به مصرف‌کنندگان در ایالات متحده دست یافته است، تمرکز به طور فزاینده‌ای به این سمت معطوف خواهد شد که آیا امکان […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -38302,10 +38302,10 @@
       ],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "مفاهیم رستوران رباتیک با مشکل مواجه شده‌اند. آیا کرنل این روند را پشت سر خواهد گذاشت؟",
+      "summary_fa": "ماه گذشته، نیویورک پست فاش کرد که استیو الس، بنیانگذار چیپوتل، در حال برنامه‌ریزی برای بازگشت به عرصه با یک مفهوم رستوران مبتنی بر اتوماسیون به نام کرنل است. به گفته این پست، کسی که […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -38540,10 +38540,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "کمپوست‌سازهای هوشمند به سمت خرده‌فروشی می‌روند، اما آیا مصرف‌کنندگان از آنها استقبال خواهند کرد؟",
+      "summary_fa": "اوایل این ماه، خریداران کاستکو در شهرهای منتخب در سراسر کالیفرنیا و ایالت واشنگتن ممکن است به طور اتفاقی با نسخه نمایشی محصولی به نام لومی مواجه شده باشند. این وسیله رومیزی سفید، تقریباً […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -39588,10 +39588,10 @@
       ],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "وندیز از FreshAI، یک هوش مصنوعی مولد برای سفارش‌های درون‌برنامه‌ای (Drive-Thrus) که توسط گوگل کلود پشتیبانی می‌شود، رونمایی کرد",
+      "summary_fa": "امروز وندیز اعلام کرد که با گوگل کلود همکاری می‌کند تا یک راهکار هوش مصنوعی مولد برای سفارش‌های درون‌برنامه‌ای به نام Wendy&#39;s Fresh AI توسعه دهد. این راهکار جدید که توسط گوگل کلود پشتیبانی می‌شود […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -41491,10 +41491,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت اومامی میتس با تریپل‌بار برای تسریع توسعه رده سلولی برای ماهی‌های پرورشی همکاری می‌کند",
+      "summary_fa": "تریپل‌بار، یک شرکت بیوتکنولوژی، و اومامی میتس، یک شرکت غذاهای دریایی پرورشی، نامه‌ای مبنی بر همکاری در توسعه رده‌های سلولی برای غذاهای دریایی پرورشی پایدار امضا کرده‌اند که با […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },

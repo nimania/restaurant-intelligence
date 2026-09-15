@@ -1,8 +1,8 @@
 {
   "schema_version": "0.4",
-  "generated_at": "2026-09-15T12:51:05Z",
+  "generated_at": "2026-09-15T12:54:51Z",
   "articles_24h": 49,
-  "articles_previous_6d": 178,
+  "articles_previous_6d": 177,
   "trending_topics": [
     {
       "id": "loyalty",
@@ -54,6 +54,13 @@
       "acceleration": 2.25
     },
     {
+      "id": "franchising",
+      "label_fa": "فرنچایز",
+      "count_24h": 3,
+      "previous_daily_avg": 1.5,
+      "acceleration": 2.0
+    },
+    {
       "id": "retail_food",
       "label_fa": "خرده‌فروشی غذا",
       "count_24h": 2,
@@ -66,13 +73,6 @@
       "count_24h": 18,
       "previous_daily_avg": 9.17,
       "acceleration": 1.96
-    },
-    {
-      "id": "restaurant_technology_ai",
-      "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 16,
-      "previous_daily_avg": 8.33,
-      "acceleration": 1.92
     }
   ],
   "trending_brands": [],
