@@ -23,7 +23,10 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 45
+    env:
+      ARGOS_DEVICE_TYPE: cpu
+      ARGOS_PACKAGES_DIR: /home/runner/.local/share/argos-translate/packages
 
     steps:
       - name: Checkout repository
@@ -38,13 +41,21 @@ jobs:
           cache: pip
           cache-dependency-path: food-intel/requirements.txt
 
+      - name: Cache Persian translation model
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.local/share/argos-translate
+            ~/.local/cache/argos-translate
+          key: argos-en-fa-1.5-${{ runner.os }}
+
       - name: Install dependencies
         run: pip install -r food-intel/requirements.txt
 
       - name: Run unit tests
         run: python -m unittest discover -s food-intel/tests -p "test_*.py"
 
-      - name: Collect, classify, score and build signals
+      - name: Collect, classify, translate, score and build signals
         run: python food-intel/src/collect.py
 
       - name: Commit dataset changes
@@ -57,5 +68,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add food-intel/data/news.json food-intel/data/signals.json
-          git commit -m "data(food-intel): refresh news and signals"
+          git commit -m "data(food-intel): refresh Persian news and signals"
           git push
