@@ -8,6 +8,7 @@ from dataclasses import dataclass
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
+from fa_editor import editorial_meta, editorialize_report, editorialize_summary, editorialize_title
 from fa_polish import polish_persian, prepare_for_translation
 
 PERSIAN_RE = re.compile(r"[\u0600-\u06FF]")
@@ -63,12 +64,11 @@ class TranslationStats:
 
 
 class PersianTranslator:
-    """Lightweight HTTP English→Persian translator with terminology cleanup.
+    """Lightweight HTTP English→Persian translator with editorial cleanup.
 
-    Successful translations are persisted in news.json and reused. Translation is a
-    best-effort enrichment: network/rate-limit problems never block news collection.
-    A restaurant-industry glossary and brand-name normalization are applied before
-    and after translation so mixed Persian/English output stays readable.
+    Translation stays best-effort and is cached in news.json. A domain glossary runs
+    before/after translation, followed by a conservative Persian newsroom copy-edit
+    that improves sentence structure without changing factual content.
     """
 
     def __init__(self, timeout: int = 4, pause: float = 0.08) -> None:
@@ -79,7 +79,7 @@ class PersianTranslator:
         request = Request(
             url,
             headers={
-                "User-Agent": "FoodIndustryIntelligence/1.1 (+https://github.com/nimania/restaurant-intelligence)",
+                "User-Agent": "FoodIndustryIntelligence/1.2 (+https://github.com/nimania/restaurant-intelligence)",
                 "Accept": "application/json,text/plain,*/*",
             },
         )
@@ -147,16 +147,17 @@ class PersianTranslator:
                 translated = self.translate(combined, 1550)
                 if SPLIT_MARKER in translated:
                     title_fa, body_fa = translated.split(SPLIT_MARKER, 1)
-                    title_fa = compact(polish_persian(title_fa), 420).strip()
-                    body_fa = compact_words(polish_persian(body_fa), 190).strip()
+                    title_fa = editorialize_title(compact(polish_persian(title_fa), 420))
+                    body_raw = compact_words(polish_persian(body_fa), 190)
+                    body_fa = editorialize_report(body_raw)
                     if title_fa and looks_persian(title_fa) and body_fa:
-                        summary_fa = compact_words(body_fa, 85)
+                        summary_fa = compact_words(editorialize_summary(body_raw, 3), 85)
                         return title_fa, summary_fa, body_fa
             except Exception:
                 pass
 
         if not summary:
-            title_fa = self.translate(title, 240)
+            title_fa = editorialize_title(self.translate(title, 240))
             return title_fa, "", ""
 
         combined = f"{title}\n\n{SPLIT_MARKER}\n\n{summary}"
@@ -164,16 +165,18 @@ class PersianTranslator:
             translated = self.translate(combined, 820)
             if SPLIT_MARKER in translated:
                 title_fa, summary_fa = translated.split(SPLIT_MARKER, 1)
-                title_fa = compact(polish_persian(title_fa), 420).strip()
-                summary_fa = compact_words(polish_persian(summary_fa), 85).strip()
+                title_fa = editorialize_title(compact(polish_persian(title_fa), 420))
+                summary_raw = compact_words(polish_persian(summary_fa), 85)
+                summary_fa = editorialize_summary(summary_raw, 3)
                 if title_fa and looks_persian(title_fa):
-                    return title_fa, summary_fa, summary_fa
+                    return title_fa, summary_fa, editorialize_report(summary_raw)
         except Exception:
             pass
 
-        title_fa = self.translate(title, 240)
-        summary_fa = compact_words(self.translate(summary, 520), 85)
-        return polish_persian(title_fa), polish_persian(summary_fa), polish_persian(summary_fa)
+        title_fa = editorialize_title(self.translate(title, 240))
+        summary_raw = compact_words(self.translate(summary, 520), 85)
+        summary_fa = editorialize_summary(summary_raw, 3)
+        return title_fa, summary_fa, editorialize_report(summary_raw)
 
 
 def _translation_limit() -> int:
@@ -207,6 +210,7 @@ def apply_persian_translation(
             item["report_fa"] = compact_words(polish_persian(summary), 150)
             item["report_coverage"] = "خلاصه منبع"
             item["translation"] = _meta("original-fa", None)
+            item["editorial"] = editorial_meta("source-fa-normalized")
             stats.persian_original += 1
             continue
 
@@ -216,26 +220,33 @@ def apply_persian_translation(
             and previous.get("title_fa")
         )
         if same_source_text and previous.get("report_fa"):
-            # Existing translations are cleaned immediately, even before a future
-            # retranslation, so the archive benefits from the new typography/glossary.
-            item["title_fa"] = polish_persian(previous.get("title_fa", ""))
-            item["summary_fa"] = polish_persian(previous.get("summary_fa", ""))
-            item["report_fa"] = polish_persian(previous.get("report_fa", previous.get("summary_fa", "")))
+            # Re-edit cached translations on every run so the archive receives the
+            # latest editorial rules without requiring another network translation.
+            item["title_fa"] = editorialize_title(previous.get("title_fa", ""))
+            item["summary_fa"] = editorialize_summary(previous.get("summary_fa", ""), 3)
+            item["report_fa"] = editorialize_report(
+                previous.get("report_fa", previous.get("summary_fa", ""))
+            )
             item["report_coverage"] = previous.get("report_coverage") or coverage_label(source_chars)
-            item["translation"] = _meta("translated", (previous.get("translation") or {}).get("engine") or "http-en-fa")
+            item["translation"] = _meta(
+                "translated",
+                (previous.get("translation") or {}).get("engine") or "http-en-fa",
+            )
+            item["editorial"] = editorial_meta("edited-cache")
             stats.reused += 1
             continue
 
         if same_source_text:
-            item["title_fa"] = polish_persian(previous.get("title_fa", ""))
-            item["summary_fa"] = polish_persian(previous.get("summary_fa", ""))
-            item["report_fa"] = polish_persian(previous.get("report_fa", ""))
+            item["title_fa"] = editorialize_title(previous.get("title_fa", ""))
+            item["summary_fa"] = editorialize_summary(previous.get("summary_fa", ""), 3)
+            item["report_fa"] = editorialize_report(previous.get("report_fa", ""))
         else:
             item["title_fa"] = ""
             item["summary_fa"] = ""
             item["report_fa"] = ""
         item["report_coverage"] = coverage_label(source_chars)
         item["translation"] = _meta("queued", "http-en-fa")
+        item["editorial"] = editorial_meta("pending")
         pending.append(item)
 
     pending.sort(
@@ -256,11 +267,12 @@ def apply_persian_translation(
                 item.get("summary", ""),
                 item.get("_report_source", ""),
             )
-            item["title_fa"] = polish_persian(title_fa or item.get("title_fa", ""))
-            item["summary_fa"] = polish_persian(summary_fa or item.get("summary_fa", ""))
-            item["report_fa"] = polish_persian(report_fa or item.get("summary_fa", ""))
+            item["title_fa"] = editorialize_title(title_fa or item.get("title_fa", ""))
+            item["summary_fa"] = editorialize_summary(summary_fa or item.get("summary_fa", ""), 3)
+            item["report_fa"] = editorialize_report(report_fa or item.get("summary_fa", ""))
             item["report_coverage"] = coverage_label(item.get("source_detail_chars"))
             item["translation"] = _meta("translated", "http-en-fa")
+            item["editorial"] = editorial_meta("edited")
             stats.translated += 1
             consecutive_failures = 0
         except Exception as exc:
@@ -268,6 +280,7 @@ def apply_persian_translation(
                 **_meta("failed", "http-en-fa"),
                 "error": str(exc)[:160],
             }
+            item["editorial"] = editorial_meta("pending")
             stats.failed += 1
             consecutive_failures += 1
 
