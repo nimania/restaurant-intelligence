@@ -12,6 +12,7 @@ on:
       - "data/**"
       - "food-intel/index.html"
       - "food-intel/iran.html"
+      - "food-intel/story.html"
       - "food-intel/data/**"
       - ".github/workflows/pages.yml"
 
@@ -36,13 +37,13 @@ jobs:
 
       - name: Prepare static site
         run: |
-          mkdir -p _site/food-intel/data
+          mkdir -p _site/food-intel
           cp index.html styles.css app.js properties.html _site/
           cp -r data _site/data
           cp food-intel/index.html _site/food-intel/index.html
           cp food-intel/iran.html _site/food-intel/iran.html
-          cp food-intel/data/news.json _site/food-intel/data/news.json
-          cp food-intel/data/signals.json _site/food-intel/data/signals.json
+          cp food-intel/story.html _site/food-intel/story.html
+          cp -r food-intel/data _site/food-intel/data
           touch _site/.nojekyll
 
       - name: Configure Pages
