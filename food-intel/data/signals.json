@@ -1,37 +1,9 @@
 {
   "schema_version": "0.4",
-  "generated_at": "2026-09-15T12:54:51Z",
-  "articles_24h": 49,
-  "articles_previous_6d": 177,
+  "generated_at": "2026-09-15T13:36:58Z",
+  "articles_24h": 43,
+  "articles_previous_6d": 184,
   "trending_topics": [
-    {
-      "id": "loyalty",
-      "label_fa": "وفاداری مشتری",
-      "count_24h": 2,
-      "previous_daily_avg": 0.5,
-      "acceleration": 4.0
-    },
-    {
-      "id": "consumer_behavior",
-      "label_fa": "رفتار مصرف‌کننده",
-      "count_24h": 8,
-      "previous_daily_avg": 2.33,
-      "acceleration": 3.43
-    },
-    {
-      "id": "beverage",
-      "label_fa": "نوشیدنی",
-      "count_24h": 9,
-      "previous_daily_avg": 2.83,
-      "acceleration": 3.18
-    },
-    {
-      "id": "food_industry",
-      "label_fa": "صنعت غذا",
-      "count_24h": 8,
-      "previous_daily_avg": 2.67,
-      "acceleration": 3.0
-    },
     {
       "id": "labor_management",
       "label_fa": "نیروی انسانی و مدیریت",
@@ -40,10 +12,17 @@
       "acceleration": 3.0
     },
     {
-      "id": "POS",
-      "label_fa": "سیستم فروش",
-      "count_24h": 15,
-      "previous_daily_avg": 6.67,
+      "id": "food_industry",
+      "label_fa": "صنعت غذا",
+      "count_24h": 8,
+      "previous_daily_avg": 2.83,
+      "acceleration": 2.82
+    },
+    {
+      "id": "consumer_behavior",
+      "label_fa": "رفتار مصرف‌کننده",
+      "count_24h": 6,
+      "previous_daily_avg": 2.67,
       "acceleration": 2.25
     },
     {
@@ -54,11 +33,11 @@
       "acceleration": 2.25
     },
     {
-      "id": "franchising",
-      "label_fa": "فرنچایز",
-      "count_24h": 3,
-      "previous_daily_avg": 1.5,
-      "acceleration": 2.0
+      "id": "beverage",
+      "label_fa": "نوشیدنی",
+      "count_24h": 7,
+      "previous_daily_avg": 3.17,
+      "acceleration": 2.21
     },
     {
       "id": "retail_food",
@@ -68,13 +47,34 @@
       "acceleration": 2.0
     },
     {
+      "id": "POS",
+      "label_fa": "سیستم فروش",
+      "count_24h": 13,
+      "previous_daily_avg": 7.0,
+      "acceleration": 1.86
+    },
+    {
       "id": "AI",
       "label_fa": "هوش مصنوعی",
-      "count_24h": 18,
-      "previous_daily_avg": 9.17,
-      "acceleration": 1.96
+      "count_24h": 17,
+      "previous_daily_avg": 9.5,
+      "acceleration": 1.79
+    },
+    {
+      "id": "menu_product_innovation",
+      "label_fa": "نوآوری منو و محصول",
+      "count_24h": 5,
+      "previous_daily_avg": 3.0,
+      "acceleration": 1.67
+    },
+    {
+      "id": "food_safety",
+      "label_fa": "ایمنی غذا",
+      "count_24h": 5,
+      "previous_daily_avg": 3.0,
+      "acceleration": 1.67
     }
   ],
   "trending_brands": [],
-  "radar_fa": "موضوع‌های رو به رشد: وفاداری مشتری، رفتار مصرف‌کننده، نوشیدنی."
+  "radar_fa": "موضوع‌های رو به رشد: نیروی انسانی و مدیریت، صنعت غذا، رفتار مصرف‌کننده."
 }
