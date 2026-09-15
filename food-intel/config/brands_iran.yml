@@ -1,0 +1,176 @@
+brands:
+  - id: kalleh
+    name: Kalleh
+    fa: کاله
+    market: iran
+    aliases: ["کاله", "kalleh", "سولیکو کاله"]
+  - id: solico
+    name: Solico Group
+    fa: گروه سولیکو
+    market: iran
+    aliases: ["سولیکو", "solico"]
+  - id: mihan_dairy
+    name: Mihan
+    fa: میهن
+    market: iran
+    aliases: ["لبنیات میهن", "بستنی میهن", "صنایع غذایی میهن", "mihan dairy"]
+  - id: pegah
+    name: Pegah
+    fa: پگاه
+    market: iran
+    aliases: ["لبنیات پگاه", "صنایع شیر ایران", "پگاه", "pegah dairy"]
+  - id: pak_dairy
+    name: Pak Dairy
+    fa: لبنیات پاک
+    market: iran
+    aliases: ["لبنیات پاک", "شرکت لبنیات پاک", "pak dairy"]
+  - id: ramak
+    name: Ramak
+    fa: رامک
+    market: iran
+    aliases: ["رامک", "ramak"]
+  - id: sabah_dairy
+    name: Sabah Dairy
+    fa: صباح
+    market: iran
+    aliases: ["لبنیات صباح", "صباح", "sabah dairy"]
+  - id: domino_dairy
+    name: Domino Dairy
+    fa: لبنیات دومینو
+    market: iran
+    aliases: ["لبنیات دومینو", "domino dairy"]
+  - id: zarr_group
+    name: Zarr Group
+    fa: گروه صنعتی زر
+    market: iran
+    aliases: ["گروه صنعتی زر", "زر ماکارون", "زرکام", "zarr group", "zar macaroni"]
+  - id: tak_macaron
+    name: Tak Macaron
+    fa: تک ماکارون
+    market: iran
+    aliases: ["تک ماکارون", "tak macaron"]
+  - id: minoo_group
+    name: Minoo Group
+    fa: گروه صنعتی مینو
+    market: iran
+    aliases: ["گروه صنعتی مینو", "شرکت مینو", "صنایع غذایی مینو", "minoo group"]
+  - id: shirin_asal
+    name: Shirin Asal
+    fa: شیرین عسل
+    market: iran
+    aliases: ["شیرین عسل", "shirin asal"]
+  - id: shoniz
+    name: Shoniz
+    fa: شونیز
+    market: iran
+    aliases: ["شونیز", "shoniz"]
+  - id: farmand
+    name: Farmand
+    fa: فرمند
+    market: iran
+    aliases: ["شکلات فرمند", "فرمند", "farmand"]
+  - id: behrouz
+    name: Behrouz
+    fa: بهروز
+    market: iran
+    aliases: ["صنایع غذایی بهروز", "محصولات بهروز", "behrouz food"]
+  - id: delpazir
+    name: Delpazir
+    fa: دلپذیر
+    market: iran
+    aliases: ["دلپذیر", "delpazir"]
+  - id: mahram
+    name: Mahram
+    fa: مهرام
+    market: iran
+    aliases: ["صنایع غذایی مهرام", "مهرام", "mahram"]
+  - id: one_and_one
+    name: 1&1
+    fa: یک و یک
+    market: iran
+    aliases: ["یک و یک", "1&1 food", "یک‌ویک"]
+  - id: oila
+    name: Oila
+    fa: اویلا
+    market: iran
+    aliases: ["روغن اویلا", "اویلا", "oila"]
+  - id: ghoncheh
+    name: Ghoncheh
+    fa: غنچه
+    market: iran
+    aliases: ["روغن غنچه", "غنچه", "ghoncheh"]
+  - id: sunich
+    name: Sunich
+    fa: سن‌ایچ
+    market: iran
+    aliases: ["سن ایچ", "سن‌ایچ", "sunich"]
+  - id: alis
+    name: Alis
+    fa: عالیس
+    market: iran
+    aliases: ["عالیس", "alis beverage"]
+  - id: behnoush
+    name: Behnoush
+    fa: بهنوش
+    market: iran
+    aliases: ["بهنوش", "شرکت بهنوش", "behnoush"]
+  - id: zamzam
+    name: Zamzam
+    fa: زمزم
+    market: iran
+    aliases: ["نوشابه زمزم", "زمزم ایران", "zamzam iran"]
+  - id: cheetoz
+    name: Cheetoz
+    fa: چی‌توز
+    market: iran
+    aliases: ["چی توز", "چی‌توز", "cheetoz"]
+  - id: mazmaz
+    name: MazMaz
+    fa: مزمز
+    market: iran
+    aliases: ["مزمز", "mazmaz"]
+  - id: nan_sahar
+    name: Nan Sahar
+    fa: نان سحر
+    market: iran
+    aliases: ["نان سحر", "گروه صنعتی نان سحر", "nan sahar"]
+  - id: snappfood
+    name: Snappfood
+    fa: اسنپ‌فود
+    market: iran
+    aliases: ["اسنپ فود", "اسنپ‌فود", "snappfood", "snapp food"]
+  - id: tapsi_food
+    name: Tapsi Food
+    fa: تپسی‌فود
+    market: iran
+    aliases: ["تپسی فود", "تپسی‌فود", "tapsi food"]
+  - id: atawich
+    name: Atawich
+    fa: عطاویچ
+    market: iran
+    aliases: ["عطاویچ", "atawich"]
+  - id: sheila
+    name: Sheila
+    fa: شیلا
+    market: iran
+    aliases: ["فست فود شیلا", "فست‌فود شیلا", "رستوران شیلا", "sheila fast food"]
+  - id: haida
+    name: Haida
+    fa: هایدا
+    market: iran
+    aliases: ["ساندویچ هایدا", "فست فود هایدا", "فست‌فود هایدا", "haida fast food"]
+  - id: akbar_joojeh
+    name: Akbar Joojeh
+    fa: اکبرجوجه
+    market: iran
+    aliases: ["اکبرجوجه", "اکبر جوجه", "akbar joojeh"]
+  - id: ofogh_kourosh
+    name: Ofogh Kourosh
+    fa: افق کوروش
+    market: iran
+    aliases: ["افق کوروش", "ofogh kourosh"]
+  - id: hyperstar_iran
+    name: Hyperstar Iran
+    fa: هایپراستار
+    market: iran
+    aliases: ["هایپراستار", "هایپر استار", "hyperstar iran"]
