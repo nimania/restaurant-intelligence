@@ -6,7 +6,10 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-BRANDS_PATH = ROOT / "config" / "brands.yml"
+BRAND_PATHS = [
+    ROOT / "config" / "brands.yml",
+    ROOT / "config" / "brands_iran.yml",
+]
 
 CATEGORY_FA = {
     "qsr_fast_food": "فست‌فود و QSR",
@@ -23,6 +26,8 @@ CATEGORY_FA = {
     "delivery_drive_thru": "دلیوری و درایو‌ثرو",
     "consumer_behavior": "رفتار مصرف‌کننده",
     "marketing_branding": "بازاریابی و برندینگ",
+    "restaurant_design_decor": "طراحی و دکور رستوران/کافه",
+    "packaging_design": "بسته‌بندی و طراحی بسته‌بندی",
     "beverage": "نوشیدنی",
     "food_manufacturing": "تولید صنایع غذایی",
     "ingredients_rd": "مواد اولیه و تحقیق‌وتوسعه",
@@ -54,12 +59,24 @@ TOPIC_FA = {
     "KDS": "نمایشگر آشپزخانه",
     "consumer behavior": "رفتار مصرف‌کننده",
     "sustainability": "پایداری",
+    "packaging": "بسته‌بندی",
+    "branding": "برندینگ",
+    "restaurant design": "طراحی رستوران و کافه",
 }
 
 
 def load_brands() -> list[dict]:
-    payload = yaml.safe_load(BRANDS_PATH.read_text(encoding="utf-8")) or {}
-    return payload.get("brands", [])
+    brands = []
+    seen = set()
+    for path in BRAND_PATHS:
+        if not path.exists():
+            continue
+        payload = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        for brand in payload.get("brands", []):
+            if brand.get("id") and brand["id"] not in seen:
+                brands.append(brand)
+                seen.add(brand["id"])
+    return brands
 
 
 def _normalized(text: str) -> str:
@@ -69,6 +86,9 @@ def _normalized(text: str) -> str:
         .replace("‘", "'")
         .replace("–", "-")
         .replace("—", "-")
+        .replace("\u200c", " ")
+        .replace("ي", "ی")
+        .replace("ك", "ک")
     )
 
 
@@ -86,9 +106,12 @@ def detect_brands(title: str, summary: str, catalog: list[dict] | None = None) -
     matches = []
     for brand in catalog or load_brands():
         if any(_contains_alias(haystack, alias) for alias in brand.get("aliases", [])):
-            matches.append({
+            match = {
                 "id": brand["id"],
                 "name": brand["name"],
                 "fa": brand.get("fa", brand["name"]),
-            })
+            }
+            if brand.get("market"):
+                match["market"] = brand["market"]
+            matches.append(match)
     return matches
