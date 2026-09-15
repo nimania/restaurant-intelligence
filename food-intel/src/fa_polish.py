@@ -60,9 +60,15 @@ TERM_GLOSSARY = [
     ("voice ordering", "سفارش‌گیری صوتی"),
 ]
 
+EXTRA_BRAND_TERMS = [
+    ("Dunkin Donuts", "دانکین"),
+    ("Pepsi", "پپسی"),
+    ("Coke", "کوکاکولا"),
+]
+
 COMMON_FIXES = [
-    (r"فروش (?:در )?همان فروشگاه(?:‌ها|ها)?", "فروش شعب هم‌مقایسه"),
-    (r"فروش فروشگاه(?:‌های|های) یکسان", "فروش شعب هم‌مقایسه"),
+    (r"فروش (?:در )?همان فروشگاه(?:\s|‌)*(?:ها)?", "فروش شعب هم‌مقایسه"),
+    (r"فروش فروشگاه(?:\s|‌)*(?:های) یکسان", "فروش شعب هم‌مقایسه"),
     (r"ترافیک (?:مهمان|مشتری|مشتریان)", "تعداد مراجعه مشتریان"),
     (r"چک متوسط", "میانگین مبلغ فاکتور"),
     (r"درایو\s*(?:از طریق|ترو|ثرو)", "درایو‌ثرو"),
@@ -97,7 +103,6 @@ def brand_replacements() -> list[tuple[str, str]]:
 
 
 def _replace_ascii_phrase(text: str, source: str, target: str) -> str:
-    # ASCII-aware boundaries avoid matching fragments inside larger English words.
     pattern = rf"(?<![A-Za-z0-9]){re.escape(source)}(?![A-Za-z0-9])"
     return re.sub(pattern, target, text, flags=re.IGNORECASE)
 
@@ -105,6 +110,8 @@ def _replace_ascii_phrase(text: str, source: str, target: str) -> str:
 def prepare_for_translation(text: str) -> str:
     value = str(text or "")
     for source, target in sorted(TERM_GLOSSARY, key=lambda x: len(x[0]), reverse=True):
+        value = _replace_ascii_phrase(value, source, target)
+    for source, target in EXTRA_BRAND_TERMS:
         value = _replace_ascii_phrase(value, source, target)
     for source, target in brand_replacements():
         value = _replace_ascii_phrase(value, source, target)
@@ -130,6 +137,8 @@ def normalize_persian(text: str) -> str:
 
 def polish_persian(text: str) -> str:
     value = normalize_persian(text)
+    for source, target in EXTRA_BRAND_TERMS:
+        value = _replace_ascii_phrase(value, source, target)
     for source, target in brand_replacements():
         value = _replace_ascii_phrase(value, source, target)
     for source, target in sorted(TERM_GLOSSARY, key=lambda x: len(x[0]), reverse=True):
@@ -137,8 +146,5 @@ def polish_persian(text: str) -> str:
     for pattern, replacement in COMMON_FIXES:
         value = re.sub(pattern, replacement, value, flags=re.IGNORECASE)
 
-    # Collapse duplicates produced when a translator renders both a brand name and its
-    # transliteration, e.g. «استارباکس (استارباکس)».
     value = re.sub(r"\b([^()،؛]{2,35})\s*\(\s*\1\s*\)", r"\1", value, flags=re.IGNORECASE)
-    value = normalize_persian(value)
-    return value
+    return normalize_persian(value)
