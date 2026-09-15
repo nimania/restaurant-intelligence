@@ -50,8 +50,11 @@ jobs:
       - name: Collect, classify, translate, score and build signals
         run: python food-intel/src/collect.py
 
-      - name: Discover Iranian brand mentions
+      - name: Discover Iranian brand mentions via Google News
         run: python food-intel/src/brand_watch.py
+
+      - name: Discover Iranian brand mentions via Bing News
+        run: python food-intel/src/brand_watch_bing.py
 
       - name: Monitor official Iranian brand channels
         run: python food-intel/src/official_brand_watch.py
