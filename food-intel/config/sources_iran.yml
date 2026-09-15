@@ -1,0 +1,237 @@
+sources:
+  # Specialist Iranian industry sources. These are high-signal and do not need keyword gating.
+  - id: iranpack
+    name: ایران‌پک — صنعت بسته‌بندی
+    type: rss
+    feed_url: https://iranpack.ir/feed/
+    homepage: https://iranpack.ir/
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: specialist_publication
+    default_categories: [packaging_design]
+    priority: 1
+    coverage: [packaging, packaging_design, machinery, printing, materials, food_packaging]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: ifoods_mag
+    name: مجله آی‌فودز
+    type: rss
+    feed_url: https://mag.ifoods.ir/feed/
+    homepage: https://mag.ifoods.ir/
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: specialist_publication
+    default_categories: [food_industry]
+    priority: 1
+    coverage: [food_industry, restaurant, industrial_kitchen, equipment, packaging, ingredients]
+    verified_at: 2026-09-15
+    enabled: true
+
+  # Technology media: only food/restaurant/platform stories are retained.
+  - id: digiato_tech_iran_food
+    name: دیجیاتو — فناوری مرتبط با غذا
+    type: rss
+    feed_url: https://digiato.com/topic/tech/feed
+    homepage: https://digiato.com/
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: technology_publication
+    default_categories: [restaurant_technology_ai]
+    priority: 2
+    coverage: [food_delivery, restaurant_technology, platforms, ai, automation]
+    include_keywords:
+      - اسنپ‌فود
+      - اسنپ فود
+      - تپسی‌فود
+      - تپسی فود
+      - سفارش غذا
+      - سفارش آنلاین غذا
+      - رستوران
+      - کافه
+      - فودتک
+      - فناوری غذا
+      - صنایع غذایی
+      - منوی دیجیتال
+      - آشپزخانه هوشمند
+    verified_at: 2026-09-15
+    enabled: true
+
+  # Broad Iranian news feeds are intentionally keyword-gated to prevent unrelated news pollution.
+  - id: isna_iran_food
+    name: ایسنا — رصد صنعت غذا
+    type: rss
+    feed_url: https://www.isna.ir/rss
+    homepage: https://www.isna.ir/
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: general_news_filtered
+    default_categories: []
+    priority: 2
+    coverage: [food_brands, agriculture, manufacturing, retail, restaurants, regulation]
+    include_keywords: &iran_food_keywords
+      - صنایع غذایی
+      - صنعت غذا
+      - مواد غذایی
+      - برند غذایی
+      - کارخانه غذایی
+      - تولید مواد غذایی
+      - لبنیات
+      - نوشیدنی
+      - شیرینی و شکلات
+      - روغن خوراکی
+      - ماکارونی
+      - زنجیره تامین غذا
+      - زنجیره تأمین غذا
+      - بسته بندی
+      - بسته‌بندی
+      - ماشین آلات صنایع غذایی
+      - ماشین‌آلات صنایع غذایی
+      - تجهیزات آشپزخانه
+      - آشپزخانه صنعتی
+      - رستوران
+      - فست فود
+      - فست‌فود
+      - کافی شاپ
+      - کافی‌شاپ
+      - کافه
+      - کترینگ
+      - اسنپ فود
+      - اسنپ‌فود
+      - سفارش آنلاین غذا
+      - فناوری غذا
+      - فودتک
+      - ایمنی غذا
+      - سازمان غذا و دارو
+      - برندینگ
+      - برندسازی
+      - هویت بصری
+      - دکوراسیون رستوران
+      - طراحی رستوران
+      - طراحی کافه
+      - چاپ و بسته بندی
+      - چاپ و بسته‌بندی
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: mehr_iran_food
+    name: مهر — رصد صنعت غذا
+    type: rss
+    feed_url: https://www.mehrnews.com/rss
+    homepage: https://www.mehrnews.com/
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: general_news_filtered
+    default_categories: []
+    priority: 2
+    coverage: [food_brands, manufacturing, agriculture, retail, regulation]
+    include_keywords: *iran_food_keywords
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: tasnim_economy_iran_food
+    name: تسنیم اقتصادی — رصد صنعت غذا
+    type: rss
+    feed_url: https://www.tasnimnews.ir/fa/rss/feeds/7/0/0/0
+    homepage: https://www.tasnimnews.com/fa/service/7/اقتصادی
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: general_news_filtered
+    default_categories: []
+    priority: 2
+    coverage: [food_manufacturing, agriculture, trade, pricing, companies, retail]
+    include_keywords: *iran_food_keywords
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: yjc_iran_food
+    name: باشگاه خبرنگاران — رصد صنعت غذا
+    type: rss
+    feed_url: https://www.yjc.ir/fa/rss/allnews
+    homepage: https://www.yjc.ir/
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: general_news_filtered
+    default_categories: []
+    priority: 3
+    coverage: [food_market, brands, agriculture, restaurants, consumer]
+    include_keywords: *iran_food_keywords
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: tabnak_iran_food
+    name: تابناک — رصد صنعت غذا
+    type: rss
+    feed_url: https://www.tabnak.ir/fa/rss/allnews
+    homepage: https://www.tabnak.ir/
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: general_news_filtered
+    default_categories: []
+    priority: 3
+    coverage: [food_market, companies, regulation, consumer]
+    include_keywords: *iran_food_keywords
+    verified_at: 2026-09-15
+    enabled: true
+
+  # High-value sources discovered during research but not activated until a stable HTTPS feed/adapter is confirmed.
+  - id: foodna_iran
+    name: فودنا
+    type: discovery
+    homepage: http://foodna.ir/
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: specialist_publication
+    default_categories: [food_industry]
+    priority: 1
+    coverage: [food_industry, food_brands, machinery, packaging, distribution]
+    enabled: false
+    note: Legacy sectional RSS endpoints exist, including machinery and packaging, but currently use/advertise legacy HTTP endpoints. Keep discovery-only until a stable HTTPS path or adapter is verified.
+
+  - id: foodpress_iran
+    name: فودپرس / اقتصاد غذا
+    type: discovery
+    homepage: https://foodpress.ir/
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: specialist_publication
+    default_categories: [food_industry]
+    priority: 1
+    coverage: [food_brands, agriculture, pricing, manufacturing, trade]
+    enabled: false
+    note: Active specialist newsroom and public Telegram channel confirmed; add when a stable machine-readable feed or dedicated adapter is implemented.
+
+  - id: iranco_magazine
+    name: مجله صنایع غذایی ایرانکو
+    type: discovery
+    homepage: https://iranco.com/magazine
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: specialist_publication
+    default_categories: [food_industry]
+    priority: 2
+    coverage: [brands, factories, fmcg, exports, market_reports, standards]
+    enabled: false
+    note: Strong brand/factory/FMCG coverage; no stable RSS endpoint confirmed yet.
