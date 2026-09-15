@@ -50,6 +50,8 @@ class TranslationTests(unittest.TestCase):
                 **item,
                 "title_fa": "فناوری رستوران به سرعت در حال تغییر است",
                 "summary_fa": "یک خلاصه کوتاه.",
+                "report_fa": "گزارش فارسی ذخیره‌شده درباره تغییر فناوری رستوران.",
+                "report_coverage": "متوسط",
                 "translation": {"status": "translated", "engine": "http-en-fa"},
             }
         }
@@ -57,6 +59,7 @@ class TranslationTests(unittest.TestCase):
             stats = apply_persian_translation([item], previous)
         self.assertEqual(stats.reused, 1)
         self.assertEqual(item["title_fa"], "فناوری رستوران به سرعت در حال تغییر است")
+        self.assertIn("گزارش فارسی", item["report_fa"])
 
     def test_translation_limit_queues_remaining_items(self):
         items = [
@@ -64,6 +67,8 @@ class TranslationTests(unittest.TestCase):
                 "id": f"a{i}",
                 "title": f"Restaurant news {i}",
                 "summary": "Summary",
+                "_report_source": "Longer source detail",
+                "source_detail_chars": 700,
                 "language": "en",
                 "relevance_score": 100 - i,
                 "published_at": f"2026-09-15T0{i}:00:00Z",
@@ -73,13 +78,14 @@ class TranslationTests(unittest.TestCase):
         with patch.dict(os.environ, {"FOOD_INTEL_TRANSLATION_LIMIT": "1"}), patch.object(
             PersianTranslator,
             "translate_article",
-            return_value=("خبر فارسی", "خلاصه فارسی"),
+            return_value=("خبر فارسی", "خلاصه فارسی", "گزارش فارسی جامع‌تر"),
         ):
             stats = apply_persian_translation(items, {})
         self.assertEqual(stats.translated, 1)
         self.assertEqual(stats.queued, 2)
         self.assertEqual(sum(1 for x in items if x.get("title_fa")), 1)
         self.assertEqual(sum(1 for x in items if x.get("translation", {}).get("status") == "queued"), 2)
+        self.assertEqual(items[0]["report_coverage"], "متوسط")
 
     def test_persian_original_never_calls_translator(self):
         item = {
@@ -94,6 +100,7 @@ class TranslationTests(unittest.TestCase):
             stats = apply_persian_translation([item], {})
         self.assertEqual(stats.persian_original, 1)
         self.assertEqual(item["title_fa"], item["title"])
+        self.assertEqual(item["report_fa"], item["summary"])
 
 
 if __name__ == "__main__":
