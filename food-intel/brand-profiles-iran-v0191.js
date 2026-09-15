@@ -1,0 +1,19 @@
+(()=>{
+  const P=FI.brandProfiles||{};
+  P.mihan_dairy={...(P.mihan_dairy||{}),website:'https://www.mihan-food.com/',instagram:'https://www.instagram.com/mihanfood/',telegram:'https://t.me/MihanFoods'};
+  P.pegah={website:'https://www.pegah.ir/',instagram:'https://www.instagram.com/Pegah_dairy/',linkedin:'https://www.linkedin.com/company/iran-dairy-industries-company-idic-pegah/',telegram:'https://t.me/pegah_dairy'};
+  P.ramak={website:'https://ramakdairy.com/',instagram:'https://www.instagram.com/ramakdairy/',linkedin:'https://www.linkedin.com/company/ramak-dairy-%26-ice-cream/',telegram:'https://t.me/ramak_dairy',aparat:'https://www.aparat.com/ramakdairy'};
+  P.pak_dairy={website:'https://pakdairy.com/',linkedin:'https://www.linkedin.com/company/pak-dairy-co/'};
+  P.sabah_dairy={website:'https://www.sabahdairy.ir/',linkedin:'https://www.linkedin.com/company/sabah-dairy1/'};
+  P.domino_dairy={website:'http://www.dominodairy.com/',linkedin:'https://www.linkedin.com/company/dominodairyco/'};
+  P.zarr_group={website:'https://www.zarmacaron.com/',instagram:'https://www.instagram.com/zarmacaron/',linkedin:'https://www.linkedin.com/company/zargroup/',telegram:'https://t.me/zarmacaron'};
+  P.tak_macaron={website:'https://takmakaron.com/',instagram:'https://www.instagram.com/tak_makaron/',linkedin:'https://www.linkedin.com/company/tak-makaron/'};
+  P.shirin_asal={website:'https://shirin-asal.com/',instagram:'https://www.instagram.com/shirinasalgroup/',linkedin:'https://www.linkedin.com/company/shirinasalgroup/'};
+  P.farmand={website:'https://www.farmand.ir/',instagram:'https://www.instagram.com/farmand.ir/',linkedin:'https://www.linkedin.com/company/farmand-food/',telegram:'https://t.me/farmand_ir'};
+  P.alis={...(P.alis||{}),website:'https://www.alis.ir/',instagram:'https://www.instagram.com/alisdrinks/',linkedin:'https://www.linkedin.com/company/alisdrinks/',telegram:'https://t.me/alisdrinks'};
+  P.behnoush={website:'https://behnoushiran.com/',linkedin:'https://www.linkedin.com/company/behnoushiran/'};
+  P.nan_sahar={website:'https://sahargroup.ir/',instagram:'https://www.instagram.com/sahar.bakery.official/',telegram:'https://t.me/saharbreadco'};
+  P.ofogh_kourosh={website:'https://okcs.com/',instagram:'https://www.instagram.com/okcs.ir/',telegram:'https://t.me/okclub',aparat:'https://www.aparat.com/okclub'};
+  P.hyperstar_iran={website:'https://hyperstariran.com/',instagram:'https://www.instagram.com/hyperstar_ir/',linkedin:'https://www.linkedin.com/company/hyperstar/',telegram:'https://t.me/hyperstarofficial'};
+  FI.brandProfiles=P;
+})();
