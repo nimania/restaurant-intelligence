@@ -1,0 +1,114 @@
+brands:
+  # Restaurant/QSR and coffee
+  - id: mcdonalds
+    terms: ["McDonald's", "McDonalds"]
+    context: ["restaurant", "franchise", "menu", "stores", "sales", "digital", "drive-thru", "CEO"]
+  - id: starbucks
+    terms: ["Starbucks"]
+    context: ["coffee", "stores", "menu", "sales", "CEO", "mobile order", "labor"]
+  - id: kfc
+    terms: ["KFC", "Kentucky Fried Chicken"]
+    context: ["restaurant", "franchise", "menu", "stores", "sales", "Yum"]
+  - id: taco_bell
+    terms: ["Taco Bell"]
+    context: ["restaurant", "franchise", "menu", "stores", "sales", "Yum"]
+  - id: pizza_hut
+    terms: ["Pizza Hut"]
+    context: ["restaurant", "franchise", "menu", "stores", "sales", "Yum"]
+  - id: burger_king
+    terms: ["Burger King"]
+    context: ["restaurant", "franchise", "menu", "stores", "sales", "RBI"]
+  - id: wendys
+    terms: ["Wendy's", "Wendys"]
+    context: ["restaurant", "franchise", "menu", "stores", "sales", "drive-thru"]
+  - id: dominos
+    terms: ["Domino's Pizza", "Dominos Pizza"]
+    context: ["restaurant", "franchise", "menu", "stores", "delivery", "sales"]
+  - id: chipotle
+    terms: ["Chipotle Mexican Grill", "Chipotle"]
+    context: ["restaurant", "stores", "menu", "sales", "digital", "labor"]
+  - id: cava
+    terms: ["CAVA Group", "CAVA restaurant"]
+    context: ["restaurant", "stores", "menu", "sales", "earnings"]
+  - id: sweetgreen
+    terms: ["Sweetgreen"]
+    context: ["restaurant", "stores", "menu", "sales", "automation", "Infinite Kitchen"]
+  - id: chickfila
+    terms: ["Chick-fil-A", "Chick fil A"]
+    context: ["restaurant", "stores", "menu", "franchise", "drive-thru"]
+  - id: popeyes
+    terms: ["Popeyes"]
+    context: ["restaurant", "stores", "menu", "franchise", "RBI"]
+  - id: dunkin
+    terms: ["Dunkin'", "Dunkin"]
+    context: ["coffee", "restaurant", "stores", "menu", "franchise"]
+  - id: shake_shack
+    terms: ["Shake Shack"]
+    context: ["restaurant", "stores", "menu", "sales", "earnings"]
+  - id: wingstop
+    terms: ["Wingstop"]
+    context: ["restaurant", "stores", "menu", "franchise", "sales"]
+
+  # Delivery, restaurant technology and distribution
+  - id: doordash
+    terms: ["DoorDash"]
+    context: ["delivery", "restaurant", "merchant", "orders", "DashMart", "earnings"]
+  - id: uber_eats
+    terms: ["Uber Eats"]
+    context: ["delivery", "restaurant", "orders", "merchant", "Uber"]
+  - id: grubhub
+    terms: ["Grubhub"]
+    context: ["delivery", "restaurant", "orders", "merchant"]
+  - id: toast
+    terms: ["Toast Inc", "Toast restaurant technology", "Toast POS"]
+    context: ["restaurant", "POS", "payments", "technology", "platform", "earnings"]
+  - id: olo
+    terms: ["Olo Inc", "Olo restaurant technology"]
+    context: ["restaurant", "ordering", "payments", "technology", "platform"]
+  - id: par_technology
+    terms: ["PAR Technology", "PAR POS"]
+    context: ["restaurant", "POS", "technology", "ordering", "loyalty"]
+  - id: sysco
+    terms: ["Sysco Corporation", "Sysco foodservice"]
+    context: ["foodservice", "restaurants", "distribution", "sales", "earnings"]
+  - id: us_foods
+    terms: ["US Foods Holding", "US Foods foodservice"]
+    context: ["foodservice", "restaurants", "distribution", "sales", "earnings"]
+  - id: rational
+    terms: ["RATIONAL AG", "RATIONAL cooking systems"]
+    context: ["foodservice", "kitchen", "oven", "cooking", "equipment"]
+  - id: unox
+    terms: ["UNOX ovens", "UNOX foodservice"]
+    context: ["foodservice", "kitchen", "oven", "cooking", "equipment"]
+
+  # Global food and beverage manufacturers
+  - id: nestle
+    terms: ["Nestlé", "Nestle"]
+    context: ["food", "beverage", "product", "factory", "sales", "earnings", "brand"]
+  - id: pepsico
+    terms: ["PepsiCo"]
+    context: ["food", "beverage", "snacks", "product", "sales", "earnings"]
+  - id: coca_cola
+    terms: ["The Coca-Cola Company", "Coca-Cola"]
+    context: ["beverage", "product", "sales", "earnings", "brand"]
+  - id: mars
+    terms: ["Mars Incorporated", "Mars Inc"]
+    context: ["food", "snacks", "petcare", "product", "brand", "acquisition"]
+  - id: mondelez
+    terms: ["Mondelēz International", "Mondelez International"]
+    context: ["snacks", "food", "product", "sales", "earnings", "brand"]
+  - id: kraft_heinz
+    terms: ["Kraft Heinz"]
+    context: ["food", "product", "sales", "earnings", "brand"]
+  - id: tyson_foods
+    terms: ["Tyson Foods"]
+    context: ["food", "chicken", "beef", "plant", "sales", "earnings"]
+  - id: general_mills
+    terms: ["General Mills"]
+    context: ["food", "product", "sales", "earnings", "brand"]
+
+settings:
+  provider: bing_news_rss
+  lookback_days: 14
+  priority: 2
+  max_brands_per_run: 34
