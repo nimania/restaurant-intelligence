@@ -1,14 +1,14 @@
 {
   "schema_version": "0.6",
-  "generated_at": "2026-09-15T12:47:52Z",
+  "generated_at": "2026-09-15T12:51:05Z",
   "count": 1052,
   "iran_count": 26,
   "active_sources": 31,
   "active_iran_sources": 13,
   "entries_processed_this_run": 1113,
   "translation_stats": {
-    "translated": 49,
-    "reused": 47,
+    "translated": 48,
+    "reused": 96,
     "persian_original": 26,
     "failed": 4
   },
@@ -1737,10 +1737,10 @@
       ],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "کرافت هاینز پس از کاهش فروش، به دنبال «اصلاح» اسکار مایر است",
+      "summary_fa": "مدیرعامل این شرکت گفت که مشکل قابلیت بسته‌بندی مجدد در بسته‌بندی محصول، «بخش عمده‌ای از مشکل» را ایجاد کرده است.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -2111,10 +2111,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
+      "title_fa": "وایت کسل پس از صرفه‌جویی ۵.۱ میلیون دلاری اعضا، فصل سوم جوایز Craver Nation را آغاز کرد.",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -2197,10 +2197,10 @@
       ],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
+      "title_fa": "تاکو بل و کوین هارت برای اولین دوره مسابقات گلف Live Más Open لباس‌هایشان را به تن می‌کنند.",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -2234,10 +2234,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
+      "title_fa": "لانگ جان سیلور روز «مثل دزدان دریایی حرف بزن» را جشن می‌گیرد",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -2693,10 +2693,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "منوی پاییزی بلاگرین، کدو تنبل خوش طعم و بدون گلوتن را در بشقاب قرار می‌دهد",
+      "summary_fa": "منوی فصلی پاییزی در تمام شعب دالاس، هوستون و سن آنتونیو، همزمان با روز آگاهی از سلیاک، راه‌اندازی می‌شود. این پست با عنوان «منوی پاییزی بلاگرین، کدو تنبل خوش طعم و بدون گلوتن را در بشقاب قرار می‌دهد» برای اولین بار در RestaurantNews.com منتشر شد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -2816,10 +2816,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "موسسه ملی شیلات به انجمن ملی غذاهای دریایی تبدیل می‌شود",
+      "summary_fa": "این اعلامیه همزمان با اجلاس رهبری انجمن ملی غذاهای دریایی در واشنگتن دی سی است، جایی که اعضایی از سراسر زنجیره تامین غذاهای دریایی برای کمک به شکل دادن به آینده این صنعت گرد هم می‌آیند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -3279,10 +3279,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "ما باید به سیاست عدم تحمل لیستریا پایبند باشیم",
+      "summary_fa": "– نظر –",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -3554,10 +3554,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "گزیده‌هایی از اخبار رستوران‌ها: کلوپ‌های شام ساکرامنتو، افزایش قیمت رستوران‌ها، ایالتی با بیشترین تعطیلی رستوران‌ها و موارد دیگر!",
+      "summary_fa": "بعلاوه، در «آخرین اخبار رستوران‌ها» درباره فرهنگ رستوران و خودکشی، سیستم قرعه‌کشی رزرو، عدم حضور در رستوران، منوهای کودکان و صفحات فعالیت و موارد دیگر بیشتر بدانید. این پست «اخبار رستوران‌ها: کلوپ‌های شام ساکرامنتو، افزایش قیمت رستوران‌ها، ایالتی با بیشترین تعطیلی رستوران‌ها و موارد دیگر!» اولین بار در RestaurantNews.com منتشر شد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -3597,10 +3597,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "CAULIPOWER از خمیر پیتزای سرشار از پروتئین رونمایی می‌کند",
+      "summary_fa": "این نوآوری که برای اولین بار در نوع خود انجام می‌شود، پروتئین ماست یونانی را با خواص سبزیجات گل کلم ترکیب می‌کند تا خمیری ترد و محکم ایجاد کند که از طعم آن کم نمی‌کند - و گزینه جدید و خوشمزه‌ای را برای مصرف‌کنندگانی که به دنبال پروتئین بیشتر در غذاهای مورد علاقه خود هستند، ارائه می‌دهد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -3907,10 +3907,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "کالیفرنیا به دلیل ارتباط تخم مرغ‌های Happy Hens با شیوع سالمونلا، هشدار عمومی صادر کرد",
+      "summary_fa": "وزارت بهداشت کالیفرنیا در مورد تخم مرغ‌های برند Happy Hens هشداری صادر کرده است زیرا شیوع سالمونلا به آنها نسبت داده شده است. این وزارتخانه با وزارت غذا و کشاورزی کالیفرنیا و سازمان غذا و داروی ایالات متحده برای بررسی شیوع سالمونلا انتریتیدیس همکاری می‌کند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -4064,10 +4064,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت آیداهو جوانه‌های مرتبط با شیوع سالمونلا را فراخوان می‌کند",
+      "summary_fa": "شرکت Evergreen Fresh Sprouts LLC واقع در مویی اسپرینگز، آیداهو، در حال فراخوان ۲۱۵ مورد جوانه کلم بروکلی است، زیرا آنها با شیوع عفونت‌های سالمونلا مرتبط بوده‌اند. این جوانه‌ها بین ۲۴ آگوست و ۲ سپتامبر به سه توزیع‌کننده در واشنگتن تحویل داده شده‌اند. ممکن است آنها بیشتر توزیع و فروخته شده باشند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -6066,10 +6066,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "سریع‌ترین رشد برندهای مواد غذایی و آشامیدنی در سال ۲۰۲۶",
+      "summary_fa": "طبق گزارش مورنینگ کانسالت، تنها ۱۴ درصد از برندها شاهد رشد قصد خرید در بین مصرف‌کنندگان بوده‌اند و بازیگران قدیمی بیشترین افزایش را تجربه کرده‌اند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -8577,10 +8577,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "چگونه رستوران کارل جونیور منوی خود را بهبود می‌بخشد",
+      "summary_fa": "نگاهی عمیق‌تر: ایونا آلتر، رئیس برند این رستوران زنجیره‌ای برگر، به پادکست مالی رستوران می‌پیوندد تا در مورد برگرهای جدید سفارشی خود صحبت کند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -10623,10 +10623,10 @@
       ],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "دیدگاه‌های دومینو در مورد رستوران‌های زنجیره‌ای فست فود",
+      "summary_fa": "هفته‌ای در رستوران‌ها: قسمت این هفته از پادکست هفتگی بحث اخبار رستوران‌ها، به آیتم جدید منوی دومینو، ورود والمارت به عرصه تحویل غذا در رستوران و به‌روزرسانی سون برو می‌پردازد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -12571,10 +12571,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "درون کشمکش سازمان غذا و داروی آمریکا (FDA) برای تعریف غذاهای فوق فرآوری شده",
+      "summary_fa": "ناهار کاری: پادکست سیاسی این هفته تعریف جدید پیشنهادی UPFها را بررسی می‌کند؛ به‌علاوه، اینکه چگونه توافق ۱۸ میلیارد دلاری متا می‌تواند روزی بر بازاریابی رستوران‌ها تأثیر بگذارد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -14427,10 +14427,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت روغن زیتون LMSI LLC/Kofinas به دلیل استفاده از روغن ضروری سیر که برای مصارف آشپزی تأیید نشده است، فراخوان داوطلبانه روغن زیتون فوق بکر با طعم سیر مدیترانه‌ای خود را صادر کرد.",
+      "summary_fa": "سینسیناتی، اوهایو (۲۹ آگوست ۲۰۲۶) - شرکت LMSI LLC/ روغن زیتون کوفینا (Kofinas Olive Oil) به دلیل استفاده از روغن ضروری سیر که برای مصارف آشپزی تأیید نشده است، فراخوان داوطلبانه روغن زیتون فوق بکر سیر مدیترانه‌ای خود را صادر می‌کند. این روغن طعم‌دار در بطری‌های شیشه‌ای در اندازه‌های ۵۰۰ میلی‌لیتری، ۲۵۰ میلی‌لیتری و ۱۰۰ میلی‌لیتری بسته‌بندی شده بود.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -16427,10 +16427,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت Revival Animal Health, LLC داوطلبانه جایگزین‌های شیر گربه را به دلیل سطح متناقض ویتامین‌ها و مواد معدنی کمیاب جمع‌آوری می‌کند",
+      "summary_fa": "شرکت Revival Animal Health در شهر اورنج، آیووا، به دلیل سطح پایین پتاسیم، مس، اسید فولیک، کولین و/یا پیریدوکسین (ویتامین B6)، جایگزین‌های شیر گربه Breeder&#39;s Edge® و Shelter&#39;s Choice® را جمع‌آوری می‌کند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -16785,10 +16785,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "تورم، نیروی کار و هوش مصنوعی: ۵ نکته‌ای که گردانندگان فست کژوال باید بدانند",
+      "summary_fa": "آخرین نظرسنجی صنعتی Toast نشان می‌دهد که چرا گردانندگان رستوران‌ها علیرغم افزایش هزینه‌ها و چالش‌های استخدام، هنوز روی رشد حساب می‌کنند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -22703,10 +22703,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "همین امروز به ما در یک آزمایشگاه مشترک هوش مصنوعی غذا با دیوید لابورد از فائو بپیوندید",
+      "summary_fa": "ما زمان زیادی را صرف صحبت و نوشتن در مورد چگونگی تغییر غذا توسط هوش مصنوعی می‌کنیم، اما اغلب لنزها توسط شرکت‌های سازنده و محصولات در اقتصادهای بزرگ شکل می‌گیرند […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -23430,10 +23430,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بررسی شیوع E. coli O103: جوانه‌های شبدر (فوریه 2020)",
+      "summary_fa": "سازمان غذا و داروی آمریکا (FDA) به همراه CDC و شرکای ایالتی و محلی، در حال بررسی شیوع 14 بیماری ناشی از E. coli O103 در آیووا، ایلینوی، میسوری، تگزاس و یوتا هستند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -24557,10 +24557,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "مطمئناً، هوش مصنوعی ممکن است به بشریت پایان دهد، اما ابتدا می‌تواند به تازه‌تر نگه داشتن غذای شما کمک کند",
+      "summary_fa": "اگر از استیو استاتلر بپرسید، زنجیره‌های تأمین فعلی ما اساساً معادل یک موتور احتراق داخلی قدیمی (در بهترین حالت) و در بدترین حالت چیزی شبیه به یک کالسکه اسبی هستند. «ما […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -24679,12 +24679,11 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "با رشد تحویل ربات‌ها، ساختمان‌ها ممکن است «پورت‌های USB» داشته باشند تا تحویل بدون وقفه را امکان‌پذیر کنند",
+      "summary_fa": "با اخبار این هفته مبنی بر همکاری پیتزا فروشی Little Caesars با Serve برای تحویل پیتزا، واضح است که تحویل رباتیک، چه در پیاده‌روها، چه در زیر زمین یا در هوا، سریع است […]",
       "translation": {
-        "status": "failed",
-        "engine": "http-en-fa",
-        "error": "HTTP Error 429: Too Many Requests"
+        "status": "translated",
+        "engine": "http-en-fa"
       }
     },
     {
@@ -24803,12 +24802,11 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "آیا پاشا وارث رباتیک ترمومیکس است؟ بنیانگذاران مطمئناً امیدوارند",
+      "summary_fa": "در پنج سال گذشته، ایمیل‌ها به طور مداوم، تقریباً هر ماه، به صندوق ورودی من رسیده‌اند. آنها شامل به‌روزرسانی‌هایی در مورد یک استارتاپ کوچک در حال ساخت […] بوده‌اند.",
       "translation": {
-        "status": "failed",
-        "engine": "http-en-fa",
-        "error": "HTTP Error 429: Too Many Requests"
+        "status": "translated",
+        "engine": "http-en-fa"
       }
     },
     {
@@ -25563,12 +25561,11 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "گزارش: بودجه فناوری رستوران در سال ۲۰۲۴ به ۱.۳ میلیارد دلار کاهش می‌یابد، اما هوش مصنوعی و اتوماسیون کورسوی امیدی را فراهم می‌کنند",
+      "summary_fa": "پس از رونق چند ساله ناشی از ظهور اپلیکیشن‌های تحویل غذا و تحول دیجیتال گسترده‌تر صنعت رستوران، طبق […]",
       "translation": {
-        "status": "failed",
-        "engine": "http-en-fa",
-        "error": "HTTP Error 429: Too Many Requests"
+        "status": "translated",
+        "engine": "http-en-fa"
       }
     },
     {
@@ -26187,12 +26184,11 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "استارتاپ رباتیک مونتاژ غذا Chef Robotics با رسیدن به نقطه عطف ۴۰ میلیون وعده غذایی، ۴۳ میلیون دلار در سری A جذب سرمایه کرد",
+      "summary_fa": "Chef Robotics امروز اعلام کرد که در دور سری A، ۴۳.۱ میلیون دلار برای تسریع استقرار ربات‌های مونتاژ غذای مجهز به هوش مصنوعی خود جمع‌آوری کرده است. این بودجه، شرکت مستقر در سانفرانسیسکو […]",
       "translation": {
-        "status": "failed",
-        "engine": "http-en-fa",
-        "error": "HTTP Error 429: Too Many Requests"
+        "status": "translated",
+        "engine": "http-en-fa"
       }
     },
     {
@@ -26423,10 +26419,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بررسی شیوع لیستریا مونوسیتوژنز – پنیرهای تازه و نرم به سبک اسپانیایی (فوریه 2021)",
+      "summary_fa": "سازمان غذا و داروی آمریکا (FDA) به همراه CDC و شرکای ایالتی و محلی، در حال بررسی شیوع چند ایالتی عفونت‌های لیستریا مونوسیتوژنز هستند که به طور بالقوه با پنیرهای تازه و نرم به سبک اسپانیایی مرتبط است.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -26461,10 +26457,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بررسی بیماری‌های حاد هپاتیت غیر ویروسی – آب قلیایی با برند «آب واقعی» (مارس 2021)",
+      "summary_fa": "سازمان غذا و داروی آمریکا (FDA) به همراه CDC و منطقه بهداشتی جنوب نوادا در حال بررسی تعدادی از گزارش‌های هپاتیت حاد غیر ویروسی در ایالت نوادا هستند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -26499,10 +26495,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بررسی شیوع سالمونلا تیفی موریوم: سبزیجات سالاد بسته‌بندی شده BrightFarms (ژوئیه 2021)",
+      "summary_fa": "سازمان غذا و داروی آمریکا (FDA) در حال بررسی شیوع چند ایالتی عفونت‌های سالمونلا تیفی موریوم مرتبط با مصرف سبزیجات سالاد بسته‌بندی شده BrightFarms است.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -26537,10 +26533,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بررسی شیوع سالمونلا تامپسون: غذاهای دریایی (اکتبر 2021)",
+      "summary_fa": "سازمان غذا و داروی آمریکا (FDA)، به همراه CDC و شرکای ایالتی و محلی، شیوع چند ایالتی عفونت‌های سالمونلا تامپسون مرتبط با غذاهای دریایی تولید یا فرآوری شده توسط شرکت Northeast Seafood Products, Inc. در دنور، کلرادو را بررسی کردند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -26654,10 +26650,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بررسی شیوع لیستریا مونوسیتوژنز: سالاد بسته‌بندی شده Dole (دسامبر 2021)",
+      "summary_fa": "سازمان غذا و داروی آمریکا (FDA) به همراه CDC و شرکای ایالتی و محلی، شیوع چند ایالتی عفونت‌های لیستریا مونوسیتوژنز را که به طور بالقوه با سبزیجات برگ‌دار بسته‌بندی شده Dole مرتبط بود، بررسی کردند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -26692,10 +26688,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بررسی شیوع لیستریا مونوسیتوژنز: قارچ‌های انوکی (نوامبر 2022)",
+      "summary_fa": "سازمان غذا و داروی آمریکا (FDA) به همراه CDC و شرکای ایالتی و محلی، در حال بررسی شیوع عفونت‌های لیستریا مونوسیتوژنز مرتبط با قارچ‌های انوکی هستند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -26809,10 +26805,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بررسی شیوع لیستریا مونوسیتوژنز: محصولات پنیر نرم بری و کاممبر (سپتامبر 2022)",
+      "summary_fa": "سازمان غذا و داروی آمریکا (FDA) به همراه CDC و شرکای ایالتی و محلی، در حال بررسی شیوع چند ایالتی عفونت‌های لیستریا مونوسیتوژنز مرتبط با محصولات پنیر نرم بری و کاممبر تولید شده توسط شرکت Old Europe Cheese, Inc. در بنتون هاربر، میشیگان هستند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -27909,10 +27905,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "گفتگو با جان ها از شرکت Bear Robotics در مورد معامله با ال‌جی و آینده این شرکت",
+      "summary_fa": "ها گفت: «اما داستان واقعاً مهم، خرید ۵۱ درصدی نیست. بلکه بیشتر در مورد خرید کسب‌وکار رباتیک آنهاست. در میان شرکت‌های بزرگ ال‌جی، ما کسانی هستیم که […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -29852,10 +29848,10 @@
       ],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بولتن هوش مصنوعی غذا: پیشرفت ربات گوگل و ربات هوش مصنوعی وندیز که به زبان اسپانیایی صحبت می‌کند و سفارش‌های درون‌برنامه‌ای می‌دهد",
+      "summary_fa": "در حالی که اواسط تابستان است و در حالی که بیشتر اروپا (و بخش قابل توجهی از نیروی کار آمریکا) مرخصی استحقاقی می‌گیرند، اخبار هوش مصنوعی ذره‌ای کاهش نیافته است. […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -30053,10 +30049,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 75,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بلک‌برد، بلک‌برد پی، یک شبکه پرداخت مبتنی بر بلاکچین را راه‌اندازی کرد",
+      "summary_fa": "امروز بلک‌برد، یک استارتاپ وفاداری رستوران که توسط بن لونتال، بنیانگذار سابق Resy and Eater، تأسیس شده است، از راه‌اندازی بلک‌برد پی، یک شبکه پرداخت رستوران جدید، خبر داد. این شبکه توسط […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -30373,8 +30369,9 @@
       "title_fa": "",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
-        "engine": "http-en-fa"
+        "status": "failed",
+        "engine": "http-en-fa",
+        "error": "HTTP Error 429: Too Many Requests"
       }
     },
     {
@@ -30492,10 +30489,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "خبر فوری: جدیدترین ایده کالانیک برای ایجاد تحول در صنعت غذا، ممکن است تحویل فله‌ای غذای رایگان و کیوسک‌های تحویل خودکار باشد",
+      "summary_fa": "وقتی تراویس کالانیک در کنفرانس «غذای درخواستی» در ماه مه گذشته حاضر شد، افراد آگاه در صنعت فناوری و رستوران به سختی می‌توانستند باور کنند. به هر حال، بنیانگذار اوبر […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -30881,8 +30878,9 @@
       "title_fa": "",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
-        "engine": "http-en-fa"
+        "status": "failed",
+        "engine": "http-en-fa",
+        "error": "HTTP Error 429: Too Many Requests"
       }
     },
     {
@@ -31151,8 +31149,9 @@
       "title_fa": "",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
-        "engine": "http-en-fa"
+        "status": "failed",
+        "engine": "http-en-fa",
+        "error": "HTTP Error 429: Too Many Requests"
       }
     },
     {
@@ -31818,8 +31817,9 @@
       "title_fa": "",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
-        "engine": "http-en-fa"
+        "status": "failed",
+        "engine": "http-en-fa",
+        "error": "HTTP Error 429: Too Many Requests"
       }
     },
     {
@@ -32556,10 +32556,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "ربات Figure 01 را تماشا کنید که به انسان غذا می‌دهد، ظرف‌ها را مرتب می‌کند و مثل ما لکنت زبان دارد. Meatbags",
+      "summary_fa": "در حالی که بخش عمده‌ای از بودجه استارتاپی برای ربات‌های غذامحور برای اتوماسیون سریع و خاص وظایف از قبیل Picnic Robot و Chef Robotics بوده است، برخی از جذاب‌ترین – و […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -33502,10 +33502,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت Chef Robotics مبلغ ۱۴.۷۵ میلیون دلار برای خودکارسازی مونتاژ غذا در آشپزخانه‌های تجاری جمع‌آوری کرد",
+      "summary_fa": "ما حتی قبل از اینکه Chef Robotics به این نام شناخته شود، آن را دنبال می‌کردیم، زمانی که مدیرعامل و بنیانگذار این شرکت، Rajat Bhageria، در کنفرانس رباتیک غذایی The Spoon با نام ArticulATE در سال ۲۰۱۹ سخنرانی کرد. در […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -33935,10 +33935,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "این تور از ربات Yo-Kai Boba را در CES 2024 تماشا کنید",
+      "summary_fa": "در رویدادی که به نظر می‌رسد در این برهه از زمان سالانه باشد، امسال Yo-Kai یک کیوسک غذای رباتیک جدید معرفی کرد و جمعیت زیادی را در CES به خود جذب کرد. امسال، […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -35009,10 +35009,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت Bear از طریق همکاری با Sodexo ربات‌های خود را به بیمارستان‌ها می‌آورد",
+      "summary_fa": "وقتی جان ها شرکت Bear Robotics را تأسیس کرد، یک دانشمند کامپیوتر با شغل جانبی در رستوران بود که فکر می‌کرد می‌تواند از طریق فناوری اتوماسیون، کار پیشخدمت‌هایش را آسان‌تر کند. […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -36986,10 +36986,10 @@
       ],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "Vebu با Chipotle برای آزمایش ربات پردازش آووکادو قرارداد (و سرمایه‌گذاری) امضا کرد",
+      "summary_fa": "هفته گذشته، رستوران زنجیره‌ای فست فود مکزیکی Chipotle از یک ربات جدید پردازش آووکادو به نام Autocado رونمایی کرد. این ربات نمونه اولیه جدید که با همکاری نوآوری رباتیک غذا […] توسعه یافته است.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -37384,10 +37384,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "محققان دانشگاه پلی‌تکنیک کالیفرنیا (Cal Poly) در حال بررسی تأثیر اجتماعی هوش مصنوعی و رباتیک بر دنیای غذا هستند",
+      "summary_fa": "پاییز گذشته، به گروهی از محققان دانشگاه پلی‌تکنیک کالیفرنیا (Cal Poly) کمک هزینه‌ای ۷۰۰ هزار دلاری از بنیاد ملی علوم (NSF) برای مطالعه تأثیرات اجتماعی و اخلاقی هوش مصنوعی اعطا شد […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -37464,10 +37464,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "این شرکت با استفاده از مخمر نانوایی، بارکدهای نامرئی ایجاد می‌کند که مواد غذایی را در طول زنجیره تأمین ردیابی می‌کنند",
+      "summary_fa": "در جهانی که بیماری‌های ناشی از غذا و کلاهبرداری غذایی با فرکانس‌های فزاینده‌ای اتفاق می‌افتند، ردیابی منشأ مواد غذایی در طول زنجیره تأمین به طور فزاینده‌ای حیاتی می‌شود. با این حال، چالش این است که […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -38498,10 +38498,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت Serve Robotics با اوبر برای افزایش تعداد ربات‌های تحویل کالا در پیاده‌روها به دو هزار عدد قرارداد امضا کرد",
+      "summary_fa": "شرکت Uber Technologies Inc. در حال آماده شدن برای آینده‌ای رباتیک است و همکاری خود را با Serve Robotics Inc.، سازنده ربات‌های تحویل کالا در پیاده‌رو، تقویت می‌کند. پس از یک آزمایش موفقیت‌آمیز در لس‌آنجلس، […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -38819,10 +38819,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "فینالیست‌های چالش غذای فضایی ناسا شامل فناوری فر فضانوردان و پروتئین هوا می‌شوند",
+      "summary_fa": "هفته گذشته، ناسا فینالیست‌های مرحله نهایی چالش غذای فضایی را اعلام کرد، رقابتی که برای کمک به کاوش و درک بهتر چگونگی تغذیه این آژانس‌ها […] طراحی شده است.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -41534,10 +41534,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "این پیتزا فروشی محبوب با رباتیک و یک برنامه اشتراک ۱۴۹ دلاری در سال، خود را از نو می‌سازد",
+      "summary_fa": "اندرو سیمونز و وین استادلر رستوران ایتالیایی ماما رزا را در ژانویه ۲۰۲۰ خریداری کردند. این دو نفر که یک استارتاپ خدمات تحویل غذا در رستوران به نام اورنج کریت (Orange Crate) را تأسیس کرده‌اند، از طریق رسانه‌های اجتماعی […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -41612,10 +41612,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بنیانگذار پیتزای استلار، پس از سال‌ها ساخت ربات خود، از شستن پای برای دانشجویان USC لذت می‌برد",
+      "summary_fa": "در سال ۲۰۱۹، بنسون تسای تصمیم گرفت در یک کنفرانس رباتیک غذایی شرکت کند. این مهندس پنج سال گذشته را در شرکت اسپیس ایکس ایلان ماسک کار کرده بود و هر آنچه را که […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -41847,10 +41847,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "آیا در مورد تأثیر رباتیک و هوش مصنوعی بر کسب‌وکارهای غذایی نظری دارید؟ در نظرسنجی ما شرکت کنید!",
+      "summary_fa": "هفته گذشته، مجله The Spoon میزبان یک روز پر از بینش بود که در آن با بنیانگذاران و اپراتورها در مورد چگونگی تغییر کسب‌وکارهای غذایی توسط فناوری‌های جدید مانند هوش مصنوعی مولد صحبت شد. و هفته آینده، […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
