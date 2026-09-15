@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE_PATHS = [
     ROOT / "config" / "sources.yml",
     ROOT / "config" / "sources_iran.yml",
+    ROOT / "config" / "sources_iran_discovery.yml",
 ]
 DATA_PATH = ROOT / "data" / "news.json"
 SIGNALS_PATH = ROOT / "data" / "signals.json"
@@ -167,6 +168,13 @@ def iran_relevance_score(title: str, summary: str, source: dict, brands: list[di
     return min(score, 100)
 
 
+def entry_publisher(entry) -> str | None:
+    source = getattr(entry, "source", None)
+    if hasattr(source, "get"):
+        return clean_text(source.get("title") or "") or None
+    return None
+
+
 def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | None:
     title = clean_text(getattr(entry, "title", ""))
     url = canonicalize_url(getattr(entry, "link", "") or "")
@@ -184,6 +192,7 @@ def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | No
     iran_score = iran_relevance_score(title, summary, source, brands)
     published_at = entry_datetime(entry)
     source_market = source.get("market") or ("iran" if iran_score >= 70 else None)
+    publisher = entry_publisher(entry) if source.get("aggregator") else None
 
     item = {
         "id": article_id(url, title, source["id"]),
@@ -197,7 +206,9 @@ def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | No
             "priority": source.get("priority", 3),
             "market": source_market,
             "country": source.get("country"),
+            "aggregator": source.get("aggregator"),
         },
+        "discovered_publisher": publisher,
         "author": clean_text(getattr(entry, "author", "")) or None,
         "published_at": published_at,
         "collected_at": utc_now(),
@@ -217,13 +228,14 @@ def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | No
 
 
 def collect_source(source: dict, brand_catalog: list[dict]) -> tuple[list[dict], dict]:
-    feed = feedparser.parse(source["feed_url"], agent="FoodIndustryIntelligence/0.5 (+GitHub)")
+    feed = feedparser.parse(source["feed_url"], agent="FoodIndustryIntelligence/0.5.1 (+GitHub)")
     matched = 0
     status = {
         "source_id": source["id"],
         "name": source["name"],
         "feed_url": source["feed_url"],
         "market": source.get("market"),
+        "aggregator": source.get("aggregator"),
         "entries_seen": len(feed.entries),
         "entries_matched": 0,
         "bozo": bool(getattr(feed, "bozo", False)),
@@ -285,7 +297,7 @@ def main() -> None:
     generated_at = utc_now()
     iran_items = [item for item in items if item.get("market") == "iran" or (item.get("iran_relevance_score") or 0) >= 70]
     payload = {
-        "schema_version": "0.5",
+        "schema_version": "0.5.1",
         "generated_at": generated_at,
         "count": len(items),
         "iran_count": len(iran_items),
