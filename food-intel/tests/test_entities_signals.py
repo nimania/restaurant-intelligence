@@ -18,6 +18,13 @@ class EntitySignalTests(unittest.TestCase):
         self.assertEqual(brands[0]["id"], "mcdonalds")
         self.assertEqual(brands[0]["fa"], "مک‌دونالدز")
 
+    def test_detects_common_public_alias(self):
+        catalog = [
+            {"id": "pepsico", "name": "PepsiCo", "fa": "پپسی‌کو", "aliases": ["pepsico"]}
+        ]
+        brands = detect_brands("Pepsi launches a new restaurant beverage program", "", catalog)
+        self.assertEqual(brands[0]["id"], "pepsico")
+
     def test_does_not_translate_article_text(self):
         catalog = [
             {"id": "starbucks", "name": "Starbucks", "fa": "استارباکس", "aliases": ["starbucks"]}
