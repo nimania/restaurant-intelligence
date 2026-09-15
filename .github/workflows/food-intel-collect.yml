@@ -53,6 +53,9 @@ jobs:
       - name: Discover Iranian brand mentions
         run: python food-intel/src/brand_watch.py
 
+      - name: Monitor official Iranian brand channels
+        run: python food-intel/src/official_brand_watch.py
+
       - name: Read article bodies and deepen Persian reports
         run: python food-intel/src/body_enrich.py
 
