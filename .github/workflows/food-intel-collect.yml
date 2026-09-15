@@ -56,6 +56,9 @@ jobs:
       - name: Quality-check and repair Persian translations
         run: python food-intel/src/quality_enrich.py
 
+      - name: Repair semantic translation errors and warning cases
+        run: python food-intel/src/semantic_enrich.py
+
       - name: Commit dataset changes
         shell: bash
         run: |
@@ -67,10 +70,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add food-intel/data/news.json food-intel/data/signals.json
           git commit -m "data(food-intel): refresh Persian news, deep reports and quality"
-
-          # UI/docs may have landed on main while this long collector was running.
-          # Rebase the data commit onto the newest main before pushing so the
-          # quality-gated dataset is not lost to a non-fast-forward rejection.
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
