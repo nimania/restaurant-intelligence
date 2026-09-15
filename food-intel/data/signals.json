@@ -1,10 +1,26 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-09-15T14:26:53Z",
-  "articles_24h": 44,
-  "articles_previous_6d": 184,
-  "images_24h": 35,
+  "generated_at": "2026-09-15T14:34:57Z",
+  "articles_24h": 46,
+  "articles_previous_6d": 185,
+  "images_24h": 36,
   "trending_topics": [
+    {
+      "id": "equipment_automation",
+      "label_fa": "تجهیزات و اتوماسیون",
+      "count_24h": 8,
+      "previous_daily_avg": 2.67,
+      "acceleration": 3.0,
+      "series_7d": [
+        5,
+        5,
+        3,
+        0,
+        0,
+        5,
+        3
+      ]
+    },
     {
       "id": "labor_management",
       "label_fa": "نیروی انسانی و مدیریت",
@@ -38,22 +54,6 @@
       ]
     },
     {
-      "id": "equipment_automation",
-      "label_fa": "تجهیزات و اتوماسیون",
-      "count_24h": 7,
-      "previous_daily_avg": 2.67,
-      "acceleration": 2.62,
-      "series_7d": [
-        5,
-        5,
-        3,
-        0,
-        0,
-        5,
-        2
-      ]
-    },
-    {
       "id": "beverage",
       "label_fa": "نوشیدنی",
       "count_24h": 7,
@@ -72,9 +72,9 @@
     {
       "id": "POS",
       "label_fa": "سیستم فروش",
-      "count_24h": 14,
+      "count_24h": 15,
       "previous_daily_avg": 7.0,
-      "acceleration": 2.0,
+      "acceleration": 2.14,
       "series_7d": [
         11,
         9,
@@ -82,7 +82,7 @@
         0,
         2,
         15,
-        9
+        10
       ]
     },
     {
@@ -118,6 +118,22 @@
       ]
     },
     {
+      "id": "restaurant_technology_ai",
+      "label_fa": "فناوری رستوران و هوش مصنوعی",
+      "count_24h": 16,
+      "previous_daily_avg": 8.5,
+      "acceleration": 1.88,
+      "series_7d": [
+        15,
+        13,
+        8,
+        0,
+        2,
+        15,
+        11
+      ]
+    },
+    {
       "id": "food_manufacturing",
       "label_fa": "تولید صنایع غذایی",
       "count_24h": 8,
@@ -134,39 +150,40 @@
       ]
     },
     {
-      "id": "restaurant_technology_ai",
-      "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 15,
-      "previous_daily_avg": 8.5,
-      "acceleration": 1.76,
+      "id": "AI",
+      "label_fa": "هوش مصنوعی",
+      "count_24h": 17,
+      "previous_daily_avg": 10.0,
+      "acceleration": 1.7,
       "series_7d": [
         15,
         13,
-        8,
-        0,
+        12,
+        3,
         2,
-        15,
-        10
-      ]
-    },
-    {
-      "id": "consumer_behavior",
-      "label_fa": "رفتار مصرف‌کننده",
-      "count_24h": 5,
-      "previous_daily_avg": 2.83,
-      "acceleration": 1.76,
-      "series_7d": [
-        2,
-        4,
-        4,
-        0,
-        2,
-        6,
-        3
+        17,
+        13
       ]
     }
   ],
-  "trending_brands": [],
+  "trending_brands": [
+    {
+      "id": "dominos",
+      "label_fa": "دومینوز",
+      "count_24h": 2,
+      "previous_daily_avg": 0.17,
+      "acceleration": 4.0,
+      "series_7d": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  ],
   "dashboard": [
     {
       "id": "iran_market",
@@ -185,7 +202,7 @@
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 15,
+      "count_24h": 16,
       "series_7d": [
         15,
         13,
@@ -193,13 +210,13 @@
         0,
         2,
         15,
-        10
+        11
       ]
     },
     {
       "id": "equipment_automation",
       "label_fa": "تجهیزات و اتوماسیون",
-      "count_24h": 7,
+      "count_24h": 8,
       "series_7d": [
         5,
         5,
@@ -207,21 +224,7 @@
         0,
         0,
         5,
-        2
-      ]
-    },
-    {
-      "id": "food_cost_pricing",
-      "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 1,
-      "series_7d": [
-        0,
-        2,
-        0,
-        0,
-        0,
-        1,
-        0
+        3
       ]
     },
     {
@@ -267,5 +270,5 @@
       ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: نیروی انسانی و مدیریت، صنعت غذا، تجهیزات و اتوماسیون."
+  "radar_fa": "موضوع‌های رو به رشد: تجهیزات و اتوماسیون، نیروی انسانی و مدیریت، صنعت غذا؛ برندهای پرتکرار: دومینوز."
 }
