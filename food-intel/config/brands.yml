@@ -79,6 +79,26 @@ brands:
     name: Wingstop
     fa: وینگ‌استاپ
     aliases: ["wingstop"]
+  - id: arbys
+    name: Arby's
+    fa: آربیز
+    aliases: ["arby's", "arbys"]
+  - id: blaze_pizza
+    name: Blaze Pizza
+    fa: بلیز پیتزا
+    aliases: ["blaze pizza"]
+  - id: mountain_mikes
+    name: Mountain Mike's Pizza
+    fa: مانتین مایکز پیتزا
+    aliases: ["mountain mike's", "mountain mikes", "mountain mike's pizza"]
+  - id: juice_it_up
+    name: Juice It Up!
+    fa: جوس ایت آپ
+    aliases: ["juice it up!", "juice it up"]
+  - id: wonder
+    name: Wonder
+    fa: واندر
+    aliases: ["wonder food hall", "wonder"]
   - id: doordash
     name: DoorDash
     fa: دوردش
@@ -142,11 +162,23 @@ brands:
   - id: pepsico
     name: PepsiCo
     fa: پپسی‌کو
-    aliases: ["pepsico", "pepsi co"]
+    aliases: ["pepsico", "pepsi co", "pepsi"]
   - id: coca_cola
     name: Coca-Cola
     fa: کوکاکولا
-    aliases: ["coca-cola", "coca cola"]
+    aliases: ["coca-cola", "coca cola", "coke"]
+  - id: mars
+    name: Mars
+    fa: مارس
+    aliases: ["mars inc", "mars incorporated", "mars"]
+  - id: snickers
+    name: Snickers
+    fa: اسنیکرز
+    aliases: ["snickers"]
+  - id: southern_glazers
+    name: Southern Glazer's Wine & Spirits
+    fa: ساترن گلیزرز واین اند اسپیریتس
+    aliases: ["southern glazer's wine & spirits", "southern glazers wine & spirits", "southern glazer's"]
   - id: mondelez
     name: Mondelēz
     fa: موندلیز
