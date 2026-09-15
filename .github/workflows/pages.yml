@@ -40,6 +40,7 @@ jobs:
           cp -r data _site/data
           cp food-intel/index.html _site/food-intel/index.html
           cp food-intel/data/news.json _site/food-intel/data/news.json
+          cp food-intel/data/signals.json _site/food-intel/data/signals.json
           touch _site/.nojekyll
 
       - name: Configure Pages
