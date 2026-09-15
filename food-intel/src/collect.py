@@ -94,6 +94,25 @@ def entry_datetime(entry) -> str:
     return utc_now()
 
 
+def entry_detail_text(entry) -> tuple[str, int]:
+    """Return the richest text exposed by the feed, without persisting the source body.
+
+    The text is only used transiently to produce a bounded Persian report. We keep
+    the original publisher article behind its source URL and never store the long
+    source body in news.json.
+    """
+    candidates = [
+        clean_text(getattr(entry, "summary", "") or ""),
+        clean_text(getattr(entry, "description", "") or ""),
+    ]
+    for block in getattr(entry, "content", None) or []:
+        if hasattr(block, "get"):
+            candidates.append(clean_text(block.get("value") or ""))
+    richest = max(candidates, key=len, default="")
+    original_length = len(richest)
+    return richest[:1800], original_length
+
+
 def merge_unique(*groups: list[str]) -> list[str]:
     result = []
     for group in groups:
@@ -185,6 +204,7 @@ def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | No
         return None
 
     summary = clean_text(getattr(entry, "summary", "") or getattr(entry, "description", ""))[:1200]
+    detail_text, detail_chars = entry_detail_text(entry)
     categories, topics = classify(title, summary, defaults=source.get("default_categories", []))
     if source.get("language") == "fa":
         fa_categories, fa_topics = classify_fa(title, summary)
@@ -224,6 +244,8 @@ def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | No
         "geo": geo,
         "image_url": image_url,
         "image_source": "feed" if image_url else None,
+        "source_detail_chars": detail_chars,
+        "_report_source": detail_text,
         "summary": summary,
         "categories": categories,
         "topics": topics,
@@ -236,7 +258,7 @@ def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | No
 
 
 def collect_source(source: dict, brand_catalog: list[dict]) -> tuple[list[dict], dict]:
-    feed = feedparser.parse(source["feed_url"], agent="FoodIndustryIntelligence/0.8 (+GitHub)")
+    feed = feedparser.parse(source["feed_url"], agent="FoodIndustryIntelligence/0.9 (+GitHub)")
     matched = 0
     status = {
         "source_id": source["id"],
@@ -280,7 +302,7 @@ def main() -> None:
             previous = previous_by_id.get(item["id"])
             if previous:
                 item["collected_at"] = previous.get("collected_at", item["collected_at"])
-                for field in ("title_fa", "summary_fa", "translation"):
+                for field in ("title_fa", "summary_fa", "report_fa", "report_coverage", "translation"):
                     if previous.get(field) is not None:
                         item[field] = previous.get(field)
                 if not item.get("image_url") and previous.get("image_url"):
@@ -310,11 +332,13 @@ def main() -> None:
     )[:MAX_ITEMS]
 
     translation_stats = apply_persian_translation(items, previous_by_id)
+    for item in items:
+        item.pop("_report_source", None)
 
     generated_at = utc_now()
     iran_items = [item for item in items if item.get("market") == "iran" or (item.get("iran_relevance_score") or 0) >= 70]
     payload = {
-        "schema_version": "0.8",
+        "schema_version": "0.9",
         "generated_at": generated_at,
         "count": len(items),
         "iran_count": len(iran_items),
@@ -347,8 +371,10 @@ def main() -> None:
     geo_count = sum(1 for i in items if (i.get("geo") or {}).get("primary_country"))
     city_count = sum(1 for i in items if (i.get("geo") or {}).get("cities"))
     image_count = sum(1 for i in items if i.get("image_url"))
+    report_count = sum(1 for i in items if i.get("report_fa"))
     print(f"Geography: {geo_count} stories with a country; {city_count} with an Iranian city.")
     print(f"Visuals: {image_count} stories with publisher-provided feed images.")
+    print(f"Reports: {report_count} stories with a Persian report.")
     for status in source_status:
         print(
             f"- {status['name']}: {status['entries_seen']} seen; "
