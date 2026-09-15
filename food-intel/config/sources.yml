@@ -8,6 +8,9 @@ sources:
     region: US
     source_class: industry_publication
     default_categories: [restaurant_industry]
+    priority: 1
+    coverage: [restaurants, operations, finance, labor, technology, franchising]
+    verified_at: 2026-09-15
     enabled: true
 
   - id: food_dive
@@ -19,8 +22,236 @@ sources:
     region: US
     source_class: industry_publication
     default_categories: [food_industry]
+    priority: 1
+    coverage: [food_manufacturing, cpg, ingredients, supply_chain, regulation]
+    verified_at: 2026-09-15
     enabled: true
 
+  - id: fast_casual
+    name: Fast Casual
+    type: rss
+    feed_url: https://www.fastcasual.com/rss/
+    homepage: https://www.fastcasual.com/
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [fast_casual]
+    priority: 1
+    coverage: [fast_casual, franchising, operations, menu, technology]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: qsr_web
+    name: QSRweb
+    type: rss
+    feed_url: https://www.qsrweb.com/rss/
+    homepage: https://www.qsrweb.com/
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [qsr_fast_food]
+    priority: 1
+    coverage: [qsr, fast_food, drive_thru, technology, franchising]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: restaurant_business
+    name: Restaurant Business
+    type: rss
+    feed_url: https://www.restaurantbusinessonline.com/feed
+    homepage: https://www.restaurantbusinessonline.com/
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [restaurant_industry]
+    priority: 1
+    coverage: [restaurants, chains, finance, operations, consumer_behavior]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: modern_restaurant_management
+    name: Modern Restaurant Management
+    type: rss
+    feed_url: https://modernrestaurantmanagement.com/feed
+    homepage: https://modernrestaurantmanagement.com/
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [restaurant_operations]
+    priority: 2
+    coverage: [operations, management, marketing, finance, technology, law]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: restaurant_news
+    name: RestaurantNews.com
+    type: rss
+    feed_url: https://www.restaurantnews.com/feed/
+    homepage: https://www.restaurantnews.com/
+    language: en
+    region: US
+    source_class: industry_news
+    default_categories: [restaurant_industry]
+    priority: 2
+    coverage: [restaurant_news, chains, franchising, openings, menu]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: pizza_marketplace
+    name: Pizza Marketplace
+    type: rss
+    feed_url: https://www.pizzamarketplace.com/rss/
+    homepage: https://www.pizzamarketplace.com/
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [qsr_fast_food]
+    priority: 3
+    coverage: [pizza, delivery, operations, technology, franchising]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: the_spoon
+    name: The Spoon
+    type: rss
+    feed_url: https://thespoon.tech/feed/
+    homepage: https://thespoon.tech/
+    language: en
+    region: global
+    source_class: industry_publication
+    default_categories: [restaurant_technology_ai]
+    priority: 1
+    coverage: [food_tech, restaurant_tech, ai, robotics, kitchen_technology]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: restaurant_technology_news
+    name: Restaurant Technology News
+    type: rss
+    feed_url: https://restauranttechnologynews.com/feed/
+    homepage: https://restauranttechnologynews.com/
+    language: en
+    region: global
+    source_class: industry_publication
+    default_categories: [restaurant_technology_ai]
+    priority: 2
+    coverage: [restaurant_technology, pos, kds, ordering, ai, automation]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: food_safety_news
+    name: Food Safety News
+    type: rss
+    feed_url: https://www.foodsafetynews.com/feed/
+    homepage: https://www.foodsafetynews.com/
+    language: en
+    region: global
+    source_class: specialist_publication
+    default_categories: [food_safety]
+    priority: 1
+    coverage: [food_safety, recalls, outbreaks, regulation]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: fda_food_safety_recalls
+    name: FDA Food Safety Recalls
+    type: rss
+    feed_url: https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/food-safety-recalls/rss.xml
+    homepage: https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts
+    language: en
+    region: US
+    source_class: regulator
+    default_categories: [food_safety, regulation]
+    priority: 1
+    coverage: [recalls, food_safety, regulation]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: fda_outbreaks
+    name: FDA Outbreaks
+    type: rss
+    feed_url: https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/fda-outbreaks/rss.xml
+    homepage: https://www.fda.gov/food/outbreaks-foodborne-illness
+    language: en
+    region: US
+    source_class: regulator
+    default_categories: [food_safety, regulation]
+    priority: 1
+    coverage: [outbreaks, food_safety, public_health]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: food_engineering
+    name: Food Engineering
+    type: rss
+    feed_url: https://www.foodengineeringmag.com/rss/16
+    homepage: https://www.foodengineeringmag.com/
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [food_manufacturing, equipment_automation]
+    priority: 1
+    coverage: [manufacturing, automation, equipment, processing, packaging, food_safety]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: food_business_news_manufacturers
+    name: Food Business News — Food Manufacturers
+    type: rss
+    feed_url: https://www.foodbusinessnews.net/rss/topic/113-food-manufacturers
+    homepage: https://www.foodbusinessnews.net/
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [food_manufacturing]
+    priority: 1
+    coverage: [manufacturing, cpg, companies, innovation, ingredients]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: refrigerated_frozen_foods
+    name: Refrigerated & Frozen Foods
+    type: rss
+    feed_url: https://www.refrigeratedfrozenfood.com/rss/18
+    homepage: https://www.refrigeratedfrozenfood.com/
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [supply_chain, food_manufacturing]
+    priority: 2
+    coverage: [cold_chain, logistics, manufacturing, packaging, food_safety]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: foodservice_equipment_reports
+    name: Foodservice Equipment Reports
+    type: rss
+    feed_url: https://www.fermag.com/feed/
+    homepage: https://www.fermag.com/
+    language: en
+    region: US
+    source_class: specialist_publication
+    default_categories: [equipment_automation]
+    priority: 1
+    coverage: [foodservice_equipment, kitchen_design, maintenance, specification]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: foodservice_equipment_journal
+    name: Foodservice Equipment Journal
+    type: rss
+    feed_url: https://www.foodserviceequipmentjournal.com/feed/
+    homepage: https://www.foodserviceequipmentjournal.com/
+    language: en
+    region: global
+    source_class: specialist_publication
+    default_categories: [equipment_automation]
+    priority: 2
+    coverage: [foodservice_equipment, kitchen_technology, operators, suppliers]
+    verified_at: 2026-09-15
+    enabled: true
+
+  # Discovery / verification queue. Kept disabled until a stable raw feed is confirmed.
   - id: qsr_magazine
     name: QSR Magazine
     type: discovery
@@ -30,8 +261,10 @@ sources:
     region: US
     source_class: industry_publication
     default_categories: [qsr_fast_food]
+    priority: 1
+    coverage: [qsr, fast_food, menu, drive_thru, finance, technology]
     enabled: false
-    note: Activate after selecting and verifying the most useful sectional RSS feeds.
+    note: Official RSS directory confirmed; select the best sectional raw feeds before activation.
 
   - id: nations_restaurant_news
     name: Nation's Restaurant News
@@ -41,16 +274,115 @@ sources:
     region: US
     source_class: industry_publication
     default_categories: [restaurant_industry]
+    priority: 1
+    coverage: [restaurants, qsr, fast_casual, finance, menu, franchising, technology]
     enabled: false
-    note: Feed endpoint to be verified before activation.
+    note: High-value source; raw feed endpoint still to be confirmed.
 
-  - id: food_business_news
-    name: Food Business News
+  - id: prepared_foods
+    name: Prepared Foods
     type: discovery
-    homepage: https://www.foodbusinessnews.net/
+    homepage: https://www.preparedfoods.com/
+    rss_directory: https://www.preparedfoods.com/rss
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [ingredients_rd, menu_product_innovation]
+    priority: 2
+    coverage: [rd, formulation, ingredients, foodservice, consumer_trends]
+    enabled: false
+    note: Official RSS directory confirmed; several topic feeds return anti-bot responses during verification.
+
+  - id: food_safety_magazine
+    name: Food Safety Magazine
+    type: discovery
+    homepage: https://www.food-safety.com/
+    rss_directory: https://www.food-safety.com/rss
+    language: en
+    region: global
+    source_class: specialist_publication
+    default_categories: [food_safety]
+    priority: 1
+    coverage: [food_safety, haccp, sanitation, traceability, foodservice]
+    enabled: false
+    note: Official topic RSS feeds confirmed, but direct feed requests can return 403; keep disabled pending runner test.
+
+  - id: meat_poultry
+    name: MEAT+POULTRY
+    type: discovery
+    homepage: https://www.meatpoultry.com/
+    rss_directory: https://www.meatpoultry.com/rss
     language: en
     region: US
     source_class: industry_publication
     default_categories: [food_manufacturing]
+    priority: 2
+    coverage: [protein, foodservice, manufacturing, food_safety, logistics]
     enabled: false
-    note: Site exposes topic RSS links; activate verified topic feeds in the next source-expansion pass.
+    note: Large official topic-feed directory; select a small set of relevant feeds before activation.
+
+  - id: dairy_foods
+    name: Dairy Foods
+    type: discovery
+    homepage: https://www.dairyfoods.com/
+    rss_directory: https://www.dairyfoods.com/rss
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [food_manufacturing]
+    priority: 3
+    coverage: [dairy, manufacturing, ingredients, new_products]
+    enabled: false
+    note: Useful vertical source; activate only if dairy coverage is needed to avoid source bloat.
+
+  - id: usda_fsis
+    name: USDA FSIS
+    type: discovery
+    homepage: https://www.fsis.usda.gov/
+    language: en
+    region: US
+    source_class: regulator
+    default_categories: [food_safety, regulation]
+    priority: 1
+    coverage: [recalls, meat, poultry, eggs, food_safety, regulation]
+    enabled: false
+    note: Official RSS feeds and recall API exist; activate after exact feed/API ingestion is implemented and tested.
+
+  - id: new_food_magazine
+    name: New Food Magazine
+    type: discovery
+    homepage: https://www.newfoodmagazine.com/
+    language: en
+    region: global
+    source_class: industry_publication
+    default_categories: [food_manufacturing, food_safety]
+    priority: 2
+    coverage: [food_safety, processing, packaging, ingredients, regulation]
+    enabled: false
+    note: Valuable global source; stable raw feed endpoint not yet confirmed.
+
+  - id: foodnavigator_usa
+    name: FoodNavigator-USA
+    type: discovery
+    homepage: https://www.foodnavigator-usa.com/
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [food_industry]
+    priority: 2
+    coverage: [ingredients, cpg, consumer_trends, regulation, innovation]
+    enabled: false
+    note: Add when a stable syndication endpoint is confirmed.
+
+  - id: food_truck_operator
+    name: Food Truck Operator
+    type: discovery
+    homepage: https://www.foodtruckoperator.com/
+    language: en
+    region: US
+    source_class: industry_publication
+    default_categories: [restaurant_operations]
+    priority: 3
+    coverage: [food_trucks, mobile_foodservice, operations, technology]
+    enabled: false
+    note: Candidate feed exists but verification response was inconsistent; leave disabled for now.
