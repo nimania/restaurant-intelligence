@@ -1,0 +1,73 @@
+channels:
+  - id: padideh_shandiz
+    name: Padideh Shandiz
+    fa: پدیده شاندیز
+    telegram: padideco
+    categories: [restaurant_industry, restaurant_operations]
+    context: ["رستوران", "فست فود", "فست‌فود", "کافه", "غذا", "فود هال", "فودهال", "منو", "شیشلیک"]
+
+  - id: mihan_dairy
+    telegram: MihanFoods
+    categories: [food_industry, food_manufacturing]
+  - id: pegah
+    telegram: pegah_dairy
+    categories: [food_industry, food_manufacturing]
+  - id: ramak
+    telegram: ramak_dairy
+    categories: [food_industry, food_manufacturing]
+  - id: zarr_group
+    telegram: zarmacaron
+    categories: [food_industry, food_manufacturing]
+  - id: shoniz
+    telegram: shonizofficial
+    categories: [food_industry, food_manufacturing]
+  - id: farmand
+    telegram: farmand_ir
+    categories: [food_industry, food_manufacturing]
+  - id: alis
+    telegram: alisdrinks
+    categories: [beverage, food_industry]
+  - id: zamzam
+    telegram: zamzamiran1
+    categories: [beverage, food_industry]
+  - id: nan_sahar
+    telegram: saharbreadco
+    categories: [food_industry, food_manufacturing]
+  - id: ofogh_kourosh
+    telegram: okclub
+    categories: [retail_food]
+  - id: hyperstar_iran
+    telegram: hyperstarofficial
+    categories: [retail_food]
+
+settings:
+  max_messages_per_channel: 24
+  signal_terms:
+    - افتتاح
+    - شعبه
+    - منو
+    - محصول جدید
+    - رونمایی
+    - همکاری
+    - قرارداد
+    - استخدام
+    - نمایندگی
+    - فرانچایز
+    - صادرات
+    - کارخانه
+    - تولید
+    - کمپین
+    - جشنواره
+    - تخفیف
+    - جایزه
+    - رویداد
+    - بازگشایی
+    - توسعه
+    - سرمایه گذاری
+    - سرمایه‌گذاری
+    - فود هال
+    - فودهال
+    - کافه
+    - رستوران
+    - قیمت
+    - فروش
