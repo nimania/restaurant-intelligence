@@ -8,12 +8,15 @@ from dataclasses import dataclass
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
+from fa_polish import polish_persian, prepare_for_translation
+
 PERSIAN_RE = re.compile(r"[\u0600-\u06FF]")
 DEFAULT_TRANSLATION_LIMIT = 180
 MAX_CONSECUTIVE_FAILURES = 4
 GOOGLE_ENDPOINT = "https://translate.googleapis.com/translate_a/single"
 MYMEMORY_ENDPOINT = "https://api.mymemory.translated.net/get"
 SPLIT_MARKER = "[[[NIMA_SPLIT_9F7C]]]"
+CLEANUP_VERSION = 1
 
 
 def looks_persian(text: str) -> bool:
@@ -60,10 +63,12 @@ class TranslationStats:
 
 
 class PersianTranslator:
-    """Lightweight HTTP English→Persian translator with a no-key fallback.
+    """Lightweight HTTP English→Persian translator with terminology cleanup.
 
     Successful translations are persisted in news.json and reused. Translation is a
     best-effort enrichment: network/rate-limit problems never block news collection.
+    A restaurant-industry glossary and brand-name normalization are applied before
+    and after translation so mixed Persian/English output stays readable.
     """
 
     def __init__(self, timeout: int = 4, pause: float = 0.08) -> None:
@@ -74,7 +79,7 @@ class PersianTranslator:
         request = Request(
             url,
             headers={
-                "User-Agent": "FoodIndustryIntelligence/0.9 (+https://github.com/nimania/restaurant-intelligence)",
+                "User-Agent": "FoodIndustryIntelligence/1.1 (+https://github.com/nimania/restaurant-intelligence)",
                 "Accept": "application/json,text/plain,*/*",
             },
         )
@@ -84,7 +89,7 @@ class PersianTranslator:
     def _google(self, text: str) -> str:
         query = urlencode({
             "client": "gtx",
-            "sl": "en",
+            "sl": "auto",
             "tl": "fa",
             "dt": "t",
             "q": text,
@@ -113,16 +118,16 @@ class PersianTranslator:
         return translated
 
     def translate(self, text: str, limit: int) -> str:
-        text = compact(text, limit)
+        text = compact(prepare_for_translation(text), limit)
         if not text:
             return ""
-        if looks_persian(text):
-            return text
+        if looks_persian(text) and not re.search(r"[A-Za-z]{4,}", text):
+            return compact(polish_persian(text), limit + 220)
 
         last_error: Exception | None = None
         for engine in (self._google, self._mymemory):
             try:
-                translated = engine(text)
+                translated = polish_persian(engine(text))
                 if translated and looks_persian(translated):
                     time.sleep(self.pause)
                     return compact(translated, limit + 220)
@@ -142,8 +147,8 @@ class PersianTranslator:
                 translated = self.translate(combined, 1550)
                 if SPLIT_MARKER in translated:
                     title_fa, body_fa = translated.split(SPLIT_MARKER, 1)
-                    title_fa = compact(title_fa, 420).strip()
-                    body_fa = compact_words(body_fa, 190).strip()
+                    title_fa = compact(polish_persian(title_fa), 420).strip()
+                    body_fa = compact_words(polish_persian(body_fa), 190).strip()
                     if title_fa and looks_persian(title_fa) and body_fa:
                         summary_fa = compact_words(body_fa, 85)
                         return title_fa, summary_fa, body_fa
@@ -159,8 +164,8 @@ class PersianTranslator:
             translated = self.translate(combined, 820)
             if SPLIT_MARKER in translated:
                 title_fa, summary_fa = translated.split(SPLIT_MARKER, 1)
-                title_fa = compact(title_fa, 420).strip()
-                summary_fa = compact_words(summary_fa, 85).strip()
+                title_fa = compact(polish_persian(title_fa), 420).strip()
+                summary_fa = compact_words(polish_persian(summary_fa), 85).strip()
                 if title_fa and looks_persian(title_fa):
                     return title_fa, summary_fa, summary_fa
         except Exception:
@@ -168,7 +173,7 @@ class PersianTranslator:
 
         title_fa = self.translate(title, 240)
         summary_fa = compact_words(self.translate(summary, 520), 85)
-        return title_fa, summary_fa, summary_fa
+        return polish_persian(title_fa), polish_persian(summary_fa), polish_persian(summary_fa)
 
 
 def _translation_limit() -> int:
@@ -176,6 +181,10 @@ def _translation_limit() -> int:
         return max(0, int(os.getenv("FOOD_INTEL_TRANSLATION_LIMIT", DEFAULT_TRANSLATION_LIMIT)))
     except (TypeError, ValueError):
         return DEFAULT_TRANSLATION_LIMIT
+
+
+def _meta(status: str, engine: str | None) -> dict:
+    return {"status": status, "engine": engine, "cleanup_version": CLEANUP_VERSION}
 
 
 def apply_persian_translation(
@@ -193,11 +202,11 @@ def apply_persian_translation(
         source_chars = item.get("source_detail_chars") or len(summary)
 
         if item.get("language") == "fa" or looks_persian(title):
-            item["title_fa"] = title
-            item["summary_fa"] = compact(summary, 520)
-            item["report_fa"] = compact_words(summary, 150)
+            item["title_fa"] = polish_persian(title)
+            item["summary_fa"] = compact(polish_persian(summary), 520)
+            item["report_fa"] = compact_words(polish_persian(summary), 150)
             item["report_coverage"] = "خلاصه منبع"
-            item["translation"] = {"status": "original-fa", "engine": None}
+            item["translation"] = _meta("original-fa", None)
             stats.persian_original += 1
             continue
 
@@ -207,27 +216,26 @@ def apply_persian_translation(
             and previous.get("title_fa")
         )
         if same_source_text and previous.get("report_fa"):
-            item["title_fa"] = previous.get("title_fa")
-            item["summary_fa"] = previous.get("summary_fa", "")
-            item["report_fa"] = previous.get("report_fa", previous.get("summary_fa", ""))
+            # Existing translations are cleaned immediately, even before a future
+            # retranslation, so the archive benefits from the new typography/glossary.
+            item["title_fa"] = polish_persian(previous.get("title_fa", ""))
+            item["summary_fa"] = polish_persian(previous.get("summary_fa", ""))
+            item["report_fa"] = polish_persian(previous.get("report_fa", previous.get("summary_fa", "")))
             item["report_coverage"] = previous.get("report_coverage") or coverage_label(source_chars)
-            item["translation"] = previous.get("translation") or {
-                "status": "translated",
-                "engine": "http-en-fa",
-            }
+            item["translation"] = _meta("translated", (previous.get("translation") or {}).get("engine") or "http-en-fa")
             stats.reused += 1
             continue
 
         if same_source_text:
-            item["title_fa"] = previous.get("title_fa", "")
-            item["summary_fa"] = previous.get("summary_fa", "")
-            item["report_fa"] = previous.get("report_fa", "")
+            item["title_fa"] = polish_persian(previous.get("title_fa", ""))
+            item["summary_fa"] = polish_persian(previous.get("summary_fa", ""))
+            item["report_fa"] = polish_persian(previous.get("report_fa", ""))
         else:
             item["title_fa"] = ""
             item["summary_fa"] = ""
             item["report_fa"] = ""
         item["report_coverage"] = coverage_label(source_chars)
-        item["translation"] = {"status": "queued", "engine": "http-en-fa"}
+        item["translation"] = _meta("queued", "http-en-fa")
         pending.append(item)
 
     pending.sort(
@@ -248,17 +256,16 @@ def apply_persian_translation(
                 item.get("summary", ""),
                 item.get("_report_source", ""),
             )
-            item["title_fa"] = title_fa or item.get("title_fa", "")
-            item["summary_fa"] = summary_fa or item.get("summary_fa", "")
-            item["report_fa"] = report_fa or item.get("summary_fa", "")
+            item["title_fa"] = polish_persian(title_fa or item.get("title_fa", ""))
+            item["summary_fa"] = polish_persian(summary_fa or item.get("summary_fa", ""))
+            item["report_fa"] = polish_persian(report_fa or item.get("summary_fa", ""))
             item["report_coverage"] = coverage_label(item.get("source_detail_chars"))
-            item["translation"] = {"status": "translated", "engine": "http-en-fa"}
+            item["translation"] = _meta("translated", "http-en-fa")
             stats.translated += 1
             consecutive_failures = 0
         except Exception as exc:
             item["translation"] = {
-                "status": "failed",
-                "engine": "http-en-fa",
+                **_meta("failed", "http-en-fa"),
                 "error": str(exc)[:160],
             }
             stats.failed += 1
