@@ -44,18 +44,18 @@ jobs:
       - name: Run unit tests
         run: python -m unittest discover -s food-intel/tests -p "test_*.py"
 
-      - name: Collect, classify and score news
+      - name: Collect, classify, score and build signals
         run: python food-intel/src/collect.py
 
       - name: Commit dataset changes
         shell: bash
         run: |
-          if git diff --quiet -- food-intel/data/news.json; then
+          if git diff --quiet -- food-intel/data/news.json food-intel/data/signals.json; then
             echo "No dataset changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add food-intel/data/news.json
-          git commit -m "data(food-intel): refresh scored news feed"
+          git add food-intel/data/news.json food-intel/data/signals.json
+          git commit -m "data(food-intel): refresh news and signals"
           git push
