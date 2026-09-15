@@ -1,15 +1,15 @@
 {
   "schema_version": "0.6",
-  "generated_at": "2026-09-15T12:44:52Z",
-  "count": 1050,
-  "iran_count": 25,
+  "generated_at": "2026-09-15T12:47:52Z",
+  "count": 1052,
+  "iran_count": 26,
   "active_sources": 31,
   "active_iran_sources": 13,
   "entries_processed_this_run": 1113,
   "translation_stats": {
-    "translated": 47,
-    "reused": 0,
-    "persian_original": 25,
+    "translated": 49,
+    "reused": 47,
+    "persian_original": 26,
     "failed": 4
   },
   "source_status": [
@@ -327,6 +327,45 @@
   ],
   "items": [
     {
+      "id": "8052757624f26d3494d4",
+      "title": "دستگاه انجماد سریع (IQF) در مشهد: راهنمای انتخاب و خرید",
+      "url": "https://mag.ifoods.ir/iqf-mashhad",
+      "source": {
+        "id": "ifoods_mag",
+        "name": "مجله آی‌فودز",
+        "homepage": "https://mag.ifoods.ir/",
+        "class": "specialist_publication",
+        "priority": 1,
+        "market": "iran",
+        "country": "IR",
+        "aggregator": null
+      },
+      "discovered_publisher": null,
+      "author": "تیم تولید محتوای آی فودز",
+      "published_at": "2026-09-15T12:32:43Z",
+      "collected_at": "2026-09-15T12:46:05Z",
+      "language": "fa",
+      "region": "IR",
+      "country": "IR",
+      "market": "iran",
+      "summary": "وبلاگ آی فودز | ifoods.ir/blog در دنیای پرشتاب صنایع غذایی امروز، حفظ کیفیت، طعم و ارزش غذایی محصولات، کلید موفقیت و رضایت مشتری است. در این میان، دستگاه انجماد سریع (IQF) به عنوان یک راهکار انقلابی، نقش ... مطلب دستگاه انجماد سریع (IQF) در مشهد: راهنمای انتخاب و خرید در مجله آی فودز . منتشر شد.",
+      "categories": [
+        "food_industry",
+        "consumer_behavior",
+        "food_manufacturing"
+      ],
+      "topics": [],
+      "brands": [],
+      "iran_relevance_score": 90,
+      "relevance_score": 83,
+      "title_fa": "دستگاه انجماد سریع (IQF) در مشهد: راهنمای انتخاب و خرید",
+      "summary_fa": "وبلاگ آی فودز | ifoods.ir/blog در دنیای پرشتاب صنایع غذایی امروز، حفظ کیفیت، طعم و ارزش غذایی محصولات، کلید موفقیت و رضایت مشتری است. در این میان، دستگاه انجماد سریع (IQF) به عنوان یک راهکار انقلابی، نقش ... مطلب دستگاه انجماد سریع (IQF) در مشهد: راهنمای انتخاب و خرید در مجله آی فودز . منتشر شد.",
+      "translation": {
+        "status": "original-fa",
+        "engine": null
+      }
+    },
+    {
       "id": "5c294ae995e58c52e8d1",
       "title": "Prince St. Pizza’s Famous Sicilian Squares Are Going Solo",
       "url": "https://www.restaurantnews.com/prince-st-pizza-sicilian-style-personal-prince-pie-091526",
@@ -400,10 +439,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "مو بتاس با رستوران سونث، آلوهای بیشتری را به اوکلاهما می‌آورد",
+      "summary_fa": "رستوران غذای هاوایی مو بتاس با افتتاح شعبه جدیدی در شهر اوکلاهما، حضور خود را در سطح ملی به ۸۲ رستوران گسترش می‌دهد. این پست که مو بتاس با رستوران سونث، آلوهای بیشتری را به اوکلاهما می‌آورد، اولین بار در RestaurantNews.com منتشر شد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -649,6 +688,45 @@
       }
     },
     {
+      "id": "2bcdb1586881298dcca9",
+      "title": "Donettes provide sweet relief amid Hostess challenges",
+      "url": "https://www.foodbusinessnews.net/articles/31004-donettes-provide-sweet-relief-amid-hostess-challenges",
+      "source": {
+        "id": "food_business_news_manufacturers",
+        "name": "Food Business News — Food Manufacturers",
+        "homepage": "https://www.foodbusinessnews.net/",
+        "class": "industry_publication",
+        "priority": 1,
+        "market": null,
+        "country": null,
+        "aggregator": null
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-15T11:20:24Z",
+      "collected_at": "2026-09-15T12:45:57Z",
+      "language": "en",
+      "region": "US",
+      "country": null,
+      "market": null,
+      "summary": "J.M. Smucker said its Donettes brand is gaining momentum in the morning snack daypart.",
+      "categories": [
+        "food_manufacturing"
+      ],
+      "topics": [
+        "AI"
+      ],
+      "brands": [],
+      "iran_relevance_score": 0,
+      "relevance_score": 76,
+      "title_fa": "دونتِس در میان چالش‌های مهمانداران، آرامش شیرینی را فراهم می‌کند",
+      "summary_fa": "جی‌ام اسماکر گفت که برند دونتِسِ این شرکت در بخش میان وعده‌های صبحگاهی در حال افزایش محبوبیت است.",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa"
+      }
+    },
+    {
       "id": "ccbd5175a66c01cd7c94",
       "title": "AI with Meaningful ROI",
       "url": "https://modernrestaurantmanagement.com/ai-with-meaningful-roi",
@@ -765,12 +843,11 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "«جویس ایت آپ!» با افتتاح شعبه جدید در سانتافه اسپرینگز، حضور خود را در جنوب کالیفرنیا گسترش می‌دهد",
+      "summary_fa": "زنجیره پیشرو اسموتی، کاسه آکای و آبمیوه‌های خام، حضور خود را در شهرستان لس‌آنجلس تقویت می‌کند. این پست با افتتاح شعبه جدید در سانتافه اسپرینگز، حضور خود را در جنوب کالیفرنیا گسترش می‌دهد. اولین بار در RestaurantNews.com منتشر شد.",
       "translation": {
-        "status": "failed",
-        "engine": "http-en-fa",
-        "error": "HTTP Error 429: Too Many Requests"
+        "status": "translated",
+        "engine": "http-en-fa"
       }
     },
     {
@@ -848,10 +925,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت هالی پولتری از تأسیسات فرآوری جدید مریلند رونمایی کرد",
+      "summary_fa": "این سرمایه‌گذاری ظرفیت تولید خرده‌فروشی هالی پولتری را برای برندهایی از جمله ایزی استریت و وان فاین چیکن به طور قابل توجهی گسترش می‌دهد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -891,10 +968,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شیطنت‌های «مینیون‌ها و هیولاها» با شیر LTO TruMoo به فروشگاه لبنیات می‌آید",
+      "summary_fa": "این شیر جدید با طعم موز که با لبنیات واقعی ساخته شده است، با طعمی خامه‌ای و خوشمزه که برای جذب طرفداران در هر سنی طراحی شده است، به برنامه‌های روزمره، از صبحانه و ناهار گرفته تا میان وعده‌های بعد از مدرسه و شب‌های تماشای فیلم خانوادگی، جذابیت خاصی می‌بخشد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -1294,10 +1371,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "رستوران‌های Bennigan&#39;s و Steak and Ale روز ملی مونت کریستو را با مونت کریستوی نمادین و مشهور جهانی جشن می‌گیرند",
+      "summary_fa": "برندهای افسانه‌ای سالگردهای مهم خود را با طعم‌های پاییزی جدید و ارزش استثنایی جشن می‌گیرند. این مطلب که Bennigan&#39;s و Steak and Ale روز ملی مونت کریستو را با مونت کریستوی نمادین و مشهور جهانی جشن می‌گیرند، اولین بار در RestaurantNews.com منتشر شد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -1368,10 +1445,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "انتقال برنامه انرژی استار به وزارت انرژی",
+      "summary_fa": "وزارت انرژی تا ژوئیه 2027 رهبری برنامه انرژی استار را از سازمان حفاظت محیط زیست تحویل خواهد گرفت.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -2077,12 +2154,11 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "لولا بینز با قرارداد توسعه پنج واحدی به میامی می‌رود",
+      "summary_fa": "این برند نوشیدنی که به سرعت در حال رشد است، با آوردن لولا بینز به جنوب فلوریدا توسط کارآفرینان میامی، به گسترش ملی خود ادامه می‌دهد. این پست اولین بار در RestaurantNews.com منتشر شد.",
       "translation": {
-        "status": "failed",
-        "engine": "http-en-fa",
-        "error": "HTTP Error 429: Too Many Requests"
+        "status": "translated",
+        "engine": "http-en-fa"
       }
     },
     {
@@ -2415,10 +2491,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "رستوران‌های کلاسیک کامفورت به‌روزرسانی شدند",
+      "summary_fa": "ردیاب طعم: IHOP، Hardee&#39;s، Another Broken Egg، Lou Malnati&#39;s، Black Sheep، KPot، Chicken Salad Chick، Bb.q Chicken، Ruby Slipper، Jinya و Native Grill & Wings اخبار و روندهای منوی رستوران‌ها را در صدر اخبار قرار می‌دهند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -2821,10 +2897,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "مهمانان خواهان تجربیات ارزشمند و «ارزشمند» هستند",
+      "summary_fa": "زک وندل، مدیر شرکت غذا و نوشیدنی در Concord Hospitality، یک شرکت مدیریت، مالکیت و توسعه هتل که بیش از ۱۴۰ هتل را مدیریت و توسعه می‌دهد، گفت: برنامه‌های F&B هتل نیاز به مجموعه‌ای از سیگنال‌های به هم پیوسته دارند که مانند یک نمایش برادوی با هم حرکت می‌کنند. وقتی این کار به درستی انجام شود، همه چیز در رستوران احساس می‌شود...",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -2859,10 +2935,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "چگونه سانکرانتی کتاب راهنمای غذای هندی فست-کژوال خود را ساخت",
+      "summary_fa": "سرینیواسا &quot;نیمز&quot; نیماگادا و تیمش سال‌ها صرف توسعه یک کتاب راهنمای مفهوم غذای هندی فست-کژوال از طریق آشپزخانه هندی سانکرانتی کردند. اکنون این شرکت آماده رشد است.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -4417,12 +4493,11 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "طرح اقدام پیشگیری، واکنش و تحقیقات سیکلوسپورا",
+      "summary_fa": "طرحی برای کاهش بار سلامت عمومی ناشی از بیماری‌های ناشی از غذا که توسط سیکلوسپورا در محصولات تازه ایجاد می‌شود.",
       "translation": {
-        "status": "failed",
-        "engine": "http-en-fa",
-        "error": "HTTP Error 429: Too Many Requests"
+        "status": "translated",
+        "engine": "http-en-fa"
       }
     },
     {
@@ -5272,10 +5347,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "چگونه پن استیشن بدون تخفیف دادن، توجه نسل زد را به خود جلب می‌کند",
+      "summary_fa": "لنس ووت، رئیس پن استیشن، و توماس گیلبرت از کوریون به فست کژوال نیشن می‌پیوندند تا بررسی کنند که چگونه این برند ساندویچ ۴۰ ساله از طریق اصالت محلی، آموزش دیجیتال، شخصی‌سازی مبتنی بر هوش مصنوعی و رد بازاریابی تخفیف‌دار سنتی، توجه مشتریان و کارمندان نسل زد را به خود جلب می‌کند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -6219,8 +6294,10 @@
         "class": "industry_publication",
         "priority": 1,
         "market": null,
-        "country": null
+        "country": null,
+        "aggregator": null
       },
+      "discovered_publisher": null,
       "author": "Christopher Doering",
       "published_at": "2026-09-10T14:00:00Z",
       "collected_at": "2026-09-15T11:13:38Z",
@@ -6322,10 +6399,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "LEWA از مجموعه فناوری‌های جریان بهداشتی برای تولید مواد غذایی و آشامیدنی رونمایی می‌کند",
+      "summary_fa": "این ابتکار، طیف وسیعی از پمپ‌ها، سیستم‌های اندازه‌گیری و اختلاط را در یک پلتفرم برای تولیدکنندگان مواد غذایی و آشامیدنی ادغام می‌کند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -6360,10 +6437,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت کرونه (KROHNE) فرستنده‌های سطح راداری OPTIWAVE را معرفی می‌کند",
+      "summary_fa": "با زاویه پرتو ۴ درجه، OPTIWAVE 1530 و OPTIWAVE 1560 با جلوگیری از تداخل دیوارها یا وسایل، در فضاهای تنگ و در مخازن دارای موانع داخلی به دقت دست می‌یابند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -7842,10 +7919,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "کیودوبا برای رشد بیشتر در کالیفرنیا آماده می‌شود",
+      "summary_fa": "این آخرین اعلامیه پس از توافقی است که اوایل امسال با یک اپراتور باتجربه QSR برای آوردن این برند به ونتورا و سانتا باربارا امضا شد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -7964,10 +8041,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "6 روشی که فروشگاه‌های زنجیره‌ای و خواربارفروشی‌ها ترافیک ناهارهای فوری را می‌دزدند",
+      "summary_fa": "مطالعه‌ای از Toast نشان می‌دهد که چگونه خرده‌فروشان پولدار از هوش مصنوعی، غذاهای آماده و استخدام‌های گسترده برای کسب درآمد از رستوران‌ها استفاده می‌کنند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -8086,10 +8163,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بانک مرکزی کانادا (CRB) هلگا مارگارت سالینگ را به عنوان مدیر ارشد رشد منصوب کرد",
+      "summary_fa": "سالینگ بیش از 25 سال تجربه در توسعه کسب و کار، استراتژی بازار و رشد مشتری در سراسر بخش علوم زیستی را به ارمغان می‌آورد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -8369,10 +8446,10 @@
       ],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "راهکار بازگشت به فرنچایز وجود دارد. آیا شرکت‌ها از آن پیروی خواهند کرد؟",
+      "summary_fa": "خلاصه کلام: برگر کینگ راهکاری را ایجاد کرده است که شرکت‌ها می‌توانند از آن برای تغییر زنجیره‌های طولانی مدت که با مشکل مواجه بوده‌اند، استفاده کنند. اما این امر مستلزم دو چیز است که بسیاری از برندها ندارند: پول و صبر.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -8417,10 +8494,10 @@
       ],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "کمپین جدید دومینو ما را بر آن داشته تا از خود بپرسیم چه چیزی به کوه راشمورِ این فست فود تعلق دارد",
+      "summary_fa": "نکات بازاریابی: این پیتزا فروشی زنجیره‌ای سوالاتی را در مورد اینکه چه چیزی واقعاً یک آیتم نمادین در منو را تعریف می‌کند و اینکه آیا تشویق به بازدید از رقبا هوشمندانه است یا پرخطر، مطرح می‌کند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -8459,10 +8536,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "رستوران اسلیم چیکنز (Slim Chickens) «سوئیسی» (swicy) را به سمت و سوی جدیدی می‌برد",
+      "summary_fa": "پشت صحنه منو: این رستوران فست فود جنوبی با طعم پنیر فلفل فرنگی شیرین، طعمی شیرین و محلی به ساندویچ مرغ خود می‌دهد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -9182,10 +9259,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت BK Resources دو گروه نمایندگی اضافه می‌کند",
+      "summary_fa": "این تولیدکننده خاطرنشان می‌کند که هر دو شرکت، تجربه قوی در زمینه خدمات غذایی و دانش بازار را به مناطق مربوطه خود می‌آورند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -9222,10 +9299,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "چرا QSR ها روی کمربند خورشیدی شرط بندی می کنند",
+      "summary_fa": "رشد رستوران ها همچنان در سراسر کمربند خورشیدی متمرکز است، جایی که رشد جمعیت، توسعه و تغییر جمعیت مصرف کننده، فرصت های جدیدی را برای رستوران های زنجیره ای ایجاد می کند. در اینجا نگاهی به آنچه این منطقه را به چنین هدف جذابی برای گسترش تبدیل می کند، می اندازیم.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -9349,10 +9426,10 @@
       ],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
+      "title_fa": "طرح آزمایشی استقرار ۱۵۶ کیوسک سفارش‌گیری خودکار در شعب وندیز",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -9505,10 +9582,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "لایحه پیشنهادی، خرید از رستوران‌ها با کوپن غذا را متوقف می‌کند",
+      "summary_fa": "همچنین در خلاصه گزارش این هفته دولت آمده است: رستوران‌های زنجیره‌ای در کالیفرنیا اکنون ملزم به ارائه وعده‌های غذایی سالم برای کودکان هستند، سازمان غذا و داروی آمریکا (FDA) رنگ‌های غذایی طبیعی جدید را در نظر گرفته است و موارد دیگر.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -9750,10 +9827,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "چرا اکثر نمایشگرهای سفارش از داخل خودرو مجهز به هوش مصنوعی از کار می‌افتند — و چگونه می‌توان مشکل شما را حل کرد",
+      "summary_fa": "ادغام، نه به تنهایی اتوماسیون، چیزی است که تابلوهای منوی مؤثر را از صفحه نمایش‌های گران‌قیمت متمایز می‌کند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -10063,10 +10140,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "مخلوط کردن و ترکیب مواد خشک: هنر کمی از علم کمک می‌گیرد",
+      "summary_fa": "در حالی که مخلوط کردن و ترکیب مواد مایع برای تبدیل به یک محصول مایع یک فرآیند دقیق و کنترل‌شده است، ترکیب مواد خشک چالش‌های منحصر به فردی دارد که کنترل آنها با اتوماسیون دشوار بوده است. در نهایت، حسگرها و اتوماسیون اینجا هستند تا به شما کمک کنند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -12292,10 +12369,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "آیا هوش مصنوعی حلقه گمشده در تجاری‌سازی گوشت کشت‌شده است؟",
+      "summary_fa": "بخش گوشت کشت‌شده با چالش‌های بسیاری، به‌ویژه در مقیاس‌بندی تولید، مواجه است. هوش مصنوعی - و به‌ویژه دوقلوهای دیجیتال مدل هیبریدی - می‌توانند به غلبه بر موانع حیاتی برای بقای این صنعت کمک کنند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -12452,10 +12529,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت میوه و سبزیجات جنوب آفریقای جنوبی (Frutas y Hortalizas Del Sur SA) به دلیل آلودگی احتمالی به اشریشیا کلی 0145 (E. Coli O145) فراخوان خود را گسترش داد و یک سری از محصولات مخلوط سه بری ارگانیک منجمد با ارزش بالا را نیز شامل شد.",
+      "summary_fa": "[PRESSWIRE] سن کارلوس، شیلی - ۲ سپتامبر ۲۰۲۶ - شرکت Frutas y Hortalizas del Sur SA فراخوان خود برای بلوبری‌های ارگانیک منجمد IQF که از ۳ جولای ۲۰۲۶ آغاز شده بود را گسترش می‌دهد و یک بسته ۱۰ اونسی مخلوط سه‌تایی ارگانیک منجمد Great Value را نیز به دلیل آلودگی احتمالی به اشریشیا کلی O145 (E. coli O145) شامل می‌شود.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -14311,10 +14388,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "فروشگاه کریستال تمپتیشنز در مورد وجود شیر بدون برچسب در کره چشم‌های شکلاتی هشدار آلرژی می‌دهد",
+      "summary_fa": "فروشگاه کریستال تمپتیشنز در شمال آرلینگتون، نیوجرسی، به دلیل وجود آلرژن‌های شیر اعلام نشده در محصولاتش، آنها را از بازار جمع‌آوری می‌کند. افرادی که به شیر آلرژی یا حساسیت شدید دارند، در صورت مصرف این محصولات، در معرض خطر واکنش آلرژیک جدی یا تهدیدکننده زندگی قرار می‌گیرند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -14884,10 +14961,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "سازمان غذا و داروی آمریکا (FDA) قانونی را برای اجباری کردن اطلاع‌رسانی GRAS پیشنهاد می‌دهد",
+      "summary_fa": "سازمان غذا و داروی آمریکا (FDA) پیشنهاد می‌دهد که برنامه اطلاع‌رسانی GRAS اجباری شود و مواد غذایی ملزم شوند که ایمنی خود را برای استفاده مورد نظرشان نشان دهند، با هدف افزایش شفافیت و تنظیم مقررات. این فرآیند برای مواد موجود و جدید، با برخی استثنائات، اعمال خواهد شد و ارزیابی‌های اولیه ۴۵ روز طول خواهد کشید.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -15044,10 +15121,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت Everything Sprouts, LLC به دلیل خطر بالقوه ابتلا به E. Coli و سالمونلا، فراخوان داوطلبانه خود را برای شامل کردن مخلوط تربچه قوی گسترش می‌دهد",
+      "summary_fa": "شرکت Everything Sprouts, LLC، مستقر در مینیاپولیس، مینه‌سوتا، فراخوان داوطلبانه خود برای جوانه‌ها را گسترش می‌دهد تا شامل مقدار زیادی از مخلوط جوانه تربچه قوی شود، زیرا این محصول احتمال آلودگی به باکتری‌های اشریشیا کلی (STEC) یا سالمونلا که تولیدکننده سم شیگا هستند را دارد.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -16943,10 +17020,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت Jaime&#39;s Foods ATX در مورد وجود ماده حساسیت‌زای تخم‌مرغ در فروشگاه Jaime&#39;s Spanish Village Jalapeno Ranch هشدار داد",
+      "summary_fa": "شرکت Jaime&#39;s Foods ATX در آستین، تگزاس، فروشگاه Jaime&#39;s Spanish Village Jalapeno Ranch را به دلیل وجود تخم‌مرغ‌های اعلام نشده، جمع‌آوری می‌کند. افرادی که به تخم‌مرغ آلرژی یا حساسیت شدید دارند، در صورت مصرف این محصول، در معرض خطر واکنش آلرژیک جدی یا تهدیدکننده زندگی قرار می‌گیرند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -17419,10 +17496,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت اسنک‌سازی «بتر بیکهوس» (The Better Bakehouse) در حال جمع‌آوری تعداد زیادی از دونات‌های کیک وانیلی با روکش شکلات دوناتی به دلیل وجود ماده حساسیت‌زای شیر است.",
+      "summary_fa": "لاس وگاس، نوادا - 24 آگوست 2026 - شرکت اسنک Better Bakehouse تعداد زیادی از دونات‌های کیک وانیلی با روکش شکلات Donutful را جمع‌آوری می‌کند زیرا این محصول ممکن است حاوی شیر اعلام نشده باشد. افرادی که به شیر حساسیت یا آلرژی شدید دارند، در معرض خطر ابتلا به آلرژی جدی یا تهدیدکننده زندگی هستند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -18137,10 +18214,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت Everything Sprouts, LLC جوانه‌های یونجه را به دلیل خطر بالقوه ابتلا به E. Coli و سالمونلا فراخوان می‌کند",
+      "summary_fa": "شرکت Everything Sprouts, LLC مستقر در مینیاپولیس، مینه‌سوتا، تعداد زیادی از جوانه‌های یونجه را فراخوان می‌کند زیرا این محصول احتمال آلودگی به باکتری اشریشیا کلی تولیدکننده سم شیگا (STEC) یا باکتری سالمونلا را دارد. اشریشیا کلی تولیدکننده سم شیگا (STEC) ارگانیسم‌هایی هستند که می‌توانند باعث بیماری‌های جدی شوند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -19414,10 +19491,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "نانوایی پرنس در مورد شیر و کنجد اعلام نشده در نان‌های نانوایی پرنس هشدار آلرژی صادر کرد",
+      "summary_fa": "نانوایی پرنس در برانکس، نیویورک، نان ایتالیایی کنجدی، نان ایتالیایی بزرگ، نان فرانسوی کنجدی بزرگ، نان فرانسوی کنجدی بلند و نان اسپانیایی Pan de Manteca با برند پرنس را به دلیل احتمال وجود کنجد یا شیر اعلام نشده، از بازار جمع‌آوری می‌کند. افرادی که به ... آلرژی یا حساسیت شدید دارند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -19982,12 +20059,11 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 79,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "به‌روزرسانی شده - شرکت بستنی‌سازی درایر گرند به دلیل احتمال آلودگی به مواد خارجی، فراخوان داوطلبانه‌ای برای برخی از بستنی‌های میوه‌ای Outshine صادر کرد.",
+      "summary_fa": "۱۸ آگوست ۲۰۲۶ - شرکت بستنی‌سازی درایر گرند (Dreyer&#39;s Grand Ice Cream, Inc.) داوطلبانه تعداد محدودی از طعم‌های منتخب شکلات‌های میوه‌ای اوت‌شاین (Outshine Fruit Bars) را به دلیل احتمال آلودگی شیشه به مواد خارجی، از بازار جمع‌آوری می‌کند. محصولات تحت تأثیر شامل اوت‌شاین (Outshine) با طعم توت‌فرنگی، هندوانه، انگور، نارنگی و گیلاس سیاه (۶ عددی، ۲.۵ اونسی) می‌شود.",
       "translation": {
-        "status": "failed",
-        "engine": "http-en-fa",
-        "error": "HTTP Error 429: Too Many Requests"
+        "status": "translated",
+        "engine": "http-en-fa"
       }
     },
     {
@@ -20762,10 +20838,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 77,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت ال-نوترا (L-Nutra) در مورد آجیل‌های درختی بدون برچسب در کرم بادام و کاکائوی آپولیان (Apulian Almond & Cocoa Spread) برند پرولون (Prolon) هشدار آلرژی داد",
+      "summary_fa": "شرکت ال-نوترا (L-Nutra) در کالور سیتی، کالیفرنیا، کرم بادام و کاکائوی آپولیان (Apulian Almond & Cocoa Spread) برند پرولون را به دلیل وجود بادام هندی، پسته و فندق بدون برچسب، جمع‌آوری می‌کند. افرادی که به بادام هندی، پسته و/یا فندق آلرژی یا حساسیت شدید دارند، در معرض خطر واکنش آلرژیک جدی یا تهدیدکننده زندگی هستند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -21923,10 +21999,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت Bear با خرید Kinisi، ربات‌های انسان‌نما را به خط تولید خود اضافه می‌کند",
+      "summary_fa": "شرکت Bear Robotics به دنبال یک دستیار کمکی است تا جایگاه خود را در حوزه رباتیک غذایی و فراتر از آن تقویت کند. این شرکت به تازگی با خرید Kinisi Robotics، یکی از این دستیاران را به دست آورده است […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -22348,10 +22424,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "اپترونیکس، استارتاپ رباتیک غذا، Cibotica را خریداری کرد",
+      "summary_fa": "استارتاپ رباتیک غذا، اپترونیکس، شرکت اتوماسیون غذایی کانادایی Cibotica را خریداری کرده و فناوری خط تولید رباتیک را به سبد رو به رشد سیستم‌های رستوران‌های خودران خود اضافه کرده است. نیپون شارما، مدیرعامل اپترونیکس، به […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -23279,10 +23355,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بررسی شیوع E. coli O157:H7: غذای ناشناخته (پاییز 2020)",
+      "summary_fa": "سازمان غذا و داروی آمریکا (FDA) و مرکز کنترل و پیشگیری از بیماری‌ها (CDC)، با همکاری شرکای ایالتی و محلی، در حال بررسی بیماری‌های ناشی از سومین شیوع چند ایالتی عفونت‌های E. coli O157:H7 در پاییز امسال هستند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -23740,10 +23816,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شینکی امیدوار است که آوردن رباتیک و هوش مصنوعی به قایق ماهیگیری منجر به ماهی تازه‌تر و ضایعات کمتر شود",
+      "summary_fa": "تقریباً به هر فروشگاه مواد غذایی بروید و احتمالاً آنچه در جعبه ماهی می‌بینید، تازگی حداکثری ندارد. فکر نمی‌کنید که اینطور باشد، به خصوص در […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -24606,8 +24682,9 @@
       "title_fa": "",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
-        "engine": "http-en-fa"
+        "status": "failed",
+        "engine": "http-en-fa",
+        "error": "HTTP Error 429: Too Many Requests"
       }
     },
     {
@@ -24729,8 +24806,9 @@
       "title_fa": "",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
-        "engine": "http-en-fa"
+        "status": "failed",
+        "engine": "http-en-fa",
+        "error": "HTTP Error 429: Too Many Requests"
       }
     },
     {
@@ -25488,8 +25566,9 @@
       "title_fa": "",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
-        "engine": "http-en-fa"
+        "status": "failed",
+        "engine": "http-en-fa",
+        "error": "HTTP Error 429: Too Many Requests"
       }
     },
     {
@@ -26111,8 +26190,9 @@
       "title_fa": "",
       "summary_fa": "",
       "translation": {
-        "status": "queued",
-        "engine": "http-en-fa"
+        "status": "failed",
+        "engine": "http-en-fa",
+        "error": "HTTP Error 429: Too Many Requests"
       }
     },
     {
@@ -26267,10 +26347,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بررسی شیوع لیستریا: بستنی (آگوست 2023)",
+      "summary_fa": "سازمان غذا و داروی آمریکا (FDA) و مرکز کنترل و پیشگیری از بیماری‌ها (CDC)، با همکاری شرکای ایالتی و محلی، در حال بررسی شیوع عفونت‌های لیستریا مونوسیتوژنز هستند که به طور بالقوه با لیوان‌های Soft Serve On The Go تولید شده توسط شرکت Real Kosher Ice Cream در بروکلین، نیویورک مرتبط است.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -26536,10 +26616,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بررسی شیوع لیستریا مونوسیتوژنز: سالاد بسته‌بندی شده Fresh Express (دسامبر 2021)",
+      "summary_fa": "سازمان غذا و داروی آمریکا (FDA) و مرکز کنترل و پیشگیری از بیماری‌ها (CDC)، با همکاری شرکای ایالتی و محلی، در حال بررسی شیوع چند ایالتی عفونت‌های لیستریا مونوسیتوژنز هستند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -26653,10 +26733,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "بررسی شیوع E. coli O157:H7: سالاد بسته‌بندی شده پاور گرینز (ژانویه 2022)",
+      "summary_fa": "سازمان غذا و داروی آمریکا (FDA) و مرکز کنترل و پیشگیری از بیماری‌ها (CDC)، با همکاری شرکای ایالتی و محلی، بیماری‌های ناشی از شیوع چند ایالتی E. coli O157:H7 را بررسی کردند.",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -29154,10 +29234,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "همکاری Serve Robotics با شرکت متخصص تحویل با پهپاد Wing برای ادغام پیاده‌رو با تحویل هوایی",
+      "summary_fa": "Serve Robotics Inc. و Wing Aviation این هفته یک برنامه آزمایشی را اعلام کردند که روش‌های تحویل آنها را برای گسترش دامنه تحویل رستوران‌ها در مناطق شهری پرجمعیت ترکیب می‌کند. […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -33076,10 +33156,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "شرکت Chef Robotics در کمتر از دو سال به نقطه عطف پخت 10 میلیون وعده غذایی رسید. راز چیست؟ ربات‌های مجهز به هوش مصنوعی که با داده‌های میدانی فراوان آموزش دیده‌اند",
+      "summary_fa": "این هفته، استارتاپ اتوماسیون غذایی Chef Robotics به The Spoon گفت که کمتر از دو سال پس از استقرار اولین ربات این شرکت در ماه ژوئن، به نقطه عطف پخت ده میلیون وعده غذایی رسیده است […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -36549,10 +36629,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "استارتاپ تحویل پیاده‌رو Serve Robotics از طریق ادغام معکوس سهام خود را عرضه عمومی می‌کند",
+      "summary_fa": "Serve Robotics، استارتاپ ربات تحویل پیاده‌رو که حیات خود را به عنوان یک پروژه تحقیقاتی در Postmates به نام X آغاز کرد، از طریق ادغام معکوس سهام خود را عرضه عمومی می‌کند، طبق گزارش The Spoon. این خبر، […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },
@@ -41043,10 +41123,10 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "",
-      "summary_fa": "",
+      "title_fa": "کروگر از کامیون‌های رباتیک گاتیک برای تحویل محصولات تازه در مسافت‌های میانی استفاده خواهد کرد",
+      "summary_fa": "این هفته کروگر از همکاری با گاتیک، شرکتی متخصص در لجستیک خودران در مسافت‌های میانی، برای استفاده از کامیون‌های جعبه‌ای خودران در دالاس، تگزاس، خبر داد. طبق این اطلاعیه، هدف این همکاری […]",
       "translation": {
-        "status": "queued",
+        "status": "translated",
         "engine": "http-en-fa"
       }
     },

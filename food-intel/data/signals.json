@@ -1,7 +1,7 @@
 {
   "schema_version": "0.4",
-  "generated_at": "2026-09-15T12:44:52Z",
-  "articles_24h": 47,
+  "generated_at": "2026-09-15T12:47:52Z",
+  "articles_24h": 49,
   "articles_previous_6d": 178,
   "trending_topics": [
     {
@@ -12,6 +12,13 @@
       "acceleration": 4.0
     },
     {
+      "id": "consumer_behavior",
+      "label_fa": "رفتار مصرف‌کننده",
+      "count_24h": 8,
+      "previous_daily_avg": 2.33,
+      "acceleration": 3.43
+    },
+    {
       "id": "beverage",
       "label_fa": "نوشیدنی",
       "count_24h": 9,
@@ -19,10 +26,10 @@
       "acceleration": 3.18
     },
     {
-      "id": "consumer_behavior",
-      "label_fa": "رفتار مصرف‌کننده",
-      "count_24h": 7,
-      "previous_daily_avg": 2.33,
+      "id": "food_industry",
+      "label_fa": "صنعت غذا",
+      "count_24h": 8,
+      "previous_daily_avg": 2.67,
       "acceleration": 3.0
     },
     {
@@ -31,13 +38,6 @@
       "count_24h": 2,
       "previous_daily_avg": 0.67,
       "acceleration": 3.0
-    },
-    {
-      "id": "food_industry",
-      "label_fa": "صنعت غذا",
-      "count_24h": 7,
-      "previous_daily_avg": 2.67,
-      "acceleration": 2.62
     },
     {
       "id": "POS",
@@ -61,20 +61,20 @@
       "acceleration": 2.0
     },
     {
+      "id": "AI",
+      "label_fa": "هوش مصنوعی",
+      "count_24h": 18,
+      "previous_daily_avg": 9.17,
+      "acceleration": 1.96
+    },
+    {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
       "count_24h": 16,
       "previous_daily_avg": 8.33,
       "acceleration": 1.92
-    },
-    {
-      "id": "AI",
-      "label_fa": "هوش مصنوعی",
-      "count_24h": 17,
-      "previous_daily_avg": 9.17,
-      "acceleration": 1.85
     }
   ],
   "trending_brands": [],
-  "radar_fa": "موضوع‌های رو به رشد: وفاداری مشتری، نوشیدنی، رفتار مصرف‌کننده."
+  "radar_fa": "موضوع‌های رو به رشد: وفاداری مشتری، رفتار مصرف‌کننده، نوشیدنی."
 }
