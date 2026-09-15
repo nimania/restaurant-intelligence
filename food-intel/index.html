@@ -3,52 +3,70 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Food Industry Intelligence</title>
-  <meta name="description" content="Live food, restaurant, QSR and food-tech industry intelligence feed." />
+  <title>رادار صنعت غذا | Nima's Diner</title>
+  <meta name="description" content="رادار خبر و سیگنال صنعت غذا، رستوران، QSR، تجهیزات و فناوری غذا." />
   <style>
-    :root{--bg:#0b0d10;--panel:#12161b;--panel2:#171c22;--text:#f2f5f7;--muted:#98a2ad;--line:#262d35;--accent:#ffb347;--good:#76d39b}
+    :root{--bg:#0b0d10;--panel:#12161b;--panel2:#171c22;--text:#f2f5f7;--muted:#98a2ad;--line:#262d35;--accent:#ffb347;--good:#76d39b;--blue:#8ab4f8}
     *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif}
-    .wrap{max-width:1240px;margin:auto;padding:28px 18px 60px}.hero{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-bottom:22px}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800}.hero h1{margin:7px 0 6px;font-size:clamp(28px,5vw,54px);line-height:1}.hero p{margin:0;color:var(--muted);max-width:720px}.status{text-align:left;color:var(--muted);font-size:13px}
+    .wrap{max-width:1240px;margin:auto;padding:28px 18px 60px}.hero{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-bottom:22px}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.08em;font-weight:800}.hero h1{margin:7px 0 6px;font-size:clamp(30px,5vw,56px);line-height:1}.hero p{margin:0;color:var(--muted);max-width:760px}.status{text-align:left;color:var(--muted);font-size:13px}
     .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0}.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:15px}.stat b{display:block;font-size:27px}.stat span{color:var(--muted);font-size:12px}
-    .toolbar{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:10px;margin:18px 0}input,select{width:100%;background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:12px;padding:12px 13px;font:inherit;outline:none}input:focus,select:focus{border-color:#59636e}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:linear-gradient(180deg,var(--panel),#101419);border:1px solid var(--line);border-radius:16px;padding:17px;display:flex;flex-direction:column;gap:11px}.top{display:flex;justify-content:space-between;gap:10px;align-items:center}.source{font-size:12px;color:var(--muted)}.score{font-weight:800;font-size:12px;border:1px solid #36513f;color:var(--good);padding:5px 8px;border-radius:999px;white-space:nowrap}.card h2{direction:ltr;text-align:left;font-size:19px;line-height:1.35;margin:0}.card p{direction:ltr;text-align:left;color:#b8c0c8;line-height:1.55;margin:0;font-size:14px}.meta{display:flex;flex-wrap:wrap;gap:6px;direction:ltr;justify-content:flex-start}.tag{border:1px solid var(--line);background:var(--panel2);color:#bdc6ce;border-radius:999px;padding:4px 7px;font-size:11px}.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:12px}.open{color:var(--text);text-decoration:none;border-bottom:1px solid #5b646d}.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:80px 20px;border:1px dashed var(--line);border-radius:16px}.load{color:var(--muted);padding:30px 0}.note{margin-top:18px;color:#707a84;font-size:12px;line-height:1.7}
-    @media(max-width:800px){.hero{display:block}.status{text-align:right;margin-top:15px}.stats{grid-template-columns:repeat(2,1fr)}.toolbar{grid-template-columns:1fr 1fr}.toolbar input{grid-column:1/-1}.grid{grid-template-columns:1fr}}
+    .radar{background:linear-gradient(135deg,#151a20,#101419);border:1px solid var(--line);border-radius:18px;padding:18px;margin:18px 0}.radar-head{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:14px}.radar h2{margin:0;font-size:20px}.radar p{margin:5px 0 0;color:var(--muted);font-size:13px;line-height:1.8}.signal-groups{display:grid;grid-template-columns:1fr 1fr;gap:12px}.signal-box{border:1px solid var(--line);border-radius:14px;padding:13px;background:rgba(255,255,255,.015)}.signal-title{font-size:12px;color:var(--muted);margin-bottom:9px}.signal-list{display:flex;flex-wrap:wrap;gap:7px}.signal{border:1px solid #34404b;border-radius:999px;padding:7px 9px;font-size:12px}.signal strong{color:var(--good);margin-right:5px}
+    .toolbar{display:grid;grid-template-columns:2fr repeat(4,1fr);gap:10px;margin:18px 0}input,select{width:100%;background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:12px;padding:12px 13px;font:inherit;outline:none}input:focus,select:focus{border-color:#59636e}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:linear-gradient(180deg,var(--panel),#101419);border:1px solid var(--line);border-radius:16px;padding:17px;display:flex;flex-direction:column;gap:11px}.top{display:flex;justify-content:space-between;gap:10px;align-items:center}.source{font-size:12px;color:var(--muted)}.score{font-weight:800;font-size:12px;border:1px solid #36513f;color:var(--good);padding:5px 8px;border-radius:999px;white-space:nowrap}.card h2{direction:ltr;text-align:left;font-size:19px;line-height:1.35;margin:0}.card p{direction:ltr;text-align:left;color:#b8c0c8;line-height:1.55;margin:0;font-size:14px}.meta{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-start}.tag{border:1px solid var(--line);background:var(--panel2);color:#bdc6ce;border-radius:999px;padding:4px 7px;font-size:11px}.brand{border-color:#3e4650;color:var(--blue)}.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:12px}.open{color:var(--text);text-decoration:none;border-bottom:1px solid #5b646d}.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:80px 20px;border:1px dashed var(--line);border-radius:16px}.load{color:var(--muted);padding:30px 0}.note{margin-top:18px;color:#707a84;font-size:12px;line-height:1.8}
+    @media(max-width:900px){.toolbar{grid-template-columns:1fr 1fr}.toolbar input{grid-column:1/-1}.signal-groups{grid-template-columns:1fr}}
+    @media(max-width:800px){.hero{display:block}.status{text-align:right;margin-top:15px}.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
   <main class="wrap">
     <section class="hero">
-      <div><div class="eyebrow">NIMA'S DINER · INDUSTRY RADAR</div><h1>Food Industry Intelligence</h1><p>رادار زنده‌ی خبر و سیگنال برای رستوران، QSR، فست‌کژوال، فناوری غذا، تجهیزات، ایمنی و تولید.</p></div>
+      <div>
+        <div class="eyebrow">NIMA'S DINER · FOOD INDUSTRY RADAR</div>
+        <h1>رادار صنعت غذا</h1>
+        <p>رصد خبر و سیگنال برای رستوران، فست‌فود و QSR، فست‌کژوال، فناوری غذا، تجهیزات، ایمنی، تولید و زنجیره تأمین.</p>
+      </div>
       <div class="status"><div id="generated">در حال بارگذاری…</div><div>به‌روزرسانی خودکار هر ۳ ساعت</div></div>
     </section>
 
     <section class="stats">
       <div class="stat"><b id="count">—</b><span>خبر در دیتابیس</span></div>
       <div class="stat"><b id="sources">—</b><span>منبع فعال</span></div>
-      <div class="stat"><b id="high">—</b><span>خبر مهم ۸۰+</span></div>
-      <div class="stat"><b id="today">—</b><span>منتشرشده در ۲۴ ساعت</span></div>
+      <div class="stat"><b id="high">—</b><span>خبر مهم با امتیاز ۸۰+</span></div>
+      <div class="stat"><b id="today">—</b><span>خبر ۲۴ ساعت اخیر</span></div>
+    </section>
+
+    <section class="radar">
+      <div class="radar-head">
+        <div><h2>رادار امروز</h2><p id="radarText">در حال محاسبه سیگنال‌ها…</p></div>
+      </div>
+      <div class="signal-groups">
+        <div class="signal-box"><div class="signal-title">موضوع‌های رو به رشد</div><div id="trendTopics" class="signal-list">—</div></div>
+        <div class="signal-box"><div class="signal-title">برندهای پرتکرار</div><div id="trendBrands" class="signal-list">—</div></div>
+      </div>
     </section>
 
     <section class="toolbar">
-      <input id="search" type="search" placeholder="جست‌وجو در تیتر، خلاصه، موضوع یا منبع…" />
+      <input id="search" type="search" placeholder="جست‌وجو در تیتر، موضوع، برند یا منبع…" />
       <select id="category"><option value="">همه موضوع‌ها</option></select>
+      <select id="brand"><option value="">همه برندها</option></select>
       <select id="source"><option value="">همه منابع</option></select>
       <select id="sort"><option value="score">مهم‌ترین</option><option value="newest">جدیدترین</option></select>
     </section>
 
     <div id="feed" class="grid"><div class="load">در حال دریافت داده‌ها…</div></div>
-    <div class="note">متن کامل مقالات بازنشر نمی‌شود؛ این صفحه metadata، خلاصه‌ی feed و لینک مستقیم ناشر را نمایش می‌دهد. امتیاز اهمیت نسخه 0.3 rule-based و قابل بازبینی است.</div>
+    <div class="note">تیتر، خلاصه و متن ناشر ترجمه یا بازنویسی نمی‌شود. فارسی‌سازی این صفحه فقط برای رابط کاربری، برچسب‌های موضوعی، نام برندها و سیگنال‌های آماری است. برای مطالعه متن، لینک «اصل خبر» مستقیماً به ناشر می‌رود.</div>
   </main>
 
 <script>
-const state={items:[]};
+const state={items:[],signals:null};
 const $=id=>document.getElementById(id);
-const labels={qsr_fast_food:'QSR / Fast Food',fast_casual:'Fast Casual',restaurant_operations:'Operations',menu_product_innovation:'Menu Innovation',restaurant_technology_ai:'Tech / AI',equipment_automation:'Equipment',food_cost_pricing:'Food Cost',supply_chain:'Supply Chain',food_safety:'Food Safety',labor_management:'Labor',franchising:'Franchising',delivery_drive_thru:'Delivery / Drive-Thru',consumer_behavior:'Consumer',marketing_branding:'Marketing',beverage:'Beverage',food_manufacturing:'Manufacturing',ingredients_rd:'Ingredients / R&D',retail_food:'Retail',regulation:'Regulation',sustainability:'Sustainability',restaurant_industry:'Restaurant Industry',food_industry:'Food Industry'};
-function esc(s=''){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+const labels={qsr_fast_food:'فست‌فود و QSR',fast_casual:'فست‌کژوال',restaurant_operations:'عملیات رستوران',menu_product_innovation:'نوآوری منو و محصول',restaurant_technology_ai:'فناوری رستوران و هوش مصنوعی',equipment_automation:'تجهیزات و اتوماسیون',food_cost_pricing:'هزینه غذا و قیمت‌گذاری',supply_chain:'زنجیره تأمین',food_safety:'ایمنی غذا',labor_management:'نیروی انسانی و مدیریت',franchising:'فرنچایز',delivery_drive_thru:'دلیوری و درایو‌ثرو',consumer_behavior:'رفتار مصرف‌کننده',marketing_branding:'بازاریابی و برندینگ',beverage:'نوشیدنی',food_manufacturing:'تولید صنایع غذایی',ingredients_rd:'مواد اولیه و تحقیق‌وتوسعه',retail_food:'خرده‌فروشی غذا',regulation:'قانون‌گذاری و مقررات',sustainability:'پایداری',restaurant_industry:'صنعت رستوران',food_industry:'صنعت غذا'};
+function esc(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function ago(date){if(!date)return '—';const h=Math.max(0,(Date.now()-new Date(date))/36e5);if(h<1)return `${Math.round(h*60)} دقیقه قبل`;if(h<24)return `${Math.round(h)} ساعت قبل`;return `${Math.round(h/24)} روز قبل`}
-function render(){const q=$('search').value.trim().toLowerCase(),cat=$('category').value,src=$('source').value,sort=$('sort').value;let rows=state.items.filter(x=>{const hay=[x.title,x.summary,x.source?.name,...(x.categories||[]),...(x.topics||[])].join(' ').toLowerCase();return(!q||hay.includes(q))&&(!cat||(x.categories||[]).includes(cat))&&(!src||x.source?.id===src)});rows.sort(sort==='newest'?(a,b)=>new Date(b.published_at)-new Date(a.published_at):(a,b)=>(b.relevance_score||0)-(a.relevance_score||0)||new Date(b.published_at)-new Date(a.published_at));$('feed').innerHTML=rows.length?rows.slice(0,200).map(x=>`<article class="card"><div class="top"><span class="source">${esc(x.source?.name||'Unknown')}</span><span class="score">${x.relevance_score??'—'} / 100</span></div><h2>${esc(x.title)}</h2>${x.summary?`<p>${esc(x.summary.slice(0,300))}${x.summary.length>300?'…':''}</p>`:''}<div class="meta">${(x.categories||[]).slice(0,4).map(t=>`<span class="tag">${esc(labels[t]||t)}</span>`).join('')}${(x.topics||[]).slice(0,3).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div><div class="foot"><span>${ago(x.published_at)}</span><a class="open" href="${esc(x.url)}" target="_blank" rel="noopener">اصل خبر ↗</a></div></article>`).join(''):'<div class="empty">خبری با این فیلتر پیدا نشد.</div>'}
-async function boot(){try{const r=await fetch('data/news.json?ts='+Date.now());if(!r.ok)throw new Error('HTTP '+r.status);const d=await r.json();state.items=d.items||[];$('count').textContent=d.count??state.items.length;$('sources').textContent=d.active_sources??'—';$('high').textContent=state.items.filter(x=>(x.relevance_score||0)>=80).length;$('today').textContent=state.items.filter(x=>Date.now()-new Date(x.published_at)<864e5).length;$('generated').textContent=d.generated_at?'آخرین پردازش: '+new Date(d.generated_at).toLocaleString('fa-IR'):'هنوز اولین پردازش انجام نشده';const cats=[...new Set(state.items.flatMap(x=>x.categories||[]))].sort();cats.forEach(c=>$('category').insertAdjacentHTML('beforeend',`<option value="${esc(c)}">${esc(labels[c]||c)}</option>`));const srcs=[...new Map(state.items.map(x=>[x.source?.id,x.source?.name])).entries()].filter(x=>x[0]).sort((a,b)=>a[1].localeCompare(b[1]));srcs.forEach(([id,name])=>$('source').insertAdjacentHTML('beforeend',`<option value="${esc(id)}">${esc(name)}</option>`));render()}catch(e){$('feed').innerHTML=`<div class="empty">دیتا هنوز آماده نیست یا بارگذاری نشد.<br><small>${esc(String(e))}</small></div>`}}
-['search','category','source','sort'].forEach(id=>$(id).addEventListener(id==='search'?'input':'change',render));boot();
+function renderSignals(){const s=state.signals||{};$('radarText').textContent=s.radar_fa||'هنوز داده کافی برای تشخیص روند وجود ندارد.';const signalHtml=(rows)=>rows?.length?rows.slice(0,8).map(x=>`<span class="signal">${esc(x.label_fa)} <strong>×${esc(x.acceleration)}</strong></span>`).join(''):'<span class="source">داده کافی نیست</span>';$('trendTopics').innerHTML=signalHtml(s.trending_topics);$('trendBrands').innerHTML=signalHtml(s.trending_brands)}
+function render(){const q=$('search').value.trim().toLowerCase(),cat=$('category').value,brand=$('brand').value,src=$('source').value,sort=$('sort').value;let rows=state.items.filter(x=>{const brandText=(x.brands||[]).flatMap(b=>[b.name,b.fa,b.id]);const hay=[x.title,x.summary,x.source?.name,...(x.categories||[]),...(x.topics||[]),...brandText].join(' ').toLowerCase();return(!q||hay.includes(q))&&(!cat||(x.categories||[]).includes(cat))&&(!brand||(x.brands||[]).some(b=>b.id===brand))&&(!src||x.source?.id===src)});rows.sort(sort==='newest'?(a,b)=>new Date(b.published_at)-new Date(a.published_at):(a,b)=>(b.relevance_score||0)-(a.relevance_score||0)||new Date(b.published_at)-new Date(a.published_at));$('feed').innerHTML=rows.length?rows.slice(0,200).map(x=>`<article class="card"><div class="top"><span class="source">${esc(x.source?.name||'Unknown')}</span><span class="score">${x.relevance_score??'—'} / 100</span></div><h2>${esc(x.title)}</h2>${x.summary?`<p>${esc(x.summary.slice(0,300))}${x.summary.length>300?'…':''}</p>`:''}<div class="meta">${(x.brands||[]).slice(0,4).map(b=>`<span class="tag brand">${esc(b.fa||b.name)}</span>`).join('')}${(x.categories||[]).slice(0,3).map(t=>`<span class="tag">${esc(labels[t]||t)}</span>`).join('')}</div><div class="foot"><span>${ago(x.published_at)}</span><a class="open" href="${esc(x.url)}" target="_blank" rel="noopener">اصل خبر ↗</a></div></article>`).join(''):'<div class="empty">خبری با این فیلتر پیدا نشد.</div>'}
+async function boot(){try{const ts=Date.now();const [nr,sr]=await Promise.all([fetch('data/news.json?ts='+ts),fetch('data/signals.json?ts='+ts)]);if(!nr.ok)throw new Error('news HTTP '+nr.status);const d=await nr.json();state.items=d.items||[];if(sr.ok)state.signals=await sr.json();$('count').textContent=d.count??state.items.length;$('sources').textContent=d.active_sources??'—';$('high').textContent=state.items.filter(x=>(x.relevance_score||0)>=80).length;$('today').textContent=state.items.filter(x=>Date.now()-new Date(x.published_at)<864e5).length;$('generated').textContent=d.generated_at?'آخرین پردازش: '+new Date(d.generated_at).toLocaleString('fa-IR'):'هنوز اولین پردازش انجام نشده';const cats=[...new Set(state.items.flatMap(x=>x.categories||[]))].sort();cats.forEach(c=>$('category').insertAdjacentHTML('beforeend',`<option value="${esc(c)}">${esc(labels[c]||c)}</option>`));const brands=[...new Map(state.items.flatMap(x=>(x.brands||[]).map(b=>[b.id,b.fa||b.name]))).entries()].filter(x=>x[0]).sort((a,b)=>a[1].localeCompare(b[1],'fa'));brands.forEach(([id,name])=>$('brand').insertAdjacentHTML('beforeend',`<option value="${esc(id)}">${esc(name)}</option>`));const srcs=[...new Map(state.items.map(x=>[x.source?.id,x.source?.name])).entries()].filter(x=>x[0]).sort((a,b)=>a[1].localeCompare(b[1]));srcs.forEach(([id,name])=>$('source').insertAdjacentHTML('beforeend',`<option value="${esc(id)}">${esc(name)}</option>`));renderSignals();render()}catch(e){$('feed').innerHTML=`<div class="empty">داده هنوز آماده نیست یا بارگذاری نشد.<br><small>${esc(String(e))}</small></div>`}}
+['search','category','brand','source','sort'].forEach(id=>$(id).addEventListener(id==='search'?'input':'change',render));boot();
 </script>
 </body>
 </html>

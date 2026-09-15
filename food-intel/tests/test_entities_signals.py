@@ -1,0 +1,58 @@
+import sys
+import unittest
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))
+
+from entities import detect_brands
+from signals import build_signals
+
+
+class EntitySignalTests(unittest.TestCase):
+    def test_detects_known_brand(self):
+        catalog = [
+            {"id": "mcdonalds", "name": "McDonald's", "fa": "مک‌دونالدز", "aliases": ["mcdonald's", "mcdonalds"]}
+        ]
+        brands = detect_brands("McDonald's tests a new kitchen system", "", catalog)
+        self.assertEqual(brands[0]["id"], "mcdonalds")
+        self.assertEqual(brands[0]["fa"], "مک‌دونالدز")
+
+    def test_does_not_translate_article_text(self):
+        catalog = [
+            {"id": "starbucks", "name": "Starbucks", "fa": "استارباکس", "aliases": ["starbucks"]}
+        ]
+        title = "Starbucks updates its store format"
+        brands = detect_brands(title, "", catalog)
+        self.assertEqual(title, "Starbucks updates its store format")
+        self.assertEqual(brands[0]["name"], "Starbucks")
+
+    def test_builds_trending_topic_from_counts(self):
+        items = [
+            {
+                "published_at": "2026-09-15T10:00:00Z",
+                "categories": ["restaurant_technology_ai"],
+                "topics": ["AI"],
+                "brands": [],
+            },
+            {
+                "published_at": "2026-09-15T09:00:00Z",
+                "categories": ["restaurant_technology_ai"],
+                "topics": ["AI"],
+                "brands": [],
+            },
+            {
+                "published_at": "2026-09-12T09:00:00Z",
+                "categories": ["food_safety"],
+                "topics": ["food safety"],
+                "brands": [],
+            },
+        ]
+        signals = build_signals(items, "2026-09-15T11:00:00Z")
+        ids = [x["id"] for x in signals["trending_topics"]]
+        self.assertIn("restaurant_technology_ai", ids)
+        self.assertIn("هوش مصنوعی", signals["radar_fa"])
+
+
+if __name__ == "__main__":
+    unittest.main()

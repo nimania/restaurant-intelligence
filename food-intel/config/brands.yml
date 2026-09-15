@@ -1,0 +1,165 @@
+brands:
+  - id: mcdonalds
+    name: McDonald's
+    fa: مک‌دونالدز
+    aliases: ["mcdonald's", "mcdonalds", "mcdonald"]
+  - id: starbucks
+    name: Starbucks
+    fa: استارباکس
+    aliases: ["starbucks"]
+  - id: yum_brands
+    name: Yum! Brands
+    fa: یام برندز
+    aliases: ["yum! brands", "yum brands"]
+  - id: kfc
+    name: KFC
+    fa: کی‌اف‌سی
+    aliases: ["kfc", "kentucky fried chicken"]
+  - id: taco_bell
+    name: Taco Bell
+    fa: تاکو بل
+    aliases: ["taco bell"]
+  - id: pizza_hut
+    name: Pizza Hut
+    fa: پیتزا هات
+    aliases: ["pizza hut"]
+  - id: burger_king
+    name: Burger King
+    fa: برگر کینگ
+    aliases: ["burger king"]
+  - id: rbi
+    name: Restaurant Brands International
+    fa: رستوران برندز اینترنشنال
+    aliases: ["restaurant brands international", "rbi"]
+  - id: wendys
+    name: Wendy's
+    fa: وندیز
+    aliases: ["wendy's", "wendys"]
+  - id: dominos
+    name: Domino's
+    fa: دومینوز
+    aliases: ["domino's", "dominos"]
+  - id: chipotle
+    name: Chipotle
+    fa: چیپوتله
+    aliases: ["chipotle"]
+  - id: cava
+    name: CAVA
+    fa: کاوا
+    aliases: ["cava group", "cava restaurant", "cava"]
+  - id: sweetgreen
+    name: Sweetgreen
+    fa: سوییت‌گرین
+    aliases: ["sweetgreen"]
+  - id: panera
+    name: Panera Bread
+    fa: پانرا برد
+    aliases: ["panera bread", "panera"]
+  - id: subway
+    name: Subway
+    fa: ساب‌وی
+    aliases: ["subway restaurants", "subway restaurant", "subway"]
+  - id: chickfila
+    name: Chick-fil-A
+    fa: چیک‌فیل‌ای
+    aliases: ["chick-fil-a", "chick fil a"]
+  - id: popeyes
+    name: Popeyes
+    fa: پاپایز
+    aliases: ["popeyes"]
+  - id: dunkin
+    name: Dunkin'
+    fa: دانکین
+    aliases: ["dunkin'", "dunkin"]
+  - id: shake_shack
+    name: Shake Shack
+    fa: شیک شک
+    aliases: ["shake shack"]
+  - id: wingstop
+    name: Wingstop
+    fa: وینگ‌استاپ
+    aliases: ["wingstop"]
+  - id: doordash
+    name: DoorDash
+    fa: دوردش
+    aliases: ["doordash"]
+  - id: uber_eats
+    name: Uber Eats
+    fa: اوبر ایتس
+    aliases: ["uber eats"]
+  - id: grubhub
+    name: Grubhub
+    fa: گراب‌هاب
+    aliases: ["grubhub"]
+  - id: toast
+    name: Toast
+    fa: توست
+    aliases: ["toast pos", "toast inc", "toast, inc", "toast platform"]
+  - id: olo
+    name: Olo
+    fa: اولو
+    aliases: ["olo platform", "olo inc", "olo's", "olo"]
+  - id: ncr_voyix
+    name: NCR Voyix
+    fa: ان‌سی‌آر وُیکس
+    aliases: ["ncr voyix", "ncr"]
+  - id: par_technology
+    name: PAR Technology
+    fa: پار تکنولوژی
+    aliases: ["par technology", "partech"]
+  - id: sysco
+    name: Sysco
+    fa: سیسکو
+    aliases: ["sysco"]
+  - id: us_foods
+    name: US Foods
+    fa: یو‌اس فودز
+    aliases: ["us foods", "u.s. foods"]
+  - id: performance_food_group
+    name: Performance Food Group
+    fa: پرفورمنس فود گروپ
+    aliases: ["performance food group", "pfg"]
+  - id: rational
+    name: RATIONAL
+    fa: رشنال
+    aliases: ["rational ag", "rational oven", "rational cooking"]
+  - id: middleby
+    name: Middleby
+    fa: میدلبی
+    aliases: ["middleby"]
+  - id: welbilt
+    name: Welbilt
+    fa: ولبیلت
+    aliases: ["welbilt"]
+  - id: unox
+    name: UNOX
+    fa: یوناکس
+    aliases: ["unox"]
+  - id: nestle
+    name: Nestlé
+    fa: نستله
+    aliases: ["nestlé", "nestle"]
+  - id: pepsico
+    name: PepsiCo
+    fa: پپسی‌کو
+    aliases: ["pepsico", "pepsi co"]
+  - id: coca_cola
+    name: Coca-Cola
+    fa: کوکاکولا
+    aliases: ["coca-cola", "coca cola"]
+  - id: mondelez
+    name: Mondelēz
+    fa: موندلیز
+    aliases: ["mondelēz", "mondelez"]
+  - id: kraft_heinz
+    name: Kraft Heinz
+    fa: کرفت هاینز
+    aliases: ["kraft heinz"]
+  - id: tyson_foods
+    name: Tyson Foods
+    fa: تایسون فودز
+    aliases: ["tyson foods"]
+  - id: general_mills
+    name: General Mills
+    fa: جنرال میلز
+    aliases: ["general mills"]

@@ -14,11 +14,14 @@ import yaml
 from dateutil import parser as date_parser
 
 from classify import classify
+from entities import detect_brands, load_brands
 from score import relevance_score
+from signals import build_signals
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES_PATH = ROOT / "config" / "sources.yml"
 DATA_PATH = ROOT / "data" / "news.json"
+SIGNALS_PATH = ROOT / "data" / "signals.json"
 MAX_ITEMS = 5000
 TRACKING_PARAMS = {
     "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "utm_id",
@@ -85,7 +88,7 @@ def load_existing() -> dict:
         return {"items": []}
 
 
-def normalize_entry(entry, source: dict) -> dict | None:
+def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | None:
     title = clean_text(getattr(entry, "title", ""))
     url = canonicalize_url(getattr(entry, "link", "") or "")
     if not title or not url:
@@ -114,16 +117,15 @@ def normalize_entry(entry, source: dict) -> dict | None:
         "summary": summary,
         "categories": categories,
         "topics": topics,
-        "brands": [],
+        "brands": detect_brands(title, summary, brand_catalog),
         "relevance_score": None,
-        "summary_fa": None,
     }
     item["relevance_score"] = relevance_score(item, source)
     return item
 
 
-def collect_source(source: dict) -> tuple[list[dict], dict]:
-    feed = feedparser.parse(source["feed_url"], agent="FoodIndustryIntelligence/0.3 (+GitHub)")
+def collect_source(source: dict, brand_catalog: list[dict]) -> tuple[list[dict], dict]:
+    feed = feedparser.parse(source["feed_url"], agent="FoodIndustryIntelligence/0.4 (+GitHub)")
     status = {
         "source_id": source["id"], "name": source["name"], "feed_url": source["feed_url"],
         "entries_seen": len(feed.entries), "bozo": bool(getattr(feed, "bozo", False)),
@@ -132,7 +134,7 @@ def collect_source(source: dict) -> tuple[list[dict], dict]:
         status["warning"] = str(feed.bozo_exception)[:300]
     items = []
     for entry in feed.entries:
-        item = normalize_entry(entry, source)
+        item = normalize_entry(entry, source, brand_catalog)
         if item:
             items.append(item)
     return items, status
@@ -141,13 +143,14 @@ def collect_source(source: dict) -> tuple[list[dict], dict]:
 def main() -> None:
     sources = load_sources()
     source_by_id = {s["id"]: s for s in sources}
+    brand_catalog = load_brands()
     existing = load_existing()
     by_id = {item["id"]: item for item in existing.get("items", []) if item.get("id")}
     source_status = []
     processed = 0
 
     for source in sources:
-        items, status = collect_source(source)
+        items, status = collect_source(source, brand_catalog)
         source_status.append(status)
         for item in items:
             previous = by_id.get(item["id"])
@@ -156,23 +159,37 @@ def main() -> None:
             by_id[item["id"]] = item
             processed += 1
 
+    # Re-enrich the full retained dataset so new entity rules apply immediately.
     for item in by_id.values():
         source = source_by_id.get(item.get("source", {}).get("id"), {})
+        item.pop("summary_fa", None)  # Translation is intentionally not stored or published.
+        item["brands"] = detect_brands(item.get("title", ""), item.get("summary", ""), brand_catalog)
         item["relevance_score"] = relevance_score(item, source)
 
-    items = sorted(by_id.values(), key=lambda x: (x.get("published_at") or "", x.get("relevance_score") or 0), reverse=True)[:MAX_ITEMS]
+    items = sorted(
+        by_id.values(),
+        key=lambda x: (x.get("published_at") or "", x.get("relevance_score") or 0),
+        reverse=True,
+    )[:MAX_ITEMS]
+
+    generated_at = utc_now()
     payload = {
-        "schema_version": "0.3",
-        "generated_at": utc_now(),
+        "schema_version": "0.4",
+        "generated_at": generated_at,
         "count": len(items),
         "active_sources": len(sources),
         "entries_processed_this_run": processed,
         "source_status": source_status,
         "items": items,
     }
+    signals = build_signals(items, generated_at)
+
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     DATA_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    SIGNALS_PATH.write_text(json.dumps(signals, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
     print(f"Stored {len(items)} unique articles from {len(sources)} active sources.")
+    print(f"Detected {sum(len(i.get('brands', [])) for i in items)} brand mentions in retained articles.")
     for status in source_status:
         print(f"- {status['name']}: {status['entries_seen']} entries; bozo={status['bozo']}")
 
