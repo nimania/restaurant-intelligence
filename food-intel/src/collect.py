@@ -18,11 +18,13 @@ from classify_fa import classify_fa
 from entities import detect_brands, load_brands
 from score import relevance_score
 from signals import build_signals
+from translate_fa import apply_persian_translation
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_PATHS = [
     ROOT / "config" / "sources.yml",
     ROOT / "config" / "sources_iran.yml",
+    ROOT / "config" / "sources_iran_discovery.yml",
 ]
 DATA_PATH = ROOT / "data" / "news.json"
 SIGNALS_PATH = ROOT / "data" / "signals.json"
@@ -167,6 +169,13 @@ def iran_relevance_score(title: str, summary: str, source: dict, brands: list[di
     return min(score, 100)
 
 
+def entry_publisher(entry) -> str | None:
+    source = getattr(entry, "source", None)
+    if hasattr(source, "get"):
+        return clean_text(source.get("title") or "") or None
+    return None
+
+
 def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | None:
     title = clean_text(getattr(entry, "title", ""))
     url = canonicalize_url(getattr(entry, "link", "") or "")
@@ -184,6 +193,7 @@ def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | No
     iran_score = iran_relevance_score(title, summary, source, brands)
     published_at = entry_datetime(entry)
     source_market = source.get("market") or ("iran" if iran_score >= 70 else None)
+    publisher = entry_publisher(entry) if source.get("aggregator") else None
 
     item = {
         "id": article_id(url, title, source["id"]),
@@ -197,7 +207,9 @@ def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | No
             "priority": source.get("priority", 3),
             "market": source_market,
             "country": source.get("country"),
+            "aggregator": source.get("aggregator"),
         },
+        "discovered_publisher": publisher,
         "author": clean_text(getattr(entry, "author", "")) or None,
         "published_at": published_at,
         "collected_at": utc_now(),
@@ -217,13 +229,14 @@ def normalize_entry(entry, source: dict, brand_catalog: list[dict]) -> dict | No
 
 
 def collect_source(source: dict, brand_catalog: list[dict]) -> tuple[list[dict], dict]:
-    feed = feedparser.parse(source["feed_url"], agent="FoodIndustryIntelligence/0.5 (+GitHub)")
+    feed = feedparser.parse(source["feed_url"], agent="FoodIndustryIntelligence/0.6 (+GitHub)")
     matched = 0
     status = {
         "source_id": source["id"],
         "name": source["name"],
         "feed_url": source["feed_url"],
         "market": source.get("market"),
+        "aggregator": source.get("aggregator"),
         "entries_seen": len(feed.entries),
         "entries_matched": 0,
         "bozo": bool(getattr(feed, "bozo", False)),
@@ -248,7 +261,8 @@ def main() -> None:
     source_by_id = {s["id"]: s for s in sources}
     brand_catalog = load_brands()
     existing = load_existing()
-    by_id = {item["id"]: item for item in existing.get("items", []) if item.get("id")}
+    previous_by_id = {item["id"]: item for item in existing.get("items", []) if item.get("id")}
+    by_id = dict(previous_by_id)
     source_status = []
     processed = 0
 
@@ -256,16 +270,18 @@ def main() -> None:
         items, status = collect_source(source, brand_catalog)
         source_status.append(status)
         for item in items:
-            previous = by_id.get(item["id"])
+            previous = previous_by_id.get(item["id"])
             if previous:
                 item["collected_at"] = previous.get("collected_at", item["collected_at"])
+                for field in ("title_fa", "summary_fa", "translation"):
+                    if previous.get(field) is not None:
+                        item[field] = previous.get(field)
             by_id[item["id"]] = item
             processed += 1
 
     # Re-enrich the retained dataset so new entity and Iran rules apply immediately.
     for item in by_id.values():
         source = source_by_id.get(item.get("source", {}).get("id"), item.get("source", {}))
-        item.pop("summary_fa", None)
         item["brands"] = detect_brands(item.get("title", ""), item.get("summary", ""), brand_catalog)
         item["iran_relevance_score"] = iran_relevance_score(
             item.get("title", ""), item.get("summary", ""), source, item["brands"]
@@ -282,16 +298,24 @@ def main() -> None:
         reverse=True,
     )[:MAX_ITEMS]
 
+    translation_stats = apply_persian_translation(items, previous_by_id)
+
     generated_at = utc_now()
     iran_items = [item for item in items if item.get("market") == "iran" or (item.get("iran_relevance_score") or 0) >= 70]
     payload = {
-        "schema_version": "0.5",
+        "schema_version": "0.6",
         "generated_at": generated_at,
         "count": len(items),
         "iran_count": len(iran_items),
         "active_sources": len(sources),
         "active_iran_sources": sum(1 for s in sources if s.get("market") == "iran"),
         "entries_processed_this_run": processed,
+        "translation_stats": {
+            "translated": translation_stats.translated,
+            "reused": translation_stats.reused,
+            "persian_original": translation_stats.persian_original,
+            "failed": translation_stats.failed,
+        },
         "source_status": source_status,
         "items": items,
     }
@@ -303,6 +327,11 @@ def main() -> None:
 
     print(f"Stored {len(items)} unique articles from {len(sources)} active sources.")
     print(f"Iran layer: {len(iran_items)} retained articles from {payload['active_iran_sources']} active Iran sources.")
+    print(
+        "Persian translation: "
+        f"{translation_stats.translated} new; {translation_stats.reused} reused; "
+        f"{translation_stats.persian_original} Persian originals; {translation_stats.failed} failed."
+    )
     print(f"Detected {sum(len(i.get('brands', [])) for i in items)} brand mentions in retained articles.")
     for status in source_status:
         print(

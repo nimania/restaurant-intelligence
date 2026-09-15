@@ -1,0 +1,87 @@
+sources:
+  # Web-wide discovery layer using Google News RSS search feeds. These complement
+  # publisher feeds and are intentionally lower-priority than first-party sources.
+  - id: iran_discovery_food_brands
+    name: کشف وب فارسی — برندها و تولید غذا
+    type: rss
+    feed_url: "https://news.google.com/rss/search?q=%22%D8%B5%D9%86%D8%A7%DB%8C%D8%B9+%D8%BA%D8%B0%D8%A7%DB%8C%DB%8C%22+OR+%22%D8%A8%D8%B1%D9%86%D8%AF+%D8%BA%D8%B0%D8%A7%DB%8C%DB%8C%22+OR+%22%DA%A9%D8%A7%D8%B1%D8%AE%D8%A7%D9%86%D9%87+%D8%BA%D8%B0%D8%A7%DB%8C%DB%8C%22+when%3A30d&hl=fa&gl=IR&ceid=IR:fa"
+    homepage: https://news.google.com/
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: aggregator_search
+    aggregator: google_news
+    default_categories: [food_industry, food_manufacturing]
+    priority: 3
+    coverage: [food_brands, factories, manufacturing, fmcg]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: iran_discovery_equipment
+    name: کشف وب فارسی — تجهیزات و ماشین‌آلات
+    type: rss
+    feed_url: "https://news.google.com/rss/search?q=%22%D8%AA%D8%AC%D9%87%DB%8C%D8%B2%D8%A7%D8%AA+%D8%A2%D8%B4%D9%BE%D8%B2%D8%AE%D8%A7%D9%86%D9%87%22+OR+%22%D8%A2%D8%B4%D9%BE%D8%B2%D8%AE%D8%A7%D9%86%D9%87+%D8%B5%D9%86%D8%B9%D8%AA%DB%8C%22+OR+%22%D9%85%D8%A7%D8%B4%DB%8C%D9%86+%D8%A2%D9%84%D8%A7%D8%AA+%D8%B5%D9%86%D8%A7%DB%8C%D8%B9+%D8%BA%D8%B0%D8%A7%DB%8C%DB%8C%22+when%3A30d&hl=fa&gl=IR&ceid=IR:fa"
+    homepage: https://news.google.com/
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: aggregator_search
+    aggregator: google_news
+    default_categories: [equipment_automation]
+    priority: 3
+    coverage: [industrial_kitchen, food_processing_equipment, machinery, automation]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: iran_discovery_packaging
+    name: کشف وب فارسی — بسته‌بندی غذا
+    type: rss
+    feed_url: "https://news.google.com/rss/search?q=%28%22%D8%A8%D8%B3%D8%AA%D9%87+%D8%A8%D9%86%D8%AF%DB%8C%22+OR+%22%D8%A8%D8%B3%D8%AA%D9%87%E2%80%8C%D8%A8%D9%86%D8%AF%DB%8C%22+OR+%22%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C+%D8%A8%D8%B3%D8%AA%D9%87+%D8%A8%D9%86%D8%AF%DB%8C%22%29+%22%D8%B5%D9%86%D8%A7%DB%8C%D8%B9+%D8%BA%D8%B0%D8%A7%DB%8C%DB%8C%22+when%3A30d&hl=fa&gl=IR&ceid=IR:fa"
+    homepage: https://news.google.com/
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: aggregator_search
+    aggregator: google_news
+    default_categories: [packaging_design]
+    priority: 3
+    coverage: [food_packaging, packaging_design, printing, labels, packaging_machinery]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: iran_discovery_design_branding
+    name: کشف وب فارسی — دکور و برندینگ رستوران
+    type: rss
+    feed_url: "https://news.google.com/rss/search?q=%22%D8%AF%DA%A9%D9%88%D8%B1%D8%A7%D8%B3%DB%8C%D9%88%D9%86+%D8%B1%D8%B3%D8%AA%D9%88%D8%B1%D8%A7%D9%86%22+OR+%22%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C+%D8%B1%D8%B3%D8%AA%D9%88%D8%B1%D8%A7%D9%86%22+OR+%22%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C+%DA%A9%D8%A7%D9%81%D9%87%22+OR+%22%D8%A8%D8%B1%D9%86%D8%AF%DB%8C%D9%86%DA%AF+%D8%B1%D8%B3%D8%AA%D9%88%D8%B1%D8%A7%D9%86%22+when%3A30d&hl=fa&gl=IR&ceid=IR:fa"
+    homepage: https://news.google.com/
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: aggregator_search
+    aggregator: google_news
+    default_categories: [restaurant_design_decor, marketing_branding]
+    priority: 3
+    coverage: [restaurant_design, cafe_design, decor, architecture, branding, visual_identity]
+    verified_at: 2026-09-15
+    enabled: true
+
+  - id: iran_discovery_foodtech
+    name: کشف وب فارسی — فودتک و پلتفرم‌ها
+    type: rss
+    feed_url: "https://news.google.com/rss/search?q=%22%D9%81%D9%88%D8%AF%D8%AA%DA%A9%22+OR+%22%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C+%D8%BA%D8%B0%D8%A7%22+OR+%22%D8%A7%D8%B3%D9%86%D9%BE+%D9%81%D9%88%D8%AF%22+OR+%22%D8%A7%D8%B3%D9%86%D9%BE%E2%80%8C%D9%81%D9%88%D8%AF%22+OR+%22%D8%AA%D9%BE%D8%B3%DB%8C+%D9%81%D9%88%D8%AF%22+when%3A30d&hl=fa&gl=IR&ceid=IR:fa"
+    homepage: https://news.google.com/
+    language: fa
+    region: IR
+    country: IR
+    market: iran
+    source_class: aggregator_search
+    aggregator: google_news
+    default_categories: [restaurant_technology_ai, delivery_drive_thru]
+    priority: 3
+    coverage: [foodtech, delivery, platforms, ai, automation, digital_ordering]
+    verified_at: 2026-09-15
+    enabled: true
