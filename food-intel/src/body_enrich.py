@@ -40,13 +40,33 @@ def translate_report(translator: PersianTranslator, source: str) -> str:
     return compact_words(" ".join(translated), MAX_REPORT_WORDS)
 
 
+def _previous_snapshot(items: list[dict]) -> dict[str, dict]:
+    """Build a reusable cache view even when the collector refreshed an RSS item.
+
+    collect.py preserves report_fa/report_coverage on refreshed feed entries but older
+    body-reader metadata may be absent. A report explicitly marked as body-based is
+    therefore sufficient evidence to avoid downloading the same article again.
+    """
+    result: dict[str, dict] = {}
+    for item in items:
+        item_id = item.get("id")
+        if not item_id:
+            continue
+        previous = copy.deepcopy(item)
+        if previous.get("report_fa") and previous.get("report_coverage") == "بر پایه بدنه مقاله":
+            previous.setdefault("article_body", {"status": "extracted", "cached_from_report": True})
+            previous["report_source_kind"] = "article_body"
+        result[item_id] = previous
+    return result
+
+
 def main() -> None:
     if not DATA_PATH.exists():
         raise SystemExit("news.json does not exist")
 
     payload = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     items = payload.get("items", [])
-    previous_by_id = {x.get("id"): copy.deepcopy(x) for x in items if x.get("id")}
+    previous_by_id = _previous_snapshot(items)
 
     stats = enrich_article_bodies(items, previous_by_id)
     translator = PersianTranslator(timeout=5, pause=0.06)
@@ -78,7 +98,7 @@ def main() -> None:
             item["body_report_error"] = str(exc)[:140]
             report_failed += 1
 
-    payload["schema_version"] = "0.10"
+    payload["schema_version"] = "0.10.1"
     payload["article_body_stats"] = {
         "attempted": stats.attempted,
         "extracted": stats.extracted,
