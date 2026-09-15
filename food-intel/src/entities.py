@@ -81,26 +81,14 @@ def _contains_alias(text: str, alias: str) -> bool:
 
 
 def detect_brands(title: str, summary: str, catalog: list[dict] | None = None) -> list[dict]:
+    """Detect brand/entity mentions without translating or paraphrasing article text."""
     haystack = _normalized(f"{title} {summary}")
     matches = []
     for brand in catalog or load_brands():
         if any(_contains_alias(haystack, alias) for alias in brand.get("aliases", [])):
-            matches.append({"id": brand["id"], "name": brand["name"], "fa": brand.get("fa", brand["name"])})
+            matches.append({
+                "id": brand["id"],
+                "name": brand["name"],
+                "fa": brand.get("fa", brand["name"]),
+            })
     return matches
-
-
-def persian_context(categories: list[str], brands: list[dict], topics: list[str]) -> str:
-    cat_labels = [CATEGORY_FA.get(c, c) for c in categories[:2]]
-    brand_labels = [b.get("fa") or b.get("name") for b in brands[:2]]
-    topic_labels = [TOPIC_FA.get(t, t) for t in topics[:2]]
-
-    parts = []
-    if cat_labels:
-        parts.append("این خبر در حوزهٔ " + " و ".join(cat_labels) + " است")
-    if brand_labels:
-        parts.append("به " + " و ".join(brand_labels) + " مربوط می‌شود")
-    elif topic_labels:
-        parts.append("محور اصلی آن " + " و ".join(topic_labels) + " است")
-    if not parts:
-        return "این خبر یکی از سیگنال‌های رصدشده در صنعت غذا و رستوران است."
-    return " و ".join(parts) + "."
