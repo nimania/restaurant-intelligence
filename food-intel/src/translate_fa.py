@@ -1,9 +1,18 @@
 from __future__ import annotations
 
+import json
+import os
 import re
+import time
 from dataclasses import dataclass
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
 
 PERSIAN_RE = re.compile(r"[\u0600-\u06FF]")
+DEFAULT_TRANSLATION_LIMIT = 180
+GOOGLE_ENDPOINT = "https://translate.googleapis.com/translate_a/single"
+MYMEMORY_ENDPOINT = "https://api.mymemory.translated.net/get"
+SPLIT_MARKER = "[[[NIMA_SPLIT_9F7C]]]"
 
 
 def looks_persian(text: str) -> bool:
@@ -29,37 +38,64 @@ class TranslationStats:
     reused: int = 0
     persian_original: int = 0
     failed: int = 0
+    queued: int = 0
 
 
 class PersianTranslator:
-    """Offline English→Persian translator backed by Argos Translate."""
+    """Lightweight HTTP English→Persian translator with a no-key fallback.
 
-    def __init__(self) -> None:
-        self._translation = None
+    Translations are persisted in news.json by the collector, so successful text is
+    requested only once. The primary endpoint is used without an API key and can be
+    rate-limited; MyMemory is only a small fallback for short text.
+    """
 
-    def _ensure_translation(self):
-        if self._translation is not None:
-            return self._translation
+    def __init__(self, timeout: int = 12, pause: float = 0.08) -> None:
+        self.timeout = timeout
+        self.pause = pause
 
-        import argostranslate.package
-        import argostranslate.translate
+    def _read_json(self, url: str) -> object:
+        request = Request(
+            url,
+            headers={
+                "User-Agent": "FoodIndustryIntelligence/0.6 (+https://github.com/nimania/restaurant-intelligence)",
+                "Accept": "application/json,text/plain,*/*",
+            },
+        )
+        with urlopen(request, timeout=self.timeout) as response:
+            return json.loads(response.read().decode("utf-8"))
 
-        translation = argostranslate.translate.get_translation_from_codes("en", "fa")
-        if translation is None:
-            argostranslate.package.update_package_index()
-            packages = argostranslate.package.get_available_packages()
-            package = next(
-                p for p in packages
-                if p.from_code == "en" and p.to_code == "fa"
-            )
-            argostranslate.package.install_from_path(package.download())
-            translation = argostranslate.translate.get_translation_from_codes("en", "fa")
+    def _google(self, text: str) -> str:
+        query = urlencode({
+            "client": "gtx",
+            "sl": "en",
+            "tl": "fa",
+            "dt": "t",
+            "q": text,
+        })
+        payload = self._read_json(f"{GOOGLE_ENDPOINT}?{query}")
+        if not isinstance(payload, list) or not payload or not isinstance(payload[0], list):
+            raise RuntimeError("unexpected primary translation response")
+        translated = "".join(
+            part[0] for part in payload[0]
+            if isinstance(part, list) and part and isinstance(part[0], str)
+        ).strip()
+        if not translated:
+            raise RuntimeError("empty primary translation response")
+        return translated
 
-        if translation is None:
-            raise RuntimeError("Argos English→Persian translation package is unavailable")
-
-        self._translation = translation
-        return translation
+    def _mymemory(self, text: str) -> str:
+        # MyMemory limits a single q parameter to roughly 500 bytes.
+        raw = text.encode("utf-8")
+        if len(raw) > 450:
+            raise RuntimeError("fallback text is too long")
+        query = urlencode({"q": text, "langpair": "en|fa"})
+        payload = self._read_json(f"{MYMEMORY_ENDPOINT}?{query}")
+        translated = ""
+        if isinstance(payload, dict):
+            translated = str((payload.get("responseData") or {}).get("translatedText") or "").strip()
+        if not translated:
+            raise RuntimeError("empty fallback translation response")
+        return translated
 
     def translate(self, text: str, limit: int) -> str:
         text = compact(text, limit)
@@ -67,14 +103,58 @@ class PersianTranslator:
             return ""
         if looks_persian(text):
             return text
-        translation = self._ensure_translation()
-        return compact(translation.translate(text), limit + 180)
+
+        last_error: Exception | None = None
+        for engine in (self._google, self._mymemory):
+            try:
+                translated = engine(text)
+                if translated and looks_persian(translated):
+                    time.sleep(self.pause)
+                    return compact(translated, limit + 180)
+                last_error = RuntimeError("translation result is not Persian")
+            except Exception as exc:  # network/rate-limit failures must not stop collection
+                last_error = exc
+        raise RuntimeError(str(last_error or "translation failed"))
+
+    def translate_article(self, title: str, summary: str) -> tuple[str, str]:
+        title = compact(title, 240)
+        summary = compact(summary, 520)
+        if not summary:
+            return self.translate(title, 240), ""
+
+        # Usually one HTTP call per article. The marker is deliberately unusual so
+        # translation services normally preserve it. If it is altered, fall back to
+        # two independent calls.
+        combined = f"{title}\n\n{SPLIT_MARKER}\n\n{summary}"
+        try:
+            translated = self.translate(combined, 820)
+            if SPLIT_MARKER in translated:
+                title_fa, summary_fa = translated.split(SPLIT_MARKER, 1)
+                title_fa = compact(title_fa, 420).strip()
+                summary_fa = compact(summary_fa, 700).strip()
+                if title_fa and looks_persian(title_fa):
+                    return title_fa, summary_fa
+        except Exception:
+            pass
+
+        return self.translate(title, 240), self.translate(summary, 520)
 
 
-def apply_persian_translation(items: list[dict], previous_by_id: dict[str, dict] | None = None) -> TranslationStats:
+def _translation_limit() -> int:
+    try:
+        return max(0, int(os.getenv("FOOD_INTEL_TRANSLATION_LIMIT", DEFAULT_TRANSLATION_LIMIT)))
+    except (TypeError, ValueError):
+        return DEFAULT_TRANSLATION_LIMIT
+
+
+def apply_persian_translation(
+    items: list[dict], previous_by_id: dict[str, dict] | None = None
+) -> TranslationStats:
     previous_by_id = previous_by_id or {}
     stats = TranslationStats()
     translator = PersianTranslator()
+
+    pending: list[dict] = []
 
     for item in items:
         title = item.get("title", "")
@@ -98,22 +178,41 @@ def apply_persian_translation(items: list[dict], previous_by_id: dict[str, dict]
             item["summary_fa"] = previous.get("summary_fa", "")
             item["translation"] = previous.get("translation") or {
                 "status": "translated",
-                "engine": "argos-en-fa",
+                "engine": "http-en-fa",
             }
             stats.reused += 1
             continue
 
+        item["title_fa"] = ""
+        item["summary_fa"] = ""
+        item["translation"] = {"status": "queued", "engine": "http-en-fa"}
+        pending.append(item)
+
+    # Translate the most useful cards first. Later runs reuse these cached results and
+    # automatically work through the remaining queue.
+    pending.sort(
+        key=lambda x: (x.get("relevance_score") or 0, x.get("published_at") or ""),
+        reverse=True,
+    )
+    limit = _translation_limit()
+
+    for index, item in enumerate(pending):
+        if index >= limit:
+            stats.queued += 1
+            continue
+
         try:
-            item["title_fa"] = translator.translate(title, 240)
-            item["summary_fa"] = translator.translate(summary, 520) if summary else ""
-            item["translation"] = {"status": "translated", "engine": "argos-en-fa"}
+            title_fa, summary_fa = translator.translate_article(
+                item.get("title", ""), item.get("summary", "")
+            )
+            item["title_fa"] = title_fa
+            item["summary_fa"] = summary_fa
+            item["translation"] = {"status": "translated", "engine": "http-en-fa"}
             stats.translated += 1
         except Exception as exc:
-            item["title_fa"] = ""
-            item["summary_fa"] = ""
             item["translation"] = {
                 "status": "failed",
-                "engine": "argos-en-fa",
+                "engine": "http-en-fa",
                 "error": str(exc)[:160],
             }
             stats.failed += 1
