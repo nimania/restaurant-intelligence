@@ -1,9 +1,9 @@
 {
   "schema_version": "0.4",
-  "generated_at": "2026-09-15T11:30:02Z",
-  "count": 1018,
+  "generated_at": "2026-09-15T11:31:48Z",
+  "count": 1019,
   "active_sources": 18,
-  "entries_processed_this_run": 1088,
+  "entries_processed_this_run": 1048,
   "source_status": [
     {
       "source_id": "restaurant_dive",
@@ -51,8 +51,9 @@
       "source_id": "restaurant_news",
       "name": "RestaurantNews.com",
       "feed_url": "https://www.restaurantnews.com/feed/",
-      "entries_seen": 40,
-      "bozo": false
+      "entries_seen": 0,
+      "bozo": true,
+      "warning": "<urlopen error [Errno 104] Connection reset by peer>"
     },
     {
       "source_id": "pizza_marketplace",
@@ -715,7 +716,7 @@
       "collected_at": "2026-09-15T11:13:38Z",
       "language": "en",
       "region": "US",
-      "summary": "A resealability issue in the product's packaging was responsible for \"the vast majority of the problem,\" the company's CEO said.",
+      "summary": "A resealability issue in the product’s packaging was responsible for “the vast majority of the problem,” the company’s CEO said.",
       "categories": [
         "food_industry"
       ],
@@ -3573,6 +3574,38 @@
       ],
       "brands": [],
       "relevance_score": 85
+    },
+    {
+      "id": "87be8606f91b1717dd4b",
+      "title": "How Mondelēz wants to ‘shake up’ snacking with cookies",
+      "url": "https://www.fooddive.com/news/Mondelez-snacking-cookies-oreo-chipsahoy/828605",
+      "source": {
+        "id": "food_dive",
+        "name": "Food Dive",
+        "homepage": "https://www.fooddive.com/",
+        "class": "industry_publication",
+        "priority": 1
+      },
+      "author": "Christopher Doering",
+      "published_at": "2026-09-10T14:00:00Z",
+      "collected_at": "2026-09-15T11:31:36Z",
+      "language": "en",
+      "region": "US",
+      "summary": "The Oreo and Chips Ahoy! maker is turning to innovation and marketing to woo more consumers inundated with other choices, such as chips and candy.",
+      "categories": [
+        "consumer_behavior",
+        "marketing_branding",
+        "food_industry"
+      ],
+      "topics": [],
+      "brands": [
+        {
+          "id": "mondelez",
+          "name": "Mondelēz",
+          "fa": "موندلیز"
+        }
+      ],
+      "relevance_score": 72
     },
     {
       "id": "4763dfd3b72680a2d99b",

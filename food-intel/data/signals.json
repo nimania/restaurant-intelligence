@@ -1,9 +1,80 @@
 {
   "schema_version": "0.4",
-  "generated_at": null,
-  "articles_24h": 0,
-  "articles_previous_6d": 0,
-  "trending_topics": [],
+  "generated_at": "2026-09-15T11:31:48Z",
+  "articles_24h": 45,
+  "articles_previous_6d": 164,
+  "trending_topics": [
+    {
+      "id": "food safety",
+      "label_fa": "ایمنی غذا",
+      "count_24h": 3,
+      "previous_daily_avg": 0.33,
+      "acceleration": 6.0
+    },
+    {
+      "id": "beverage",
+      "label_fa": "نوشیدنی",
+      "count_24h": 6,
+      "previous_daily_avg": 1.17,
+      "acceleration": 5.14
+    },
+    {
+      "id": "loyalty",
+      "label_fa": "وفاداری مشتری",
+      "count_24h": 2,
+      "previous_daily_avg": 0.5,
+      "acceleration": 4.0
+    },
+    {
+      "id": "beverage",
+      "label_fa": "نوشیدنی",
+      "count_24h": 10,
+      "previous_daily_avg": 2.67,
+      "acceleration": 3.75
+    },
+    {
+      "id": "consumer_behavior",
+      "label_fa": "رفتار مصرف‌کننده",
+      "count_24h": 7,
+      "previous_daily_avg": 2.33,
+      "acceleration": 3.0
+    },
+    {
+      "id": "labor_management",
+      "label_fa": "نیروی انسانی و مدیریت",
+      "count_24h": 2,
+      "previous_daily_avg": 0.67,
+      "acceleration": 3.0
+    },
+    {
+      "id": "equipment_automation",
+      "label_fa": "تجهیزات و اتوماسیون",
+      "count_24h": 6,
+      "previous_daily_avg": 2.33,
+      "acceleration": 2.57
+    },
+    {
+      "id": "POS",
+      "label_fa": "سیستم فروش",
+      "count_24h": 14,
+      "previous_daily_avg": 5.83,
+      "acceleration": 2.4
+    },
+    {
+      "id": "menu_product_innovation",
+      "label_fa": "نوآوری منو و محصول",
+      "count_24h": 6,
+      "previous_daily_avg": 2.67,
+      "acceleration": 2.25
+    },
+    {
+      "id": "food_industry",
+      "label_fa": "صنعت غذا",
+      "count_24h": 3,
+      "previous_daily_avg": 1.33,
+      "acceleration": 2.25
+    }
+  ],
   "trending_brands": [],
-  "radar_fa": ""
+  "radar_fa": "موضوع‌های رو به رشد: ایمنی غذا، نوشیدنی، وفاداری مشتری."
 }
