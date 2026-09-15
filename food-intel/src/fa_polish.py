@@ -50,20 +50,39 @@ TERM_GLOSSARY = [
     ("throughput", "ظرفیت و سرعت سرویس"),
     ("daypart", "بازه زمانی فروش"),
     ("off-premise", "فروش خارج از محل"),
+    ("on-premise", "فروش و مصرف در محل"),
     ("dine-in", "سرویس حضوری"),
     ("takeout", "سفارش بیرون‌بر"),
     ("take-out", "سفارش بیرون‌بر"),
+    ("ready-to-drink", "نوشیدنی آماده‌مصرف"),
+    ("ready to drink", "نوشیدنی آماده‌مصرف"),
     ("loyalty program", "برنامه وفاداری مشتری"),
     ("loyalty programs", "برنامه‌های وفاداری مشتری"),
     ("digital ordering", "سفارش‌گیری دیجیتال"),
     ("online ordering", "سفارش آنلاین"),
     ("voice ordering", "سفارش‌گیری صوتی"),
+    ("return on investment", "بازگشت سرمایه"),
+    ("cohort", "گروه"),
+    ("Gen Z", "نسل زد"),
+    ("single digits", "محدوده تک‌رقمی"),
+    ("twice-yearly", "شش‌ماهه"),
 ]
 
 EXTRA_BRAND_TERMS = [
     ("Dunkin Donuts", "دانکین"),
     ("Pepsi", "پپسی"),
     ("Coke", "کوکاکولا"),
+]
+
+# English newsroom idioms are normalized before machine translation so the engine
+# sees their intended business meaning instead of translating them literally.
+SOURCE_SEMANTIC_RULES: list[tuple[str, str]] = [
+    (r"\bzero(?:e)?s in on\b", "focuses on"),
+    (r"\bmeaningful ROI\b", "meaningful return on investment"),
+    (r"\bfood hall company\b", "food hall operator"),
+    (r"\bbeverage alcohol reset\b", "changes in the alcoholic beverage market"),
+    (r"\bexpands? (?P<middle>[^.!?]{0,90}) footprint\b", r"expands \g<middle> presence"),
+    (r"\btaps\b(?=[^.!?]{0,120}\bto\b)", "selects"),
 ]
 
 COMMON_FIXES = [
@@ -75,6 +94,9 @@ COMMON_FIXES = [
     (r"نقطه فروش", "سیستم فروش"),
     (r"هزینه کالا(?:های)? فروخته شده", "بهای تمام‌شده کالای فروش‌رفته"),
     (r"خدمات سریع رستوران", "رستوران خدمات سریع"),
+    (r"آماده برای نوشیدن", "آماده‌مصرف"),
+    (r"ردپا(?:ی خود)? را گسترش می(?:‌| )دهد", "حضور خود را گسترش می‌دهد"),
+    (r"بازگشت سرمایه معنی دار", "بازگشت سرمایه ملموس"),
 ]
 
 
@@ -107,8 +129,15 @@ def _replace_ascii_phrase(text: str, source: str, target: str) -> str:
     return re.sub(pattern, target, text, flags=re.IGNORECASE)
 
 
-def prepare_for_translation(text: str) -> str:
+def normalize_source_semantics(text: str) -> str:
     value = str(text or "")
+    for pattern, replacement in SOURCE_SEMANTIC_RULES:
+        value = re.sub(pattern, replacement, value, flags=re.IGNORECASE)
+    return value
+
+
+def prepare_for_translation(text: str) -> str:
+    value = normalize_source_semantics(text)
     for source, target in sorted(TERM_GLOSSARY, key=lambda x: len(x[0]), reverse=True):
         value = _replace_ascii_phrase(value, source, target)
     for source, target in EXTRA_BRAND_TERMS:
