@@ -1,8 +1,8 @@
 {
   "schema_version": "0.4",
-  "generated_at": "2026-09-15T12:04:05Z",
-  "articles_24h": 51,
-  "articles_previous_6d": 174,
+  "generated_at": "2026-09-15T12:44:52Z",
+  "articles_24h": 47,
+  "articles_previous_6d": 178,
   "trending_topics": [
     {
       "id": "loyalty",
@@ -14,16 +14,16 @@
     {
       "id": "beverage",
       "label_fa": "نوشیدنی",
-      "count_24h": 10,
-      "previous_daily_avg": 2.67,
-      "acceleration": 3.75
+      "count_24h": 9,
+      "previous_daily_avg": 2.83,
+      "acceleration": 3.18
     },
     {
       "id": "consumer_behavior",
       "label_fa": "رفتار مصرف‌کننده",
-      "count_24h": 8,
+      "count_24h": 7,
       "previous_daily_avg": 2.33,
-      "acceleration": 3.43
+      "acceleration": 3.0
     },
     {
       "id": "labor_management",
@@ -40,25 +40,18 @@
       "acceleration": 2.62
     },
     {
+      "id": "POS",
+      "label_fa": "سیستم فروش",
+      "count_24h": 15,
+      "previous_daily_avg": 6.67,
+      "acceleration": 2.25
+    },
+    {
       "id": "equipment_automation",
       "label_fa": "تجهیزات و اتوماسیون",
       "count_24h": 6,
       "previous_daily_avg": 2.67,
       "acceleration": 2.25
-    },
-    {
-      "id": "POS",
-      "label_fa": "سیستم فروش",
-      "count_24h": 14,
-      "previous_daily_avg": 6.33,
-      "acceleration": 2.21
-    },
-    {
-      "id": "AI",
-      "label_fa": "هوش مصنوعی",
-      "count_24h": 19,
-      "previous_daily_avg": 9.17,
-      "acceleration": 2.07
     },
     {
       "id": "retail_food",
@@ -70,9 +63,16 @@
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 15,
-      "previous_daily_avg": 8.0,
-      "acceleration": 1.88
+      "count_24h": 16,
+      "previous_daily_avg": 8.33,
+      "acceleration": 1.92
+    },
+    {
+      "id": "AI",
+      "label_fa": "هوش مصنوعی",
+      "count_24h": 17,
+      "previous_daily_avg": 9.17,
+      "acceleration": 1.85
     }
   ],
   "trending_brands": [],
