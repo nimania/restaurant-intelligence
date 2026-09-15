@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Food Industry Intelligence</title>
+  <meta name="description" content="Live food, restaurant, QSR and food-tech industry intelligence feed." />
+  <style>
+    :root{--bg:#0b0d10;--panel:#12161b;--panel2:#171c22;--text:#f2f5f7;--muted:#98a2ad;--line:#262d35;--accent:#ffb347;--good:#76d39b}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif}
+    .wrap{max-width:1240px;margin:auto;padding:28px 18px 60px}.hero{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-bottom:22px}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800}.hero h1{margin:7px 0 6px;font-size:clamp(28px,5vw,54px);line-height:1}.hero p{margin:0;color:var(--muted);max-width:720px}.status{text-align:left;color:var(--muted);font-size:13px}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0}.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:15px}.stat b{display:block;font-size:27px}.stat span{color:var(--muted);font-size:12px}
+    .toolbar{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:10px;margin:18px 0}input,select{width:100%;background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:12px;padding:12px 13px;font:inherit;outline:none}input:focus,select:focus{border-color:#59636e}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:linear-gradient(180deg,var(--panel),#101419);border:1px solid var(--line);border-radius:16px;padding:17px;display:flex;flex-direction:column;gap:11px}.top{display:flex;justify-content:space-between;gap:10px;align-items:center}.source{font-size:12px;color:var(--muted)}.score{font-weight:800;font-size:12px;border:1px solid #36513f;color:var(--good);padding:5px 8px;border-radius:999px;white-space:nowrap}.card h2{direction:ltr;text-align:left;font-size:19px;line-height:1.35;margin:0}.card p{direction:ltr;text-align:left;color:#b8c0c8;line-height:1.55;margin:0;font-size:14px}.meta{display:flex;flex-wrap:wrap;gap:6px;direction:ltr;justify-content:flex-start}.tag{border:1px solid var(--line);background:var(--panel2);color:#bdc6ce;border-radius:999px;padding:4px 7px;font-size:11px}.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:12px}.open{color:var(--text);text-decoration:none;border-bottom:1px solid #5b646d}.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:80px 20px;border:1px dashed var(--line);border-radius:16px}.load{color:var(--muted);padding:30px 0}.note{margin-top:18px;color:#707a84;font-size:12px;line-height:1.7}
+    @media(max-width:800px){.hero{display:block}.status{text-align:right;margin-top:15px}.stats{grid-template-columns:repeat(2,1fr)}.toolbar{grid-template-columns:1fr 1fr}.toolbar input{grid-column:1/-1}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div><div class="eyebrow">NIMA'S DINER · INDUSTRY RADAR</div><h1>Food Industry Intelligence</h1><p>رادار زنده‌ی خبر و سیگنال برای رستوران، QSR، فست‌کژوال، فناوری غذا، تجهیزات، ایمنی و تولید.</p></div>
+      <div class="status"><div id="generated">در حال بارگذاری…</div><div>به‌روزرسانی خودکار هر ۳ ساعت</div></div>
+    </section>
+
+    <section class="stats">
+      <div class="stat"><b id="count">—</b><span>خبر در دیتابیس</span></div>
+      <div class="stat"><b id="sources">—</b><span>منبع فعال</span></div>
+      <div class="stat"><b id="high">—</b><span>خبر مهم ۸۰+</span></div>
+      <div class="stat"><b id="today">—</b><span>منتشرشده در ۲۴ ساعت</span></div>
+    </section>
+
+    <section class="toolbar">
+      <input id="search" type="search" placeholder="جست‌وجو در تیتر، خلاصه، موضوع یا منبع…" />
+      <select id="category"><option value="">همه موضوع‌ها</option></select>
+      <select id="source"><option value="">همه منابع</option></select>
+      <select id="sort"><option value="score">مهم‌ترین</option><option value="newest">جدیدترین</option></select>
+    </section>
+
+    <div id="feed" class="grid"><div class="load">در حال دریافت داده‌ها…</div></div>
+    <div class="note">متن کامل مقالات بازنشر نمی‌شود؛ این صفحه metadata، خلاصه‌ی feed و لینک مستقیم ناشر را نمایش می‌دهد. امتیاز اهمیت نسخه 0.3 rule-based و قابل بازبینی است.</div>
+  </main>
+
+<script>
+const state={items:[]};
+const $=id=>document.getElementById(id);
+const labels={qsr_fast_food:'QSR / Fast Food',fast_casual:'Fast Casual',restaurant_operations:'Operations',menu_product_innovation:'Menu Innovation',restaurant_technology_ai:'Tech / AI',equipment_automation:'Equipment',food_cost_pricing:'Food Cost',supply_chain:'Supply Chain',food_safety:'Food Safety',labor_management:'Labor',franchising:'Franchising',delivery_drive_thru:'Delivery / Drive-Thru',consumer_behavior:'Consumer',marketing_branding:'Marketing',beverage:'Beverage',food_manufacturing:'Manufacturing',ingredients_rd:'Ingredients / R&D',retail_food:'Retail',regulation:'Regulation',sustainability:'Sustainability',restaurant_industry:'Restaurant Industry',food_industry:'Food Industry'};
+function esc(s=''){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function ago(date){if(!date)return '—';const h=Math.max(0,(Date.now()-new Date(date))/36e5);if(h<1)return `${Math.round(h*60)} دقیقه قبل`;if(h<24)return `${Math.round(h)} ساعت قبل`;return `${Math.round(h/24)} روز قبل`}
+function render(){const q=$('search').value.trim().toLowerCase(),cat=$('category').value,src=$('source').value,sort=$('sort').value;let rows=state.items.filter(x=>{const hay=[x.title,x.summary,x.source?.name,...(x.categories||[]),...(x.topics||[])].join(' ').toLowerCase();return(!q||hay.includes(q))&&(!cat||(x.categories||[]).includes(cat))&&(!src||x.source?.id===src)});rows.sort(sort==='newest'?(a,b)=>new Date(b.published_at)-new Date(a.published_at):(a,b)=>(b.relevance_score||0)-(a.relevance_score||0)||new Date(b.published_at)-new Date(a.published_at));$('feed').innerHTML=rows.length?rows.slice(0,200).map(x=>`<article class="card"><div class="top"><span class="source">${esc(x.source?.name||'Unknown')}</span><span class="score">${x.relevance_score??'—'} / 100</span></div><h2>${esc(x.title)}</h2>${x.summary?`<p>${esc(x.summary.slice(0,300))}${x.summary.length>300?'…':''}</p>`:''}<div class="meta">${(x.categories||[]).slice(0,4).map(t=>`<span class="tag">${esc(labels[t]||t)}</span>`).join('')}${(x.topics||[]).slice(0,3).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div><div class="foot"><span>${ago(x.published_at)}</span><a class="open" href="${esc(x.url)}" target="_blank" rel="noopener">اصل خبر ↗</a></div></article>`).join(''):'<div class="empty">خبری با این فیلتر پیدا نشد.</div>'}
+async function boot(){try{const r=await fetch('data/news.json?ts='+Date.now());if(!r.ok)throw new Error('HTTP '+r.status);const d=await r.json();state.items=d.items||[];$('count').textContent=d.count??state.items.length;$('sources').textContent=d.active_sources??'—';$('high').textContent=state.items.filter(x=>(x.relevance_score||0)>=80).length;$('today').textContent=state.items.filter(x=>Date.now()-new Date(x.published_at)<864e5).length;$('generated').textContent=d.generated_at?'آخرین پردازش: '+new Date(d.generated_at).toLocaleString('fa-IR'):'هنوز اولین پردازش انجام نشده';const cats=[...new Set(state.items.flatMap(x=>x.categories||[]))].sort();cats.forEach(c=>$('category').insertAdjacentHTML('beforeend',`<option value="${esc(c)}">${esc(labels[c]||c)}</option>`));const srcs=[...new Map(state.items.map(x=>[x.source?.id,x.source?.name])).entries()].filter(x=>x[0]).sort((a,b)=>a[1].localeCompare(b[1]));srcs.forEach(([id,name])=>$('source').insertAdjacentHTML('beforeend',`<option value="${esc(id)}">${esc(name)}</option>`));render()}catch(e){$('feed').innerHTML=`<div class="empty">دیتا هنوز آماده نیست یا بارگذاری نشد.<br><small>${esc(String(e))}</small></div>`}}
+['search','category','source','sort'].forEach(id=>$(id).addEventListener(id==='search'?'input':'change',render));boot();
+</script>
+</body>
+</html>

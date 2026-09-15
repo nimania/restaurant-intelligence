@@ -4,6 +4,14 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "17 */3 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "food-intel/src/**"
+      - "food-intel/config/**"
+      - "food-intel/tests/**"
+      - "food-intel/requirements.txt"
+      - ".github/workflows/food-intel-collect.yml"
 
 permissions:
   contents: write
@@ -20,6 +28,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -34,7 +44,7 @@ jobs:
       - name: Run unit tests
         run: python -m unittest discover -s food-intel/tests -p "test_*.py"
 
-      - name: Collect and classify news
+      - name: Collect, classify and score news
         run: python food-intel/src/collect.py
 
       - name: Commit dataset changes
@@ -44,9 +54,8 @@ jobs:
             echo "No dataset changes."
             exit 0
           fi
-
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add food-intel/data/news.json
-          git commit -m "data(food-intel): refresh news feed"
+          git commit -m "data(food-intel): refresh scored news feed"
           git push
