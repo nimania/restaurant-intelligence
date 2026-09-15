@@ -52,6 +52,10 @@ class EntitySignalTests(unittest.TestCase):
         ids = [x["id"] for x in signals["trending_topics"]]
         self.assertIn("restaurant_technology_ai", ids)
         self.assertIn("هوش مصنوعی", signals["radar_fa"])
+        row = next(x for x in signals["trending_topics"] if x["id"] == "restaurant_technology_ai")
+        self.assertEqual(len(row["series_7d"]), 7)
+        dashboard_ids = [x["id"] for x in signals["dashboard"]]
+        self.assertIn("restaurant_technology_ai", dashboard_ids)
 
     def test_overlapping_category_and_topic_are_counted_once(self):
         items = [
