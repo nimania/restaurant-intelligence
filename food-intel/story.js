@@ -108,6 +108,19 @@ function relatedThumb(y){
   return `<div class="related-thumb" style="display:grid;place-items:center;font-size:23px">${FI.categoryIcons[(y.categories||[])[0]]||'◌'}</div>`;
 }
 
+function externalLinksHtml(b,compact=false){
+  if(!FI.brandLinksFor)return'';
+  const links=FI.brandLinksFor(b);
+  const rows=compact?links.slice(0,3):links;
+  return `<div class="brand-external-links ${compact?'compact':''}">${rows.map(link=>`<a class="brand-external-link ${link.direct?'official':'search'}" href="${FI.esc(link.url)}" target="_blank" rel="noopener noreferrer nofollow" title="${link.direct?'لینک رسمی ثبت‌شده':'جست‌وجوی پروفایل رسمی'}"><span class="network-icon">${link.icon}</span><span>${FI.esc(link.label)}</span><small>${link.direct?'رسمی':'جست‌وجو'}</small></a>`).join('')}</div>`;
+}
+
+function brandProfilesSection(x){
+  const brands=x.brands||[];
+  if(!brands.length||!FI.brandLinksFor)return'';
+  return `<section class="section brand-profiles-section"><div class="brand-profiles-head"><div><h2>برندها و شبکه‌های رسمی</h2><p>وب‌سایت و شبکه‌های اجتماعی مرتبط با برندهای این خبر. «رسمی» یعنی لینک مستقیم ثبت شده؛ «جست‌وجو» برای مواردی است که هنوز آدرس مستقیم تأیید نشده است.</p></div></div><div class="brand-profile-grid">${brands.map(b=>{const logo=FI.brandLogo(b);return `<article class="brand-profile-card"><div class="brand-profile-title">${logo?`<img src="${FI.esc(logo)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:''}<div><b>${FI.esc(b.fa||b.name)}</b><small>${FI.esc(b.name||'')}</small></div></div>${externalLinksHtml(b)}</article>`}).join('')}</div></section>`;
+}
+
 function brandDossier(x,items){
   const b=(x.brands||[])[0];
   if(!b)return'';
@@ -115,7 +128,7 @@ function brandDossier(x,items){
   const recent=related.filter(y=>Date.now()-new Date(y.published_at)<30*864e5).length;
   const s=FI.brandStyles[b.id];
   const logo=FI.brandLogo(b);
-  return `<div class="side-card brand-dossier"><h3>رادار برند</h3><div class="brand-head">${logo?`<img src="${logo}" alt="${FI.esc(b.fa||b.name)}" onerror="this.remove()">`:`<span class="brand-dot" style="${s?`background:${s[0]};color:${s[1]}`:''}">●</span>`}<div><b>${FI.esc(b.fa||b.name)}</b><small style="display:block;color:var(--muted)">${FI.faN(recent)} خبر در ۳۰ روز اخیر</small></div></div><p>برای دیدن همه خبرهای این برند از فیلتر برند در صفحه اصلی استفاده کن.</p><a class="pill-btn" href="./?brand=${encodeURIComponent(b.id)}#feed">خبرهای این برند</a></div>`;
+  return `<div class="side-card brand-dossier"><h3>رادار برند</h3><div class="brand-head">${logo?`<img src="${logo}" alt="${FI.esc(b.fa||b.name)}" onerror="this.remove()">`:`<span class="brand-dot" style="${s?`background:${s[0]};color:${s[1]}`:''}">●</span>`}<div><b>${FI.esc(b.fa||b.name)}</b><small style="display:block;color:var(--muted)">${FI.faN(recent)} خبر در ۳۰ روز اخیر</small></div></div><p>وب‌سایت و شبکه‌های برند را باز کن یا همه خبرهای مرتبط با آن را ببین.</p>${externalLinksHtml(b,true)}<a class="pill-btn brand-news-btn" href="./?brand=${encodeURIComponent(b.id)}#feed">خبرهای این برند</a></div>`;
 }
 
 function render(x,items){
@@ -161,6 +174,7 @@ function render(x,items){
     <div class="chips">${(x.brands||[]).map(FI.brandChip).join('')}${(x.categories||[]).map(FI.categoryChip).join('')}</div>
     <div class="metrics"><div class="metric"><b>${FI.faN(x.relevance_score)}</b><span>اهمیت</span></div><div class="metric"><b>${FI.faN(x.iran_relevance_score||0)}</b><span>ارتباط با ایران</span></div><div class="metric"><b>${FI.faN((x.brands||[]).length)}</b><span>برند</span></div><div class="metric"><b>${FI.faN((x.categories||[]).length)}</b><span>حوزه تخصصی</span></div></div>
     ${reportSection}
+    ${brandProfilesSection(x)}
     <section class="section"><div class="operator-box"><h3>برای مدیر یا اپراتور چه معنایی دارد؟</h3><p>${FI.esc(why)}</p></div></section>
     <section class="section"><h2>اطلاعات جغرافیایی</h2><p>${cities.length?`این خبر به ${cities.map(c=>`${c.fa} در استان ${c.province}`).join('، ')} مرتبط تشخیص داده شده است.`:`کشور اصلی این خبر ${FI.countryLabel(x)} تشخیص داده شده است.`}</p><p><a href="map.html?view=${iran?'iran':'world'}">مشاهده روی نقشه ↗</a></p></section>
     <section class="section"><h2>منبع اصلی</h2><div class="source-box"><b>${FI.esc(FI.srcName(x))}</b><div class="original">${FI.esc(x.title)}</div><a class="source-btn" href="${FI.esc(x.url)}" target="_blank" rel="noopener">خواندن اصل خبر ↗</a></div></section>
