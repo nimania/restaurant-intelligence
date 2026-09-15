@@ -1,42 +1,60 @@
 # Food Industry Intelligence
 
-A lightweight, GitHub-native news intelligence pipeline for the food, restaurant, QSR, fast-casual, diner, food-tech, operations, supply-chain and food-manufacturing sectors.
+A GitHub-native intelligence pipeline for food, restaurant, QSR, fast-casual, food-tech, operations, supply-chain, equipment, food-safety and food-manufacturing news.
 
-## Current status — v0.2 source expansion
+## Current status — v0.4 Persian signals
 
-- Collect RSS/Atom feeds on a schedule
-- Normalize articles into one schema
-- Deduplicate by canonical URL and deterministic ID
-- Apply rule-based industry categories and topic tags
-- Store a compact JSON dataset in Git
-- Run automatically with GitHub Actions
-- Maintain a curated source registry with verification metadata and priority tiers
-- Keep the architecture ready for AI summarization, Persian output, trend detection and a public dashboard
+- Collect RSS/Atom feeds automatically
+- Normalize and deduplicate articles
+- Classify industry categories and high-signal topics
+- Score relevance from 0–100
+- Detect known restaurant, food-tech, equipment and CPG brands
+- Build 24h vs previous-6-day trend signals
+- Publish a Persian-first dashboard while preserving publisher text in its original language
+- Run collection and deployment with GitHub Actions
 
-The v0.2 registry currently contains **28 sources: 18 active feeds and 10 discovery targets**.
+The source registry currently contains **28 registered sources, including 18 active feeds**.
+
+## Persian layer
+
+The Persian layer is intentionally metadata-only. It localizes:
+
+- interface labels
+- category names
+- brand display names
+- trend/signal labels
+- aggregate counts and acceleration metrics
+
+It does **not** translate or paraphrase publisher headlines, summaries or article bodies. Article text remains in the source language and links point to the original publisher.
 
 ## Directory
 
 ```text
 food-intel/
 ├── config/
+│   ├── brands.yml
 │   └── sources.yml
 ├── data/
-│   └── news.json
+│   ├── news.json
+│   └── signals.json
 ├── docs/
+│   ├── PUBLISHING_POLICY.md
 │   ├── SCHEMA.md
 │   └── SOURCES.md
 ├── src/
 │   ├── classify.py
-│   └── collect.py
+│   ├── collect.py
+│   ├── entities.py
+│   ├── score.py
+│   └── signals.py
 ├── tests/
 │   ├── test_core.py
+│   ├── test_entities_signals.py
 │   └── test_sources.py
+├── index.html
 ├── requirements.txt
 └── README.md
 ```
-
-The scheduled workflow lives at `.github/workflows/food-intel-collect.yml`.
 
 ## Run locally
 
@@ -51,55 +69,30 @@ python src/collect.py
 
 ## Source coverage
 
-Active sources now cover:
+Active sources cover restaurant/QSR, fast casual, operations, restaurant technology, food-tech, equipment, food manufacturing, food safety, cold chain, logistics and regulatory signals.
 
-- Restaurant / QSR / fast casual
-- Restaurant operations and management
-- Restaurant technology and AI
-- Food-tech and kitchen automation
-- Foodservice equipment and kitchen design
-- Food manufacturing and processing
-- Food safety, recalls and outbreaks
-- Cold-chain and logistics
-- Regulatory signals
+See `docs/SOURCES.md` for source tiers and `docs/PUBLISHING_POLICY.md` for publication rules.
 
-See `docs/SOURCES.md` for the source policy, priority tiers and discovery queue.
+## Current intelligence outputs
 
-## Categories
-
-The rule engine currently recognizes:
-
-- QSR / Fast Food
-- Fast Casual
-- Restaurant Operations
-- Menu & Product Innovation
-- Restaurant Technology / AI
-- Equipment & Automation
-- Food Cost & Pricing
-- Supply Chain
-- Food Safety
-- Labor & Management
-- Franchising
-- Delivery / Drive-Thru
-- Consumer Behavior
-- Marketing & Branding
-- Beverage
-- Food Manufacturing
-- Ingredients & R&D
-- Retail Food
-- Regulation
-- Sustainability
+- relevance score per article
+- detected brands per article
+- Persian category labels
+- trending topics in the last 24 hours
+- trending brands in the last 24 hours
+- acceleration compared with the previous six-day daily average
+- searchable and filterable GitHub Pages dashboard
 
 ## Next milestones
 
-1. Add source-quality and relevance scoring using the new priority metadata.
-2. Add named-entity extraction for brands, people and companies.
-3. Add AI summaries and Persian summaries.
-4. Add trend/signal detection over 24h, 7d and 30d windows.
-5. Add Persian/Iranian industry sources and a separate corporate-announcement source class.
-6. Build a searchable GitHub Pages dashboard.
+1. Improve entity precision and expand the brand catalog.
+2. Add 7-day and 30-day trend windows.
+3. Add an Iran-relevance score without translating publisher content.
+4. Add Persian/Iranian industry sources.
+5. Add dedicated brand/topic views.
+6. Add content-opportunity scoring for restaurant-industry creators and operators.
 7. Feed selected signals into the broader Restaurant Intelligence project.
 
 ## Content policy
 
-The dataset stores publisher metadata, URLs and short feed-provided summaries. It is not intended to mirror or republish full copyrighted articles.
+The project stores publisher metadata, URLs and short feed-provided descriptions. It does not mirror full article bodies and does not publish Persian translations of publisher article text.
