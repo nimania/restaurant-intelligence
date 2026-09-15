@@ -1,8 +1,8 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-09-15T18:19:08Z",
+  "generated_at": "2026-09-15T18:36:42Z",
   "articles_24h": 57,
-  "articles_previous_6d": 192,
+  "articles_previous_6d": 193,
   "images_24h": 45,
   "trending_topics": [
     {
@@ -102,19 +102,19 @@
       ]
     },
     {
-      "id": "food_industry",
-      "label_fa": "صنعت غذا",
-      "count_24h": 7,
-      "previous_daily_avg": 3.33,
-      "acceleration": 2.1,
+      "id": "POS",
+      "label_fa": "سیستم فروش",
+      "count_24h": 15,
+      "previous_daily_avg": 7.17,
+      "acceleration": 2.09,
       "series_7d": [
-        1,
+        11,
+        9,
         7,
-        4,
-        3,
         0,
-        7,
-        5
+        2,
+        15,
+        12
       ]
     },
     {
@@ -188,7 +188,7 @@
     {
       "id": "iran_market",
       "label_fa": "بازار ایران",
-      "count_24h": 7,
+      "count_24h": 6,
       "series_7d": [
         1,
         2,
@@ -202,7 +202,7 @@
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 16,
+      "count_24h": 17,
       "series_7d": [
         15,
         13,
@@ -210,7 +210,7 @@
         0,
         2,
         15,
-        13
+        14
       ]
     },
     {

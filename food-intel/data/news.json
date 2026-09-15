@@ -1,14 +1,14 @@
 {
   "schema_version": "0.13",
-  "generated_at": "2026-09-15T18:19:08Z",
-  "count": 1081,
+  "generated_at": "2026-09-15T18:36:42Z",
+  "count": 1082,
   "iran_count": 26,
   "active_sources": 31,
   "active_iran_sources": 13,
   "entries_processed_this_run": 1120,
   "translation_stats": {
     "translated": 180,
-    "reused": 777,
+    "reused": 791,
     "persian_original": 26,
     "failed": 0
   },
@@ -250,7 +250,7 @@
       "feed_url": "https://www.tasnimnews.ir/fa/rss/feeds/7/0/0/0",
       "market": "iran",
       "aggregator": null,
-      "entries_seen": 25,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -327,6 +327,109 @@
   ],
   "items": [
     {
+      "id": "868148e8072b312636fa",
+      "title": "Friendly’s Introduces the Conehead Crew, Turning Kids Meals Into a Collectible Adventure",
+      "url": "https://www.restaurantnews.com/friendlys-conehead-crew-trading-cards-kids-meals-091526",
+      "source": {
+        "id": "restaurant_news",
+        "name": "RestaurantNews.com",
+        "homepage": "https://www.restaurantnews.com/",
+        "class": "industry_news",
+        "priority": 2,
+        "market": null,
+        "country": null,
+        "aggregator": null
+      },
+      "discovered_publisher": null,
+      "author": "RestaurantNews.com",
+      "published_at": "2026-09-15T18:27:00Z",
+      "collected_at": "2026-09-15T18:33:39Z",
+      "language": "en",
+      "region": "US",
+      "country": null,
+      "market": null,
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": "https://www.restaurantnews.com/wp-content/uploads/2026/09/Friendlys-Conehead-Crew-Trading-Cards-Kids-Meals.jpg",
+      "image_source": "feed",
+      "source_detail_chars": 4711,
+      "summary": "New kids' experience brings beloved Friendly's ice cream sundaes to life with collectible trading cards, activities and limited-time $5 kids meals The post Friendly’s Introduces the Conehead Crew, Turning Kids Meals Into a Collectible Adventure first appeared on RestaurantNews.com .",
+      "categories": [
+        "restaurant_technology_ai",
+        "restaurant_industry"
+      ],
+      "topics": [
+        "POS"
+      ],
+      "brands": [],
+      "iran_relevance_score": 0,
+      "relevance_score": 74,
+      "title_fa": "Friendly's Conehead Crew را معرفی می کند، وعده های غذایی کودکان را به یک ماجراجویی کلکسیونی تبدیل می کند",
+      "summary_fa": "تجربه جدید بچه ها بستنی های دوست داشتنی Friendly را با کارت های معاملاتی کلکسیونی، فعالیت ها و وعده های غذایی با زمان محدود 5 دلاری برای بچه ها به والدین می دهد. بزرگترها آرزو می کنند که ای کاش در آن سن داشتند. تجربه جدید بچه‌ها که در 16 سپتامبر در سراسر سیستم منتشر می‌شود، منوی بازطراحی‌شده را با بسته‌های مهر و موم شده کارت‌های معاملاتی کلکسیونی، برگه‌های فعالیت جذاب و پنج شخصیت آشنای بستنی با شخصیت‌های تازه‌یافته و یک پایگاه هواداران داخلی همراه…",
+      "report_fa": "تجربه جدید بچه ها بستنی های دوست داشتنی Friendly را با کارت های معاملاتی کلکسیونی، فعالیت ها و وعده های غذایی با زمان محدود 5 دلاری برای بچه ها به والدین می دهد. بزرگترها آرزو می کنند که ای کاش در آن سن داشتند.\n\nتجربه جدید بچه‌ها که در 16 سپتامبر در سراسر سیستم منتشر می‌شود، منوی بازطراحی‌شده را با بسته‌های مهر و موم شده کارت‌های معاملاتی کلکسیونی، برگه‌های فعالیت جذاب و پنج شخصیت آشنای بستنی با شخصیت‌های تازه‌یافته و یک پایگاه هواداران داخلی همراه می‌کند. به خدمه Conehead سلام کنید!\n\nخدمه برنامه را هدایت می کند و همه جا از روی جلد منو گرفته تا افراد ایستاده در جلوی در ظاهر می شود: Conehead، کاپیتان دوستانه و ماجراجو که از همه افراد سوار بر بستنی وانیلی با \"کلاه\" مخروطی، خامه فرم گرفته، Reese's® Pieces (حاوی بادام زمینی) استقبال می کند. ستاره را تکان دهید، خنک، مطمئن و ساخته شده برای کانون توجه بستنی Forbidden Chocolate با پاشیدن شکلات، خامه فرم گرفته، گیلاس، و Reese’s® Peanut Butter Cup، Reese’s® Pieces ( حاوی بادام زمینی است).\n\nPuddles the Pig، بستنی توت فرنگی شیرین و بازیگوش با موز واقعی، رویه زده شده…",
+      "report_coverage": "گسترده",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa",
+        "cleanup_version": 1
+      },
+      "editorial": {
+        "status": "edited",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 1,
+        "status": "warn",
+        "score": 84,
+        "publishable": true,
+        "issues": [
+          "long-sentence",
+          "repetition"
+        ],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.762,
+            "latin_ratio": 0.25,
+            "max_sentence_chars": 104,
+            "word_count": 20
+          },
+          "summary": {
+            "score": 80,
+            "status": "warn",
+            "issues": [
+              "long-sentence",
+              "repetition"
+            ],
+            "persian_ratio": 0.986,
+            "latin_ratio": 0.023,
+            "max_sentence_chars": 241,
+            "word_count": 93
+          },
+          "report": {
+            "score": 71,
+            "status": "warn",
+            "issues": [
+              "long-sentence",
+              "repetition"
+            ],
+            "persian_ratio": 0.89,
+            "latin_ratio": 0.128,
+            "max_sentence_chars": 256,
+            "word_count": 201
+          }
+        },
+        "source_original_fa": false
+      }
+    },
+    {
       "id": "5346d6edf8fa241ae270",
       "title": "Guy Fieri’s Downtown Flavortown Myrtle Beach Celebrates Official Grand Opening With Ribbon Cutting",
       "url": "https://www.restaurantnews.com/guy-fieri-downtown-flavortown-myrtle-beach-face-amusement-group-091526",
@@ -380,7 +483,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -551,15 +654,25 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited-body",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "article_body": {
         "status": "extracted",
-        "cached_from_report": true
+        "chars": 1601,
+        "paragraphs": 7,
+        "selected_sentences": 12,
+        "selected_chars": 1595,
+        "extractor": "scored-container",
+        "content_hash": "1b019505cf4e68c98d04",
+        "fetched_at": "2026-09-15T18:37:02Z"
       },
       "report_source_kind": "article_body",
+      "report_source_chars": 1601,
+      "report_selected_chars": 1595,
+      "report_basis": "article-body-summary",
+      "report_word_count": 210,
       "translation_quality": {
         "version": 1,
         "status": "retry",
@@ -587,10 +700,10 @@
             "score": 100,
             "status": "pass",
             "issues": [],
-            "persian_ratio": 0.936,
-            "latin_ratio": 0.091,
-            "max_sentence_chars": 137,
-            "word_count": 24
+            "persian_ratio": 0.832,
+            "latin_ratio": 0.186,
+            "max_sentence_chars": 126,
+            "word_count": 50
           },
           "report": {
             "score": 82,
@@ -608,7 +721,7 @@
       },
       "translation_quarantine": {
         "title_fa": "Malachy Parts & Service Hires زنجیره تامین، مدیر قطعات",
-        "summary_fa": "Tara Tucker عملکرد قطعات شرکت را تقویت خواهد کرد، ابتکارات زنجیره تامین، روابط فروشنده، موجودی و در دسترس بودن قطعات را مدیریت خواهد کرد.",
+        "summary_fa": "Malachy Parts & Service Tara Tucker را به عنوان مدیر زنجیره تامین و قطعات جدید خود اضافه کرده است. Tucker به تقویت عملکرد قطعات Malachy، مدیریت ابتکارات زنجیره تامین، روابط فروشنده، موجودی و در دسترس بودن قطعات کمک خواهد کرد. او بر سازمان، مسئولیت پذیری و کارایی عملیاتی تمرکز می کند.",
         "report_fa": "Malachy Parts & Service Tara Tucker را به عنوان مدیر زنجیره تامین و قطعات جدید خود اضافه کرده است. Tucker به تقویت عملکرد قطعات Malachy، مدیریت ابتکارات زنجیره تامین، روابط فروشنده، موجودی و در دسترس بودن قطعات کمک خواهد کرد.\n\nاو بر سازمان، مسئولیت پذیری و کارایی عملیاتی تمرکز می کند. رهبری او از تلاش‌های مداوم شرکت برای ایجاد یک عملیات ساده‌تر و پاسخگوتر قطعات در سراسر قلمرو خدمات آن پشتیبانی خواهد کرد.\n\nTucker به توسعه مداوم Malachy Parts Plus، یک برنامه اختصاصی قطعات OEM که منحصراً برای شرکت های خدماتی ساخته شده است، کمک خواهد کرد. Parts Plus به شرکت های خدماتی امکان دسترسی به تخفیف های OEM و پشتیبانی قطعات را می دهد - بدون اینکه مستقیماً به مشتریان خود بفروشند.\n\nRich Malachy، مدیرعامل، در این نسخه می‌گوید: «هدف ما با Parts Plus ساده است. ما می خواهیم به شرکت های خدماتی کمک کنیم تا مشتریان خود را بسازند، رشد کنند و بهتر حمایت کنند.\n\nما بدون شک عمیق ترین تخفیف هایی را که می توانیم ارائه خواهیم کرد، در حالی که از رابطه بین شرکت خدمات و مشتری محافظت می کنیم. Malachy Parts & Service خدمات پخت و پز تجاری، تبرید، ماشین ظرفشویی و تجهیزات آماده سازی غذا، تعمیر و نگهداری، نصب و پشتیبانی قطعات را در…",
         "quality": {
           "version": 1,
@@ -637,10 +750,10 @@
               "score": 100,
               "status": "pass",
               "issues": [],
-              "persian_ratio": 0.936,
-              "latin_ratio": 0.091,
-              "max_sentence_chars": 137,
-              "word_count": 24
+              "persian_ratio": 0.832,
+              "latin_ratio": 0.186,
+              "max_sentence_chars": 126,
+              "word_count": 50
             },
             "report": {
               "score": 82,
@@ -1327,7 +1440,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-15T18:20:08Z"
+        "fetched_at": "2026-09-15T18:37:36Z"
       },
       "translation_quality": {
         "version": 1,
@@ -1570,7 +1683,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -1991,7 +2104,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-15T18:19:31Z"
+        "fetched_at": "2026-09-15T18:37:02Z"
       },
       "translation_quality": {
         "version": 1,
@@ -2094,9 +2207,14 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
+      },
+      "article_body": {
+        "status": "http-error",
+        "http_status": 403,
+        "fetched_at": "2026-09-15T18:37:36Z"
       },
       "translation_quality": {
         "version": 1,
@@ -2195,14 +2313,14 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-15T18:19:51Z"
+        "fetched_at": "2026-09-15T18:37:19Z"
       },
       "translation_quality": {
         "version": 1,
@@ -2884,7 +3002,7 @@
         "selected_chars": 3163,
         "extractor": "scored-container",
         "content_hash": "9c44202652f34430d746",
-        "fetched_at": "2026-09-15T18:19:50Z"
+        "fetched_at": "2026-09-15T18:37:19Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 9109,
@@ -3264,25 +3382,15 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-body",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "article_body": {
         "status": "extracted",
-        "chars": 5391,
-        "paragraphs": 22,
-        "selected_sentences": 12,
-        "selected_chars": 1836,
-        "extractor": "main",
-        "content_hash": "559833724c22e413fd54",
-        "fetched_at": "2026-09-15T18:19:32Z"
+        "cached_from_report": true
       },
       "report_source_kind": "article_body",
-      "report_source_chars": 5391,
-      "report_selected_chars": 1836,
-      "report_basis": "article-body-summary",
-      "report_word_count": 210,
       "translation_quality": {
         "version": 1,
         "status": "pass",
@@ -3377,25 +3485,15 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-body",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "article_body": {
         "status": "extracted",
-        "chars": 1977,
-        "paragraphs": 8,
-        "selected_sentences": 12,
-        "selected_chars": 1718,
-        "extractor": "main",
-        "content_hash": "1262192294127f6602df",
-        "fetched_at": "2026-09-15T18:19:52Z"
+        "cached_from_report": true
       },
       "report_source_kind": "article_body",
-      "report_source_chars": 1977,
-      "report_selected_chars": 1718,
-      "report_basis": "article-body-summary",
-      "report_word_count": 210,
       "translation_quality": {
         "version": 1,
         "status": "pass",
@@ -3610,7 +3708,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -3665,7 +3763,7 @@
       },
       "translation_quarantine": {
         "title_fa": "اخبار منوی رستوران از Applebee's، کافه Sunny Street، Kura Sushi USA و موارد دیگر!",
-        "summary_fa": "در اخبار منوی رستوران این هفته، زنجیره‌های برتر در حال عرضه معاملات با ارزش، طعم‌های پاییزی، و افزودنی‌های ممتاز هستند. Applebee’s روز ملی چیزبرگر را در 18 سپتامبر با ترکیبی برگر کلاسیک یا چیزبرگر و سیب زمینی سرخ کرده 8.99 دلاری در کنار گزینه های ویروسی O-M-Cheese که در تمام ماه ارائه می شود جشن می گیرد. کافه سانی استریت مجموعه پاییز خود را با پنکیک‌های کدو تنبل مورد علاقه، سوراخ‌های دونات ادویه‌ای کدو تنبل و اقلام جدیدی مانند Pumpkin Chai Cold Brew راه‌اندازی کرد…",
+        "summary_fa": "در اخبار منوی رستوران این هفته، زنجیره‌های برتر در حال عرضه معاملات با ارزش، طعم‌های پاییزی، و افزودنی‌های ممتاز هستند. Applebee’s روز ملی چیزبرگر را در 18 سپتامبر با ترکیبی برگر کلاسیک یا چیزبرگر و سیب زمینی سرخ کرده 8.99 دلاری در کنار گزینه های ویروسی O-M-Cheese که در تمام ماه ارائه می شود جشن می گیرد. کافه سانی استریت مجموعه پاییز خود را با پنکیک‌های کدو تنبل مورد علاقه، سوراخ‌های دونات ادویه‌ای کدو تنبل و اقلام جدیدی مانند Pumpkin Chai Cold Brew راه‌اندازی کرد.",
         "report_fa": "در اخبار منوی رستوران این هفته، زنجیره‌های برتر در حال عرضه معاملات با ارزش، طعم‌های پاییزی، و افزودنی‌های ممتاز هستند. Applebee’s روز ملی چیزبرگر را در 18 سپتامبر با ترکیبی برگر کلاسیک یا چیزبرگر و سیب زمینی سرخ کرده 8.99 دلاری در کنار گزینه های ویروسی O-M-Cheese که در تمام ماه ارائه می شود جشن می گیرد.\n\nکافه سانی استریت مجموعه پاییز خود را با پنکیک‌های کدو تنبل مورد علاقه، سوراخ‌های دونات ادویه‌ای کدو تنبل و اقلام جدیدی مانند Pumpkin Chai Cold Brew راه‌اندازی کرد. در همین حال، کورا سوشی ایالات متحده آمریکا منوی رزرو زمان محدود Kura خود را تا 24 سپتامبر معرفی کرد که شامل ماهی سیاه آلاسکا با شعله پخته شده، مارماهی آب شور به سبک Edo و یک کیک پنیر عسلی میسو شده است.\n\nگزینه های پر پروتئین و خوراکی های فصلی پاییزی بر جدیدترین منوهای آبمیوه و کاسه غالب هستند. Beyond Juicery + Eatery مجموعه صبحانه خود را تا 18 اکتبر با Scrambles جدید پروتئینی صبحانه و یک اسموتی رول دارچینی الهام گرفته از نانوایی با 19 گرم پروتئین گسترش داد.\n\nآب آن را بالا! منوی پاییزی «Savor the Season» را معرفی کرد که شامل…",
         "quality": {
           "version": 1,
@@ -3766,7 +3864,7 @@
       "title_fa": "",
       "summary_fa": "",
       "report_fa": "",
-      "report_coverage": "بر پایه بدنه مقاله",
+      "report_coverage": "گسترده",
       "translation": {
         "status": "quality-quarantined",
         "engine": "http-en-fa",
@@ -3778,11 +3876,6 @@
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
-      "article_body": {
-        "status": "extracted",
-        "cached_from_report": true
-      },
-      "report_source_kind": "article_body",
       "translation_quality": {
         "version": 1,
         "status": "block",
@@ -3822,10 +3915,10 @@
             "score": 100,
             "status": "pass",
             "issues": [],
-            "persian_ratio": 0.919,
-            "latin_ratio": 0.095,
+            "persian_ratio": 0.908,
+            "latin_ratio": 0.104,
             "max_sentence_chars": 216,
-            "word_count": 220
+            "word_count": 200
           }
         },
         "source_original_fa": false
@@ -3833,7 +3926,7 @@
       "translation_quarantine": {
         "title_fa": "اخبار امتیاز رستوران از Erbert & Gerbert's، Dickey's Barbecue Pit، Mountain Mike's Pizza و موارد دیگر!",
         "summary_fa": "به‌روزرسانی‌های گسترش Erbert & Gerbert's، Dickey's Barbecue Pit، Mountain Mike's Pizza، و موارد دیگر را در اخبار امتیاز رستوران این هفته دنبال کنید. The post اخبار امتیاز رستوران از Erbert & Gerbert’s، Dickey’s Barbecue Pit، Mountain Mike’s Pizza، و موارد دیگر! اولین بار در RestaurantNews.",
-        "report_fa": "آخرین اخبار حق رای دادن رستوران ها، گسترش محوطه دانشگاه و ردپای رو به رشد در بازارهای کلیدی را برجسته می کند. ساندویچ‌فروشی Erbert & Gerbert با Sodexo همکاری کرد تا دو دانشگاه جدید در دانشگاه میسوری مرکزی و دانشگاه ایندیانا وسلیان افتتاح کند تا ساندویچ‌ها و سوپ‌های خود را به دانشجویان معرفی کند.\n\nدر سن برناردینو، فرنچایزگیرنده محلی Tuan \"Danny\" Nguyen به عنوان استاد گودال و مالک Dickey's Barbecue Pit، با هدف گسترش خدمات پذیرایی و ارائه کالاهای اصلی باربیکیو کلاسیک تگزاس، مسئولیت را بر عهده گرفت. در همین حال، Mountain Mike's Pizza هفتمین مکان خود در اورگان را در ویلسونویل افتتاح کرد و پیتزاهای 20 اینچی، بوفه‌ای که می‌توانید همه چیز را بخورید، و سرگرمی‌های خانوادگی تحت مدیریت جان شارما، مالک محلی ارائه می‌دهد.\n\nتلاش‌های توسعه در سراسر سواحل جنوب غربی و غربی با افتتاحیه‌های سریع و معمولی جدید ادامه دارد. Angry Chickz مرغ تند، لغزنده و کاسه های سفارشی خود را با سطوح حرارتی قابل تنظیم به Avondale آورد.\n\nدر سانتا کلاریتا، نیک یونانی محل جدیدی را راه اندازی کرد که توسط فرنچایزگیرنده نادر شنودا سرو می شود. همچنین در سانتا کلاریتا، فرنچایزگیرنده عمر ماواس، اولین مکان کشاورزان منطقه را معرفی کرد و همبرگرهای خام، اقلام صبحانه و وعده های غذایی خانوادگی را به شهرستان لس آنجلس…",
+        "report_fa": "جدیدترین اخبار حق رای دادن رستوران ها، گسترش محوطه دانشگاه و ردپای رو به رشد در بازارهای کلیدی را برجسته می کند. ساندویچ‌فروشی Erbert & Gerbert با Sodexo همکاری کرد تا دو دانشگاه جدید در دانشگاه میسوری مرکزی و دانشگاه ایندیانا وسلیان افتتاح کند تا ساندویچ‌ها و سوپ‌های خود را به دانشجویان معرفی کند.\n\nدر سن برناردینو، فرنچایزگیرنده محلی Tuan \"Danny\" Nguyen به عنوان استاد گودال و مالک Dickey's Barbecue Pit، با هدف گسترش خدمات پذیرایی و ارائه کالاهای اصلی باربیکیو کلاسیک تگزاس، مسئولیت را بر عهده گرفت. در همین حال، Mountain Mike's Pizza هفتمین مکان خود در اورگان را در ویلسونویل افتتاح کرد و پیتزاهای 20 اینچی، بوفه‌ای که می‌توانید همه چیز را بخورید، و سرگرمی‌های خانوادگی تحت مدیریت جان شارما، مالک محلی ارائه می‌دهد.\n\nتلاش‌های توسعه در سراسر سواحل جنوب غربی و غربی با افتتاحیه‌های سریع و معمولی جدید ادامه دارد. Angry Chickz مرغ تند، لغزنده و کاسه های سفارشی خود را با سطوح حرارتی قابل تنظیم به Avondale آورد.\n\nدر سانتا کلاریتا، نیک یونانی محل جدیدی را راه اندازی کرد که توسط فرنچایزگیرنده نادر شنودا سرو می شود. همچنین در سانتا کلاریتا، فرنچایزگیرنده عمر ماواس اولین موقعیت…",
         "quality": {
           "version": 1,
           "status": "block",
@@ -3873,10 +3966,10 @@
               "score": 100,
               "status": "pass",
               "issues": [],
-              "persian_ratio": 0.919,
-              "latin_ratio": 0.095,
+              "persian_ratio": 0.908,
+              "latin_ratio": 0.104,
               "max_sentence_chars": 216,
-              "word_count": 220
+              "word_count": 200
             }
           },
           "source_original_fa": false
@@ -4144,7 +4237,7 @@
         "selected_chars": 3084,
         "extractor": "scored-container",
         "content_hash": "6dc621347705db2e0406",
-        "fetched_at": "2026-09-15T18:19:58Z"
+        "fetched_at": "2026-09-15T18:37:25Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 6868,
@@ -4904,9 +4997,9 @@
             "score": 100,
             "status": "pass",
             "issues": [],
-            "persian_ratio": 0.893,
-            "latin_ratio": 0.107,
-            "max_sentence_chars": 106,
+            "persian_ratio": 0.889,
+            "latin_ratio": 0.111,
+            "max_sentence_chars": 103,
             "word_count": 23
           },
           "summary": {
@@ -4935,7 +5028,7 @@
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "GoTo Foods لوسی برادی جامبا را به عنوان رئیس انتخاب می‌کند و نقش‌های بیشتری را در کارنامه خود تغییر می‌دهد",
+        "title_fa": "GoTo Foods لوسی برادی جامبا را به عنوان رئیس انتخاب می‌کند و نقش‌های بیشتری را در سبد سهام تغییر می‌دهد",
         "summary_fa": "",
         "report_fa": "",
         "quality": {
@@ -4951,9 +5044,9 @@
               "score": 100,
               "status": "pass",
               "issues": [],
-              "persian_ratio": 0.893,
-              "latin_ratio": 0.107,
-              "max_sentence_chars": 106,
+              "persian_ratio": 0.889,
+              "latin_ratio": 0.111,
+              "max_sentence_chars": 103,
               "word_count": 23
             },
             "summary": {
@@ -5449,7 +5542,7 @@
         "chars": 464,
         "paragraphs": 3,
         "extractor": "main",
-        "fetched_at": "2026-09-15T18:19:33Z"
+        "fetched_at": "2026-09-15T18:37:02Z"
       },
       "translation_quality": {
         "version": 1,
@@ -5519,20 +5612,20 @@
       },
       "image_url": "https://www.foodengineeringmag.com/ext/resources/Issues/2025/01-January/From_the_editor_1170x658.webp?t=1785788454",
       "image_source": "feed",
-      "source_detail_chars": 259,
-      "summary": "One of my favorite times of the year is approaching, and it’s not just because autumn is on its way. While I do enjoy the cooler temperatures and the seasonal activities that fall brings, this time of year also marks the release of our annual Top 100 ranking.",
+      "source_detail_chars": 148,
+      "summary": "Volatile commodity markets were one of the many challenges food manufacturers faced in 2025, but ingredient processors especially felt the pressure.",
       "categories": [
-        "ingredients_rd",
         "food_manufacturing",
+        "ingredients_rd",
         "equipment_automation"
       ],
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 84,
-      "title_fa": "100 برتر: پردازشگرهای مواد در سال 2025 فشرده شدند",
-      "summary_fa": "یکی از زمان های مورد علاقه من در سال نزدیک است - و این فقط به این دلیل نیست که پاییز نزدیک است. همانطور که من عاشق دماهای خنک تر و فعالیت های فصلی در پاییز هستم، زمان آن رسیده است که رتبه بندی 100 برتر سالانه خود را منتشر کنیم. به طور خاص، سال 2025 خرید کلانووا را برای مریخ به ارمغان آورد، انحلال یونیلور از تجارت بستنی و ازدواج تولیدکنندگان گوشت برزیلی Marfrig و BRF.",
-      "report_fa": "یکی از زمان های مورد علاقه من در سال نزدیک است - و این فقط به این دلیل نیست که پاییز نزدیک است. همانطور که من عاشق دماهای خنک تر و فعالیت های فصلی در پاییز هستم، زمان آن رسیده است که رتبه بندی 100 برتر سالانه خود را منتشر کنیم.\n\nبه طور خاص، سال 2025 خرید کلانووا را برای مریخ به ارمغان آورد، انحلال یونیلور از تجارت بستنی و ازدواج تولیدکنندگان گوشت برزیلی Marfrig و BRF. اما، همانطور که می‌دانیم، این پیشرفت‌های عمده ناشی از درآمد است و این اساس رتبه‌بندی ۱۰۰ برتر ماست.\n\nبا شروع با Acher-Daniels-Midland (ADM)، این شرکت 80.3 میلیارد دلار درآمد کل در سال 2025 به ثبت رساند که نسبت به 85.5 میلیارد دلار در سال 2024 کاهش یافته است. ذخایر غلات و دانه‌های روغنی فراوان در بازارها علیرغم عدم قطعیت در سیاست سوخت‌های زیستی ایالات متحده و عدم وجود چشم‌انداز صادراتی ایالات متحده به چین.\n\nOlam International در سال 2025 درآمد 67 میلیارد دلاری سنگاپور داشت که از 56.1 دلار سنگاپور در سال 2024 بیشتر بود. با این حال، با فروش کسب و کار Olam Agri خود در سال 2025، درآمد باقیمانده مواد غذایی این شرکت - که از طریق ofi ایجاد شد - بالغ بر 28.5 میلیارد دلار سنگاپور شد.\n\nقابل توجه است…",
+      "title_fa": "100 مورد برتر: پردازنده‌های مواد اولیه در سال 2025 فشرده شدند",
+      "summary_fa": "یکی از زمان های مورد علاقه من در سال نزدیک است - و این فقط به این دلیل نیست که پاییز نزدیک است. همان‌قدر که من عاشق هوای خنک‌تر و فعالیت‌های فصلی در پاییز هستم، زمان آن فرا رسیده است که رتبه‌بندی سالانه 100 برتر را منتشر کنیم. به طور خاص، سال 2025 خرید کلانووا را برای مریخ به ارمغان آورد، انحلال یونیلور از تجارت بستنی و ازدواج تولیدکنندگان گوشت برزیلی Marfrig و BRF.",
+      "report_fa": "یکی از زمان های مورد علاقه من در سال نزدیک است - و این فقط به این دلیل نیست که پاییز نزدیک است. همان‌قدر که من عاشق هوای خنک‌تر و فعالیت‌های فصلی در پاییز هستم، زمان آن فرا رسیده است که رتبه‌بندی سالانه 100 برتر را منتشر کنیم.\n\nبه طور خاص، سال 2025 خرید کلانووا را برای مریخ به ارمغان آورد، انحلال یونیلور از تجارت بستنی و ازدواج تولیدکنندگان گوشت برزیلی Marfrig و BRF. اما، همانطور که می‌دانیم، این پیشرفت‌های عمده ناشی از درآمد است و این اساس رتبه‌بندی ۱۰۰ برتر ماست.\n\nبا شروع با Acher-Daniels-Midland (ADM)، این شرکت 80.3 میلیارد دلار درآمد کل در سال 2025 به ثبت رساند که نسبت به 85.5 میلیارد دلار در سال 2024 کاهش یافته است. ذخایر غلات و دانه‌های روغنی فراوان در بازارها علیرغم عدم قطعیت در سیاست سوخت‌های زیستی ایالات متحده و عدم وجود چشم‌انداز صادراتی ایالات متحده به چین.\n\nOlam International در سال 2025 درآمد 67 میلیارد دلاری سنگاپور داشت که از 56.1 دلار سنگاپور در سال 2024 بیشتر بود. با این حال، با فروش کسب و کار Olam Agri خود در سال 2025، درآمد باقیمانده مواد غذایی این شرکت - که از طریق ofi ایجاد شد - بالغ بر 28.5 میلیارد دلار سنگاپور شد.\n\nقابل توجه است که فروش ofi…",
       "report_coverage": "بر پایه بدنه مقاله",
       "translation": {
         "status": "translated",
@@ -5546,17 +5639,17 @@
       },
       "article_body": {
         "status": "extracted",
-        "chars": 4069,
+        "chars": 4068,
         "paragraphs": 16,
         "selected_sentences": 12,
-        "selected_chars": 1531,
+        "selected_chars": 1530,
         "extractor": "article",
-        "content_hash": "d09d64dff9eb85c9ebef",
-        "fetched_at": "2026-09-15T18:19:42Z"
+        "content_hash": "02f64db075ce33841cb4",
+        "fetched_at": "2026-09-15T18:37:11Z"
       },
       "report_source_kind": "article_body",
-      "report_source_chars": 4069,
-      "report_selected_chars": 1531,
+      "report_source_chars": 4068,
+      "report_selected_chars": 1530,
       "report_basis": "article-body-summary",
       "report_word_count": 210,
       "translation_quality": {
@@ -5574,8 +5667,8 @@
             "issues": [],
             "persian_ratio": 1.0,
             "latin_ratio": 0.0,
-            "max_sentence_chars": 49,
-            "word_count": 9
+            "max_sentence_chars": 61,
+            "word_count": 12
           },
           "summary": {
             "score": 100,
@@ -5584,7 +5677,7 @@
             "persian_ratio": 0.975,
             "latin_ratio": 0.036,
             "max_sentence_chars": 141,
-            "word_count": 76
+            "word_count": 77
           },
           "report": {
             "score": 82,
@@ -5592,10 +5685,10 @@
             "issues": [
               "repetition"
             ],
-            "persian_ratio": 0.937,
-            "latin_ratio": 0.077,
+            "persian_ratio": 0.934,
+            "latin_ratio": 0.08,
             "max_sentence_chars": 158,
-            "word_count": 220
+            "word_count": 224
           }
         },
         "source_original_fa": false
@@ -6078,7 +6171,7 @@
         "chars": 0,
         "paragraphs": 0,
         "extractor": "none",
-        "fetched_at": "2026-09-15T18:19:53Z"
+        "fetched_at": "2026-09-15T18:37:20Z"
       },
       "translation_quality": {
         "version": 1,
@@ -6176,7 +6269,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -6710,7 +6803,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 85,
-      "relevance_score": 74,
+      "relevance_score": 70,
       "title_fa": "دستگاه اسانس گیری خانگی: راهنمای جامع خرید و استفاده",
       "summary_fa": "وبلاگ آی فودز | ifoods. ir/blog آیا تا به حال به این فکر کرده‌اید که چگونه می‌توانید عصاره‌های معطر و خواص درمانی بی‌نظیر گیاهان را به راحتی در منزل خود داشته باشید؟ در دنیای امروز که تمایل به... مطلب دستگاه اسانس گیری خانگی: راهنمای جامع خرید و استفاده در مجله آی فودز. منتشر شد.",
       "report_fa": "وبلاگ آی فودز | ifoods. ir/blog آیا تا به حال به این فکر کرده‌اید که چگونه می‌توانید عصاره‌های معطر و خواص درمانی بی‌نظیر گیاهان را به راحتی در منزل خود داشته باشید؟ در دنیای امروز که تمایل به... مطلب دستگاه اسانس گیری خانگی: راهنمای جامع خرید و استفاده در مجله آی فودز. منتشر شد.",
@@ -6787,7 +6880,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -6833,10 +6926,10 @@
               "too-much-latin",
               "repetition"
             ],
-            "persian_ratio": 0.757,
-            "latin_ratio": 0.249,
+            "persian_ratio": 0.756,
+            "latin_ratio": 0.25,
             "max_sentence_chars": 166,
-            "word_count": 191
+            "word_count": 190
           }
         },
         "source_original_fa": false
@@ -6844,7 +6937,7 @@
       "translation_quarantine": {
         "title_fa": "Smalls Sliders با بازگشت دکتر Pepper Swirl و دکتر Pepper کثیف جدید اوضاع را به هم می زند",
         "summary_fa": "دو روش برای نوشیدن زمین در Cans در سراسر کشور Baton Rouge, LA ( RestaurantNews. com ) Smalls Sliders به ​​طرفداران دکتر Pepper® دو دلیل برای لغزش می دهد. Dr Pepper® Swirl به Cans در سراسر کشور بازگشته است، و برای اولین بار، Smalls یک Drty Dr Pepper® را ارائه می دهد.",
-        "report_fa": "دو روش برای نوشیدن زمین در Cans در سراسر کشور Baton Rouge, LA ( RestaurantNews. com ) Smalls Sliders به ​​طرفداران دکتر Pepper® دو دلیل برای لغزش می دهد.\n\nDr Pepper® Swirl به Cans در سراسر کشور بازگشته است، و برای اولین بار، Smalls یک Drty Dr Pepper® را ارائه می دهد. هر دو نوشیدنی با زمان محدود تا 11 اکتبر در دسترس هستند.\n\nDr Pepper® Swirl پس از یک دوره محدود در سال گذشته بازمی گردد. این شیک با پایه وانیلی خامه‌ای ساخته شده و با موج‌هایی از شربت Dr Pepper® چرخانده شده است.\n\nSmalls به روند سودای کثیف چرخش خاص خود را می دهد. Dirty Dr Pepper® جدید با Dr Pepper® سرد یخی شروع می شود، پوره توت فرنگی واقعی را اضافه می کند و با پاشیدن وانیل خامه ای برای نوشیدنی شیرین و با طراوت به پایان می رسد.\n\nDirty Dr Pepper® با شروع دسته بندی به منو می رسد. جستجوهای Yelp برای سودای کثیف سالانه 600 درصد افزایش یافت و در ماه می 2026 به بالاترین حد خود رسید.\n\nمایکل آلبریچی، مدیر بازاریابی Smalls Sliders گفت: «مهمانان در تمام طول سال در مورد Dr Pepper® Swirl صحبت…",
+        "report_fa": "دو روش برای نوشیدن زمین در Cans در سراسر کشور Baton Rouge, LA ( RestaurantNews. com ) Smalls Sliders به ​​طرفداران دکتر Pepper® دو دلیل برای لغزش می دهد.\n\nDr Pepper® Swirl به Cans در سراسر کشور بازگشته است، و برای اولین بار، Smalls یک Drty Dr Pepper® را ارائه می دهد. هر دو نوشیدنی با زمان محدود تا 11 اکتبر در دسترس هستند.\n\nDr Pepper® Swirl پس از یک دوره محدود در سال گذشته بازمی گردد. این شیک با پایه وانیلی خامه‌ای ساخته شده و با موج‌هایی از شربت Dr Pepper® چرخانده شده است.\n\nSmalls به روند سودای کثیف چرخش خاص خود را می دهد. Dirty Dr Pepper® جدید با Dr Pepper® سرد یخی شروع می شود، پوره توت فرنگی واقعی را اضافه می کند و با پاشیدن وانیل خامه ای برای نوشیدنی شیرین و با طراوت به پایان می رسد.\n\nDirty Dr Pepper® با شروع دسته بندی به منو می رسد. جستجوهای Yelp برای سودای کثیف سالانه 600 درصد افزایش یافت و در ماه می 2026 به بالاترین حد خود رسید.\n\nمایکل آلبریچی، مدیر بازاریابی Smalls Sliders گفت: «مهمانان در تمام طول سال در مورد Dr Pepper® Swirl…",
         "quality": {
           "version": 1,
           "status": "retry",
@@ -6887,10 +6980,10 @@
                 "too-much-latin",
                 "repetition"
               ],
-              "persian_ratio": 0.757,
-              "latin_ratio": 0.249,
+              "persian_ratio": 0.756,
+              "latin_ratio": 0.25,
               "max_sentence_chars": 166,
-              "word_count": 191
+              "word_count": 190
             }
           },
           "source_original_fa": false
@@ -7186,7 +7279,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-15T18:19:51Z"
+        "fetched_at": "2026-09-15T18:37:19Z"
       },
       "translation_quality": {
         "version": 1,
@@ -7955,7 +8048,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-15T18:19:31Z"
+        "fetched_at": "2026-09-15T18:37:02Z"
       },
       "translation_quality": {
         "version": 1,
@@ -8970,7 +9063,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -9353,7 +9446,7 @@
         "cities": [],
         "confidence": "unknown"
       },
-      "image_url": "https://cdn.informaconnect.com/platform/files/public/2026-09/background/SGwrapgroup.jpg?VersionId=wlJL6UFuWS_.BbHrSYh4zPFLKQS9oWfn",
+      "image_url": "https://cdn.informaconnect.com/platform/files/public/2026-09/background/SGbrussels.jpg?VersionId=yp8UooI4BDoj5TZAYOnOFt1JgSGNhlBB",
       "image_source": "feed",
       "source_detail_chars": 188,
       "summary": "With the rollout of wraps earlier this year, the fast-casual chain recruited an army of social media influencers. That strategy is paying off, said Chief Commercial Officer Zipporah Allen.",
@@ -9478,7 +9571,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -9922,7 +10015,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -10761,10 +10854,10 @@
             "score": 100,
             "status": "pass",
             "issues": [],
-            "persian_ratio": 0.946,
-            "latin_ratio": 0.065,
-            "max_sentence_chars": 116,
-            "word_count": 24
+            "persian_ratio": 0.936,
+            "latin_ratio": 0.077,
+            "max_sentence_chars": 97,
+            "word_count": 19
           },
           "summary": {
             "score": 0,
@@ -10792,7 +10885,7 @@
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "Wonder اولین سیستم مونتاژ کاسه خودکار را ارائه می کند، برنامه توسعه شمال شرق و تگزاس را در دستور کار خود قرار می دهد",
+        "title_fa": "Wonder اولین سیستم مونتاژ کاسه خودکار را ارائه می کند، برنامه های توسعه شمال شرقی و تگزاس را دارد",
         "summary_fa": "",
         "report_fa": "",
         "quality": {
@@ -10808,10 +10901,10 @@
               "score": 100,
               "status": "pass",
               "issues": [],
-              "persian_ratio": 0.946,
-              "latin_ratio": 0.065,
-              "max_sentence_chars": 116,
-              "word_count": 24
+              "persian_ratio": 0.936,
+              "latin_ratio": 0.077,
+              "max_sentence_chars": 97,
+              "word_count": 19
             },
             "summary": {
               "score": 0,
@@ -11137,7 +11230,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -11228,7 +11321,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -11359,7 +11452,7 @@
         "selected_chars": 927,
         "extractor": "article",
         "content_hash": "b4536d0044962cadeeda",
-        "fetched_at": "2026-09-15T18:19:38Z"
+        "fetched_at": "2026-09-15T18:37:07Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 10491,
@@ -11614,7 +11707,7 @@
         "selected_chars": 2735,
         "extractor": "article",
         "content_hash": "16145dadc01c1c667558",
-        "fetched_at": "2026-09-15T18:19:40Z"
+        "fetched_at": "2026-09-15T18:37:09Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 3281,
@@ -13934,7 +14027,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -14293,7 +14386,7 @@
         "selected_chars": 3105,
         "extractor": "scored-container",
         "content_hash": "9a7982bf2155e8160274",
-        "fetched_at": "2026-09-15T18:20:03Z"
+        "fetched_at": "2026-09-15T18:37:31Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 7879,
@@ -15020,7 +15113,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -16648,7 +16741,7 @@
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "Hardee's منوهای S'mores، Bacon Beast را برای پاییز راه اندازی کرد",
+        "title_fa": "Hardee's منوهای S'mores، Becon Beast را برای پاییز راه اندازی کرد",
         "summary_fa": "",
         "report_fa": "",
         "quality": {
@@ -18635,7 +18728,7 @@
         "selected_chars": 1943,
         "extractor": "scored-container",
         "content_hash": "1ced927155bf4d63812c",
-        "fetched_at": "2026-09-15T18:20:08Z"
+        "fetched_at": "2026-09-15T18:37:36Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 5808,
@@ -18719,7 +18812,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-15T18:19:51Z"
+        "fetched_at": "2026-09-15T18:37:19Z"
       },
       "translation_quality": {
         "version": 1,
@@ -18904,7 +18997,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -19846,7 +19939,7 @@
       "report_fa": "جف هارمنینگ گفت «نقطه بالایی» برای خرید وجود دارد، اما سازنده مواد غذایی می‌تواند واگذاری‌های اضافی را در نظر بگیرد.",
       "report_coverage": "خلاصه منبع",
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -20661,11 +20754,12 @@
       "translation_quality": {
         "version": 1,
         "status": "retry",
-        "score": 68,
+        "score": 71,
         "publishable": false,
         "issues": [
           "mixed-script",
           "mostly-latin",
+          "repetition",
           "too-much-latin"
         ],
         "parts": {
@@ -20693,15 +20787,15 @@
             "word_count": 37
           },
           "report": {
-            "score": 80,
-            "status": "warn",
+            "score": 91,
+            "status": "pass",
             "issues": [
-              "too-much-latin"
+              "repetition"
             ],
-            "persian_ratio": 0.786,
-            "latin_ratio": 0.214,
-            "max_sentence_chars": 72,
-            "word_count": 16
+            "persian_ratio": 0.949,
+            "latin_ratio": 0.069,
+            "max_sentence_chars": 212,
+            "word_count": 196
           }
         },
         "source_original_fa": false
@@ -20709,15 +20803,16 @@
       "translation_quarantine": {
         "title_fa": "ترکیب فصل پاییز South Block با اسموتی Apple Crisp Bowl و Pumpkin Pie وارد شد",
         "summary_fa": "کانسپت «بهتر برای شما» در پاییز با دو مورد دلخواه فصلی شروع به کار می کند. The post خط پاییزی بلوک جنوبی با اسموتی Apple Crisp Bowl و Pumpkin Pie اولین بار در RestaurantNews. com ظاهر شد.",
-        "report_fa": "مفهوم Better-for-You در پاییز با دو مورد دلخواه فصلی شروع به کار می کند.",
+        "report_fa": "مفهوم بهتر برای شما در پاییز با دو مورد دلخواه فصلی واشینگتن دی سی ( RestaurantNews. com ) بلوک جنوبی، غذاهایی با نام تجاری بهتر و روانتر در پاییز شروع می شود.\n\nآبمیوه های سرد فشرده، فصل جدید را با دو افزودنی الهام گرفته از پاییز به منو آغاز می کند: Apple Crisp Bowl و Pumpkin Pie Smoothie که اکنون در سراسر سیستم موجود است. کاسه ترد اپل (12.99 دلار) با پایه ای از آکای ارگانیک مخلوط شده با شیر بادام شیرین نشده، زغال اخته و موز شروع می شود، سپس روی گرانولای ارگانیک، سیب تازه، کره بادام، عسل، دانه کدو تنبل و پودر دارچین روی هم می ریزد.\n\nهمچنین اسموتی پای کدو حلوایی (10.99 دلار) به این مجموعه می‌پیوندد که کدو تنبل واقعی و ادویه کدو تنبل را با شیر بادام، شربت افرا، کره بادام، موز و انبه ترکیب می‌کند و با چرخشی از شلاق گاو به پایان می‌رسد. امیر مصطفوی، موسس و مدیرعامل ساوت بلوک، گفت: «پاییز فصلی است که مردم بیشتر از همه نسبت به آن نوستالژیک می‌کنند و طعم بخش مهمی از آن است.\n\nما می‌خواستیم به مهمانان مزه‌ای را که هر سال مشتاقانه انتظارش را…",
         "quality": {
           "version": 1,
           "status": "retry",
-          "score": 68,
+          "score": 71,
           "publishable": false,
           "issues": [
             "mixed-script",
             "mostly-latin",
+            "repetition",
             "too-much-latin"
           ],
           "parts": {
@@ -20745,15 +20840,15 @@
               "word_count": 37
             },
             "report": {
-              "score": 80,
-              "status": "warn",
+              "score": 91,
+              "status": "pass",
               "issues": [
-                "too-much-latin"
+                "repetition"
               ],
-              "persian_ratio": 0.786,
-              "latin_ratio": 0.214,
-              "max_sentence_chars": 72,
-              "word_count": 16
+              "persian_ratio": 0.949,
+              "latin_ratio": 0.069,
+              "max_sentence_chars": 212,
+              "word_count": 196
             }
           },
           "source_original_fa": false
@@ -21044,10 +21139,10 @@
             "score": 100,
             "status": "pass",
             "issues": [],
-            "persian_ratio": 0.873,
-            "latin_ratio": 0.127,
-            "max_sentence_chars": 168,
-            "word_count": 34
+            "persian_ratio": 0.87,
+            "latin_ratio": 0.13,
+            "max_sentence_chars": 164,
+            "word_count": 33
           }
         },
         "source_original_fa": false
@@ -21055,7 +21150,7 @@
       "translation_quarantine": {
         "title_fa": "با TruFlavour توسط Monin آشنا شوید",
         "summary_fa": "کشف کنید که چگونه TruFlavour توسط Monin به اپراتورها راه های بیشتری برای ایجاد طعم و مزه جسورانه در نوشیدنی ها و محصولات آشپزی بدون شکر یا شیرین کننده اضافه می دهد.",
-        "report_fa": "کشف کنید که چگونه TruFlavour by Monin به اپراتورها راه‌های بیشتری برای ایجاد طعم و مزه‌ی جسورانه در نوشیدنی‌ها و محصولات آشپزی بدون شکر یا شیرین‌کننده‌های اضافه می‌دهد.",
+        "report_fa": "کشف کنید که چگونه TruFlavour by Monin به اپراتورها راه‌های بیشتری برای ایجاد طعم و مزه‌ی جسورانه در نوشیدنی‌ها و محصولات آشپزی بدون شکر یا شیرین کننده اضافه می‌دهد.",
         "quality": {
           "version": 1,
           "status": "retry",
@@ -21091,10 +21186,10 @@
               "score": 100,
               "status": "pass",
               "issues": [],
-              "persian_ratio": 0.873,
-              "latin_ratio": 0.127,
-              "max_sentence_chars": 168,
-              "word_count": 34
+              "persian_ratio": 0.87,
+              "latin_ratio": 0.13,
+              "max_sentence_chars": 164,
+              "word_count": 33
             }
           },
           "source_original_fa": false
@@ -22764,7 +22859,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -22864,7 +22959,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -23332,7 +23427,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -23390,7 +23485,7 @@
       "translation_quarantine": {
         "title_fa": "Angry Chickz در 11 سپتامبر در Avondale افتتاح می شود",
         "summary_fa": "نام تجاری مرغ داغ نشویل با رشد سریع چهارمین مکان خود در آریزونا و چهل و هفتمین رستوران در سراسر کشور را با افتتاحیه جدید West Valley در Avondale، AZ ( RestaurantNews. com ) Angry Chickz اولین رستوران خود در Arizona در حال گسترش است. 11 در 10285 W.",
-        "report_fa": "نام تجاری مرغ داغ نشویل با رشد سریع چهارمین مکان خود در آریزونا و چهل و هفتمین رستوران در سراسر کشور را با افتتاحیه جدید West Valley در Avondale، AZ ( RestaurantNews. com ) Angry Chickz اولین رستوران خود در Arizona در حال گسترش است.\n\n11 در 10285 W. McDowell Rd, Suite A100.\n\nرستوران جدید چهارمین رستوران مرغ داغ نشویل در آریزونا و چهل و هفتمین مکان در سراسر کشور است. جشن افتتاحیه بزرگ از ساعت 11 صبح آغاز می شود و هدایایی ویژه برای کسانی که زودتر وارد می شوند برنامه ریزی شده است.\n\n100 مهمان اول یک پیراهن Angry Chickz با تعداد محدود دریافت خواهند کرد، در حالی که 500 نفر اول این فرصت را خواهند داشت که در یک قرعه کشی در محل برای Angry Chickz به مدت یک سال و جوایز غذای اضافی از طریق ثبت نام آنلاین شرکت کنند. Angry Chickz که به‌خاطر مرغ داغ نشویل با شخصیت فراوان معروف است، به مهمانان اجازه می‌دهد تا با سطوح حرارتی قابل تنظیم از «کشور بدون گرما» گرفته تا «عصبانیت» با امضای معافیت، سفارش خود را کنترل کنند.\n\nاین منو شامل نان های مرغ، لغزنده و کاسه…",
+        "report_fa": "نام تجاری مرغ داغ نشویل با رشد سریع چهارمین مکان خود در آریزونا و چهل و هفتمین رستوران در سراسر کشور را با افتتاحیه جدید West Valley در Avondale، AZ ( RestaurantNews. com ) Angry Chickz اولین رستوران خود در Arizona در حال گسترش است.\n\n11 در 10285 W. McDowell Rd, Suite A100.\n\nرستوران جدید چهارمین رستوران مرغ داغ نشویل در آریزونا و چهل و هفتمین مکان در سراسر کشور است. جشن افتتاحیه بزرگ از ساعت 11 صبح آغاز می شود و هدایای ویژه برای کسانی که زودتر وارد می شوند برنامه ریزی شده است.\n\n100 مهمان اول یک پیراهن Angry Chickz با تعداد محدود دریافت خواهند کرد، در حالی که 500 نفر اول این فرصت را خواهند داشت که در یک قرعه کشی در محل برای Angry Chickz به مدت یک سال و جوایز غذای اضافی از طریق ثبت نام آنلاین شرکت کنند. Angry Chickz که به‌خاطر مرغ داغ نشویل با شخصیت فراوان معروف است، به مهمانان اجازه می‌دهد تا با سطوح حرارتی قابل تنظیم از «کشور بدون گرما» گرفته تا «عصبانیت» با امضای معافیت، سفارش خود را کنترل کنند.\n\nاین منو دارای نان های مرغ، لغزنده و کاسه…",
         "quality": {
           "version": 1,
           "status": "retry",
@@ -24282,7 +24377,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -24575,42 +24670,43 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 72,
-      "title_fa": "",
-      "summary_fa": "",
-      "report_fa": "",
+      "title_fa": "The Big Greek Café Taps Deliverect and Thanx to Power سفارشگیریگیری دیجیتال و وفاداری در سراسر مکانهای ایالات متحده",
+      "summary_fa": "The Big Greek Café، برندی مستقر در مریلند که به خاطر غذاخوری های یونانی اصیل و غیررسمی خود که ریشه در ارزش های خانوادگی و اجتماعی دارد، امروز اعلام کرد که با شرکت Dexli، یک شراکت و شراکت را ایجاد می کند. عملیات وفاداری در سراسر مکان های ایالات متحده. The Big Greek Café با اجرای زنده در پشته یکپارچه Deliverect و Thanx، سیستم یکپارچه ای را به دست می آورد که در آن وفاداری، سفارش گیری دیجیتال و انجام به طور کامل یکپارچه شده…",
+      "report_fa": "The Big Greek Café، برندی مستقر در مریلند که به خاطر غذاخوری های یونانی اصیل و غیررسمی خود که ریشه در ارزش های خانوادگی و اجتماعی دارد، امروز اعلام کرد که با شرکت Dexli، یک شراکت و شراکت را ایجاد می کند. عملیات وفاداری در سراسر مکان های ایالات متحده.\n\nThe Big Greek Café با اجرای زنده در پشته یکپارچه Deliverect و Thanx، سیستم یکپارچه ای را به دست می آورد که در آن وفاداری، سفارش گیری دیجیتال و انجام به طور کامل یکپارچه شده است. پلتفرم ترکیبی برای رسیدگی به چالش‌های عملیاتی در مدیریت منو و قابلیت اطمینان پلتفرم طراحی شده است که برند با گسترش آن در سراسر کشور با آن مواجه است، در حالی که به آن اجازه می‌دهد برنامه وفاداری مشتری خود را مستقیماً در تجربه سفارش‌دهی قرار دهد تا اینکه آن را در حالت سیلو نگه دارد.\n\nنیکو کونتوس، مدیر عملیاتی The Big Greek Café گفت: «مهمانان ما ما را به مهمان نوازی می‌شناسند، و سفارش‌گیری دیجیتال ما باید همان استاندارد را رعایت کند. \"ما زمان زیادی را صرف اصلاح منوها و حل مشکلات به جای رسیدگی به مهمانان می‌کردیم.\n\nDeliverect و Thanx به ما…",
       "report_coverage": "گسترده",
       "translation": {
-        "status": "quality-quarantined",
+        "status": "translated",
         "engine": "http-en-fa",
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
-        "status": "retry",
-        "score": 74,
-        "publishable": false,
+        "status": "warn",
+        "score": 76,
+        "publishable": true,
         "issues": [
           "long-sentence",
           "mixed-script",
-          "mostly-latin"
+          "repetition",
+          "too-much-latin"
         ],
         "parts": {
           "title": {
-            "score": 46,
-            "status": "retry",
+            "score": 68,
+            "status": "warn",
             "issues": [
-              "mostly-latin",
+              "too-much-latin",
               "mixed-script"
             ],
-            "persian_ratio": 0.506,
-            "latin_ratio": 0.483,
-            "max_sentence_chars": 108,
-            "word_count": 20
+            "persian_ratio": 0.546,
+            "latin_ratio": 0.443,
+            "max_sentence_chars": 115,
+            "word_count": 19
           },
           "summary": {
             "score": 89,
@@ -24618,77 +24714,25 @@
             "issues": [
               "long-sentence"
             ],
-            "persian_ratio": 0.865,
-            "latin_ratio": 0.141,
-            "max_sentence_chars": 201,
-            "word_count": 84
+            "persian_ratio": 0.864,
+            "latin_ratio": 0.145,
+            "max_sentence_chars": 203,
+            "word_count": 86
           },
           "report": {
-            "score": 89,
-            "status": "pass",
+            "score": 71,
+            "status": "warn",
             "issues": [
-              "long-sentence"
+              "long-sentence",
+              "repetition"
             ],
-            "persian_ratio": 0.927,
-            "latin_ratio": 0.081,
-            "max_sentence_chars": 273,
-            "word_count": 194
+            "persian_ratio": 0.906,
+            "latin_ratio": 0.102,
+            "max_sentence_chars": 281,
+            "word_count": 197
           }
         },
         "source_original_fa": false
-      },
-      "translation_quarantine": {
-        "title_fa": "The Big Greek Café Taps Deliverect and Thanx to Power سفارش دیجیتال و وفاداری در سراسر مکان های ایالات متحده",
-        "summary_fa": "The Big Greek Café، نام تجاری مستقر در مریلند که به خاطر غذاخوری های یونانی اصیل و خودمانی که ریشه در ارزش های خانوادگی و اجتماعی دارد، امروز اعلام کرد که یک مشارکت دیجیتالی و سفارشی با Denxli را دارد. عملیات در سراسر مکان های خود در ایالات متحده. Big Greek Café با اجرای زنده در پشته یکپارچه Deliverect و Thanx، سیستم یکپارچه ای را به دست می آورد که در آن وفاداری، سفارش دیجیتال و انجام به طور کامل یکپارچه شده است.",
-        "report_fa": "The Big Greek Café، نام تجاری مستقر در مریلند که به خاطر غذاخوری های یونانی اصیل و خودمانی که ریشه در ارزش های خانوادگی و اجتماعی دارد، امروز اعلام کرد که یک مشارکت دیجیتالی و سفارشی با Denxli را دارد. عملیات در سراسر مکان های خود در ایالات متحده.\n\nBig Greek Café با اجرای زنده در پشته یکپارچه Deliverect و Thanx، سیستم یکپارچه ای را به دست می آورد که در آن وفاداری، سفارش دیجیتال و انجام به طور کامل یکپارچه شده است. پلتفرم ترکیبی برای رسیدگی به چالش‌های عملیاتی در مدیریت منو و قابلیت اطمینان پلتفرم طراحی شده است که برند با گسترش آن در سراسر کشور با آن مواجه است، در حالی که به آن اجازه می‌دهد تا برنامه وفاداری خود را مستقیماً در تجربه سفارش‌دهی قرار دهد نه اینکه آن را در سیلو نگه دارد.\n\nنیکو کونتوس، مدیر اجرایی کافه بزرگ یونانی، گفت: «مهمانان ما ما را به مهمان نوازی می شناسند و سفارش دیجیتالی ما باید مطابق با همان استاندارد باشد. \"ما زمان زیادی را صرف اصلاح منوها و حل مشکلات به جای رسیدگی به مهمانان می کردیم.\n\nDeliverect و Thanx به ما یک پلتفرم سفارش…",
-        "quality": {
-          "version": 1,
-          "status": "retry",
-          "score": 74,
-          "publishable": false,
-          "issues": [
-            "long-sentence",
-            "mixed-script",
-            "mostly-latin"
-          ],
-          "parts": {
-            "title": {
-              "score": 46,
-              "status": "retry",
-              "issues": [
-                "mostly-latin",
-                "mixed-script"
-              ],
-              "persian_ratio": 0.506,
-              "latin_ratio": 0.483,
-              "max_sentence_chars": 108,
-              "word_count": 20
-            },
-            "summary": {
-              "score": 89,
-              "status": "pass",
-              "issues": [
-                "long-sentence"
-              ],
-              "persian_ratio": 0.865,
-              "latin_ratio": 0.141,
-              "max_sentence_chars": 201,
-              "word_count": 84
-            },
-            "report": {
-              "score": 89,
-              "status": "pass",
-              "issues": [
-                "long-sentence"
-              ],
-              "persian_ratio": 0.927,
-              "latin_ratio": 0.081,
-              "max_sentence_chars": 273,
-              "word_count": 194
-            }
-          },
-          "source_original_fa": false
-        }
       }
     },
     {
@@ -25094,7 +25138,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -25251,64 +25295,53 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 71,
-      "title_fa": "",
-      "summary_fa": "",
-      "report_fa": "",
+      "title_fa": "Kura Sushi USA منوی جدید Kura Reserve را نشان می‌دهد که شامل ماهی سیاه بوسه‌شده با شعله و مارماهی آب شور شیرین و شور",
+      "summary_fa": "مجموعه آشپزی ممتاز برای مدتی محدود به رستوران‌های بار سوشی کورا گردان بازمی‌گردد با طعم‌هایی که فصل جدید Reservashi را به ارمغان می‌آورد. منوی حاوی ماهی کاد سیاه با شعله و مارماهی آب شور شیرین، اولین بار در RestaurantNews. com ظاهر شد.",
+      "report_fa": "مجموعه آشپزی ممتاز برای مدتی محدود به رستوران‌های بار سوشی کورا گردان بازمی‌گردد با طعم‌هایی که فصل جدید Reservashi را به ارمغان می‌آورد. منوی حاوی ماهی کاد سیاه با شعله و مارماهی آب شور شیرین، اولین بار در RestaurantNews.\n\ncom ظاهر شد.",
       "report_coverage": "گسترده",
       "translation": {
-        "status": "quality-quarantined",
+        "status": "translated",
         "engine": "http-en-fa",
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
-        "status": "retry",
-        "score": 80,
-        "publishable": false,
-        "issues": [
-          "long-sentence",
-          "mixed-script",
-          "repetition",
-          "too-much-latin"
-        ],
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
         "parts": {
           "title": {
             "score": 100,
             "status": "pass",
             "issues": [],
-            "persian_ratio": 0.755,
-            "latin_ratio": 0.245,
-            "max_sentence_chars": 120,
-            "word_count": 27
+            "persian_ratio": 0.747,
+            "latin_ratio": 0.253,
+            "max_sentence_chars": 116,
+            "word_count": 26
           },
           "summary": {
-            "score": 57,
-            "status": "retry",
-            "issues": [
-              "too-much-latin",
-              "mixed-script",
-              "long-sentence"
-            ],
-            "persian_ratio": 0.616,
-            "latin_ratio": 0.384,
-            "max_sentence_chars": 198,
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.86,
+            "latin_ratio": 0.145,
+            "max_sentence_chars": 137,
             "word_count": 46
           },
           "report": {
-            "score": 82,
+            "score": 100,
             "status": "pass",
-            "issues": [
-              "repetition"
-            ],
-            "persian_ratio": 0.843,
-            "latin_ratio": 0.164,
-            "max_sentence_chars": 209,
-            "word_count": 205
+            "issues": [],
+            "persian_ratio": 0.86,
+            "latin_ratio": 0.145,
+            "max_sentence_chars": 137,
+            "word_count": 46
           }
         },
         "source_original_fa": false
@@ -26512,7 +26545,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -28424,7 +28457,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -29824,7 +29857,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -30281,7 +30314,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -30398,7 +30431,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -30491,7 +30524,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -30582,7 +30615,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -30676,7 +30709,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -30866,7 +30899,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -30975,7 +31008,7 @@
         "chars": 145,
         "paragraphs": 1,
         "extractor": "article",
-        "fetched_at": "2026-09-15T18:19:42Z"
+        "fetched_at": "2026-09-15T18:37:11Z"
       },
       "translation_quality": {
         "version": 1,
@@ -31065,7 +31098,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -31164,7 +31197,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -31523,7 +31556,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -31886,7 +31919,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -32246,21 +32279,25 @@
       "translation": {
         "status": "quality-quarantined",
         "engine": "http-en-fa",
-        "cleanup_version": 1
+        "cleanup_version": 1,
+        "quality_retry": true
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "quality-retry",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
         "status": "retry",
-        "score": 65,
+        "score": 50,
         "publishable": false,
         "issues": [
+          "long-sentence",
+          "low-persian-ratio",
           "mixed-script",
-          "mostly-latin"
+          "mostly-latin",
+          "repetition"
         ],
         "parts": {
           "title": {
@@ -32273,44 +32310,50 @@
             "word_count": 11
           },
           "summary": {
-            "score": 46,
-            "status": "retry",
+            "score": 26,
+            "status": "block",
             "issues": [
               "mostly-latin",
-              "mixed-script"
+              "mixed-script",
+              "long-sentence",
+              "repetition"
             ],
-            "persian_ratio": 0.472,
-            "latin_ratio": 0.606,
-            "max_sentence_chars": 166,
-            "word_count": 28
+            "persian_ratio": 0.477,
+            "latin_ratio": 0.591,
+            "max_sentence_chars": 196,
+            "word_count": 34
           },
           "report": {
-            "score": 46,
-            "status": "retry",
+            "score": 17,
+            "status": "block",
             "issues": [
               "mostly-latin",
-              "mixed-script"
+              "low-persian-ratio",
+              "repetition"
             ],
-            "persian_ratio": 0.472,
-            "latin_ratio": 0.606,
-            "max_sentence_chars": 166,
-            "word_count": 28
+            "persian_ratio": 0.243,
+            "latin_ratio": 0.829,
+            "max_sentence_chars": 205,
+            "word_count": 34
           }
         },
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "پنیر پاییز امسال در همه منوها در حال ذوب شدن است",
-        "summary_fa": "Taste Tracker: پانرا برد، Qdoba، Applebee's، Golden Chick، Olive Garden، سوییت‌گرین، چیپوتله، Chili's، Denny's، Schlotzsky's، و منوی اصلی اخبار و روند رستوران Freddy.",
-        "report_fa": "Taste Tracker: پانرا برد، Qdoba، Applebee's، Golden Chick، Olive Garden، سوییت‌گرین، چیپوتله، Chili's، Denny's، Schlotzsky's، و منوی اصلی اخبار و روند رستوران Freddy.",
+        "title_fa": "پنیر پاییز امسال در تمام منوها در حال آب شدن است",
+        "summary_fa": "Taste Tracker: پانرا برد، Qdoba، Applebee&#39; s، Golden Chick، Olive Garden، سوییت‌گرین، چیپوتله، Chili&#39; s، Denny&#39; s، Schlotzsky&#39; s و Freddy&#39; s اخبار و ترندهای سرفصل منوی رستوران.",
+        "report_fa": "Taste Tracker: پانرا برد، Qdoba، Applebee&#39; s، Golden Chick، Olive Garden، سوییت‌گرین، چیپوتله، Chili&#39; s، Denny&#39; s، Schlotzsky&#39; s، and Freddy&#39; s headline news and trends menu restaurant.",
         "quality": {
           "version": 1,
           "status": "retry",
-          "score": 65,
+          "score": 50,
           "publishable": false,
           "issues": [
+            "long-sentence",
+            "low-persian-ratio",
             "mixed-script",
-            "mostly-latin"
+            "mostly-latin",
+            "repetition"
           ],
           "parts": {
             "title": {
@@ -32323,28 +32366,31 @@
               "word_count": 11
             },
             "summary": {
-              "score": 46,
-              "status": "retry",
+              "score": 26,
+              "status": "block",
               "issues": [
                 "mostly-latin",
-                "mixed-script"
+                "mixed-script",
+                "long-sentence",
+                "repetition"
               ],
-              "persian_ratio": 0.472,
-              "latin_ratio": 0.606,
-              "max_sentence_chars": 166,
-              "word_count": 28
+              "persian_ratio": 0.477,
+              "latin_ratio": 0.591,
+              "max_sentence_chars": 196,
+              "word_count": 34
             },
             "report": {
-              "score": 46,
-              "status": "retry",
+              "score": 17,
+              "status": "block",
               "issues": [
                 "mostly-latin",
-                "mixed-script"
+                "low-persian-ratio",
+                "repetition"
               ],
-              "persian_ratio": 0.472,
-              "latin_ratio": 0.606,
-              "max_sentence_chars": 166,
-              "word_count": 28
+              "persian_ratio": 0.243,
+              "latin_ratio": 0.829,
+              "max_sentence_chars": 205,
+              "word_count": 34
             }
           },
           "source_original_fa": false
@@ -32788,7 +32834,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -34283,7 +34329,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -34549,7 +34595,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -34752,7 +34798,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -34873,7 +34919,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -34991,8 +35037,8 @@
             "score": 100,
             "status": "pass",
             "issues": [],
-            "persian_ratio": 0.844,
-            "latin_ratio": 0.156,
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
             "max_sentence_chars": 54,
             "word_count": 10
           },
@@ -35022,7 +35068,7 @@
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "Walmart تحویل رستوران را با مشارکت دانکین گسترش می دهد",
+        "title_fa": "والمارت تحویل رستوران را با مشارکت دانکین گسترش می دهد",
         "summary_fa": "",
         "report_fa": "",
         "quality": {
@@ -35038,8 +35084,8 @@
               "score": 100,
               "status": "pass",
               "issues": [],
-              "persian_ratio": 0.844,
-              "latin_ratio": 0.156,
+              "persian_ratio": 1.0,
+              "latin_ratio": 0.0,
               "max_sentence_chars": 54,
               "word_count": 10
             },
@@ -36748,7 +36794,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -36839,7 +36885,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -37336,7 +37382,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -39419,7 +39465,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -39512,7 +39558,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -41611,10 +41657,11 @@
       "translation": {
         "status": "quality-quarantined",
         "engine": "http-en-fa",
-        "cleanup_version": 1
+        "cleanup_version": 1,
+        "quality_retry": true
       },
       "editorial": {
-        "status": "edited",
+        "status": "quality-retry",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -42948,7 +42995,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -43042,7 +43089,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -43140,7 +43187,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -43381,7 +43428,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -44322,7 +44369,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -45077,7 +45124,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -46786,7 +46833,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -49667,7 +49714,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -49761,7 +49808,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -50101,7 +50148,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -50559,7 +50606,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -52566,7 +52613,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -52676,7 +52723,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -54590,41 +54637,37 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 69,
-      "title_fa": "",
-      "summary_fa": "",
-      "report_fa": "",
+      "title_fa": "گوشت های کیفیت فریک از الوری فریک برانخورست به عنوان رئیس جمهور نام می برد",
+      "summary_fa": "فریک برانخورست در سن 15 سالگی به این شرکت 130 ساله پیوست و در 25 سال گذشته تقریباً در هر جنبه ای از تجارت، از سطح تولید گرفته تا توسعه محصول، برندسازی و برنامه ریزی استراتژیک بلند مدت، کار کرده است.",
+      "report_fa": "Frick Brunkhorst در سن 15 سالگی به این شرکت 130 ساله پیوست و در 25 سال گذشته تقریباً در تمام جنبه های کسب و کار، از سطح تولید گرفته تا توسعه محصول، برنامه ریزی استراتژیک و بلندمدت کار کرده است.",
       "report_coverage": "خلاصه منبع",
       "translation": {
-        "status": "quality-quarantined",
+        "status": "translated",
         "engine": "http-en-fa",
-        "cleanup_version": 1
+        "cleanup_version": 1,
+        "quality_retry": true
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "quality-retry",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
-        "status": "retry",
-        "score": 77,
-        "publishable": false,
+        "status": "pass",
+        "score": 96,
+        "publishable": true,
         "issues": [
-          "long-sentence",
-          "mixed-script",
-          "mostly-latin"
+          "long-sentence"
         ],
         "parts": {
           "title": {
-            "score": 46,
-            "status": "retry",
-            "issues": [
-              "mostly-latin",
-              "mixed-script"
-            ],
-            "persian_ratio": 0.443,
-            "latin_ratio": 0.557,
-            "max_sentence_chars": 84,
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 74,
             "word_count": 15
           },
           "summary": {
@@ -54633,10 +54676,10 @@
             "issues": [
               "long-sentence"
             ],
-            "persian_ratio": 0.916,
-            "latin_ratio": 0.105,
-            "max_sentence_chars": 193,
-            "word_count": 40
+            "persian_ratio": 1.027,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 198,
+            "word_count": 41
           },
           "report": {
             "score": 100,
@@ -54649,57 +54692,6 @@
           }
         },
         "source_original_fa": false
-      },
-      "translation_quarantine": {
-        "title_fa": "Frick's Quality Meats Ellory Frick Brunkhorst را به عنوان رئیس جمهور نامگذاری می کند",
-        "summary_fa": "Frick Brunkhorst در سن 15 سالگی به این شرکت 130 ساله پیوست و در 25 سال گذشته تقریباً در تمام جنبه های کسب و کار، از سطح تولید گرفته تا توسعه محصول، برنامه ریزی استراتژیک و بلندمدت کار کرده است.",
-        "report_fa": "Frick Brunkhorst در سن 15 سالگی به این شرکت 130 ساله پیوست و در 25 سال گذشته تقریباً در تمام جنبه های کسب و کار، از سطح تولید گرفته تا توسعه محصول، برنامه ریزی استراتژیک و بلندمدت کار کرده است.",
-        "quality": {
-          "version": 1,
-          "status": "retry",
-          "score": 77,
-          "publishable": false,
-          "issues": [
-            "long-sentence",
-            "mixed-script",
-            "mostly-latin"
-          ],
-          "parts": {
-            "title": {
-              "score": 46,
-              "status": "retry",
-              "issues": [
-                "mostly-latin",
-                "mixed-script"
-              ],
-              "persian_ratio": 0.443,
-              "latin_ratio": 0.557,
-              "max_sentence_chars": 84,
-              "word_count": 15
-            },
-            "summary": {
-              "score": 89,
-              "status": "pass",
-              "issues": [
-                "long-sentence"
-              ],
-              "persian_ratio": 0.916,
-              "latin_ratio": 0.105,
-              "max_sentence_chars": 193,
-              "word_count": 40
-            },
-            "report": {
-              "score": 100,
-              "status": "pass",
-              "issues": [],
-              "persian_ratio": 0.916,
-              "latin_ratio": 0.105,
-              "max_sentence_chars": 193,
-              "word_count": 40
-            }
-          },
-          "source_original_fa": false
-        }
       }
     },
     {
@@ -55285,7 +55277,7 @@
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "کاستارد یخی و منجمد ایتالیایی ریتا با بازگشت غذاهای کدو تنبل و کره سیب از پاییز استقبال می کند.",
+        "title_fa": "کاستارد یخی و منجمد ایتالیایی ریتا با بازگشت غذاهای کدو تنبل و کره سیب به استقبال پاییز می رود.",
         "summary_fa": "",
         "report_fa": "",
         "quality": {
@@ -56596,7 +56588,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -57050,7 +57042,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -57290,7 +57282,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -58241,7 +58233,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -58964,29 +58956,27 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "pending",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
         "status": "block",
-        "score": 0,
+        "score": 36,
         "publishable": false,
         "issues": [
           "empty"
         ],
         "parts": {
           "title": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
             "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "max_sentence_chars": 65,
+            "word_count": 12
           },
           "summary": {
             "score": 0,
@@ -59014,28 +59004,26 @@
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "",
+        "title_fa": "پوتبلی قراردادی را برای افزودن 10 مغازه در فلوریدا مرکزی امضا کرد",
         "summary_fa": "",
         "report_fa": "",
         "quality": {
           "version": 1,
           "status": "block",
-          "score": 0,
+          "score": 36,
           "publishable": false,
           "issues": [
             "empty"
           ],
           "parts": {
             "title": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
+              "score": 100,
+              "status": "pass",
+              "issues": [],
+              "persian_ratio": 1.0,
               "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
+              "max_sentence_chars": 65,
+              "word_count": 12
             },
             "summary": {
               "score": 0,
@@ -59113,29 +59101,27 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "pending",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
         "status": "block",
-        "score": 0,
+        "score": 36,
         "publishable": false,
         "issues": [
           "empty"
         ],
         "parts": {
           "title": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
-            "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.897,
+            "latin_ratio": 0.103,
+            "max_sentence_chars": 107,
+            "word_count": 19
           },
           "summary": {
             "score": 0,
@@ -59163,28 +59149,26 @@
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "",
+        "title_fa": "کهنه سربازان نیروی دریایی و دوستان دوران کودکی قرارداد 6 واحدی Huey Magoo را در کارولینای جنوبی امضا کردند.",
         "summary_fa": "",
         "report_fa": "",
         "quality": {
           "version": 1,
           "status": "block",
-          "score": 0,
+          "score": 36,
           "publishable": false,
           "issues": [
             "empty"
           ],
           "parts": {
             "title": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
+              "score": 100,
+              "status": "pass",
+              "issues": [],
+              "persian_ratio": 0.897,
+              "latin_ratio": 0.103,
+              "max_sentence_chars": 107,
+              "word_count": 19
             },
             "summary": {
               "score": 0,
@@ -60439,114 +60423,56 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 59,
-      "title_fa": "",
-      "summary_fa": "",
-      "report_fa": "",
+      "title_fa": "گروه تغذیه SANY کارخانه آرکانزاس را افتتاح کرد",
+      "summary_fa": "سازنده قراردادی روی تنقلات و تغذیه ورزشی بهتر برای شما تمرکز دارد.",
+      "report_fa": "سازنده قراردادی روی تنقلات و تغذیه ورزشی بهتر برای شما تمرکز دارد.",
       "report_coverage": "خلاصه منبع",
       "translation": {
-        "status": "quality-quarantined",
+        "status": "translated",
         "engine": "http-en-fa",
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "pending",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
-        "status": "block",
-        "score": 0,
-        "publishable": false,
-        "issues": [
-          "empty"
-        ],
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
         "parts": {
           "title": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
-            "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.897,
+            "latin_ratio": 0.103,
+            "max_sentence_chars": 46,
+            "word_count": 8
           },
           "summary": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
             "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "max_sentence_chars": 66,
+            "word_count": 12
           },
           "report": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
             "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "max_sentence_chars": 66,
+            "word_count": 12
           }
         },
         "source_original_fa": false
-      },
-      "translation_quarantine": {
-        "title_fa": "",
-        "summary_fa": "",
-        "report_fa": "",
-        "quality": {
-          "version": 1,
-          "status": "block",
-          "score": 0,
-          "publishable": false,
-          "issues": [
-            "empty"
-          ],
-          "parts": {
-            "title": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
-            },
-            "summary": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
-            },
-            "report": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
-            }
-          },
-          "source_original_fa": false
-        }
       }
     },
     {
@@ -60598,100 +60524,96 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "pending",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
-        "status": "block",
-        "score": 0,
+        "status": "retry",
+        "score": 81,
         "publishable": false,
         "issues": [
-          "empty"
+          "mixed-script",
+          "mostly-latin"
         ],
         "parts": {
           "title": {
-            "score": 0,
-            "status": "block",
+            "score": 46,
+            "status": "retry",
             "issues": [
-              "empty"
+              "mostly-latin",
+              "mixed-script"
             ],
-            "persian_ratio": 0.0,
-            "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "persian_ratio": 0.444,
+            "latin_ratio": 0.556,
+            "max_sentence_chars": 45,
+            "word_count": 9
           },
           "summary": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
-            "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.976,
+            "latin_ratio": 0.073,
+            "max_sentence_chars": 56,
+            "word_count": 11
           },
           "report": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
-            "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.976,
+            "latin_ratio": 0.073,
+            "max_sentence_chars": 56,
+            "word_count": 11
           }
         },
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "",
-        "summary_fa": "",
-        "report_fa": "",
+        "title_fa": "JBS به دنبال کنترل کامل Pilgrim’s Pride Corp.",
+        "summary_fa": "JBS اکنون تقریباً 88٪ از پردازشگر مرغ را در اختیار دارد.",
+        "report_fa": "JBS اکنون تقریباً 88٪ از پردازشگر مرغ را در اختیار دارد.",
         "quality": {
           "version": 1,
-          "status": "block",
-          "score": 0,
+          "status": "retry",
+          "score": 81,
           "publishable": false,
           "issues": [
-            "empty"
+            "mixed-script",
+            "mostly-latin"
           ],
           "parts": {
             "title": {
-              "score": 0,
-              "status": "block",
+              "score": 46,
+              "status": "retry",
               "issues": [
-                "empty"
+                "mostly-latin",
+                "mixed-script"
               ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
+              "persian_ratio": 0.444,
+              "latin_ratio": 0.556,
+              "max_sentence_chars": 45,
+              "word_count": 9
             },
             "summary": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
+              "score": 100,
+              "status": "pass",
+              "issues": [],
+              "persian_ratio": 0.976,
+              "latin_ratio": 0.073,
+              "max_sentence_chars": 56,
+              "word_count": 11
             },
             "report": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
+              "score": 100,
+              "status": "pass",
+              "issues": [],
+              "persian_ratio": 0.976,
+              "latin_ratio": 0.073,
+              "max_sentence_chars": 56,
+              "word_count": 11
             }
           },
           "source_original_fa": false
@@ -61465,114 +61387,60 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 59,
-      "title_fa": "",
-      "summary_fa": "",
-      "report_fa": "",
+      "title_fa": "هوش مصنوعی و آینده رستوران‌ها: از ترافیک پیاده تا بینش پیش‌بینی‌کننده",
+      "summary_fa": "همانطور که رفتار مصرف‌کننده و انتظارات حفظ حریم خصوصی تکامل می‌یابد، رستوران‌ها به روش‌های هوشمندانه‌تری برای درک غذاخوری‌ها و افزایش رشد نیاز دارند. گلدیس کونگ از آزیرا و ایزابل سوریانو از گروه گودوی بررسی کردند که چگونه هوش مصنوعی و هوش موقعیت مکانی می‌تواند به انتخاب سایت، استراتژی رسانه، تعامل با مخاطب و تصمیم‌گیری‌های سریع‌تر و آگاهانه‌تر کمک کند.",
+      "report_fa": "همانطور که رفتار مصرف‌کننده و انتظارات حفظ حریم خصوصی تکامل می‌یابد، رستوران‌ها به روش‌های هوشمندانه‌تری برای درک غذاخوری‌ها و افزایش رشد نیاز دارند. گلدیس کونگ از آزیرا و ایزابل سوریانو از گروه گودوی بررسی کردند که چگونه هوش مصنوعی و هوش موقعیت مکانی می‌تواند به انتخاب سایت، استراتژی رسانه، تعامل با مخاطب و تصمیم‌گیری‌های سریع‌تر و آگاهانه‌تر کمک کند.",
       "report_coverage": "خلاصه منبع",
       "translation": {
-        "status": "quality-quarantined",
+        "status": "translated",
         "engine": "http-en-fa",
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "pending",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
-        "status": "block",
-        "score": 0,
-        "publishable": false,
+        "status": "pass",
+        "score": 96,
+        "publishable": true,
         "issues": [
-          "empty"
+          "long-sentence"
         ],
         "parts": {
           "title": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
             "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "max_sentence_chars": 69,
+            "word_count": 14
           },
           "summary": {
-            "score": 0,
-            "status": "block",
+            "score": 89,
+            "status": "pass",
             "issues": [
-              "empty"
+              "long-sentence"
             ],
-            "persian_ratio": 0.0,
+            "persian_ratio": 1.011,
             "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "max_sentence_chars": 204,
+            "word_count": 70
           },
           "report": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.011,
             "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "max_sentence_chars": 204,
+            "word_count": 70
           }
         },
         "source_original_fa": false
-      },
-      "translation_quarantine": {
-        "title_fa": "",
-        "summary_fa": "",
-        "report_fa": "",
-        "quality": {
-          "version": 1,
-          "status": "block",
-          "score": 0,
-          "publishable": false,
-          "issues": [
-            "empty"
-          ],
-          "parts": {
-            "title": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
-            },
-            "summary": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
-            },
-            "report": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
-            }
-          },
-          "source_original_fa": false
-        }
       }
     },
     {
@@ -61625,7 +61493,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -61716,7 +61584,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -62610,10 +62478,10 @@
             "score": 100,
             "status": "pass",
             "issues": [],
-            "persian_ratio": 0.893,
-            "latin_ratio": 0.107,
-            "max_sentence_chars": 71,
-            "word_count": 16
+            "persian_ratio": 0.902,
+            "latin_ratio": 0.098,
+            "max_sentence_chars": 79,
+            "word_count": 19
           },
           "summary": {
             "score": 0,
@@ -62641,7 +62509,7 @@
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "A&W اولین ساندویچ مرغ ترد را راه اندازی کرد و پیشنهاد BOGO را ارائه کرد",
+        "title_fa": "A&W اولین ساندویچ مرغ ترد را به بازار عرضه می کند و معامله BOGO را ارائه می دهد",
         "summary_fa": "",
         "report_fa": "",
         "quality": {
@@ -62657,10 +62525,10 @@
               "score": 100,
               "status": "pass",
               "issues": [],
-              "persian_ratio": 0.893,
-              "latin_ratio": 0.107,
-              "max_sentence_chars": 71,
-              "word_count": 16
+              "persian_ratio": 0.902,
+              "latin_ratio": 0.098,
+              "max_sentence_chars": 79,
+              "word_count": 19
             },
             "summary": {
               "score": 0,
@@ -62728,114 +62596,60 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 59,
-      "title_fa": "",
-      "summary_fa": "",
-      "report_fa": "",
+      "title_fa": "Roskam Foods مرکز تولید غلات و گرانولا",
+      "summary_fa": "کارخانه تولید در کالیفرنیا برای تعطیلی در نظر گرفته شده است.",
+      "report_fa": "کارخانه تولید در کالیفرنیا برای تعطیلی در نظر گرفته شده است.",
       "report_coverage": "خلاصه منبع",
       "translation": {
-        "status": "quality-quarantined",
+        "status": "translated",
         "engine": "http-en-fa",
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "pending",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
-        "status": "block",
-        "score": 0,
-        "publishable": false,
+        "status": "warn",
+        "score": 93,
+        "publishable": true,
         "issues": [
-          "empty"
+          "too-much-latin"
         ],
         "parts": {
           "title": {
-            "score": 0,
-            "status": "block",
+            "score": 80,
+            "status": "warn",
             "issues": [
-              "empty"
+              "too-much-latin"
             ],
-            "persian_ratio": 0.0,
-            "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "persian_ratio": 0.656,
+            "latin_ratio": 0.344,
+            "max_sentence_chars": 38,
+            "word_count": 7
           },
           "summary": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
             "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "max_sentence_chars": 60,
+            "word_count": 11
           },
           "report": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
             "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "max_sentence_chars": 60,
+            "word_count": 11
           }
         },
         "source_original_fa": false
-      },
-      "translation_quarantine": {
-        "title_fa": "",
-        "summary_fa": "",
-        "report_fa": "",
-        "quality": {
-          "version": 1,
-          "status": "block",
-          "score": 0,
-          "publishable": false,
-          "issues": [
-            "empty"
-          ],
-          "parts": {
-            "title": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
-            },
-            "summary": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
-            },
-            "report": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
-            }
-          },
-          "source_original_fa": false
-        }
       }
     },
     {
@@ -63201,29 +63015,32 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "pending",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
         "status": "block",
-        "score": 0,
+        "score": 24,
         "publishable": false,
         "issues": [
-          "empty"
+          "empty",
+          "mixed-script",
+          "too-much-latin"
         ],
         "parts": {
           "title": {
-            "score": 0,
-            "status": "block",
+            "score": 68,
+            "status": "warn",
             "issues": [
-              "empty"
+              "too-much-latin",
+              "mixed-script"
             ],
-            "persian_ratio": 0.0,
-            "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "persian_ratio": 0.618,
+            "latin_ratio": 0.382,
+            "max_sentence_chars": 44,
+            "word_count": 7
           },
           "summary": {
             "score": 0,
@@ -63251,28 +63068,31 @@
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "",
+        "title_fa": "Firehouse Subs 1500مین رستوران را افتتاح کرد",
         "summary_fa": "",
         "report_fa": "",
         "quality": {
           "version": 1,
           "status": "block",
-          "score": 0,
+          "score": 24,
           "publishable": false,
           "issues": [
-            "empty"
+            "empty",
+            "mixed-script",
+            "too-much-latin"
           ],
           "parts": {
             "title": {
-              "score": 0,
-              "status": "block",
+              "score": 68,
+              "status": "warn",
               "issues": [
-                "empty"
+                "too-much-latin",
+                "mixed-script"
               ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
+              "persian_ratio": 0.618,
+              "latin_ratio": 0.382,
+              "max_sentence_chars": 44,
+              "word_count": 7
             },
             "summary": {
               "score": 0,
@@ -63590,114 +63410,56 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 59,
-      "title_fa": "",
-      "summary_fa": "",
-      "report_fa": "",
+      "title_fa": "شتاب دادن به نوآوری با دوقلوهای مجازی",
+      "summary_fa": "توسعه دهندگان محصول از مدل سازی پیش بینی برای نمونه سازی اولیه ویژگی های محصول خاص استفاده می کنند.",
+      "report_fa": "توسعه دهندگان محصول از مدل سازی پیش بینی برای نمونه سازی اولیه ویژگی های محصول خاص استفاده می کنند.",
       "report_coverage": "خلاصه منبع",
       "translation": {
-        "status": "quality-quarantined",
+        "status": "translated",
         "engine": "http-en-fa",
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "pending",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
-        "status": "block",
-        "score": 0,
-        "publishable": false,
-        "issues": [
-          "empty"
-        ],
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
         "parts": {
           "title": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
             "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "max_sentence_chars": 37,
+            "word_count": 7
           },
           "summary": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
             "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "max_sentence_chars": 99,
+            "word_count": 19
           },
           "report": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
             "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "max_sentence_chars": 99,
+            "word_count": 19
           }
         },
         "source_original_fa": false
-      },
-      "translation_quarantine": {
-        "title_fa": "",
-        "summary_fa": "",
-        "report_fa": "",
-        "quality": {
-          "version": 1,
-          "status": "block",
-          "score": 0,
-          "publishable": false,
-          "issues": [
-            "empty"
-          ],
-          "parts": {
-            "title": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
-            },
-            "summary": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
-            },
-            "report": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
-            }
-          },
-          "source_original_fa": false
-        }
       }
     },
     {
@@ -63894,29 +63656,32 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "pending",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
         "status": "block",
-        "score": 0,
+        "score": 17,
         "publishable": false,
         "issues": [
-          "empty"
+          "empty",
+          "mixed-script",
+          "mostly-latin"
         ],
         "parts": {
           "title": {
-            "score": 0,
-            "status": "block",
+            "score": 46,
+            "status": "retry",
             "issues": [
-              "empty"
+              "mostly-latin",
+              "mixed-script"
             ],
-            "persian_ratio": 0.0,
-            "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "persian_ratio": 0.556,
+            "latin_ratio": 0.481,
+            "max_sentence_chars": 68,
+            "word_count": 13
           },
           "summary": {
             "score": 0,
@@ -63944,28 +63709,31 @@
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "",
+        "title_fa": "Buffalo Wild Wings، Jimmy John's، اولین برند مشترک خود را افتتاح کرد",
         "summary_fa": "",
         "report_fa": "",
         "quality": {
           "version": 1,
           "status": "block",
-          "score": 0,
+          "score": 17,
           "publishable": false,
           "issues": [
-            "empty"
+            "empty",
+            "mixed-script",
+            "mostly-latin"
           ],
           "parts": {
             "title": {
-              "score": 0,
-              "status": "block",
+              "score": 46,
+              "status": "retry",
               "issues": [
-                "empty"
+                "mostly-latin",
+                "mixed-script"
               ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
+              "persian_ratio": 0.556,
+              "latin_ratio": 0.481,
+              "max_sentence_chars": 68,
+              "word_count": 13
             },
             "summary": {
               "score": 0,
@@ -65263,7 +65031,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -65634,29 +65402,27 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "pending",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
         "status": "block",
-        "score": 0,
+        "score": 36,
         "publishable": false,
         "issues": [
           "empty"
         ],
         "parts": {
           "title": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
-            "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.804,
+            "latin_ratio": 0.196,
+            "max_sentence_chars": 60,
+            "word_count": 13
           },
           "summary": {
             "score": 0,
@@ -65684,28 +65450,26 @@
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "",
+        "title_fa": "Pokeworks رشد 10 درصدی واحد را در سه ماهه دوم گزارش کرده است",
         "summary_fa": "",
         "report_fa": "",
         "quality": {
           "version": 1,
           "status": "block",
-          "score": 0,
+          "score": 36,
           "publishable": false,
           "issues": [
             "empty"
           ],
           "parts": {
             "title": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
+              "score": 100,
+              "status": "pass",
+              "issues": [],
+              "persian_ratio": 0.804,
+              "latin_ratio": 0.196,
+              "max_sentence_chars": 60,
+              "word_count": 13
             },
             "summary": {
               "score": 0,
@@ -66279,29 +66043,27 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "pending",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
         "status": "block",
-        "score": 0,
+        "score": 36,
         "publishable": false,
         "issues": [
           "empty"
         ],
         "parts": {
           "title": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
-            "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.935,
+            "latin_ratio": 0.078,
+            "max_sentence_chars": 95,
+            "word_count": 18
           },
           "summary": {
             "score": 0,
@@ -66329,28 +66091,26 @@
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "",
+        "title_fa": "Wonder برای کاهش هزینه های انرژی، سیستم های باتری رایگان را در رستوران های نیویورک مستقر می کند",
         "summary_fa": "",
         "report_fa": "",
         "quality": {
           "version": 1,
           "status": "block",
-          "score": 0,
+          "score": 36,
           "publishable": false,
           "issues": [
             "empty"
           ],
           "parts": {
             "title": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
+              "score": 100,
+              "status": "pass",
+              "issues": [],
+              "persian_ratio": 0.935,
+              "latin_ratio": 0.078,
+              "max_sentence_chars": 95,
+              "word_count": 18
             },
             "summary": {
               "score": 0,
@@ -67475,9 +67235,9 @@
             "issues": [
               "too-much-latin"
             ],
-            "persian_ratio": 0.696,
-            "latin_ratio": 0.304,
-            "max_sentence_chars": 67,
+            "persian_ratio": 0.691,
+            "latin_ratio": 0.309,
+            "max_sentence_chars": 66,
             "word_count": 12
           },
           "summary": {
@@ -67506,7 +67266,7 @@
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "خالق یوتیوب The Fat Electrician از بوریتوی تاکو جان الهام گرفته است",
+        "title_fa": "خالق یوتیوب The Fat Electrician از بوریتو تاکو جان الهام گرفته است",
         "summary_fa": "",
         "report_fa": "",
         "quality": {
@@ -67525,9 +67285,9 @@
               "issues": [
                 "too-much-latin"
               ],
-              "persian_ratio": 0.696,
-              "latin_ratio": 0.304,
-              "max_sentence_chars": 67,
+              "persian_ratio": 0.691,
+              "latin_ratio": 0.309,
+              "max_sentence_chars": 66,
               "word_count": 12
             },
             "summary": {
@@ -67934,29 +67694,27 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "pending",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
         "status": "block",
-        "score": 0,
+        "score": 36,
         "publishable": false,
         "issues": [
           "empty"
         ],
         "parts": {
           "title": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
-            "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.75,
+            "latin_ratio": 0.25,
+            "max_sentence_chars": 52,
+            "word_count": 11
           },
           "summary": {
             "score": 0,
@@ -67984,28 +67742,26 @@
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "",
+        "title_fa": "Graze Craze رشد فروش سالانه 65 درصدی را گزارش می دهد",
         "summary_fa": "",
         "report_fa": "",
         "quality": {
           "version": 1,
           "status": "block",
-          "score": 0,
+          "score": 36,
           "publishable": false,
           "issues": [
             "empty"
           ],
           "parts": {
             "title": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
+              "score": 100,
+              "status": "pass",
+              "issues": [],
+              "persian_ratio": 0.75,
+              "latin_ratio": 0.25,
+              "max_sentence_chars": 52,
+              "word_count": 11
             },
             "summary": {
               "score": 0,
@@ -68156,114 +67912,56 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 59,
-      "title_fa": "",
-      "summary_fa": "",
-      "report_fa": "",
+      "title_fa": "انتظارات از مدیر عامل جدید B&G Foods",
+      "summary_fa": "رابرت میلز \"درک عمیق تری از چالش ها و فرصت ها\" دارد، می گوید.",
+      "report_fa": "رابرت میلز \"درک عمیق تری از چالش ها و فرصت ها\" دارد، می گوید.",
       "report_coverage": "خلاصه منبع",
       "translation": {
-        "status": "quality-quarantined",
+        "status": "translated",
         "engine": "http-en-fa",
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "pending",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
-        "status": "block",
-        "score": 0,
-        "publishable": false,
-        "issues": [
-          "empty"
-        ],
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
         "parts": {
           "title": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
-            "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.759,
+            "latin_ratio": 0.241,
+            "max_sentence_chars": 36,
+            "word_count": 8
           },
           "summary": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.023,
             "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "max_sentence_chars": 61,
+            "word_count": 14
           },
           "report": {
-            "score": 0,
-            "status": "block",
-            "issues": [
-              "empty"
-            ],
-            "persian_ratio": 0.0,
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.023,
             "latin_ratio": 0.0,
-            "max_sentence_chars": 0,
-            "word_count": 0
+            "max_sentence_chars": 61,
+            "word_count": 14
           }
         },
         "source_original_fa": false
-      },
-      "translation_quarantine": {
-        "title_fa": "",
-        "summary_fa": "",
-        "report_fa": "",
-        "quality": {
-          "version": 1,
-          "status": "block",
-          "score": 0,
-          "publishable": false,
-          "issues": [
-            "empty"
-          ],
-          "parts": {
-            "title": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
-            },
-            "summary": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
-            },
-            "report": {
-              "score": 0,
-              "status": "block",
-              "issues": [
-                "empty"
-              ],
-              "persian_ratio": 0.0,
-              "latin_ratio": 0.0,
-              "max_sentence_chars": 0,
-              "word_count": 0
-            }
-          },
-          "source_original_fa": false
-        }
       }
     },
     {
@@ -68568,7 +68266,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -70819,7 +70517,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -70865,10 +70563,10 @@
               "long-sentence",
               "repetition"
             ],
-            "persian_ratio": 0.922,
-            "latin_ratio": 0.086,
-            "max_sentence_chars": 239,
-            "word_count": 207
+            "persian_ratio": 0.926,
+            "latin_ratio": 0.084,
+            "max_sentence_chars": 249,
+            "word_count": 210
           }
         },
         "source_original_fa": false
@@ -70876,7 +70574,7 @@
       "translation_quarantine": {
         "title_fa": "Appetronix استارتاپ Food Robot Cibotica را خریداری کرد",
         "summary_fa": "استارت‌آپ رباتیک مواد غذایی Appetronix یکی از شرکت‌های همکار کانادایی اتوماسیون مواد غذایی Cibotica را خریداری کرد و فناوری ساخت رباتیک را به مجموعه رو به رشد سیستم‌های رستوران‌های مستقل خود اضافه کرد. نیپون شارما، مدیر عامل Appetronix به The Spoon گفت که این خرید به شرکت نقطه ورود به بخشی را می دهد که قبلاً تصمیم گرفته بود به تنهایی دنبال نکند: خطوط ساخت رباتیک که برای خودکارسازی بخش هایی از آشپزخانه های رستوران موجود طراحی شده اند. شارما درباره Cibotica مستقر در ونکوور…",
-        "report_fa": "استارت‌آپ رباتیک مواد غذایی Appetronix یکی از شرکت‌های همکار کانادایی اتوماسیون مواد غذایی Cibotica را خریداری کرد و فناوری ساخت رباتیک را به مجموعه رو به رشد سیستم‌های رستوران‌های مستقل خود اضافه کرد. نیپون شارما، مدیر عامل Appetronix به The Spoon گفت که این خرید به شرکت نقطه ورود به بخشی را می دهد که قبلاً تصمیم گرفته بود به تنهایی دنبال نکند: خطوط ساخت رباتیک که برای خودکارسازی بخش هایی از آشپزخانه های رستوران موجود طراحی شده اند.\n\nشارما درباره Cibotica مستقر در ونکوور گفت: «آنها چیز بسیار عمیقی را توسعه دادند. ما فکر می‌کردیم شاید به نیروها بپیوندیم.\n\nاکنون می‌توانیم این خدمات را به افرادی که درخواست کرده‌اند ارائه دهیم.» Appetronix که قبلا با نام SJW Robotics شناخته می شد، کسب و کار خود را بر روی ساخت سیستم های رستوران کاملاً مستقل به جای اتوماسیون آشپزخانه در پشت خانه متمرکز کرده است. استراتژی اصلی این شرکت بر روی پلتفرم‌های رستوران روباتیک برای مکان‌های اسیر تماشاگران مانند فرودگاه‌ها، بیمارستان‌ها و دانشگاه‌ها متمرکز است.\n\nشارما می‌گوید مدل‌های اصلی کسب‌وکار این شرکت، استقرار واحدهای خدمات غذایی مستقل در این مکان‌ها و به اشتراک گذاشتن درآمد غذای فروخته‌شده است (Appetronix معمولاً…",
+        "report_fa": "استارت‌آپ رباتیک مواد غذایی Appetronix یکی از شرکت‌های همکار کانادایی اتوماسیون مواد غذایی Cibotica را خریداری کرد و فناوری ساخت رباتیک را به مجموعه رو به رشد سیستم‌های رستوران‌های مستقل خود اضافه کرد. نیپون شارما، مدیر عامل Appetronix به The Spoon گفت که این خرید به شرکت نقطه ورود به بخشی را می دهد که قبلاً تصمیم گرفته بود به تنهایی دنبال نکند: خطوط ساخت رباتیک که برای خودکارسازی بخش هایی از آشپزخانه های رستوران موجود طراحی شده اند.\n\nشارما درباره Cibotica مستقر در ونکوور گفت: «آنها چیز بسیار عمیقی را توسعه دادند. ما فکر می‌کردیم شاید به نیروها بپیوندیم.\n\nاکنون می‌توانیم این خدمات را به افرادی که درخواست کرده‌اند ارائه دهیم.» Appetronix که قبلاً با نام SJW Robotics شناخته می‌شد، به‌جای اینکه بخش پشتی عملیات اتوماسیون آشپزخانه را بر عهده بگیرد، بر ساخت سیستم‌های کاملاً خودمختار رستوران متمرکز شده است. استراتژی اصلی این شرکت بر روی پلتفرم‌های رستوران روباتیک برای مکان‌های اسیر تماشاگران مانند فرودگاه‌ها، بیمارستان‌ها و دانشگاه‌ها متمرکز است.\n\nشارما می‌گوید مدل‌های اصلی کسب‌وکار این شرکت، استقرار واحدهای خدمات غذایی مستقل در این مکان‌ها و به اشتراک گذاشتن درآمد از مواد غذایی فروخته‌شده است (Appetronix عموماً 20 تا…",
         "quality": {
           "version": 1,
           "status": "retry",
@@ -70919,10 +70617,10 @@
                 "long-sentence",
                 "repetition"
               ],
-              "persian_ratio": 0.922,
-              "latin_ratio": 0.086,
-              "max_sentence_chars": 239,
-              "word_count": 207
+              "persian_ratio": 0.926,
+              "latin_ratio": 0.084,
+              "max_sentence_chars": 249,
+              "word_count": 210
             }
           },
           "source_original_fa": false
@@ -73121,122 +72819,56 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 71,
-      "title_fa": "",
-      "summary_fa": "",
-      "report_fa": "",
+      "title_fa": "بررسی شیوع E. coli - سبزهای برگ‌دار (دسامبر 2020)",
+      "summary_fa": "بررسی شیوع E. coli - سبزهای برگ‌دار (دسامبر 2020)",
+      "report_fa": "بررسی شیوع E. coli - سبزهای برگ‌دار (دسامبر 2020)",
       "report_coverage": "خلاصه منبع",
       "translation": {
-        "status": "quality-quarantined",
+        "status": "translated",
         "engine": "http-en-fa",
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 1,
-        "status": "retry",
-        "score": 46,
-        "publishable": false,
-        "issues": [
-          "mixed-script",
-          "mostly-latin"
-        ],
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
         "parts": {
           "title": {
-            "score": 46,
-            "status": "retry",
-            "issues": [
-              "mostly-latin",
-              "mixed-script"
-            ],
-            "persian_ratio": 0.484,
-            "latin_ratio": 0.516,
-            "max_sentence_chars": 33,
-            "word_count": 8
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.844,
+            "latin_ratio": 0.156,
+            "max_sentence_chars": 35,
+            "word_count": 9
           },
           "summary": {
-            "score": 46,
-            "status": "retry",
-            "issues": [
-              "mostly-latin",
-              "mixed-script"
-            ],
-            "persian_ratio": 0.484,
-            "latin_ratio": 0.516,
-            "max_sentence_chars": 33,
-            "word_count": 8
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.844,
+            "latin_ratio": 0.156,
+            "max_sentence_chars": 35,
+            "word_count": 9
           },
           "report": {
-            "score": 46,
-            "status": "retry",
-            "issues": [
-              "mostly-latin",
-              "mixed-script"
-            ],
-            "persian_ratio": 0.484,
-            "latin_ratio": 0.516,
-            "max_sentence_chars": 33,
-            "word_count": 8
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.844,
+            "latin_ratio": 0.156,
+            "max_sentence_chars": 35,
+            "word_count": 9
           }
         },
         "source_original_fa": false
-      },
-      "translation_quarantine": {
-        "title_fa": "بررسی شیوع E. coli - Leafy Greens (دسامبر 2020)",
-        "summary_fa": "بررسی شیوع E. coli - Leafy Greens (دسامبر 2020)",
-        "report_fa": "بررسی شیوع E. coli - Leafy Greens (دسامبر 2020)",
-        "quality": {
-          "version": 1,
-          "status": "retry",
-          "score": 46,
-          "publishable": false,
-          "issues": [
-            "mixed-script",
-            "mostly-latin"
-          ],
-          "parts": {
-            "title": {
-              "score": 46,
-              "status": "retry",
-              "issues": [
-                "mostly-latin",
-                "mixed-script"
-              ],
-              "persian_ratio": 0.484,
-              "latin_ratio": 0.516,
-              "max_sentence_chars": 33,
-              "word_count": 8
-            },
-            "summary": {
-              "score": 46,
-              "status": "retry",
-              "issues": [
-                "mostly-latin",
-                "mixed-script"
-              ],
-              "persian_ratio": 0.484,
-              "latin_ratio": 0.516,
-              "max_sentence_chars": 33,
-              "word_count": 8
-            },
-            "report": {
-              "score": 46,
-              "status": "retry",
-              "issues": [
-                "mostly-latin",
-                "mixed-script"
-              ],
-              "persian_ratio": 0.484,
-              "latin_ratio": 0.516,
-              "max_sentence_chars": 33,
-              "word_count": 8
-            }
-          },
-          "source_original_fa": false
-        }
       }
     },
     {
@@ -76979,7 +76611,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -77180,7 +76812,7 @@
             "persian_ratio": 0.982,
             "latin_ratio": 0.022,
             "max_sentence_chars": 135,
-            "word_count": 191
+            "word_count": 190
           }
         },
         "source_original_fa": false
@@ -77188,7 +76820,7 @@
       "translation_quarantine": {
         "title_fa": "از Aspiring Pro Surfer گرفته تا مدیرعامل Robot Delivery با Coco’s Zach Rash",
         "summary_fa": "زک راش می خواست یک موج سوار حرفه ای باشد. آنقدر که در دبیرستان موج سواری بیشتر از دانشگاهیان بود. وقتی راش به UCLA رسید و با […]",
-        "report_fa": "Zach Rash می خواست یک موج سوار حرفه ای باشد. آنقدر که در دبیرستان موج سواری بیشتر از دانشگاهیان بود.\n\nهمه چیز زمانی که راش به UCLA رسید و براد اسکوئیچیارینی را ملاقات کرد تغییر کرد. طولی نکشید که این دو هر ساعت بیداری را در یک اتاق کوچک با هم سپری کردند و روبات‌هایی ساختند.\n\nما مانند تمام عمر خود را در این جعبه در دانشگاه UCLA بدون پنجره گذراندیم و فقط در حال ساخت ربات ها از ابتدا هستیم و این بهترین کار بود. در نهایت، وقتی راش و اسکوئیچیارینی فارغ التحصیل شدند و مجبور شدند شغل پیدا کنند، دنیای واقعی به هم خورد.\n\nپس از درخواست برای بسیاری از موقعیت های مشابه، آنها در نهایت تصمیم گرفتند که فقط شرکت ربات خود را راه اندازی کنند. ما فقط نظرات قوی زیادی در مورد اینکه چه چیزی برای وارد کردن این چیزها به دنیا و مفید کردن آنها نیاز است داشتیم.\n\nبنابراین. تصمیم گرفتیم خودمان این کار را انجام دهیم.\" کوکو در اوایل سال 2020 راه اندازی شد.\n\n\"ما شروع به ساخت آنها در اتاق نشیمن خود کردیم و نتوانستیم چرخ های بیشتری داشته باشیم. بنابراین این یک…",
+        "report_fa": "Zach Rash می خواست یک موج سوار حرفه ای باشد. آنقدر که در دبیرستان موج سواری بیشتر از دانشگاهیان بود.\n\nهمه چیز زمانی که راش به UCLA رسید و براد اسکوئیچیارینی را ملاقات کرد تغییر کرد. طولی نکشید که این دو هر ساعت بیداری را با هم در یک اتاق کوچک گذراندند و ربات ساختند.\n\nما مانند تمام عمر خود را در این جعبه در دانشگاه UCLA بدون پنجره گذراندیم و فقط در حال ساخت ربات ها از ابتدا هستیم و این بهترین کار بود. در نهایت، وقتی راش و اسکوئیچیارینی فارغ التحصیل شدند و مجبور شدند شغل پیدا کنند، دنیای واقعی به هم خورد.\n\nپس از درخواست برای بسیاری از موقعیت های مشابه، آنها در نهایت تصمیم گرفتند که فقط شرکت ربات خود را راه اندازی کنند. ما فقط نظرات قوی زیادی در مورد اینکه چه چیزی برای وارد کردن این چیزها به دنیا و مفید کردن آنها نیاز است داشتیم.\n\nبنابراین. تصمیم گرفتیم خودمان این کار را انجام دهیم.\" کوکو در اوایل سال 2020 راه اندازی شد.\n\n\"ما شروع به ساخت آنها در اتاق نشیمن خود کردیم و نتوانستیم چرخ های بیشتری داشته باشیم. بنابراین این یک ربات…",
         "quality": {
           "version": 1,
           "status": "block",
@@ -77227,7 +76859,7 @@
               "persian_ratio": 0.982,
               "latin_ratio": 0.022,
               "max_sentence_chars": 135,
-              "word_count": 191
+              "word_count": 190
             }
           },
           "source_original_fa": false
@@ -77573,7 +77205,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -77627,7 +77259,7 @@
       "translation_quarantine": {
         "title_fa": "آیا راه‌اندازی ابزار هوش مصنوعی توسط IFT برای دانشمندان علوم غذایی، نشان‌دهنده این است که انجمن‌های تجاری در عصر هوش مصنوعی به کجا می‌روند؟",
         "summary_fa": "اخبار جالب از IFT اولین بار در این هفته، نمایشگاه علوم غذایی در شیکاگو، جایی که انجمن تجاری قدیمی ابزار هوش مصنوعی خود را به نام CoDeveloper اعلام کرد. بر اساس این اعلامیه، CoDeveloper پلتفرمی است که توسط دانشمندان علوم غذایی برای دانشمندان علوم غذایی ساخته شده است و مجموعه‌ای از ابزارهای مبتنی بر هوش مصنوعی را ارائه می‌دهد تا به آنها در فرمول‌بندی محصولات جدید، مهندسی معکوس محصولات موجود و بهره‌برداری از دهه‌ها تحقیقات مرتبط با علوم غذایی کمک کند. این پلتفرم که به…",
-        "report_fa": "اخبار جالب از IFT اولین بار در این هفته، نمایشگاه علوم غذایی در شیکاگو، جایی که انجمن تجاری قدیمی ابزار هوش مصنوعی خود را به نام CoDeveloper اعلام کرد. بر اساس این اعلامیه، CoDeveloper پلتفرمی است که توسط دانشمندان علوم غذایی برای دانشمندان علوم غذایی ساخته شده است و مجموعه‌ای از ابزارهای مبتنی بر هوش مصنوعی را ارائه می‌دهد تا به آنها در فرمول‌بندی محصولات جدید، مهندسی معکوس محصولات موجود و بهره‌برداری از دهه‌ها تحقیقات مرتبط با علوم غذایی کمک کند.\n\nاین پلتفرم که به عنوان یک \"دانشمند مشترک\" به نام Sous شناخته می شود، برای زندگی در کنار تیم های تحقیق و توسعه و پشتیبانی از کارهای توسعه در مراحل اولیه طراحی شده است. این یک حرکت جالب برای این گروه است، و تا آنجا که من می توانم بگویم، اولین بار است که یک انجمن تجاری در فضای غذا (یا احتمالاً هر صنعتی) ابزار هوش مصنوعی خود را برای کمک به پزشکان در انجام کارهایشان راه اندازی می کند.\n\nاین همچنین یک سوال بزرگتر را ایجاد می کند: آیا این می تواند نشانه ای از اینکه انجمن های تجاری به کجا می روند زیرا هوش مصنوعی در نحوه…",
+        "report_fa": "اخبار جالب از IFT اولین بار در این هفته، نمایشگاه علوم غذایی در شیکاگو، جایی که انجمن تجاری قدیمی ابزار هوش مصنوعی خود را به نام CoDeveloper اعلام کرد. بر اساس این اعلامیه، CoDeveloper پلتفرمی است که توسط دانشمندان علوم غذایی برای دانشمندان علوم غذایی ساخته شده است و مجموعه‌ای از ابزارهای مبتنی بر هوش مصنوعی را ارائه می‌دهد تا به آنها در فرمول‌بندی محصولات جدید، مهندسی معکوس محصولات موجود و بهره‌برداری از دهه‌ها تحقیقات مرتبط با علوم غذایی کمک کند.\n\nاین پلتفرم که به عنوان یک \"دانشمند مشترک\" به نام Sous شناخته می شود، برای زندگی در کنار تیم های تحقیق و توسعه و پشتیبانی از کارهای توسعه در مراحل اولیه طراحی شده است. این یک حرکت جالب برای این گروه است، و تا آنجا که من می توانم بگویم، اولین بار است که یک انجمن تجاری در فضای غذا (یا احتمالاً هر صنعتی) ابزار هوش مصنوعی خود را برای کمک به پزشکان در انجام کارهایشان راه اندازی می کند.\n\nاین همچنین یک سوال بزرگتر را ایجاد می کند: آیا این می تواند نشانه ای از این باشد که انجمن های تجاری به کجا می روند زیرا هوش مصنوعی…",
         "quality": {
           "version": 1,
           "status": "retry",
@@ -79531,11 +79163,10 @@
       "translation": {
         "status": "translated",
         "engine": "http-en-fa",
-        "cleanup_version": 1,
-        "quality_retry": true
+        "cleanup_version": 1
       },
       "editorial": {
-        "status": "quality-retry",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -80932,7 +80563,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -80978,7 +80609,7 @@
               "repetition"
             ],
             "persian_ratio": 0.923,
-            "latin_ratio": 0.086,
+            "latin_ratio": 0.085,
             "max_sentence_chars": 216,
             "word_count": 203
           }
@@ -80988,7 +80619,7 @@
       "translation_quarantine": {
         "title_fa": "مجموعه Food & Retail AI همچنان ادامه دارد که Crisp Engine Shelf Engine را می‌خرد",
         "summary_fa": "Crisp، یک شرکت داده‌های خرده‌فروشی مستقر در نیویورک، استارت‌آپ Shelf Engine مستقر در سیاتل را خریداری کرده است. Shelf Engine که در سال 2016 توسط Stefan Kalb و Bede Jordan تأسیس شد، در استفاده از یادگیری ماشین برای بهینه سازی فرآیندهای سفارش کالاهای فاسد شدنی با هدف کاهش هزینه ها و به حداقل رساندن ضایعات مواد غذایی تخصص دارد. این پلتفرم اکنون در بیش از 7000 فروشگاه در حال استفاده است.",
-        "report_fa": "Crisp، یک شرکت داده‌های خرده‌فروشی مستقر در نیویورک، استارت‌آپ Shelf Engine مستقر در سیاتل را خریداری کرده است. Shelf Engine که در سال 2016 توسط Stefan Kalb و Bede Jordan تأسیس شد، در استفاده از یادگیری ماشین برای بهینه سازی فرآیندهای سفارش کالاهای فاسد شدنی با هدف کاهش هزینه ها و به حداقل رساندن ضایعات مواد غذایی تخصص دارد.\n\nاین پلتفرم اکنون در بیش از 7000 فروشگاه در حال استفاده است. شرایط خرید فاش نشد.\n\nShelf Engine یکی از اولین پذیرندگان فناوری هوش مصنوعی در خرده فروشی مواد غذایی با هدف کاهش ضایعات و بهینه سازی سفارش غذای تازه بود. کالب که در 23 سالگی تجارت توزیع غذا را راه‌اندازی کرد و دارای مدرک علوم اکچوئری و اقتصاد است، این ایده را در طی یک سفر اسکی در سال 2014 با دوست و مهندس خود Bede Jordan، توسعه‌دهنده سابق مایکروسافت هولولنز، توسعه داد.\n\nاین زوج این سوال را مطرح کردند که چرا فرآیندها و سیستم‌های صنایع غذایی منسوخ شده‌اند: \"آیا می‌توانیم پلتفرمی ایجاد کنیم که خرده‌فروشان را قادر به خرید مواد غذایی و حذف ضایعات قابل‌توجه کند؟ آیا می‌توانیم بستری ایجاد کنیم که مشغله‌های اضافی بین فروشندگان و خرده‌فروشان را…",
+        "report_fa": "Crisp، یک شرکت داده‌های خرده‌فروشی مستقر در نیویورک، استارت‌آپ Shelf Engine مستقر در سیاتل را خریداری کرده است. Shelf Engine که در سال 2016 توسط Stefan Kalb و Bede Jordan تأسیس شد، در استفاده از یادگیری ماشین برای بهینه سازی فرآیندهای سفارش کالاهای فاسد شدنی با هدف کاهش هزینه ها و به حداقل رساندن ضایعات مواد غذایی تخصص دارد.\n\nاین پلتفرم اکنون در بیش از 7000 فروشگاه در حال استفاده است. شرایط خرید فاش نشده است.\n\nShelf Engine یکی از اولین پذیرندگان فناوری هوش مصنوعی در خرده فروشی مواد غذایی با هدف کاهش ضایعات و بهینه سازی سفارش غذای تازه بود. کالب که در 23 سالگی تجارت توزیع غذا را راه‌اندازی کرد و دارای مدرک علوم اکچوئری و اقتصاد است، این ایده را در طی یک سفر اسکی در سال 2014 با دوست و مهندس خود Bede Jordan، توسعه‌دهنده سابق مایکروسافت هولولنز، توسعه داد.\n\nاین زوج این سوال را مطرح کردند که چرا فرآیندها و سیستم‌های صنایع غذایی منسوخ شده‌اند: \"آیا می‌توانیم پلتفرمی ایجاد کنیم که خرده‌فروشان را قادر به خرید مواد غذایی و حذف ضایعات قابل‌توجه کند؟ آیا می‌توانیم بستری ایجاد کنیم که مشغله‌های اضافی بین فروشندگان و خرده‌فروشان…",
         "quality": {
           "version": 1,
           "status": "retry",
@@ -81031,7 +80662,7 @@
                 "repetition"
               ],
               "persian_ratio": 0.923,
-              "latin_ratio": 0.086,
+              "latin_ratio": 0.085,
               "max_sentence_chars": 216,
               "word_count": 203
             }
@@ -84447,7 +84078,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -86286,7 +85917,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -87571,7 +87202,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -94021,10 +93652,10 @@
               "mostly-latin",
               "mixed-script"
             ],
-            "persian_ratio": 0.484,
-            "latin_ratio": 0.516,
-            "max_sentence_chars": 78,
-            "word_count": 16
+            "persian_ratio": 0.432,
+            "latin_ratio": 0.568,
+            "max_sentence_chars": 104,
+            "word_count": 22
           },
           "summary": {
             "score": 100,
@@ -94048,9 +93679,9 @@
         "source_original_fa": false
       },
       "translation_quarantine": {
-        "title_fa": "Spoon Tank: The Spoon Team تماشا و بازی به بازی در زمین تانک کوسه RoboBurger's",
+        "title_fa": "Spoon Tank: The Spoon Team تماشا می کند و بازی به بازی را در RoboBurger's Shark Tank Pitch انجام می دهد.",
         "summary_fa": "مانند بسیاری دیگر، ما نیز از طرفداران قدیمی Shark Tank بوده ایم، به خصوص زمانی که خدمه محصولات مرتبط با غذا را به مخزن می آورند. امسال کوسه ها زمین های غذایی زیادی را دیده اند، […]",
-        "report_fa": "ما نیز مانند بسیاری دیگر، از طرفداران قدیمی کوسه تانک بوده ایم، به خصوص زمانی که خدمه محصولات مرتبط با غذا را به مخزن می آورند. امسال کوسه‌ها زمین‌های غذایی زیادی دیده‌اند، و به نظر می‌رسد که تاکید خاصی بر روی روبات‌های غذایی شده است.\n\nاز آنجا که ما افکار زیادی در مورد این زمین‌ها داریم، فکر کردیم که آن را به سبک Mystery Science Theatre 3000 تماشا کنیم و نظرات خود را از گالری بادام‌زمینی وارد کنیم. در ادامه می‌توانید ویدیوی کامل بازی به‌بازی ما را تماشا کنید.\n\nاگر آن را دوست دارید به ما اطلاع دهید و اگر موارد دیگری وجود دارد که مایلید در مورد آن نظر بدهیم.",
+        "report_fa": "ما نیز مانند بسیاری دیگر، از طرفداران قدیمی کوسه تانک بوده ایم، به خصوص زمانی که خدمه محصولات مرتبط با غذا را به مخزن می آورند. امسال کوسه‌ها زمین‌های غذای زیادی دیده‌اند، و به نظر می‌رسد که تاکید خاصی بر روی روبات‌های غذایی شده است.\n\nاز آنجا که ما افکار زیادی در مورد این زمین‌ها داریم، فکر کردیم که آن را به سبک Mystery Science Theatre 3000 تماشا کنیم و نظرات خود را از گالری بادام‌زمینی وارد کنیم. در ادامه می‌توانید ویدیوی کامل بازی به‌بازی ما را تماشا کنید.\n\nاگر آن را دوست دارید به ما اطلاع دهید و اگر موارد دیگری وجود دارد که مایلید در مورد آن نظر بدهیم.",
         "quality": {
           "version": 1,
           "status": "retry",
@@ -94068,10 +93699,10 @@
                 "mostly-latin",
                 "mixed-script"
               ],
-              "persian_ratio": 0.484,
-              "latin_ratio": 0.516,
-              "max_sentence_chars": 78,
-              "word_count": 16
+              "persian_ratio": 0.432,
+              "latin_ratio": 0.568,
+              "max_sentence_chars": 104,
+              "word_count": 22
             },
             "summary": {
               "score": 100,
@@ -97583,11 +97214,10 @@
       "translation": {
         "status": "translated",
         "engine": "http-en-fa",
-        "cleanup_version": 1,
-        "quality_retry": true
+        "cleanup_version": 1
       },
       "editorial": {
-        "status": "quality-retry",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -101197,11 +100827,10 @@
       "translation": {
         "status": "translated",
         "engine": "http-en-fa",
-        "cleanup_version": 1,
-        "quality_retry": true
+        "cleanup_version": 1
       },
       "editorial": {
-        "status": "quality-retry",
+        "status": "edited-cache",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -102706,7 +102335,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -104290,7 +103919,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -107882,7 +107511,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -108345,7 +107974,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -110572,7 +110201,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -110617,9 +110246,9 @@
               "long-sentence"
             ],
             "persian_ratio": 0.989,
-            "latin_ratio": 0.03,
+            "latin_ratio": 0.031,
             "max_sentence_chars": 380,
-            "word_count": 204
+            "word_count": 199
           }
         },
         "source_original_fa": false
@@ -110627,7 +110256,7 @@
       "translation_quarantine": {
         "title_fa": "بله، من وارد Meataverse شدم",
         "summary_fa": "سال گذشته، وقتی خبر رسید که اسلیم جیم رفته و اصطلاح meataverse را ثبت کرده است، همه خندیدیم. بیش از یک سال بعد و چند پله پایین تر از چرخه هایپ گارتنر، شرکت چوب های گوشت نمکی بالاخره تلاش خود را در دنیای وب 3 برای ترغیب مردم به آنلاین شدن و جمع آوری هنر دیجیتال چوب های گوشت کارتونی آغاز کرد. این شرکت که با اشاره کنایه‌آمیز به نام شرکت جدید فیس‌بوک، به‌طور دوره‌ای خود را به عنوان MEATA در توییتر تغییر نام داده…",
-        "report_fa": "سال گذشته، وقتی خبر رسید که اسلیم جیم رفته و اصطلاح meataverse را ثبت کرده است، همه خندیدیم. بیش از یک سال بعد و چند پله پایین تر از چرخه هایپ گارتنر، شرکت چوب های گوشت نمکی بالاخره تلاش خود را در دنیای وب 3 برای ترغیب مردم به آنلاین شدن و جمع آوری هنر دیجیتال چوب های گوشت کارتونی آغاز کرد.\n\nاین شرکت که با اشاره کنایه‌آمیز به نام شرکت جدید فیس‌بوک، به‌طور دوره‌ای خود را به عنوان MEATA در توییتر تغییر نام داده و این تلاش را در یافته‌های علامت تجاری خود به‌عنوان چیزی توصیف می‌کند که «خدماتی حاوی کالاهای مجازی، محصولات غذایی مجازی، و توکن‌های غیرقابل تعویض» را همراه با «ارائه یک متاواژه برای مردم برای جستجو، خرید و فروش، تجارت، خرید و فروش محصولات مجازی» ارائه می‌کند. اما حالا، آن‌ها رفته‌اند و این کار را توسط جیم انجام داده‌اند، و من برای سوار شدن به آن‌ها می‌روم.\n\nمطمئناً مسخره به نظر می رسد و چیزی که بزرگسالانی که اسلیم جیمز را نمی خورند احتمالاً از اتلاف وقت خود در مورد آن اجتناب می کنند، اما من صاحب مفتخر GigaJim شماره 1070 هستم. با گیگاجیم شماره 1070…",
+        "report_fa": "سال گذشته، وقتی خبر رسید که اسلیم جیم رفته و اصطلاح meataverse را ثبت کرده است، همه خندیدیم. بیش از یک سال بعد و چند پله پایین تر از چرخه هایپ گارتنر، شرکت چوب های گوشت نمکی بالاخره تلاش خود را در دنیای وب 3 برای ترغیب مردم به آنلاین شدن و جمع آوری هنر دیجیتال چوب های گوشت کارتونی آغاز کرد.\n\nاین شرکت که با اشاره کنایه‌آمیز به نام شرکت جدید فیس‌بوک، به‌طور دوره‌ای خود را به عنوان MEATA در توییتر تغییر نام داده و این تلاش را در یافته‌های علامت تجاری خود به‌عنوان چیزی توصیف می‌کند که «خدماتی حاوی کالاهای مجازی، محصولات غذایی مجازی، و توکن‌های غیرقابل تعویض» را همراه با «ارائه یک متاواژه برای مردم برای جستجو، خرید و فروش، تجارت، خرید و فروش محصولات مجازی» ارائه می‌کند. اما اکنون، آنها رفته اند و این کار را توسط جیم انجام داده اند، و من برای سوار شدن به آن می روم.\n\nمطمئناً مسخره به نظر می رسد و چیزی که بزرگسالانی که اسلیم جیمز را نمی خورند احتمالاً از اتلاف وقت خود در مورد آن اجتناب می کنند، اما من صاحب مفتخر GigaJim شماره 1070 هستم. با…",
         "quality": {
           "version": 1,
           "status": "retry",
@@ -110669,9 +110298,9 @@
                 "long-sentence"
               ],
               "persian_ratio": 0.989,
-              "latin_ratio": 0.03,
+              "latin_ratio": 0.031,
               "max_sentence_chars": 380,
-              "word_count": 204
+              "word_count": 199
             }
           },
           "source_original_fa": false
@@ -110830,7 +110459,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -111413,7 +111042,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -111446,27 +111075,27 @@
             "issues": [
               "long-sentence"
             ],
-            "persian_ratio": 0.923,
-            "latin_ratio": 0.091,
-            "max_sentence_chars": 182,
-            "word_count": 34
+            "persian_ratio": 0.92,
+            "latin_ratio": 0.094,
+            "max_sentence_chars": 176,
+            "word_count": 33
           },
           "report": {
             "score": 100,
             "status": "pass",
             "issues": [],
-            "persian_ratio": 0.923,
-            "latin_ratio": 0.091,
-            "max_sentence_chars": 182,
-            "word_count": 34
+            "persian_ratio": 0.92,
+            "latin_ratio": 0.094,
+            "max_sentence_chars": 176,
+            "word_count": 33
           }
         },
         "source_original_fa": false
       },
       "translation_quarantine": {
         "title_fa": "MrBeast: من می خواهم از Beast Burger حرکت کنم، از Feastables '100x More' لذت ببرم",
-        "summary_fa": "از آنجایی که کسب و کار رستوران مجازی و آشپزخانه ارواح در بیشتر سال گذشته با مشکل مواجه بوده است، طرفداران به موفقیت MrBeast Burger اشاره کردند، یک رستوران زنجیره ای مجازی که توسط […]",
-        "report_fa": "از آنجایی که کسب و کار رستوران مجازی و آشپزخانه ارواح در بیشتر سال گذشته با مشکل مواجه بوده است، طرفداران به موفقیت MrBeast Burger اشاره کردند، یک رستوران زنجیره ای مجازی که توسط […]",
+        "summary_fa": "از آنجایی که کسب و کار رستوران مجازی و آشپزخانه ارواح در سال گذشته با مشکل مواجه بوده است، طرفداران به موفقیت MrBeast Burger اشاره کردند، یک رستوران زنجیره ای مجازی که توسط […]",
+        "report_fa": "از آنجایی که کسب و کار رستوران مجازی و آشپزخانه ارواح در سال گذشته با مشکل مواجه بوده است، طرفداران به موفقیت MrBeast Burger اشاره کردند، یک رستوران زنجیره ای مجازی که توسط […]",
         "quality": {
           "version": 1,
           "status": "retry",
@@ -111496,19 +111125,19 @@
               "issues": [
                 "long-sentence"
               ],
-              "persian_ratio": 0.923,
-              "latin_ratio": 0.091,
-              "max_sentence_chars": 182,
-              "word_count": 34
+              "persian_ratio": 0.92,
+              "latin_ratio": 0.094,
+              "max_sentence_chars": 176,
+              "word_count": 33
             },
             "report": {
               "score": 100,
               "status": "pass",
               "issues": [],
-              "persian_ratio": 0.923,
-              "latin_ratio": 0.091,
-              "max_sentence_chars": 182,
-              "word_count": 34
+              "persian_ratio": 0.92,
+              "latin_ratio": 0.094,
+              "max_sentence_chars": 176,
+              "word_count": 33
             }
           },
           "source_original_fa": false
@@ -121932,7 +121561,7 @@
         "cleanup_version": 1
       },
       "editorial": {
-        "status": "edited-cache",
+        "status": "edited",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -122583,26 +122212,26 @@
   ],
   "article_body_stats": {
     "attempted": 18,
-    "extracted": 9,
+    "extracted": 8,
     "blocked": 0,
     "short": 3,
-    "failed": 6,
+    "failed": 7,
     "reused": 34,
-    "queued": 1029,
-    "reports_upgraded": 3,
+    "queued": 1030,
+    "reports_upgraded": 2,
     "report_translation_failed": 0
   },
   "translation_quality_stats": {
-    "pass": 538,
-    "warn": 280,
-    "retry": 39,
-    "block": 224,
-    "publishable": 818,
-    "total": 1081,
-    "retry_candidates": 266,
-    "retried": 15,
-    "improved": 8,
-    "retry_failed": 45,
-    "quarantined": 263
+    "pass": 545,
+    "warn": 283,
+    "retry": 36,
+    "block": 218,
+    "publishable": 828,
+    "total": 1082,
+    "retry_candidates": 255,
+    "retried": 14,
+    "improved": 6,
+    "retry_failed": 46,
+    "quarantined": 254
   }
 }
