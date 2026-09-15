@@ -1,9 +1,9 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-09-15T17:08:16Z",
-  "articles_24h": 52,
+  "generated_at": "2026-09-15T17:18:08Z",
+  "articles_24h": 53,
   "articles_previous_6d": 192,
-  "images_24h": 40,
+  "images_24h": 41,
   "trending_topics": [
     {
       "id": "loyalty",
@@ -54,6 +54,54 @@
       ]
     },
     {
+      "id": "POS",
+      "label_fa": "سیستم فروش",
+      "count_24h": 15,
+      "previous_daily_avg": 7.0,
+      "acceleration": 2.14,
+      "series_7d": [
+        11,
+        9,
+        7,
+        0,
+        2,
+        15,
+        11
+      ]
+    },
+    {
+      "id": "AI",
+      "label_fa": "هوش مصنوعی",
+      "count_24h": 22,
+      "previous_daily_avg": 10.5,
+      "acceleration": 2.1,
+      "series_7d": [
+        15,
+        13,
+        12,
+        3,
+        2,
+        17,
+        21
+      ]
+    },
+    {
+      "id": "ingredients_rd",
+      "label_fa": "مواد اولیه و تحقیق‌وتوسعه",
+      "count_24h": 7,
+      "previous_daily_avg": 3.33,
+      "acceleration": 2.1,
+      "series_7d": [
+        5,
+        7,
+        5,
+        1,
+        1,
+        4,
+        4
+      ]
+    },
+    {
       "id": "food_industry",
       "label_fa": "صنعت غذا",
       "count_24h": 7,
@@ -70,35 +118,19 @@
       ]
     },
     {
-      "id": "AI",
-      "label_fa": "هوش مصنوعی",
-      "count_24h": 21,
-      "previous_daily_avg": 10.5,
+      "id": "restaurant_technology_ai",
+      "label_fa": "فناوری رستوران و هوش مصنوعی",
+      "count_24h": 17,
+      "previous_daily_avg": 8.5,
       "acceleration": 2.0,
       "series_7d": [
         15,
         13,
-        12,
-        3,
-        2,
-        17,
-        20
-      ]
-    },
-    {
-      "id": "POS",
-      "label_fa": "سیستم فروش",
-      "count_24h": 14,
-      "previous_daily_avg": 7.0,
-      "acceleration": 2.0,
-      "series_7d": [
-        11,
-        9,
-        7,
+        8,
         0,
         2,
         15,
-        10
+        13
       ]
     },
     {
@@ -132,38 +164,6 @@
         5,
         5
       ]
-    },
-    {
-      "id": "retail_food",
-      "label_fa": "خرده‌فروشی غذا",
-      "count_24h": 2,
-      "previous_daily_avg": 1.0,
-      "acceleration": 2.0,
-      "series_7d": [
-        1,
-        0,
-        3,
-        1,
-        0,
-        1,
-        2
-      ]
-    },
-    {
-      "id": "consumer_behavior",
-      "label_fa": "رفتار مصرف‌کننده",
-      "count_24h": 6,
-      "previous_daily_avg": 3.17,
-      "acceleration": 1.89,
-      "series_7d": [
-        2,
-        4,
-        4,
-        0,
-        2,
-        6,
-        6
-      ]
     }
   ],
   "trending_brands": [],
@@ -185,7 +185,7 @@
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 16,
+      "count_24h": 17,
       "series_7d": [
         15,
         13,
@@ -193,7 +193,7 @@
         0,
         2,
         15,
-        12
+        13
       ]
     },
     {
