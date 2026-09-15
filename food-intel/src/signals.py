@@ -7,6 +7,8 @@ from dateutil import parser as date_parser
 
 from entities import CATEGORY_FA, TOPIC_FA
 
+CATEGORY_BY_FA = {label: key for key, label in CATEGORY_FA.items()}
+
 
 def _dt(value: str | None) -> datetime | None:
     if not value:
@@ -29,8 +31,16 @@ def _window(items: list[dict], start: datetime, end: datetime) -> list[dict]:
     return rows
 
 
+def _topic_key(topic: str) -> str:
+    label = TOPIC_FA.get(topic, topic)
+    matching_category = CATEGORY_BY_FA.get(label)
+    return matching_category or f"topic:{topic}"
+
+
 def _topic_keys(item: dict) -> set[str]:
-    return set(item.get("categories", [])) | {f"topic:{x}" for x in item.get("topics", [])}
+    keys = set(item.get("categories", []))
+    keys.update(_topic_key(topic) for topic in item.get("topics", []))
+    return keys
 
 
 def _brand_keys(item: dict) -> set[str]:

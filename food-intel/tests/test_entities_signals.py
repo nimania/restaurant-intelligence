@@ -53,6 +53,26 @@ class EntitySignalTests(unittest.TestCase):
         self.assertIn("restaurant_technology_ai", ids)
         self.assertIn("هوش مصنوعی", signals["radar_fa"])
 
+    def test_overlapping_category_and_topic_are_counted_once(self):
+        items = [
+            {
+                "published_at": "2026-09-15T10:00:00Z",
+                "categories": ["beverage"],
+                "topics": ["beverage"],
+                "brands": [],
+            },
+            {
+                "published_at": "2026-09-15T09:00:00Z",
+                "categories": ["beverage"],
+                "topics": ["beverage"],
+                "brands": [],
+            },
+        ]
+        signals = build_signals(items, "2026-09-15T11:00:00Z")
+        beverage_rows = [x for x in signals["trending_topics"] if x["label_fa"] == "نوشیدنی"]
+        self.assertEqual(len(beverage_rows), 1)
+        self.assertEqual(beverage_rows[0]["count_24h"], 2)
+
 
 if __name__ == "__main__":
     unittest.main()
