@@ -1,8 +1,8 @@
 {
   "schema_version": "0.4",
-  "generated_at": "2026-09-15T11:33:49Z",
-  "articles_24h": 45,
-  "articles_previous_6d": 164,
+  "generated_at": "2026-09-15T11:52:37Z",
+  "articles_24h": 50,
+  "articles_previous_6d": 173,
   "trending_topics": [
     {
       "id": "loyalty",
@@ -33,31 +33,31 @@
       "acceleration": 3.0
     },
     {
-      "id": "equipment_automation",
-      "label_fa": "تجهیزات و اتوماسیون",
-      "count_24h": 6,
-      "previous_daily_avg": 2.33,
-      "acceleration": 2.57
+      "id": "food_industry",
+      "label_fa": "صنعت غذا",
+      "count_24h": 7,
+      "previous_daily_avg": 2.67,
+      "acceleration": 2.62
     },
     {
       "id": "POS",
       "label_fa": "سیستم فروش",
       "count_24h": 14,
-      "previous_daily_avg": 5.83,
-      "acceleration": 2.4
+      "previous_daily_avg": 6.17,
+      "acceleration": 2.27
+    },
+    {
+      "id": "equipment_automation",
+      "label_fa": "تجهیزات و اتوماسیون",
+      "count_24h": 6,
+      "previous_daily_avg": 2.67,
+      "acceleration": 2.25
     },
     {
       "id": "menu_product_innovation",
       "label_fa": "نوآوری منو و محصول",
       "count_24h": 6,
       "previous_daily_avg": 2.67,
-      "acceleration": 2.25
-    },
-    {
-      "id": "food_industry",
-      "label_fa": "صنعت غذا",
-      "count_24h": 3,
-      "previous_daily_avg": 1.33,
       "acceleration": 2.25
     },
     {
