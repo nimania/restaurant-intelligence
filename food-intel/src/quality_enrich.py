@@ -55,23 +55,24 @@ def retry_item(item: dict, translator: PersianTranslator) -> bool:
     if not title:
         return False
 
-    # Retry title separately so a broken summary cannot contaminate the headline.
     title_fa = editorialize_title(translator.translate(title, 260))
     summary_fa = ""
     if summary:
-        # Smaller source chunks usually produce much clearer Persian than one long
-        # machine-translated block while preserving source order and factual detail.
         translated_summary = _translate_source(translator, summary, max_chunks=3)
         summary_fa = compact_words(editorialize_summary(translated_summary, 3), 90)
 
+    existing_narrative = str(item.get("narrative_fa") or "").strip()
     existing_report = str(item.get("report_fa") or "").strip()
-    report_fa = editorialize_report(existing_report) if existing_report else ""
+    narrative_fa = editorialize_report(existing_narrative) if existing_narrative else ""
+    report_fa = narrative_fa or (editorialize_report(existing_report) if existing_report else "")
     if not report_fa and summary_fa:
         report_fa = editorialize_report(summary_fa)
 
     item["title_fa"] = title_fa
     item["summary_fa"] = summary_fa
     item["report_fa"] = report_fa
+    if narrative_fa:
+        item["narrative_fa"] = narrative_fa
     item["translation"] = {
         **(item.get("translation") or {}),
         "status": "translated",
@@ -83,22 +84,19 @@ def retry_item(item: dict, translator: PersianTranslator) -> bool:
 
 
 def _quarantine(item: dict) -> None:
-    """Hide bad public Persian without deleting the failed attempt.
-
-    The archived attempt remains available for diagnostics, while blank public fields
-    make the existing UI omit the item. On the next collector run, the missing
-    title_fa causes the normal translation queue to pick the article up again.
-    """
+    """Hide bad public Persian without deleting the failed attempt."""
     quality = item.get("translation_quality") or {}
     item["translation_quarantine"] = {
         "title_fa": item.get("title_fa", ""),
         "summary_fa": item.get("summary_fa", ""),
         "report_fa": item.get("report_fa", ""),
+        "narrative_fa": item.get("narrative_fa", ""),
         "quality": quality,
     }
     item["title_fa"] = ""
     item["summary_fa"] = ""
     item["report_fa"] = ""
+    item["narrative_fa"] = ""
     item["translation"] = {
         **(item.get("translation") or {}),
         "status": "quality-quarantined",
@@ -148,8 +146,6 @@ def main() -> None:
             item["quality_retry_error"] = str(exc)[:160]
             retry_failed += 1
 
-    # Re-assess every item after retries so quality metadata and publication state are
-    # based on the final text produced in this run.
     for item in items:
         item["translation_quality"] = assess_item(item)
 
@@ -168,7 +164,7 @@ def main() -> None:
         "retry_failed": retry_failed,
         "quarantined": quarantined,
     })
-    payload["schema_version"] = "0.13"
+    payload["schema_version"] = "0.17"
     payload["translation_quality_stats"] = stats
     DATA_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 

@@ -19,6 +19,20 @@ MYMEMORY_ENDPOINT = "https://api.mymemory.translated.net/get"
 SPLIT_MARKER = "[[[NIMA_SPLIT_9F7C]]]"
 CLEANUP_VERSION = 1
 
+DEEP_ENRICHMENT_FIELDS = (
+    "narrative_fa",
+    "narrative_basis",
+    "narrative_version",
+    "narrative_word_count",
+    "article_body",
+    "report_source_kind",
+    "report_source_chars",
+    "report_selected_chars",
+    "report_basis",
+    "report_word_count",
+    "key_points_fa",
+)
+
 
 def looks_persian(text: str) -> bool:
     if not text:
@@ -54,6 +68,13 @@ def coverage_label(source_chars: int | None) -> str:
     return "خلاصه منبع"
 
 
+def restore_deep_enrichment(item: dict, previous: dict) -> None:
+    """Keep body/narrative enrichment when an unchanged feed item is refreshed."""
+    for field in DEEP_ENRICHMENT_FIELDS:
+        if previous.get(field) is not None:
+            item[field] = previous.get(field)
+
+
 @dataclass
 class TranslationStats:
     translated: int = 0
@@ -64,12 +85,7 @@ class TranslationStats:
 
 
 class PersianTranslator:
-    """Lightweight HTTP English→Persian translator with editorial cleanup.
-
-    Translation stays best-effort and is cached in news.json. A domain glossary runs
-    before/after translation, followed by a conservative Persian newsroom copy-edit
-    that improves sentence structure without changing factual content.
-    """
+    """Lightweight HTTP English→Persian translator with editorial cleanup."""
 
     def __init__(self, timeout: int = 4, pause: float = 0.08) -> None:
         self.timeout = timeout
@@ -219,14 +235,17 @@ def apply_persian_translation(
             and previous.get("summary") == summary
             and previous.get("title_fa")
         )
+        if same_source_text:
+            restore_deep_enrichment(item, previous)
+
         if same_source_text and previous.get("report_fa"):
-            # Re-edit cached translations on every run so the archive receives the
-            # latest editorial rules without requiring another network translation.
             item["title_fa"] = editorialize_title(previous.get("title_fa", ""))
             item["summary_fa"] = editorialize_summary(previous.get("summary_fa", ""), 3)
-            item["report_fa"] = editorialize_report(
-                previous.get("report_fa", previous.get("summary_fa", ""))
-            )
+            # If a body-based narrative exists it is the canonical public report.
+            canonical_report = previous.get("narrative_fa") or previous.get("report_fa", previous.get("summary_fa", ""))
+            item["report_fa"] = editorialize_report(canonical_report)
+            if previous.get("narrative_fa"):
+                item["narrative_fa"] = item["report_fa"]
             item["report_coverage"] = previous.get("report_coverage") or coverage_label(source_chars)
             item["translation"] = _meta(
                 "translated",
@@ -244,6 +263,7 @@ def apply_persian_translation(
             item["title_fa"] = ""
             item["summary_fa"] = ""
             item["report_fa"] = ""
+            item.pop("narrative_fa", None)
         item["report_coverage"] = coverage_label(source_chars)
         item["translation"] = _meta("queued", "http-en-fa")
         item["editorial"] = editorial_meta("pending")
