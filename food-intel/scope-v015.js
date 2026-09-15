@@ -1,7 +1,10 @@
 (()=>{
-  const currentScope=()=>document.body?.dataset?.feedScope==='iran'?'iran':'world';
+  const currentScope=()=>{
+    const scope=document.body?.dataset?.feedScope||'world';
+    return ['iran','latest'].includes(scope)?scope:'world';
+  };
   FI.feedScope=currentScope;
-  FI.feedBase=()=>currentScope()==='iran'?'iran.html':'./';
+  FI.feedBase=()=>currentScope()==='iran'?'iran.html':currentScope()==='latest'?'latest.html':'./';
   FI.feedHref=(key,val)=>{
     const p=new URLSearchParams();
     if(key&&val!==undefined&&val!==null&&val!=='')p.set(key,val);
