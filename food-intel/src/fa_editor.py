@@ -68,7 +68,7 @@ def _split_long_sentence(sentence: str, max_chars: int = 210) -> list[str]:
     if len(sentence) <= max_chars:
         return [sentence]
 
-    candidates: list[tuple[int, str, str]] = []
+    candidates: list[tuple[int, str, str, int]] = []
     for marker, lead in CONNECTOR_SPLITS:
         start = 70
         while True:
@@ -80,14 +80,13 @@ def _split_long_sentence(sentence: str, max_chars: int = 210) -> list[str]:
             right_len = len(sentence) - right_start
             if left_len >= 65 and right_len >= 45:
                 score = abs(pos - len(sentence) // 2)
-                candidates.append((score, marker, lead))
+                candidates.append((score, marker, lead, pos))
             start = pos + len(marker)
 
     if not candidates:
         return [sentence]
 
-    _, marker, lead = min(candidates, key=lambda x: x[0])
-    pos = sentence.find(marker, 65)
+    _, marker, lead, pos = min(candidates, key=lambda x: x[0])
     left = sentence[:pos].rstrip(" ،؛")
     right = sentence[pos + len(marker):].strip()
     if not left or not right:
@@ -109,8 +108,8 @@ def _sentences(text: str) -> list[str]:
 
 
 def editorialize_title(text: str) -> str:
+    # Headlines get only light copy-editing: never remove a subject or restructure facts.
     value = _apply_phrase_rules(polish_persian(text))
-    value = re.sub(r"^این شرکت\s+", "", value)
     value = re.sub(r"\s+است:\s*", ": ", value)
     value = re.sub(r"\s{2,}", " ", value)
     return value.strip()
