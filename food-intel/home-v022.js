@@ -24,6 +24,10 @@ function brandCatalog(items){
   return [...map.values()];
 }
 function brandRows(id){return ready.filter(x=>(x.brands||[]).some(b=>b.id===id))}
+function sevenDaySeries(rows){
+  const start=new Date();start.setHours(0,0,0,0);const base=start.getTime();const vals=Array(7).fill(0);
+  rows.forEach(x=>{const age=Math.floor((base-ms(x))/DAY);if(age>=0&&age<7)vals[6-age]++});return vals;
+}
 function attentionFor(b){
   const rows=brandRows(b.id), now=Date.now();
   const d1=rows.filter(x=>now-ms(x)<DAY).length,d7=rows.filter(x=>now-ms(x)<7*DAY).length,d30=rows.filter(x=>now-ms(x)<30*DAY).length;
@@ -31,8 +35,13 @@ function attentionFor(b){
   const official=rows.filter(x=>x.source?.class==='official_brand_channel').length;
   const raw=d1*16+d7*5+Math.min(d30,20)+Math.min(watch,12)*2+Math.min(official,8)*2;
   const score=Math.max(1,Math.min(100,Math.round(raw)));
-  const last=rows.sort((a,c)=>ms(c)-ms(a))[0]||null;
-  return {score,d1,d7,d30,watch,official,last};
+  const last=[...rows].sort((a,c)=>ms(c)-ms(a))[0]||null;
+  return {score,d1,d7,d30,watch,official,last,series:sevenDaySeries(rows)};
+}
+function sparkline(values){
+  const w=180,h=38,pad=3,max=Math.max(1,...values),step=(w-pad*2)/Math.max(values.length-1,1);
+  const pts=values.map((v,i)=>`${(pad+i*step).toFixed(1)},${(h-pad-(v/max)*(h-pad*2)).toFixed(1)}`).join(' ');
+  return `<div class="brand-spark"><div><span>فعالیت ۷روزه در رادار</span><b>${values.map(FI.faN).join(' · ')}</b></div><svg viewBox="0 0 ${w} ${h}" role="img" aria-label="فعالیت هفت روز اخیر"><polyline points="${pts}" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>`;
 }
 function logo(b,cls=''){const src=FI.brandLogo?FI.brandLogo(b):'';return src?`<img class="${cls}" src="${FI.esc(src)}" alt="${FI.esc(b.fa||b.name||'')}" loading="lazy" referrerpolicy="no-referrer" onerror="this.outerHTML='<span class=&quot;brand-fallback&quot;>${FI.esc((b.fa||b.name||'?').slice(0,1))}</span>'">`:`<span class="brand-fallback ${cls}">${FI.esc((b.fa||b.name||'?').slice(0,1))}</span>`}
 function reason(b,s){
@@ -50,7 +59,7 @@ function renderBrands(){
   const hasIran=top.some(([b])=>b.market==='iran'),hasWorld=top.some(([b])=>b.market!=='iran');
   if(!hasIran){const x=brands.find(([b])=>b.market==='iran');if(x)top[top.length-1]=x}
   if(!hasWorld){const x=brands.find(([b])=>b.market!=='iran');if(x)top[top.length-1]=x}
-  $('hotBrands').innerHTML=top.slice(0,6).map(([b,s])=>`<article class="brand-pulse-card"><div class="brand-pulse-top">${logo(b)}<button class="follow-btn ${followed.has(b.id)?'following':''}" onclick="toggleFollow('${FI.esc(b.id)}')">${followed.has(b.id)?'✓ دنبال می‌کنم':'+ دنبال کردن'}</button></div><h3>${FI.esc(b.fa||b.name)}</h3><small>${FI.esc(b.name||'')} · ${b.market==='iran'?'ایران':'جهان'}</small><div class="attention-line"><span>شاخص توجه رادار</span><b>${FI.faN(s.score)}</b></div><div class="attention-bar"><i style="width:${s.score}%"></i></div><p class="brand-reason">${FI.esc(reason(b,s))}</p><a href="brand.html?id=${encodeURIComponent(b.id)}">در ۳۰ ثانیه ببین چه خبر است ←</a></article>`).join('');
+  $('hotBrands').innerHTML=top.slice(0,6).map(([b,s])=>`<article class="brand-pulse-card"><div class="brand-pulse-top">${logo(b)}<button class="follow-btn ${followed.has(b.id)?'following':''}" onclick="toggleFollow('${FI.esc(b.id)}')">${followed.has(b.id)?'✓ دنبال می‌کنم':'+ دنبال کردن'}</button></div><h3>${FI.esc(b.fa||b.name)}</h3><small>${FI.esc(b.name||'')} · ${b.market==='iran'?'ایران':'جهان'}</small><div class="attention-line"><span>شاخص توجه رادار</span><b>${FI.faN(s.score)}</b></div><div class="attention-bar"><i style="width:${s.score}%"></i></div>${sparkline(s.series)}<p class="brand-reason">${FI.esc(reason(b,s))}</p><a href="brand.html?id=${encodeURIComponent(b.id)}">در ۳۰ ثانیه ببین چه خبر است ←</a></article>`).join('');
 }
 function topicSignals(){
   const map=new Map();
