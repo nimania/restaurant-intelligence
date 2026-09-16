@@ -1,0 +1,105 @@
+brands:
+  - id: simit_sarayi
+    terms: ["Simit Sarayı", "Simit Sarayi"]
+    context: ["mağaza", "şube", "franchise", "restoran", "yatırım", "menü", "büyüme"]
+  - id: tavuk_dunyasi
+    terms: ["Tavuk Dünyası", "Tavuk Dunyasi"]
+    context: ["restoran", "şube", "menü", "yatırım", "franchise", "büyüme", "kampanya"]
+  - id: durumle
+    terms: ["Dürümle", "Durumle"]
+    context: ["restoran", "şube", "yatırım", "franchise", "büyüme", "menü"]
+  - id: baydoner
+    terms: ["Baydöner", "Baydoner"]
+    context: ["restoran", "şube", "yatırım", "franchise", "büyüme", "satış"]
+  - id: hd_iskender
+    terms: ["HD İskender", "HD Iskender"]
+    context: ["restoran", "şube", "yatırım", "franchise", "HD Holding"]
+  - id: pidem
+    terms: ["Pidem"]
+    context: ["restoran", "şube", "yatırım", "franchise", "HD Holding"]
+  - id: kofteci_yusuf
+    terms: ["Köfteci Yusuf", "Kofteci Yusuf"]
+    context: ["restoran", "şube", "yatırım", "üretim", "menü", "satış"]
+  - id: mado
+    terms: ["MADO"]
+    context: ["dondurma", "restoran", "kafe", "şube", "franchise", "yatırım"]
+  - id: kahve_dunyasi
+    terms: ["Kahve Dünyası", "Kahve Dunyasi"]
+    context: ["kahve", "mağaza", "şube", "yatırım", "ürün", "franchise"]
+  - id: bigchefs
+    terms: ["BigChefs", "Big Chefs", "Büyük Şefler"]
+    context: ["restoran", "şube", "yatırım", "Borsa", "satış", "büyüme"]
+  - id: happy_moons
+    terms: ["Happy Moon's", "Happy Moons"]
+    context: ["restoran", "şube", "yatırım", "menü", "büyüme"]
+  - id: ozsut
+    terms: ["Özsüt", "Ozsut"]
+    context: ["kafe", "mağaza", "şube", "franchise", "tatlı", "yatırım"]
+  - id: bursa_kebap_evi
+    terms: ["Bursa Kebap Evi"]
+    context: ["restoran", "şube", "franchise", "yatırım", "büyüme"]
+  - id: espressolab
+    terms: ["Espressolab"]
+    context: ["kahve", "mağaza", "şube", "yatırım", "franchise", "büyüme"]
+  - id: komagene
+    terms: ["Komagene"]
+    context: ["çiğ köfte", "şube", "franchise", "restoran", "yatırım"]
+  - id: tab_gida
+    terms: ["TAB Gıda", "TAB Gida"]
+    context: ["restoran", "franchise", "Burger King", "Popeyes", "yatırım", "Borsa"]
+  - id: ulker
+    terms: ["Ülker", "Ulker"]
+    context: ["gıda", "bisküvi", "çikolata", "ürün", "yatırım", "ihracat", "satış"]
+  - id: eti_turkey
+    terms: ["ETİ Gıda", "Eti Gıda", "ETI Gida"]
+    context: ["gıda", "bisküvi", "çikolata", "ürün", "yatırım", "ihracat", "satış"]
+  - id: pinar
+    terms: ["Pınar", "Pinar"]
+    context: ["gıda", "süt", "et", "ürün", "yatırım", "ihracat", "satış"]
+  - id: sutas
+    terms: ["Sütaş", "Sutas"]
+    context: ["süt", "yoğurt", "gıda", "üretim", "fabrika", "yatırım"]
+  - id: dardanel
+    terms: ["Dardanel"]
+    context: ["gıda", "ton balığı", "üretim", "ihracat", "yatırım", "satış"]
+  - id: tamek
+    terms: ["TAMEK"]
+    context: ["gıda", "meyve suyu", "konserve", "ürün", "yatırım", "satış"]
+  - id: tat_gida
+    terms: ["Tat Gıda", "Tat Gida"]
+    context: ["gıda", "domates", "konserve", "üretim", "yatırım", "ihracat"]
+  - id: tukas
+    terms: ["Tukaş", "Tukas"]
+    context: ["gıda", "konserve", "salça", "üretim", "yatırım", "ihracat"]
+  - id: solen
+    terms: ["Şölen", "Solen"]
+    context: ["çikolata", "bisküvi", "gıda", "üretim", "ihracat", "yatırım"]
+  - id: dimes
+    terms: ["DİMES", "DIMES"]
+    context: ["meyve suyu", "içecek", "gıda", "ürün", "yatırım", "ihracat"]
+  - id: uludag_icecek
+    terms: ["Uludağ İçecek", "Uludag Icecek"]
+    context: ["içecek", "gazoz", "maden suyu", "üretim", "yatırım", "ihracat"]
+  - id: dogus_cay
+    terms: ["Doğuş Çay", "Dogus Cay"]
+    context: ["çay", "gıda", "üretim", "ürün", "yatırım", "satış"]
+  - id: caykur
+    terms: ["ÇAYKUR", "CAYKUR"]
+    context: ["çay", "üretim", "satış", "ihracat", "fiyat", "yatırım"]
+  - id: bey_pazari
+    terms: ["Beypazarı", "Beypazari"]
+    context: ["maden suyu", "içecek", "üretim", "ihracat", "yatırım"]
+  - id: oba_makarna
+    terms: ["Oba Makarna"]
+    context: ["makarna", "gıda", "üretim", "ihracat", "yatırım", "satış"]
+  - id: reis_gida
+    terms: ["Reis Gıda", "Reis Gida"]
+    context: ["bakliyat", "gıda", "üretim", "ürün", "ihracat", "satış"]
+
+settings:
+  provider: bing_news_rss
+  language: tr
+  country: TR
+  lookback_days: 14
+  priority: 2
+  max_brands_per_run: 32
