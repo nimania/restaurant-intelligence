@@ -1,0 +1,21 @@
+(()=>{
+  const P=FI.brandProfiles||{};
+  P.simit_sarayi={...(P.simit_sarayi||{}),website:'https://www.simitsarayi.com/'};
+  P.tavuk_dunyasi={...(P.tavuk_dunyasi||{}),website:'https://www.tavukdunyasi.com/'};
+  P.durumle={...(P.durumle||{}),website:'https://www.durumle.com/'};
+  P.baydoner={...(P.baydoner||{}),website:'https://www.baydoner.com/'};
+  P.kofteci_yusuf={...(P.kofteci_yusuf||{}),website:'https://www.kofteciyusuf.com/'};
+  P.mado={...(P.mado||{}),website:'https://mado.com.tr/'};
+  P.kahve_dunyasi={...(P.kahve_dunyasi||{}),website:'https://www.kahvedunyasi.com/'};
+  P.bigchefs={...(P.bigchefs||{}),website:'https://bigchefs.com.tr/'};
+  P.happy_moons={...(P.happy_moons||{}),website:'https://www.happygroup.com.tr/'};
+  P.ozsut={...(P.ozsut||{}),website:'https://www.ozsut.com.tr/tr'};
+  P.espressolab={...(P.espressolab||{}),website:'https://espressolab.com/'};
+  P.komagene={...(P.komagene||{}),website:'https://www.komagene.com/'};
+  P.tab_gida={...(P.tab_gida||{}),website:'https://www.tabgida.com.tr/'};
+  P.solen={...(P.solen||{}),website:'https://www.solen.com.tr/'};
+  P.uludag_icecek={...(P.uludag_icecek||{}),website:'https://www.uludagicecek.com.tr/'};
+  P.tamek={...(P.tamek||{}),website:'https://www.tamek.com.tr/'};
+  P.tat_gida={...(P.tat_gida||{}),website:'https://www.tatgida.com.tr/tr/'};
+  FI.brandProfiles=P;
+})();
