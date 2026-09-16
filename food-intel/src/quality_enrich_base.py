@@ -7,7 +7,7 @@ from pathlib import Path
 
 from fa_editor import editorial_meta, editorialize_report, editorialize_summary, editorialize_title
 from fa_polish import polish_persian
-from translate_fa import PersianTranslator, compact_words, looks_persian
+from translate_fa import PersianTranslator, compact_words, looks_persian, source_language
 from translation_quality import assess_item, quality_stats
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -42,10 +42,11 @@ def _source_chunks(text: str) -> list[str]:
     return chunks or [value[:SOURCE_CHUNK_CHARS]]
 
 
-def _translate_source(translator: PersianTranslator, source: str, max_chunks: int = 4) -> str:
+def _translate_source(translator: PersianTranslator, source: str, source_lang: str = "en", max_chunks: int = 4) -> str:
     parts: list[str] = []
+    sl = source_language(source_lang)
     for chunk in _source_chunks(source)[:max_chunks]:
-        parts.append(translator.translate(chunk, SOURCE_CHUNK_CHARS))
+        parts.append(translator.translate(chunk, SOURCE_CHUNK_CHARS, sl))
     return polish_persian(" ".join(x for x in parts if x))
 
 
@@ -55,10 +56,11 @@ def retry_item(item: dict, translator: PersianTranslator) -> bool:
     if not title:
         return False
 
-    title_fa = editorialize_title(translator.translate(title, 260))
+    sl = source_language(item.get("language"))
+    title_fa = editorialize_title(translator.translate(title, 260, sl))
     summary_fa = ""
     if summary:
-        translated_summary = _translate_source(translator, summary, max_chunks=3)
+        translated_summary = _translate_source(translator, summary, sl, max_chunks=3)
         summary_fa = compact_words(editorialize_summary(translated_summary, 3), 90)
 
     existing_narrative = str(item.get("narrative_fa") or "").strip()
@@ -76,7 +78,7 @@ def retry_item(item: dict, translator: PersianTranslator) -> bool:
     item["translation"] = {
         **(item.get("translation") or {}),
         "status": "translated",
-        "engine": "http-en-fa",
+        "engine": f"http-{sl}-fa",
         "quality_retry": True,
     }
     item["editorial"] = editorial_meta("quality-retry")
@@ -164,7 +166,7 @@ def main() -> None:
         "retry_failed": retry_failed,
         "quarantined": quarantined,
     })
-    payload["schema_version"] = "0.17"
+    payload["schema_version"] = "0.23"
     payload["translation_quality_stats"] = stats
     DATA_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
