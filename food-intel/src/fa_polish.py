@@ -7,7 +7,11 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-BRAND_PATHS = [ROOT / "config" / "brands.yml", ROOT / "config" / "brands_iran.yml"]
+BRAND_PATHS = [
+    ROOT / "config" / "brands.yml",
+    ROOT / "config" / "brands_iran.yml",
+    ROOT / "config" / "brands_turkey.yml",
+]
 
 # Terms that frequently become awkward or inconsistent in generic machine translation.
 # Replacing them before translation keeps restaurant-industry terminology stable.
@@ -74,8 +78,6 @@ EXTRA_BRAND_TERMS = [
     ("Coke", "کوکاکولا"),
 ]
 
-# English newsroom idioms are normalized before machine translation so the engine
-# sees their intended business meaning instead of translating them literally.
 SOURCE_SEMANTIC_RULES: list[tuple[str, str]] = [
     (r"\bzero(?:e)?s in on\b", "focuses on"),
     (r"\bmeaningful ROI\b", "meaningful return on investment"),
