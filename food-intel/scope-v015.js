@@ -4,7 +4,7 @@
     return ['iran','latest'].includes(scope)?scope:'world';
   };
   FI.feedScope=currentScope;
-  FI.feedBase=()=>currentScope()==='iran'?'iran.html':currentScope()==='latest'?'latest.html':'./';
+  FI.feedBase=()=>currentScope()==='iran'?'iran.html':currentScope()==='latest'?'latest.html':'explore.html';
   FI.feedHref=(key,val)=>{
     const p=new URLSearchParams();
     if(key&&val!==undefined&&val!==null&&val!=='')p.set(key,val);
