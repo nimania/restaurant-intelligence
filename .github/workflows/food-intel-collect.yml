@@ -23,11 +23,11 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 35
     env:
-      FOOD_INTEL_TRANSLATION_LIMIT: "180"
-      FOOD_INTEL_BODY_READER_LIMIT: "18"
-      FOOD_INTEL_QUALITY_RETRY_LIMIT: "60"
+      FOOD_INTEL_TRANSLATION_LIMIT: "300"
+      FOOD_INTEL_BODY_READER_LIMIT: "32"
+      FOOD_INTEL_QUALITY_RETRY_LIMIT: "80"
 
     steps:
       - name: Checkout repository
@@ -67,6 +67,9 @@ jobs:
 
       - name: Quality-check and repair Persian translations
         run: python food-intel/src/quality_enrich.py
+
+      - name: Audit recent Persian v2 samples
+        run: python food-intel/src/translation_audit.py
 
       - name: Commit dataset changes
         shell: bash
