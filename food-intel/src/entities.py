@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BRAND_PATHS = [
     ROOT / "config" / "brands.yml",
     ROOT / "config" / "brands_iran.yml",
+    ROOT / "config" / "brands_turkey.yml",
 ]
 
 # High-frequency public names that are shorter than the legal/company name in the
@@ -112,8 +113,8 @@ def _contains_alias(text: str, alias: str) -> bool:
     alias = _normalized(alias.strip())
     if not alias:
         return False
-    pattern = rf"(?<![a-z0-9]){re.escape(alias)}(?![a-z0-9])"
-    return re.search(pattern, text) is not None
+    pattern = rf"(?<![\w]){re.escape(alias)}(?![\w])"
+    return re.search(pattern, text, flags=re.UNICODE) is not None
 
 
 def detect_brands(title: str, summary: str, catalog: list[dict] | None = None) -> list[dict]:
