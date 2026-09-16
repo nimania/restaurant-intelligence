@@ -1,0 +1,14 @@
+FI.bindTheme();
+const $=id=>document.getElementById(id);
+const MONTHS=['ژانویه','فوریه','مارس','آوریل','مه','ژوئن','ژوئیه','اوت','سپتامبر','اکتبر','نوامبر','دسامبر'];
+let events=[],filter='all';
+function daysUntil(date){return Math.ceil((new Date(date+'T00:00:00Z')-Date.now())/864e5)}
+function faDate(e){const d=new Date(e.start_date+'T00:00:00Z');return {day:FI.faN(d.getUTCDate()),month:MONTHS[d.getUTCMonth()],year:FI.faN(d.getUTCFullYear())}}
+function group(e){if(e.country==='IR')return'iran';if((e.focus||[]).some(x=>['restaurant_industry','restaurant_operations','restaurant_technology_ai','foodservice','coffee','bakery','pizza'].includes(x)))return'restaurant';return'food'}
+function render(){
+  const rows=events.filter(e=>new Date(e.end_date+'T23:59:59Z')>=new Date()).filter(e=>filter==='all'||group(e)===filter).sort((a,b)=>a.start_date.localeCompare(b.start_date));
+  $('eventCount').textContent=`${FI.faN(rows.length)} رویداد پیش رو`;
+  $('eventsList').innerHTML=rows.length?rows.map(e=>{const d=faDate(e),left=daysUntil(e.start_date);const country=`${FI.flags[e.country]||'📍'} ${e.city}`;return `<article class="event-card"><div class="event-date"><b>${d.day}</b><span>${d.month}<br>${d.year}</span></div><div class="event-main"><h2>${FI.esc(e.fa)}</h2><div class="en">${FI.esc(e.name)}</div><div class="event-meta"><span>${country}</span><span>${FI.esc(e.venue)}</span><span>${FI.esc(e.audience)}</span></div><p>${FI.esc(e.why)}</p></div><div class="event-actions"><div class="event-countdown">${left>0?`${FI.faN(left)} روز دیگر`:left===0?'امروز شروع می‌شود':'در حال برگزاری'}</div><a class="pill-btn" href="${FI.esc(e.url)}" target="_blank" rel="noopener noreferrer">سایت رسمی ↗</a><a class="pill-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(e.name)}&dates=${e.start_date.replaceAll('-','')}/${new Date(new Date(e.end_date+'T00:00:00Z').getTime()+864e5).toISOString().slice(0,10).replaceAll('-','')}&location=${encodeURIComponent(e.venue+', '+e.city)}" target="_blank" rel="noopener noreferrer">+ تقویم</a></div></article>`}).join(''):'<div class="event-empty">رویدادی در این فیلتر پیدا نشد.</div>';
+}
+fetch('data/events.json?ts='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{events=d.events||[];render()}).catch(()=>{$('eventsList').innerHTML='<div class="event-empty">اطلاعات رویدادها فعلاً در دسترس نیست.</div>'});
+document.querySelectorAll('[data-event-filter]').forEach(btn=>btn.addEventListener('click',()=>{filter=btn.dataset.eventFilter;document.querySelectorAll('[data-event-filter]').forEach(x=>x.classList.toggle('active',x===btn));render()}));
