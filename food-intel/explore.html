@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Explore | رادار صنعت غذا</title>
+<meta name="description" content="جست‌وجو و فیلتر حرفه‌ای اخبار صنعت غذا، رستوران، فناوری و برندها.">
+<link rel="stylesheet" href="ui.css"><link rel="stylesheet" href="visual-v3.css"><link rel="stylesheet" href="polish-v011.css"><link rel="stylesheet" href="scope-v015.css">
+</head>
+<body data-feed-scope="world">
+<header class="topbar"><div class="topbar-inner"><a class="brandmark" href="./"><div class="logo">F</div><div><b>رادار صنعت غذا</b><small>Food Brand Intelligence</small></div></a><nav class="scope-tabs" aria-label="بخش‌ها"><a href="./">خانه</a><a href="brands.html">🏷️ برندها</a><a href="iran.html">🇮🇷 ایران</a><a href="latest.html">🆕 تازه‌ها</a><a class="active" href="explore.html">Explore</a><a href="institutions.html">🏛️ نهادها</a></nav><div class="top-actions"><a class="pill-btn hide-mobile" href="map.html?view=world">🌍 نقشه</a><button class="icon-btn" data-theme-toggle title="تغییر تم"><span data-theme-icon>🌙</span></button></div></div></header>
+<main class="shell">
+<div class="scope-banner"><div><b>Explore</b><span> نمای حرفه‌ای برای جست‌وجو، فیلتر و بررسی کامل خبرها و داده‌ها.</span></div><a class="pill-btn" href="./">بازگشت به خانه ←</a></div>
+<div id="mobileTrends" class="mobile-trends"></div><div id="dashboardStrip" class="dashboard-strip"></div>
+<div class="layout">
+<aside class="filters side"><div class="side-card"><h3>فیلتر حرفه‌ای</h3><label>جست‌وجو</label><input id="search" type="search" placeholder="تیتر، برند، موضوع…"><label>موضوع</label><select id="category"><option value="">همه موضوع‌ها</option></select><label>کشور</label><select id="country"><option value="">همه کشورها</option></select><label>برند</label><select id="brand"><option value="">همه برندها</option></select><label>منبع</label><select id="source"><option value="">همه منابع</option></select><label>مرتب‌سازی</label><select id="sort"><option value="newest">جدیدترین</option><option value="score">مهم‌ترین</option></select></div><div class="side-card"><h3>وضعیت رادار</h3><div class="mini-stat"><span>خبر فارسی آماده</span><b id="count">—</b></div><div class="mini-stat"><span>منبع</span><b id="sources">—</b></div><div class="mini-stat"><span>۲۴ ساعت اخیر</span><b id="today">—</b></div><div class="mini-stat"><span>امتیاز ۸۰+</span><b id="high">—</b></div><p id="generated">در حال بارگذاری…</p></div></aside>
+<section class="feed" id="feed"><div class="feed-head"><div><h1>همه خبرهای جهان</h1><div class="sub">خبر، برند، عملیات، تجهیزات و فناوری؛ با فیلترهای کامل.</div></div><div id="visibleCount">—</div></div><div id="feedList"><div class="loading">در حال دریافت خبرها…</div></div></section>
+<aside class="trends side"><div class="side-card"><h3>ترندهای موضوعی</h3><div id="trendTopics"></div></div><div class="side-card"><h3>برندهای خبرساز</h3><div id="trendBrands"></div></div><div class="side-card"><h3>خبرهای مهم</h3><div id="hotNews" class="hot-list"></div></div></aside>
+</div></main>
+<script src="common.js"></script><script src="scope-v015.js"></script><script src="feed.js"></script>
+</body></html>
