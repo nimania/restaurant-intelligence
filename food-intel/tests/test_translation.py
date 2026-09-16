@@ -52,7 +52,7 @@ class TranslationTests(unittest.TestCase):
                 "summary_fa": "یک خلاصه کوتاه.",
                 "report_fa": "گزارش فارسی ذخیره‌شده درباره تغییر فناوری رستوران.",
                 "report_coverage": "متوسط",
-                "translation": {"status": "translated", "engine": "http-en-fa"},
+                "translation": {"status": "translated", "engine": "http-en-fa-v2", "cleanup_version": 2},
             }
         }
         with patch.object(PersianTranslator, "translate_article", side_effect=AssertionError("network should not be used")):
