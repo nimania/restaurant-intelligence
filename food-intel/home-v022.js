@@ -4,13 +4,13 @@ const DAY=864e5, HOUR=36e5;
 const FOLLOW_KEY='fi_followed_brands_v1';
 const INTEREST_KEY='fi_manager_interests_v1';
 const INTERESTS={
-  brand:{label:'مدیریت برند',terms:['brand','marketing','consumer','loyalty','pricing','campaign','برند','بازاریابی','وفاداری','قیمت']},
-  strategy:{label:'استراتژی و مدیریت',terms:['strategy','growth','leadership','expansion','finance','franchise','استراتژی','توسعه','مدیریت','سرمایه']},
-  ai:{label:'هوش مصنوعی و فناوری',terms:['ai','artificial intelligence','automation','technology','digital','robot','هوش مصنوعی','اتوماسیون','فناوری','ربات']},
-  operations:{label:'عملیات رستوران',terms:['operations','labor','kitchen','supply','food safety','عملیات','آشپزخانه','نیروی انسانی','زنجیره تامین']},
-  product:{label:'محصول و نوآوری',terms:['product','menu','innovation','launch','beverage','food','محصول','منو','نوآوری','نوشیدنی']},
-  marketing:{label:'مارکتینگ و مشتری',terms:['marketing','consumer','customer','loyalty','social','campaign','مشتری','وفاداری','کمپین']},
-  finance:{label:'مالی و سرمایه‌گذاری',terms:['earnings','revenue','sales','profit','investment','roi','فروش','درآمد','سود','سرمایه']}
+  brand:{label:'مدیریت برند',terms:['brand','marketing','consumer','loyalty','pricing','campaign','برند','بازاریابی','وفاداری','قیمت','marka','pazarlama','müşteri','sadakat','fiyat']},
+  strategy:{label:'استراتژی و مدیریت',terms:['strategy','growth','leadership','expansion','finance','franchise','استراتژی','توسعه','مدیریت','سرمایه','büyüme','yatırım','yönetim','franchise','bayilik']},
+  ai:{label:'هوش مصنوعی و فناوری',terms:['ai','artificial intelligence','automation','technology','digital','robot','هوش مصنوعی','اتوماسیون','فناوری','ربات','yapay zeka','otomasyon','teknoloji']},
+  operations:{label:'عملیات رستوران',terms:['operations','labor','kitchen','supply','food safety','عملیات','آشپزخانه','نیروی انسانی','زنجیره تامین','operasyon','mutfak','tedarik','gıda güvenliği']},
+  product:{label:'محصول و نوآوری',terms:['product','menu','innovation','launch','beverage','food','محصول','منو','نوآوری','نوشیدنی','ürün','menü','inovasyon','içecek','gıda']},
+  marketing:{label:'مارکتینگ و مشتری',terms:['marketing','consumer','customer','loyalty','social','campaign','مشتری','وفاداری','کمپین','pazarlama','tüketici','müşteri','kampanya']},
+  finance:{label:'مالی و سرمایه‌گذاری',terms:['earnings','revenue','sales','profit','investment','roi','فروش','درآمد','سود','سرمایه','ciro','satış','kâr','yatırım']}
 };
 function getSet(key){try{return new Set(JSON.parse(localStorage.getItem(key)||'[]'))}catch{return new Set()}}
 function saveSet(key,set){localStorage.setItem(key,JSON.stringify([...set]))}
@@ -18,9 +18,11 @@ let followed=getSet(FOLLOW_KEY), interests=getSet(INTEREST_KEY);
 let allItems=[], ready=[];
 function ms(x){const t=Date.parse(x?.published_at||'');return Number.isFinite(t)?t:0}
 function isRecent(x,h=24){return Date.now()-ms(x)<h*HOUR}
+function inferMarket(x,b){if(b?.market)return b.market;if(x.market==='turkey'||x.country==='TR'||x.geo?.primary_country?.code==='TR')return'turkey';if(x.market==='iran'||(x.iran_relevance_score||0)>=70)return'iran';return'world'}
+function marketLabel(m){return m==='iran'?'ایران':m==='turkey'?'ترکیه':'جهان'}
 function brandCatalog(items){
   const map=new Map((FI.brandCatalog||[]).map(b=>[b.id,b]));
-  for(const x of items)for(const b of x.brands||[])if(b?.id&&!map.has(b.id))map.set(b.id,{...b,market:b.market||((x.market==='iran'||(x.iran_relevance_score||0)>=70)?'iran':'world'),sector:'صنعت غذا'});
+  for(const x of items)for(const b of x.brands||[])if(b?.id&&!map.has(b.id))map.set(b.id,{...b,market:inferMarket(x,b),sector:'صنعت غذا'});
   return [...map.values()];
 }
 function brandRows(id){return ready.filter(x=>(x.brands||[]).some(b=>b.id===id))}
@@ -56,10 +58,9 @@ window.toggleFollow=toggleFollow;
 function renderBrands(){
   const brands=brandCatalog(ready).map(b=>[b,attentionFor(b)]).filter(([,s])=>s.d30||s.watch).sort((a,b)=>b[1].score-a[1].score);
   let top=brands.slice(0,8);
-  const hasIran=top.some(([b])=>b.market==='iran'),hasWorld=top.some(([b])=>b.market!=='iran');
-  if(!hasIran){const x=brands.find(([b])=>b.market==='iran');if(x)top[top.length-1]=x}
-  if(!hasWorld){const x=brands.find(([b])=>b.market!=='iran');if(x)top[top.length-1]=x}
-  $('hotBrands').innerHTML=top.slice(0,6).map(([b,s])=>`<article class="brand-pulse-card"><div class="brand-pulse-top">${logo(b)}<button class="follow-btn ${followed.has(b.id)?'following':''}" onclick="toggleFollow('${FI.esc(b.id)}')">${followed.has(b.id)?'✓ دنبال می‌کنم':'+ دنبال کردن'}</button></div><h3>${FI.esc(b.fa||b.name)}</h3><small>${FI.esc(b.name||'')} · ${b.market==='iran'?'ایران':'جهان'}</small><div class="attention-line"><span>شاخص توجه رادار</span><b>${FI.faN(s.score)}</b></div><div class="attention-bar"><i style="width:${s.score}%"></i></div>${sparkline(s.series)}<p class="brand-reason">${FI.esc(reason(b,s))}</p><a href="brand.html?id=${encodeURIComponent(b.id)}">در ۳۰ ثانیه ببین چه خبر است ←</a></article>`).join('');
+  const must=['iran','turkey','world'];
+  for(const market of must){if(!top.some(([b])=>b.market===market)){const x=brands.find(([b])=>b.market===market);if(x)top[Math.max(0,top.length-1)]=x}}
+  $('hotBrands').innerHTML=top.slice(0,6).map(([b,s])=>`<article class="brand-pulse-card"><div class="brand-pulse-top">${logo(b)}<button class="follow-btn ${followed.has(b.id)?'following':''}" onclick="toggleFollow('${FI.esc(b.id)}')">${followed.has(b.id)?'✓ دنبال می‌کنم':'+ دنبال کردن'}</button></div><h3>${FI.esc(b.fa||b.name)}</h3><small>${FI.esc(b.name||'')} · ${marketLabel(b.market)}</small><div class="attention-line"><span>شاخص توجه رادار</span><b>${FI.faN(s.score)}</b></div><div class="attention-bar"><i style="width:${s.score}%"></i></div>${sparkline(s.series)}<p class="brand-reason">${FI.esc(reason(b,s))}</p><a href="brand.html?id=${encodeURIComponent(b.id)}">در ۳۰ ثانیه ببین چه خبر است ←</a></article>`).join('');
 }
 function topicSignals(){
   const map=new Map();
