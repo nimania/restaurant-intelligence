@@ -7,18 +7,24 @@ from pathlib import Path
 from body_reader import enrich_article_bodies
 from fa_editor import editorial_meta
 from fa_narrative import build_narrative, source_chunks
-from translate_fa import PersianTranslator, compact_words, looks_persian
+from translate_fa import PersianTranslator, compact_words, looks_persian, source_language
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "news.json"
 NARRATIVE_VERSION = 2
 
 
-def translate_narrative(translator: PersianTranslator, source: str, title_fa: str = "") -> tuple[str, str]:
+def translate_narrative(
+    translator: PersianTranslator,
+    source: str,
+    title_fa: str = "",
+    source_lang: str = "en",
+) -> tuple[str, str]:
     """Translate short factual source units independently, then create Persian recap/report."""
     translated: list[str] = []
+    sl = source_language(source_lang)
     for unit in source_chunks(source):
-        translated.append(translator.translate(unit, 340))
+        translated.append(translator.translate(unit, 340, sl))
     return build_narrative(translated, title_fa=title_fa)
 
 
@@ -37,8 +43,6 @@ def _previous_snapshot(items: list[dict]) -> dict[str, dict]:
             previous.setdefault("article_body", {"status": "extracted", "cached_from_narrative": True})
             previous["report_source_kind"] = "article_body"
         else:
-            # Force v1/legacy reports back through the source reader so public prose
-            # is gradually replaced by sentence-level v2 recaps.
             previous.pop("article_body", None)
             previous.pop("report_source_kind", None)
             previous.pop("report_source_chars", None)
@@ -71,7 +75,12 @@ def main() -> None:
             continue
 
         try:
-            report, recap = translate_narrative(translator, source, title_fa=str(item.get("title_fa") or ""))
+            report, recap = translate_narrative(
+                translator,
+                source,
+                title_fa=str(item.get("title_fa") or ""),
+                source_lang=str(item.get("language") or "en"),
+            )
             if report:
                 item["narrative_fa"] = report
                 item["recap_fa"] = recap or compact_words(report, 105)
