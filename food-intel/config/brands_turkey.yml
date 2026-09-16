@@ -1,0 +1,196 @@
+brands:
+  # Restaurant, cafe and foodservice chains
+  - id: simit_sarayi
+    name: Simit Sarayı
+    fa: سیمیت سارایی
+    market: turkey
+    sector: رستوران، کافه و بیکری
+    aliases: ["simit sarayı", "simit sarayi"]
+  - id: tavuk_dunyasi
+    name: Tavuk Dünyası
+    fa: تاووک دونیاسی
+    market: turkey
+    sector: رستوران زنجیره‌ای
+    aliases: ["tavuk dünyası", "tavuk dunyasi"]
+  - id: durumle
+    name: Dürümle
+    fa: دورومله
+    market: turkey
+    sector: فست‌کژوال و رستوران زنجیره‌ای
+    aliases: ["dürümle", "durumle"]
+  - id: baydoner
+    name: Baydöner
+    fa: بای‌دونر
+    market: turkey
+    sector: رستوران زنجیره‌ای
+    aliases: ["baydöner", "baydoner"]
+  - id: hd_iskender
+    name: HD İskender
+    fa: اچ‌دی اسکندر
+    market: turkey
+    sector: رستوران زنجیره‌ای
+    aliases: ["hd iskender", "hd i̇skender"]
+  - id: pidem
+    name: Pidem
+    fa: پیدم
+    market: turkey
+    sector: رستوران زنجیره‌ای
+    aliases: ["pidem"]
+  - id: kofteci_yusuf
+    name: Köfteci Yusuf
+    fa: کوفته‌چی یوسف
+    market: turkey
+    sector: رستوران و خرده‌فروشی غذا
+    aliases: ["köfteci yusuf", "kofteci yusuf"]
+  - id: mado
+    name: MADO
+    fa: مادو
+    market: turkey
+    sector: کافه، بستنی و رستوران
+    aliases: ["mado"]
+  - id: kahve_dunyasi
+    name: Kahve Dünyası
+    fa: قهوه دونیاسی
+    market: turkey
+    sector: قهوه و کافه
+    aliases: ["kahve dünyası", "kahve dunyasi"]
+  - id: bigchefs
+    name: BigChefs
+    fa: بیگ‌شفز
+    market: turkey
+    sector: رستوران فول‌سرویس
+    aliases: ["bigchefs", "big chefs", "büyük şefler"]
+  - id: happy_moons
+    name: Happy Moon's
+    fa: هپی مونز
+    market: turkey
+    sector: رستوران فول‌سرویس
+    aliases: ["happy moon's", "happy moons", "happy moon’s"]
+  - id: ozsut
+    name: Özsüt
+    fa: اوزسوت
+    market: turkey
+    sector: کافه و شیرینی
+    aliases: ["özsüt", "ozsut"]
+  - id: bursa_kebap_evi
+    name: Bursa Kebap Evi
+    fa: بورسا کباب اوی
+    market: turkey
+    sector: رستوران زنجیره‌ای
+    aliases: ["bursa kebap evi"]
+  - id: espressolab
+    name: Espressolab
+    fa: اسپرسولب
+    market: turkey
+    sector: قهوه و کافه
+    aliases: ["espressolab"]
+  - id: komagene
+    name: Komagene
+    fa: کوماگنه
+    market: turkey
+    sector: فست‌فود و فرنچایز
+    aliases: ["komagene"]
+  - id: tab_gida
+    name: TAB Gıda
+    fa: تاب گیدا
+    market: turkey
+    sector: اپراتور رستوران و فرنچایز
+    aliases: ["tab gıda", "tab gida"]
+
+  # Food and beverage manufacturers / FMCG
+  - id: ulker
+    name: Ülker
+    fa: اولکر
+    market: turkey
+    sector: اسنک، بیسکویت و شیرینی
+    aliases: ["ülker", "ulker"]
+  - id: eti_turkey
+    name: ETi
+    fa: اتی
+    market: turkey
+    sector: بیسکویت، اسنک و شیرینی
+    aliases: ["eti gıda", "eti gida", "eti"]
+  - id: pinar
+    name: Pınar
+    fa: پینار
+    market: turkey
+    sector: لبنیات، گوشت و مواد غذایی
+    aliases: ["pınar", "pinar"]
+  - id: sutas
+    name: Sütaş
+    fa: سوتاش
+    market: turkey
+    sector: لبنیات
+    aliases: ["sütaş", "sutas"]
+  - id: dardanel
+    name: Dardanel
+    fa: داردانل
+    market: turkey
+    sector: کنسرو و غذاهای دریایی
+    aliases: ["dardanel"]
+  - id: tamek
+    name: TAMEK
+    fa: تامک
+    market: turkey
+    sector: نوشیدنی، کنسرو و سس
+    aliases: ["tamek"]
+  - id: tat_gida
+    name: Tat Gıda
+    fa: تات گیدا
+    market: turkey
+    sector: کنسرو، رب و مواد غذایی
+    aliases: ["tat gıda", "tat gida"]
+  - id: tukas
+    name: Tukaş
+    fa: توکاش
+    market: turkey
+    sector: کنسرو، رب و مواد غذایی
+    aliases: ["tukaş", "tukas"]
+  - id: solen
+    name: Şölen
+    fa: شولن
+    market: turkey
+    sector: شکلات، اسنک و شیرینی
+    aliases: ["şölen", "solen", "şölen çikolata"]
+  - id: dimes
+    name: DİMES
+    fa: دیمس
+    market: turkey
+    sector: نوشیدنی و آبمیوه
+    aliases: ["dimes", "di̇mes"]
+  - id: uludag_icecek
+    name: Uludağ İçecek
+    fa: اولوداغ ایچجک
+    market: turkey
+    sector: نوشیدنی
+    aliases: ["uludağ içecek", "uludag icecek", "uludağ gazoz"]
+  - id: dogus_cay
+    name: Doğuş Çay
+    fa: دوغوش چای
+    market: turkey
+    sector: چای و نوشیدنی
+    aliases: ["doğuş çay", "dogus cay"]
+  - id: caykur
+    name: ÇAYKUR
+    fa: چای‌کور
+    market: turkey
+    sector: چای
+    aliases: ["çaykur", "caykur"]
+  - id: bey_pazari
+    name: Beypazarı
+    fa: بی‌پازاری
+    market: turkey
+    sector: آب معدنی و نوشیدنی
+    aliases: ["beypazarı", "beypazari"]
+  - id: oba_makarna
+    name: Oba Makarna
+    fa: اوبا ماکارنا
+    market: turkey
+    sector: پاستا و صنایع غذایی
+    aliases: ["oba makarna"]
+  - id: reis_gida
+    name: Reis Gıda
+    fa: ریس گیدا
+    market: turkey
+    sector: حبوبات و مواد غذایی
+    aliases: ["reis gıda", "reis gida"]
