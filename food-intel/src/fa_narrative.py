@@ -5,10 +5,9 @@ import re
 from fa_editor import editorialize_report, editorialize_summary
 from fa_polish import polish_persian
 
-MAX_NARRATIVE_WORDS = 230
-SOURCE_CHUNK_CHARS = 380
-MAX_SOURCE_CHUNKS = 8
-SENTENCE_RE = re.compile(r"(?<=[.!؟!])\s+")
+MAX_NARRATIVE_WORDS = 320
+MAX_SOURCE_UNITS = 10
+MAX_UNIT_CHARS = 300
 
 
 def _tokens(text: str) -> set[str]:
@@ -24,76 +23,81 @@ def _similar(a: str, b: str) -> float:
 
 
 def source_chunks(text: str) -> list[str]:
+    """Return short source units for faithful sentence-level translation.
+
+    Units stay in source order. Long source sentences are clipped at a clause boundary
+    rather than merged into a large paragraph. This reduces the syntax drift seen when
+    generic MT receives long newsroom paragraphs.
+    """
     value = re.sub(r"\s+", " ", str(text or "")).strip()
     if not value:
         return []
     sentences = [x.strip() for x in re.split(r"(?<=[.!?])\s+", value) if x.strip()]
-    chunks: list[str] = []
-    current = ""
+    units: list[str] = []
     for sentence in sentences:
-        candidate = f"{current} {sentence}".strip()
-        if len(candidate) <= SOURCE_CHUNK_CHARS:
-            current = candidate
-            continue
-        if current:
-            chunks.append(current)
-        current = sentence
-        if len(chunks) >= MAX_SOURCE_CHUNKS:
+        if len(units) >= MAX_SOURCE_UNITS:
             break
-    if current and len(chunks) < MAX_SOURCE_CHUNKS:
-        chunks.append(current)
-    return chunks[:MAX_SOURCE_CHUNKS]
+        if len(sentence) <= MAX_UNIT_CHARS:
+            units.append(sentence)
+            continue
+        clauses = [x.strip() for x in re.split(r"(?<=[,;:])\s+", sentence) if x.strip()]
+        current = ""
+        for clause in clauses:
+            candidate = f"{current} {clause}".strip()
+            if len(candidate) <= MAX_UNIT_CHARS:
+                current = candidate
+            else:
+                if current:
+                    units.append(current)
+                current = clause[:MAX_UNIT_CHARS]
+                if len(units) >= MAX_SOURCE_UNITS:
+                    break
+        if current and len(units) < MAX_SOURCE_UNITS:
+            units.append(current)
+    return units[:MAX_SOURCE_UNITS]
 
 
-def _distinct_sentences(text: str, title_fa: str = "") -> list[str]:
-    value = editorialize_report(polish_persian(text), sentences_per_paragraph=1)
-    raw = [x.strip() for x in re.split(r"\n+|(?<=[.!؟!])\s+", value) if x.strip()]
+def _distinct_sentences(parts: list[str], title_fa: str = "") -> list[str]:
     out: list[str] = []
-    for sentence in raw:
-        if len(sentence) < 18:
-            continue
-        if title_fa and _similar(sentence, title_fa) >= 0.88:
-            continue
-        if any(_similar(sentence, old) >= 0.82 for old in out):
-            continue
-        out.append(sentence)
+    for part in parts:
+        value = editorialize_report(polish_persian(part), sentences_per_paragraph=1)
+        raw = [x.strip() for x in re.split(r"\n+|(?<=[.!؟!])\s+", value) if x.strip()]
+        for sentence in raw:
+            if len(sentence) < 18:
+                continue
+            if title_fa and _similar(sentence, title_fa) >= 0.90:
+                continue
+            if any(_similar(sentence, old) >= 0.84 for old in out):
+                continue
+            out.append(sentence)
     return out
 
 
-def _trim_sentences(sentences: list[str], max_words: int = MAX_NARRATIVE_WORDS) -> list[str]:
-    out: list[str] = []
-    used = 0
+def _trim(sentences: list[str], max_words: int = MAX_NARRATIVE_WORDS) -> list[str]:
+    out, used = [], 0
     for sentence in sentences:
         words = sentence.split()
         if out and used + len(words) > max_words:
             break
-        if not out and len(words) > max_words:
-            out.append(" ".join(words[:max_words]).rstrip("،؛,:-. ") + "…")
-            break
-        out.append(sentence)
-        used += len(words)
+        out.append(sentence if len(words) <= max_words else " ".join(words[:max_words]).rstrip("،؛,:-. ") + "…")
+        used += min(len(words), max_words)
     return out
 
 
 def build_narrative(translated_parts: list[str], title_fa: str = "") -> tuple[str, str]:
-    """Build a readable Persian news narrative from separately translated source chunks.
+    """Build a source-faithful Persian report plus a 30-second recap.
 
-    The function does not invent transitions or analysis. It keeps source order,
-    removes near-duplicates, preserves factual sentences, and formats them as short
-    newsroom paragraphs. Returns (narrative, short_summary).
+    No analysis or invented transitions are added. The report is a reordered-by-source
+    reconstruction of translated factual units; the recap is a compact selection from
+    the first distinct facts. Returns (report_fa, recap_fa).
     """
-    merged = " ".join(polish_persian(x) for x in translated_parts if x).strip()
-    if not merged:
-        return "", ""
-
-    sentences = _trim_sentences(_distinct_sentences(merged, title_fa))
+    sentences = _trim(_distinct_sentences([x for x in translated_parts if x], title_fa))
     if not sentences:
         return "", ""
-
-    paragraphs: list[str] = []
-    for i in range(0, len(sentences), 2):
-        paragraphs.append(" ".join(sentences[i : i + 2]).strip())
-    narrative = "\n\n".join(paragraphs)
-    narrative = editorialize_report(narrative, sentences_per_paragraph=2)
-    summary = editorialize_summary(" ".join(sentences[:3]), max_sentences=3)
-    return narrative.strip(), summary.strip()
+    paragraphs = [" ".join(sentences[i:i + 2]).strip() for i in range(0, len(sentences), 2)]
+    report = editorialize_report("\n\n".join(paragraphs), sentences_per_paragraph=2).strip()
+    recap = editorialize_summary(" ".join(sentences[:4]), max_sentences=4).strip()
+    recap_words = recap.split()
+    if len(recap_words) > 105:
+        recap = " ".join(recap_words[:105]).rstrip("،؛,:-. ") + "…"
+    return report, recap
