@@ -9,7 +9,13 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 from fa_editor import editorial_meta, editorialize_report, editorialize_summary, editorialize_title
-from fa_polish import polish_persian, prepare_for_translation
+from fa_polish import (
+    EXTRA_BRAND_TERMS,
+    TERM_GLOSSARY,
+    brand_replacements,
+    normalize_source_semantics,
+    polish_persian,
+)
 
 PERSIAN_RE = re.compile(r"[\u0600-\u06FF]")
 DEFAULT_TRANSLATION_LIMIT = 180
@@ -17,20 +23,13 @@ MAX_CONSECUTIVE_FAILURES = 4
 GOOGLE_ENDPOINT = "https://translate.googleapis.com/translate_a/single"
 MYMEMORY_ENDPOINT = "https://api.mymemory.translated.net/get"
 SPLIT_MARKER = "[[[NIMA_SPLIT_9F7C]]]"
-CLEANUP_VERSION = 1
+CLEANUP_VERSION = 2
 
 DEEP_ENRICHMENT_FIELDS = (
-    "narrative_fa",
-    "narrative_basis",
-    "narrative_version",
-    "narrative_word_count",
-    "article_body",
-    "report_source_kind",
-    "report_source_chars",
-    "report_selected_chars",
-    "report_basis",
-    "report_word_count",
-    "key_points_fa",
+    "narrative_fa", "recap_fa", "narrative_basis", "narrative_version",
+    "narrative_word_count", "article_body", "report_source_kind",
+    "report_source_chars", "report_selected_chars", "report_basis",
+    "report_word_count", "key_points_fa",
 )
 
 
@@ -40,8 +39,7 @@ def looks_persian(text: str) -> bool:
     letters = [c for c in text if c.isalpha()]
     if not letters:
         return False
-    fa_letters = len(PERSIAN_RE.findall(text))
-    return fa_letters / max(len(letters), 1) >= 0.30
+    return len(PERSIAN_RE.findall(text)) / max(len(letters), 1) >= 0.30
 
 
 def compact(text: str, limit: int) -> str:
@@ -61,15 +59,10 @@ def compact_words(text: str, max_words: int = 190) -> str:
 
 def coverage_label(source_chars: int | None) -> str:
     n = int(source_chars or 0)
-    if n >= 1200:
-        return "گسترده"
-    if n >= 500:
-        return "متوسط"
-    return "خلاصه منبع"
+    return "گسترده" if n >= 1200 else "متوسط" if n >= 500 else "خلاصه منبع"
 
 
 def restore_deep_enrichment(item: dict, previous: dict) -> None:
-    """Keep body/narrative enrichment when an unchanged feed item is refreshed."""
     for field in DEEP_ENRICHMENT_FIELDS:
         if previous.get(field) is not None:
             item[field] = previous.get(field)
@@ -84,39 +77,69 @@ class TranslationStats:
     queued: int = 0
 
 
-class PersianTranslator:
-    """Lightweight HTTP English→Persian translator with editorial cleanup."""
+def _ascii_replace(text: str, source: str, replacement: str) -> str:
+    pattern = rf"(?<![A-Za-z0-9]){re.escape(source)}(?![A-Za-z0-9])"
+    return re.sub(pattern, replacement, text, flags=re.IGNORECASE)
 
-    def __init__(self, timeout: int = 4, pause: float = 0.08) -> None:
+
+def _protect_source_terms(text: str) -> tuple[str, dict[str, str]]:
+    """Protect brands/industry terminology without mixing Persian into English input.
+
+    Previous versions inserted Persian words into the English source before sending it
+    to the translator. That mixed-language input was a major source of broken syntax.
+    v2 keeps input English and uses opaque ASCII placeholders, restored afterwards.
+    """
+    value = normalize_source_semantics(text)
+    replacements: list[tuple[str, str]] = []
+    replacements.extend(brand_replacements())
+    replacements.extend(EXTRA_BRAND_TERMS)
+    replacements.extend(TERM_GLOSSARY)
+    seen: set[str] = set()
+    ordered: list[tuple[str, str]] = []
+    for source, target in sorted(replacements, key=lambda x: len(x[0]), reverse=True):
+        key = source.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        ordered.append((source, target))
+    protected: dict[str, str] = {}
+    for i, (source, target) in enumerate(ordered):
+        token = f"NIMATERM{i:04d}ZXQ"
+        new_value = _ascii_replace(value, source, token)
+        if new_value != value:
+            protected[token] = target
+            value = new_value
+    return value, protected
+
+
+def _restore_source_terms(text: str, protected: dict[str, str]) -> str:
+    value = text
+    for token, target in protected.items():
+        value = re.sub(re.escape(token), target, value, flags=re.IGNORECASE)
+        # Some engines may insert a space before the suffix.
+        value = re.sub(re.escape(token.replace("ZXQ", " ZXQ")), target, value, flags=re.IGNORECASE)
+    return value
+
+
+class PersianTranslator:
+    def __init__(self, timeout: int = 4, pause: float = 0.06) -> None:
         self.timeout = timeout
         self.pause = pause
 
     def _read_json(self, url: str) -> object:
-        request = Request(
-            url,
-            headers={
-                "User-Agent": "FoodIndustryIntelligence/1.2 (+https://github.com/nimania/restaurant-intelligence)",
-                "Accept": "application/json,text/plain,*/*",
-            },
-        )
+        request = Request(url, headers={
+            "User-Agent": "FoodIndustryIntelligence/2.0 (+https://github.com/nimania/restaurant-intelligence)",
+            "Accept": "application/json,text/plain,*/*",
+        })
         with urlopen(request, timeout=self.timeout) as response:
             return json.loads(response.read().decode("utf-8"))
 
     def _google(self, text: str) -> str:
-        query = urlencode({
-            "client": "gtx",
-            "sl": "auto",
-            "tl": "fa",
-            "dt": "t",
-            "q": text,
-        })
+        query = urlencode({"client": "gtx", "sl": "en", "tl": "fa", "dt": "t", "q": text})
         payload = self._read_json(f"{GOOGLE_ENDPOINT}?{query}")
         if not isinstance(payload, list) or not payload or not isinstance(payload[0], list):
             raise RuntimeError("unexpected primary translation response")
-        translated = "".join(
-            part[0] for part in payload[0]
-            if isinstance(part, list) and part and isinstance(part[0], str)
-        ).strip()
+        translated = "".join(part[0] for part in payload[0] if isinstance(part, list) and part and isinstance(part[0], str)).strip()
         if not translated:
             raise RuntimeError("empty primary translation response")
         return translated
@@ -124,29 +147,27 @@ class PersianTranslator:
     def _mymemory(self, text: str) -> str:
         if len(text.encode("utf-8")) > 450:
             raise RuntimeError("fallback text is too long")
-        query = urlencode({"q": text, "langpair": "en|fa"})
-        payload = self._read_json(f"{MYMEMORY_ENDPOINT}?{query}")
-        translated = ""
-        if isinstance(payload, dict):
-            translated = str((payload.get("responseData") or {}).get("translatedText") or "").strip()
+        payload = self._read_json(f"{MYMEMORY_ENDPOINT}?{urlencode({'q': text, 'langpair': 'en|fa'})}")
+        translated = str((payload.get("responseData") or {}).get("translatedText") or "").strip() if isinstance(payload, dict) else ""
         if not translated:
             raise RuntimeError("empty fallback translation response")
         return translated
 
     def translate(self, text: str, limit: int) -> str:
-        text = compact(prepare_for_translation(text), limit)
-        if not text:
+        source = compact(text, limit)
+        if not source:
             return ""
-        if looks_persian(text) and not re.search(r"[A-Za-z]{4,}", text):
-            return compact(polish_persian(text), limit + 220)
-
+        if looks_persian(source) and not re.search(r"[A-Za-z]{4,}", source):
+            return compact(polish_persian(source), limit + 220)
+        protected_source, protected = _protect_source_terms(source)
         last_error: Exception | None = None
         for engine in (self._google, self._mymemory):
             try:
-                translated = polish_persian(engine(text))
+                translated = _restore_source_terms(engine(protected_source), protected)
+                translated = polish_persian(translated)
                 if translated and looks_persian(translated):
                     time.sleep(self.pause)
-                    return compact(translated, limit + 220)
+                    return compact(translated, limit + 260)
                 last_error = RuntimeError("translation result is not Persian")
             except Exception as exc:
                 last_error = exc
@@ -156,43 +177,16 @@ class PersianTranslator:
         title = compact(title, 240)
         summary = compact(summary, 520)
         body = compact(report_source or summary, 1200)
-
-        if body:
-            combined = f"{title}\n\n{SPLIT_MARKER}\n\n{body}"
-            try:
-                translated = self.translate(combined, 1550)
-                if SPLIT_MARKER in translated:
-                    title_fa, body_fa = translated.split(SPLIT_MARKER, 1)
-                    title_fa = editorialize_title(compact(polish_persian(title_fa), 420))
-                    body_raw = compact_words(polish_persian(body_fa), 190)
-                    body_fa = editorialize_report(body_raw)
-                    if title_fa and looks_persian(title_fa) and body_fa:
-                        summary_fa = compact_words(editorialize_summary(body_raw, 3), 85)
-                        return title_fa, summary_fa, body_fa
-            except Exception:
-                pass
-
-        if not summary:
-            title_fa = editorialize_title(self.translate(title, 240))
-            return title_fa, "", ""
-
-        combined = f"{title}\n\n{SPLIT_MARKER}\n\n{summary}"
-        try:
-            translated = self.translate(combined, 820)
-            if SPLIT_MARKER in translated:
-                title_fa, summary_fa = translated.split(SPLIT_MARKER, 1)
-                title_fa = editorialize_title(compact(polish_persian(title_fa), 420))
-                summary_raw = compact_words(polish_persian(summary_fa), 85)
-                summary_fa = editorialize_summary(summary_raw, 3)
-                if title_fa and looks_persian(title_fa):
-                    return title_fa, summary_fa, editorialize_report(summary_raw)
-        except Exception:
-            pass
-
         title_fa = editorialize_title(self.translate(title, 240))
-        summary_raw = compact_words(self.translate(summary, 520), 85)
-        summary_fa = editorialize_summary(summary_raw, 3)
-        return title_fa, summary_fa, editorialize_report(summary_raw)
+        source_for_public = body or summary
+        if not source_for_public:
+            return title_fa, "", ""
+        # Short feed-level fallback only. Full body-based reporting is handled later
+        # sentence-by-sentence in body_enrich.py.
+        translated = self.translate(source_for_public, min(max(len(source_for_public) + 80, 520), 1280))
+        summary_fa = editorialize_summary(compact_words(translated, 80), 3)
+        report_fa = editorialize_report(compact_words(translated, 150))
+        return title_fa, summary_fa, report_fa
 
 
 def _translation_limit() -> int:
@@ -206,20 +200,16 @@ def _meta(status: str, engine: str | None) -> dict:
     return {"status": status, "engine": engine, "cleanup_version": CLEANUP_VERSION}
 
 
-def apply_persian_translation(
-    items: list[dict], previous_by_id: dict[str, dict] | None = None
-) -> TranslationStats:
+def apply_persian_translation(items: list[dict], previous_by_id: dict[str, dict] | None = None) -> TranslationStats:
     previous_by_id = previous_by_id or {}
     stats = TranslationStats()
     translator = PersianTranslator()
     pending: list[dict] = []
 
     for item in items:
-        title = item.get("title", "")
-        summary = item.get("summary", "")
+        title, summary = item.get("title", ""), item.get("summary", "")
         previous = previous_by_id.get(item.get("id", ""), {})
         source_chars = item.get("source_detail_chars") or len(summary)
-
         if item.get("language") == "fa" or looks_persian(title):
             item["title_fa"] = polish_persian(title)
             item["summary_fa"] = compact(polish_persian(summary), 520)
@@ -230,80 +220,57 @@ def apply_persian_translation(
             stats.persian_original += 1
             continue
 
-        same_source_text = (
-            previous.get("title") == title
-            and previous.get("summary") == summary
-            and previous.get("title_fa")
-        )
-        if same_source_text:
+        same_source = previous.get("title") == title and previous.get("summary") == summary and previous.get("title_fa")
+        previous_version = int((previous.get("translation") or {}).get("cleanup_version") or 0)
+        if same_source:
             restore_deep_enrichment(item, previous)
 
-        if same_source_text and previous.get("report_fa"):
+        # v2 invalidates old feed-level translations so broken mixed-language cache is replaced.
+        if same_source and previous_version >= CLEANUP_VERSION and previous.get("report_fa"):
             item["title_fa"] = editorialize_title(previous.get("title_fa", ""))
             item["summary_fa"] = editorialize_summary(previous.get("summary_fa", ""), 3)
-            # If a body-based narrative exists it is the canonical public report.
-            canonical_report = previous.get("narrative_fa") or previous.get("report_fa", previous.get("summary_fa", ""))
-            item["report_fa"] = editorialize_report(canonical_report)
+            canonical = previous.get("narrative_fa") or previous.get("report_fa", "")
+            item["report_fa"] = editorialize_report(canonical)
             if previous.get("narrative_fa"):
                 item["narrative_fa"] = item["report_fa"]
             item["report_coverage"] = previous.get("report_coverage") or coverage_label(source_chars)
-            item["translation"] = _meta(
-                "translated",
-                (previous.get("translation") or {}).get("engine") or "http-en-fa",
-            )
-            item["editorial"] = editorial_meta("edited-cache")
+            item["translation"] = _meta("translated", (previous.get("translation") or {}).get("engine") or "http-en-fa-v2")
+            item["editorial"] = editorial_meta("edited-cache-v2")
             stats.reused += 1
             continue
 
-        if same_source_text:
-            item["title_fa"] = editorialize_title(previous.get("title_fa", ""))
-            item["summary_fa"] = editorialize_summary(previous.get("summary_fa", ""), 3)
-            item["report_fa"] = editorialize_report(previous.get("report_fa", ""))
-        else:
-            item["title_fa"] = ""
-            item["summary_fa"] = ""
-            item["report_fa"] = ""
+        item["title_fa"] = ""
+        item["summary_fa"] = ""
+        item["report_fa"] = ""
+        if not previous.get("narrative_fa"):
             item.pop("narrative_fa", None)
         item["report_coverage"] = coverage_label(source_chars)
-        item["translation"] = _meta("queued", "http-en-fa")
-        item["editorial"] = editorial_meta("pending")
+        item["translation"] = _meta("queued", "http-en-fa-v2")
+        item["editorial"] = editorial_meta("pending-v2")
         pending.append(item)
 
-    pending.sort(
-        key=lambda x: (x.get("relevance_score") or 0, x.get("published_at") or ""),
-        reverse=True,
-    )
+    pending.sort(key=lambda x: (x.get("relevance_score") or 0, x.get("published_at") or ""), reverse=True)
     limit = _translation_limit()
     consecutive_failures = 0
-
     for index, item in enumerate(pending):
         if index >= limit:
             stats.queued += 1
             continue
-
         try:
-            title_fa, summary_fa, report_fa = translator.translate_article(
-                item.get("title", ""),
-                item.get("summary", ""),
-                item.get("_report_source", ""),
-            )
-            item["title_fa"] = editorialize_title(title_fa or item.get("title_fa", ""))
-            item["summary_fa"] = editorialize_summary(summary_fa or item.get("summary_fa", ""), 3)
-            item["report_fa"] = editorialize_report(report_fa or item.get("summary_fa", ""))
+            title_fa, summary_fa, report_fa = translator.translate_article(item.get("title", ""), item.get("summary", ""), item.get("_report_source", ""))
+            item["title_fa"] = editorialize_title(title_fa)
+            item["summary_fa"] = editorialize_summary(summary_fa, 3)
+            item["report_fa"] = editorialize_report(report_fa or summary_fa)
             item["report_coverage"] = coverage_label(item.get("source_detail_chars"))
-            item["translation"] = _meta("translated", "http-en-fa")
-            item["editorial"] = editorial_meta("edited")
+            item["translation"] = _meta("translated", "http-en-fa-v2")
+            item["editorial"] = editorial_meta("edited-v2")
             stats.translated += 1
             consecutive_failures = 0
         except Exception as exc:
-            item["translation"] = {
-                **_meta("failed", "http-en-fa"),
-                "error": str(exc)[:160],
-            }
-            item["editorial"] = editorial_meta("pending")
+            item["translation"] = {**_meta("failed", "http-en-fa-v2"), "error": str(exc)[:160]}
+            item["editorial"] = editorial_meta("pending-v2")
             stats.failed += 1
             consecutive_failures += 1
-
             if consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
                 remaining = min(limit, len(pending)) - index - 1
                 if remaining > 0:
@@ -311,5 +278,4 @@ def apply_persian_translation(
                 if len(pending) > limit:
                     stats.queued += len(pending) - limit
                 break
-
     return stats
