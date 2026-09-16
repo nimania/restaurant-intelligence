@@ -62,6 +62,9 @@ jobs:
       - name: Discover global brand mentions
         run: python food-intel/src/brand_watch_global.py
 
+      - name: Discover Turkish brands and food-industry news
+        run: python food-intel/src/turkey_watch.py
+
       - name: Read article bodies and deepen Persian reports
         run: python food-intel/src/body_enrich.py
 
