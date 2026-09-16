@@ -118,7 +118,7 @@ function externalLinksHtml(b,compact=false){
 function brandProfilesSection(x){
   const brands=x.brands||[];
   if(!brands.length||!FI.brandLinksFor)return'';
-  return `<section class="section brand-profiles-section"><div class="brand-profiles-head"><div><h2>برندها و شبکه‌های رسمی</h2><p>وب‌سایت و شبکه‌های اجتماعی مرتبط با برندهای این خبر. «رسمی» یعنی لینک مستقیم ثبت شده؛ «جست‌وجو» برای مواردی است که هنوز آدرس مستقیم تأیید نشده است.</p></div></div><div class="brand-profile-grid">${brands.map(b=>{const logo=FI.brandLogo(b);return `<article class="brand-profile-card"><div class="brand-profile-title">${logo?`<img src="${FI.esc(logo)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:''}<div><b>${FI.esc(b.fa||b.name)}</b><small>${FI.esc(b.name||'')}</small></div></div>${externalLinksHtml(b)}</article>`}).join('')}</div></section>`;
+  return `<section class="section brand-profiles-section"><div class="brand-profiles-head"><div><h2>برندها و شبکه‌های رسمی</h2><p>وب‌سایت، شبکه‌های اجتماعی و پروفایل اطلاعاتی برندهای مرتبط با این خبر.</p></div></div><div class="brand-profile-grid">${brands.map(b=>{const logo=FI.brandLogo(b);return `<article class="brand-profile-card"><div class="brand-profile-title">${logo?`<img src="${FI.esc(logo)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:''}<div><b>${FI.esc(b.fa||b.name)}</b><small>${FI.esc(b.name||'')}</small></div></div>${externalLinksHtml(b)}<a class="brand-profile-jump" href="brand.html?id=${encodeURIComponent(b.id)}">پروفایل این برند ←</a></article>`}).join('')}</div></section>`;
 }
 
 function brandDossier(x,items){
@@ -128,7 +128,8 @@ function brandDossier(x,items){
   const recent=related.filter(y=>Date.now()-new Date(y.published_at)<30*864e5).length;
   const s=FI.brandStyles[b.id];
   const logo=FI.brandLogo(b);
-  return `<div class="side-card brand-dossier"><h3>رادار برند</h3><div class="brand-head">${logo?`<img src="${logo}" alt="${FI.esc(b.fa||b.name)}" onerror="this.remove()">`:`<span class="brand-dot" style="${s?`background:${s[0]};color:${s[1]}`:''}">●</span>`}<div><b>${FI.esc(b.fa||b.name)}</b><small style="display:block;color:var(--muted)">${FI.faN(recent)} خبر در ۳۰ روز اخیر</small></div></div><p>وب‌سایت و شبکه‌های برند را باز کن یا همه خبرهای مرتبط با آن را ببین.</p>${externalLinksHtml(b,true)}<a class="pill-btn brand-news-btn" href="./?brand=${encodeURIComponent(b.id)}#feed">خبرهای این برند</a></div>`;
+  const explore=`${FI.isIran(x)?'iran.html':'explore.html'}?brand=${encodeURIComponent(b.id)}#feed`;
+  return `<div class="side-card brand-dossier"><h3>رادار برند</h3><div class="brand-head">${logo?`<img src="${logo}" alt="${FI.esc(b.fa||b.name)}" onerror="this.remove()">`:`<span class="brand-dot" style="${s?`background:${s[0]};color:${s[1]}`:''}">●</span>`}<div><b>${FI.esc(b.fa||b.name)}</b><small style="display:block;color:var(--muted)">${FI.faN(recent)} خبر در ۳۰ روز اخیر</small></div></div><p>ببین این برند در هفته‌های اخیر روی چه موضوع‌هایی حرکت کرده و منابع رسمی‌اش چه گفته‌اند.</p>${externalLinksHtml(b,true)}<div class="brand-news-stack"><a class="pill-btn" href="brand.html?id=${encodeURIComponent(b.id)}">پروفایل برند</a><a class="pill-btn" href="${explore}">همه خبرها</a></div></div>`;
 }
 
 function render(x,items){
@@ -153,24 +154,26 @@ function render(x,items){
     ['ارتباط با ایران',FI.faN(x.iran_relevance_score||0)]
   ];
 
-  const summary=String(x.summary_fa||'').trim();
-  const report=String(x.report_fa||'').trim();
-  let lead=summary&&!nearDuplicate(summary,x.title_fa,.88)?summary:'';
-  const showReport=materiallyRicher(report,lead||summary,x.title_fa);
+  const v2=Number(x.narrative_version||0)>=2;
+  const recap=String(x.recap_fa||x.summary_fa||'').trim();
+  const report=String(x.narrative_fa||x.report_fa||'').trim();
+  let lead=recap&&!nearDuplicate(recap,x.title_fa,.88)?recap:'';
+  const showReport=materiallyRicher(report,lead||recap,x.title_fa);
   if(!lead&&report&&!showReport)lead=report;
   const points=distinctKeyPoints(x,lead,showReport?report:'');
   const coverage=reportCoverage(x);
   const edited=String(x.editorial?.status||'').startsWith('edited');
-  const reportTitle=coverage==='خلاصه منبع'||coverage==='بر پایه خلاصه منبع'?'جزئیات فارسی خبر':'گزارش جامع فارسی';
+  const reportTitle=v2?'گزارش فارسی از منبع':(coverage==='خلاصه منبع'||coverage==='بر پایه خلاصه منبع'?'جزئیات فارسی خبر':'گزارش فارسی خبر');
+  const recapSection=lead?`<section class="recap-box"><div class="recap-kicker">⚡ ${v2?'خلاصه ۳۰ ثانیه‌ای':'خلاصه سریع'}</div><h2>${v2?'اصل ماجرا چیست؟':'خلاصه خبر'}</h2><p>${FI.richText(lead)}</p>${v2?'<div class="source-report-note">این خلاصه از <b>متن منبع</b> بازسازی شده و ترجمه خط‌به‌خط مقاله نیست.</div>':'<div class="legacy-translation-note">این خبر هنوز در صف بازسازی با موتور فارسی جدید است.</div>'}</section>`:'';
 
-  const reportSection=showReport?`<section class="section"><div class="report-head"><h2>${reportTitle}</h2><span class="coverage-badge ${coverage==='گسترده'?'wide':''}">پوشش: ${FI.esc(coverage)}</span>${edited?'<span class="editorial-badge">ویرایش خبری فارسی</span>':''}</div>${reportHtml(report)}${points.length?`<div class="key-facts">${points.map((p,i)=>`<div class="key-fact"><small>نکته ${FI.faN(i+1)}</small><b>${FI.richText(p)}</b></div>`).join('')}</div>`:''}</section>`:'';
+  const reportSection=showReport?`<section class="section"><div class="report-head"><h2>${reportTitle}</h2><span class="coverage-badge ${coverage==='گسترده'||coverage==='بر پایه بدنه مقاله'?'wide':''}">پوشش: ${FI.esc(coverage)}</span>${v2?'<span class="source-faithful-badge">بازروایی از متن اصلی</span>':(edited?'<span class="editorial-badge">ویرایش خبری فارسی</span>':'')}</div>${reportHtml(report)}${v2?'<p class="source-report-note">گزارش فارسی با حفظ ترتیب و داده‌های اصلی خبر ساخته شده است؛ متن کامل منبع در سایت بازنشر نمی‌شود.</p>':''}${points.length?`<div class="key-facts">${points.map((p,i)=>`<div class="key-fact"><small>نکته ${FI.faN(i+1)}</small><b>${FI.richText(p)}</b></div>`).join('')}</div>`:''}</section>`:'';
 
   $('app').className='article-layout';
   $('app').innerHTML=`<article class="article ${iran?'iran':''}">
-    <div class="article-hero">${FI.visual(x)}<div class="article-hero-overlay"><span class="country">${FI.esc(FI.countryLabel(x))}</span>${cities.map(c=>`<a class="city" href="./?city=${encodeURIComponent(c.id)}#feed">${FI.esc(c.fa)}</a>`).join('')}</div></div>
+    <div class="article-hero">${FI.visual(x)}<div class="article-hero-overlay"><span class="country">${FI.esc(FI.countryLabel(x))}</span>${cities.map(c=>`<a class="city" href="${iran?'iran.html':'explore.html'}?city=${encodeURIComponent(c.id)}#feed">${FI.esc(c.fa)}</a>`).join('')}</div></div>
     <div class="eyebrow"><span>${FI.esc(FI.srcName(x))}</span><span>•</span><span>${FI.ago(x.published_at)}</span>${FI.brandMarks(x)}${FI.importance(x)}</div>
     <h1>${FI.richText(x.title_fa)}</h1>
-    ${lead?`<p class="lead">${FI.richText(lead)}</p>`:''}
+    ${recapSection}
     <div class="chips">${(x.brands||[]).map(FI.brandChip).join('')}${(x.categories||[]).map(FI.categoryChip).join('')}</div>
     <div class="metrics"><div class="metric"><b>${FI.faN(x.relevance_score)}</b><span>اهمیت</span></div><div class="metric"><b>${FI.faN(x.iran_relevance_score||0)}</b><span>ارتباط با ایران</span></div><div class="metric"><b>${FI.faN((x.brands||[]).length)}</b><span>برند</span></div><div class="metric"><b>${FI.faN((x.categories||[]).length)}</b><span>حوزه تخصصی</span></div></div>
     ${reportSection}
