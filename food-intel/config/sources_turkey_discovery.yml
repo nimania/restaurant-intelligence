@@ -1,0 +1,67 @@
+queries:
+  - id: turkey_restaurant_sector
+    name: Türkiye — restoran ve yeme-içme sektörü
+    query: '"restoran sektörü" OR "yeme içme sektörü" OR HORECA'
+    categories: [restaurant_industry, restaurant_operations]
+    include: ["restoran", "yeme içme", "horeca", "gastronomi"]
+
+  - id: turkey_chain_restaurants
+    name: Türkiye — zincir restoranlar ve franchise
+    query: '"zincir restoran" OR "restoran zinciri" OR "franchise restoran" OR "bayilik" restoran'
+    categories: [restaurant_industry, franchising]
+    include: ["restoran", "franchise", "bayilik", "şube"]
+
+  - id: turkey_food_industry
+    name: Türkiye — gıda sanayi ve üretim
+    query: '"gıda sektörü" OR "gıda sanayi" OR "gıda üretimi" OR "gıda ve içecek sektörü"'
+    categories: [food_industry, food_manufacturing]
+    include: ["gıda", "üretim", "sanayi", "içecek"]
+
+  - id: turkey_food_investment
+    name: Türkiye — gıda yatırımları ve ihracat
+    query: 'gıda yatırım OR "gıda yatırımı" OR "gıda ihracatı" OR "üretim tesisi" gıda'
+    categories: [food_industry, food_manufacturing]
+    include: ["gıda", "yatırım", "ihracat", "üretim"]
+
+  - id: turkey_foodtech
+    name: Türkiye — foodtech, AI ve restoran teknolojisi
+    query: 'restoran teknoloji OR foodtech OR "yapay zeka" restoran OR otomasyon restoran'
+    categories: [restaurant_technology_ai]
+    include: ["restoran", "foodtech", "teknoloji", "yapay zeka", "otomasyon"]
+
+  - id: turkey_delivery
+    name: Türkiye — teslimat ve dijital sipariş
+    query: '"yemek sipariş" OR "online sipariş" restoran OR "paket servis" restoran'
+    categories: [delivery_drive_thru]
+    include: ["sipariş", "restoran", "yemek", "teslimat", "paket servis"]
+
+  - id: turkey_gida_hatti
+    name: Gıda Hattı — sektör takibi
+    query: 'site:gidahatti.com (gıda OR restoran OR marka OR yatırım)'
+    categories: [food_industry]
+    include: ["gıda", "restoran", "marka", "yatırım", "ürün"]
+
+  - id: turkey_gastronomi_dergisi
+    name: Gastronomi Dergisi — restoran takibi
+    query: 'site:gastronomidergisi.com (restoran OR kafe OR marka OR şube OR gastronomi)'
+    categories: [restaurant_industry]
+    include: ["restoran", "kafe", "marka", "şube", "gastronomi"]
+
+  - id: turkey_hotel_restaurant
+    name: Hotel Restaurant — F&B takibi
+    query: 'site:hotelrestaurant.com.tr (restoran OR "gıda sektörü" OR F&B OR gastronomi)'
+    categories: [restaurant_industry, food_industry]
+    include: ["restoran", "gıda", "gastronomi", "f&b"]
+
+  - id: turkey_dunya_gida
+    name: Dünya — gıda sektörü takibi
+    query: 'site:dunya.com/sektorler/gida Türkiye gıda'
+    categories: [food_industry]
+    include: ["gıda", "üretim", "ihracat", "sektör"]
+
+settings:
+  provider: bing_news_rss
+  language: tr
+  country: TR
+  market: turkey
+  priority: 2
