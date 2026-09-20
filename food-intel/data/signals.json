@@ -1,16 +1,48 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-09-20T11:32:02Z",
-  "articles_24h": 30,
-  "articles_previous_6d": 1049,
+  "generated_at": "2026-09-20T16:14:41Z",
+  "articles_24h": 33,
+  "articles_previous_6d": 1055,
   "images_24h": 9,
   "trending_topics": [
     {
+      "id": "packaging_design",
+      "label_fa": "بسته‌بندی و طراحی بسته‌بندی",
+      "count_24h": 2,
+      "previous_daily_avg": 2.17,
+      "acceleration": 0.92,
+      "series_7d": [
+        2,
+        1,
+        3,
+        2,
+        5,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "labor",
+      "label_fa": "نیروی انسانی",
+      "count_24h": 2,
+      "previous_daily_avg": 2.83,
+      "acceleration": 0.71,
+      "series_7d": [
+        0,
+        3,
+        5,
+        4,
+        3,
+        1,
+        2
+      ]
+    },
+    {
       "id": "restaurant_operations",
       "label_fa": "عملیات رستوران",
-      "count_24h": 3,
-      "previous_daily_avg": 3.5,
-      "acceleration": 0.86,
+      "count_24h": 2,
+      "previous_daily_avg": 3.67,
+      "acceleration": 0.55,
       "series_7d": [
         1,
         9,
@@ -22,35 +54,99 @@
       ]
     },
     {
-      "id": "ingredients_rd",
-      "label_fa": "مواد اولیه و تحقیق‌وتوسعه",
+      "id": "marketing_branding",
+      "label_fa": "بازاریابی و برندینگ",
       "count_24h": 3,
-      "previous_daily_avg": 7.33,
-      "acceleration": 0.41,
+      "previous_daily_avg": 6.83,
+      "acceleration": 0.44,
       "series_7d": [
-        6,
+        2,
+        7,
+        8,
+        9,
         13,
-        8,
-        8,
-        6,
-        5,
-        1
+        1,
+        3
       ]
     },
     {
       "id": "menu_product_innovation",
       "label_fa": "نوآوری منو و محصول",
-      "count_24h": 5,
-      "previous_daily_avg": 13.67,
-      "acceleration": 0.37,
+      "count_24h": 6,
+      "previous_daily_avg": 13.83,
+      "acceleration": 0.43,
       "series_7d": [
         6,
         25,
         17,
         16,
         12,
+        9,
+        4
+      ]
+    },
+    {
+      "id": "menu",
+      "label_fa": "منو",
+      "count_24h": 5,
+      "previous_daily_avg": 11.5,
+      "acceleration": 0.43,
+      "series_7d": [
+        5,
+        22,
+        14,
+        12,
+        11,
+        6,
+        4
+      ]
+    },
+    {
+      "id": "ingredients_rd",
+      "label_fa": "مواد اولیه و تحقیق‌وتوسعه",
+      "count_24h": 3,
+      "previous_daily_avg": 7.67,
+      "acceleration": 0.39,
+      "series_7d": [
+        6,
+        13,
         8,
+        8,
+        6,
+        6,
         2
+      ]
+    },
+    {
+      "id": "food_manufacturing",
+      "label_fa": "تولید صنایع غذایی",
+      "count_24h": 5,
+      "previous_daily_avg": 13.67,
+      "acceleration": 0.37,
+      "series_7d": [
+        6,
+        14,
+        18,
+        14,
+        19,
+        11,
+        4
+      ]
+    },
+    {
+      "id": "food_safety",
+      "label_fa": "ایمنی غذا",
+      "count_24h": 3,
+      "previous_daily_avg": 9.0,
+      "acceleration": 0.33,
+      "series_7d": [
+        7,
+        9,
+        12,
+        8,
+        13,
+        5,
+        3
       ]
     },
     {
@@ -68,127 +164,47 @@
         3,
         2
       ]
-    },
+    }
+  ],
+  "trending_brands": [
     {
-      "id": "marketing_branding",
-      "label_fa": "بازاریابی و برندینگ",
+      "id": "dunkin",
+      "label_fa": "دانکین",
       "count_24h": 2,
-      "previous_daily_avg": 6.83,
-      "acceleration": 0.29,
+      "previous_daily_avg": 1.17,
+      "acceleration": 1.71,
       "series_7d": [
-        2,
-        7,
-        8,
-        9,
-        13,
+        0,
+        0,
+        1,
+        4,
+        1,
         1,
         2
       ]
     },
     {
-      "id": "menu",
-      "label_fa": "منو",
-      "count_24h": 3,
-      "previous_daily_avg": 11.33,
-      "acceleration": 0.26,
-      "series_7d": [
-        5,
-        22,
-        14,
-        12,
-        11,
-        5,
-        2
-      ]
-    },
-    {
-      "id": "food_safety",
-      "label_fa": "ایمنی غذا",
+      "id": "shake_shack",
+      "label_fa": "شیک شک",
       "count_24h": 2,
-      "previous_daily_avg": 9.0,
-      "acceleration": 0.22,
+      "previous_daily_avg": 4.67,
+      "acceleration": 0.43,
       "series_7d": [
-        7,
-        9,
-        12,
-        8,
-        13,
-        5,
-        1
-      ]
-    },
-    {
-      "id": "qsr_fast_food",
-      "label_fa": "فست‌فود و QSR",
-      "count_24h": 7,
-      "previous_daily_avg": 33.0,
-      "acceleration": 0.21,
-      "series_7d": [
-        15,
-        44,
-        32,
-        40,
-        48,
-        21,
-        2
-      ]
-    },
-    {
-      "id": "restaurant_industry",
-      "label_fa": "صنعت رستوران",
-      "count_24h": 4,
-      "previous_daily_avg": 19.83,
-      "acceleration": 0.2,
-      "series_7d": [
-        23,
-        30,
-        25,
-        17,
-        20,
-        6,
-        1
-      ]
-    },
-    {
-      "id": "franchising",
-      "label_fa": "فرنچایز",
-      "count_24h": 2,
-      "previous_daily_avg": 10.5,
-      "acceleration": 0.19,
-      "series_7d": [
-        7,
-        8,
-        12,
-        12,
-        20,
-        6,
-        0
-      ]
-    }
-  ],
-  "trending_brands": [
-    {
-      "id": "mcdonalds",
-      "label_fa": "مک‌دونالدز",
-      "count_24h": 3,
-      "previous_daily_avg": 6.0,
-      "acceleration": 0.5,
-      "series_7d": [
+        0,
+        16,
         2,
-        5,
+        7,
+        1,
         3,
-        10,
-        11,
-        6,
-        0
+        1
       ]
     },
     {
       "id": "burger_king",
       "label_fa": "برگر کینگ",
       "count_24h": 2,
-      "previous_daily_avg": 6.33,
-      "acceleration": 0.32,
+      "previous_daily_avg": 6.5,
+      "acceleration": 0.31,
       "series_7d": [
         4,
         9,
@@ -196,7 +212,23 @@
         9,
         8,
         4,
-        1
+        2
+      ]
+    },
+    {
+      "id": "kraft_heinz",
+      "label_fa": "کرفت هاینز",
+      "count_24h": 2,
+      "previous_daily_avg": 7.0,
+      "acceleration": 0.29,
+      "series_7d": [
+        3,
+        10,
+        8,
+        15,
+        5,
+        1,
+        2
       ]
     }
   ],
@@ -204,7 +236,7 @@
     {
       "id": "iran_market",
       "label_fa": "بازار ایران",
-      "count_24h": 9,
+      "count_24h": 11,
       "series_7d": [
         9,
         5,
@@ -212,27 +244,13 @@
         7,
         32,
         20,
-        6
-      ]
-    },
-    {
-      "id": "restaurant_technology_ai",
-      "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 1,
-      "series_7d": [
-        16,
-        29,
-        18,
-        26,
-        25,
-        4,
-        0
+        9
       ]
     },
     {
       "id": "food_safety",
       "label_fa": "ایمنی غذا",
-      "count_24h": 2,
+      "count_24h": 3,
       "series_7d": [
         7,
         9,
@@ -240,13 +258,13 @@
         8,
         13,
         5,
-        1
+        3
       ]
     },
     {
       "id": "restaurant_operations",
       "label_fa": "عملیات رستوران",
-      "count_24h": 3,
+      "count_24h": 2,
       "series_7d": [
         1,
         9,
@@ -260,7 +278,7 @@
     {
       "id": "marketing_branding",
       "label_fa": "بازاریابی و برندینگ",
-      "count_24h": 2,
+      "count_24h": 3,
       "series_7d": [
         2,
         7,
@@ -268,9 +286,9 @@
         9,
         13,
         1,
-        2
+        3
       ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: عملیات رستوران، مواد اولیه و تحقیق‌وتوسعه، نوآوری منو و محصول؛ برندهای پرتکرار: مک‌دونالدز، برگر کینگ."
+  "radar_fa": "موضوع‌های رو به رشد: بسته‌بندی و طراحی بسته‌بندی، نیروی انسانی، عملیات رستوران؛ برندهای پرتکرار: دانکین، شیک شک، برگر کینگ."
 }

@@ -1,16 +1,16 @@
 {
   "schema_version": "0.18.1",
-  "generated_at": "2026-09-20T11:32:02Z",
-  "count": 2262,
-  "iran_count": 286,
+  "generated_at": "2026-09-20T16:14:41Z",
+  "count": 2283,
+  "iran_count": 290,
   "active_sources": 47,
   "active_iran_sources": 29,
-  "entries_processed_this_run": 1295,
+  "entries_processed_this_run": 1283,
   "translation_stats": {
-    "translated": 275,
-    "reused": 1663,
-    "persian_original": 275,
-    "failed": 11
+    "translated": 277,
+    "reused": 1685,
+    "persian_original": 287,
+    "failed": 15
   },
   "source_status": [
     {
@@ -39,8 +39,8 @@
       "feed_url": "https://www.fastcasual.com/rss/",
       "market": null,
       "aggregator": null,
-      "entries_seen": 100,
-      "entries_matched": 100,
+      "entries_seen": 96,
+      "entries_matched": 96,
       "bozo": false
     },
     {
@@ -49,8 +49,8 @@
       "feed_url": "https://www.qsrweb.com/rss/",
       "market": null,
       "aggregator": null,
-      "entries_seen": 95,
-      "entries_matched": 95,
+      "entries_seen": 90,
+      "entries_matched": 90,
       "bozo": false
     },
     {
@@ -89,8 +89,8 @@
       "feed_url": "https://www.pizzamarketplace.com/rss/",
       "market": null,
       "aggregator": null,
-      "entries_seen": 85,
-      "entries_matched": 85,
+      "entries_seen": 82,
+      "entries_matched": 82,
       "bozo": false
     },
     {
@@ -241,7 +241,7 @@
       "market": "iran",
       "aggregator": null,
       "entries_seen": 30,
-      "entries_matched": 1,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -271,7 +271,7 @@
       "market": "iran",
       "aggregator": null,
       "entries_seen": 100,
-      "entries_matched": 3,
+      "entries_matched": 2,
       "bozo": false
     },
     {
@@ -397,7 +397,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
+      "entries_seen": 9,
       "entries_matched": 0,
       "bozo": false
     },
@@ -408,7 +408,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -431,7 +431,7 @@
       "aggregator": "bing_news",
       "brand_watch": true,
       "entries_seen": 12,
-      "entries_matched": 1,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -441,7 +441,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 10,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -474,8 +474,8 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
-      "entries_matched": 0,
+      "entries_seen": 11,
+      "entries_matched": 1,
       "bozo": false
     },
     {
@@ -496,8 +496,8 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
-      "entries_matched": 5,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -507,7 +507,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -562,8 +562,8 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
-      "entries_matched": 1,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -596,7 +596,7 @@
       "aggregator": "bing_news",
       "brand_watch": true,
       "entries_seen": 12,
-      "entries_matched": 1,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -606,8 +606,8 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
-      "entries_matched": 1,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -617,7 +617,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -628,8 +628,8 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
-      "entries_matched": 2,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -649,7 +649,7 @@
       "market": "iran",
       "official_brand_channel": true,
       "entries_seen": 20,
-      "entries_matched": 1,
+      "entries_matched": 2,
       "bozo": false
     },
     {
@@ -759,8 +759,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 10,
-      "entries_matched": 2,
+      "entries_seen": 9,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -770,8 +770,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 0,
-      "entries_matched": 0,
+      "entries_seen": 9,
+      "entries_matched": 6,
       "bozo": false
     },
     {
@@ -782,7 +782,7 @@
       "aggregator": "bing_news",
       "brand_watch": true,
       "entries_seen": 10,
-      "entries_matched": 3,
+      "entries_matched": 2,
       "bozo": false
     },
     {
@@ -804,7 +804,7 @@
       "aggregator": "bing_news",
       "brand_watch": true,
       "entries_seen": 12,
-      "entries_matched": 5,
+      "entries_matched": 6,
       "bozo": false
     },
     {
@@ -826,7 +826,7 @@
       "aggregator": "bing_news",
       "brand_watch": true,
       "entries_seen": 12,
-      "entries_matched": 2,
+      "entries_matched": 1,
       "bozo": false
     },
     {
@@ -848,7 +848,7 @@
       "aggregator": "bing_news",
       "brand_watch": true,
       "entries_seen": 12,
-      "entries_matched": 0,
+      "entries_matched": 1,
       "bozo": false
     },
     {
@@ -892,7 +892,7 @@
       "aggregator": "bing_news",
       "brand_watch": true,
       "entries_seen": 12,
-      "entries_matched": 4,
+      "entries_matched": 3,
       "bozo": false
     },
     {
@@ -902,8 +902,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 0,
-      "entries_matched": 0,
+      "entries_seen": 12,
+      "entries_matched": 2,
       "bozo": false
     },
     {
@@ -914,7 +914,7 @@
       "aggregator": "bing_news",
       "brand_watch": true,
       "entries_seen": 11,
-      "entries_matched": 5,
+      "entries_matched": 6,
       "bozo": false
     },
     {
@@ -946,8 +946,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 0,
-      "entries_matched": 0,
+      "entries_seen": 12,
+      "entries_matched": 10,
       "bozo": false
     },
     {
@@ -990,8 +990,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
-      "entries_matched": 2,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -1002,7 +1002,7 @@
       "aggregator": "bing_news",
       "brand_watch": true,
       "entries_seen": 12,
-      "entries_matched": 4,
+      "entries_matched": 2,
       "bozo": false
     },
     {
@@ -1012,8 +1012,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
-      "entries_matched": 2,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -1034,7 +1034,7 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 9,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1046,7 +1046,7 @@
       "aggregator": "bing_news",
       "brand_watch": true,
       "entries_seen": 12,
-      "entries_matched": 7,
+      "entries_matched": 6,
       "bozo": false
     },
     {
@@ -1056,8 +1056,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
-      "entries_matched": 1,
+      "entries_seen": 12,
+      "entries_matched": 4,
       "bozo": false
     },
     {
@@ -1067,8 +1067,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 10,
-      "entries_matched": 3,
+      "entries_seen": 11,
+      "entries_matched": 4,
       "bozo": false
     },
     {
@@ -1111,8 +1111,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
-      "entries_matched": 12,
+      "entries_seen": 11,
+      "entries_matched": 11,
       "bozo": false
     },
     {
@@ -1122,8 +1122,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
-      "entries_matched": 11,
+      "entries_seen": 10,
+      "entries_matched": 10,
       "bozo": false
     },
     {
@@ -1146,7 +1146,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 0,
+      "entries_seen": 12,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1182,7 +1182,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 9,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1194,7 +1194,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 1,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1230,7 +1230,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 9,
+      "entries_seen": 8,
       "entries_matched": 1,
       "bozo": false
     },
@@ -1290,7 +1290,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 9,
+      "entries_seen": 10,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1350,7 +1350,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 10,
+      "entries_seen": 12,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1386,7 +1386,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 0,
+      "entries_seen": 6,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1422,7 +1422,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 0,
+      "entries_seen": 11,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1470,7 +1470,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 6,
+      "entries_seen": 9,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1482,7 +1482,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 10,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1494,7 +1494,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 4,
+      "entries_seen": 5,
       "entries_matched": 3,
       "bozo": false
     },
@@ -1506,7 +1506,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
+      "entries_seen": 11,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1518,8 +1518,8 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": false,
-      "entries_seen": 11,
-      "entries_matched": 4,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -1542,8 +1542,8 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": false,
-      "entries_seen": 0,
-      "entries_matched": 0,
+      "entries_seen": 9,
+      "entries_matched": 3,
       "bozo": false
     },
     {
@@ -1566,7 +1566,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": false,
-      "entries_seen": 11,
+      "entries_seen": 10,
       "entries_matched": 1,
       "bozo": false
     },
@@ -1578,8 +1578,8 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": false,
-      "entries_seen": 0,
-      "entries_matched": 0,
+      "entries_seen": 8,
+      "entries_matched": 3,
       "bozo": false
     },
     {
@@ -1817,6 +1817,455 @@
       }
     },
     {
+      "id": "4974d2549de26322b7ea",
+      "title": "🎉 برای اولین بار در ایران صبحانه در حرکت 🎁 پست‌های «صبحانه در حرکت» واستون ۲ تا میکسر نینجا داره 😍 1️⃣ اد استوری پست 2️⃣ و منشن کردن دوستات بهت کلی امتیاز میده ⚡ این یک صبحانه کامل",
+      "url": "https://t.me/MihanFoods/755",
+      "source": {
+        "id": "official_telegram_mihan_dairy",
+        "name": "mihan_dairy — تلگرام رسمی",
+        "homepage": "https://t.me/MihanFoods",
+        "class": "official_brand_social",
+        "priority": 1,
+        "market": "iran",
+        "country": "IR",
+        "aggregator": null
+      },
+      "discovered_publisher": null,
+      "author": "میهن",
+      "published_at": "2026-09-20T16:11:16Z",
+      "collected_at": "2026-09-20T16:12:47Z",
+      "language": "fa",
+      "region": "IR",
+      "country": "IR",
+      "market": "iran",
+      "geo": {
+        "primary_country": {
+          "code": "IR",
+          "fa": "ایران",
+          "name": "Iran",
+          "lat": 32.4279,
+          "lon": 53.688,
+          "basis": "text"
+        },
+        "countries": [
+          {
+            "code": "IR",
+            "fa": "ایران",
+            "name": "Iran",
+            "lat": 32.4279,
+            "lon": 53.688,
+            "basis": "text"
+          }
+        ],
+        "cities": [],
+        "confidence": "high"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 441,
+      "summary": "🎉 برای اولین بار در ایران صبحانه در حرکت 🎁 پست‌های «صبحانه در حرکت» واستون ۲ تا میکسر نینجا داره 😍 1️⃣ اد استوری پست 2️⃣ و منشن کردن دوستات بهت کلی امتیاز میده ⚡ این یک صبحانه کامل و آماده و خوشمزه و سالم و رژیمی، مخصوص روزایی که وقت نداری. صبحانه در حرکت، یه وعده غذایی کامل برای صبحونه، میان وعده و وعده‌های تقویتی بعد از باشگاه 😘 🎁 این پست رو توی اینستاگرام اد تو استوری کن و جایزه برنده شو 💥 🤩 #صبحانه #صبحانه_در_حرکت #میهن #سلامت #تغذیه",
+      "categories": [
+        "food_industry",
+        "food_manufacturing"
+      ],
+      "topics": [],
+      "brands": [
+        {
+          "id": "mihan_dairy",
+          "name": "Mihan",
+          "fa": "میهن",
+          "market": "iran"
+        }
+      ],
+      "iran_relevance_score": 100,
+      "relevance_score": 78,
+      "brand_watch": {
+        "mode": "official_telegram",
+        "matched_brand_ids": [
+          "mihan_dairy"
+        ],
+        "watch_source_id": "official_telegram_mihan_dairy",
+        "official": true
+      },
+      "title_fa": "🎉 برای اولین بار در ایران صبحانه در حرکت 🎁 پست‌های «صبحانه در حرکت» واستون ۲ تا میکسر نینجا داره 😍 1️⃣ اد استوری پست 2️⃣ و منشن کردن دوستات بهت کلی امتیاز میده ⚡ این یک صبحانه کامل",
+      "summary_fa": "🎉 برای اولین بار در ایران صبحانه در حرکت 🎁 پست‌های «صبحانه در حرکت» واستون ۲ تا میکسر نینجا داره 😍 1️⃣ اد استوری پست 2️⃣ و منشن کردن دوستات بهت کلی امتیاز میده ⚡ این یک صبحانه کامل و آماده و خوشمزه و سالم و رژیمی، مخصوص روزایی که وقت نداری. صبحانه در حرکت، یه وعده غذایی کامل برای صبحونه، میان وعده و وعده‌های تقویتی بعد از باشگاه 😘 🎁 این پست رو توی اینستاگرام اد تو استوری کن و جایزه برنده شو 💥 🤩 #صبحانه #صبحانه_در_حرکت #میهن #سلامت #تغذیه",
+      "report_fa": "🎉 برای اولین بار در ایران صبحانه در حرکت 🎁 پست‌های «صبحانه در حرکت» واستون ۲ تا میکسر نینجا داره 😍 1️⃣ اد استوری پست 2️⃣ و منشن کردن دوستات بهت کلی امتیاز میده ⚡ این یک صبحانه کامل و آماده و خوشمزه و سالم و رژیمی، مخصوص روزایی که وقت نداری. صبحانه در حرکت، یه وعده غذایی کامل برای صبحونه، میان وعده و وعده‌های تقویتی بعد از باشگاه 😘 🎁 این پست رو توی اینستاگرام اد تو استوری کن و جایزه برنده شو 💥 🤩 #صبحانه #صبحانه_در_حرکت #میهن #سلامت #تغذیه",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "original-fa",
+        "engine": null,
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "source-fa-normalized",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "article_body": {
+        "status": "short",
+        "chars": 0,
+        "paragraphs": 0,
+        "extractor": "none",
+        "fetched_at": "2026-09-20T16:15:54Z"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {},
+        "source_original_fa": true,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "d173e6d4d9d5a57bbb0c",
+      "title": "فروش دستگاه لیبل زن دستی اهواز با قیمت مناسب",
+      "url": "https://mag.ifoods.ir/%d9%84%db%8c%d8%a8%d9%84-%d8%b2%d9%86-%d8%af%d8%b3%d8%aa%db%8c-%d8%a7%d9%87%d9%88%d8%a7%d8%b2",
+      "source": {
+        "id": "ifoods_mag",
+        "name": "مجله آی‌فودز",
+        "homepage": "https://mag.ifoods.ir/",
+        "class": "specialist_publication",
+        "priority": 1,
+        "market": "iran",
+        "country": "IR",
+        "aggregator": null
+      },
+      "discovered_publisher": null,
+      "author": "تیم تولید محتوای آی فودز",
+      "published_at": "2026-09-20T15:31:44Z",
+      "collected_at": "2026-09-20T16:09:44Z",
+      "language": "fa",
+      "region": "IR",
+      "country": "IR",
+      "market": "iran",
+      "geo": {
+        "primary_country": {
+          "code": "IR",
+          "fa": "ایران",
+          "name": "Iran",
+          "lat": 32.4279,
+          "lon": 53.688,
+          "basis": "city"
+        },
+        "countries": [
+          {
+            "code": "IR",
+            "fa": "ایران",
+            "name": "Iran",
+            "lat": 32.4279,
+            "lon": 53.688,
+            "basis": "city"
+          }
+        ],
+        "cities": [
+          {
+            "id": "ahvaz",
+            "fa": "اهواز",
+            "province": "خوزستان",
+            "country": "IR",
+            "lat": 31.3183,
+            "lon": 48.6706
+          }
+        ],
+        "confidence": "high"
+      },
+      "image_url": "https://mag.ifoods.ir/wp-content/uploads/2025/10/Labeling-machine.webp",
+      "image_source": "feed",
+      "source_detail_chars": 14395,
+      "summary": "وبلاگ آی فودز | ifoods.ir/blog در دنیای رقابتی امروز صنعت غذا، تنها تولید محصول باکیفیت کافی نیست؛ بلکه ارائه حرفه‌ای و قابل اعتماد آن نیز از اهمیت بالایی برخوردار است. لیبل‌زنی، به عنوان شناسنامه محصول، نقش حیاتی ... مطلب فروش دستگاه لیبل زن دستی اهواز با قیمت مناسب در مجله آی فودز . منتشر شد.",
+      "categories": [
+        "food_industry",
+        "packaging_design",
+        "food_manufacturing"
+      ],
+      "topics": [],
+      "brands": [],
+      "iran_relevance_score": 85,
+      "relevance_score": 80,
+      "title_fa": "فروش دستگاه لیبل زن دستی اهواز با قیمت مناسب",
+      "summary_fa": "وبلاگ آی فودز | ifoods. ir/blog در دنیای رقابتی امروز صنعت غذا، تنها تولید محصول باکیفیت کافی نیست؛ بلکه ارائه حرفه‌ای و قابل اعتماد آن نیز از اهمیت بالایی برخوردار است. لیبل‌زنی، به عنوان شناسنامه محصول، نقش حیاتی... مطلب فروش دستگاه لیبل زن دستی اهواز با قیمت مناسب در مجله آی فودز. منتشر شد.",
+      "report_fa": "وبلاگ آی فودز | ifoods. ir/blog در دنیای رقابتی امروز صنعت غذا، تنها تولید محصول باکیفیت کافی نیست؛ بلکه ارائه حرفه‌ای و قابل اعتماد آن نیز از اهمیت بالایی برخوردار است. لیبل‌زنی، به عنوان شناسنامه محصول، نقش حیاتی... مطلب فروش دستگاه لیبل زن دستی اهواز با قیمت مناسب در مجله آی فودز. منتشر شد.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "original-fa",
+        "engine": null,
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "source-fa-normalized",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "article_body": {
+        "status": "extracted",
+        "chars": 6131,
+        "paragraphs": 21,
+        "selected_sentences": 12,
+        "selected_chars": 3066,
+        "extractor": "scored-container",
+        "content_hash": "b06188c41e3c5638037f",
+        "fetched_at": "2026-09-20T16:15:50Z"
+      },
+      "report_source_kind": "article_body",
+      "report_source_chars": 6131,
+      "report_selected_chars": 3066,
+      "report_basis": "feed-summary",
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {},
+        "source_original_fa": true,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "e574a8311f8134cb2ad9",
+      "title": "برگزاری نشست تخصصی معاون پژوهشی و فناوری دانشگاه جامع علمی‌کاربردی با ریاست و اعضای هیئت امنای دانشگاه علمی کاربردی نان سحر نشست تخصصی دکتر محمدرضا خلیلی، معاون محترم پژوهشی و فناو",
+      "url": "https://t.me/saharbreadco/1022",
+      "source": {
+        "id": "official_telegram_nan_sahar",
+        "name": "nan_sahar — تلگرام رسمی",
+        "homepage": "https://t.me/saharbreadco",
+        "class": "official_brand_social",
+        "priority": 1,
+        "market": "iran",
+        "country": "IR",
+        "aggregator": null
+      },
+      "discovered_publisher": null,
+      "author": "نان سحر",
+      "published_at": "2026-09-20T12:13:23Z",
+      "collected_at": "2026-09-20T16:12:53Z",
+      "language": "fa",
+      "region": "IR",
+      "country": "IR",
+      "market": "iran",
+      "geo": {
+        "primary_country": {
+          "code": "IR",
+          "fa": "ایران",
+          "name": "Iran",
+          "lat": 32.4279,
+          "lon": 53.688,
+          "basis": "source"
+        },
+        "countries": [
+          {
+            "code": "IR",
+            "fa": "ایران",
+            "name": "Iran",
+            "lat": 32.4279,
+            "lon": 53.688,
+            "basis": "source"
+          }
+        ],
+        "cities": [],
+        "confidence": "medium"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 919,
+      "summary": "برگزاری نشست تخصصی معاون پژوهشی و فناوری دانشگاه جامع علمی‌کاربردی با ریاست و اعضای هیئت امنای دانشگاه علمی کاربردی نان سحر نشست تخصصی دکتر محمدرضا خلیلی، معاون محترم پژوهشی و فناوری دانشگاه جامع علمی‌کاربردی و هیئت همراه، با میزبانی ریاست و اعضای هیئت امنای دانشگاه علمی‌کاربردی نان سحر برگزار شد. در این نشست، ظرفیت‌های علمی، آموزشی و پژوهشی مجموعه مورد بررسی قرار گرفت و طرفین پیرامون توسعه همکاری‌های علمی و پژوهشی، تقویت ارتباط دانشگاه با صنعت، بهره‌گیری از ظرفیت‌های فناورانه و گسترش برنامه‌های مهارت‌محور و کاربردی به گفت‌وگو و تبادل نظر پرداختند. همچنین در ادامه، بر ضرورت استفاده از ظرفیت‌های مشترک دانشگاه و صنعت در راستای ارتقای سطح آموزش‌های تخصصی، توسعه فعالیت‌های پژوهشی کاربردی و تربیت نیروی انسانی ماهر و متناسب با نیازهای صنعت تأکید شد. این نشست، زمینه‌ای برای بررسی فرصت‌های جدید همکاری و توسعه تعاملات میان دانشگاه جامع علمی‌کاربردی و دانشگاه علمی‌کاربردی نان سحر فراهم کرد. https://t.me/saharbreadco",
+      "categories": [
+        "food_industry",
+        "food_manufacturing",
+        "labor_management"
+      ],
+      "topics": [
+        "labor"
+      ],
+      "brands": [
+        {
+          "id": "nan_sahar",
+          "name": "Nan Sahar",
+          "fa": "نان سحر",
+          "market": "iran"
+        }
+      ],
+      "iran_relevance_score": 100,
+      "relevance_score": 79,
+      "brand_watch": {
+        "mode": "official_telegram",
+        "matched_brand_ids": [
+          "nan_sahar"
+        ],
+        "watch_source_id": "official_telegram_nan_sahar",
+        "official": true
+      },
+      "title_fa": "برگزاری نشست تخصصی معاون پژوهشی و فناوری دانشگاه جامع علمی‌کاربردی با ریاست و اعضای هیئت امنای دانشگاه علمی کاربردی نان سحر نشست تخصصی دکتر محمدرضا خلیلی، معاون محترم پژوهشی و فناو",
+      "summary_fa": "برگزاری نشست تخصصی معاون پژوهشی و فناوری دانشگاه جامع علمی‌کاربردی با ریاست و اعضای هیئت امنای دانشگاه علمی کاربردی نان سحر نشست تخصصی دکتر محمدرضا خلیلی، معاون محترم پژوهشی و فناوری دانشگاه جامع علمی‌کاربردی و هیئت همراه، با میزبانی ریاست و اعضای هیئت امنای دانشگاه علمی‌کاربردی نان سحر برگزار شد. در این نشست، ظرفیت‌های علمی، آموزشی و پژوهشی مجموعه مورد بررسی قرار گرفت و طرفین پیرامون توسعه همکاری‌های علمی و پژوهشی، تقویت ارتباط دانشگاه با صنعت، بهره‌گیری از ظرفیت‌های فناورانه و گسترش برنامه‌های مهارت‌محور و…",
+      "report_fa": "برگزاری نشست تخصصی معاون پژوهشی و فناوری دانشگاه جامع علمی‌کاربردی با ریاست و اعضای هیئت امنای دانشگاه علمی کاربردی نان سحر نشست تخصصی دکتر محمدرضا خلیلی، معاون محترم پژوهشی و فناوری دانشگاه جامع علمی‌کاربردی و هیئت همراه، با میزبانی ریاست و اعضای هیئت امنای دانشگاه علمی‌کاربردی نان سحر برگزار شد. در این نشست، ظرفیت‌های علمی، آموزشی و پژوهشی مجموعه مورد بررسی قرار گرفت و طرفین پیرامون توسعه همکاری‌های علمی و پژوهشی، تقویت ارتباط دانشگاه با صنعت، بهره‌گیری از ظرفیت‌های فناورانه و گسترش برنامه‌های مهارت‌محور و کاربردی به گفت‌وگو و تبادل نظر پرداختند. همچنین در ادامه، بر ضرورت استفاده از ظرفیت‌های مشترک دانشگاه و صنعت در راستای ارتقای سطح آموزش‌های تخصصی، توسعه فعالیت‌های پژوهشی کاربردی و تربیت نیروی انسانی ماهر و متناسب با نیازهای صنعت تأکید شد. این نشست، زمینه‌ای برای بررسی فرصت‌های جدید همکاری و توسعه تعاملات میان دانشگاه جامع علمی‌کاربردی و دانشگاه علمی‌کاربردی نان سحر فراهم کرد. https://t. me/saharbreadco",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "original-fa",
+        "engine": null,
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "source-fa-normalized",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "article_body": {
+        "status": "short",
+        "chars": 0,
+        "paragraphs": 0,
+        "extractor": "none",
+        "fetched_at": "2026-09-20T16:15:52Z"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {},
+        "source_original_fa": true,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "bd26e61014e2131a835e",
+      "title": "Sunday Edition: Sodium",
+      "url": "https://www.foodsafetynews.com/2026/09/sunday-edition-sodium-2",
+      "source": {
+        "id": "food_safety_news",
+        "name": "Food Safety News",
+        "homepage": "https://www.foodsafetynews.com/",
+        "class": "specialist_publication",
+        "priority": 1,
+        "market": null,
+        "country": null,
+        "aggregator": null
+      },
+      "discovered_publisher": null,
+      "author": "Dan Flynn",
+      "published_at": "2026-09-20T12:00:39Z",
+      "collected_at": "2026-09-20T16:09:35Z",
+      "language": "en",
+      "region": "global",
+      "country": null,
+      "market": null,
+      "geo": {
+        "primary_country": {
+          "code": "US",
+          "fa": "آمریکا",
+          "name": "United States",
+          "lat": 39.8283,
+          "lon": -98.5795,
+          "basis": "text"
+        },
+        "countries": [
+          {
+            "code": "US",
+            "fa": "آمریکا",
+            "name": "United States",
+            "lat": 39.8283,
+            "lon": -98.5795,
+            "basis": "text"
+          }
+        ],
+        "cities": [],
+        "confidence": "high"
+      },
+      "image_url": "https://storage.ghost.io/c/43/4e/434e508a-5e2f-4102-a53d-00bca10bb4bf/content/images/2026/09/sodium-label.png",
+      "image_source": "feed",
+      "source_detail_chars": 14079,
+      "summary": "The U.S. Department of Justice announced a settlement with Abbott Laboratories related to its role in an outbreak of cronobacter infections from powdered infant formula in 2022 . Two infants died as a result of the outbreak. Under the civil settlement, Abbott will pay $348.7 million dollars",
+      "categories": [
+        "food_safety",
+        "labor_management"
+      ],
+      "topics": [
+        "labor"
+      ],
+      "brands": [],
+      "iran_relevance_score": 0,
+      "relevance_score": 87,
+      "title_fa": "نسخه یکشنبه: سدیم",
+      "summary_fa": "بریتانیایی‌ها حملات خود را در کنتاکی در اوایل سال 1777 افزایش دادند، اما دانیل بون، مرزبان، محل امن بونزبورو را ترک کرد تا در بلو لیکس در امتداد رودخانه لیکینگ نمک بجوشاند. در آن زمان، به دست آوردن نمک برای بون برای زندگی بونزبورو مهمتر از دفاع در برابر عملیات بریتانیایی بود که برای نابودی محصولات کشاورزی و دام در تلاش برای ترک سکونتگاه انجام می شد. تا سال 6050 قبل از میلاد، نمک، یک ماده معدنی که عمدتاً از کلرید سدیم (NaCl) تشکیل شده است، جزء لاینفک زندگی انسان بوده است. به طور متوسط، مصرف فعلی تقریبا 50 درصد بالاتر از حد توصیه شده…",
+      "report_fa": "بریتانیایی‌ها حملات خود را در کنتاکی در اوایل سال 1777 افزایش دادند، اما دانیل بون، مرزبان، محل امن بونزبورو را ترک کرد تا در بلو لیکس در امتداد رودخانه لیکینگ نمک بجوشاند. در آن زمان، به دست آوردن نمک برای بون برای زندگی بونزبورو مهمتر از دفاع در برابر عملیات بریتانیایی بود که برای نابودی محصولات کشاورزی و دام در تلاش برای ترک سکونتگاه انجام می شد.\n\nتا سال 6050 قبل از میلاد، نمک، یک ماده معدنی که عمدتاً از کلرید سدیم (NaCl) تشکیل شده است، جزء لاینفک زندگی انسان بوده است. به طور متوسط، مصرف فعلی تقریبا 50 درصد بالاتر از حد توصیه شده است.\n\nاکثر مردم سدیم در ایالات متحده مصرف، بیش از 70 درصد، از غذاهای فرآوری شده، بسته بندی شده و آماده حاصل می شود، نه از نمک سفره ای که هنگام پخت و پز یا غذا خوردن در خانه به غذا اضافه می شود. ما می دانیم که مردم معمولاً متوجه کاهش اندک (حدود 10 درصد) سدیم نمی شوند.\n\nاین کاهش حدود 20 درصد کمتر از میزان مصرف مصرف کنندگان قبل از سال 2021 است. این راهنمایی به ویژه مرتبط است زیرا بیش از 70 درصد سدیم دریافتی در ایالات متحده است.\n\nجمعیت از سدیم اضافه شده در طول تولید مواد غذایی و تهیه مواد غذایی تجاری حاصل می شود.",
+      "report_coverage": "بر پایه بدنه مقاله",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "source-recap-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "article_body": {
+        "status": "extracted",
+        "chars": 10112,
+        "paragraphs": 47,
+        "selected_sentences": 12,
+        "selected_chars": 2012,
+        "extractor": "main",
+        "content_hash": "0731ea9c8b78edb583b7",
+        "fetched_at": "2026-09-20T16:15:12Z"
+      },
+      "report_source_kind": "article_body",
+      "report_source_chars": 10112,
+      "report_selected_chars": 2012,
+      "narrative_fa": "بریتانیایی‌ها حملات خود را در کنتاکی در اوایل سال 1777 افزایش دادند، اما دانیل بون، مرزبان، محل امن بونزبورو را ترک کرد تا در بلو لیکس در امتداد رودخانه لیکینگ نمک بجوشاند. در آن زمان، به دست آوردن نمک برای بون برای زندگی بونزبورو مهمتر از دفاع در برابر عملیات بریتانیایی بود که برای نابودی محصولات کشاورزی و دام در تلاش برای ترک سکونتگاه انجام می شد.\n\nتا سال 6050 قبل از میلاد، نمک، یک ماده معدنی که عمدتاً از کلرید سدیم (NaCl) تشکیل شده است، جزء لاینفک زندگی انسان بوده است. به طور متوسط، مصرف فعلی تقریبا 50 درصد بالاتر از حد توصیه شده است.\n\nاکثر مردم سدیم در ایالات متحده مصرف، بیش از 70 درصد، از غذاهای فرآوری شده، بسته بندی شده و آماده حاصل می شود، نه از نمک سفره ای که هنگام پخت و پز یا غذا خوردن در خانه به غذا اضافه می شود. ما می دانیم که مردم معمولاً متوجه کاهش اندک (حدود 10 درصد) سدیم نمی شوند.\n\nاین کاهش حدود 20 درصد کمتر از میزان مصرف مصرف کنندگان قبل از سال 2021 است. این راهنمایی به ویژه مرتبط است زیرا بیش از 70 درصد سدیم دریافتی در ایالات متحده است.\n\nجمعیت از سدیم اضافه شده در طول تولید مواد غذایی و تهیه مواد غذایی تجاری حاصل می شود.",
+      "recap_fa": "بریتانیایی‌ها حملات خود را در کنتاکی در اوایل سال 1777 افزایش دادند، اما دانیل بون، مرزبان، محل امن بونزبورو را ترک کرد تا در بلو لیکس در امتداد رودخانه لیکینگ نمک بجوشاند. در آن زمان، به دست آوردن نمک برای بون برای زندگی بونزبورو مهمتر از دفاع در برابر عملیات بریتانیایی بود که برای نابودی محصولات کشاورزی و دام در تلاش برای ترک سکونتگاه انجام می شد. تا سال 6050 قبل از میلاد، نمک، یک ماده معدنی که عمدتاً از کلرید سدیم (NaCl) تشکیل شده است، جزء لاینفک زندگی انسان بوده است. به طور متوسط، مصرف فعلی تقریبا 50 درصد بالاتر از حد توصیه شده…",
+      "report_basis": "source-sentence-recap",
+      "narrative_basis": "sentence-level source translation, public recap reconstruction",
+      "narrative_version": 2,
+      "narrative_word_count": 215,
+      "report_word_count": 215,
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 96,
+        "publishable": true,
+        "issues": [
+          "long-sentence"
+        ],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 17,
+            "word_count": 3
+          },
+          "summary": {
+            "score": 89,
+            "status": "pass",
+            "issues": [
+              "long-sentence"
+            ],
+            "persian_ratio": 1.012,
+            "latin_ratio": 0.01,
+            "max_sentence_chars": 178,
+            "word_count": 106
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.013,
+            "latin_ratio": 0.005,
+            "max_sentence_chars": 187,
+            "word_count": 216
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
       "id": "f72f2b85fc313bb6d73c",
       "title": "صالحی‌امیری: تهران باید قطب برندهای هتل‌داری شود",
       "url": "https://www.mehrnews.com/news/6952806/%D8%B5%D8%A7%D9%84%D8%AD%DB%8C-%D8%A7%D9%85%DB%8C%D8%B1%DB%8C-%D8%AA%D9%87%D8%B1%D8%A7%D9%86-%D8%A8%D8%A7%DB%8C%D8%AF-%D9%82%D8%B7%D8%A8-%D8%A8%D8%B1%D9%86%D8%AF%D9%87%D8%A7%DB%8C-%D9%87%D8%AA%D9%84-%D8%AF%D8%A7%D8%B1%DB%8C-%D8%B4%D9%88%D8%AF",
@@ -2000,6 +2449,229 @@
       }
     },
     {
+      "id": "79168086d60010b6e06a",
+      "title": "Coca-Cola stock gains as dividend and valuation draw investor attention",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab006270ab44c85a3527490ee4c0e2c&url=https%3A%2F%2Fwww.ad-hoc-news.de%2Fboerse%2Fnews%2Fcorporate-news%2Fcoca-cola-stock-gains-as-dividend-and-valuation-draw-investor-attention%2F70137741&c=5523608483013683679&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_coca_cola",
+        "name": "Global Brand Watch — coca_cola",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-20T08:11:00Z",
+      "collected_at": "2026-09-20T16:13:27Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 197,
+      "summary": "The Coca-Cola Company (ISIN US1912161007) stock is trading around USD 88 as of September 20, 2026, leaving the New York-listed beverage group near its 52-week high and highlighting how strongly ...",
+      "categories": [
+        "beverage",
+        "food_industry"
+      ],
+      "topics": [
+        "AI",
+        "beverage"
+      ],
+      "brands": [
+        {
+          "id": "coca_cola",
+          "name": "Coca-Cola",
+          "fa": "کوکاکولا"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "coca_cola"
+        ],
+        "watch_source_id": "global_brand_bing_coca_cola"
+      },
+      "title_fa": "سود سهام کوکاکولا به عنوان سود سهام و ارزش گذاری توجه سرمایه گذاران را جلب می کند",
+      "summary_fa": "سهام شرکت کوکاکولا (ISIN US1912161007) تا 20 سپتامبر 2026 حدود 88 دلار معامله می شود، که گروه نوشیدنی های فهرست شده در نیویورک را نزدیک به بالاترین حد خود در 52 هفته گذشته می کند و نشان می دهد که چقدر قوی.",
+      "report_fa": "سهام شرکت کوکاکولا (ISIN US1912161007) تا 20 سپتامبر 2026 حدود 88 دلار معامله می شود، که گروه نوشیدنی های فهرست شده در نیویورک را نزدیک به بالاترین حد خود در 52 هفته گذشته می کند و نشان می دهد که چقدر قوی.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 96,
+        "publishable": true,
+        "issues": [
+          "long-sentence"
+        ],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 81,
+            "word_count": 17
+          },
+          "summary": {
+            "score": 89,
+            "status": "pass",
+            "issues": [
+              "long-sentence"
+            ],
+            "persian_ratio": 0.964,
+            "latin_ratio": 0.043,
+            "max_sentence_chars": 205,
+            "word_count": 42
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.964,
+            "latin_ratio": 0.043,
+            "max_sentence_chars": 205,
+            "word_count": 42
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "77634f13733edefe0d9f",
+      "title": "She quit her job at 60 for a side hustle. It’s now a $2 million brand sold at Starbucks, Walmart",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab0061fc1ea46c285d23a2a4c9fb924&url=https%3A%2F%2Fwww.livemint.com%2Fnews%2Ftrends%2Fshe-quit-her-job-at-60-for-a-side-hustle-it-s-now-a-2-million-brand-sold-at-starbucks-walmart-11789911795892.html&c=1475744281083910231&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_starbucks",
+        "name": "Global Brand Watch — starbucks",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-20T07:56:00Z",
+      "collected_at": "2026-09-20T16:13:19Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 203,
+      "summary": "A woman from Milford, New Hampshire started her own protein bites brand after leaving her 16-year-old job in late 2024. Now her own brand is available in 13,000 retail stores, including Starbucks and ...",
+      "categories": [
+        "ingredients_rd",
+        "retail_food",
+        "food_industry"
+      ],
+      "topics": [
+        "AI",
+        "protein"
+      ],
+      "brands": [
+        {
+          "id": "starbucks",
+          "name": "Starbucks",
+          "fa": "استارباکس"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "starbucks"
+        ],
+        "watch_source_id": "global_brand_bing_starbucks"
+      },
+      "title_fa": "او در 60 سالگی کار خود را به خاطر یک کار جانبی ترک کرد. اکنون یک برند 2 میلیون دلاری در استارباکس، Walmart به فروش می رسد",
+      "summary_fa": "زنی از میلفورد، نیوهمپشایر پس از ترک شغل 16 ساله‌اش در اواخر سال 2024، برند خود را با نام لقمه‌های پروتئین راه‌اندازی کرد. اکنون نام تجاری او در 13000 فروشگاه خرده‌فروشی، از جمله استارباکس و.",
+      "report_fa": "زنی از میلفورد، نیوهمپشایر پس از ترک شغل 16 ساله‌اش در اواخر سال 2024، برند خود را با نام لقمه‌های پروتئین راه‌اندازی کرد. اکنون نام تجاری او در 13000 فروشگاه خرده‌فروشی، از جمله استارباکس و.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.933,
+            "latin_ratio": 0.078,
+            "max_sentence_chars": 65,
+            "word_count": 27
+          },
+          "summary": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.022,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 122,
+            "word_count": 39
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.022,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 122,
+            "word_count": 39
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
       "id": "d87ec5763c6e44582fbb",
       "title": "قیمت جدید تخم‌مرغ + جزئیات",
       "url": "https://www.tabnak.ir/fa/news/1395149/قیمت-جدید-تخم-مرغ-جزئیات",
@@ -2082,6 +2754,337 @@
       }
     },
     {
+      "id": "67f15872446a455316e7",
+      "title": "RBC Capital initiates coverage of Kraft Heinz at outperform",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab0062760de4e79ad4b89cf398d5d7e&url=https%3A%2F%2Fwww.msn.com%2Fen-us%2Fnews%2Fother%2Frbc-capital-initiates-coverage-of-kraft-heinz-at-outperform%2Far-AA2cBUxX&c=5239748852886460186&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_kraft_heinz",
+        "name": "Global Brand Watch — kraft_heinz",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-20T07:42:15Z",
+      "collected_at": "2026-09-20T16:13:28Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 204,
+      "summary": "Fintel reports that on 17 September 2026, RBC Capital initiated coverage of Kraft Heinz (SWX:KHC) with a Outperform recommendation. The closing price of Kraft Heinz on 17 September 2026 was CHF 20,30, ...",
+      "categories": [
+        "food_industry"
+      ],
+      "topics": [],
+      "brands": [
+        {
+          "id": "kraft_heinz",
+          "name": "Kraft Heinz",
+          "fa": "کرفت هاینز"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "kraft_heinz"
+        ],
+        "watch_source_id": "global_brand_bing_kraft_heinz"
+      },
+      "title_fa": "RBC Capital پوشش کرفت هاینز را با عملکرد بهتر آغاز می کند",
+      "summary_fa": "Fintel گزارش می دهد که در 17 سپتامبر 2026، RBC Capital پوشش کرفت هاینز (SWX: KHC) را با یک توصیه Outperform آغاز کرد. قیمت بسته شدن کرفت هاینز در 17 سپتامبر 2026 20,30 فرانک فرانک بود.",
+      "report_fa": "Fintel گزارش می دهد که در 17 سپتامبر 2026، RBC Capital پوشش کرفت هاینز (SWX: KHC) را با یک توصیه Outperform آغاز کرد. قیمت بسته شدن کرفت هاینز در 17 سپتامبر 2026 20,30 فرانک فرانک بود.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "warn",
+        "score": 87,
+        "publishable": true,
+        "issues": [
+          "too-much-latin"
+        ],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.783,
+            "latin_ratio": 0.217,
+            "max_sentence_chars": 57,
+            "word_count": 12
+          },
+          "summary": {
+            "score": 80,
+            "status": "warn",
+            "issues": [
+              "too-much-latin"
+            ],
+            "persian_ratio": 0.754,
+            "latin_ratio": 0.254,
+            "max_sentence_chars": 117,
+            "word_count": 37
+          },
+          "report": {
+            "score": 80,
+            "status": "warn",
+            "issues": [
+              "too-much-latin"
+            ],
+            "persian_ratio": 0.754,
+            "latin_ratio": 0.254,
+            "max_sentence_chars": 117,
+            "word_count": 37
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "258a419ca7d786761d6f",
+      "title": "Kraft Heinz Stock’s Dividend Held at $0.40 While Its Payout Ratio Turned Negative Again.",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab0062760de4e79ad4b89cf398d5d7e&url=https%3A%2F%2Ffinance.yahoo.com%2Fmarkets%2Fstocks%2Farticles%2Fkraft-heinz-stock-dividend-held-143540101.html&c=1677922533231371140&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_kraft_heinz",
+        "name": "Global Brand Watch — kraft_heinz",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-20T07:34:00Z",
+      "collected_at": "2026-09-20T16:13:28Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 204,
+      "summary": "Key Takeaways CFO Andre Maciel told analysts on the Q2 2026 earnings call that Kraft Heinz protected free cash flow at the same dollar figure committed at the start of the year, even while stepping up ...",
+      "categories": [
+        "delivery_drive_thru",
+        "food_industry"
+      ],
+      "topics": [
+        "AI"
+      ],
+      "brands": [
+        {
+          "id": "kraft_heinz",
+          "name": "Kraft Heinz",
+          "fa": "کرفت هاینز"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "kraft_heinz"
+        ],
+        "watch_source_id": "global_brand_bing_kraft_heinz"
+      },
+      "title_fa": "سود سهام کرفت هاینز در 0.40 دلار نگه داشته شد در حالی که نسبت پرداخت آن دوباره منفی شد.",
+      "summary_fa": "آندره ماسیل، مدیر مالی شرکت Key Takeaways، به تحلیلگران در تماس با سود سه ماهه دوم 2026 گفت که کرفت هاینز از جریان نقدی آزاد با همان رقم دلاری که در ابتدای سال انجام شده بود محافظت می کند، حتی در حالی که افزایش می یابد.",
+      "report_fa": "آندره ماسیل، مدیر مالی شرکت Key Takeaways، به تحلیلگران در تماس با سود سه ماهه دوم 2026 گفت که کرفت هاینز از جریان نقدی آزاد با همان رقم دلاری که در ابتدای سال انجام شده بود محافظت می کند، حتی در حالی که افزایش می یابد.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 96,
+        "publishable": true,
+        "issues": [
+          "long-sentence"
+        ],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 87,
+            "word_count": 20
+          },
+          "summary": {
+            "score": 89,
+            "status": "pass",
+            "issues": [
+              "long-sentence"
+            ],
+            "persian_ratio": 0.946,
+            "latin_ratio": 0.072,
+            "max_sentence_chars": 219,
+            "word_count": 46
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.946,
+            "latin_ratio": 0.072,
+            "max_sentence_chars": 219,
+            "word_count": 46
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "bbac777c1af0a2fed050",
+      "title": "Fans are 'fighting the urge' to drive to Salem after seeing new Dunkin' Donuts merch",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab00623ffe2405fa5e66d06e69a4bb5&url=https%3A%2F%2Fwww.unilad.com%2Fnews%2Fus-news%2Fsalem-dunkin-donuts-merch-747562-20260920&c=7447085328235028798&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_dunkin",
+        "name": "Global Brand Watch — dunkin",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-20T06:29:00Z",
+      "collected_at": "2026-09-20T16:13:23Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 135,
+      "summary": "Dunkin fans are 'fighting the urge' to book a trip to Salem after getting a glimpse of the coffee chain's latest Halloween merchandise.",
+      "categories": [
+        "beverage",
+        "food_industry"
+      ],
+      "topics": [
+        "AI"
+      ],
+      "brands": [
+        {
+          "id": "dunkin",
+          "name": "Dunkin'",
+          "fa": "دانکین"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "dunkin"
+        ],
+        "watch_source_id": "global_brand_bing_dunkin"
+      },
+      "title_fa": "طرفداران پس از دیدن محصولات جدید دانکین Donuts با میل خود برای رانندگی به سالم مبارزه می کنند.",
+      "summary_fa": "طرفداران دانکین پس از تماشای اجمالی از آخرین کالای هالووین این قهوه خانه، با اشتیاق برای رزرو سفر به سالم مبارزه می کنند.",
+      "report_fa": "طرفداران دانکین پس از تماشای اجمالی از آخرین کالای هالووین این قهوه خانه، با اشتیاق برای رزرو سفر به سالم مبارزه می کنند.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.921,
+            "latin_ratio": 0.079,
+            "max_sentence_chars": 94,
+            "word_count": 18
+          },
+          "summary": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.01,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 121,
+            "word_count": 23
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.01,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 121,
+            "word_count": 23
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
       "id": "487abcc9fec76642f10c",
       "title": "Yasso Drops New Spoonables Flavors",
       "url": "https://www.refrigeratedfrozenfood.com/articles/104720-yasso-drops-new-spoonables-flavors",
@@ -2132,7 +3135,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -2169,6 +3172,247 @@
             "latin_ratio": 0.0,
             "max_sentence_chars": 93,
             "word_count": 21
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "e9cb325e41a3fc7e7d6b",
+      "title": "Two new Shake Shack restaurants set to open in South Carolina",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab006233efc41008e72415249c5377f&url=https%3A%2F%2Fwww.msn.com%2Fen-us%2Fmoney%2Fgeneral%2Ftwo-new-shake-shack-restaurants-set-to-open-in-south-carolina%2Far-AA2cCiOx&c=18344709430885607881&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_shake_shack",
+        "name": "Global Brand Watch — shake_shack",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-20T05:14:37Z",
+      "collected_at": "2026-09-20T16:13:23Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 56,
+      "summary": "Two Shake Shacks in South Carolina will open this month.",
+      "categories": [
+        "food_industry"
+      ],
+      "topics": [],
+      "brands": [
+        {
+          "id": "shake_shack",
+          "name": "Shake Shack",
+          "fa": "شیک شک"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "shake_shack"
+        ],
+        "watch_source_id": "global_brand_bing_shake_shack"
+      },
+      "title_fa": "دو رستوران جدید شیک شک در کارولینای جنوبی افتتاح می شود",
+      "summary_fa": "دو Shake Shacks در کارولینای جنوبی در این ماه افتتاح خواهند شد.",
+      "report_fa": "دو Shake Shacks در کارولینای جنوبی در این ماه افتتاح خواهند شد.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "warn",
+        "score": 87,
+        "publishable": true,
+        "issues": [
+          "too-much-latin"
+        ],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 55,
+            "word_count": 11
+          },
+          "summary": {
+            "score": 80,
+            "status": "warn",
+            "issues": [
+              "too-much-latin"
+            ],
+            "persian_ratio": 0.784,
+            "latin_ratio": 0.216,
+            "max_sentence_chars": 63,
+            "word_count": 12
+          },
+          "report": {
+            "score": 80,
+            "status": "warn",
+            "issues": [
+              "too-much-latin"
+            ],
+            "persian_ratio": 0.784,
+            "latin_ratio": 0.216,
+            "max_sentence_chars": 63,
+            "word_count": 12
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "3b051d29afcc3ccbcc64",
+      "title": "Nestle India Faces 3 Cases Over Infant Food Formula Violations And Promotional Campaigns Details",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab00626e8304d79893e9e2f152a5705&url=https%3A%2F%2Fwww.msn.com%2Fen-in%2Fnews%2Fother%2Fnestle-india-faces-3-cases-over-infant-food-formula-violations-and-promotional-campaigns-details%2Fvi-AA2cAOfY&c=5695458011709591848&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_nestle",
+        "name": "Global Brand Watch — nestle",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-20T05:05:32Z",
+      "collected_at": "2026-09-20T16:13:26Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": {
+          "code": "IN",
+          "fa": "هند",
+          "name": "India",
+          "lat": 20.5937,
+          "lon": 78.9629,
+          "basis": "text"
+        },
+        "countries": [
+          {
+            "code": "IN",
+            "fa": "هند",
+            "name": "India",
+            "lat": 20.5937,
+            "lon": 78.9629,
+            "basis": "text"
+          }
+        ],
+        "cities": [],
+        "confidence": "high"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 201,
+      "summary": "New Delhi, Sept. 20 -- India's food safety regulator, the Food Safety and Standards Authority of India (FSSAI), has initiated legal action against Nestle India over alleged violations in its infant ...",
+      "categories": [
+        "food_safety",
+        "marketing_branding",
+        "food_industry"
+      ],
+      "topics": [
+        "AI",
+        "food safety"
+      ],
+      "brands": [
+        {
+          "id": "nestle",
+          "name": "Nestlé",
+          "fa": "نستله"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 75,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "nestle"
+        ],
+        "watch_source_id": "global_brand_bing_nestle"
+      },
+      "title_fa": "نستله هند با 3 مورد نقض فرمول غذای نوزادان و جزئیات کمپین های تبلیغاتی مواجه است",
+      "summary_fa": "دهلی نو، 20 سپتامبر -- تنظیم کننده ایمنی مواد غذایی هند، سازمان ایمنی و استانداردهای غذایی هند (FSSAI)، اقدام قانونی علیه نستله هند به دلیل نقض ادعایی در نوزاد خود آغاز کرده است.",
+      "report_fa": "دهلی نو، 20 سپتامبر -- تنظیم کننده ایمنی مواد غذایی هند، سازمان ایمنی و استانداردهای غذایی هند (FSSAI)، اقدام قانونی علیه نستله هند به دلیل نقض ادعایی در نوزاد خود آغاز کرده است.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 96,
+        "publishable": true,
+        "issues": [
+          "long-sentence"
+        ],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 80,
+            "word_count": 16
+          },
+          "summary": {
+            "score": 89,
+            "status": "pass",
+            "issues": [
+              "long-sentence"
+            ],
+            "persian_ratio": 0.985,
+            "latin_ratio": 0.037,
+            "max_sentence_chars": 178,
+            "word_count": 33
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.985,
+            "latin_ratio": 0.037,
+            "max_sentence_chars": 178,
+            "word_count": 33
           }
         },
         "source_original_fa": false,
@@ -2414,7 +3658,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -2536,6 +3780,117 @@
       }
     },
     {
+      "id": "9501b71d146fe265c3bb",
+      "title": "You can soon order Dunkin' and groceries in one Walmart app trip",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab00623ffe2405fa5e66d06e69a4bb5&url=https%3A%2F%2Fwww.yahoo.com%2Fnews%2Fus%2Farticles%2Fsoon-order-dunkin-groceries-one-090143275.html&c=7819265709868715544&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_dunkin",
+        "name": "Global Brand Watch — dunkin",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-20T02:01:00Z",
+      "collected_at": "2026-09-20T16:13:23Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 204,
+      "summary": "The Dunkin' menu items are available in the \"Restaurants\" tab on Walmart's website and in its app. Once you enter an eligible delivery address served by a Walmart location that offers Dunkin', the tab ...",
+      "categories": [
+        "menu_product_innovation",
+        "delivery_drive_thru",
+        "food_industry"
+      ],
+      "topics": [
+        "AI",
+        "delivery",
+        "menu"
+      ],
+      "brands": [
+        {
+          "id": "dunkin",
+          "name": "Dunkin'",
+          "fa": "دانکین"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 74,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "dunkin"
+        ],
+        "watch_source_id": "global_brand_bing_dunkin"
+      },
+      "title_fa": "به زودی می توانید دانکین و مواد غذایی را در یک سفر برنامه Walmart سفارش دهید",
+      "summary_fa": "آیتم های منو دانکین در برگه \"رستوران ها\" در وب سایت والمارت و در برنامه آن موجود است. هنگامی که یک آدرس تحویل واجد شرایط را وارد کنید که توسط یک مکان Walmart ارائه می شود که دانکین ارائه می دهد، برگه.",
+      "report_fa": "آیتم های منو دانکین در برگه \"رستوران ها\" در وب سایت والمارت و در برنامه آن موجود است. هنگامی که یک آدرس تحویل واجد شرایط را وارد کنید که توسط یک مکان Walmart ارائه می شود که دانکین ارائه می دهد، برگه.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.885,
+            "latin_ratio": 0.115,
+            "max_sentence_chars": 76,
+            "word_count": 16
+          },
+          "summary": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.961,
+            "latin_ratio": 0.045,
+            "max_sentence_chars": 114,
+            "word_count": 42
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.961,
+            "latin_ratio": 0.045,
+            "max_sentence_chars": 114,
+            "word_count": 42
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
       "id": "8229f8d8c2b820b0f828",
       "title": "Burger King Royal Perks members get Walmart+ for 40% off: How to claim this clever Peacock hack",
       "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aafc3d476144e8eaa24646cc8f1102f&url=https%3A%2F%2Fmashable.com%2Flife%2Fsept-18-burger-king-walmart-plus-deal&c=8535803992780820767&mkt=en-us",
@@ -2602,7 +3957,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -2644,6 +3999,179 @@
         "source_original_fa": false,
         "semantic_penalty": 0
       }
+    },
+    {
+      "id": "81f23e3844f98e1f93fa",
+      "title": "From Dragon Ball to One Piece, Every Burger King Anime Collab of 2026",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab006202ee34b8788d13d2ae4c55627&url=https%3A%2F%2Ffandomwire.com%2Fdragon-ball-one-piece-every-burger-king-anime-collab-2026%2F&c=5059367559598184732&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_burger_king",
+        "name": "Global Brand Watch — burger_king",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-20T01:31:00Z",
+      "collected_at": "2026-09-20T16:13:21Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 144,
+      "summary": "Burger King went full anime in 2026 with One Piece, Dragon Ball Super, and Attack on Titan collabs featuring wild menus, collectibles, and more.",
+      "categories": [
+        "qsr_fast_food",
+        "menu_product_innovation",
+        "food_industry"
+      ],
+      "topics": [
+        "menu"
+      ],
+      "brands": [
+        {
+          "id": "burger_king",
+          "name": "Burger King",
+          "fa": "برگر کینگ"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "burger_king"
+        ],
+        "watch_source_id": "global_brand_bing_burger_king"
+      },
+      "title_fa": "",
+      "summary_fa": "",
+      "report_fa": "",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "quality-quarantined",
+        "engine": "http-en-fa",
+        "cleanup_version": 2,
+        "quality_retry": true
+      },
+      "editorial": {
+        "status": "quality-retry",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "block",
+        "score": 0,
+        "publishable": false,
+        "issues": [
+          "empty"
+        ],
+        "parts": {
+          "title": {
+            "score": 0,
+            "status": "block",
+            "issues": [
+              "empty"
+            ],
+            "persian_ratio": 0.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 0,
+            "word_count": 0
+          },
+          "summary": {
+            "score": 0,
+            "status": "block",
+            "issues": [
+              "empty"
+            ],
+            "persian_ratio": 0.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 0,
+            "word_count": 0
+          },
+          "report": {
+            "score": 0,
+            "status": "block",
+            "issues": [
+              "empty"
+            ],
+            "persian_ratio": 0.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 0,
+            "word_count": 0
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      },
+      "translation_quarantine": {
+        "title_fa": "از Dragon Ball تا One Piece، هر برگر کینگ Anime Collab 2026",
+        "summary_fa": "برگر کینگ در سال 2026 یک انیمیشن کامل با همکاری‌های One Piece، Dragon Ball Super، و Attack on Titan با منوهای وحشی، کلکسیون‌ها و موارد دیگر عرضه شد.",
+        "report_fa": "برگر کینگ در سال 2026 یک انیمیشن کامل با همکاری‌های One Piece، Dragon Ball Super، و Attack on Titan با منوهای وحشی، کلکسیون‌ها و موارد دیگر عرضه شد.",
+        "narrative_fa": "",
+        "quality": {
+          "version": 1,
+          "status": "block",
+          "score": 61,
+          "publishable": false,
+          "issues": [
+            "low-persian-ratio",
+            "mostly-latin",
+            "too-much-latin"
+          ],
+          "parts": {
+            "title": {
+              "score": 26,
+              "status": "block",
+              "issues": [
+                "mostly-latin",
+                "low-persian-ratio"
+              ],
+              "persian_ratio": 0.349,
+              "latin_ratio": 0.674,
+              "max_sentence_chars": 59,
+              "word_count": 12
+            },
+            "summary": {
+              "score": 80,
+              "status": "warn",
+              "issues": [
+                "too-much-latin"
+              ],
+              "persian_ratio": 0.703,
+              "latin_ratio": 0.324,
+              "max_sentence_chars": 148,
+              "word_count": 30
+            },
+            "report": {
+              "score": 80,
+              "status": "warn",
+              "issues": [
+                "too-much-latin"
+              ],
+              "persian_ratio": 0.703,
+              "latin_ratio": 0.324,
+              "max_sentence_chars": 148,
+              "word_count": 30
+            }
+          },
+          "source_original_fa": false
+        }
+      },
+      "narrative_fa": ""
     },
     {
       "id": "db7f2cb613ab1707e6ed",
@@ -2693,7 +4221,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 68,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -2711,7 +4239,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -2883,7 +4411,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 62,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -2901,7 +4429,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -3049,6 +4577,128 @@
             "latin_ratio": 0.0,
             "max_sentence_chars": 201,
             "word_count": 46
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "bcd5b7f41f38ce0c19c4",
+      "title": "Chipotle Mexican Grill stock holds near recent lows as valuation debate intensifies",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab0062199d943dd9d49aeb3a955c42c&url=https%3A%2F%2Fwww.ad-hoc-news.de%2Fboerse%2Fnews%2Fcorporate-news%2Fchipotle-mexican-grill-stock-holds-near-recent-lows-as-valuation-debate%2F70138475&c=3876739046751798070&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_chipotle",
+        "name": "Global Brand Watch — chipotle",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-19T20:25:00Z",
+      "collected_at": "2026-09-20T16:13:22Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": {
+          "code": "MX",
+          "fa": "مکزیک",
+          "name": "Mexico",
+          "lat": 23.6345,
+          "lon": -102.5528,
+          "basis": "text"
+        },
+        "countries": [
+          {
+            "code": "MX",
+            "fa": "مکزیک",
+            "name": "Mexico",
+            "lat": 23.6345,
+            "lon": -102.5528,
+            "basis": "text"
+          }
+        ],
+        "cities": [],
+        "confidence": "high"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 198,
+      "summary": "Chipotle Mexican Grill stock closed at USD 33.40 on September 18, 2026, about 22 percent below its 52-week high of USD 42.81. The company’s Q2 revenue rose 9.3 percent year over year to USD 3.35 ...",
+      "categories": [
+        "fast_casual",
+        "food_industry"
+      ],
+      "topics": [],
+      "brands": [
+        {
+          "id": "chipotle",
+          "name": "Chipotle",
+          "fa": "چیپوتله"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "chipotle"
+        ],
+        "watch_source_id": "global_brand_bing_chipotle"
+      },
+      "title_fa": "سهام چیپوتله مکزیک گریل نزدیک به پایین ترین سطح اخیر با تشدید بحث ارزش گذاری باقی می ماند",
+      "summary_fa": "سهام گریل مکزیکی چیپوتله در 18 سپتامبر 2026 با قیمت 33.40 دلار بسته شد که حدود 22 درصد کمتر از بالاترین قیمت خود در 52 هفته گذشته یعنی 42.81 دلار بود. درآمد سه ماهه دوم این شرکت نسبت به سال گذشته 9.3 درصد افزایش یافت و به 3.35 دلار رسید.",
+      "report_fa": "سهام گریل مکزیکی چیپوتله در 18 سپتامبر 2026 با قیمت 33.40 دلار بسته شد که حدود 22 درصد کمتر از بالاترین قیمت خود در 52 هفته گذشته یعنی 42.81 دلار بود. درآمد سه ماهه دوم این شرکت نسبت به سال گذشته 9.3 درصد افزایش یافت و به 3.35 دلار رسید.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 89,
+            "word_count": 18
+          },
+          "summary": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 150,
+            "word_count": 54
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 150,
+            "word_count": 54
           }
         },
         "source_original_fa": false,
@@ -3616,7 +5266,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -3703,7 +5353,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 60,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -3721,7 +5371,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -3812,7 +5462,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 71,
+      "relevance_score": 67,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -3918,7 +5568,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 62,
+      "relevance_score": 58,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -4024,7 +5674,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 67,
+      "relevance_score": 63,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -4137,7 +5787,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 85,
-      "relevance_score": 57,
+      "relevance_score": 53,
       "title_fa": "از کلاهبرداری با وعده پرداخت وام تا کشف ۲۲ تن مواد غذایی قاچاق در مازندران",
       "summary_fa": "سرپرست انتظامی شهرستان قائمشهر از بازداشت زوج کلاهبردار با بیش از ۵۰۰ میلیارد ریال کلاهبرداری با وعده پرداخت وام از ۲۵ شهروند خبر داد.",
       "report_fa": "سرپرست انتظامی شهرستان قائمشهر از بازداشت زوج کلاهبردار با بیش از ۵۰۰ میلیارد ریال کلاهبرداری با وعده پرداخت وام از ۲۵ شهروند خبر داد.",
@@ -4227,7 +5877,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 81,
+      "relevance_score": 77,
       "title_fa": "چیپوتله پلت فرم فناوری را آزمایش می کند که برای شناسایی خطرات ایمنی مواد غذایی قبل از تشدید آنها طراحی شده است.",
       "summary_fa": "بر اساس گزارش WIRED، چیپوتله مکزیک گریل در حال اجرای آزمایشی یک پلت فرم مدیریت ریسک ایمنی مواد غذایی است که بر اساس نرم افزار Palantir Technologies ساخته شده است. چیپوتله در بیانیه ای که به این نشریه ارائه شده است، خلبان را تایید کرده است. هیچ یک از این دو شرکت بیانیه مطبوعاتی در مورد این پروژه صادر نکردند.",
       "report_fa": "بر اساس گزارش WIRED، چیپوتله مکزیک گریل در حال اجرای آزمایشی یک پلت فرم مدیریت ریسک ایمنی مواد غذایی است که بر اساس نرم افزار Palantir Technologies ساخته شده است. چیپوتله در بیانیه ای که به این نشریه ارائه شده است، خلبان را تایید کرده است.\n\nهیچ یک از این دو شرکت بیانیه مطبوعاتی در مورد این پروژه صادر نکردند. بر اساس گزارش‌ها، WIRED این پلتفرم را از طریق اسکرین‌شات‌هایی که بررسی کرده بود، کشف کرد و متعاقباً به دنبال تأیید چیپوتله بود.\n\nPalantir به درخواست انتشارات برای اظهار نظر پاسخ نداد. به گفته WIRED، اطلاعاتی مانند نمرات بازرسی بخش بهداشت، حوادث آفات و بیماری های کارکنان را برای شناسایی الگوها و ارزیابی سطح خطر نسبی مکان های فردی ترکیب می کند.\n\nچیپوتله فاش نکرده است که چه تعداد رستوران در آن شرکت می کنند، چه زمانی آزمایش شروع شد یا اینکه آیا این پلت فرم در نهایت در سراسر سیستم مستقر خواهد شد. پیلوت به دنبال شیوع سالمونلا چند ایالتی مرتبط با جالاپینوهای فراخوان شده از سینالوآ، مکزیک است.\n\nطبق گزارش سازمان غذا و دارو، شیوع این بیماری منجر به 431 بیماری گزارش شده و 57 بستری شدن در بیمارستان در 32 ایالت شد. چیپوتله در 20 ژوئیه شروع به تغییر تامین کنندگان در رستوران های آسیب دیده کرد و ارائه محصول مربوطه را متوقف کرد.",
@@ -4353,7 +6003,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 67,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -4371,7 +6021,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -4471,7 +6121,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 67,
+      "relevance_score": 63,
       "turkey_discovery": {
         "source_id": "turkey_discovery_turkey_chain_restaurants",
         "query_name": "Türkiye — zincir restoranlar ve franchise"
@@ -4584,7 +6234,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 70,
+      "relevance_score": 66,
       "turkey_discovery": {
         "source_id": "turkey_discovery_turkey_restaurant_sector",
         "query_name": "Türkiye — restoran ve yeme-içme sektörü"
@@ -4770,7 +6420,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 73,
+      "relevance_score": 69,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -4892,7 +6542,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 67,
+      "relevance_score": 63,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -5000,7 +6650,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 62,
+      "relevance_score": 58,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -5055,6 +6705,126 @@
             "latin_ratio": 0.151,
             "max_sentence_chars": 95,
             "word_count": 20
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "c0cc0729bfb157894ce2",
+      "title": "Fon soruşturması: Tera ve Pusula yöneticileri gözaltına alındı",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab0066a5fee42cbb2b607a123cbfa69&url=https%3A%2F%2Fgazeteoksijen.com%2Fturkiye%2Ffon-sorusturmasi-tera-yatirim-holding-yonetim-kurulu-baskani-emre-tezmen-gozaltina-alindi-290021&c=9533639177612052053&mkt=tr-tr",
+      "source": {
+        "id": "turkey_discovery_turkey_food_investment",
+        "name": "Türkiye — gıda yatırımları ve ihracat",
+        "homepage": "https://www.bing.com/news",
+        "class": "turkey_sector_discovery",
+        "priority": 2,
+        "market": "turkey",
+        "country": "TR",
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-19T11:34:00Z",
+      "collected_at": "2026-09-20T16:14:34Z",
+      "language": "tr",
+      "region": "TR",
+      "country": "TR",
+      "market": "turkey",
+      "geo": {
+        "primary_country": {
+          "code": "TR",
+          "fa": "ترکیه",
+          "name": "Türkiye",
+          "lat": 38.9637,
+          "lon": 35.2433,
+          "basis": "source"
+        },
+        "countries": [
+          {
+            "code": "TR",
+            "fa": "ترکیه",
+            "name": "Türkiye",
+            "lat": 38.9637,
+            "lon": 35.2433,
+            "basis": "source"
+          }
+        ],
+        "cities": [],
+        "confidence": "medium"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 198,
+      "summary": "İstanbul Cumhuriyet Başsavcılığı’nın sermaye piyasasında gerçekleştirilen işlemlere ilişkin yürüttüğü soruşturma kapsamında Pusula Portföy yöneticilerinden Serdar Turhan ile Tera Yatırım Holding ...",
+      "categories": [
+        "food_industry",
+        "food_manufacturing",
+        "labor_management"
+      ],
+      "topics": [],
+      "brands": [],
+      "iran_relevance_score": 0,
+      "relevance_score": 66,
+      "turkey_discovery": {
+        "source_id": "turkey_discovery_turkey_food_investment",
+        "query_name": "Türkiye — gıda yatırımları ve ihracat"
+      },
+      "title_fa": "تحقیقات صندوق: مدیران ترا و پوسولا بازداشت شدند",
+      "summary_fa": "در چارچوب تحقیقات انجام شده توسط دادستانی کل استانبول در خصوص معاملات انجام شده در بازار سرمایه، سردار تورهان، یکی از مدیران Pusula Portföy و Tera Yatırım Holding.",
+      "report_fa": "در چارچوب تحقیقات انجام شده توسط دادستانی کل استانبول در خصوص معاملات انجام شده در بازار سرمایه، سردار تورهان، یکی از مدیران Pusula Portföy و Tera Yatırım Holding.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-tr-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "warn",
+        "score": 87,
+        "publishable": true,
+        "issues": [
+          "too-much-latin"
+        ],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 47,
+            "word_count": 8
+          },
+          "summary": {
+            "score": 80,
+            "status": "warn",
+            "issues": [
+              "too-much-latin"
+            ],
+            "persian_ratio": 0.782,
+            "latin_ratio": 0.211,
+            "max_sentence_chars": 163,
+            "word_count": 31
+          },
+          "report": {
+            "score": 80,
+            "status": "warn",
+            "issues": [
+              "too-much-latin"
+            ],
+            "persian_ratio": 0.782,
+            "latin_ratio": 0.211,
+            "max_sentence_chars": 163,
+            "word_count": 31
           }
         },
         "source_original_fa": false,
@@ -5131,8 +6901,8 @@
           "market": "iran"
         }
       ],
-      "iran_relevance_score": 100,
-      "relevance_score": 78,
+      "iran_relevance_score": 92,
+      "relevance_score": 70,
       "brand_watch": {
         "mode": "official_telegram",
         "matched_brand_ids": [
@@ -5982,6 +7752,123 @@
       }
     },
     {
+      "id": "1d0f57934192c7410150",
+      "title": "Bakan Yumaklı: \"Millet iradesi üzerindeki vesayetin prangaları birer birer kırıldı\"",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab00669fed94a71b2437bd2765a6a6b&url=https%3A%2F%2Fwww.msn.com%2Ftr-tr%2Ffinans%2Fgenel%2Fbakan-yumakl%25C4%25B1-millet-iradesi-%25C3%25BCzerindeki-vesayetin-prangalar%25C4%25B1-birer-birer-k%25C4%25B1r%25C4%25B1ld%25C4%25B1%2Far-AA2czRSX&c=16325480781768672014&mkt=tr-tr",
+      "source": {
+        "id": "turkey_discovery_turkey_food_industry",
+        "name": "Türkiye — gıda sanayi ve üretim",
+        "homepage": "https://www.bing.com/news",
+        "class": "turkey_sector_discovery",
+        "priority": 2,
+        "market": "turkey",
+        "country": "TR",
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-19T09:30:36Z",
+      "collected_at": "2026-09-20T16:14:34Z",
+      "language": "tr",
+      "region": "TR",
+      "country": "TR",
+      "market": "turkey",
+      "geo": {
+        "primary_country": {
+          "code": "TR",
+          "fa": "ترکیه",
+          "name": "Türkiye",
+          "lat": 38.9637,
+          "lon": 35.2433,
+          "basis": "source"
+        },
+        "countries": [
+          {
+            "code": "TR",
+            "fa": "ترکیه",
+            "name": "Türkiye",
+            "lat": 38.9637,
+            "lon": 35.2433,
+            "basis": "source"
+          }
+        ],
+        "cities": [],
+        "confidence": "medium"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 204,
+      "summary": "Tarım ve Orman Bakanı İbrahim Yumaklı, AK Parti hareketi ile 25 yıl önce Türk siyasetinde yeni bir sayfa açıldığını belirterek, \"Sağlıktan ulaşıma, eğitimden dış politikaya, milli sanayiden sosyal pol ...",
+      "categories": [
+        "food_industry",
+        "food_manufacturing"
+      ],
+      "topics": [],
+      "brands": [],
+      "iran_relevance_score": 0,
+      "relevance_score": 66,
+      "turkey_discovery": {
+        "source_id": "turkey_discovery_turkey_food_industry",
+        "query_name": "Türkiye — gıda sanayi ve üretim"
+      },
+      "title_fa": "وزیر یوماکلی: «بند قیمومیت اراده ملت یکی یکی شکسته شد».",
+      "summary_fa": "ابراهیم یوماکلی وزیر کشاورزی و جنگلداری با بیان اینکه ۲۵ سال پیش با جنبش حزب عدالت و توسعه صفحه جدیدی در سیاست ترکیه باز شد، گفت: از سلامت تا حمل و نقل، از آموزش تا سیاست خارجی، از صنعت ملی تا سیاست اجتماعی.",
+      "report_fa": "ابراهیم یوماکلی وزیر کشاورزی و جنگلداری با بیان اینکه ۲۵ سال پیش با جنبش حزب عدالت و توسعه صفحه جدیدی در سیاست ترکیه باز شد، گفت: از سلامت تا حمل و نقل، از آموزش تا سیاست خارجی، از صنعت ملی تا سیاست اجتماعی.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-tr-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 96,
+        "publishable": true,
+        "issues": [
+          "long-sentence"
+        ],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 55,
+            "word_count": 10
+          },
+          "summary": {
+            "score": 89,
+            "status": "pass",
+            "issues": [
+              "long-sentence"
+            ],
+            "persian_ratio": 1.032,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 207,
+            "word_count": 43
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.032,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 207,
+            "word_count": 43
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
       "id": "c27f22648ac8d59fd106",
       "title": "Burger King & Roast Beef: The 1980s Sandwich War We Almost Forgot About",
       "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aaef59d1cc2494e8c6b3198af94df5d&url=https%3A%2F%2Fsporked.com%2Farticle%2Fthe-1980s-sandwich-war-we-almost-forgot-about%2F&c=15634635741351494048&mkt=en-us",
@@ -6344,7 +8231,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 59,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -7277,8 +9164,8 @@
           "market": "iran"
         }
       ],
-      "iran_relevance_score": 95,
-      "relevance_score": 72,
+      "iran_relevance_score": 92,
+      "relevance_score": 52,
       "brand_watch": {
         "mode": "bing_news_rss",
         "matched_brand_ids": [
@@ -8830,8 +10717,8 @@
           "market": "iran"
         }
       ],
-      "iran_relevance_score": 95,
-      "relevance_score": 72,
+      "iran_relevance_score": 92,
+      "relevance_score": 56,
       "brand_watch": {
         "mode": "bing_news_rss",
         "matched_brand_ids": [
@@ -10631,6 +12518,173 @@
       }
     },
     {
+      "id": "6e73a2ae4b840732fe3f",
+      "title": "How To Order Pizza Hut Bellybuster-Style Like The Irish",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab00620395c447e9929d8eca40a48c9&url=https%3A%2F%2Fwww.yahoo.com%2Flifestyle%2Farticles%2Forder-pizza-hut-bellybuster-style-110000124.html&c=15775151544299194965&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_pizza_hut",
+        "name": "Global Brand Watch — pizza_hut",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-19T04:00:00Z",
+      "collected_at": "2026-09-20T16:13:20Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 154,
+      "summary": "If you're hoping to try something extra flavorful this week for pizza night, look no further than the menu at Pizza Hut — particularly the one in Ireland.",
+      "categories": [
+        "menu_product_innovation",
+        "ingredients_rd",
+        "food_industry"
+      ],
+      "topics": [
+        "menu"
+      ],
+      "brands": [
+        {
+          "id": "pizza_hut",
+          "name": "Pizza Hut",
+          "fa": "پیتزا هات"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "pizza_hut"
+        ],
+        "watch_source_id": "global_brand_bing_pizza_hut"
+      },
+      "title_fa": "",
+      "summary_fa": "",
+      "report_fa": "",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "quality-quarantined",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "block",
+        "score": 0,
+        "publishable": false,
+        "issues": [
+          "empty"
+        ],
+        "parts": {
+          "title": {
+            "score": 0,
+            "status": "block",
+            "issues": [
+              "empty"
+            ],
+            "persian_ratio": 0.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 0,
+            "word_count": 0
+          },
+          "summary": {
+            "score": 0,
+            "status": "block",
+            "issues": [
+              "empty"
+            ],
+            "persian_ratio": 0.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 0,
+            "word_count": 0
+          },
+          "report": {
+            "score": 0,
+            "status": "block",
+            "issues": [
+              "empty"
+            ],
+            "persian_ratio": 0.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 0,
+            "word_count": 0
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      },
+      "translation_quarantine": {
+        "title_fa": "نحوه سفارش پیتزا هات Bellybuster-Style مانند The Irish",
+        "summary_fa": "اگر می‌خواهید این هفته برای شب پیتزا چیزی خوشمزه را امتحان کنید، به منوی پیتزا هات نگاه نکنید - به‌ویژه منوی ایرلند.",
+        "report_fa": "اگر می‌خواهید این هفته برای شب پیتزا چیزی خوشمزه را امتحان کنید، به منوی پیتزا هات نگاه نکنید - به‌ویژه منوی ایرلند.",
+        "narrative_fa": "",
+        "quality": {
+          "version": 1,
+          "status": "retry",
+          "score": 81,
+          "publishable": false,
+          "issues": [
+            "mixed-script",
+            "mostly-latin"
+          ],
+          "parts": {
+            "title": {
+              "score": 46,
+              "status": "retry",
+              "issues": [
+                "mostly-latin",
+                "mixed-script"
+              ],
+              "persian_ratio": 0.478,
+              "latin_ratio": 0.522,
+              "max_sentence_chars": 54,
+              "word_count": 9
+            },
+            "summary": {
+              "score": 100,
+              "status": "pass",
+              "issues": [],
+              "persian_ratio": 1.011,
+              "latin_ratio": 0.0,
+              "max_sentence_chars": 116,
+              "word_count": 23
+            },
+            "report": {
+              "score": 100,
+              "status": "pass",
+              "issues": [],
+              "persian_ratio": 1.011,
+              "latin_ratio": 0.0,
+              "max_sentence_chars": 116,
+              "word_count": 23
+            }
+          },
+          "source_original_fa": false
+        }
+      },
+      "narrative_fa": ""
+    },
+    {
       "id": "1b772ba25a6b32b2fe57",
       "title": "This Best-Selling Coffee Chain Wiped The Floor With Dunkin' By $17B",
       "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aaef5a059d24e509aec44778de6d1f9&url=https%3A%2F%2Fwww.thetakeout.com%2F2257518%2Fbest-selling-coffee-chain-not-dunkin%2F&c=7507923166651706788&mkt=en-us",
@@ -11339,6 +13393,133 @@
             "latin_ratio": 0.124,
             "max_sentence_chars": 120,
             "word_count": 27
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "be02e416e5eaa4851996",
+      "title": "Starbucks spent 26 years building 8,000 stores in China - Luckin Coffee built more than 30,000 in just eight years",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab0061fc1ea46c285d23a2a4c9fb924&url=https%3A%2F%2Fwww.msn.com%2Fen-us%2Fmoney%2Feconomy%2Fstarbucks-spent-26-years-building-8-000-stores-in-china-luckin-coffee-built-more-than-30-000-in-just-eight-years%2Fvi-AA2cxVAY&c=16082174173513503537&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_starbucks",
+        "name": "Global Brand Watch — starbucks",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-19T02:23:19Z",
+      "collected_at": "2026-09-20T16:13:19Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": {
+          "code": "CN",
+          "fa": "چین",
+          "name": "China",
+          "lat": 35.8617,
+          "lon": 104.1954,
+          "basis": "text"
+        },
+        "countries": [
+          {
+            "code": "CN",
+            "fa": "چین",
+            "name": "China",
+            "lat": 35.8617,
+            "lon": 104.1954,
+            "basis": "text"
+          }
+        ],
+        "cities": [],
+        "confidence": "high"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 202,
+      "summary": "Starbucks spent more than two decades building a dominant position in China's growing coffee market, but Luckin Coffee attacked that model with cheaper drinks, smaller stores, delivery and a heavily ...",
+      "categories": [
+        "restaurant_technology_ai",
+        "delivery_drive_thru",
+        "beverage",
+        "food_industry"
+      ],
+      "topics": [
+        "delivery",
+        "POS"
+      ],
+      "brands": [
+        {
+          "id": "starbucks",
+          "name": "Starbucks",
+          "fa": "استارباکس"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "starbucks"
+        ],
+        "watch_source_id": "global_brand_bing_starbucks"
+      },
+      "title_fa": "استارباکس 26 سال را صرف ساخت 8000 فروشگاه در چین کرد - قهوه Luckin بیش از 30000 فروشگاه را تنها در هشت سال ساخت.",
+      "summary_fa": "استارباکس بیش از دو دهه را صرف ایجاد موقعیت مسلط در بازار رو به رشد قهوه چین کرد، اما قهوه لاکین با نوشیدنی‌های ارزان‌تر، فروشگاه‌های کوچک‌تر، تحویل و.",
+      "report_fa": "استارباکس بیش از دو دهه را صرف ایجاد موقعیت مسلط در بازار رو به رشد قهوه چین کرد، اما قهوه لاکین با نوشیدنی‌های ارزان‌تر، فروشگاه‌های کوچک‌تر، تحویل و.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.921,
+            "latin_ratio": 0.079,
+            "max_sentence_chars": 112,
+            "word_count": 23
+          },
+          "summary": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.026,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 151,
+            "word_count": 32
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.026,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 151,
+            "word_count": 32
           }
         },
         "source_original_fa": false,
@@ -12532,7 +14713,7 @@
         "selected_chars": 3115,
         "extractor": "scored-container",
         "content_hash": "7514b9b5d97d6c6b41aa",
-        "fetched_at": "2026-09-20T11:32:30Z"
+        "fetched_at": "2026-09-20T16:15:24Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 7172,
@@ -13365,7 +15546,7 @@
         "selected_chars": 3106,
         "extractor": "scored-container",
         "content_hash": "6635fd6d5a458ca1ac96",
-        "fetched_at": "2026-09-20T11:32:40Z"
+        "fetched_at": "2026-09-20T16:15:34Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 9441,
@@ -16287,6 +18468,114 @@
       }
     },
     {
+      "id": "6148341a8c67d946444b",
+      "title": "Pizza Hut eyes franchise-fee bond deal to help fund $1.5 billion purchase",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab00620395c447e9929d8eca40a48c9&url=https%3A%2F%2Fwww.briefs.co%2Fnews%2Fpizza-hut-eyes-franchise-fee-bond-deal-to-help-fund-1-5-bill%2F&c=7973004456231584610&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_pizza_hut",
+        "name": "Global Brand Watch — pizza_hut",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-18T15:19:00Z",
+      "collected_at": "2026-09-20T16:13:20Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 147,
+      "summary": "Pizza Hut considers bonds tied to franchise fees to help finance a $1.5B buyout; UBS to lead a whole‑business securitization as ratings are sought.",
+      "categories": [
+        "franchising",
+        "food_industry"
+      ],
+      "topics": [
+        "franchise"
+      ],
+      "brands": [
+        {
+          "id": "pizza_hut",
+          "name": "Pizza Hut",
+          "fa": "پیتزا هات"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "pizza_hut"
+        ],
+        "watch_source_id": "global_brand_bing_pizza_hut"
+      },
+      "title_fa": "پیتزا هات برای کمک به تامین مالی 1.5 میلیارد دلاری خرید اوراق قرضه با حق امتیاز حق رای چشم انتظار است.",
+      "summary_fa": "پیتزا هات اوراق قرضه مرتبط با کارمزد فرانشیز را برای کمک به تأمین مالی خرید 1.5 میلیارد دلاری در نظر می گیرد. UBS در حالی که به دنبال رتبه بندی است، اوراق بهادارسازی کل کسب و کار را رهبری می کند.",
+      "report_fa": "پیتزا هات اوراق قرضه مرتبط با کارمزد فرانشیز را برای کمک به تأمین مالی خرید 1.5 میلیارد دلاری در نظر می گیرد. UBS در حالی که به دنبال رتبه بندی است، اوراق بهادارسازی کل کسب و کار را رهبری می کند.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 102,
+            "word_count": 22
+          },
+          "summary": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.987,
+            "latin_ratio": 0.02,
+            "max_sentence_chars": 109,
+            "word_count": 42
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.987,
+            "latin_ratio": 0.02,
+            "max_sentence_chars": 109,
+            "word_count": 42
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
       "id": "e55a8727b82dda73d282",
       "title": "Wendy’s Goes Back to Its Iconic Yellow Packaging — And the White House Takes the Credit",
       "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aaf684662c2459bb4308ebb7b40396c&url=https%3A%2F%2Fwww.complex.com%2Flife%2Fa%2Fbernadette-giacomazzo%2Fwendys-yellow-packaging-return&c=8175008780205993724&mkt=en-us",
@@ -17396,7 +19685,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 58,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -17414,7 +19703,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -17534,7 +19823,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-20T11:32:54Z"
+        "fetched_at": "2026-09-20T16:15:53Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -17646,7 +19935,7 @@
         "selected_chars": 1881,
         "extractor": "article",
         "content_hash": "488d4fb5833e2264488b",
-        "fetched_at": "2026-09-20T11:32:53Z"
+        "fetched_at": "2026-09-20T16:15:51Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 1987,
@@ -18149,8 +20438,8 @@
       },
       "image_url": "https://imgproxy.divecdn.com/GqEJr3tXts6tDsvizr5Dzp3AzvFTLRWN2-DTIwZx9e4/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS8yMDE4LTExMDAtRHVibGluLVJkXzAxMl8yLmpwZw==.webp",
       "image_source": "feed",
-      "source_detail_chars": 168,
-      "summary": "Meritage Hospitality Group, which operates 314 Wendy’s units, has closed at least 60 units and opted out or altered the breakfast daypart to improve store-level EBITDA.",
+      "source_detail_chars": 178,
+      "summary": "Meritage Hospitality Group, which operates 314 Wendy’s units, has closed at least 60 units this year and opted out or altered the breakfast daypart to improve store-level EBITDA.",
       "categories": [
         "qsr_fast_food",
         "franchising",
@@ -18170,8 +20459,8 @@
       "iran_relevance_score": 0,
       "relevance_score": 80,
       "title_fa": "Major وندیز فرنچایزگیرنده اعلام ورشکستگی کرد",
-      "summary_fa": "Meritage Hospitality Group که دارای 314 واحد وندی است، حداقل 60 واحد را تعطیل کرده و صبحانه بازه زمانی فروش را برای بهبود EBITDA در سطح فروشگاه انصراف داده یا تغییر داده است.",
-      "report_fa": "Meritage Hospitality Group که دارای 314 واحد وندی است، حداقل 60 واحد را تعطیل کرده و صبحانه بازه زمانی فروش را برای بهبود EBITDA در سطح فروشگاه انصراف داده یا تغییر داده است.",
+      "summary_fa": "Meritage Hospitality Group که دارای 314 واحد وندی است، امسال حداقل 60 واحد را تعطیل کرده و صبحانه بازه زمانی فروش را برای بهبود EBITDA در سطح فروشگاه انصراف داده یا تغییر داده است.",
+      "report_fa": "Meritage Hospitality Group که دارای 314 واحد وندی است، امسال حداقل 60 واحد را تعطیل کرده و صبحانه بازه زمانی فروش را برای بهبود EBITDA در سطح فروشگاه انصراف داده یا تغییر داده است.",
       "report_coverage": "خلاصه منبع",
       "translation": {
         "status": "translated",
@@ -18179,22 +20468,23 @@
         "cleanup_version": 2,
         "quality_retry": true
       },
-      "article_body": {
-        "status": "http-error",
-        "http_status": 403,
-        "fetched_at": "2026-09-20T11:32:54Z"
-      },
       "editorial": {
         "status": "quality-retry",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
+      "article_body": {
+        "status": "http-error",
+        "http_status": 403,
+        "fetched_at": "2026-09-20T16:15:51Z"
+      },
       "translation_quality": {
         "version": 2,
         "status": "warn",
-        "score": 87,
+        "score": 83,
         "publishable": true,
         "issues": [
+          "long-sentence",
           "too-much-latin"
         ],
         "parts": {
@@ -18208,15 +20498,16 @@
             "word_count": 6
           },
           "summary": {
-            "score": 80,
+            "score": 69,
             "status": "warn",
             "issues": [
-              "too-much-latin"
+              "too-much-latin",
+              "long-sentence"
             ],
-            "persian_ratio": 0.785,
-            "latin_ratio": 0.222,
-            "max_sentence_chars": 174,
-            "word_count": 33
+            "persian_ratio": 0.793,
+            "latin_ratio": 0.214,
+            "max_sentence_chars": 180,
+            "word_count": 34
           },
           "report": {
             "score": 80,
@@ -18224,10 +20515,10 @@
             "issues": [
               "too-much-latin"
             ],
-            "persian_ratio": 0.785,
-            "latin_ratio": 0.222,
-            "max_sentence_chars": 174,
-            "word_count": 33
+            "persian_ratio": 0.793,
+            "latin_ratio": 0.214,
+            "max_sentence_chars": 180,
+            "word_count": 34
           }
         },
         "source_original_fa": false,
@@ -20850,13 +23141,6 @@
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
-      "brand_watch": {
-        "mode": "global_bing_news_rss",
-        "matched_brand_ids": [
-          "pizza_hut"
-        ],
-        "watch_source_id": "global_brand_bing_pizza_hut"
-      },
       "translation_quality": {
         "version": 2,
         "status": "warn",
@@ -22401,7 +24685,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 54,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -26922,8 +29206,8 @@
           "market": "iran"
         }
       ],
-      "iran_relevance_score": 95,
-      "relevance_score": 72,
+      "iran_relevance_score": 92,
+      "relevance_score": 59,
       "brand_watch": {
         "mode": "bing_news_rss",
         "matched_brand_ids": [
@@ -27026,8 +29310,8 @@
           "market": "iran"
         }
       ],
-      "iran_relevance_score": 95,
-      "relevance_score": 72,
+      "iran_relevance_score": 92,
+      "relevance_score": 59,
       "brand_watch": {
         "mode": "bing_news_rss",
         "matched_brand_ids": [
@@ -33679,7 +35963,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 58,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -33697,7 +35981,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -34174,7 +36458,7 @@
         "chars": 432,
         "paragraphs": 3,
         "extractor": "main",
-        "fetched_at": "2026-09-20T11:32:19Z"
+        "fetched_at": "2026-09-20T16:15:13Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -34294,7 +36578,7 @@
         "chars": 414,
         "paragraphs": 3,
         "extractor": "main",
-        "fetched_at": "2026-09-20T11:32:19Z"
+        "fetched_at": "2026-09-20T16:15:12Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -36896,7 +39180,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 59,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -36914,7 +39198,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -37981,7 +40265,7 @@
         "selected_chars": 3180,
         "extractor": "scored-container",
         "content_hash": "f0d3979c57b9a23c1290",
-        "fetched_at": "2026-09-20T11:32:45Z"
+        "fetched_at": "2026-09-20T16:15:39Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 14076,
@@ -38618,7 +40902,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 56,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -38636,7 +40920,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -39719,7 +42003,7 @@
         "selected_chars": 2388,
         "extractor": "scored-container",
         "content_hash": "6d23373ac2a8440bcb3a",
-        "fetched_at": "2026-09-20T11:32:50Z"
+        "fetched_at": "2026-09-20T16:15:43Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 5262,
@@ -42472,7 +44756,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-20T11:32:19Z"
+        "fetched_at": "2026-09-20T16:15:13Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -43705,7 +45989,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 65,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -43723,7 +46007,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -43939,7 +46223,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 71,
+      "relevance_score": 67,
       "title_fa": "رستوران فردا در #QSRNext 2026 در مرکز توجه قرار می گیرد",
       "summary_fa": "#QSRNext 2026 مدیران رستوران‌ها و رهبران صنعت را گرد هم می‌آورد تا نیروهایی را که خدمات سریع را تغییر می‌دهند، از جمله هوش مصنوعی، فناوری درایو‌ثرو، خارج از محل، نیروی کار، پایداری، تجارب دیجیتال و نوآوری در نوشیدنی‌ها بررسی کنند.",
       "report_fa": "#QSRNext 2026 مدیران رستوران‌ها و رهبران صنعت را گرد هم می‌آورد تا نیروهایی را که خدمات سریع را تغییر می‌دهند، از جمله هوش مصنوعی، فناوری درایو‌ثرو، خارج از محل، نیروی کار، پایداری، تجارب دیجیتال و نوآوری در نوشیدنی‌ها بررسی کنند.",
@@ -44042,7 +46326,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 73,
+      "relevance_score": 69,
       "title_fa": "Newk's Eatery با سه نیروگاه SEC در شراکت دو ساله جدید همکاری می کند",
       "summary_fa": "این مورد علاقه سریع و معمولی در حال تعمیق روابط خود با SEC Country از طریق مشارکت با دانشگاه آلاباما، اوله میس و دانشگاه جورجیا است. پست Newk’s Eatery با سه نیروگاه SEC در شراکت های دو ساله جدید تیم می شود اولین بار در RestaurantNews. com ظاهر شد.",
       "report_fa": "این مورد علاقه سریع و معمولی در حال تعمیق روابط خود با SEC Country از طریق مشارکت با دانشگاه آلاباما، اوله میس و دانشگاه جورجیا است. جکسون، ام اس ( RestaurantNews.\n\ncom ) Newk’s Eatery به فعالیت در سراسر کشور SEC نزدیک می شود. این برند رستوران‌های معمولی با دانشگاه آلاباما، اوله میس و دانشگاه جورجیا وارد همکاری‌های دو ساله دو ساله شده است و راه‌های جدیدی برای ارتباط با طرفداران، حمایت از دانشجویان ورزشکار و تقویت حضور خود در بازارهای اصلی ایجاد کرده است.\n\nاین مشارکت‌ها، نیوکز را از طریق تابلوهای تبلیغاتی در محل، تبلیغات دیجیتال و زنده، شراکت‌های NIL، فرصت‌های پذیرایی و تبلیغ برند \"ما برنده می‌شویم، تو برنده می‌شویم\" وارد تجربه روز بازی می‌کند. این قراردادها شامل انواع ورزش‌های مردانه و زنانه می‌شود، با تأکید ویژه بر حمایت از برنامه‌های رو به رشد دو و میدانی زنان.\n\nهدر بوگز، مدیر بازاریابی Newk's Eatery، گفت: \"هدف ما ایجاد…",
@@ -44050,11 +46334,10 @@
       "translation": {
         "status": "translated",
         "engine": "http-en-fa",
-        "cleanup_version": 2,
-        "quality_retry": true
+        "cleanup_version": 2
       },
       "editorial": {
-        "status": "quality-retry",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -44152,7 +46435,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 66,
+      "relevance_score": 62,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -44255,7 +46538,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 70,
+      "relevance_score": 66,
       "title_fa": "",
       "summary_fa": "",
       "report_fa": "",
@@ -44416,7 +46699,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 81,
+      "relevance_score": 77,
       "title_fa": "بین المللی ملکه لبنیات افتخارات N. Wasserstrom، دیگران",
       "summary_fa": "شش جایزه در جریان اجلاس زنجیره تامین DQ 2026 در جزیره هیلتون هد، S. C.",
       "report_fa": "فروشنده تجهیزات سال، با این نام تجاری که N. Wasserstrom 22 سال است که تجهیزات آشپزخانه خود را تامین می کند.\n\nاین افتخار که بخشی از جوایز فروشنده سال 2026 IDQ است، فروشندگانی را که خدمات مثال زدنی برای حمایت از IDQ و صاحبان حق رای مستقل آن از خود نشان داده اند، قدردانی می کند. توزیع کننده سال و شرکت کوکاکولا.\n\nبه عنوان ایالات متحده در کانادا، گوردون خدمات غذایی توزیع کننده سال بود. Saputo Dairy Products فروشنده سال لبنیات شد.\n\nو گرند ریور فودز فروشنده سال خرید بود. دان کروپ، مدیر زنجیره تامین و مدیر توسعه در بین‌المللی، می‌گوید: «موفقیت در سیستم DQ به روابط قوی و قابل اعتماد تأمین‌کننده و توزیع‌کننده بستگی دارد که تجربیاتی را که صاحبان و طرفداران فرنچایز ما در رستوران‌های DQ انتظار دارند، ارائه می‌کند».\n\nبرگزیدگان سال به طور مداوم محصولات، تجهیزات و خدمات توزیعی با کیفیت بالا ارائه می کنند که از رشد ما حمایت می کند و ما از همکاری آنها سپاسگزاریم. با پشتیبانی Whaley خدمات غذایی، CFESA به افتخار چارلی رودریگز و بیش از 45 سال خدمت وی، یک بورسیه اضافی برای قهرمان خدمات اعطا خواهد کرد.\n\nکایل بورکهولدر، از گروه خدمات کلارک، و کورنی سوکول، از دافی AIS، جوایز برتر را کسب کردند.",
@@ -44552,7 +46835,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 70,
+      "relevance_score": 66,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -44659,7 +46942,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 58,
+      "relevance_score": 54,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -44783,7 +47066,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 64,
+      "relevance_score": 60,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -44890,7 +47173,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 58,
+      "relevance_score": 54,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -44995,7 +47278,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 56,
+      "relevance_score": 52,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -45098,7 +47381,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 61,
+      "relevance_score": 57,
       "title_fa": "",
       "summary_fa": "",
       "report_fa": "",
@@ -45257,7 +47540,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 56,
+      "relevance_score": 52,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -45356,7 +47639,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 55,
+      "relevance_score": 51,
       "title_fa": "",
       "summary_fa": "",
       "report_fa": "",
@@ -45516,7 +47799,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 65,
+      "relevance_score": 61,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -45622,7 +47905,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 59,
+      "relevance_score": 55,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -45740,7 +48023,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 64,
+      "relevance_score": 60,
       "turkey_discovery": {
         "source_id": "turkey_discovery_turkey_food_investment",
         "query_name": "Türkiye — gıda yatırımları ve ihracat"
@@ -45843,7 +48126,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 61,
+      "relevance_score": 57,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -45954,7 +48237,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 71,
+      "relevance_score": 67,
       "title_fa": "نستله، پپسی‌کو به بسته‌بندی انعطاف‌پذیر مبتنی بر کاغذ فشار می‌آورد",
       "summary_fa": "غول های مواد غذایی از جمله اعضای موسس کنسرسیوم CPG هستند تا نوآوری را برای جایگزین های پلاستیکی سرعت بخشند.",
       "report_fa": "غول های مواد غذایی از جمله اعضای موسس کنسرسیوم CPG هستند تا نوآوری را برای جایگزین های پلاستیکی سرعت بخشند.",
@@ -46055,7 +48338,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 81,
+      "relevance_score": 77,
       "title_fa": "طبق گزارش، داروهای GLP-1 73 میلیارد دلار ارزش غذایی جهانی را در معرض خطر قرار می دهد",
       "summary_fa": "پپسی‌کو's Lay's پرمخاطب ترین برند مواد غذایی است که Doritos، Hershey's، Cheetos، Kellogg's و Reese's نیز آسیب پذیر هستند.",
       "report_fa": "پپسی‌کو's Lay's پرمخاطب ترین برند مواد غذایی است که Doritos، Hershey's، Cheetos، Kellogg's و Reese's نیز آسیب پذیر هستند.",
@@ -46178,7 +48461,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 81,
+      "relevance_score": 77,
       "title_fa": "طبق گزارش، داروهای GLP-1 73 میلیارد دلار ارزش غذایی جهانی را در معرض خطر قرار می دهد",
       "summary_fa": "پپسی‌کو's Lay's پرمخاطب ترین برند مواد غذایی است که Doritos، Hershey's، Cheetos، Kellogg's و Reese's نیز آسیب پذیر هستند.",
       "report_fa": "پپسی‌کو's Lay's پرمخاطب ترین برند مواد غذایی است که Doritos، Hershey's، Cheetos، Kellogg's و Reese's نیز آسیب پذیر هستند.",
@@ -46290,7 +48573,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 81,
+      "relevance_score": 77,
       "title_fa": "کافه اسموتی تروپیکال از برند جدید و لوگوی جدید خود رونمایی کرد",
       "summary_fa": "ظاهر به روز این زنجیره همچنین شامل یک وب و برنامه بازطراحی شده است که مرور بدون درز، سفارشی سازی و دسترسی به پاداش های وفاداری را ارائه می دهد.",
       "report_fa": "ظاهر به روز این زنجیره همچنین شامل یک وب و برنامه بازطراحی شده است که مرور بدون درز، سفارشی سازی و دسترسی به پاداش های وفاداری را ارائه می دهد.",
@@ -46388,7 +48671,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 68,
       "title_fa": "بسته بندی مواد غذایی باید در عصر رسانه های اجتماعی تکامل یابد",
       "summary_fa": "یکی از کارشناسان صنعت می نویسد که موفق ترین برندها از طریق نوآوری های جدید که بسته بندی را به محتوا تبدیل می کند، \"لحظه های کوچک\" را خلق می کنند.",
       "report_fa": "یکی از کارشناسان صنعت می نویسد که موفق ترین برندها از طریق نوآوری های جدید که بسته بندی را به محتوا تبدیل می کند، \"لحظه های کوچک\" را خلق می کنند.",
@@ -46487,7 +48770,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 74,
+      "relevance_score": 70,
       "title_fa": "",
       "summary_fa": "",
       "report_fa": "",
@@ -46653,7 +48936,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 67,
+      "relevance_score": 63,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -46753,7 +49036,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 55,
+      "relevance_score": 51,
       "title_fa": "",
       "summary_fa": "",
       "report_fa": "",
@@ -46907,7 +49190,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 75,
+      "relevance_score": 71,
       "title_fa": "چگونه یک همبرگر محبوب باعث شد که Applebee’s مصرف پنیر را دو برابر کند",
       "summary_fa": "O-M-Cheese Burger به ترجیحات مصرف کنندگان برای پنیر، مقرون به صرفه بودن و یک تجربه سرگرم کننده ضربه زد و منجر به یک خط تولید گسترده شد.",
       "report_fa": "O-M-Cheese Burger به ترجیحات مصرف کنندگان برای پنیر، مقرون به صرفه بودن و یک تجربه سرگرم کننده ضربه زد و منجر به یک خط تولید گسترده شد.",
@@ -47004,7 +49287,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 71,
+      "relevance_score": 67,
       "title_fa": "",
       "summary_fa": "",
       "report_fa": "",
@@ -47164,7 +49447,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 63,
+      "relevance_score": 59,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -47269,7 +49552,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 56,
+      "relevance_score": 52,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -47405,7 +49688,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 59,
+      "relevance_score": 55,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -47535,7 +49818,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 59,
+      "relevance_score": 55,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -47645,7 +49928,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 84,
+      "relevance_score": 80,
       "title_fa": "رکود ترافیک تاکو بل با پایان یافتن شیوع ادامه دارد",
       "summary_fa": "به گفته Placer. ai، نزدیک به دو ماه پس از اینکه کاهوی کوه یخ در زنجیره به Cyclospora متصل شد، ترافیک پای غول QSR کماکان ضعیف است.",
       "report_fa": "به گفته Placer. ai، نزدیک به دو ماه پس از اینکه کاهوی کوه یخ در زنجیره به Cyclospora متصل شد، ترافیک پای غول QSR کماکان ضعیف است.",
@@ -47659,7 +49942,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-20T11:32:19Z"
+        "fetched_at": "2026-09-20T16:15:51Z"
       },
       "editorial": {
         "status": "quality-retry",
@@ -47775,7 +50058,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 66,
+      "relevance_score": 62,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -47875,7 +50158,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 73,
+      "relevance_score": 69,
       "title_fa": "",
       "summary_fa": "",
       "report_fa": "",
@@ -48042,7 +50325,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 69,
+      "relevance_score": 65,
       "title_fa": "ادغام 45 میلیارد دلاری مک کورمیک و یونیلور در بریتانیا در دست بررسی است",
       "summary_fa": "این شرکت‌ها که انتظار دارند معامله خود را در سال 2027 ببندند، اکنون به دنبال فروش خردل کولمن \"برای رفع نگرانی‌های احتمالی رقابتی\" هستند.",
       "report_fa": "این شرکت‌ها که انتظار دارند معامله خود را در سال 2027 ببندند، اکنون به دنبال فروش خردل کولمن \"برای رفع نگرانی‌های احتمالی رقابتی\" هستند.",
@@ -48147,7 +50430,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 71,
+      "relevance_score": 67,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -48256,7 +50539,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 56,
+      "relevance_score": 52,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -48367,7 +50650,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 67,
+      "relevance_score": 63,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -48499,7 +50782,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 69,
+      "relevance_score": 65,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -48609,7 +50892,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 68,
+      "relevance_score": 64,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -48718,7 +51001,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 68,
+      "relevance_score": 64,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -48850,7 +51133,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 61,
+      "relevance_score": 57,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -48987,7 +51270,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 76,
+      "relevance_score": 72,
       "title_fa": "Chili’s غول‌های فست فود را می‌پذیرد و تاکو بل می‌تواند بعدی باشد",
       "summary_fa": "Chili's قبلاً به دنبال مک‌دونالدز، کی‌اف‌سی و پاپایز رفته است - و برند Brinker اکنون به دنبال دسته‌های QSR بیشتری از جمله مکزیکی است.",
       "report_fa": "یکی از نکات مهم از روز سرمایه‌گذار بین‌المللی برینکر در روز پنج‌شنبه این است که این شرکت - که در یک رگه داغ چند ساله بوده است - به پیروزی‌های کوتاه‌مدت و سریع در بازاریابی متکی نیست. در عوض، Chili’s از استراتژی «بهتر از فست فود» استفاده می‌کند تا به طور سیستماتیک دسته‌های اصلی فست فودها را دنبال کند و QSR مکزیکی به طور بالقوه مرز بعدی است.\n\nدر حالی که احتمالاً چند سال دیگر به این حرکت باقی مانده است، جورج فلیکس، معاون اجرایی و مدیر ارشد اجرایی Chili، گفت که او می‌تواند یک خط لوله پنج ساله از فرصت‌ها را برای این کمپین ببیند، که ارزشی را که QSR به میز می‌آورد هدف قرار می‌دهد. فلیکس گفت: «من به راحتی می‌توانم پنج سال از خط لوله‌ای را ببینم که بتوانیم کمپین «بهتر از فست فود» را قوی نگه داریم.\n\nاین استراتژی شبیه به نحوه مدیریت Chili’s با کشش ویروسی پنیر داغ نشویل در سال 2024 است که فلیکس از آن به عنوان نمونه ای در طی ارائه روز پنجشنبه به سرمایه گذاران استفاده کرد. در عوض، آن‌ها را برانگیخت تا در کوتاه‌مدت سرمایه‌گذاری کنند و از لحظه‌ای برای اطلاع‌رسانی استراتژی بازاریابی در بلندمدت استفاده کنند.\n\nفلیکس گفت: «من همیشه می‌شنوم که چیلی چند سال پیش با کشیدن پنیر خوش شانس بوده است. دو سال بعد، چندین راه‌اندازی رسانه‌های اجتماعی و کمپین‌های اینفلوئنسر، پلاتر سمپلر Triple Dipper - و ستاره داغ نشویل آن - از یک آیتم منوی 220 میلیون دلاری در سال 2024 به یک آیتم 860 میلیون دلاری در سال 2026 رسید که اکنون 16 درصد از فروش چیلی را تشکیل می‌دهد.\n\nاین دقیقاً همان استراتژی است که Chili's با کمپین تبلیغاتی \"بهتر از فست فود\" خود استفاده می کند. \"چرا Chili's که حق برنده شدن در این رده را دارد، آن دسته را در مرحله بعدی قرار ندهد؟",
@@ -48995,8 +51278,7 @@
       "translation": {
         "status": "translated",
         "engine": "http-en-fa",
-        "cleanup_version": 2,
-        "quality_retry": true
+        "cleanup_version": 2
       },
       "narrative_fa": "یکی از نکات مهم از روز سرمایه‌گذار بین‌المللی برینکر در روز پنج‌شنبه این است که این شرکت - که در یک رگه داغ چند ساله بوده است - به پیروزی‌های کوتاه‌مدت و سریع در بازاریابی متکی نیست. در عوض، Chili’s از استراتژی «بهتر از فست فود» استفاده می‌کند تا به طور سیستماتیک دسته‌های اصلی فست فودها را دنبال کند و QSR مکزیکی به طور بالقوه مرز بعدی است.\n\nدر حالی که احتمالاً چند سال دیگر به این حرکت باقی مانده است، جورج فلیکس، معاون اجرایی و مدیر ارشد اجرایی Chili، گفت که او می‌تواند یک خط لوله پنج ساله از فرصت‌ها را برای این کمپین ببیند، که ارزشی را که QSR به میز می‌آورد هدف قرار می‌دهد. فلیکس گفت: «من به راحتی می‌توانم پنج سال از خط لوله‌ای را ببینم که بتوانیم کمپین «بهتر از فست فود» را قوی نگه داریم.\n\nاین استراتژی شبیه به نحوه مدیریت Chili’s با کشش ویروسی پنیر داغ نشویل در سال 2024 است که فلیکس از آن به عنوان نمونه ای در طی ارائه روز پنجشنبه به سرمایه گذاران استفاده کرد. در عوض، آن‌ها را برانگیخت تا در کوتاه‌مدت سرمایه‌گذاری کنند و از لحظه‌ای برای اطلاع‌رسانی استراتژی بازاریابی در بلندمدت استفاده کنند.\n\nفلیکس گفت: «من همیشه می‌شنوم که چیلی چند سال پیش با کشیدن پنیر خوش شانس بوده است. دو سال بعد، چندین راه‌اندازی رسانه‌های اجتماعی و کمپین‌های اینفلوئنسر، پلاتر سمپلر Triple Dipper - و ستاره داغ نشویل آن - از یک آیتم منوی 220 میلیون دلاری در سال 2024 به یک آیتم 860 میلیون دلاری در سال 2026 رسید که اکنون 16 درصد از فروش چیلی را تشکیل می‌دهد.\n\nاین دقیقاً همان استراتژی است که Chili's با کمپین تبلیغاتی \"بهتر از فست فود\" خود استفاده می کند. \"چرا Chili's که حق برنده شدن در این رده را دارد، آن دسته را در مرحله بعدی قرار ندهد؟",
       "recap_fa": "یکی از نکات مهم از روز سرمایه‌گذار بین‌المللی برینکر در روز پنج‌شنبه این است که این شرکت - که در یک رگه داغ چند ساله بوده است - به پیروزی‌های کوتاه‌مدت و سریع در بازاریابی متکی نیست. در عوض، Chili’s از استراتژی «بهتر از فست فود» استفاده می‌کند تا به طور سیستماتیک دسته‌های اصلی فست فودها را دنبال کند و QSR مکزیکی به طور بالقوه مرز بعدی است. در حالی که احتمالاً چند سال دیگر به این حرکت باقی مانده است، جورج فلیکس، معاون اجرایی و مدیر ارشد اجرایی Chili، گفت که او می‌تواند یک خط لوله پنج ساله از فرصت‌ها را برای این کمپین…",
@@ -49019,7 +51301,7 @@
       "report_basis": "source-sentence-recap",
       "report_word_count": 302,
       "editorial": {
-        "status": "quality-retry",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -49117,7 +51399,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 75,
+      "relevance_score": 71,
       "title_fa": "سس ها در نوآوری منو به پیش زمینه می آیند",
       "summary_fa": "همانطور که رستوران ها همچنان با افزایش هزینه ها و کاهش ترافیک روبرو هستند، آنها در نوآوری منو استراتژیک تر شده اند. سرعت آنها کم نشده است - کاملا برعکس - اما بسیاری از اقلام جدید آسانسورهای نسبتاً سبکی برای کارکنان رستوران هستند، به همین دلیل است که سس ها به افزودنی های محبوب منو تبدیل شده اند. علی گوش، معاون بازاریابی Zaxbys، درباره سس های جدید گفت: «اجرای آنها بسیار آسان است.",
       "report_fa": "همانطور که رستوران ها همچنان با افزایش هزینه ها و کاهش ترافیک روبرو هستند، آنها در نوآوری منو استراتژیک تر شده اند. سرعت آنها کم نشده است - کاملا برعکس - اما بسیاری از اقلام جدید آسانسورهای نسبتاً سبکی برای کارکنان رستوران هستند، به همین دلیل است که سس ها به افزودنی های محبوب منو تبدیل شده اند.\n\nعلی گوش، معاون بازاریابی Zaxbys، درباره سس های جدید گفت: «اجرای آنها بسیار آسان است. هر رستوران فقط 144 وعده 2 اونسی سس دریافت کرد.\n\nGhosh گفت: «ما پیش‌بینی می‌کردیم که احتمالا بین 10 تا 14 روز طول بکشد، اما می‌دانم که فروشگاه‌ها در آلاباما بسیار سریع‌تر فروخته می‌شوند. این برند با شارژ کردن سس سفید آلاباما مانند سایر سس‌ها، اطمینان حاصل کرد که از لحاظ عملیاتی ساده است، حتی اگر اندازه فنجان آن در مقایسه با ده‌ها سس دیگر Zaxbys که در بخش‌های 1.25 اونسی هستند، بسیار بزرگ‌تر باشد.\n\nآنها در سال 2023 نسبت به سال قبل 66.5 درصد، در سال 2024 27.7 درصد و در سال 2025 27.7 درصد دیگر رشد کردند. عرضه سس باربیکیو بین سه ماهه دوم سال 2024 تا 2026 22.7 درصد افزایش داشته است.\n\nLogan's Roadhouse امسال با معرفی تابستانی سفید آلاباما، طلای کارولینا و کره کباب به سبک نیواورلئان در چارچوب منوی بزرگ سفر جاده ای آمریکا در جشن دویست و پنجاهمین سالگرد تاسیس ایالات متحده، در این افزایش شرکت کرده است. Via 313، یک مفهوم پیتزا به سبک دیترویت، همچنین یک سس باربیکیو را معرفی کرد، که ممکن است نامناسب به نظر برسد.\n\nاما این زنجیره در آستین، تگزاس مستقر است و با Terry Black's Barbecue مورد علاقه محلی برای یک LTO تابستانی که به تازگی پایان یافت، همکاری کرد.",
@@ -49238,7 +51520,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 71,
+      "relevance_score": 67,
       "title_fa": "فروش رستوران ها در حال افزایش است، اما در رستوران های فست فود نه",
       "summary_fa": "خط آخر: کل فروش رستوران ها پنج ماه متوالی افزایش یافته است و فدرال رزرو فقط نرخ بهره را افزایش داده است تا اقتصاد را کند کند. به رستوران های فست فود نگویید.",
       "report_fa": "خط آخر: کل فروش رستوران ها پنج ماه متوالی افزایش یافته است و فدرال رزرو فقط نرخ بهره را افزایش داده است تا اقتصاد را کند کند. به رستوران های فست فود نگویید.",
@@ -49330,7 +51612,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 69,
+      "relevance_score": 65,
       "title_fa": "بلک برد از ارزهای دیجیتال در رستوران ها استفاده می کند",
       "summary_fa": "بن لونتال، مدیر عامل شبکه پاداش رستوران، به قانونگذاران گفت که ارزهای دیجیتال هزینه کمتری را برای اپراتورهای کوچک به همراه خواهد داشت، اما می‌تواند از کمک کنگره استفاده کند.",
       "report_fa": "بن لونتال، مدیر عامل شبکه پاداش رستوران، به قانونگذاران گفت که ارزهای دیجیتال هزینه کمتری را برای اپراتورهای کوچک به همراه خواهد داشت، اما می‌تواند از کمک کنگره استفاده کند.",
@@ -49439,7 +51721,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 73,
+      "relevance_score": 69,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -49544,7 +51826,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 74,
+      "relevance_score": 70,
       "title_fa": "کریسپی کرم دونات اصلی لعاب دار با طعم زغال اخته را برای آخرین سفر تابستانی برمی گرداند.",
       "summary_fa": "فقط برای چهار روز، از 17 تا 20 سپتامبر در دسترس است، یک دوجین دونات اورجینال با طعم زغال اخته لعابدار را با فقط 5 دلار با خرید هر دوجین با قیمت معمولی شارلوت، NC ( RestaurantNews. com ) تابستان ممکن است رو به پایان باشد، اما Krispy Kreme ® یک دلیل شیرین دیگر را به طرفداران ارائه می دهد تا آن را بچشند. پس از اولین عرضه مورد علاقه طرفداران در ماه ژوئیه، دونات با طعم زغال اخته Original…",
       "report_fa": "فقط برای چهار روز، از 17 تا 20 سپتامبر در دسترس است، یک دوجین دونات اورجینال با طعم زغال اخته لعابدار را با فقط 5 دلار با خرید هر دوجین با قیمت معمولی شارلوت، NC ( RestaurantNews. com ) تابستان ممکن است رو به پایان باشد، اما Krispy Kreme ® یک دلیل شیرین دیگر را به طرفداران ارائه می دهد تا آن را بچشند.\n\nپس از اولین عرضه مورد علاقه طرفداران در ماه ژوئیه، دونات با طعم زغال اخته Original Glazed® فقط برای چهار روز، از پنجشنبه تا یکشنبه، 17 تا 20 سپتامبر، همراه با یک معامله شیرین برای لذت بردن از آن بازمی گردد. میهمانان می توانند با خرید هر دوجین دونات با طعم بلوبری اصل لعاب دار تنها با قیمت 5 دلار در فروشگاه های شرکت کریسپی کرم در سراسر ایالات متحده، تابستان 2026 به طور رسمی داغ ترین دونات های ثبت شده در ایالات متحده آمریکا باشند…",
@@ -49651,7 +51933,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 58,
+      "relevance_score": 54,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -49769,7 +52051,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 71,
+      "relevance_score": 67,
       "turkey_discovery": {
         "source_id": "turkey_discovery_turkey_foodtech",
         "query_name": "Türkiye — foodtech, AI ve restoran teknolojisi"
@@ -49877,7 +52159,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 68,
+      "relevance_score": 64,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -50913,7 +53195,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 52,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -50931,7 +53213,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -51680,112 +53962,6 @@
       }
     },
     {
-      "id": "bc52c7b81f570de6c609",
-      "title": "The Kraft Heinz CEO Just Revealed Prices Are Going Down—Here’s When",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aafc3dbec4d49e58543f5794ca46327&url=https%3A%2F%2Fsg.finance.yahoo.com%2Fnews%2Fkraft-heinz-ceo-just-revealed-210000189.html&c=7217217022173613417&mkt=en-us",
-      "source": {
-        "id": "global_brand_bing_kraft_heinz",
-        "name": "Global Brand Watch — kraft_heinz",
-        "homepage": "https://www.bing.com/news",
-        "class": "brand_watch_search",
-        "priority": 2,
-        "market": "world",
-        "country": null,
-        "aggregator": "bing_news"
-      },
-      "discovered_publisher": null,
-      "author": null,
-      "published_at": "2026-09-17T10:00:00Z",
-      "collected_at": "2026-09-20T11:30:36Z",
-      "language": "en",
-      "region": "GLOBAL",
-      "country": null,
-      "market": "world",
-      "geo": {
-        "primary_country": null,
-        "countries": [],
-        "cities": [],
-        "confidence": "unknown"
-      },
-      "image_url": null,
-      "image_source": null,
-      "source_detail_chars": 183,
-      "summary": "In addition, Cahillane also announced that customers will notice more in-store promotions including deals on an array of Kraft Heinz products specifically at the start of each mon ...",
-      "categories": [
-        "marketing_branding",
-        "food_industry"
-      ],
-      "topics": [],
-      "brands": [
-        {
-          "id": "kraft_heinz",
-          "name": "Kraft Heinz",
-          "fa": "کرفت هاینز"
-        }
-      ],
-      "iran_relevance_score": 0,
-      "relevance_score": 72,
-      "brand_watch": {
-        "mode": "global_bing_news_rss",
-        "matched_brand_ids": [
-          "kraft_heinz"
-        ],
-        "watch_source_id": "global_brand_bing_kraft_heinz"
-      },
-      "title_fa": "مدیر عامل کرفت هاینز به تازگی اعلام کرد که قیمت ها در حال کاهش است - اینجا چه زمانی است",
-      "summary_fa": "علاوه بر این، Cahillane همچنین اعلام کرد که مشتریان متوجه تبلیغات داخلی بیشتری از جمله معاملات در مجموعه‌ای از محصولات کرفت هاینز در ابتدای هر ماه خواهند شد.",
-      "report_fa": "علاوه بر این، Cahillane همچنین اعلام کرد که مشتریان متوجه تبلیغات داخلی بیشتری از جمله معاملات در مجموعه‌ای از محصولات کرفت هاینز در ابتدای هر ماه خواهند شد.",
-      "report_coverage": "خلاصه منبع",
-      "translation": {
-        "status": "translated",
-        "engine": "http-en-fa-v2",
-        "cleanup_version": 2
-      },
-      "editorial": {
-        "status": "edited-v2",
-        "version": 1,
-        "mode": "conservative-fa-newsroom"
-      },
-      "translation_quality": {
-        "version": 2,
-        "status": "pass",
-        "score": 100,
-        "publishable": true,
-        "issues": [],
-        "parts": {
-          "title": {
-            "score": 100,
-            "status": "pass",
-            "issues": [],
-            "persian_ratio": 1.0,
-            "latin_ratio": 0.0,
-            "max_sentence_chars": 87,
-            "word_count": 19
-          },
-          "summary": {
-            "score": 100,
-            "status": "pass",
-            "issues": [],
-            "persian_ratio": 0.937,
-            "latin_ratio": 0.071,
-            "max_sentence_chars": 157,
-            "word_count": 29
-          },
-          "report": {
-            "score": 100,
-            "status": "pass",
-            "issues": [],
-            "persian_ratio": 0.937,
-            "latin_ratio": 0.071,
-            "max_sentence_chars": 157,
-            "word_count": 29
-          }
-        },
-        "source_original_fa": false,
-        "semantic_penalty": 0
-      }
-    },
-    {
       "id": "026b738e1e2c94a63d73",
       "title": "Smalls Sliders makes college-campus debut with 2 openings",
       "url": "https://www.fastcasual.com/news/smalls-sliders-makes-college-campus-debut-with-2-openings",
@@ -52191,6 +54367,112 @@
             "latin_ratio": 0.071,
             "max_sentence_chars": 163,
             "word_count": 37
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "bc52c7b81f570de6c609",
+      "title": "The Kraft Heinz CEO Just Revealed Prices Are Going Down—Here’s When",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aafc3dbec4d49e58543f5794ca46327&url=https%3A%2F%2Fsg.finance.yahoo.com%2Fnews%2Fkraft-heinz-ceo-just-revealed-210000189.html&c=7217217022173613417&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_kraft_heinz",
+        "name": "Global Brand Watch — kraft_heinz",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-17T10:00:00Z",
+      "collected_at": "2026-09-20T11:30:36Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 183,
+      "summary": "In addition, Cahillane also announced that customers will notice more in-store promotions including deals on an array of Kraft Heinz products specifically at the start of each mon ...",
+      "categories": [
+        "marketing_branding",
+        "food_industry"
+      ],
+      "topics": [],
+      "brands": [
+        {
+          "id": "kraft_heinz",
+          "name": "Kraft Heinz",
+          "fa": "کرفت هاینز"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 55,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "kraft_heinz"
+        ],
+        "watch_source_id": "global_brand_bing_kraft_heinz"
+      },
+      "title_fa": "مدیر عامل کرفت هاینز به تازگی اعلام کرد که قیمت ها در حال کاهش است - اینجا چه زمانی است",
+      "summary_fa": "علاوه بر این، Cahillane همچنین اعلام کرد که مشتریان متوجه تبلیغات داخلی بیشتری از جمله معاملات در مجموعه‌ای از محصولات کرفت هاینز در ابتدای هر ماه خواهند شد.",
+      "report_fa": "علاوه بر این، Cahillane همچنین اعلام کرد که مشتریان متوجه تبلیغات داخلی بیشتری از جمله معاملات در مجموعه‌ای از محصولات کرفت هاینز در ابتدای هر ماه خواهند شد.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-cache-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 87,
+            "word_count": 19
+          },
+          "summary": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.937,
+            "latin_ratio": 0.071,
+            "max_sentence_chars": 157,
+            "word_count": 29
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.937,
+            "latin_ratio": 0.071,
+            "max_sentence_chars": 157,
+            "word_count": 29
           }
         },
         "source_original_fa": false,
@@ -55745,7 +58027,7 @@
         "chars": 0,
         "paragraphs": 0,
         "extractor": "none",
-        "fetched_at": "2026-09-20T11:32:56Z"
+        "fetched_at": "2026-09-20T16:15:54Z"
       },
       "translation_quality": {
         "version": 2,
@@ -59872,7 +62154,7 @@
         "chars": 425,
         "paragraphs": 3,
         "extractor": "main",
-        "fetched_at": "2026-09-20T11:32:54Z"
+        "fetched_at": "2026-09-20T16:15:51Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -68109,7 +70391,7 @@
         "chars": 0,
         "paragraphs": 0,
         "extractor": "none",
-        "fetched_at": "2026-09-20T11:32:57Z"
+        "fetched_at": "2026-09-20T16:15:55Z"
       }
     },
     {
@@ -68611,7 +70893,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-20T11:32:19Z"
+        "fetched_at": "2026-09-20T16:15:13Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -73417,100 +75699,6 @@
       }
     },
     {
-      "id": "0fa380e9e69ec345827b",
-      "title": "طرز تهیه سس مخصوص اکبر جوجه با رب انار",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aafc3aeaec1408c94120389067cb57e&url=https%3A%2F%2Fwww.rokna.net%2F%25D8%25A8%25D8%25AE%25D8%25B4-%25D8%25B1%25DA%25A9-%25D9%25BE%25D9%2584%25D8%25A7%25D8%25B3-10%2F1249715-%25D8%25B7%25D8%25B1%25D8%25B2-%25D8%25AA%25D9%2587%25DB%258C%25D9%2587-%25D8%25B3%25D8%25B3-%25D9%2585%25D8%25AE%25D8%25B5%25D9%2588%25D8%25B5-%25D8%25A7%25DA%25A9%25D8%25A8%25D8%25B1-%25D8%25AC%25D9%2588%25D8%25AC%25D9%2587-%25D8%25A8%25D8%25A7-%25D8%25B1%25D8%25A8-%25D8%25A7%25D9%2586%25D8%25A7%25D8%25B1&c=5533683777111852280&mkt=en-us",
-      "source": {
-        "id": "iran_brand_bing_akbar_joojeh",
-        "name": "رصد وب برند — akbar_joojeh",
-        "homepage": "https://www.bing.com/news",
-        "class": "brand_watch_search",
-        "priority": 2,
-        "market": "iran",
-        "country": "IR",
-        "aggregator": "bing_news"
-      },
-      "discovered_publisher": null,
-      "author": null,
-      "published_at": "2026-09-16T10:00:00Z",
-      "collected_at": "2026-09-20T11:29:50Z",
-      "language": "fa",
-      "region": "IR",
-      "country": "IR",
-      "market": "iran",
-      "geo": {
-        "primary_country": {
-          "code": "IR",
-          "fa": "ایران",
-          "name": "Iran",
-          "lat": 32.4279,
-          "lon": 53.688,
-          "basis": "source"
-        },
-        "countries": [
-          {
-            "code": "IR",
-            "fa": "ایران",
-            "name": "Iran",
-            "lat": 32.4279,
-            "lon": 53.688,
-            "basis": "source"
-          }
-        ],
-        "cities": [],
-        "confidence": "medium"
-      },
-      "image_url": null,
-      "image_source": null,
-      "source_detail_chars": 203,
-      "summary": "رکنا: در اکبر جوجه، فقط طعم مرغ اهمیت ندارد؛ سس اناری در کنار مرغ، بخش مهمی از مزه نهایی غذا را تشکیل می‌دهد. بنابراین استفاده از رب انار باکیفیت و تنظیم درست طعم ترش و شیرین، می‌تواند نتیجه نهایی را ...",
-      "categories": [
-        "food_industry"
-      ],
-      "topics": [],
-      "brands": [
-        {
-          "id": "akbar_joojeh",
-          "name": "Akbar Joojeh",
-          "fa": "اکبرجوجه",
-          "market": "iran"
-        }
-      ],
-      "iran_relevance_score": 95,
-      "relevance_score": 72,
-      "brand_watch": {
-        "mode": "bing_news_rss",
-        "matched_brand_ids": [
-          "akbar_joojeh"
-        ],
-        "watch_source_id": "iran_brand_bing_akbar_joojeh"
-      },
-      "title_fa": "طرز تهیه سس مخصوص اکبر جوجه با رب انار",
-      "summary_fa": "رکنا: در اکبر جوجه، فقط طعم مرغ اهمیت ندارد؛ سس اناری در کنار مرغ، بخش مهمی از مزه نهایی غذا را تشکیل می‌دهد. بنابراین استفاده از رب انار باکیفیت و تنظیم درست طعم ترش و شیرین، می‌تواند نتیجه نهایی را...",
-      "report_fa": "رکنا: در اکبر جوجه، فقط طعم مرغ اهمیت ندارد؛ سس اناری در کنار مرغ، بخش مهمی از مزه نهایی غذا را تشکیل می‌دهد. بنابراین استفاده از رب انار باکیفیت و تنظیم درست طعم ترش و شیرین، می‌تواند نتیجه نهایی را...",
-      "report_coverage": "خلاصه منبع",
-      "translation": {
-        "status": "original-fa",
-        "engine": null,
-        "cleanup_version": 2
-      },
-      "editorial": {
-        "status": "source-fa-normalized",
-        "version": 1,
-        "mode": "conservative-fa-newsroom"
-      },
-      "translation_quality": {
-        "version": 2,
-        "status": "pass",
-        "score": 100,
-        "publishable": true,
-        "issues": [],
-        "parts": {},
-        "source_original_fa": true,
-        "semantic_penalty": 0
-      }
-    },
-    {
       "id": "4fb6cf9f3bebd4e70246",
       "title": "Flying Biscuit Café signs two-unit development agreement for Palm Beach County, Florida",
       "url": "https://www.fastcasual.com/news/flying-biscuit-cafe-signs-two-unit-development-agreement-for-palm-beach-county-florida",
@@ -73924,6 +76112,100 @@
           }
         },
         "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "0fa380e9e69ec345827b",
+      "title": "طرز تهیه سس مخصوص اکبر جوجه با رب انار",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aafc3aeaec1408c94120389067cb57e&url=https%3A%2F%2Fwww.rokna.net%2F%25D8%25A8%25D8%25AE%25D8%25B4-%25D8%25B1%25DA%25A9-%25D9%25BE%25D9%2584%25D8%25A7%25D8%25B3-10%2F1249715-%25D8%25B7%25D8%25B1%25D8%25B2-%25D8%25AA%25D9%2587%25DB%258C%25D9%2587-%25D8%25B3%25D8%25B3-%25D9%2585%25D8%25AE%25D8%25B5%25D9%2588%25D8%25B5-%25D8%25A7%25DA%25A9%25D8%25A8%25D8%25B1-%25D8%25AC%25D9%2588%25D8%25AC%25D9%2587-%25D8%25A8%25D8%25A7-%25D8%25B1%25D8%25A8-%25D8%25A7%25D9%2586%25D8%25A7%25D8%25B1&c=5533683777111852280&mkt=en-us",
+      "source": {
+        "id": "iran_brand_bing_akbar_joojeh",
+        "name": "رصد وب برند — akbar_joojeh",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "iran",
+        "country": "IR",
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-16T10:00:00Z",
+      "collected_at": "2026-09-20T11:29:50Z",
+      "language": "fa",
+      "region": "IR",
+      "country": "IR",
+      "market": "iran",
+      "geo": {
+        "primary_country": {
+          "code": "IR",
+          "fa": "ایران",
+          "name": "Iran",
+          "lat": 32.4279,
+          "lon": 53.688,
+          "basis": "source"
+        },
+        "countries": [
+          {
+            "code": "IR",
+            "fa": "ایران",
+            "name": "Iran",
+            "lat": 32.4279,
+            "lon": 53.688,
+            "basis": "source"
+          }
+        ],
+        "cities": [],
+        "confidence": "medium"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 203,
+      "summary": "رکنا: در اکبر جوجه، فقط طعم مرغ اهمیت ندارد؛ سس اناری در کنار مرغ، بخش مهمی از مزه نهایی غذا را تشکیل می‌دهد. بنابراین استفاده از رب انار باکیفیت و تنظیم درست طعم ترش و شیرین، می‌تواند نتیجه نهایی را ...",
+      "categories": [
+        "food_industry"
+      ],
+      "topics": [],
+      "brands": [
+        {
+          "id": "akbar_joojeh",
+          "name": "Akbar Joojeh",
+          "fa": "اکبرجوجه",
+          "market": "iran"
+        }
+      ],
+      "iran_relevance_score": 92,
+      "relevance_score": 52,
+      "brand_watch": {
+        "mode": "bing_news_rss",
+        "matched_brand_ids": [
+          "akbar_joojeh"
+        ],
+        "watch_source_id": "iran_brand_bing_akbar_joojeh"
+      },
+      "title_fa": "طرز تهیه سس مخصوص اکبر جوجه با رب انار",
+      "summary_fa": "رکنا: در اکبر جوجه، فقط طعم مرغ اهمیت ندارد؛ سس اناری در کنار مرغ، بخش مهمی از مزه نهایی غذا را تشکیل می‌دهد. بنابراین استفاده از رب انار باکیفیت و تنظیم درست طعم ترش و شیرین، می‌تواند نتیجه نهایی را...",
+      "report_fa": "رکنا: در اکبر جوجه، فقط طعم مرغ اهمیت ندارد؛ سس اناری در کنار مرغ، بخش مهمی از مزه نهایی غذا را تشکیل می‌دهد. بنابراین استفاده از رب انار باکیفیت و تنظیم درست طعم ترش و شیرین، می‌تواند نتیجه نهایی را...",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "original-fa",
+        "engine": null,
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "source-fa-normalized",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {},
+        "source_original_fa": true,
         "semantic_penalty": 0
       }
     },
@@ -76548,7 +78830,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 54,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -76566,7 +78848,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -83209,7 +85491,7 @@
         "chars": 0,
         "paragraphs": 0,
         "extractor": "none",
-        "fetched_at": "2026-09-20T11:32:57Z"
+        "fetched_at": "2026-09-20T16:15:55Z"
       }
     },
     {
@@ -83885,7 +86167,7 @@
         "chars": 367,
         "paragraphs": 3,
         "extractor": "main",
-        "fetched_at": "2026-09-20T11:32:20Z"
+        "fetched_at": "2026-09-20T16:15:14Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -89383,7 +91665,7 @@
         "selected_chars": 1418,
         "extractor": "article",
         "content_hash": "74c89bc06376d9567ab6",
-        "fetched_at": "2026-09-20T11:32:20Z"
+        "fetched_at": "2026-09-20T16:15:14Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 1598,
@@ -96873,7 +99155,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-20T11:32:54Z"
+        "fetched_at": "2026-09-20T16:15:53Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -102391,7 +104673,7 @@
         "chars": 0,
         "paragraphs": 0,
         "extractor": "none",
-        "fetched_at": "2026-09-20T11:32:58Z"
+        "fetched_at": "2026-09-20T16:15:56Z"
       }
     },
     {
@@ -123366,7 +125648,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-20T11:32:20Z"
+        "fetched_at": "2026-09-20T16:15:14Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -123778,7 +126060,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 52,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -123796,7 +126078,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -124841,7 +127123,7 @@
         "chars": 0,
         "paragraphs": 0,
         "extractor": "none",
-        "fetched_at": "2026-09-20T11:32:58Z"
+        "fetched_at": "2026-09-20T16:15:56Z"
       }
     },
     {
@@ -128679,7 +130961,7 @@
         "selected_chars": 927,
         "extractor": "article",
         "content_hash": "b4536d0044962cadeeda",
-        "fetched_at": "2026-09-20T11:32:35Z"
+        "fetched_at": "2026-09-20T16:15:29Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 10491,
@@ -130465,7 +132747,7 @@
         "selected_chars": 2735,
         "extractor": "article",
         "content_hash": "16145dadc01c1c667558",
-        "fetched_at": "2026-09-20T11:32:52Z"
+        "fetched_at": "2026-09-20T16:15:45Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 3281,
@@ -131580,7 +133862,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 58,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -131598,7 +133880,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -132607,7 +134889,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 61,
+      "relevance_score": 57,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -132783,7 +135065,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 62,
+      "relevance_score": 58,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -132956,7 +135238,7 @@
         }
       ],
       "iran_relevance_score": 92,
-      "relevance_score": 52,
+      "relevance_score": 48,
       "brand_watch": {
         "mode": "bing_news_rss",
         "matched_brand_ids": [
@@ -133050,7 +135332,7 @@
         }
       ],
       "iran_relevance_score": 92,
-      "relevance_score": 52,
+      "relevance_score": 48,
       "brand_watch": {
         "mode": "bing_news_rss",
         "matched_brand_ids": [
@@ -133144,7 +135426,7 @@
         }
       ],
       "iran_relevance_score": 92,
-      "relevance_score": 52,
+      "relevance_score": 48,
       "brand_watch": {
         "mode": "bing_news_rss",
         "matched_brand_ids": [
@@ -133238,7 +135520,7 @@
         }
       ],
       "iran_relevance_score": 92,
-      "relevance_score": 52,
+      "relevance_score": 48,
       "brand_watch": {
         "mode": "bing_news_rss",
         "matched_brand_ids": [
@@ -133332,7 +135614,7 @@
         }
       ],
       "iran_relevance_score": 92,
-      "relevance_score": 52,
+      "relevance_score": 48,
       "brand_watch": {
         "mode": "bing_news_rss",
         "matched_brand_ids": [
@@ -133406,7 +135688,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 66,
+      "relevance_score": 62,
       "title_fa": "سرگرمی FACE خرس های عروسکی را برای پیاده روی سالانه دوستان در شهر نیویورک به پارک مرکزی می آورد.",
       "summary_fa": "New York, NY ( RestaurantNews. com ) گروه سرگرمی FACE با انجمن ملی سندرم داون (NDSS) برای سی و یکمین مراسم سالانه NYC Buddy Walk® در میدان تایمز، یکی از بزرگترین رویدادهای حمایت از سندرم داون و آگاهی بخشی به نیروهای خود پیوست. با تجمع در میدان تایمز، بیش از 2500 شرکت‌کننده به راهپیمایی بادی پیوستند تا جامعه را جشن بگیرند، دیدگاه‌ها را تغییر دهند و از فرصت‌های بیشتر برای افراد مبتلا به سندرم داون دفاع کنند.",
       "report_fa": "New York, NY ( RestaurantNews. com ) گروه سرگرمی FACE با انجمن ملی سندرم داون (NDSS) برای سی و یکمین مراسم سالانه NYC Buddy Walk® در میدان تایمز، یکی از بزرگترین رویدادهای حمایت از سندرم داون و آگاهی بخشی به نیروهای خود پیوست.\n\nبا تجمع در میدان تایمز، بیش از 2500 شرکت‌کننده به راهپیمایی بادی پیوستند تا جامعه را جشن بگیرند، دیدگاه‌ها را تغییر دهند و از فرصت‌های بیشتر برای افراد مبتلا به سندرم داون دفاع کنند. در چارچوب جشن های روز، گروه سرگرمی FACE یک خرس عروسکی را به هر شرکت کننده در پارک مرکزی اهدا کرد، شادی را گسترش داد و تعهد مشترک خود را به ماموریت NDSS تقویت کرد.\n\nباکی میب، مدیر عامل گروه سرگرمی FACE گفت: «ما مفتخریم که یک بار دیگر در کنار NDSS و جامعه باورنکردنی سندرم داون هستیم. \"آغوش خرس در مورد چیز بسیار ساده ای است - ایجاد شادی برای…",
@@ -133506,7 +135788,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 75,
+      "relevance_score": 71,
       "title_fa": "نسخه یکشنبه: آنتی بیوتیک ها",
       "summary_fa": "Quick Bites مراکز کنترل و پیشگیری از بیماری (CDC) نزدیک به 20000 مورد سیکلوسپوریازیس را از اول ماه مه تائید کرده است. این در مقایسه با 1180 مورد تایید شده در سال 2025 است. مجموع امسال شامل شیوع چندگانه عفونت سیکلوسپورا است، از جمله بزرگترین شیوع تا کنون از انگل مرتبط با کاهوی کوه یخ وارداتی از مزارع تیلور در حال رشد و فرآوری در مکزیک مرکزی.",
       "report_fa": "Quick Bites مراکز کنترل و پیشگیری از بیماری (CDC) نزدیک به 20000 مورد سیکلوسپوریازیس را از اول ماه مه تائید کرده است. این در مقایسه با 1180 مورد تایید شده در سال 2025 است.\n\nمجموع امسال شامل شیوع چندگانه عفونت سیکلوسپورا است، از جمله بزرگترین شیوع تا کنون از انگل مرتبط با کاهوی کوه یخ وارداتی از مزارع تیلور در حال رشد و فرآوری در مکزیک مرکزی. CDC رسماً این شیوع را از 11 سپتامبر اعلام کرد.\n\nCDC همچنین مرگ دیگری را در شیوع سالمونلا در ارتباط با گله های طیور در حیاط خلوت گزارش داد. شیوع این بیماری در 46 ایالت و پورتوریکو گسترش یافته است.\n\nدر مجموع 1061 مورد تایید شده است که دو مورد فوتی دارند، یکی در واشنگتن و دیگری در جورجیا. حدود یک چهارم بیماران را کودکان زیر پنج سال تشکیل می دهند.\n\nدر بریتانیا، سه شیوع سالمونلا که بیش از 500 نفر را تحت…",
@@ -133613,7 +135895,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 63,
+      "relevance_score": 59,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -145855,7 +148137,7 @@
         "selected_chars": 2409,
         "extractor": "article",
         "content_hash": "983602d1137328f9a2f0",
-        "fetched_at": "2026-09-20T11:32:22Z"
+        "fetched_at": "2026-09-20T16:15:15Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 2517,
@@ -156423,7 +158705,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 56,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -156441,7 +158723,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -160712,7 +162994,7 @@
         "chars": 145,
         "paragraphs": 1,
         "extractor": "article",
-        "fetched_at": "2026-09-20T11:32:22Z"
+        "fetched_at": "2026-09-20T16:15:16Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -177622,7 +179904,7 @@
         "selected_chars": 1939,
         "extractor": "article",
         "content_hash": "83c4162e47b23362cf40",
-        "fetched_at": "2026-09-20T11:32:55Z"
+        "fetched_at": "2026-09-20T16:15:53Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 3649,
@@ -179457,7 +181739,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 54,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -179475,7 +181757,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -182405,7 +184687,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 47,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -182423,7 +184705,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -189555,8 +191837,8 @@
           "market": "iran"
         }
       ],
-      "iran_relevance_score": 95,
-      "relevance_score": 72,
+      "iran_relevance_score": 92,
+      "relevance_score": 45,
       "brand_watch": {
         "mode": "bing_news_rss",
         "matched_brand_ids": [
@@ -198111,7 +200393,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 47,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -198129,7 +200411,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -198293,7 +200575,7 @@
         "selected_chars": 2378,
         "extractor": "article",
         "content_hash": "a3ca2523934aae71dd35",
-        "fetched_at": "2026-09-20T11:32:55Z"
+        "fetched_at": "2026-09-20T16:15:53Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 3357,
@@ -202912,6 +205194,114 @@
       "narrative_fa": ""
     },
     {
+      "id": "b999f8d11c21cc12f5f0",
+      "title": "Uber aims for 1 million daily drone deliveries with Zipline partnership",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab00624eef2463980a51635aa7d2d14&url=https%3A%2F%2Fwww.engadget.com%2F2238260%2Fuber-aims-for-1-million-daily-drone-deliveries-with-zipline-partnership%2F&c=3289652342226985399&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_uber_eats",
+        "name": "Global Brand Watch — uber_eats",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-08-17T09:34:00Z",
+      "collected_at": "2026-09-20T16:13:24Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 202,
+      "summary": "You could soon get your Uber Eats order delivered by a Zipline drone thanks to the latest partnership between the two companies. As detailed in an Uber press release, the company is targeting a goal ...",
+      "categories": [
+        "delivery_drive_thru",
+        "food_industry"
+      ],
+      "topics": [
+        "AI"
+      ],
+      "brands": [
+        {
+          "id": "uber_eats",
+          "name": "Uber Eats",
+          "fa": "اوبر ایتس"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "uber_eats"
+        ],
+        "watch_source_id": "global_brand_bing_uber_eats"
+      },
+      "title_fa": "اوبر با مشارکت Zipline قصد دارد روزانه 1 میلیون پهپاد تحویل دهد",
+      "summary_fa": "به لطف آخرین همکاری بین این دو شرکت، به زودی می توانید سفارش اوبر ایتس خود را توسط یک پهپاد Zipline تحویل بگیرید. همانطور که در بیانیه مطبوعاتی اوبر توضیح داده شد، این شرکت هدفی را.",
+      "report_fa": "به لطف آخرین همکاری بین این دو شرکت، به زودی می توانید سفارش اوبر ایتس خود را توسط یک پهپاد Zipline تحویل بگیرید. همانطور که در بیانیه مطبوعاتی اوبر توضیح داده شد، این شرکت هدفی را.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.863,
+            "latin_ratio": 0.137,
+            "max_sentence_chars": 63,
+            "word_count": 12
+          },
+          "summary": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.965,
+            "latin_ratio": 0.049,
+            "max_sentence_chars": 113,
+            "word_count": 36
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.965,
+            "latin_ratio": 0.049,
+            "max_sentence_chars": 113,
+            "word_count": 36
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
       "id": "0a28401c1ebca892aeb5",
       "title": "💢 کالابرگ کدهای ملی 3، 4، 5 و 6 از امروز فعال شده",
       "url": "https://t.me/okclub/24340",
@@ -203072,100 +205462,6 @@
       "title_fa": "♦️ اول هفته، خرید با تخفیف میچسبه",
       "summary_fa": "♦️ اول هفته، خرید با تخفیف میچسبه! 😍 صدها کالای پرتخفیف این هفته رو از دست ندید!! @okclub",
       "report_fa": "♦️ اول هفته، خرید با تخفیف میچسبه! 😍 صدها کالای پرتخفیف این هفته رو از دست ندید!! @okclub",
-      "report_coverage": "خلاصه منبع",
-      "translation": {
-        "status": "original-fa",
-        "engine": null,
-        "cleanup_version": 2
-      },
-      "editorial": {
-        "status": "source-fa-normalized",
-        "version": 1,
-        "mode": "conservative-fa-newsroom"
-      },
-      "translation_quality": {
-        "version": 2,
-        "status": "pass",
-        "score": 100,
-        "publishable": true,
-        "issues": [],
-        "parts": {},
-        "source_original_fa": true,
-        "semantic_penalty": 0
-      }
-    },
-    {
-      "id": "6df9256f88984f37a854",
-      "title": "ماکارونی ۵۰۰ گرمی از ۷ هزار تومان در اسفند به ۱۶ هزار تومان رسید",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aafc3af1ca74e2bb46776b002a12179&url=https%3A%2F%2Fwww.entekhab.ir%2Ffa%2Fnews%2F673602%2F%25D9%2585%25D8%25A7%25DA%25A9%25D8%25A7%25D8%25B1%25D9%2588%25D9%2586%25DB%258C-%25DB%25B5%25DB%25B0%25DB%25B0-%25DA%25AF%25D8%25B1%25D9%2585%25DB%258C-%25D8%25A7%25D8%25B2-%25DB%25B7-%25D9%2587%25D8%25B2%25D8%25A7%25D8%25B1-%25D8%25AA%25D9%2588%25D9%2585%25D8%25A7%25D9%2586-%25D8%25AF%25D8%25B1-%25D8%25A7%25D8%25B3%25D9%2581%25D9%2586%25D8%25AF-%25D8%25A8%25D9%2587-%25DB%25B1%25DB%25B6-%25D9%2587%25D8%25B2%25D8%25A7%25D8%25B1-%25D8%25AA%25D9%2588%25D9%2585%25D8%25A7%25D9%2586-%25D8%25B1%25D8%25B3%25DB%258C%25D8%25AF&c=14385632194006404427&mkt=en-us",
-      "source": {
-        "id": "iran_brand_bing_tak_macaron",
-        "name": "رصد وب برند — tak_macaron",
-        "homepage": "https://www.bing.com/news",
-        "class": "brand_watch_search",
-        "priority": 2,
-        "market": "iran",
-        "country": "IR",
-        "aggregator": "bing_news"
-      },
-      "discovered_publisher": null,
-      "author": null,
-      "published_at": "2026-08-14T17:00:00Z",
-      "collected_at": "2026-09-20T11:29:51Z",
-      "language": "fa",
-      "region": "IR",
-      "country": "IR",
-      "market": "iran",
-      "geo": {
-        "primary_country": {
-          "code": "IR",
-          "fa": "ایران",
-          "name": "Iran",
-          "lat": 32.4279,
-          "lon": 53.688,
-          "basis": "source"
-        },
-        "countries": [
-          {
-            "code": "IR",
-            "fa": "ایران",
-            "name": "Iran",
-            "lat": 32.4279,
-            "lon": 53.688,
-            "basis": "source"
-          }
-        ],
-        "cities": [],
-        "confidence": "medium"
-      },
-      "image_url": null,
-      "image_source": null,
-      "source_detail_chars": 142,
-      "summary": "قیمت ماکارونی در بسته‌های ۵۰۰ گرمی شرکت تک‌ماکارون حدود ۱۶ هزار تومان است. از همین برند بسته‌های ۵۰۰ گرمی دیگری وجود دارد که عبارت غنی‌شده ...",
-      "categories": [
-        "food_industry"
-      ],
-      "topics": [],
-      "brands": [
-        {
-          "id": "tak_macaron",
-          "name": "Tak Macaron",
-          "fa": "تک ماکارون",
-          "market": "iran"
-        }
-      ],
-      "iran_relevance_score": 95,
-      "relevance_score": 72,
-      "brand_watch": {
-        "mode": "bing_news_rss",
-        "matched_brand_ids": [
-          "tak_macaron"
-        ],
-        "watch_source_id": "iran_brand_bing_tak_macaron"
-      },
-      "title_fa": "ماکارونی ۵۰۰ گرمی از ۷ هزار تومان در اسفند به ۱۶ هزار تومان رسید",
-      "summary_fa": "قیمت ماکارونی در بسته‌های ۵۰۰ گرمی شرکت تک‌ماکارون حدود ۱۶ هزار تومان است. از همین برند بسته‌های ۵۰۰ گرمی دیگری وجود دارد که عبارت غنی‌شده...",
-      "report_fa": "قیمت ماکارونی در بسته‌های ۵۰۰ گرمی شرکت تک‌ماکارون حدود ۱۶ هزار تومان است. از همین برند بسته‌های ۵۰۰ گرمی دیگری وجود دارد که عبارت غنی‌شده...",
       "report_coverage": "خلاصه منبع",
       "translation": {
         "status": "original-fa",
@@ -203362,6 +205658,100 @@
       "title_fa": "تبلیغات شرکت عالیس ماهانه 1863 میلیارد تومان است!",
       "summary_fa": "مگر می‌شود این روزها حداقل یک ساعت تلویزیون دیده باشید و تبلیغ «عالیس» را ندیده باشید؛ شرکتی که نوشیدنی‌های مختلف تولید می‌کند و... مگر می...",
       "report_fa": "مگر می‌شود این روزها حداقل یک ساعت تلویزیون دیده باشید و تبلیغ «عالیس» را ندیده باشید؛ شرکتی که نوشیدنی‌های مختلف تولید می‌کند و... مگر می...",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "original-fa",
+        "engine": null,
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "source-fa-normalized",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {},
+        "source_original_fa": true,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "6df9256f88984f37a854",
+      "title": "ماکارونی ۵۰۰ گرمی از ۷ هزار تومان در اسفند به ۱۶ هزار تومان رسید",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aafc3af1ca74e2bb46776b002a12179&url=https%3A%2F%2Fwww.entekhab.ir%2Ffa%2Fnews%2F673602%2F%25D9%2585%25D8%25A7%25DA%25A9%25D8%25A7%25D8%25B1%25D9%2588%25D9%2586%25DB%258C-%25DB%25B5%25DB%25B0%25DB%25B0-%25DA%25AF%25D8%25B1%25D9%2585%25DB%258C-%25D8%25A7%25D8%25B2-%25DB%25B7-%25D9%2587%25D8%25B2%25D8%25A7%25D8%25B1-%25D8%25AA%25D9%2588%25D9%2585%25D8%25A7%25D9%2586-%25D8%25AF%25D8%25B1-%25D8%25A7%25D8%25B3%25D9%2581%25D9%2586%25D8%25AF-%25D8%25A8%25D9%2587-%25DB%25B1%25DB%25B6-%25D9%2587%25D8%25B2%25D8%25A7%25D8%25B1-%25D8%25AA%25D9%2588%25D9%2585%25D8%25A7%25D9%2586-%25D8%25B1%25D8%25B3%25DB%258C%25D8%25AF&c=14385632194006404427&mkt=en-us",
+      "source": {
+        "id": "iran_brand_bing_tak_macaron",
+        "name": "رصد وب برند — tak_macaron",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "iran",
+        "country": "IR",
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-08-14T17:00:00Z",
+      "collected_at": "2026-09-20T11:29:51Z",
+      "language": "fa",
+      "region": "IR",
+      "country": "IR",
+      "market": "iran",
+      "geo": {
+        "primary_country": {
+          "code": "IR",
+          "fa": "ایران",
+          "name": "Iran",
+          "lat": 32.4279,
+          "lon": 53.688,
+          "basis": "source"
+        },
+        "countries": [
+          {
+            "code": "IR",
+            "fa": "ایران",
+            "name": "Iran",
+            "lat": 32.4279,
+            "lon": 53.688,
+            "basis": "source"
+          }
+        ],
+        "cities": [],
+        "confidence": "medium"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 142,
+      "summary": "قیمت ماکارونی در بسته‌های ۵۰۰ گرمی شرکت تک‌ماکارون حدود ۱۶ هزار تومان است. از همین برند بسته‌های ۵۰۰ گرمی دیگری وجود دارد که عبارت غنی‌شده ...",
+      "categories": [
+        "food_industry"
+      ],
+      "topics": [],
+      "brands": [
+        {
+          "id": "tak_macaron",
+          "name": "Tak Macaron",
+          "fa": "تک ماکارون",
+          "market": "iran"
+        }
+      ],
+      "iran_relevance_score": 92,
+      "relevance_score": 45,
+      "brand_watch": {
+        "mode": "bing_news_rss",
+        "matched_brand_ids": [
+          "tak_macaron"
+        ],
+        "watch_source_id": "iran_brand_bing_tak_macaron"
+      },
+      "title_fa": "ماکارونی ۵۰۰ گرمی از ۷ هزار تومان در اسفند به ۱۶ هزار تومان رسید",
+      "summary_fa": "قیمت ماکارونی در بسته‌های ۵۰۰ گرمی شرکت تک‌ماکارون حدود ۱۶ هزار تومان است. از همین برند بسته‌های ۵۰۰ گرمی دیگری وجود دارد که عبارت غنی‌شده...",
+      "report_fa": "قیمت ماکارونی در بسته‌های ۵۰۰ گرمی شرکت تک‌ماکارون حدود ۱۶ هزار تومان است. از همین برند بسته‌های ۵۰۰ گرمی دیگری وجود دارد که عبارت غنی‌شده...",
       "report_coverage": "خلاصه منبع",
       "translation": {
         "status": "original-fa",
@@ -206128,8 +208518,8 @@
           "market": "iran"
         }
       ],
-      "iran_relevance_score": 95,
-      "relevance_score": 72,
+      "iran_relevance_score": 92,
+      "relevance_score": 54,
       "brand_watch": {
         "mode": "bing_news_rss",
         "matched_brand_ids": [
@@ -206392,7 +208782,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 47,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -206410,7 +208800,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -212623,8 +215013,8 @@
           "market": "iran"
         }
       ],
-      "iran_relevance_score": 95,
-      "relevance_score": 72,
+      "iran_relevance_score": 92,
+      "relevance_score": 50,
       "brand_watch": {
         "mode": "bing_news_rss",
         "matched_brand_ids": [
@@ -224217,7 +226607,7 @@
       "iran_relevance_score": 0,
       "relevance_score": 73,
       "title_fa": "مک‌دونالدز در حال ایجاد «مدیران هوش مصنوعی» مجازی برای رستوران‌های خود است",
-      "summary_fa": "Want some AI with your Big Mac? مک‌دونالدز در حال ارائه خدمات گسترده به آن است. طبق داستانی در وال استریت ژورنال امروز، مک‌دونالدز به […]",
+      "summary_fa": "با بیگ مک خود کمی هوش مصنوعی می خواهید؟ مک‌دونالدز در حال ارائه خدمات گسترده به آن است. طبق داستانی در وال استریت ژورنال امروز، مک‌دونالدز به […]",
       "report_fa": "با بیگ مک خود کمی هوش مصنوعی می خواهید؟ مک‌دونالدز در حال ارائه خدمات گسترده به آن است.\n\nطبق گزارشی که امروز در وال استریت ژورنال منتشر شد، مک‌دونالدز در حال انجام تعمیرات اساسی فناوری در 43000 رستوران خود است، تجهیزات آشپزخانه متصل به اینترنت، راه‌اندازی درایوهای مبتنی بر هوش مصنوعی و ابزارهایی را برای مدیران پیاده‌سازی می‌کند. مک‌دونالدز با Google Cloud برای استقرار فناوری محاسبات لبه‌ای همکاری می‌کند و به رستوران‌ها اجازه می‌دهد تا داده‌ها را به‌جای ارسال به فضای ابری، به صورت محلی تجزیه و تحلیل کنند.\n\nاین راه‌اندازی به پیش‌بینی خرابی‌های تجهیزات - مانند سرخ‌کن‌ها یا ماشین‌های بستنی - قبل از وقوع کمک می‌کند و دقت سفارش را از طریق دوربین‌های مجهز به هوش مصنوعی تضمین می‌کند. ما در The Spoon کمی درباره آزمایش مک‌دونالدز با هوش مصنوعی در درایو‌ثرو نوشته‌ایم، اما این داستان نشان می‌دهد که آنها به دنبال استفاده از هوش مصنوعی مولد برای تعامل…",
       "report_coverage": "گسترده",
       "translation": {
@@ -224234,12 +226624,11 @@
       "translation_quality": {
         "version": 2,
         "status": "warn",
-        "score": 84,
+        "score": 91,
         "publishable": true,
         "issues": [
           "long-sentence",
-          "repetition",
-          "too-much-latin"
+          "repetition"
         ],
         "parts": {
           "title": {
@@ -224252,15 +226641,13 @@
             "word_count": 14
           },
           "summary": {
-            "score": 80,
-            "status": "warn",
-            "issues": [
-              "too-much-latin"
-            ],
-            "persian_ratio": 0.779,
-            "latin_ratio": 0.231,
-            "max_sentence_chars": 79,
-            "word_count": 27
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.018,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 57,
+            "word_count": 29
           },
           "report": {
             "score": 71,
@@ -229687,8 +232074,8 @@
           "market": "iran"
         }
       ],
-      "iran_relevance_score": 95,
-      "relevance_score": 72,
+      "iran_relevance_score": 92,
+      "relevance_score": 45,
       "brand_watch": {
         "mode": "bing_news_rss",
         "matched_brand_ids": [
@@ -231763,8 +234150,8 @@
           "market": "iran"
         }
       ],
-      "iran_relevance_score": 95,
-      "relevance_score": 72,
+      "iran_relevance_score": 92,
+      "relevance_score": 48,
       "brand_watch": {
         "mode": "bing_news_rss",
         "matched_brand_ids": [
@@ -248893,10 +251280,11 @@
       "translation": {
         "status": "translated",
         "engine": "http-en-fa",
-        "cleanup_version": 2
+        "cleanup_version": 2,
+        "quality_retry": true
       },
       "editorial": {
-        "status": "edited-cache-v2",
+        "status": "quality-retry",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -249363,6 +251751,101 @@
           }
         },
         "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "795da400fa86332b91b9",
+      "title": "یک مسئول وزارت جهاد کشاورزی: بانک‌ها، پشتیبانان ‌کشاورزی قراردادی را حمایت کنند",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab005e477404edebdd5ac10f2b865e0&url=https%3A%2F%2Fwww.irna.ir%2Fnews%2F85239833%2F%25DB%258C%25DA%25A9-%25D9%2585%25D8%25B3%25D8%25A6%25D9%2588%25D9%2584-%25D9%2588%25D8%25B2%25D8%25A7%25D8%25B1%25D8%25AA-%25D8%25AC%25D9%2587%25D8%25A7%25D8%25AF-%25DA%25A9%25D8%25B4%25D8%25A7%25D9%2588%25D8%25B1%25D8%25B2%25DB%258C-%25D8%25A8%25D8%25A7%25D9%2586%25DA%25A9-%25D9%2587%25D8%25A7-%25D9%25BE%25D8%25B4%25D8%25AA%25DB%258C%25D8%25A8%25D8%25A7%25D9%2586%25D8%25A7%25D9%2586-%25DA%25A9%25D8%25B4%25D8%25A7%25D9%2588%25D8%25B1%25D8%25B2%25DB%258C-%25D9%2582%25D8%25B1%25D8%25A7%25D8%25B1%25D8%25AF%25D8%25A7%25D8%25AF%25DB%258C&c=1170017496595033231&mkt=en-us",
+      "source": {
+        "id": "iran_brand_bing_ramak",
+        "name": "رصد وب برند — ramak",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "iran",
+        "country": "IR",
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2023-09-26T06:28:00Z",
+      "collected_at": "2026-09-20T16:12:21Z",
+      "language": "fa",
+      "region": "IR",
+      "country": "IR",
+      "market": "iran",
+      "geo": {
+        "primary_country": {
+          "code": "IR",
+          "fa": "ایران",
+          "name": "Iran",
+          "lat": 32.4279,
+          "lon": 53.688,
+          "basis": "source"
+        },
+        "countries": [
+          {
+            "code": "IR",
+            "fa": "ایران",
+            "name": "Iran",
+            "lat": 32.4279,
+            "lon": 53.688,
+            "basis": "source"
+          }
+        ],
+        "cities": [],
+        "confidence": "medium"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 140,
+      "summary": "به گزارش ایرنا ، محمد خالدی روز سه‌شنبه در حاشیه بازدید از کارخانه لبنیات رامک اظهار کرد: توسعه کشاورزی قراردادی با کمک شرکت‌های پشتیبان ...",
+      "categories": [
+        "food_industry",
+        "regulation"
+      ],
+      "topics": [],
+      "brands": [
+        {
+          "id": "ramak",
+          "name": "Ramak",
+          "fa": "رامک",
+          "market": "iran"
+        }
+      ],
+      "iran_relevance_score": 95,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "bing_news_rss",
+        "matched_brand_ids": [
+          "ramak"
+        ],
+        "watch_source_id": "iran_brand_bing_ramak"
+      },
+      "title_fa": "یک مسئول وزارت جهاد کشاورزی: بانک‌ها، پشتیبانان ‌کشاورزی قراردادی را حمایت کنند",
+      "summary_fa": "به گزارش ایرنا، محمد خالدی روز سه‌شنبه در حاشیه بازدید از کارخانه لبنیات رامک اظهار کرد: توسعه کشاورزی قراردادی با کمک شرکت‌های پشتیبان...",
+      "report_fa": "به گزارش ایرنا، محمد خالدی روز سه‌شنبه در حاشیه بازدید از کارخانه لبنیات رامک اظهار کرد: توسعه کشاورزی قراردادی با کمک شرکت‌های پشتیبان...",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "original-fa",
+        "engine": null,
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "source-fa-normalized",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {},
+        "source_original_fa": true,
         "semantic_penalty": 0
       }
     },
@@ -257414,10 +259897,11 @@
       "translation": {
         "status": "translated",
         "engine": "http-en-fa",
-        "cleanup_version": 2
+        "cleanup_version": 2,
+        "quality_retry": true
       },
       "editorial": {
-        "status": "edited-cache-v2",
+        "status": "quality-retry",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -268079,76 +270563,76 @@
   "brand_web_watch_stats": {
     "brands_queried": 24,
     "provider": "bing_news_rss",
-    "entries_seen": 274,
-    "entries_matched": 11,
-    "new_items": 11,
+    "entries_seen": 180,
+    "entries_matched": 1,
+    "new_items": 1,
     "failed_feeds": 0,
-    "persian_originals": 11,
+    "persian_originals": 1,
     "translation_failed": 0
   },
   "official_brand_watch_stats": {
     "channels_tracked": 12,
     "messages_seen": 171,
-    "messages_matched": 60,
-    "new_items": 0,
-    "persian_originals": 0,
+    "messages_matched": 61,
+    "new_items": 2,
+    "persian_originals": 2,
     "translation_failed": 0
   },
   "global_brand_watch_stats": {
     "brands_tracked": 34,
     "provider": "bing_news_rss",
-    "entries_seen": 337,
-    "entries_matched": 133,
-    "new_items": 23,
-    "duplicates_merged": 110,
+    "entries_seen": 336,
+    "entries_matched": 144,
+    "new_items": 14,
+    "duplicates_merged": 130,
     "failed_feeds": 0,
-    "translated": 22,
-    "translation_failed": 1
+    "translated": 14,
+    "translation_failed": 0
   },
   "turkey_watch_stats": {
     "brands_tracked": 32,
     "sector_queries": 10,
     "provider": "bing_news_rss",
-    "entries_seen": 292,
-    "entries_matched": 30,
+    "entries_seen": 311,
+    "entries_matched": 32,
     "brand_entries_matched": 17,
-    "sector_entries_matched": 13,
-    "new_items": 4,
-    "duplicates_merged": 26,
+    "sector_entries_matched": 15,
+    "new_items": 2,
+    "duplicates_merged": 30,
     "failed_feeds": 0,
-    "translated": 1,
-    "translation_failed": 3
+    "translated": 2,
+    "translation_failed": 0
   },
   "article_body_stats": {
     "attempted": 32,
-    "extracted": 11,
+    "extracted": 13,
     "blocked": 0,
-    "short": 11,
-    "failed": 10,
+    "short": 12,
+    "failed": 7,
     "reused": 88,
-    "queued": 1218,
-    "recaps_upgraded": 5,
+    "queued": 1222,
+    "recaps_upgraded": 6,
     "recap_translation_failed": 0,
     "narrative_version": 2
   },
   "translation_quality_stats": {
-    "pass": 1622,
-    "warn": 350,
+    "pass": 1638,
+    "warn": 353,
     "retry": 7,
-    "block": 283,
-    "total": 2262,
-    "publishable": 1972,
-    "semantic_candidates": 357,
+    "block": 285,
+    "total": 2283,
+    "publishable": 1991,
+    "semantic_candidates": 360,
     "semantic_retried": 80,
     "semantic_fixed": 0,
     "deterministic_repairs": 0,
     "semantic_retry_failed": 0,
     "semantic_quarantined": 7,
     "top_issues": {
-      "long-sentence": 539,
+      "long-sentence": 545,
       "repetition": 291,
-      "empty": 283,
-      "too-much-latin": 222,
+      "empty": 285,
+      "too-much-latin": 224,
       "mixed-script": 37,
       "very-long-sentence": 12,
       "duplicate-punctuation": 9,
