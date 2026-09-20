@@ -1,15 +1,15 @@
 {
   "schema_version": "0.18.1",
-  "generated_at": "2026-09-20T16:14:41Z",
-  "count": 2283,
-  "iran_count": 290,
+  "generated_at": "2026-09-20T20:56:37Z",
+  "count": 2291,
+  "iran_count": 291,
   "active_sources": 47,
   "active_iran_sources": 29,
-  "entries_processed_this_run": 1283,
+  "entries_processed_this_run": 1190,
   "translation_stats": {
-    "translated": 277,
-    "reused": 1685,
-    "persian_original": 287,
+    "translated": 278,
+    "reused": 1700,
+    "persian_original": 291,
     "failed": 15
   },
   "source_status": [
@@ -79,9 +79,10 @@
       "feed_url": "https://www.restaurantnews.com/feed/",
       "market": null,
       "aggregator": null,
-      "entries_seen": 40,
-      "entries_matched": 40,
-      "bozo": false
+      "entries_seen": 0,
+      "entries_matched": 0,
+      "bozo": true,
+      "warning": "<urlopen error [Errno 104] Connection reset by peer>"
     },
     {
       "source_id": "pizza_marketplace",
@@ -271,7 +272,7 @@
       "market": "iran",
       "aggregator": null,
       "entries_seen": 100,
-      "entries_matched": 2,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -386,7 +387,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 9,
+      "entries_seen": 10,
       "entries_matched": 0,
       "bozo": false
     },
@@ -397,7 +398,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 9,
+      "entries_seen": 12,
       "entries_matched": 0,
       "bozo": false
     },
@@ -419,7 +420,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -430,7 +431,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -441,7 +442,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 0,
+      "entries_seen": 10,
       "entries_matched": 0,
       "bozo": false
     },
@@ -452,7 +453,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -463,7 +464,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -474,8 +475,8 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
-      "entries_matched": 1,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -529,7 +530,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -540,7 +541,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -551,7 +552,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -573,7 +574,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -584,7 +585,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -595,7 +596,7 @@
       "market": "iran",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -638,7 +639,7 @@
       "homepage": "https://t.me/padideco",
       "market": "iran",
       "official_brand_channel": true,
-      "entries_seen": 10,
+      "entries_seen": 11,
       "entries_matched": 0,
       "bozo": false
     },
@@ -759,7 +760,7 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 9,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -771,7 +772,7 @@
       "aggregator": "bing_news",
       "brand_watch": true,
       "entries_seen": 9,
-      "entries_matched": 6,
+      "entries_matched": 4,
       "bozo": false
     },
     {
@@ -781,8 +782,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 10,
-      "entries_matched": 2,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -803,8 +804,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
-      "entries_matched": 6,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -836,8 +837,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
-      "entries_matched": 4,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -847,8 +848,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
-      "entries_matched": 1,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -869,8 +870,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 9,
-      "entries_matched": 6,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -880,8 +881,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
-      "entries_matched": 2,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -891,8 +892,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
-      "entries_matched": 3,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -903,7 +904,7 @@
       "aggregator": "bing_news",
       "brand_watch": true,
       "entries_seen": 12,
-      "entries_matched": 2,
+      "entries_matched": 3,
       "bozo": false
     },
     {
@@ -913,8 +914,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
-      "entries_matched": 6,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -924,8 +925,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
-      "entries_matched": 4,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -935,8 +936,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 0,
-      "entries_matched": 0,
+      "entries_seen": 11,
+      "entries_matched": 10,
       "bozo": false
     },
     {
@@ -946,8 +947,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
-      "entries_matched": 10,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -968,7 +969,7 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -980,7 +981,7 @@
       "aggregator": "bing_news",
       "brand_watch": true,
       "entries_seen": 12,
-      "entries_matched": 1,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -1012,8 +1013,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 0,
-      "entries_matched": 0,
+      "entries_seen": 12,
+      "entries_matched": 2,
       "bozo": false
     },
     {
@@ -1034,7 +1035,7 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 0,
+      "entries_seen": 9,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1045,8 +1046,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
-      "entries_matched": 6,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -1056,8 +1057,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
-      "entries_matched": 4,
+      "entries_seen": 9,
+      "entries_matched": 1,
       "bozo": false
     },
     {
@@ -1067,8 +1068,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
-      "entries_matched": 4,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -1089,8 +1090,8 @@
       "market": "world",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 10,
-      "entries_matched": 3,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -1146,7 +1147,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1182,7 +1183,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 0,
+      "entries_seen": 9,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1194,7 +1195,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 0,
+      "entries_seen": 1,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1218,7 +1219,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 6,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1230,8 +1231,8 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 8,
-      "entries_matched": 1,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -1242,7 +1243,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
+      "entries_seen": 12,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1254,7 +1255,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1266,7 +1267,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1290,7 +1291,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 10,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1302,7 +1303,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 3,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1314,8 +1315,8 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 10,
-      "entries_matched": 4,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -1326,8 +1327,8 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 8,
-      "entries_matched": 2,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -1338,7 +1339,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1350,7 +1351,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1362,7 +1363,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 10,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1374,7 +1375,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 10,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1398,8 +1399,8 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 10,
-      "entries_matched": 2,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -1410,7 +1411,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 10,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1434,7 +1435,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 10,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1446,8 +1447,8 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 12,
-      "entries_matched": 2,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -1458,7 +1459,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 9,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1470,7 +1471,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 9,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1494,8 +1495,8 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 5,
-      "entries_matched": 3,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -1506,7 +1507,7 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": true,
-      "entries_seen": 11,
+      "entries_seen": 0,
       "entries_matched": 0,
       "bozo": false
     },
@@ -1542,8 +1543,8 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": false,
-      "entries_seen": 9,
-      "entries_matched": 3,
+      "entries_seen": 12,
+      "entries_matched": 6,
       "bozo": false
     },
     {
@@ -1554,8 +1555,8 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": false,
-      "entries_seen": 12,
-      "entries_matched": 8,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -1578,8 +1579,8 @@
       "country": "TR",
       "aggregator": "bing_news",
       "brand_watch": false,
-      "entries_seen": 8,
-      "entries_matched": 3,
+      "entries_seen": 0,
+      "entries_matched": 0,
       "bozo": false
     },
     {
@@ -1817,6 +1818,105 @@
       }
     },
     {
+      "id": "fef7cc07c94811d03058",
+      "title": "دستگاه لیبل زن دستی میوه: راهنمای کامل، مزایا و خرید",
+      "url": "https://mag.ifoods.ir/manual-fruit-labeler",
+      "source": {
+        "id": "ifoods_mag",
+        "name": "مجله آی‌فودز",
+        "homepage": "https://mag.ifoods.ir/",
+        "class": "specialist_publication",
+        "priority": 1,
+        "market": "iran",
+        "country": "IR",
+        "aggregator": null
+      },
+      "discovered_publisher": null,
+      "author": "تیم تولید محتوای آی فودز",
+      "published_at": "2026-09-20T19:32:51Z",
+      "collected_at": "2026-09-20T20:51:42Z",
+      "language": "fa",
+      "region": "IR",
+      "country": "IR",
+      "market": "iran",
+      "geo": {
+        "primary_country": {
+          "code": "IR",
+          "fa": "ایران",
+          "name": "Iran",
+          "lat": 32.4279,
+          "lon": 53.688,
+          "basis": "source"
+        },
+        "countries": [
+          {
+            "code": "IR",
+            "fa": "ایران",
+            "name": "Iran",
+            "lat": 32.4279,
+            "lon": 53.688,
+            "basis": "source"
+          }
+        ],
+        "cities": [],
+        "confidence": "medium"
+      },
+      "image_url": "https://mag.ifoods.ir/wp-content/uploads/2026/09/Gemini_Generated_Image_2lma8e2lma8e2lma-1024x506.jpg",
+      "image_source": "feed",
+      "source_detail_chars": 14259,
+      "summary": "وبلاگ آی فودز | ifoods.ir/blog امروزه در بازار پررقابت محصولات کشاورزی و میوه، برندسازی و ارائه اطلاعات کامل محصول به مشتری بیش از هر زمان دیگری اهمیت پیدا کرده است. تصور کنید وارد یک فروشگاه میوه می‌شوید؛ ... مطلب دستگاه لیبل زن دستی میوه: راهنمای کامل، مزایا و خرید در مجله آی فودز . منتشر شد.",
+      "categories": [
+        "food_industry",
+        "consumer_behavior",
+        "marketing_branding",
+        "packaging_design"
+      ],
+      "topics": [
+        "branding"
+      ],
+      "brands": [],
+      "iran_relevance_score": 85,
+      "relevance_score": 83,
+      "title_fa": "دستگاه لیبل زن دستی میوه: راهنمای کامل، مزایا و خرید",
+      "summary_fa": "وبلاگ آی فودز | ifoods. ir/blog امروزه در بازار پررقابت محصولات کشاورزی و میوه، برندسازی و ارائه اطلاعات کامل محصول به مشتری بیش از هر زمان دیگری اهمیت پیدا کرده است. تصور کنید وارد یک فروشگاه میوه می‌شوید؛... مطلب دستگاه لیبل زن دستی میوه: راهنمای کامل، مزایا و خرید در مجله آی فودز. منتشر شد.",
+      "report_fa": "وبلاگ آی فودز | ifoods. ir/blog امروزه در بازار پررقابت محصولات کشاورزی و میوه، برندسازی و ارائه اطلاعات کامل محصول به مشتری بیش از هر زمان دیگری اهمیت پیدا کرده است. تصور کنید وارد یک فروشگاه میوه می‌شوید؛... مطلب دستگاه لیبل زن دستی میوه: راهنمای کامل، مزایا و خرید در مجله آی فودز. منتشر شد.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "original-fa",
+        "engine": null,
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "source-fa-normalized",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "article_body": {
+        "status": "extracted",
+        "chars": 6227,
+        "paragraphs": 26,
+        "selected_sentences": 12,
+        "selected_chars": 2523,
+        "extractor": "scored-container",
+        "content_hash": "6d33fce63f7de7c51c00",
+        "fetched_at": "2026-09-20T20:57:13Z"
+      },
+      "report_source_kind": "article_body",
+      "report_source_chars": 6227,
+      "report_selected_chars": 2523,
+      "report_basis": "feed-summary",
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {},
+        "source_original_fa": true,
+        "semantic_penalty": 0
+      }
+    },
+    {
       "id": "4974d2549de26322b7ea",
       "title": "🎉 برای اولین بار در ایران صبحانه در حرکت 🎁 پست‌های «صبحانه در حرکت» واستون ۲ تا میکسر نینجا داره 😍 1️⃣ اد استوری پست 2️⃣ و منشن کردن دوستات بهت کلی امتیاز میده ⚡ این یک صبحانه کامل",
       "url": "https://t.me/MihanFoods/755",
@@ -1906,7 +2006,7 @@
         "chars": 0,
         "paragraphs": 0,
         "extractor": "none",
-        "fetched_at": "2026-09-20T16:15:54Z"
+        "fetched_at": "2026-09-20T20:57:51Z"
       },
       "translation_quality": {
         "version": 2,
@@ -2007,7 +2107,7 @@
         "selected_chars": 3066,
         "extractor": "scored-container",
         "content_hash": "b06188c41e3c5638037f",
-        "fetched_at": "2026-09-20T16:15:50Z"
+        "fetched_at": "2026-09-20T20:57:47Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 6131,
@@ -2021,6 +2121,112 @@
         "issues": [],
         "parts": {},
         "source_original_fa": true,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "20a61f25b24bf9475126",
+      "title": "General Mills stock steadies ahead of fiscal 2027 Q1 earnings",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab048578a884727a896baf7660b79e4&url=https%3A%2F%2Fwww.ad-hoc-news.de%2Fboerse%2Fnews%2Fcorporate-news%2Fgeneral-mills-stock-steadies-ahead-of-fiscal-2027-q1-earnings%2F70139610&c=9624546820866578745&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_general_mills",
+        "name": "Global Brand Watch — general_mills",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-20T13:36:00Z",
+      "collected_at": "2026-09-20T20:55:51Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 201,
+      "summary": "General Mills stock closed at USD 36.32 on September 18, 2026, around 22 percent below its start-of-year level. The company is scheduled to report fiscal 2027 first-quarter results on September 23, ...",
+      "categories": [
+        "beverage",
+        "food_industry"
+      ],
+      "topics": [],
+      "brands": [
+        {
+          "id": "general_mills",
+          "name": "General Mills",
+          "fa": "جنرال میلز"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "general_mills"
+        ],
+        "watch_source_id": "global_brand_bing_general_mills"
+      },
+      "title_fa": "سهام جنرال میلز در آستانه درآمد سه ماهه اول مالی 2027 ثابت است",
+      "summary_fa": "سهام جنرال میلز در 18 سپتامبر 2026 به 36.32 دلار بسته شد که حدود 22 درصد کمتر از سطح ابتدای سال بود. این شرکت قرار است نتایج سه ماهه اول مالی 2027 را در 23 سپتامبر گزارش دهد.",
+      "report_fa": "سهام جنرال میلز در 18 سپتامبر 2026 به 36.32 دلار بسته شد که حدود 22 درصد کمتر از سطح ابتدای سال بود. این شرکت قرار است نتایج سه ماهه اول مالی 2027 را در 23 سپتامبر گزارش دهد.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 62,
+            "word_count": 13
+          },
+          "summary": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 100,
+            "word_count": 39
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 100,
+            "word_count": 39
+          }
+        },
+        "source_original_fa": false,
         "semantic_penalty": 0
       }
     },
@@ -2117,7 +2323,7 @@
         "chars": 0,
         "paragraphs": 0,
         "extractor": "none",
-        "fetched_at": "2026-09-20T16:15:52Z"
+        "fetched_at": "2026-09-20T20:57:50Z"
       },
       "translation_quality": {
         "version": 2,
@@ -2189,7 +2395,7 @@
       "iran_relevance_score": 0,
       "relevance_score": 87,
       "title_fa": "نسخه یکشنبه: سدیم",
-      "summary_fa": "بریتانیایی‌ها حملات خود را در کنتاکی در اوایل سال 1777 افزایش دادند، اما دانیل بون، مرزبان، محل امن بونزبورو را ترک کرد تا در بلو لیکس در امتداد رودخانه لیکینگ نمک بجوشاند. در آن زمان، به دست آوردن نمک برای بون برای زندگی بونزبورو مهمتر از دفاع در برابر عملیات بریتانیایی بود که برای نابودی محصولات کشاورزی و دام در تلاش برای ترک سکونتگاه انجام می شد. تا سال 6050 قبل از میلاد، نمک، یک ماده معدنی که عمدتاً از کلرید سدیم (NaCl) تشکیل شده است، جزء لاینفک زندگی انسان بوده است. به طور متوسط، مصرف فعلی تقریبا 50 درصد بالاتر از حد توصیه شده…",
+      "summary_fa": "بریتانیایی‌ها حملات خود را در کنتاکی در اوایل سال 1777 افزایش دادند، اما دانیل بون، مرزبان، محل امن بونزبورو را ترک کرد تا در بلو لیکس در امتداد رودخانه لیکینگ نمک بجوشاند. در آن زمان، به دست آوردن نمک برای بون برای زندگی بونزبورو مهمتر از دفاع در برابر عملیات بریتانیایی بود که برای نابودی محصولات کشاورزی و دام در تلاش برای ترک سکونتگاه انجام می شد. تا سال 6050 قبل از میلاد، نمک، یک ماده معدنی که عمدتاً از کلرید سدیم (NaCl) تشکیل شده است، جزء لاینفک زندگی انسان بوده است.",
       "report_fa": "بریتانیایی‌ها حملات خود را در کنتاکی در اوایل سال 1777 افزایش دادند، اما دانیل بون، مرزبان، محل امن بونزبورو را ترک کرد تا در بلو لیکس در امتداد رودخانه لیکینگ نمک بجوشاند. در آن زمان، به دست آوردن نمک برای بون برای زندگی بونزبورو مهمتر از دفاع در برابر عملیات بریتانیایی بود که برای نابودی محصولات کشاورزی و دام در تلاش برای ترک سکونتگاه انجام می شد.\n\nتا سال 6050 قبل از میلاد، نمک، یک ماده معدنی که عمدتاً از کلرید سدیم (NaCl) تشکیل شده است، جزء لاینفک زندگی انسان بوده است. به طور متوسط، مصرف فعلی تقریبا 50 درصد بالاتر از حد توصیه شده است.\n\nاکثر مردم سدیم در ایالات متحده مصرف، بیش از 70 درصد، از غذاهای فرآوری شده، بسته بندی شده و آماده حاصل می شود، نه از نمک سفره ای که هنگام پخت و پز یا غذا خوردن در خانه به غذا اضافه می شود. ما می دانیم که مردم معمولاً متوجه کاهش اندک (حدود 10 درصد) سدیم نمی شوند.\n\nاین کاهش حدود 20 درصد کمتر از میزان مصرف مصرف کنندگان قبل از سال 2021 است. این راهنمایی به ویژه مرتبط است زیرا بیش از 70 درصد سدیم دریافتی در ایالات متحده است.\n\nجمعیت از سدیم اضافه شده در طول تولید مواد غذایی و تهیه مواد غذایی تجاری حاصل می شود.",
       "report_coverage": "بر پایه بدنه مقاله",
       "translation": {
@@ -2197,11 +2403,11 @@
         "engine": "http-en-fa-v2",
         "cleanup_version": 2
       },
-      "editorial": {
-        "status": "source-recap-v2",
-        "version": 1,
-        "mode": "conservative-fa-newsroom"
-      },
+      "narrative_fa": "بریتانیایی‌ها حملات خود را در کنتاکی در اوایل سال 1777 افزایش دادند، اما دانیل بون، مرزبان، محل امن بونزبورو را ترک کرد تا در بلو لیکس در امتداد رودخانه لیکینگ نمک بجوشاند. در آن زمان، به دست آوردن نمک برای بون برای زندگی بونزبورو مهمتر از دفاع در برابر عملیات بریتانیایی بود که برای نابودی محصولات کشاورزی و دام در تلاش برای ترک سکونتگاه انجام می شد.\n\nتا سال 6050 قبل از میلاد، نمک، یک ماده معدنی که عمدتاً از کلرید سدیم (NaCl) تشکیل شده است، جزء لاینفک زندگی انسان بوده است. به طور متوسط، مصرف فعلی تقریبا 50 درصد بالاتر از حد توصیه شده است.\n\nاکثر مردم سدیم در ایالات متحده مصرف، بیش از 70 درصد، از غذاهای فرآوری شده، بسته بندی شده و آماده حاصل می شود، نه از نمک سفره ای که هنگام پخت و پز یا غذا خوردن در خانه به غذا اضافه می شود. ما می دانیم که مردم معمولاً متوجه کاهش اندک (حدود 10 درصد) سدیم نمی شوند.\n\nاین کاهش حدود 20 درصد کمتر از میزان مصرف مصرف کنندگان قبل از سال 2021 است. این راهنمایی به ویژه مرتبط است زیرا بیش از 70 درصد سدیم دریافتی در ایالات متحده است.\n\nجمعیت از سدیم اضافه شده در طول تولید مواد غذایی و تهیه مواد غذایی تجاری حاصل می شود.",
+      "recap_fa": "بریتانیایی‌ها حملات خود را در کنتاکی در اوایل سال 1777 افزایش دادند، اما دانیل بون، مرزبان، محل امن بونزبورو را ترک کرد تا در بلو لیکس در امتداد رودخانه لیکینگ نمک بجوشاند. در آن زمان، به دست آوردن نمک برای بون برای زندگی بونزبورو مهمتر از دفاع در برابر عملیات بریتانیایی بود که برای نابودی محصولات کشاورزی و دام در تلاش برای ترک سکونتگاه انجام می شد. تا سال 6050 قبل از میلاد، نمک، یک ماده معدنی که عمدتاً از کلرید سدیم (NaCl) تشکیل شده است، جزء لاینفک زندگی انسان بوده است. به طور متوسط، مصرف فعلی تقریبا 50 درصد بالاتر از حد توصیه شده…",
+      "narrative_basis": "sentence-level source translation, public recap reconstruction",
+      "narrative_version": 2,
+      "narrative_word_count": 215,
       "article_body": {
         "status": "extracted",
         "chars": 10112,
@@ -2215,13 +2421,13 @@
       "report_source_kind": "article_body",
       "report_source_chars": 10112,
       "report_selected_chars": 2012,
-      "narrative_fa": "بریتانیایی‌ها حملات خود را در کنتاکی در اوایل سال 1777 افزایش دادند، اما دانیل بون، مرزبان، محل امن بونزبورو را ترک کرد تا در بلو لیکس در امتداد رودخانه لیکینگ نمک بجوشاند. در آن زمان، به دست آوردن نمک برای بون برای زندگی بونزبورو مهمتر از دفاع در برابر عملیات بریتانیایی بود که برای نابودی محصولات کشاورزی و دام در تلاش برای ترک سکونتگاه انجام می شد.\n\nتا سال 6050 قبل از میلاد، نمک، یک ماده معدنی که عمدتاً از کلرید سدیم (NaCl) تشکیل شده است، جزء لاینفک زندگی انسان بوده است. به طور متوسط، مصرف فعلی تقریبا 50 درصد بالاتر از حد توصیه شده است.\n\nاکثر مردم سدیم در ایالات متحده مصرف، بیش از 70 درصد، از غذاهای فرآوری شده، بسته بندی شده و آماده حاصل می شود، نه از نمک سفره ای که هنگام پخت و پز یا غذا خوردن در خانه به غذا اضافه می شود. ما می دانیم که مردم معمولاً متوجه کاهش اندک (حدود 10 درصد) سدیم نمی شوند.\n\nاین کاهش حدود 20 درصد کمتر از میزان مصرف مصرف کنندگان قبل از سال 2021 است. این راهنمایی به ویژه مرتبط است زیرا بیش از 70 درصد سدیم دریافتی در ایالات متحده است.\n\nجمعیت از سدیم اضافه شده در طول تولید مواد غذایی و تهیه مواد غذایی تجاری حاصل می شود.",
-      "recap_fa": "بریتانیایی‌ها حملات خود را در کنتاکی در اوایل سال 1777 افزایش دادند، اما دانیل بون، مرزبان، محل امن بونزبورو را ترک کرد تا در بلو لیکس در امتداد رودخانه لیکینگ نمک بجوشاند. در آن زمان، به دست آوردن نمک برای بون برای زندگی بونزبورو مهمتر از دفاع در برابر عملیات بریتانیایی بود که برای نابودی محصولات کشاورزی و دام در تلاش برای ترک سکونتگاه انجام می شد. تا سال 6050 قبل از میلاد، نمک، یک ماده معدنی که عمدتاً از کلرید سدیم (NaCl) تشکیل شده است، جزء لاینفک زندگی انسان بوده است. به طور متوسط، مصرف فعلی تقریبا 50 درصد بالاتر از حد توصیه شده…",
       "report_basis": "source-sentence-recap",
-      "narrative_basis": "sentence-level source translation, public recap reconstruction",
-      "narrative_version": 2,
-      "narrative_word_count": 215,
       "report_word_count": 215,
+      "editorial": {
+        "status": "edited-cache-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
       "translation_quality": {
         "version": 2,
         "status": "pass",
@@ -2246,10 +2452,10 @@
             "issues": [
               "long-sentence"
             ],
-            "persian_ratio": 1.012,
-            "latin_ratio": 0.01,
+            "persian_ratio": 1.011,
+            "latin_ratio": 0.011,
             "max_sentence_chars": 178,
-            "word_count": 106
+            "word_count": 93
           },
           "report": {
             "score": 100,
@@ -2353,6 +2559,243 @@
         "issues": [],
         "parts": {},
         "source_original_fa": true,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "0590d5cabd1e0b7ee496",
+      "title": "Trump-Xi Summit, Costco, Autozone, General Mills, and More to Watch This Week",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab048578a884727a896baf7660b79e4&url=https%3A%2F%2Fwww.barrons.com%2Farticles%2Ftrump-xi-summit-costco-autozone-general-mills-stocks-9394b2ba&c=6354377712708926157&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_general_mills",
+        "name": "Global Brand Watch — general_mills",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-20T11:00:00Z",
+      "collected_at": "2026-09-20T20:55:51Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 202,
+      "summary": "Presidents Donald Trump and Xi Jinping will meet Thursday to discuss a range of economic and geopolitical topics. We’ll see data on manufacturing , services, and new homes, and earnings from KB Home ...",
+      "categories": [
+        "food_industry"
+      ],
+      "topics": [],
+      "brands": [
+        {
+          "id": "general_mills",
+          "name": "General Mills",
+          "fa": "جنرال میلز"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "general_mills"
+        ],
+        "watch_source_id": "global_brand_bing_general_mills"
+      },
+      "title_fa": "نشست ترامپ-شی، Costco، Autozone، جنرال میلز، و موارد دیگر برای تماشای این هفته",
+      "summary_fa": "رؤسای جمهور دونالد ترامپ و شی جین پینگ روز پنجشنبه برای بحث در مورد موضوعات اقتصادی و ژئوپلیتیکی دیدار خواهند کرد. ما داده‌های مربوط به تولید، خدمات، و خانه‌های جدید و درآمد را از KB Home خواهیم دید.",
+      "report_fa": "رؤسای جمهور دونالد ترامپ و شی جین پینگ روز پنجشنبه برای بحث در مورد موضوعات اقتصادی و ژئوپلیتیکی دیدار خواهند کرد. ما داده‌های مربوط به تولید، خدمات، و خانه‌های جدید و درآمد را از KB Home خواهیم دید.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.836,
+            "latin_ratio": 0.23,
+            "max_sentence_chars": 78,
+            "word_count": 14
+          },
+          "summary": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.974,
+            "latin_ratio": 0.038,
+            "max_sentence_chars": 114,
+            "word_count": 40
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.974,
+            "latin_ratio": 0.038,
+            "max_sentence_chars": 114,
+            "word_count": 40
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "0824e4173fa4abfcb89d",
+      "title": "DoorDash (DASH) Becomes Official On Demand Delivery Partner Across North America",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab04853137c41b3a3b017a9026825d2&url=https%3A%2F%2Ffinance.yahoo.com%2Fmarkets%2Fstocks%2Farticles%2Fdoordash-dash-becomes-official-demand-161233128.html&c=16751145837763162077&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_doordash",
+        "name": "Global Brand Watch — doordash",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-20T09:12:00Z",
+      "collected_at": "2026-09-20T20:55:47Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": {
+          "code": "US",
+          "fa": "آمریکا",
+          "name": "United States",
+          "lat": 39.8283,
+          "lon": -98.5795,
+          "basis": "text"
+        },
+        "countries": [
+          {
+            "code": "US",
+            "fa": "آمریکا",
+            "name": "United States",
+            "lat": 39.8283,
+            "lon": -98.5795,
+            "basis": "text"
+          },
+          {
+            "code": "CA",
+            "fa": "کانادا",
+            "name": "Canada",
+            "lat": 56.1304,
+            "lon": -106.3468,
+            "basis": "text"
+          }
+        ],
+        "cities": [],
+        "confidence": "high"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 197,
+      "summary": "DoorDash (NasdaqGS:DASH) has been named the Official On Demand Delivery and Pick Up Partner of the NHL across North America. The multiyear agreement covers both the United States and Canada and ...",
+      "categories": [
+        "delivery_drive_thru",
+        "food_industry"
+      ],
+      "topics": [
+        "delivery"
+      ],
+      "brands": [
+        {
+          "id": "doordash",
+          "name": "DoorDash",
+          "fa": "دوردش"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "doordash"
+        ],
+        "watch_source_id": "global_brand_bing_doordash"
+      },
+      "title_fa": "دوردش (DASH) شریک رسمی تحویل بر اساس تقاضا در سراسر آمریکای شمالی می شود",
+      "summary_fa": "دوردش (NasdaqGS: DASH) به عنوان شریک رسمی تحویل و تحویل بر اساس تقاضای NHL در سراسر آمریکای شمالی انتخاب شده است. این قرارداد چند ساله هم ایالات متحده و هم کانادا را در بر می گیرد و.",
+      "report_fa": "دوردش (NasdaqGS: DASH) به عنوان شریک رسمی تحویل و تحویل بر اساس تقاضای NHL در سراسر آمریکای شمالی انتخاب شده است. این قرارداد چند ساله هم ایالات متحده و هم کانادا را در بر می گیرد و.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.93,
+            "latin_ratio": 0.07,
+            "max_sentence_chars": 72,
+            "word_count": 14
+          },
+          "summary": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.894,
+            "latin_ratio": 0.106,
+            "max_sentence_chars": 113,
+            "word_count": 37
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.894,
+            "latin_ratio": 0.106,
+            "max_sentence_chars": 113,
+            "word_count": 37
+          }
+        },
+        "source_original_fa": false,
         "semantic_penalty": 0
       }
     },
@@ -2496,7 +2939,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 68,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -2514,7 +2957,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -2610,7 +3053,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 70,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -2628,7 +3071,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -2797,7 +3240,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 60,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -2815,7 +3258,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -2911,7 +3354,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 67,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -2929,7 +3372,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -3023,7 +3466,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 66,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -3041,7 +3484,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -3078,6 +3521,116 @@
             "latin_ratio": 0.0,
             "max_sentence_chars": 121,
             "word_count": 23
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "d919a501d079d9e10cc3",
+      "title": "Wendy's stock falls as key franchisee Meritage files for bankruptcy",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab0485103a24de884772a4569923909&url=https%3A%2F%2Fwww.ad-hoc-news.de%2Fboerse%2Fnews%2Fnebenwerte%2Fwendy-s-stock-falls-as-key-franchisee-meritage-files-for-bankruptcy%2F70136942&c=3764416750309731832&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_wendys",
+        "name": "Global Brand Watch — wendys",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-20T06:16:00Z",
+      "collected_at": "2026-09-20T20:55:46Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 192,
+      "summary": "Wendy's stock slipped toward its 52-week low as investors reacted to Meritage Hospitality Group’s Chapter 11 filing on September 19, 2026. The Wendy's stock move comes after a 19.1 percent ...",
+      "categories": [
+        "qsr_fast_food",
+        "franchising",
+        "regulation",
+        "food_industry"
+      ],
+      "topics": [
+        "franchise"
+      ],
+      "brands": [
+        {
+          "id": "wendys",
+          "name": "Wendy's",
+          "fa": "وندیز"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "wendys"
+        ],
+        "watch_source_id": "global_brand_bing_wendys"
+      },
+      "title_fa": "سهام وندیز به عنوان فایل های کلیدی فرنچایزگیرنده Meritage برای ورشکستگی سقوط کرد",
+      "summary_fa": "سهام وندیز به پایین‌ترین حد خود در 52 هفته گذشته سقوط کرد زیرا سرمایه‌گذاران به گزارش فصل 11 گروه مهمان‌پذیری Meritage در 19 سپتامبر 2026 واکنش نشان دادند. حرکت سهام وندیز پس از 19.1 درصد انجام شد.",
+      "report_fa": "سهام وندیز به پایین‌ترین حد خود در 52 هفته گذشته سقوط کرد زیرا سرمایه‌گذاران به گزارش فصل 11 گروه مهمان‌پذیری Meritage در 19 سپتامبر 2026 واکنش نشان دادند. حرکت سهام وندیز پس از 19.1 درصد انجام شد.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.882,
+            "latin_ratio": 0.118,
+            "max_sentence_chars": 80,
+            "word_count": 13
+          },
+          "summary": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.944,
+            "latin_ratio": 0.056,
+            "max_sentence_chars": 155,
+            "word_count": 41
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.944,
+            "latin_ratio": 0.056,
+            "max_sentence_chars": 155,
+            "word_count": 41
           }
         },
         "source_original_fa": false,
@@ -3222,7 +3775,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 56,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -3240,7 +3793,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -3372,7 +3925,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -3780,6 +4333,112 @@
       }
     },
     {
+      "id": "aef69431feb67aa4599b",
+      "title": "Sauce helps restaurants ditch DoorDash's 30% commission",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab04853137c41b3a3b017a9026825d2&url=https%3A%2F%2Fwww.calcalistech.com%2Fctechnews%2Farticle%2Ff3waevn6t&c=8395429086665536740&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_doordash",
+        "name": "Global Brand Watch — doordash",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-20T03:00:00Z",
+      "collected_at": "2026-09-20T20:55:47Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 140,
+      "summary": "The Series A restaurant-tech platform, built for multi-location groups, is one of 21 startups selected for ScaleUp House's inaugural cohort.",
+      "categories": [
+        "delivery_drive_thru",
+        "food_industry"
+      ],
+      "topics": [],
+      "brands": [
+        {
+          "id": "doordash",
+          "name": "DoorDash",
+          "fa": "دوردش"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "doordash"
+        ],
+        "watch_source_id": "global_brand_bing_doordash"
+      },
+      "title_fa": "سس به رستوران ها کمک می کند تا کمیسیون 30% دوردش را کنار بگذارند",
+      "summary_fa": "پلتفرم فناوری رستوران سری A که برای گروه‌های چندمکانی ساخته شده است، یکی از ۲۱ استارت‌آپ انتخاب شده برای افتتاحیه گروه ScaleUp House است.",
+      "report_fa": "پلتفرم فناوری رستوران سری A که برای گروه‌های چندمکانی ساخته شده است، یکی از ۲۱ استارت‌آپ انتخاب شده برای افتتاحیه گروه ScaleUp House است.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 64,
+            "word_count": 14
+          },
+          "summary": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.907,
+            "latin_ratio": 0.12,
+            "max_sentence_chars": 137,
+            "word_count": 26
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.907,
+            "latin_ratio": 0.12,
+            "max_sentence_chars": 137,
+            "word_count": 26
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
       "id": "9501b71d146fe265c3bb",
       "title": "You can soon order Dunkin' and groceries in one Walmart app trip",
       "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab00623ffe2405fa5e66d06e69a4bb5&url=https%3A%2F%2Fwww.yahoo.com%2Fnews%2Fus%2Farticles%2Fsoon-order-dunkin-groceries-one-090143275.html&c=7819265709868715544&mkt=en-us",
@@ -3847,7 +4506,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -4473,6 +5132,118 @@
       }
     },
     {
+      "id": "8fc003f60d978729a1e8",
+      "title": "Borderlands Produce Rescue and DoorDash deliver 25,000 orders in Arizona",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab04853137c41b3a3b017a9026825d2&url=https%3A%2F%2Fwww.msn.com%2Fen-us%2Fnews%2Fother%2Fborderlands-produce-rescue-and-doordash-deliver-25000-orders-in-arizona%2Fvi-AA2cAGU3&c=4245434789687712590&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_doordash",
+        "name": "Global Brand Watch — doordash",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-19T22:51:59Z",
+      "collected_at": "2026-09-20T20:55:47Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 139,
+      "summary": "The Nogales-based nonprofit and DoorDash have partnered since 2022 to deliver rescued fresh fruits and vegetables to people across Arizona.",
+      "categories": [
+        "delivery_drive_thru",
+        "food_industry"
+      ],
+      "topics": [],
+      "brands": [
+        {
+          "id": "doordash",
+          "name": "DoorDash",
+          "fa": "دوردش"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "doordash"
+        ],
+        "watch_source_id": "global_brand_bing_doordash"
+      },
+      "title_fa": "Borderlands Produce Rescue و دوردش 25000 سفارش را در آریزونا تحویل می دهند.",
+      "summary_fa": "سازمان غیرانتفاعی مستقر در نوگالس و دوردش از سال 2022 برای تحویل میوه‌ها و سبزیجات تازه نجات‌یافته به مردم سراسر آریزونا با یکدیگر همکاری کرده‌اند.",
+      "report_fa": "سازمان غیرانتفاعی مستقر در نوگالس و دوردش از سال 2022 برای تحویل میوه‌ها و سبزیجات تازه نجات‌یافته به مردم سراسر آریزونا با یکدیگر همکاری کرده‌اند.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "warn",
+        "score": 88,
+        "publishable": true,
+        "issues": [
+          "mixed-script",
+          "too-much-latin"
+        ],
+        "parts": {
+          "title": {
+            "score": 68,
+            "status": "warn",
+            "issues": [
+              "too-much-latin",
+              "mixed-script"
+            ],
+            "persian_ratio": 0.579,
+            "latin_ratio": 0.421,
+            "max_sentence_chars": 75,
+            "word_count": 13
+          },
+          "summary": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 147,
+            "word_count": 28
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 1.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 147,
+            "word_count": 28
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
       "id": "03ea43be6ce09809b5ab",
       "title": "Shake Shack (SHAK) Stock Could Trade At A Discount To Fair Value",
       "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aaf6849c8ff43199ffff072219c910f&url=https%3A%2F%2Ffinance.yahoo.com%2Fmarkets%2Fstocks%2Farticles%2Fshake-shack-shak-stock-could-041907367.html&c=12049250191687570236&mkt=en-us",
@@ -4644,7 +5415,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 62,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -4662,7 +5433,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -4762,7 +5533,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 71,
+      "relevance_score": 67,
       "title_fa": "فیلادلفیا با پنیر خامه‌ای داغ عسلی جدید مایک گرما را افزایش می‌دهد.",
       "summary_fa": "طعم جدید نشان دهنده اولین طعم پنیر خامه ای گرمای شیرین فیلادلفیا در ایالات متحده است.",
       "report_fa": "طعم جدید نشان دهنده اولین طعم پنیر خامه ای گرمای شیرین فیلادلفیا در ایالات متحده است.",
@@ -4877,7 +5648,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 65,
+      "relevance_score": 61,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -4998,7 +5769,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 85,
-      "relevance_score": 74,
+      "relevance_score": 70,
       "title_fa": "راهنمای جامع خرید انواع دستگاه عرق‌گیری خانگی: انتخابی هوشمندانه برای عرقیاتی خالص و باکیفیت",
       "summary_fa": "وبلاگ آی فودز | ifoods. ir/blog عطر دل‌انگیز گلاب تازه یا رایحه روح‌بخش بیدمشک، یادآور حس خوب طبیعت و خواص بی‌نظیر گیاهان دارویی است. بسیاری از ما دوست داریم این معجزه‌های طبیعی را خودمان در خانه تهیه کنیم،... مطلب راهنمای جامع خرید انواع دستگاه عرق‌گیری خانگی: انتخابی هوشمندانه برای عرقیاتی خالص و باکیفیت در مجله آی فودز. منتشر شد.",
       "report_fa": "وبلاگ آی فودز | ifoods. ir/blog عطر دل‌انگیز گلاب تازه یا رایحه روح‌بخش بیدمشک، یادآور حس خوب طبیعت و خواص بی‌نظیر گیاهان دارویی است. بسیاری از ما دوست داریم این معجزه‌های طبیعی را خودمان در خانه تهیه کنیم،... مطلب راهنمای جامع خرید انواع دستگاه عرق‌گیری خانگی: انتخابی هوشمندانه برای عرقیاتی خالص و باکیفیت در مجله آی فودز. منتشر شد.",
@@ -5080,7 +5851,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 68,
       "turkey_discovery": {
         "source_id": "turkey_discovery_turkey_restaurant_sector",
         "query_name": "Türkiye — restoran ve yeme-içme sektörü"
@@ -5248,7 +6019,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 68,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -5353,7 +6124,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 60,
+      "relevance_score": 56,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -6767,7 +7538,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 66,
+      "relevance_score": 65,
       "turkey_discovery": {
         "source_id": "turkey_discovery_turkey_food_investment",
         "query_name": "Türkiye — gıda yatırımları ve ihracat"
@@ -6782,7 +7553,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -7806,7 +8577,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 66,
+      "relevance_score": 62,
       "turkey_discovery": {
         "source_id": "turkey_discovery_turkey_food_industry",
         "query_name": "Türkiye — gıda sanayi ve üretim"
@@ -7821,7 +8592,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -12565,7 +13336,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 66,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -13483,7 +14254,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -14713,7 +15484,7 @@
         "selected_chars": 3115,
         "extractor": "scored-container",
         "content_hash": "7514b9b5d97d6c6b41aa",
-        "fetched_at": "2026-09-20T16:15:24Z"
+        "fetched_at": "2026-09-20T20:57:19Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 7172,
@@ -15546,7 +16317,7 @@
         "selected_chars": 3106,
         "extractor": "scored-container",
         "content_hash": "6635fd6d5a458ca1ac96",
-        "fetched_at": "2026-09-20T16:15:34Z"
+        "fetched_at": "2026-09-20T20:57:29Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 9441,
@@ -18514,7 +19285,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 63,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -18532,7 +19303,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -19823,7 +20594,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-20T16:15:53Z"
+        "fetched_at": "2026-09-20T20:57:50Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -19935,7 +20706,7 @@
         "selected_chars": 1881,
         "extractor": "article",
         "content_hash": "488d4fb5833e2264488b",
-        "fetched_at": "2026-09-20T16:15:51Z"
+        "fetched_at": "2026-09-20T20:57:49Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 1987,
@@ -20438,8 +21209,8 @@
       },
       "image_url": "https://imgproxy.divecdn.com/GqEJr3tXts6tDsvizr5Dzp3AzvFTLRWN2-DTIwZx9e4/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS8yMDE4LTExMDAtRHVibGluLVJkXzAxMl8yLmpwZw==.webp",
       "image_source": "feed",
-      "source_detail_chars": 178,
-      "summary": "Meritage Hospitality Group, which operates 314 Wendy’s units, has closed at least 60 units this year and opted out or altered the breakfast daypart to improve store-level EBITDA.",
+      "source_detail_chars": 168,
+      "summary": "Meritage Hospitality Group, which operates 314 Wendy’s units, has closed at least 60 units and opted out or altered the breakfast daypart to improve store-level EBITDA.",
       "categories": [
         "qsr_fast_food",
         "franchising",
@@ -20459,8 +21230,8 @@
       "iran_relevance_score": 0,
       "relevance_score": 80,
       "title_fa": "Major وندیز فرنچایزگیرنده اعلام ورشکستگی کرد",
-      "summary_fa": "Meritage Hospitality Group که دارای 314 واحد وندی است، امسال حداقل 60 واحد را تعطیل کرده و صبحانه بازه زمانی فروش را برای بهبود EBITDA در سطح فروشگاه انصراف داده یا تغییر داده است.",
-      "report_fa": "Meritage Hospitality Group که دارای 314 واحد وندی است، امسال حداقل 60 واحد را تعطیل کرده و صبحانه بازه زمانی فروش را برای بهبود EBITDA در سطح فروشگاه انصراف داده یا تغییر داده است.",
+      "summary_fa": "Meritage Hospitality Group که دارای 314 واحد وندی است، حداقل 60 واحد را تعطیل کرده و صبحانه بازه زمانی فروش را برای بهبود EBITDA در سطح فروشگاه انصراف داده یا تغییر داده است.",
+      "report_fa": "Meritage Hospitality Group که دارای 314 واحد وندی است، حداقل 60 واحد را تعطیل کرده و صبحانه بازه زمانی فروش را برای بهبود EBITDA در سطح فروشگاه انصراف داده یا تغییر داده است.",
       "report_coverage": "خلاصه منبع",
       "translation": {
         "status": "translated",
@@ -20476,15 +21247,14 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-20T16:15:51Z"
+        "fetched_at": "2026-09-20T20:57:49Z"
       },
       "translation_quality": {
         "version": 2,
         "status": "warn",
-        "score": 83,
+        "score": 87,
         "publishable": true,
         "issues": [
-          "long-sentence",
           "too-much-latin"
         ],
         "parts": {
@@ -20498,16 +21268,15 @@
             "word_count": 6
           },
           "summary": {
-            "score": 69,
+            "score": 80,
             "status": "warn",
             "issues": [
-              "too-much-latin",
-              "long-sentence"
+              "too-much-latin"
             ],
-            "persian_ratio": 0.793,
-            "latin_ratio": 0.214,
-            "max_sentence_chars": 180,
-            "word_count": 34
+            "persian_ratio": 0.785,
+            "latin_ratio": 0.222,
+            "max_sentence_chars": 174,
+            "word_count": 33
           },
           "report": {
             "score": 80,
@@ -20515,10 +21284,10 @@
             "issues": [
               "too-much-latin"
             ],
-            "persian_ratio": 0.793,
-            "latin_ratio": 0.214,
-            "max_sentence_chars": 180,
-            "word_count": 34
+            "persian_ratio": 0.785,
+            "latin_ratio": 0.222,
+            "max_sentence_chars": 174,
+            "word_count": 33
           }
         },
         "source_original_fa": false,
@@ -22973,7 +23742,7 @@
       "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 78,
-      "title_fa": "پورا ویدا میامی با ترکیبی سریع و غیررسمی، غذاخوری‌های سالم را به تصویر می‌کشد",
+      "title_fa": "پورا ویدا میامی با ترکیبی سریع و غیررسمی، غذاخوری های سالم را به تصویر می کشد",
       "summary_fa": "این کافه تمام روز با الهام از ساحل که انتظار دارد تا پایان سال به 65 واحد برسد، معتقد است که مصرف کنندگان مایلند برای کیفیت و تجربه در فروشگاه کمی بیشتر بپردازند.",
       "report_fa": "اواخر سال گذشته، کانسپت سریع و معمولی Pura Vida Miami برنده سرمایه‌گذاری شرکت سهامی خصوصی TSG Consumer شد. از آن زمان، این کافه‌های زنجیره‌ای در حال ظهور تمام روز شلوغ بوده است.\n\nزمانی که TSG سهام اقلیت خود را تصاحب کرد، Pura Vida حدود 40 واحد در فلوریدا، نیویورک و کالیفرنیا داشت. این کافه 57 واحدی که تمام روز در سال 2012 در میامی توسط زوج Omer و Jennifer Horev تأسیس شد، اکنون در هفت ایالت است.\n\nتا پایان سال، Horevs انتظار دارد به 65 واحد برسد که همه متعلق به شرکت است. حدود 65 درصد از فروش ها سرویس حضوری است، و این عمدی است.\n\nعمر گفت که میانگین مبلغ فاکتور حدود 20 دلار برای هر نفر است. اومر گفت: «وقتی 10 تا 20 درصد بیشتر برای نوع غذای مناسبی که به شما احساس بهتری می‌دهد خرج می‌کنید، به‌عنوان یک انسان بهره‌ورتر می‌شوید.»\nبر اساس گزارش تکنومیک، Pura Vida سال 2025 را با 48 دستگاه و 34.5 میلیون دلار فروش به پایان رساند که نسبت به سال گذشته بیش از 12 درصد افزایش داشته است.\n\nمتوسط ​​حجم واحد در آن زمان 750000 دلار بود.",
       "report_coverage": "بر پایه بدنه مقاله",
@@ -23234,7 +24003,7 @@
       ],
       "iran_relevance_score": 0,
       "relevance_score": 76,
-      "title_fa": "یک قرارداد حق رای دادن رستوران دیگر، یک اوراق بهادار سازی دیگر",
+      "title_fa": "یکی دیگر از قراردادهای حق رای دادن به رستوران، دیگر اوراق بهادار",
       "summary_fa": "نتیجه نهایی: LongRange Capital بنا به گزارش ها به دنبال تامین مالی خرید بیشتر پیتزا هات با اوراق بهادارسازی تجاری است. این ممکن است در دراز مدت عاقلانه نباشد.",
       "report_fa": "اوراق بهادار کل کسب و کار در دنیای مالی رستوران بسیار محبوب شده است. یک امتیاز رستوران را نام ببرید، و آن شرکت احتمالاً دارای منابع مالی اوراق بهادار است، از جمله برندهایی مانند Five Guys، Jack in the Box، Jersey Mike's، ساب‌وی، و بسیاری دیگر.\n\nبنابراین ما نباید از گزارش این هفته در بلومبرگ متعجب می شدیم که مالکان جدید پیتزا هات، LongRange Capital، قرارداد 1.5 میلیارد دلاری خود را برای اکثر برندها از طریق اوراق بهادارسازی کامل تجاری تامین مالی می کنند. (نکته جانبی: استفاده از درآمد زنجیره تامین برای تضمین اوراق قرضه به طور کلی ایده بدی است، زیرا در این صورت این امر به برندها انگیزه می‌دهد تا از آن زنجیره تامین درآمد بیشتری کسب کنند، که باعث افزایش هزینه‌ها برای فرنچایزها می‌شود.\n\nاما این نیز اکنون رایج است.) اوراق بهادار محبوب هستند زیرا ساختار آنها به گونه ای است که حمایت بیشتری برای سرمایه گذاران اوراق قرضه فراهم می کند که نرخ بهره را کاهش می دهد. و به خصوص زمانی که شرکتی که با این بدهی بیش از حد سنگین شده است، نیاز به سرمایه گذاری و سابقه طولانی مدت فروش ضعیف داشته باشد، مشکل ساز است که ما را به پیتزا هات می رساند.\n\nLongRange 1.5 میلیارد دلار برای پیتزا هات در خارج از چین هزینه می کند. یام چین 1.2 میلیارد دلار برای پیتزا هات در چین می پردازد.\n\nLongRange برای زنجیره ای با حدود 15000 مکان، هزینه نسبی ناچیز می پردازد، اما به دومین بازار بزرگ و مسلماً مهم آن زنجیره دسترسی نخواهد داشت. این را در نظر بگیرید: طبق داده‌های شرکت Technomic خواهر و برادر، این زنجیره بیش از 9 سال از 11 سال گذشته افتتاح کرده است.",
       "report_coverage": "بر پایه بدنه مقاله",
@@ -23269,13 +24038,6 @@
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
-      "brand_watch": {
-        "mode": "global_bing_news_rss",
-        "matched_brand_ids": [
-          "pizza_hut"
-        ],
-        "watch_source_id": "global_brand_bing_pizza_hut"
-      },
       "translation_quality": {
         "version": 2,
         "status": "warn",
@@ -23290,9 +24052,9 @@
             "score": 100,
             "status": "pass",
             "issues": [],
-            "persian_ratio": 1.02,
+            "persian_ratio": 1.019,
             "latin_ratio": 0.0,
-            "max_sentence_chars": 62,
+            "max_sentence_chars": 64,
             "word_count": 12
           },
           "summary": {
@@ -23909,7 +24671,7 @@
           "doordash",
           "uber_eats"
         ],
-        "watch_source_id": "global_brand_bing_uber_eats"
+        "watch_source_id": "global_brand_bing_doordash"
       },
       "title_fa": "Costco تحویل فوق العاده سریع را از طریق دوردش، Uber گسترش می دهد",
       "summary_fa": "روز چهارشنبه، اوبر گسترش عمده همکاری خود با Costco را برای ارائه محصولات در 47 ایالت، از 17 ایالت، اعلام کرد. نزدیک به 600 مکان Costco اکنون در برنامه اوبر ایتس در دسترس است.",
@@ -27348,7 +28110,7 @@
         "semantic_penalty": 0
       },
       "translation_quarantine": {
-        "title_fa": "پاریس باگت با «رقصیدن با ستاره ها» در نوشیدنی ها و جوایز شریک می شود",
+        "title_fa": "پاریس باگت با \"رقصیدن با ستاره ها\" در نوشیدنی ها و جوایز شریک است",
         "summary_fa": "",
         "report_fa": "",
         "narrative_fa": "",
@@ -27367,8 +28129,8 @@
               "issues": [],
               "persian_ratio": 1.0,
               "latin_ratio": 0.0,
-              "max_sentence_chars": 68,
-              "word_count": 15
+              "max_sentence_chars": 65,
+              "word_count": 14
             },
             "summary": {
               "score": 0,
@@ -36458,7 +37220,7 @@
         "chars": 432,
         "paragraphs": 3,
         "extractor": "main",
-        "fetched_at": "2026-09-20T16:15:13Z"
+        "fetched_at": "2026-09-20T20:57:02Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -36578,7 +37340,7 @@
         "chars": 414,
         "paragraphs": 3,
         "extractor": "main",
-        "fetched_at": "2026-09-20T16:15:12Z"
+        "fetched_at": "2026-09-20T20:57:02Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -40265,7 +41027,7 @@
         "selected_chars": 3180,
         "extractor": "scored-container",
         "content_hash": "f0d3979c57b9a23c1290",
-        "fetched_at": "2026-09-20T16:15:39Z"
+        "fetched_at": "2026-09-20T20:57:34Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 14076,
@@ -42003,7 +42765,7 @@
         "selected_chars": 2388,
         "extractor": "scored-container",
         "content_hash": "6d23373ac2a8440bcb3a",
-        "fetched_at": "2026-09-20T16:15:43Z"
+        "fetched_at": "2026-09-20T20:57:39Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 5262,
@@ -42889,7 +43651,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 70,
+      "relevance_score": 66,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -43015,7 +43777,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 71,
+      "relevance_score": 67,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -43120,70 +43882,62 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 75,
+      "relevance_score": 71,
       "title_fa": "",
       "summary_fa": "",
       "report_fa": "",
       "report_coverage": "گسترده",
       "translation": {
         "status": "quality-quarantined",
-        "engine": "http-en-fa",
-        "cleanup_version": 2,
-        "quality_retry": true
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
       },
       "editorial": {
-        "status": "quality-retry",
+        "status": "edited-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
       "translation_quality": {
         "version": 2,
-        "status": "retry",
-        "score": 60,
+        "status": "block",
+        "score": 0,
         "publishable": false,
         "issues": [
-          "long-sentence",
-          "mixed-script",
-          "mostly-latin",
-          "repetition",
-          "too-much-latin"
+          "empty"
         ],
         "parts": {
           "title": {
-            "score": 80,
-            "status": "warn",
+            "score": 0,
+            "status": "block",
             "issues": [
-              "too-much-latin"
+              "empty"
             ],
-            "persian_ratio": 0.693,
-            "latin_ratio": 0.307,
-            "max_sentence_chars": 92,
-            "word_count": 18
+            "persian_ratio": 0.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 0,
+            "word_count": 0
           },
           "summary": {
-            "score": 46,
-            "status": "retry",
+            "score": 0,
+            "status": "block",
             "issues": [
-              "mostly-latin",
-              "mixed-script"
+              "empty"
             ],
-            "persian_ratio": 0.548,
-            "latin_ratio": 0.458,
-            "max_sentence_chars": 111,
-            "word_count": 44
+            "persian_ratio": 0.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 0,
+            "word_count": 0
           },
           "report": {
-            "score": 51,
-            "status": "retry",
+            "score": 0,
+            "status": "block",
             "issues": [
-              "too-much-latin",
-              "long-sentence",
-              "repetition"
+              "empty"
             ],
-            "persian_ratio": 0.802,
-            "latin_ratio": 0.215,
-            "max_sentence_chars": 358,
-            "word_count": 158
+            "persian_ratio": 0.0,
+            "latin_ratio": 0.0,
+            "max_sentence_chars": 0,
+            "word_count": 0
           }
         },
         "source_original_fa": false,
@@ -43192,18 +43946,16 @@
       "translation_quarantine": {
         "title_fa": "دل تاکو با ترکیب پیشنهادات زمان محدود جدید Flamin's Hot Flavored Queso گرما را افزایش می دهد",
         "summary_fa": "دل تاکو با یک مجموعه Flamin' Hot Queso با زمان محدود، گرمای آیتم‌های منوی خاص خود را افزایش می‌دهد. The post Del Taco گرما را با جدید Flamin’ Hot Flavored Queso-Time-Ofer Lineup برای اولین بار در RestaurantNews. com پدیدار شد.",
-        "report_fa": "دل تاکو جدید Queso LTO Lineup Lake Forest, CA ( RestaurantNews. com ) با طعم FLAMIN' HOT® را عرضه کرد.\n\nاین مجموعه که برای مدت زمان محدودی در دسترس است، گرمای متمایز CHEETOS® FLAMIN' HOT® و دل تاکو را گرد هم می‌آورد و به مهمانان راه‌های جدیدی برای افزایش شدت سفارشات خود می‌دهد. نوآ چیلینگ‌ورث، مدیر ارشد بازاریابی در دل تاکو، می‌گوید: «Queso با طعم جدید FLAMIN' HOT® طعم و حرارت غیرقابل انکار را به بسیاری از منوهای محبوب دل تاکو می‌افزاید.\n\n«بهترین همکاری‌ها چیز جدیدی ایجاد می‌کنند و در عین حال به چیزی که مهمانان قبلاً دوست دارند وفادار می‌مانند، و گرمای شدید Queso با طعم FLAMIN' HOT دقیقاً این کار را انجام می‌دهد.» ستاره این مجموعه، Queso کاملاً جدید با طعم FLAMIN' HOT® است، ترکیبی عالی از Queso blanco خامه ای دل تاکو که با گرمای شدید FLAMIN' HOT® چاشنی شده است، برای ترکیبی خاص از غنای پنیر…",
+        "report_fa": "دل تاکو با یک مجموعه Flamin' Hot Queso با زمان محدود، گرمای آیتم‌های منوی خاص خود را افزایش می‌دهد. The post Del Taco گرما را با جدید Flamin’ Hot Flavored Queso-Time-Ofer Lineup برای اولین بار در RestaurantNews.\n\ncom پدیدار شد.",
         "narrative_fa": "",
         "quality": {
-          "version": 2,
+          "version": 1,
           "status": "retry",
-          "score": 60,
+          "score": 58,
           "publishable": false,
           "issues": [
-            "long-sentence",
             "mixed-script",
             "mostly-latin",
-            "repetition",
             "too-much-latin"
           ],
           "parts": {
@@ -43231,21 +43983,19 @@
               "word_count": 44
             },
             "report": {
-              "score": 51,
+              "score": 46,
               "status": "retry",
               "issues": [
-                "too-much-latin",
-                "long-sentence",
-                "repetition"
+                "mostly-latin",
+                "mixed-script"
               ],
-              "persian_ratio": 0.802,
-              "latin_ratio": 0.215,
-              "max_sentence_chars": 358,
-              "word_count": 158
+              "persian_ratio": 0.548,
+              "latin_ratio": 0.458,
+              "max_sentence_chars": 111,
+              "word_count": 44
             }
           },
-          "source_original_fa": false,
-          "semantic_penalty": 0
+          "source_original_fa": false
         }
       },
       "narrative_fa": ""
@@ -43296,7 +44046,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 58,
+      "relevance_score": 54,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -43405,7 +44155,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 66,
+      "relevance_score": 62,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -43539,7 +44289,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 62,
+      "relevance_score": 58,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -43641,7 +44391,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 70,
+      "relevance_score": 66,
       "title_fa": "ChopShop اصلی در 23 سپتامبر در بازار CityLine افتتاح می شود",
       "summary_fa": "ریچاردسون فروشگاه شانزدهمین برند در تگزاس و 30مین برند در سراسر جهان است.",
       "report_fa": "فروشگاه ریچاردسون شانزدهمین برند در تگزاس و سی امین برند در دالاس، تگزاس ( RestaurantNews. com ) ChopShop اورجینال که به خاطر کاسه ها، سالادها، ساندویچ های قابل تنظیم و موارد دیگر معروف است، منوی خوب خود را به بازار CityLine ریچاردسون می آورد و جدیدترین فروشگاه خود را در چهارشنبه، 21 سپتامبر 419، Sunern0، Summern0 Roadite، Ept.\n\nفروشگاه جدید درهای خود را از ساعت 10 صبح روز افتتاحیه باز خواهد کرد و 50 مهمان اول در صف با خرید هر نوع غذای صبحانه، کاسه، سالاد یا ساندویچ، یک کیف اورجینال ChopShop دریافت خواهند کرد. میهمانان همچنین می‌توانند برنامه ChopShop اصلی را دانلود کنند و 7 دلار یا بیشتر را ظرف 20 روز پس از ثبت‌نام برای دریافت 30 روز پاداش 3 دلاری خرج کنند.\n\nچه صبحانه 7 صبح قبل از رفت و آمد باشد و چه یک کاسه پروتئین بین جلسات، فروشگاه CityLine Market Shop به گونه ای طراحی…",
@@ -43748,7 +44498,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 69,
+      "relevance_score": 65,
       "title_fa": "واندر 533 را در چارچوب ادغام تولید اخراج می کند",
       "summary_fa": "اپراتور سالن غذا دو تأسیسات نیوجرسی را می بندد و به مکانی با ظرفیت بالا منتقل می شود که از رشد بلندمدت بهتر حمایت می کند.",
       "report_fa": "اپراتور سالن غذا دو تأسیسات نیوجرسی را می بندد و به مکانی با ظرفیت بالا منتقل می شود که از رشد بلندمدت بهتر حمایت می کند.",
@@ -43863,7 +44613,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 63,
+      "relevance_score": 59,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -43971,7 +44721,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 67,
+      "relevance_score": 63,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -44080,7 +44830,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 56,
+      "relevance_score": 52,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -44197,7 +44947,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 63,
+      "relevance_score": 59,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -44304,7 +45054,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 64,
+      "relevance_score": 60,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -44409,7 +45159,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 52,
+      "relevance_score": 48,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -44522,7 +45272,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 56,
+      "relevance_score": 52,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -44633,7 +45383,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 58,
+      "relevance_score": 54,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -44743,7 +45493,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 87,
+      "relevance_score": 83,
       "title_fa": "چگونه Ingredion قصد دارد از \"رونق اصلاح مجدد\" با معامله Tate & Lyle سرمایه گذاری کند",
       "summary_fa": "به گفته مدیر عامل این شرکت، این خرید قرار است Ingredion را به عنوان «ارائه‌دهنده بافت و راهکارهای سالم» در صنایع غذایی و نوشیدنی قرار دهد.",
       "report_fa": "به گفته مدیر عامل این شرکت، این خرید قرار است Ingredion را به عنوان «ارائه‌دهنده بافت و راهکارهای سالم» در صنایع غذایی و نوشیدنی قرار دهد.",
@@ -44756,7 +45506,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-20T16:15:13Z"
+        "fetched_at": "2026-09-20T20:57:13Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -44850,7 +45600,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 67,
+      "relevance_score": 63,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -44964,7 +45714,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 66,
+      "relevance_score": 62,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -45096,7 +45846,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 65,
+      "relevance_score": 61,
       "brand_watch": {
         "mode": "turkey_bing_news_rss",
         "matched_brand_ids": [
@@ -45206,7 +45956,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 71,
+      "relevance_score": 67,
       "title_fa": "",
       "summary_fa": "",
       "report_fa": "",
@@ -45363,7 +46113,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 56,
+      "relevance_score": 52,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -45468,7 +46218,7 @@
       ],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 86,
+      "relevance_score": 82,
       "title_fa": "درایو‌ثرو شما خراب نیست. نامرئی است",
       "summary_fa": "مایک مک‌لنان، یکی از بنیان‌گذاران و مدیرعامل Arc، یک پلت‌فرم هوش مصنوعی صوتی که به اپراتورهای رستوران کمک می‌کند درایو‌ثرو را اندازه‌گیری و بهینه‌سازی کنند، نحوه افزایش فروش را در درایو‌ثرو توضیح می‌دهد.",
       "report_fa": "مایک مک‌لنان، یکی از بنیان‌گذاران و مدیرعامل Arc، یک پلت‌فرم هوش مصنوعی صوتی که به اپراتورهای رستوران کمک می‌کند درایو‌ثرو را اندازه‌گیری و بهینه‌سازی کنند، نحوه افزایش فروش را در درایو‌ثرو توضیح می‌دهد. 17 سپتامبر 2026 توسط مایکل مک‌لنان — مدیرعامل و هم‌بنیان‌گذار Arc برای اکثر رستوران‌های خدمات سریع، درایو‌ثرو تقریباً 70 درصد درآمد را ایجاد می‌کند.\n\nاو در یک برگر کینگ و یک کی‌اف‌سی در آن طرف خیابان کار می کرد و افراد عادی در هر دو مکان به دنبال او بودند. کمتر از 10 درصد از سفارش‌ها شامل فروش معنی‌دار یا پیشنهاد منو بودند.\n\nمن به این هایل مری می گویم که فروش بالایی دارند زیرا در آخرین لحظه ممکن با زمینه یا شخصی سازی کمی ارائه می شوند. وقتی پیشنهادها در نقطه مناسبی از مکالمه ارائه می‌شوند و به طور طبیعی به آنچه که یک مهمان قبلاً سفارش داده است متصل می‌شود، نرخ تبدیل می‌تواند به 20٪ تا 40٪ برسد.\n\nاین توصیه فقط 5٪ تبدیل شد، یک Hail Mary کلاسیک. یک برند نمادین غذاهای راحتی جنوبی با صدها مکان را در نظر بگیرید.\n\nدر کمتر از چهار هفته، اندازه‌های میانگین مبلغ سفارش 3 درصد افزایش یافت، بدون اینکه تأثیر قابل اندازه‌گیری بر سرعت خط داشته باشد. درایو‌ثرو سزاوار همان سطح سختگیری عملیاتی است که رستوران ها در هر جای دیگر اعمال می کنند.",
@@ -45597,7 +46347,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 66,
+      "relevance_score": 62,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -45773,7 +46523,7 @@
       "topics": [],
       "brands": [],
       "iran_relevance_score": 0,
-      "relevance_score": 65,
+      "relevance_score": 61,
       "turkey_discovery": {
         "source_id": "turkey_discovery_turkey_foodtech",
         "query_name": "Türkiye — foodtech, AI ve restoran teknolojisi"
@@ -45881,7 +46631,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 62,
+      "relevance_score": 58,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -45989,7 +46739,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 65,
+      "relevance_score": 61,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -46112,7 +46862,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 65,
+      "relevance_score": 61,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -46381,6 +47131,117 @@
             "latin_ratio": 0.086,
             "max_sentence_chars": 231,
             "word_count": 162
+          }
+        },
+        "source_original_fa": false,
+        "semantic_penalty": 0
+      }
+    },
+    {
+      "id": "43dbbd5400ac8cf8cdde",
+      "title": "Celebrate National Cheeseburger Day with Special Deals from McDonald’s, Burger King, Smashburger and More",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab0485123f147f28353e65620deb07e&url=https%3A%2F%2Fpeople.com%2Fcelebrate-national-cheeseburger-day-with-special-deals-12126641&c=1005886902880530299&mkt=en-us",
+      "source": {
+        "id": "global_brand_bing_burger_king",
+        "name": "Global Brand Watch — burger_king",
+        "homepage": "https://www.bing.com/news",
+        "class": "brand_watch_search",
+        "priority": 2,
+        "market": "world",
+        "country": null,
+        "aggregator": "bing_news"
+      },
+      "discovered_publisher": null,
+      "author": null,
+      "published_at": "2026-09-17T16:03:00Z",
+      "collected_at": "2026-09-20T20:55:45Z",
+      "language": "en",
+      "region": "GLOBAL",
+      "country": null,
+      "market": "world",
+      "geo": {
+        "primary_country": null,
+        "countries": [],
+        "cities": [],
+        "confidence": "unknown"
+      },
+      "image_url": null,
+      "image_source": null,
+      "source_detail_chars": 183,
+      "summary": "Ruby Tuesday is lowering its price and also including plant-based burger lovers. Customers can get a cheeseburger or a select sandwich with fries for just $6.99 while dining in or ...",
+      "categories": [
+        "qsr_fast_food",
+        "food_industry"
+      ],
+      "topics": [],
+      "brands": [
+        {
+          "id": "mcdonalds",
+          "name": "McDonald's",
+          "fa": "مک‌دونالدز"
+        },
+        {
+          "id": "burger_king",
+          "name": "Burger King",
+          "fa": "برگر کینگ"
+        }
+      ],
+      "iran_relevance_score": 0,
+      "relevance_score": 72,
+      "brand_watch": {
+        "mode": "global_bing_news_rss",
+        "matched_brand_ids": [
+          "burger_king"
+        ],
+        "watch_source_id": "global_brand_bing_burger_king"
+      },
+      "title_fa": "روز ملی چیزبرگر را با تخفیف‌های ویژه از مک‌دونالدز، برگر کینگ، Smashburger و موارد دیگر جشن بگیرید.",
+      "summary_fa": "Ruby Tuesday قیمت خود را کاهش می دهد و دوستداران برگرهای گیاهی را نیز شامل می شود. مشتریان می توانند یک چیزبرگر یا یک ساندویچ منتخب با سیب زمینی سرخ شده را با تنها 6.99 دلار در حین صرف غذا یا.",
+      "report_fa": "Ruby Tuesday قیمت خود را کاهش می دهد و دوستداران برگرهای گیاهی را نیز شامل می شود. مشتریان می توانند یک چیزبرگر یا یک ساندویچ منتخب با سیب زمینی سرخ شده را با تنها 6.99 دلار در حین صرف غذا یا.",
+      "report_coverage": "خلاصه منبع",
+      "translation": {
+        "status": "translated",
+        "engine": "http-en-fa-v2",
+        "cleanup_version": 2
+      },
+      "editorial": {
+        "status": "edited-v2",
+        "version": 1,
+        "mode": "conservative-fa-newsroom"
+      },
+      "translation_quality": {
+        "version": 2,
+        "status": "pass",
+        "score": 100,
+        "publishable": true,
+        "issues": [],
+        "parts": {
+          "title": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.885,
+            "latin_ratio": 0.141,
+            "max_sentence_chars": 99,
+            "word_count": 19
+          },
+          "summary": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.925,
+            "latin_ratio": 0.075,
+            "max_sentence_chars": 109,
+            "word_count": 42
+          },
+          "report": {
+            "score": 100,
+            "status": "pass",
+            "issues": [],
+            "persian_ratio": 0.925,
+            "latin_ratio": 0.075,
+            "max_sentence_chars": 109,
+            "word_count": 42
           }
         },
         "source_original_fa": false,
@@ -49942,7 +50803,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-20T16:15:51Z"
+        "fetched_at": "2026-09-20T20:57:49Z"
       },
       "editorial": {
         "status": "quality-retry",
@@ -58027,7 +58888,7 @@
         "chars": 0,
         "paragraphs": 0,
         "extractor": "none",
-        "fetched_at": "2026-09-20T16:15:54Z"
+        "fetched_at": "2026-09-20T20:57:52Z"
       },
       "translation_quality": {
         "version": 2,
@@ -62154,7 +63015,7 @@
         "chars": 425,
         "paragraphs": 3,
         "extractor": "main",
-        "fetched_at": "2026-09-20T16:15:51Z"
+        "fetched_at": "2026-09-20T20:57:49Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -65968,19 +66829,17 @@
       },
       "translation_quarantine": {
         "title_fa": "Dog Haus جشنواره اکتبر را با مسابقات Prost Platter و Stein-Holding برگزار می کند",
-        "summary_fa": "جشن یک ماهه یک جشن با الهام از آلمان، Paulaner Oktoberfest Bier و مسابقات هفتگی را در رستوران‌های Dog Haus در سراسر پاسادنا، کالیفرنیا ( RestaurantNews. com ) Prost به ارمغان می‌آورد. از هم اکنون تا 15 اکتبر، Dog Haus جشنواره اکتبر را با مسابقات Prost Platter، Paulaner Oktoberfest Bier و Stein-Holding در مکان های Biergarten شرکت کننده در سراسر کشور جشن می گیرد.",
-        "report_fa": "جشن یک ماهه یک جشن با الهام از آلمان، Paulaner Oktoberfest Bier و مسابقات هفتگی را در رستوران‌های Dog Haus در سراسر پاسادنا، کالیفرنیا ( RestaurantNews. com ) Prost به ارمغان می‌آورد.\n\nاز هم اکنون تا 15 اکتبر، Dog Haus جشنواره اکتبر را با مسابقات Prost Platter، Paulaner Oktoberfest Bier و Stein-Holding در مکان های Biergarten شرکت کننده در سراسر کشور جشن می گیرد. پلاتر Prost Das Brat، یکی از آیتم‌های منوی خاص Dog Haus را در جلو و مرکز غذا قرار می‌دهد - یک براتوورست گوشت خوک با کیفیت و کاملا طبیعی با پیاز کاراملی‌شده، کلم ترش، خردل قهوه‌ای تند و آیولی سیر روی رول‌های هاوایی کبابی کینگ.\n\nهشت لقمه چوب شور با سس پنیر به‌علاوه آیولی سیر و خردل قهوه‌ای برای غوطه‌وری، جشن را تکمیل می‌کنند. در مکان‌هایی که سرویس آبجو ندارند، بشقاب Prost با Das Brat، Pretzel Bites و سس‌های غوطه‌وری عرضه می‌شود.\n\nدر رستوران‌هایی که آبجو…",
+        "summary_fa": "جشن یک ماهه جشنی با الهام از آلمان، Paulaner Oktoberfest Bier و مسابقات هفتگی در رستوران‌های Dog Haus در سراسر کشور به ارمغان می‌آورد.",
+        "report_fa": "جشن یک ماهه جشنی با الهام از آلمان، Paulaner Oktoberfest Bier و مسابقات هفتگی در رستوران‌های Dog Haus در سراسر کشور به ارمغان می‌آورد.",
         "narrative_fa": "",
         "quality": {
           "version": 1,
           "status": "retry",
-          "score": 57,
+          "score": 68,
           "publishable": false,
           "issues": [
-            "long-sentence",
             "mixed-script",
             "mostly-latin",
-            "repetition",
             "too-much-latin"
           ],
           "parts": {
@@ -65997,29 +66856,26 @@
               "word_count": 15
             },
             "summary": {
-              "score": 57,
-              "status": "retry",
-              "issues": [
-                "too-much-latin",
-                "mixed-script",
-                "long-sentence"
-              ],
-              "persian_ratio": 0.608,
-              "latin_ratio": 0.406,
-              "max_sentence_chars": 179,
-              "word_count": 65
-            },
-            "report": {
-              "score": 71,
+              "score": 80,
               "status": "warn",
               "issues": [
-                "too-much-latin",
-                "repetition"
+                "too-much-latin"
               ],
-              "persian_ratio": 0.763,
-              "latin_ratio": 0.252,
-              "max_sentence_chars": 225,
-              "word_count": 164
+              "persian_ratio": 0.729,
+              "latin_ratio": 0.28,
+              "max_sentence_chars": 134,
+              "word_count": 26
+            },
+            "report": {
+              "score": 80,
+              "status": "warn",
+              "issues": [
+                "too-much-latin"
+              ],
+              "persian_ratio": 0.729,
+              "latin_ratio": 0.28,
+              "max_sentence_chars": 134,
+              "word_count": 26
             }
           },
           "source_original_fa": false
@@ -70391,7 +71247,7 @@
         "chars": 0,
         "paragraphs": 0,
         "extractor": "none",
-        "fetched_at": "2026-09-20T16:15:55Z"
+        "fetched_at": "2026-09-20T20:57:52Z"
       }
     },
     {
@@ -70893,7 +71749,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-20T16:15:13Z"
+        "fetched_at": "2026-09-20T20:57:03Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -85491,7 +86347,7 @@
         "chars": 0,
         "paragraphs": 0,
         "extractor": "none",
-        "fetched_at": "2026-09-20T16:15:55Z"
+        "fetched_at": "2026-09-20T20:57:53Z"
       }
     },
     {
@@ -86167,7 +87023,7 @@
         "chars": 367,
         "paragraphs": 3,
         "extractor": "main",
-        "fetched_at": "2026-09-20T16:15:14Z"
+        "fetched_at": "2026-09-20T20:57:14Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -91665,7 +92521,7 @@
         "selected_chars": 1418,
         "extractor": "article",
         "content_hash": "74c89bc06376d9567ab6",
-        "fetched_at": "2026-09-20T16:15:14Z"
+        "fetched_at": "2026-09-20T20:57:03Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 1598,
@@ -92714,20 +93570,17 @@
       },
       "translation_quarantine": {
         "title_fa": "Guy Fieri's Downtown Flavortown Myrtle Beach افتتاحیه رسمی رسمی را با برش روبان جشن گرفت",
-        "summary_fa": "در تصویر، از سمت چپ، Rusty Mabe، مدیر ارشد تجربه گروه سرگرمی FACE هستند. مارک کروئا شهردار Myrtle Beach; گای فیری; باکی میب، مدیر اجرایی، گروه سرگرمی FACE. هانتر فیری; جان مورگان، بنیانگذار، مورگان و مورگان؛ دیکسون گرین وود، CCIM; و کلارنس ماب، سرمربی و یکی از بنیانگذاران گروه سرگرمی FACE، در طول جشن بریدن روبان برای Downtown Flavortown Myrtle Beach.",
-        "report_fa": "در تصویر، از سمت چپ، Rusty Mabe، مدیر ارشد تجربه گروه سرگرمی FACE هستند. مارک کروئا شهردار Myrtle Beach; گای فیری; باکی میب، مدیر اجرایی، گروه سرگرمی FACE.\n\nهانتر فیری; جان مورگان، بنیانگذار، مورگان و مورگان؛ دیکسون گرین وود، CCIM; و کلارنس ماب، سرمربی و یکی از بنیانگذاران گروه سرگرمی FACE، در طول جشن بریدن روبان برای Downtown Flavortown Myrtle Beach. اعتبار عکس: جیسون دیویس/گروه سرگرمی FACE.\n\nگای فیری به گروه سرگرمی FACE، اولین پاسخ دهندگان و رهبران جامعه می پیوندد تا غذاخوری و سرگرمی 50000 فوت مربعی در ساحل Myrtle Beach Myrtle Beach, SC ( RestaurantNews. com ) را جشن بگیرند.\n\nMyrtle Beach با مراسم بریدن روبان در مرکز خرید Myrtle Beach. این جشن افتتاحیه رسمی یکی از جدیدترین مقاصد غذاخوری و سرگرمی خانوادگی Grand Strand بود که در اوایل تابستان امسال به روی مهمانان باز شد.\n\nدر این رویداد سرآشپز و شخصیت تلویزیونی برنده جایزه امی به همراه…",
+        "summary_fa": "گای فیری به گروه سرگرمی FACE، اولین پاسخ دهندگان و رهبران جامعه برای جشن گرفتن 50000 فوت مربع مقصد غذاخوری و سرگرمی در ساحل Myrtle می‌پیوندد.",
+        "report_fa": "گای فیری به گروه سرگرمی FACE، اولین پاسخ دهندگان و رهبران جامعه برای جشن گرفتن 50000 فوت مربع مقصد غذاخوری و سرگرمی در ساحل Myrtle می‌پیوندد.",
         "narrative_fa": "",
         "quality": {
           "version": 1,
           "status": "retry",
-          "score": 56,
+          "score": 81,
           "publishable": false,
           "issues": [
-            "long-sentence",
             "mixed-script",
-            "mostly-latin",
-            "repetition",
-            "too-much-latin"
+            "mostly-latin"
           ],
           "parts": {
             "title": {
@@ -92743,29 +93596,22 @@
               "word_count": 16
             },
             "summary": {
-              "score": 60,
-              "status": "retry",
-              "issues": [
-                "too-much-latin",
-                "long-sentence",
-                "repetition"
-              ],
-              "persian_ratio": 0.803,
-              "latin_ratio": 0.237,
-              "max_sentence_chars": 196,
-              "word_count": 61
+              "score": 100,
+              "status": "pass",
+              "issues": [],
+              "persian_ratio": 0.917,
+              "latin_ratio": 0.093,
+              "max_sentence_chars": 141,
+              "word_count": 27
             },
             "report": {
-              "score": 62,
-              "status": "retry",
-              "issues": [
-                "too-much-latin",
-                "repetition"
-              ],
-              "persian_ratio": 0.795,
-              "latin_ratio": 0.223,
-              "max_sentence_chars": 196,
-              "word_count": 149
+              "score": 100,
+              "status": "pass",
+              "issues": [],
+              "persian_ratio": 0.917,
+              "latin_ratio": 0.093,
+              "max_sentence_chars": 141,
+              "word_count": 27
             }
           },
           "source_original_fa": false
@@ -99155,7 +100001,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-20T16:15:53Z"
+        "fetched_at": "2026-09-20T20:57:50Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -104521,18 +105367,18 @@
       },
       "translation_quarantine": {
         "title_fa": "اخبار منوی رستوران از Applebee’s، Sunny Street Café، Kura Sushi USA و موارد دیگر!",
-        "summary_fa": "در اخبار منوی رستوران این هفته، زنجیره‌های برتر معاملات ارزشی، طعم‌های پاییزی و افزودنی‌های ممتاز ارائه می‌کنند. Applebee’s روز ملی چیزبرگر را در 18 سپتامبر با ترکیبی برگر کلاسیک یا چیزبرگر و سیب زمینی سرخ کرده 8.99 دلاری در کنار گزینه های ویروسی O-M-Cheese که در تمام ماه ارائه می شود جشن می گیرد. کافه سانی استریت مجموعه پاییز خود را با پنکیک های کدو حلوایی مورد علاقه، سوراخ های دونات ادویه کدو حلوایی و اقلام جدیدی مانند Pumpkin Chai…",
-        "report_fa": "در اخبار منوی رستوران این هفته، زنجیره‌های برتر معاملات ارزشی، طعم‌های پاییزی و افزودنی‌های ممتاز ارائه می‌کنند. Applebee’s روز ملی چیزبرگر را در 18 سپتامبر با ترکیبی برگر کلاسیک یا چیزبرگر و سیب زمینی سرخ کرده 8.99 دلاری در کنار گزینه های ویروسی O-M-Cheese که در تمام ماه ارائه می شود جشن می گیرد.\n\nکافه سانی استریت مجموعه پاییز خود را با پنکیک های کدو حلوایی مورد علاقه، سوراخ های دونات ادویه کدو حلوایی و اقلام جدیدی مانند Pumpkin Chai Cold Brew راه اندازی کرد. در همین حال، کورا سوشی ایالات متحده آمریکا منوی رزرو زمان محدود Kura خود را تا 24 سپتامبر معرفی کرد که شامل ماهی سیاه آلاسکا با شعله پخته شده، مارماهی آب شور به سبک Edo و یک کیک پنیر عسلی میسو شده است.\n\nگزینه های پر پروتئین و خوراکی های فصلی پاییزی بر جدیدترین منوهای آبمیوه و کاسه غالب هستند. Beyond Juicery + Eatery مجموعه…",
+        "summary_fa": "در اخبار منوی رستوران این هفته جدیدترین پیشنهادهای پاییزی و معاملات با ارزش را از Applebee's، Sunny Street Café، Kura Sushi USA و موارد دیگر کشف کنید. The post اخبار منوی رستوران از Applebee’s، Sunny Street Café، Kura Sushi USA، و موارد دیگر! اولین بار در RestaurantNews.",
+        "report_fa": "در اخبار منوی رستوران این هفته جدیدترین پیشنهادهای پاییزی و معاملات با ارزش را از Applebee's، Sunny Street Café، Kura Sushi USA و موارد دیگر کشف کنید. The post اخبار منوی رستوران از Applebee’s، Sunny Street Café، Kura Sushi USA، و موارد دیگر!\n\nاولین بار در RestaurantNews. com ظاهر شد.",
         "narrative_fa": "",
         "quality": {
           "version": 1,
           "status": "retry",
-          "score": 77,
+          "score": 60,
           "publishable": false,
           "issues": [
-            "long-sentence",
             "mixed-script",
-            "mostly-latin"
+            "mostly-latin",
+            "too-much-latin"
           ],
           "parts": {
             "title": {
@@ -104548,24 +105394,28 @@
               "word_count": 16
             },
             "summary": {
-              "score": 89,
-              "status": "pass",
+              "score": 68,
+              "status": "warn",
               "issues": [
-                "long-sentence"
+                "too-much-latin",
+                "mixed-script"
               ],
-              "persian_ratio": 0.926,
-              "latin_ratio": 0.082,
-              "max_sentence_chars": 185,
-              "word_count": 88
+              "persian_ratio": 0.591,
+              "latin_ratio": 0.423,
+              "max_sentence_chars": 150,
+              "word_count": 51
             },
             "report": {
-              "score": 100,
-              "status": "pass",
-              "issues": [],
-              "persian_ratio": 0.907,
-              "latin_ratio": 0.101,
-              "max_sentence_chars": 201,
-              "word_count": 157
+              "score": 68,
+              "status": "warn",
+              "issues": [
+                "too-much-latin",
+                "mixed-script"
+              ],
+              "persian_ratio": 0.594,
+              "latin_ratio": 0.42,
+              "max_sentence_chars": 150,
+              "word_count": 54
             }
           },
           "source_original_fa": false
@@ -104673,7 +105523,7 @@
         "chars": 0,
         "paragraphs": 0,
         "extractor": "none",
-        "fetched_at": "2026-09-20T16:15:56Z"
+        "fetched_at": "2026-09-20T20:57:53Z"
       }
     },
     {
@@ -123595,18 +124445,17 @@
       },
       "translation_quarantine": {
         "title_fa": "Smalls Sliders با بازگشت Dr Pepper Swirl و Dr Pepper کثیف جدید همه چیز را تکان می دهد.",
-        "summary_fa": "دو روش برای نوشیدن زمین در Cans در سراسر کشور باتون روژ، لس آنجلس ( RestaurantNews. com ) Smalls Sliders دو دلیل را برای طرفداران دکتر Pepper ارائه می دهد. Dr Pepper® Swirl به Cans در سراسر کشور بازگشته است، و برای اولین بار، Smalls یک Drty Dr Pepper® را ارائه می دهد.",
-        "report_fa": "دو روش برای نوشیدن زمین در Cans در سراسر کشور باتون روژ، لس آنجلس ( RestaurantNews. com ) Smalls Sliders دو دلیل را برای طرفداران دکتر Pepper ارائه می دهد.\n\nDr Pepper® Swirl به Cans در سراسر کشور بازگشته است، و برای اولین بار، Smalls یک Drty Dr Pepper® را ارائه می دهد. هر دو نوشیدنی با زمان محدود تا 11 اکتبر در دسترس هستند.\n\nDr Pepper® Swirl پس از یک دوره محدود در سال گذشته بازمی گردد. این شیک با پایه وانیلی خامه‌ای ساخته شده و با موج‌هایی از شربت Dr Pepper® چرخانده شده است.\n\nSmalls به روند سودای کثیف چرخش خاص خود را می دهد. Dirty Dr Pepper® جدید با Dr Pepper® سرد یخی شروع می شود، پوره توت فرنگی واقعی را اضافه می کند و با پاشیدن وانیل خامه ای برای نوشیدنی شیرین و با طراوت به پایان می رسد.\n\nDirty Dr Pepper® با شروع دسته بندی…",
+        "summary_fa": "دو روش برای نوشیدن زمین در قوطی‌ها در سراسر کشور پست Smalls Sliders با بازگشت دکتر فلفل چرخشی و دکتر فلفل کثیف جدید اوضاع را تکان می‌دهد اولین بار در RestaurantNews. com ظاهر شد.",
+        "report_fa": "دو روش برای نوشیدن زمین در قوطی‌ها در سراسر کشور پست Smalls Sliders با بازگشت دکتر فلفل چرخشی و دکتر فلفل کثیف جدید اوضاع را تکان می‌دهد اولین بار در RestaurantNews. com ظاهر شد.",
         "narrative_fa": "",
         "quality": {
           "version": 1,
           "status": "retry",
-          "score": 62,
+          "score": 68,
           "publishable": false,
           "issues": [
             "mixed-script",
             "mostly-latin",
-            "repetition",
             "too-much-latin"
           ],
           "parts": {
@@ -123628,22 +124477,21 @@
               "issues": [
                 "too-much-latin"
               ],
-              "persian_ratio": 0.65,
-              "latin_ratio": 0.364,
-              "max_sentence_chars": 112,
-              "word_count": 51
+              "persian_ratio": 0.787,
+              "latin_ratio": 0.213,
+              "max_sentence_chars": 165,
+              "word_count": 36
             },
             "report": {
-              "score": 62,
-              "status": "retry",
+              "score": 80,
+              "status": "warn",
               "issues": [
-                "too-much-latin",
-                "repetition"
+                "too-much-latin"
               ],
-              "persian_ratio": 0.762,
-              "latin_ratio": 0.245,
-              "max_sentence_chars": 166,
-              "word_count": 150
+              "persian_ratio": 0.787,
+              "latin_ratio": 0.213,
+              "max_sentence_chars": 165,
+              "word_count": 36
             }
           },
           "source_original_fa": false
@@ -125648,7 +126496,7 @@
       "article_body": {
         "status": "http-error",
         "http_status": 403,
-        "fetched_at": "2026-09-20T16:15:14Z"
+        "fetched_at": "2026-09-20T20:57:03Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -127123,7 +127971,7 @@
         "chars": 0,
         "paragraphs": 0,
         "extractor": "none",
-        "fetched_at": "2026-09-20T16:15:56Z"
+        "fetched_at": "2026-09-20T20:57:54Z"
       }
     },
     {
@@ -127819,7 +128667,7 @@
         "semantic_penalty": 0
       },
       "translation_quarantine": {
-        "title_fa": "کلاسیک های Comfort به روز می شوند",
+        "title_fa": "کلاسیک های Comfort به روز رسانی می شوند",
         "summary_fa": "ردیاب طعم: IHOP، Hardee&#39; s، Another Broken Egg، Lou Malnati&#39; s، Black Sheep، KPot، Chicken Salad Chick، Bb. q Chicken، Ruby Slipper، Jinya و Native Grill & Wings اخبار و روندهای منوی رستوران‌ها را در صدر اخبار خود قرار می‌دهند.",
         "report_fa": "ردیاب طعم: IHOP، Hardee&#39; s، Another Broken Egg، Lou Malnati&#39; s، Black Sheep، KPot، Chicken Salad Chick، Bb. q Chicken، Ruby Slipper، Jinya و Native Grill & Wings اخبار و روندهای منوی رستوران‌ها را در صدر اخبار خود قرار می‌دهند.",
         "narrative_fa": "",
@@ -127837,10 +128685,10 @@
               "score": 100,
               "status": "pass",
               "issues": [],
-              "persian_ratio": 0.741,
-              "latin_ratio": 0.259,
-              "max_sentence_chars": 33,
-              "word_count": 7
+              "persian_ratio": 0.781,
+              "latin_ratio": 0.219,
+              "max_sentence_chars": 39,
+              "word_count": 8
             },
             "summary": {
               "score": 26,
@@ -130961,7 +131809,7 @@
         "selected_chars": 927,
         "extractor": "article",
         "content_hash": "b4536d0044962cadeeda",
-        "fetched_at": "2026-09-20T16:15:29Z"
+        "fetched_at": "2026-09-20T20:57:24Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 10491,
@@ -131363,14 +132211,7 @@
       "topics": [
         "AI"
       ],
-      "brands": [
-        {
-          "id": "uludag_icecek",
-          "name": "Uludağ İçecek",
-          "fa": "اولوداغ ایچجک",
-          "market": "turkey"
-        }
-      ],
+      "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 54,
       "brand_watch": {
@@ -131491,14 +132332,7 @@
       "topics": [
         "AI"
       ],
-      "brands": [
-        {
-          "id": "uludag_icecek",
-          "name": "Uludağ İçecek",
-          "fa": "اولوداغ ایچجک",
-          "market": "turkey"
-        }
-      ],
+      "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 54,
       "brand_watch": {
@@ -132747,7 +133581,7 @@
         "selected_chars": 2735,
         "extractor": "article",
         "content_hash": "16145dadc01c1c667558",
-        "fetched_at": "2026-09-20T16:15:45Z"
+        "fetched_at": "2026-09-20T20:57:42Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 3281,
@@ -134230,7 +135064,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 64,
+      "relevance_score": 60,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -134405,7 +135239,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 64,
+      "relevance_score": 60,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -134563,7 +135397,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 58,
+      "relevance_score": 54,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -134720,7 +135554,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 57,
+      "relevance_score": 53,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -148137,7 +148971,7 @@
         "selected_chars": 2409,
         "extractor": "article",
         "content_hash": "983602d1137328f9a2f0",
-        "fetched_at": "2026-09-20T16:15:15Z"
+        "fetched_at": "2026-09-20T20:57:15Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 2517,
@@ -162037,14 +162871,7 @@
         "food_industry"
       ],
       "topics": [],
-      "brands": [
-        {
-          "id": "oba_makarna",
-          "name": "Oba Makarna",
-          "fa": "اوبا ماکارنا",
-          "market": "turkey"
-        }
-      ],
+      "brands": [],
       "iran_relevance_score": 0,
       "relevance_score": 44,
       "brand_watch": {
@@ -162994,7 +163821,7 @@
         "chars": 145,
         "paragraphs": 1,
         "extractor": "article",
-        "fetched_at": "2026-09-20T16:15:16Z"
+        "fetched_at": "2026-09-20T20:57:15Z"
       },
       "editorial": {
         "status": "edited-cache-v2",
@@ -179904,7 +180731,7 @@
         "selected_chars": 1939,
         "extractor": "article",
         "content_hash": "83c4162e47b23362cf40",
-        "fetched_at": "2026-09-20T16:15:53Z"
+        "fetched_at": "2026-09-20T20:57:51Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 3649,
@@ -179931,9 +180758,9 @@
             "score": 100,
             "status": "pass",
             "issues": [],
-            "persian_ratio": 0.845,
-            "latin_ratio": 0.155,
-            "max_sentence_chars": 131,
+            "persian_ratio": 0.844,
+            "latin_ratio": 0.156,
+            "max_sentence_chars": 130,
             "word_count": 21
           },
           "summary": {
@@ -179965,7 +180792,7 @@
         "semantic_penalty": 0
       },
       "translation_quarantine": {
-        "title_fa": "Northwest Naturals داوطلبانه دو محصول خام غذایی حیوانات خانگی را به دلیل خطر احتمالی سالمونلا و لیستریا مونوسیتوژنز فراخوان می‌کند.",
+        "title_fa": "Northwest Naturals داوطلبانه دو محصول خام برای حیوانات خانگی را به دلیل خطر احتمالی سالمونلا و لیستریا مونوسیتوژنز فراخوان می‌کند.",
         "summary_fa": "Northwest Naturals از پورتلند، اورگان داوطلبانه 53 مورد (1272 پوند) از دستور غذای مرغ منجمد Northwest Naturals (کیسه 2 پوندی غذای گربه) و 19 مورد (684 پوند) از رژیم غذایی خام منجمد Northwest Naturals برای سگ‌ها را فراخوان می‌کند.",
         "report_fa": "Northwest Naturals از پورتلند، اورگان داوطلبانه 53 مورد (1272 پوند) از دستور غذای مرغ منجمد Northwest Naturals (غذای گربه 2 پوند) را به یاد می آورد. کیسه) و 19 مورد (684 پوند) از رژیم غذایی خام منجمد Northwest Naturals برای سگ ها (6 پوند).\n\nکیسه) در دو لات شناسایی شده به دلیل آلودگی سالمونلا و/یا لیستریا مونوسیتوژنز. سالمونلا و لیستریا مونوسیتوژنز می‌توانند حیواناتی را که محصولات حیوان خانگی آلوده مصرف می‌کنند، تحت تأثیر قرار دهند و خطری برای افراد از دست زدن به محصولات حیوان خانگی آلوده وجود دارد.\n\nبه خصوص اگر پس از تماس با محصولات حیوان خانگی آلوده یا هر سطحی که در معرض محصولات حیوان خانگی آلوده و حیوانات آلوده قرار گرفته است، دست های خود را به طور کامل نشویید. افراد آلوده به سالمونلا باید خود را از نظر علائم زیر تحت نظر داشته باشند: تهوع، استفراغ، اسهال یا اسهال خونی، گرفتگی شکم و تب.\n\nاکثر افراد بدون درمان بهبود می یابند، اما در برخی افراد، اسهال ممکن است آنقدر شدید باشد که نیاز به بستری شدن در بیمارستان داشته باشند. در این بیماران، عفونت سالمونلا ممکن است از روده ها به جریان خون و سپس به سایر نقاط بدن گسترش یابد و منجر به بیماری های جدی تری از جمله عفونت های شریانی، اندوکاردیت، آرتریت، سوزش چشم و علائم مجاری ادراری شود.\n\nمصرف کنندگانی که این علائم را پس از تماس با محصولات حیوان خانگی آلوده نشان می دهند، باید با ارائه دهندگان مراقبت های بهداشتی خود تماس بگیرند. زنان باردار، نوزادان، بزرگسالان 65 سال و بالاتر و افرادی که سیستم ایمنی ضعیفی دارند در معرض خطر بیشتری برای ابتلا به بیماری های جدی هستند.",
         "narrative_fa": "Northwest Naturals از پورتلند، اورگان داوطلبانه 53 مورد (1272 پوند) از دستور غذای مرغ منجمد Northwest Naturals (غذای گربه 2 پوند) را به یاد می آورد. کیسه) و 19 مورد (684 پوند) از رژیم غذایی خام منجمد Northwest Naturals برای سگ ها (6 پوند).\n\nکیسه) در دو لات شناسایی شده به دلیل آلودگی سالمونلا و/یا لیستریا مونوسیتوژنز. سالمونلا و لیستریا مونوسیتوژنز می‌توانند حیواناتی را که محصولات حیوان خانگی آلوده مصرف می‌کنند، تحت تأثیر قرار دهند و خطری برای افراد از دست زدن به محصولات حیوان خانگی آلوده وجود دارد.\n\nبه خصوص اگر پس از تماس با محصولات حیوان خانگی آلوده یا هر سطحی که در معرض محصولات حیوان خانگی آلوده و حیوانات آلوده قرار گرفته است، دست های خود را به طور کامل نشویید. افراد آلوده به سالمونلا باید خود را از نظر علائم زیر تحت نظر داشته باشند: تهوع، استفراغ، اسهال یا اسهال خونی، گرفتگی شکم و تب.\n\nاکثر افراد بدون درمان بهبود می یابند، اما در برخی افراد، اسهال ممکن است آنقدر شدید باشد که نیاز به بستری شدن در بیمارستان داشته باشند. در این بیماران، عفونت سالمونلا ممکن است از روده ها به جریان خون و سپس به سایر نقاط بدن گسترش یابد و منجر به بیماری های جدی تری از جمله عفونت های شریانی، اندوکاردیت، آرتریت، سوزش چشم و علائم مجاری ادراری شود.\n\nمصرف کنندگانی که این علائم را پس از تماس با محصولات حیوان خانگی آلوده نشان می دهند، باید با ارائه دهندگان مراقبت های بهداشتی خود تماس بگیرند. زنان باردار، نوزادان، بزرگسالان 65 سال و بالاتر و افرادی که سیستم ایمنی ضعیفی دارند در معرض خطر بیشتری برای ابتلا به بیماری های جدی هستند.",
@@ -179984,9 +180811,9 @@
               "score": 100,
               "status": "pass",
               "issues": [],
-              "persian_ratio": 0.845,
-              "latin_ratio": 0.155,
-              "max_sentence_chars": 131,
+              "persian_ratio": 0.844,
+              "latin_ratio": 0.156,
+              "max_sentence_chars": 130,
               "word_count": 21
             },
             "summary": {
@@ -198345,7 +199172,7 @@
       "iran_relevance_score": 0,
       "relevance_score": 77,
       "title_fa": "Prince Bakery Inc هشدار آلرژی به شیر و کنجد اعلام نشده در نان های Prince Bakery صادر کرد.",
-      "summary_fa": "نانوایی شاهزاده برانکس، نیویورک، نان ایتالیایی کنجد، نان ایتالیایی بزرگ، نان فرانسوی کنجدی بزرگ، نان فرانسوی کنجد بلند و نان اسپانیایی Pan de Manteca را به دلیل اینکه ممکن است حاوی کنجد یا شیر اعلام نشده باشد، فراخوان می‌کند. افرادی که آلرژی یا حساسیت شدید به s",
+      "summary_fa": "نانوایی شاهزاده برانکس، نیویورک، نان ایتالیایی کنجد، نان ایتالیایی بزرگ، نان فرانسوی کنجدی بزرگ، نان فرانسوی کنجد بلند و نان اسپانیایی Pan de Manteca را به دلیل اینکه ممکن است حاوی کنجد یا شیر اعلام نشده باشد، فراخوان می‌کند. افرادی که حساسیت یا حساسیت شدید به s",
       "report_fa": "نانوایی شاهزاده برانکس، نیویورک، نان ایتالیایی کنجد، نان ایتالیایی بزرگ، نان فرانسوی کنجدی بزرگ، نان فرانسوی کنجد بلند و نان اسپانیایی Pan de Manteca را به دلیل اینکه ممکن است حاوی کنجد یا شیر اعلام نشده باشد، فراخوان می‌کند. افرادی که حساسیت یا حساسیت شدید به s",
       "report_coverage": "خلاصه منبع",
       "translation": {
@@ -198389,7 +199216,7 @@
               "long-sentence"
             ],
             "persian_ratio": 0.966,
-            "latin_ratio": 0.063,
+            "latin_ratio": 0.062,
             "max_sentence_chars": 225,
             "word_count": 48
           },
@@ -200575,7 +201402,7 @@
         "selected_chars": 2378,
         "extractor": "article",
         "content_hash": "a3ca2523934aae71dd35",
-        "fetched_at": "2026-09-20T16:15:53Z"
+        "fetched_at": "2026-09-20T20:57:51Z"
       },
       "report_source_kind": "article_body",
       "report_source_chars": 3357,
@@ -205240,7 +206067,7 @@
         }
       ],
       "iran_relevance_score": 0,
-      "relevance_score": 72,
+      "relevance_score": 52,
       "brand_watch": {
         "mode": "global_bing_news_rss",
         "matched_brand_ids": [
@@ -205258,7 +206085,7 @@
         "cleanup_version": 2
       },
       "editorial": {
-        "status": "edited-v2",
+        "status": "edited-cache-v2",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -236043,7 +236870,7 @@
       "iran_relevance_score": 0,
       "relevance_score": 75,
       "title_fa": "Food AI Bulletin: پیشرفت ربات گوگل و ربات هوش مصنوعی اسپانیایی زبان وندی درایو‌ثرو",
-      "summary_fa": "در حالی که اواسط تابستان است، و در حالی که بیشتر اروپا (و بخش خوبی از نیروی کار آمریکا) در حال استراحت هستند، اخبار هوش مصنوعی ذره‌ای کاهش نیافته است. […]",
+      "summary_fa": "در حالی که اواسط تابستان است، و در حالی که بیشتر اروپا (و بخش خوبی از نیروی کار آمریکا) در حال استراحت هستند، اخبار هوش مصنوعی یک ذره کاهش نیافته است. […]",
       "report_fa": "در حالی که اواسط تابستان است، و در حالی که بیشتر اروپا (و بخش خوبی از نیروی کار آمریکا) در حال استراحت هستند، اخبار هوش مصنوعی ذره‌ای کاهش نیافته است. بولتن Food AI این هفته به‌روزرسانی‌هایی در مورد پیشرفت جدید Google در حوزه ایجاد درک متنی بهتر از خانه‌های ما (از جمله آشپزخانه‌های ما)، نحوه ارائه ویژگی‌های جدید در محصولات خانه هوشمند Google توسط Gemini، انتشار نسخه اسپانیایی زبان وندی از AI درایو‌ثرو، دستیار جدید Walreshpo-Amazon، Walshpo-Amazon's.\n\nابزاری به نام NOURISH برای کمک به افرادی که در بیابان‌های غذایی زندگی می‌کنند تا انتخاب‌های غذایی بهتری داشته باشند، یک قرارداد چند ساله دانون و مایکروسافت برای ارتقای مهارت کارکنان در ابزارهای هوش مصنوعی، و یک نظرسنجی که نشان می‌دهد دانش‌آموزان کره‌جنوبی گزینه‌های غذایی سالم تولید شده با هوش مصنوعی را به محصولات معمولی‌تر ترجیح می‌دهند. در اینجا می‌رویم: پیشرفت ربات جدید گوگل می‌تواند آموزش باتلر ربات شما را برای آشپزی یا…",
       "report_coverage": "گسترده",
       "translation": {
@@ -251815,8 +252642,8 @@
           "market": "iran"
         }
       ],
-      "iran_relevance_score": 95,
-      "relevance_score": 72,
+      "iran_relevance_score": 92,
+      "relevance_score": 50,
       "brand_watch": {
         "mode": "bing_news_rss",
         "matched_brand_ids": [
@@ -263601,10 +264428,11 @@
       "translation": {
         "status": "translated",
         "engine": "http-en-fa",
-        "cleanup_version": 2
+        "cleanup_version": 2,
+        "quality_retry": true
       },
       "editorial": {
-        "status": "edited-cache-v2",
+        "status": "quality-retry",
         "version": 1,
         "mode": "conservative-fa-newsroom"
       },
@@ -270563,44 +271391,44 @@
   "brand_web_watch_stats": {
     "brands_queried": 24,
     "provider": "bing_news_rss",
-    "entries_seen": 180,
-    "entries_matched": 1,
-    "new_items": 1,
+    "entries_seen": 67,
+    "entries_matched": 0,
+    "new_items": 0,
     "failed_feeds": 0,
-    "persian_originals": 1,
+    "persian_originals": 0,
     "translation_failed": 0
   },
   "official_brand_watch_stats": {
     "channels_tracked": 12,
-    "messages_seen": 171,
+    "messages_seen": 172,
     "messages_matched": 61,
-    "new_items": 2,
-    "persian_originals": 2,
+    "new_items": 0,
+    "persian_originals": 0,
     "translation_failed": 0
   },
   "global_brand_watch_stats": {
     "brands_tracked": 34,
     "provider": "bing_news_rss",
-    "entries_seen": 336,
-    "entries_matched": 144,
-    "new_items": 14,
-    "duplicates_merged": 130,
+    "entries_seen": 198,
+    "entries_matched": 94,
+    "new_items": 7,
+    "duplicates_merged": 87,
     "failed_feeds": 0,
-    "translated": 14,
+    "translated": 7,
     "translation_failed": 0
   },
   "turkey_watch_stats": {
     "brands_tracked": 32,
     "sector_queries": 10,
     "provider": "bing_news_rss",
-    "entries_seen": 311,
-    "entries_matched": 32,
-    "brand_entries_matched": 17,
-    "sector_entries_matched": 15,
-    "new_items": 2,
-    "duplicates_merged": 30,
+    "entries_seen": 105,
+    "entries_matched": 10,
+    "brand_entries_matched": 3,
+    "sector_entries_matched": 7,
+    "new_items": 0,
+    "duplicates_merged": 10,
     "failed_feeds": 0,
-    "translated": 2,
+    "translated": 0,
     "translation_failed": 0
   },
   "article_body_stats": {
@@ -270609,38 +271437,38 @@
     "blocked": 0,
     "short": 12,
     "failed": 7,
-    "reused": 88,
+    "reused": 89,
     "queued": 1222,
-    "recaps_upgraded": 6,
+    "recaps_upgraded": 5,
     "recap_translation_failed": 0,
     "narrative_version": 2
   },
   "translation_quality_stats": {
-    "pass": 1638,
-    "warn": 353,
-    "retry": 7,
-    "block": 285,
-    "total": 2283,
-    "publishable": 1991,
+    "pass": 1645,
+    "warn": 354,
+    "retry": 6,
+    "block": 286,
+    "total": 2291,
+    "publishable": 1999,
     "semantic_candidates": 360,
     "semantic_retried": 80,
     "semantic_fixed": 0,
     "deterministic_repairs": 0,
     "semantic_retry_failed": 0,
-    "semantic_quarantined": 7,
+    "semantic_quarantined": 6,
     "top_issues": {
-      "long-sentence": 545,
-      "repetition": 291,
-      "empty": 285,
+      "long-sentence": 543,
+      "repetition": 290,
+      "empty": 286,
       "too-much-latin": 224,
       "mixed-script": 37,
       "very-long-sentence": 12,
       "duplicate-punctuation": 9,
       "too-short": 6,
       "idiom-literal-footprint": 3,
-      "mostly-latin": 2,
       "duplicate-word": 1,
-      "low-persian-ratio": 1
+      "low-persian-ratio": 1,
+      "mostly-latin": 1
     }
   }
 }
