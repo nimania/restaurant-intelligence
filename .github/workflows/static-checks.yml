@@ -1,0 +1,30 @@
+name: Static checks
+
+on:
+  pull_request:
+    paths:
+      - "index.html"
+      - "app.js"
+      - "marketplace.js"
+      - "styles.css"
+      - "data/equipment-catalog.json"
+      - ".github/workflows/static-checks.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check JavaScript syntax
+        run: |
+          node --check app.js
+          node --check marketplace.js
+      - name: Check equipment catalogue
+        run: node -e "const x=require('./data/equipment-catalog.json'); if(x.schema_version!==1||!x.items||!x.kits) process.exit(1); for(const [name,kit] of Object.entries(x.kits)){const sum=kit.items.reduce((n,i)=>n+i.weight,0); if(Math.abs(sum-1)>0.001) throw new Error(name+' weights must equal 1'); for(const row of kit.items) if(!x.items[row.id]) throw new Error(name+' references '+row.id)}"
