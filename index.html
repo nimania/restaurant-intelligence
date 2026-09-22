@@ -1,98 +1,201 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="رستوران‌نما؛ ابزار آزمایشی امکان‌سنجی رستوران در نوشهر">
-  <title>رستوران‌نما — امکان‌سنجی رستوران در نوشهر</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-<main>
-  <header>
-    <div class="brand"><div class="logo">ر</div><span>رستوران‌نما</span></div>
-    <div class="pill">نسخه آزمایشی رایگان</div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="رستوران‌نما؛ ابزار آزمایشی امکان‌سنجی رستوران در نوشهر"
+    />
+    <title>رستوران‌نما — امکان‌سنجی رستوران در نوشهر</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="brand">
+          <div class="logo">ر</div>
+          <span>رستوران‌نما</span>
+        </div>
+        <div class="pill">نسخه آزمایشی رایگان</div>
+      </header>
 
-  <section class="hero">
-    <h1>با شرایط تو، چه رستورانی و کجای نوشهر منطقی‌تر است؟</h1>
-    <p>چند انتخاب ساده انجام بده. سیستم گزینه‌های ناممکن را همان مسیر کنار می‌گذارد و در پایان پیشنهاد عملی، محدوده‌های مناسب و چند فایل ملک مرتبط را نشان می‌دهد.</p>
-  </section>
+      <section class="hero">
+        <h1>با شرایط تو، چه رستورانی و کجای نوشهر منطقی‌تر است؟</h1>
+        <p>
+          چند انتخاب ساده انجام بده. سیستم گزینه‌های ناممکن را کنار می‌گذارد و
+          در پایان پیشنهاد عملی، ملک‌های زنده و سبد تجهیزات نو و دست‌دوم متناسب
+          با سرمایه را نشان می‌دهد.
+        </p>
+      </section>
 
-  <section class="wizard">
-    <div class="progress-wrap"><div class="progress"><i id="progressBar"></i></div><div class="step-label" id="stepLabel">مرحله ۱ از ۵</div></div>
+      <section class="wizard">
+        <div class="progress-wrap">
+          <div class="progress"><i id="progressBar"></i></div>
+          <div class="step-label" id="stepLabel">مرحله ۱ از ۵</div>
+        </div>
 
-    <section class="screen active" data-step="1">
-      <h2>💰 حدوداً چقدر سرمایه داری؟</h2>
-      <p>کل سرمایه‌ای که می‌خواهی برای راه‌اندازی کنار بگذاری.</p>
-      <div class="options" data-key="budget">
-        <button class="option" data-value="1500000000"><span class="icon">🌱</span><b>تا ۱.۵ میلیارد</b><small>شروع کوچک</small></button>
-        <button class="option" data-value="2500000000"><span class="icon">💼</span><b>۱.۵ تا ۲.۵ میلیارد</b><small>اقتصادی</small></button>
-        <button class="option" data-value="4000000000"><span class="icon">💰</span><b>۲.۵ تا ۴ میلیارد</b><small>بودجه متوسط</small></button>
-        <button class="option" data-value="6000000000"><span class="icon">🏗️</span><b>۴ تا ۶ میلیارد</b><small>دست بازتر</small></button>
-        <button class="option" data-value="9000000000"><span class="icon">🚀</span><b>بیشتر از ۶ میلیارد</b><small>محدودیت کمتر</small></button>
-      </div>
-    </section>
+        <section class="screen active" data-step="1">
+          <h2>💰 حدوداً چقدر سرمایه داری؟</h2>
+          <p>کل سرمایه‌ای که می‌خواهی برای راه‌اندازی کنار بگذاری.</p>
+          <div class="options" data-key="budget">
+            <button class="option" data-value="1500000000">
+              <span class="icon">🌱</span><b>تا ۱.۵ میلیارد</b
+              ><small>شروع کوچک</small>
+            </button>
+            <button class="option" data-value="2500000000">
+              <span class="icon">💼</span><b>۱.۵ تا ۲.۵ میلیارد</b
+              ><small>اقتصادی</small>
+            </button>
+            <button class="option" data-value="4000000000">
+              <span class="icon">💰</span><b>۲.۵ تا ۴ میلیارد</b
+              ><small>بودجه متوسط</small>
+            </button>
+            <button class="option" data-value="6000000000">
+              <span class="icon">🏗️</span><b>۴ تا ۶ میلیارد</b
+              ><small>دست بازتر</small>
+            </button>
+            <button class="option" data-value="9000000000">
+              <span class="icon">🚀</span><b>بیشتر از ۶ میلیارد</b
+              ><small>محدودیت کمتر</small>
+            </button>
+          </div>
+        </section>
 
-    <section class="screen" data-step="2">
-      <h2>📐 چه اندازه فضایی در ذهنت است؟</h2>
-      <p>متراژ دقیق لازم نیست. گزینه‌هایی که با بودجه انتخاب‌شده هیچ مسیر قابل‌عرضه‌ای ندارند خاموش می‌شوند.</p>
-      <div class="options" data-key="size">
-        <button class="option" data-value="30"><span class="icon">📦</span><b>خیلی کوچک</b><small>زیر ۴۰ متر</small></button>
-        <button class="option" data-value="50"><span class="icon">🏪</span><b>کوچک</b><small>۴۰ تا ۶۰ متر</small></button>
-        <button class="option" data-value="75"><span class="icon">🍽️</span><b>متوسط</b><small>۶۰ تا ۹۰ متر</small></button>
-        <button class="option" data-value="120"><span class="icon">🏬</span><b>بزرگ</b><small>۹۰ تا ۱۵۰ متر</small></button>
-        <button class="option" data-value="180"><span class="icon">🏢</span><b>خیلی بزرگ</b><small>بیشتر از ۱۵۰ متر</small></button>
-        <button class="option" data-value="60"><span class="icon">🤷</span><b>نمی‌دانم</b><small>اندازه متعادل فرض شود</small></button>
-      </div>
-    </section>
+        <section class="screen" data-step="2">
+          <h2>📐 چه اندازه فضایی در ذهنت است؟</h2>
+          <p>
+            متراژ دقیق لازم نیست. گزینه‌هایی که با بودجه انتخاب‌شده هیچ مسیر
+            قابل‌عرضه‌ای ندارند خاموش می‌شوند.
+          </p>
+          <div class="options" data-key="size">
+            <button class="option" data-value="30">
+              <span class="icon">📦</span><b>خیلی کوچک</b
+              ><small>زیر ۴۰ متر</small>
+            </button>
+            <button class="option" data-value="50">
+              <span class="icon">🏪</span><b>کوچک</b><small>۴۰ تا ۶۰ متر</small>
+            </button>
+            <button class="option" data-value="75">
+              <span class="icon">🍽️</span><b>متوسط</b
+              ><small>۶۰ تا ۹۰ متر</small>
+            </button>
+            <button class="option" data-value="120">
+              <span class="icon">🏬</span><b>بزرگ</b
+              ><small>۹۰ تا ۱۵۰ متر</small>
+            </button>
+            <button class="option" data-value="180">
+              <span class="icon">🏢</span><b>خیلی بزرگ</b
+              ><small>بیشتر از ۱۵۰ متر</small>
+            </button>
+            <button class="option" data-value="60">
+              <span class="icon">🤷</span><b>نمی‌دانم</b
+              ><small>اندازه متعادل فرض شود</small>
+            </button>
+          </div>
+        </section>
 
-    <section class="screen" data-step="3">
-      <h2>🍽️ چه مدل رستورانی دوست داری؟</h2>
-      <p>اگر هنوز تصمیم نگرفته‌ای، «فرقی نمی‌کند» را انتخاب کن.</p>
-      <div class="options" data-key="concept">
-        <button class="option" data-value="any"><span class="icon">🧭</span><b>فرقی نمی‌کند</b><small>بهترین گزینه را پیدا کن</small></button>
-        <button class="option" data-value="burger"><span class="icon">🍔</span><b>برگر و فست‌فود</b><small>سرویس سریع</small></button>
-        <button class="option" data-value="pizza"><span class="icon">🍕</span><b>پیتزا</b><small>سالن یا بیرون‌بر</small></button>
-        <button class="option" data-value="cafe"><span class="icon">☕</span><b>کافه</b><small>نوشیدنی و غذای سبک</small></button>
-        <button class="option" data-value="iranian"><span class="icon">🍢</span><b>ایرانی و کباب</b><small>معمولاً سالن‌محور</small></button>
-        <button class="option" data-value="delivery"><span class="icon">🛵</span><b>ارسال‌محور</b><small>بیرون‌بر و دلیوری</small></button>
-      </div>
-    </section>
+        <section class="screen" data-step="3">
+          <h2>🍽️ چه مدل رستورانی دوست داری؟</h2>
+          <p>اگر هنوز تصمیم نگرفته‌ای، «فرقی نمی‌کند» را انتخاب کن.</p>
+          <div class="options" data-key="concept">
+            <button class="option" data-value="any">
+              <span class="icon">🧭</span><b>فرقی نمی‌کند</b
+              ><small>بهترین گزینه را پیدا کن</small>
+            </button>
+            <button class="option" data-value="burger">
+              <span class="icon">🍔</span><b>برگر و فست‌فود</b
+              ><small>سرویس سریع</small>
+            </button>
+            <button class="option" data-value="pizza">
+              <span class="icon">🍕</span><b>پیتزا</b
+              ><small>سالن یا بیرون‌بر</small>
+            </button>
+            <button class="option" data-value="cafe">
+              <span class="icon">☕</span><b>کافه</b
+              ><small>نوشیدنی و غذای سبک</small>
+            </button>
+            <button class="option" data-value="iranian">
+              <span class="icon">🍢</span><b>ایرانی و کباب</b
+              ><small>معمولاً سالن‌محور</small>
+            </button>
+            <button class="option" data-value="delivery">
+              <span class="icon">🛵</span><b>ارسال‌محور</b
+              ><small>بیرون‌بر و دلیوری</small>
+            </button>
+          </div>
+        </section>
 
-    <section class="screen" data-step="4">
-      <h2>🧑‍🍳 مدل کارکردن را چطور می‌پسندی؟</h2>
-      <p>این انتخاب پیشنهادها را به سبک کاری مدنظر تو نزدیک‌تر می‌کند.</p>
-      <div class="options" data-key="operation">
-        <button class="option" data-value="dinein"><span class="icon">🪑</span><b>سالن مهم است</b><small>تجربه حضوری مشتری</small></button>
-        <button class="option" data-value="takeaway"><span class="icon">🥡</span><b>بیرون‌بر مهم‌تر است</b><small>فضای کمتر و گردش سریع‌تر</small></button>
-        <button class="option" data-value="delivery"><span class="icon">🛵</span><b>ارسال اینترنتی مهم است</b><small>دلیوری بخش اصلی باشد</small></button>
-        <button class="option" data-value="any"><span class="icon">🤷</span><b>فرقی نمی‌کند</b><small>سیستم محدودش نکند</small></button>
-      </div>
-    </section>
+        <section class="screen" data-step="4">
+          <h2>🧑‍🍳 مدل کارکردن را چطور می‌پسندی؟</h2>
+          <p>این انتخاب پیشنهادها را به سبک کاری مدنظر تو نزدیک‌تر می‌کند.</p>
+          <div class="options" data-key="operation">
+            <button class="option" data-value="dinein">
+              <span class="icon">🪑</span><b>سالن مهم است</b
+              ><small>تجربه حضوری مشتری</small>
+            </button>
+            <button class="option" data-value="takeaway">
+              <span class="icon">🥡</span><b>بیرون‌بر مهم‌تر است</b
+              ><small>فضای کمتر و گردش سریع‌تر</small>
+            </button>
+            <button class="option" data-value="delivery">
+              <span class="icon">🛵</span><b>ارسال اینترنتی مهم است</b
+              ><small>دلیوری بخش اصلی باشد</small>
+            </button>
+            <button class="option" data-value="any">
+              <span class="icon">🤷</span><b>فرقی نمی‌کند</b
+              ><small>سیستم محدودش نکند</small>
+            </button>
+          </div>
+        </section>
 
-    <section class="screen" data-step="5">
-      <h2>🎚️ چقدر ریسک می‌پذیری؟</h2>
-      <p>هرچه محافظه‌کارتر باشی، گزینه‌هایی با داده ضعیف‌تر حذف می‌شوند.</p>
-      <div class="options" data-key="risk">
-        <button class="option" data-value="low"><span class="icon">🛡️</span><b>کم</b><small>محافظه‌کارانه</small></button>
-        <button class="option" data-value="medium"><span class="icon">⚖️</span><b>متوسط</b><small>متعادل</small></button>
-        <button class="option" data-value="high"><span class="icon">🚀</span><b>زیاد</b><small>فرصت‌محور</small></button>
-      </div>
-      <div class="summary" id="answerSummary"></div>
-    </section>
+        <section class="screen" data-step="5">
+          <h2>🎚️ چقدر ریسک می‌پذیری؟</h2>
+          <p>هرچه محافظه‌کارتر باشی، گزینه‌هایی با داده ضعیف‌تر حذف می‌شوند.</p>
+          <div class="options" data-key="risk">
+            <button class="option" data-value="low">
+              <span class="icon">🛡️</span><b>کم</b><small>محافظه‌کارانه</small>
+            </button>
+            <button class="option" data-value="medium">
+              <span class="icon">⚖️</span><b>متوسط</b><small>متعادل</small>
+            </button>
+            <button class="option" data-value="high">
+              <span class="icon">🚀</span><b>زیاد</b><small>فرصت‌محور</small>
+            </button>
+          </div>
+          <div class="summary" id="answerSummary"></div>
+        </section>
 
-    <section class="screen" data-step="6">
-      <div class="results-head"><h2>نتیجه پیشنهادی برای تو</h2><p>غربال اولیه بر اساس داده فعلی نوشهر</p></div>
-      <div id="overallReport"></div>
-      <div id="resultList"></div>
-      <div class="restart"><button class="btn secondary" id="restart">↻ از اول پاسخ بدهم</button></div>
-      <div class="fine">این ابزار تضمین موفقیت نمی‌دهد. قبل از قرارداد، خود ملک، مجوز، هود و اگزاست، شرایط مالک و تردد واقعی باید بررسی شوند.</div>
-    </section>
+        <section class="screen" data-step="6">
+          <div class="results-head">
+            <h2>نتیجه پیشنهادی برای تو</h2>
+            <p>غربال اولیه بر اساس داده فعلی نوشهر</p>
+          </div>
+          <div id="overallReport"></div>
+          <section
+            id="launchIntelligence"
+            class="launch-intelligence"
+            hidden
+          ></section>
+          <div id="resultList"></div>
+          <div class="restart">
+            <button class="btn secondary" id="restart">
+              ↻ از اول پاسخ بدهم
+            </button>
+          </div>
+          <div class="fine">
+            این ابزار تضمین موفقیت نمی‌دهد. قبل از قرارداد، خود ملک، مجوز، هود و
+            اگزاست، شرایط مالک و تردد واقعی باید بررسی شوند.
+          </div>
+        </section>
 
-    <div class="nav"><button class="btn secondary" id="prev">قبلی</button><button class="btn primary" id="next">بعدی</button></div>
-  </section>
-</main>
-<script src="./app.js" defer></script>
-</body>
+        <div class="nav">
+          <button class="btn secondary" id="prev">قبلی</button
+          ><button class="btn primary" id="next">بعدی</button>
+        </div>
+      </section>
+    </main>
+    <script src="./marketplace.js" defer></script>
+    <script src="./app.js" defer></script>
+  </body>
 </html>
