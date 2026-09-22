@@ -8,6 +8,8 @@ This repository combines a lightweight public interface with documented methodol
 
 - `index.html`, `app.js`, `styles.css` — public-facing interface.
 - `properties.html` — property/location-oriented view.
+- `marketplace.js` — browser-side, read-only connector for live Divar and Digikala MCP results.
+- `data/equipment-catalog.json` — concept-specific equipment specifications, budget weights and buy/inspect policies.
 - `data/` — structured project data.
 - `food-intel/` — food-industry intelligence workstream.
 - `METHODOLOGY.md` — evidence hierarchy, uncertainty handling, corrections, and responsible-use principles.
@@ -31,6 +33,8 @@ See [`METHODOLOGY.md`](METHODOLOGY.md) for the full methodology.
 ## Project status
 
 **Active development.** The repository currently contains a working public interface and the project’s methodological/governance foundation. Coverage, automation, and analytical modules are expected to evolve over time.
+
+The feasibility wizard now includes an experimental launch-planning layer: it ranks live commercial-property leads for the selected budget and creates a concept-specific equipment basket. Each equipment card can request current new and used marketplace leads. These results are leads for verification, not appraisals, supplier endorsements or technical inspections.
 
 Because restaurant prices, menus, locations, hours, and ownership details can change, data should always be interpreted together with its collection date and source.
 
