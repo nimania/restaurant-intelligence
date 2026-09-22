@@ -105,6 +105,11 @@
     };
   }
 
+  async function getPropertyDetails(token) {
+    if (!token) throw new Error("توکن آگهی ملک موجود نیست");
+    return call("divar", "ad_details", { token, detail: "full" }, 32000);
+  }
+
   async function searchEquipment(item, budget) {
     const safeBudget = Math.max(1000000, Math.round(Number(budget) || 0));
     const usedPromise = call("divar", "find_best_value", {
@@ -150,6 +155,7 @@
   window.RestaurantMarket = {
     call,
     searchProperties,
+    getPropertyDetails,
     searchEquipment,
     endpoints: { ...ENDPOINTS },
   };
