@@ -188,6 +188,115 @@ const labels = {
   },
   risk: { low: "کم", medium: "متوسط", high: "زیاد" },
 };
+const PROPERTY_REQUIREMENTS = {
+  common: [
+    {
+      id: "permission",
+      label: "امکان فعالیت غذایی و موافقت مالک",
+      positive: /رستوران|کافه|فست.?فود|اغذیه|کباب|مجوز|کاربری تجاری/,
+      negative: /صرفاً اداری|بدون پخت|ممنوعیت پخت/,
+      question:
+        "آیا اجازه فعالیت غذایی، نصب تابلو و تغییرات لازم در قرارداد نوشته می‌شود؟",
+      critical: true,
+    },
+    {
+      id: "ventilation",
+      label: "مسیر مستقل هود، اگزاست و هوای جبرانی",
+      positive: /هود|اگزاست|دودکش|تهویه|کانال/,
+      negative: /بدون دودکش|امکان هود ندارد|ممنوعیت اگزاست/,
+      question:
+        "مسیر خروج کانال تا بام یا نمای مجاز کجاست و مالک کتبی موافق است؟",
+      critical: true,
+    },
+    {
+      id: "utilities",
+      label: "آب، برق و گاز متناسب با تجهیزات",
+      positive: /آب و برق و گاز|انشعاب گاز|برق سه.?فاز|سه.?فاز|کنتور مستقل/,
+      negative: /بدون گاز|فاقد گاز|برق ضعیف|کنتور مشترک/,
+      question: "آمپر برق، نوع انشعاب، فشار آب و گاز مستقل دقیقاً چقدر است؟",
+      critical: true,
+    },
+    {
+      id: "sanitation",
+      label: "فاضلاب، شست‌وشو و سرویس بهداشتی",
+      positive: /سرویس بهداشتی|فاضلاب|کفشور|سینک|آب گرم/,
+      negative: /بدون سرویس|سرویس مشترک|فاقد سرویس/,
+      question: "کفشور، فاضلاب، محل سینک و سرویس اختصاصی قابل‌تأیید است؟",
+      critical: true,
+    },
+    {
+      id: "access",
+      label: "دسترسی مشتری، پیک و بارگیری",
+      positive: /پارکینگ|جای پارک|بر اصلی|دو دهنه|دسترسی|کمربندی|حیاط/,
+      negative: /کوچه باریک|بدون پارک|دسترسی سخت/,
+      question:
+        "در ساعت شلوغ، توقف کوتاه مشتری و پیک و تخلیه بار عملاً ممکن است؟",
+      critical: false,
+    },
+    {
+      id: "level",
+      label: "همکف، ورودی و حمل تجهیزات",
+      positive: /همکف|هم سطح|درب بزرگ|ورودی مستقل/,
+      negative: /زیرزمین|بالای همکف|طبقه دوم|راه پله|پله زیاد/,
+      question:
+        "عرض در، تعداد پله و مسیر ورود تجهیزات سنگین اندازه‌گیری شده است؟",
+      critical: false,
+    },
+  ],
+  burger: [
+    {
+      id: "burger-line",
+      label: "خط گرم مناسب گریل و سرخ‌کن",
+      positive: /گریل|سرخ.?کن|آشپزخانه|خط پخت/,
+      negative: /پخت ممنوع/,
+      question:
+        "طول خط گرم، فاصله ایمن و ظرفیت هود برای گریل و سرخ‌کن کافی است؟",
+      critical: true,
+    },
+  ],
+  pizza: [
+    {
+      id: "pizza-line",
+      label: "فضای فر، خمیر و تخمیر",
+      positive: /فر پیتزا|خمیرگیر|آشپزخانه|پیتزا/,
+      negative: /پخت ممنوع/,
+      question:
+        "محل فر، خمیرگیر، میز بازکردن خمیر و نگهداری خمیر قابل جانمایی است؟",
+      critical: true,
+    },
+  ],
+  cafe: [
+    {
+      id: "coffee-bar",
+      label: "آب، تخلیه و برق بار قهوه",
+      positive: /کافه|کافی.?شاپ|کانتر|آب و برق|سینک/,
+      negative: /بدون آب|فاقد فاضلاب/,
+      question: "نقطه آب تصفیه‌شده، تخلیه و مدار برق مجزای اسپرسوساز کجاست؟",
+      critical: true,
+    },
+  ],
+  iranian: [
+    {
+      id: "heavy-cookline",
+      label: "خط پخت سنگین و دود کباب",
+      positive: /کباب.?پز|چلوپز|آشپزخانه صنعتی|رستوران/,
+      negative: /پخت ممنوع|بدون دودکش/,
+      question:
+        "دبی هود و مسیر دود برای کباب‌پز و دیگ‌ها توسط متخصص تأیید می‌شود؟",
+      critical: true,
+    },
+  ],
+  delivery: [
+    {
+      id: "dispatch",
+      label: "ایستگاه بسته‌بندی و تحویل پیک",
+      positive: /بیرون.?بر|دلیوری|پیک|بسته.?بندی|دسترسی/,
+      negative: /توقف ممنوع|دسترسی سخت/,
+      question: "پیک بدون تداخل با خط تولید و مشتری حضوری کجا منتظر می‌ماند؟",
+      critical: false,
+    },
+  ],
+};
 const stepKey = {
   1: "budget",
   2: "size",
@@ -217,7 +326,8 @@ let step = 1,
   answers = {},
   propertyData = { meta: null, properties: [] },
   equipmentData = { methodology: {}, items: {}, kits: {} },
-  activePlannerKey = 0;
+  activePlannerKey = 0,
+  propertyDetailCache = new Map();
 async function loadPlannerData() {
   const [properties, equipment] = await Promise.allSettled([
     fetch("./data/properties.json", { cache: "no-store" }).then((r) => {
@@ -474,6 +584,114 @@ function propertyFitLabel(score) {
       ? "ارزش بررسی"
       : "تناسب محدود";
 }
+function propertyDetailText(details) {
+  return [
+    details.title,
+    details.description,
+    ...(details.amenities || []),
+    ...(details.amenities_absent || []),
+    ...(details.tags || []),
+    ...(details.specs || []).flatMap((spec) => [spec.title, spec.value]),
+  ]
+    .filter(Boolean)
+    .join(" · ");
+}
+function detailArea(details) {
+  const row = (details.specs || []).find((spec) => /متراژ/.test(spec.title));
+  const value = Number(latinDigits(row?.value).replace(/[^0-9.]/g, ""));
+  return Number.isFinite(value) && value > 0
+    ? value
+    : areaFromTitle(details.title);
+}
+function assessPropertyReadiness(details, row) {
+  const text = propertyDetailText(details),
+    requirements = [
+      ...PROPERTY_REQUIREMENTS.common,
+      ...(PROPERTY_REQUIREMENTS[row.concept.id] || []),
+    ],
+    checks = requirements.map((requirement) => {
+      const risk = requirement.negative?.test(text),
+        confirmed = !risk && requirement.positive?.test(text);
+      return {
+        ...requirement,
+        status: risk ? "risk" : confirmed ? "confirmed" : "unknown",
+      };
+    }),
+    confirmed = checks.filter((item) => item.status === "confirmed").length,
+    risks = checks.filter((item) => item.status === "risk").length,
+    criticalUnknown = checks.filter(
+      (item) => item.critical && item.status === "unknown",
+    ).length,
+    evidenceScore = clamp(
+      Math.round((confirmed / checks.length) * 100 - risks * 15),
+    );
+  return { checks, confirmed, risks, criticalUnknown, evidenceScore };
+}
+function readinessLabel(assessment) {
+  if (assessment.risks) return "دارای مانع یا هشدار صریح";
+  if (assessment.evidenceScore >= 65 && assessment.criticalUnknown <= 1)
+    return "آمادگی مستند نسبتاً خوب";
+  if (assessment.evidenceScore >= 35) return "نیازمند راستی‌آزمایی حضوری";
+  return "اطلاعات فنی آگهی ناکافی";
+}
+function requirementHtml(requirement) {
+  const status = {
+    confirmed: ["تأیید در متن آگهی", "confirmed"],
+    risk: ["هشدار صریح", "risk"],
+    unknown: ["نامشخص؛ باید پرسیده شود", "unknown"],
+  }[requirement.status];
+  return `<li class="requirement ${status[1]}"><div><b>${esc(requirement.label)}</b><small>${esc(requirement.question)}</small></div><span>${status[0]}</span></li>`;
+}
+function propertyAssessmentHtml(details, entry, row) {
+  const assessment = assessPropertyReadiness(details, row),
+    area = detailArea(details),
+    rent = Number(details.monthly_rent_toman ?? details.price_toman) || 0,
+    deposit = Number(details.deposit_toman) || 0,
+    setupBudget = row.concept.setup * setupScale(row.concept),
+    committed = deposit + 3 * rent + setupBudget,
+    remaining = answers.budget - committed,
+    expires = details.expires_at
+      ? new Date(details.expires_at).toLocaleDateString("fa-IR")
+      : "نامشخص",
+    specs = (details.specs || [])
+      .filter((spec) => !/ودیعه|اجاره/.test(spec.title))
+      .slice(0, 6),
+    seller =
+      details.seller_type === "personal"
+        ? "شخصی"
+        : details.seller_type
+          ? "کسب‌وکار / مشاور"
+          : "نامشخص";
+  return `<div class="readiness-head"><div><small>جمع‌بندی آمادگی فنی</small><b>${readinessLabel(assessment)}</b></div><strong>${fmt(assessment.evidenceScore)} از ۱۰۰ <small>پوشش شواهد آگهی</small></strong></div><div class="detail-facts"><div><small>متراژ ثبت‌شده</small><b>${area ? `${fmt(area)} متر` : "نامشخص"}</b></div><div><small>نوع آگهی‌دهنده</small><b>${seller}</b></div><div><small>اعتبار درج‌شده تا</small><b>${expires}</b></div><div><small>امکان چت</small><b>${details.chat_enabled ? "دارد" : "در داده فعلی ندارد"}</b></div></div>${specs.length ? `<div class="spec-strip">${specs.map((spec) => `<span>${esc(spec.title)}: <b>${esc(spec.value)}</b></span>`).join("")}</div>` : ""}<p class="property-description">${esc(details.description || "توضیحی در آگهی ثبت نشده است.")}</p><h6>شکاف فنی ملک با ${esc(row.concept.name)}</h6><ul class="requirement-list">${assessment.checks.map(requirementHtml).join("")}</ul><div class="capital-check ${remaining < 0 ? "over" : "safe"}"><b>آزمون سرمایه پس از انتخاب این ملک</b><span>ودیعه + ذخیره ۳ ماه اجاره + برآورد راه‌اندازی: ${money(committed)}</span><span>${remaining < 0 ? `کسری تقریبی ${money(Math.abs(remaining))}` : `مانده تقریبی ${money(remaining)}`}</span><small>این محاسبه قیمت‌گذاری پیمانکار نیست؛ هزینه رفع موارد نامشخص باید پس از بازدید جداگانه استعلام شود.</small></div><div class="property-actions"><a href="${esc(details.url || entry.offer.url)}" target="_blank" rel="noopener noreferrer">بازکردن آگهی در دیوار</a><span>${assessment.criticalUnknown ? `${fmt(assessment.criticalUnknown)} سؤال حیاتی هنوز بی‌پاسخ است` : "سؤال حیاتی بی‌پاسخ در متن پیدا نشد؛ بازدید همچنان لازم است"}</span></div>`;
+}
+async function loadPropertyAssessment(button, entry, row) {
+  const target = document.getElementById(
+    `property-detail-${entry.offer.id.replace(/[^a-zA-Z0-9_-]/g, "")}`,
+  );
+  if (!target || !window.RestaurantMarket) return;
+  button.closest(".live-property")?.classList.add("expanded");
+  button.disabled = true;
+  button.textContent = "در حال خواندن جزئیات آگهی…";
+  target.hidden = false;
+  target.innerHTML =
+    '<div class="coverage-note">مشخصات، توضیحات و امکانات ثبت‌شده در دیوار در حال بررسی است.</div>';
+  try {
+    let details = propertyDetailCache.get(entry.offer.id);
+    if (!details) {
+      details = await window.RestaurantMarket.getPropertyDetails(
+        entry.offer.id,
+      );
+      propertyDetailCache.set(entry.offer.id, details);
+    }
+    target.innerHTML = propertyAssessmentHtml(details, entry, row);
+    button.textContent = "به‌روزرسانی تحلیل فنی";
+  } catch (error) {
+    target.innerHTML = `<div class="live-error">جزئیات این آگهی فعلاً دریافت نشد: ${esc(error.message || error)}</div>`;
+    button.textContent = "تلاش دوباره برای تحلیل";
+  } finally {
+    button.disabled = false;
+  }
+}
 function renderLivePropertyCard(entry) {
   const { offer, fit } = entry,
     image = offer.image
@@ -483,7 +701,8 @@ function renderLivePropertyCard(entry) {
     deposit = offer.raw?.deposit_toman
       ? `رهن ${money(offer.raw.deposit_toman)}`
       : "رهن نامشخص";
-  return `<a class="live-property" href="${esc(offer.url)}" target="_blank" rel="noopener noreferrer">${image}<div class="live-property-body"><b>${esc(offer.title)}</b><span class="fit">${propertyFitLabel(fit.score)} · امتیاز ${fmt(fit.score)}</span><small>${deposit} · ${rent}${fit.area ? ` · ${fmt(fit.area)} متر` : ""}</small><small>${esc(offer.timeAgo || "زمان انتشار نامشخص")} · اطلاعات زنده دیوار</small></div></a>`;
+  const detailId = `property-detail-${offer.id.replace(/[^a-zA-Z0-9_-]/g, "")}`;
+  return `<article class="live-property">${image}<div class="live-property-body"><b>${esc(offer.title)}</b><span class="fit">${propertyFitLabel(fit.score)} · امتیاز اولیه ${fmt(fit.score)}</span><small>${deposit} · ${rent}${fit.area ? ` · ${fmt(fit.area)} متر` : ""}</small><small>${esc(offer.timeAgo || "زمان انتشار نامشخص")} · اطلاعات زنده دیوار</small><div class="property-card-actions"><a href="${esc(offer.url)}" target="_blank" rel="noopener noreferrer">دیدن آگهی</a><button data-property-token="${esc(offer.id)}">تحلیل فنی ملک</button></div></div><div class="property-detail" id="${detailId}" hidden></div></article>`;
 }
 async function renderLiveProperties(row, plannerKey) {
   const state = document.getElementById("livePropertyState"),
@@ -510,6 +729,15 @@ async function renderLiveProperties(row, plannerKey) {
     grid.innerHTML = ranked.length
       ? ranked.map(renderLivePropertyCard).join("")
       : '<div class="live-error">فعلاً آگهی قابل‌نمایشی پیدا نشد. چند دقیقه بعد دوباره امتحان کن.</div>';
+    grid.querySelectorAll("[data-property-token]").forEach((button) => {
+      const entry = ranked.find(
+        (candidate) => candidate.offer.id === button.dataset.propertyToken,
+      );
+      if (entry)
+        button.addEventListener("click", () =>
+          loadPropertyAssessment(button, entry, row),
+        );
+    });
   } catch (error) {
     if (plannerKey !== activePlannerKey) return;
     state.textContent = "دریافت زنده ناموفق بود";

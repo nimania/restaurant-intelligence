@@ -41,6 +41,12 @@ Live property leads are ranked client-side using observable inputs only:
 
 The score is a search-priority score, not a valuation or a prediction of restaurant success. Missing area is treated as unknown. The app does not claim that a removed ad was sold.
 
+### Property-readiness analysis
+
+For a shortlisted property, the planner can request the full public Divar ad record and compare only the text and fields actually present against concept-specific launch requirements. Every requirement is labelled as **confirmed in the ad**, **explicit risk**, or **unknown and requiring a visit question**.
+
+The readiness percentage measures evidence coverage in the ad. It is not an engineering inspection, permit approval or prediction of success. Unknown information is not treated as proof that an amenity is absent. The capital check combines the advertised deposit and three months of advertised rent with the existing concept setup estimate; construction, repair and compliance work still require separate quotes after a site visit.
+
 ### Equipment policy
 
 Each equipment item carries one of four planning policies: new-priority, used-inspected, used-friendly or hybrid. These are risk-management defaults, not endorsements of a particular listing. Gas, electrical, refrigeration, pressure-bearing and high-temperature equipment require qualified inspection before purchase.

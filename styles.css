@@ -545,6 +545,15 @@ summary {
   border-radius: 12px;
   overflow: hidden;
 }
+.live-property.expanded {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+.live-property.expanded > img {
+  height: 100%;
+  min-height: 180px;
+}
 .live-property img {
   display: block;
   width: 100%;
@@ -574,6 +583,189 @@ summary {
   margin-top: 6px;
   color: var(--muted);
   line-height: 1.6;
+}
+.property-card-actions {
+  display: flex;
+  gap: 7px;
+  margin-top: 9px;
+}
+.property-card-actions a,
+.property-card-actions button {
+  border: 1px solid #d4e2da;
+  border-radius: 8px;
+  background: #f8fbf9;
+  color: var(--green);
+  padding: 7px 9px;
+  font: inherit;
+  font-size: 10px;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+.property-card-actions button {
+  background: var(--green);
+  color: #fff;
+  border-color: var(--green);
+}
+.property-card-actions button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.property-detail {
+  grid-column: 1 / -1;
+  border-top: 1px solid #dce7e0;
+  padding: 14px;
+  background: #fbfdfb;
+}
+.readiness-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.readiness-head small,
+.readiness-head b {
+  display: block;
+}
+.readiness-head > strong {
+  color: var(--green);
+  text-align: left;
+}
+.readiness-head > strong small {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 500;
+}
+.detail-facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 7px;
+  margin: 12px 0;
+}
+.detail-facts > div {
+  background: #f1f5f2;
+  border-radius: 9px;
+  padding: 9px;
+}
+.detail-facts small,
+.detail-facts b {
+  display: block;
+}
+.detail-facts small {
+  color: var(--muted);
+  font-size: 9px;
+}
+.detail-facts b {
+  margin-top: 4px;
+  font-size: 11px;
+}
+.spec-strip {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+.spec-strip span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 5px 8px;
+  white-space: nowrap;
+  font-size: 9px;
+}
+.property-description {
+  color: #4f5c55;
+  font-size: 11px;
+  line-height: 1.9;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 9px;
+}
+.property-detail h6 {
+  margin: 13px 0 7px;
+  font-size: 12px;
+}
+.requirement-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+.requirement {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 8px;
+}
+.requirement b,
+.requirement small {
+  display: block;
+}
+.requirement b {
+  font-size: 10px;
+}
+.requirement small {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.55;
+}
+.requirement > span {
+  flex: 0 0 92px;
+  font-size: 8px;
+  font-weight: 900;
+  text-align: left;
+}
+.requirement.confirmed > span {
+  color: var(--green);
+}
+.requirement.risk {
+  border-color: #e8b7b2;
+  background: var(--r2);
+}
+.requirement.risk > span {
+  color: var(--red);
+}
+.requirement.unknown > span {
+  color: #9a6c16;
+}
+.capital-check {
+  display: grid;
+  gap: 4px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 10px;
+}
+.capital-check.safe {
+  background: var(--g2);
+  color: var(--green);
+}
+.capital-check.over {
+  background: var(--r2);
+  color: var(--red);
+}
+.capital-check small {
+  color: var(--muted);
+}
+.property-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+  font-size: 10px;
+}
+.property-actions a {
+  color: var(--blue);
+  font-weight: 900;
+}
+.property-actions span {
+  color: var(--muted);
 }
 .equipment-section {
   padding: 2px 14px 16px;
@@ -731,6 +923,14 @@ summary {
   .budget-map,
   .offer-columns {
     grid-template-columns: 1fr;
+  }
+  .live-property.expanded,
+  .detail-facts,
+  .requirement-list {
+    grid-template-columns: 1fr;
+  }
+  .live-property.expanded > img {
+    height: 160px;
   }
   .live-title {
     align-items: flex-start;
