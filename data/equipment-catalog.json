@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "currency": "toman",
+  "methodology": {
+    "budget_note": "The planner allocates a concept-specific share of the existing setup estimate to equipment. It is a planning range, not a supplier quotation.",
+    "condition_note": "Used-equipment suggestions require an in-person technical inspection. Gas, electrical, refrigeration and pressure-bearing equipment should be checked by a qualified technician before payment.",
+    "source_note": "New-product candidates come from Digikala when the catalogue has a confident match. Used-equipment candidates come from public Divar listings. Availability and asking prices change constantly."
+  },
+  "items": {
+    "griddle": {
+      "name": "پلانچا / گریل تخت",
+      "icon": "▰",
+      "used_query": "گریل تخت صنعتی",
+      "new_query": "گریل تخت صنعتی",
+      "buy_policy": "used-inspected",
+      "buy_label": "دست‌دومِ بازدیدشده منطقی است",
+      "inspection": "تاب صفحه، یکنواختی شعله یا المنت، ترموستات، نشتی گاز و امکان شست‌وشوی کامل بررسی شود.",
+      "specs": {
+        "small": "عرض مفید ۶۰ سانتی‌متر؛ رومیزی؛ گاز شهری یا برق متناسب با ملک",
+        "medium": "عرض مفید ۹۰ سانتی‌متر؛ دو ناحیه حرارتی؛ سینی جمع‌آوری چربی",
+        "large": "عرض ۱۲۰ سانتی‌متر یا دو دستگاه مستقل؛ کنترل حرارت مجزا"
+      }
+    },
+    "fryer": {
+      "name": "سرخ‌کن صنعتی",
+      "icon": "♨",
+      "used_query": "سرخ کن صنعتی دو لگنه",
+      "new_query": "سرخ کن صنعتی",
+      "buy_policy": "used-inspected",
+      "buy_label": "نو یا دست‌دوم با تست کامل",
+      "inspection": "مخزن، شیر تخلیه، ترموستات، المنت یا مشعل و نبود نشتی روغن بررسی شود.",
+      "specs": {
+        "small": "یک لگن ۸ تا ۱۲ لیتری؛ ترموستات دقیق؛ شیر تخلیه",
+        "medium": "دو لگن مستقل ۸ تا ۱۲ لیتری؛ بازیابی حرارت مناسب",
+        "large": "دو دستگاه یا ظرفیت پیوسته؛ مدارهای حرارتی مستقل"
+      }
+    },
+    "hood": {
+      "name": "هود، اگزاست و هوای جبرانی",
+      "icon": "↟",
+      "used_query": "هود صنعتی رستوران",
+      "new_query": "هود صنعتی آشپزخانه",
+      "buy_policy": "new-priority",
+      "buy_label": "ساخت نو متناسب با ملک اولویت دارد",
+      "inspection": "ابعاد باید بعد از انتخاب ملک و چیدمان نهایی تعیین شود؛ مسیر خروج، صدای فن و هوای جبرانی حیاتی است.",
+      "specs": {
+        "small": "طول تقریبی ۱٫۵ تا ۲ متر؛ فیلتر چربی قابل‌شست‌وشو",
+        "medium": "طول تقریبی ۲ تا ۳ متر؛ فن سانتریفیوژ و هوای جبرانی",
+        "large": "طراحی مهندسی دبی، کانال مستقل و دسترسی سرویس"
+      }
+    },
+    "cold_storage": {
+      "name": "یخچال و فریزر کاری",
+      "icon": "❄",
+      "used_query": "یخچال صنعتی رستوران",
+      "new_query": "فریزر صندوقی یخچال صنعتی",
+      "buy_policy": "new-priority",
+      "buy_label": "نو یا دارای ضمانت اولویت دارد",
+      "inspection": "کمپرسور، دمای پایدار، لاستیک در، آمپر مصرفی و سابقه تعمیر قبل از خرید دست‌دوم تست شود.",
+      "specs": {
+        "small": "یخچال ایستاده ۶۰۰ تا ۸۰۰ لیتر + فریزر ۳۰۰ لیتر",
+        "medium": "یخچال و فریزر مجزا؛ مجموع ظرفیت حداقل ۱۲۰۰ لیتر",
+        "large": "چند یونیت مستقل یا سردخانه؛ ثبت و پایش دما"
+      }
+    },
+    "stainless_prep": {
+      "name": "میزکار، سینک و شلف استیل",
+      "icon": "▤",
+      "used_query": "میز کار استیل رستوران",
+      "new_query": "میز کار استیل آشپزخانه",
+      "buy_policy": "used-friendly",
+      "buy_label": "دست‌دوم سالم معمولاً مقرون‌به‌صرفه است",
+      "inspection": "زنگ‌زدگی، تاب‌داشتگی، کیفیت جوش، پایه قابل تنظیم و عمق مناسب کار بررسی شود.",
+      "specs": {
+        "small": "میز ۱۲۰×۶۰ + سینک یک لگنه + دو ردیف شلف",
+        "medium": "دو میز ۱۵۰×۷۰ + سینک دو لگنه + شلف دیواری",
+        "large": "ایستگاه‌های تفکیک‌شده آماده‌سازی، پخت و پاس"
+      }
+    },
+    "pos": {
+      "name": "صندوق، پرینتر و شبکه سفارش",
+      "icon": "⌁",
+      "used_query": "صندوق فروشگاهی رستوران",
+      "new_query": "صندوق فروشگاهی پرینتر حرارتی",
+      "buy_policy": "new-priority",
+      "buy_label": "نو با پشتیبانی نرم‌افزار بهتر است",
+      "inspection": "سازگاری نرم‌افزار، پرینتر آشپزخانه، شبکه، بکاپ و هزینه پشتیبانی بررسی شود.",
+      "specs": {
+        "small": "یک صندوق + یک پرینتر آشپزخانه + اینترنت پشتیبان",
+        "medium": "صندوق، نمایشگر مشتری و دو پرینتر تفکیک‌شده",
+        "large": "چند ایستگاه سفارش، KDS و شبکه پشتیبان"
+      }
+    },
+    "pizza_oven": {
+      "name": "فر پیتزا",
+      "icon": "◫",
+      "used_query": "فر پیتزا صنعتی",
+      "new_query": "فر پیتزا صنعتی",
+      "buy_policy": "used-inspected",
+      "buy_label": "دست‌دوم فقط پس از تست حرارتی",
+      "inspection": "رسیدن به دمای کاری، یکنواختی کف و سقف، عایق، مصرف انرژی و قطعات یدکی بررسی شود.",
+      "specs": {
+        "small": "فر صندوقی ۴ تا ۶ بشقاب؛ برق یا گاز متناسب با ملک",
+        "medium": "فر ۸ تا ۱۲ بشقاب یا ریلی کوچک؛ کنترل بالا و پایین",
+        "large": "فر ریلی یا دک مستقل با ظرفیت پیک محاسبه‌شده"
+      }
+    },
+    "dough_mixer": {
+      "name": "خمیرگیر",
+      "icon": "◉",
+      "used_query": "خمیرگیر صنعتی پیتزا",
+      "new_query": "خمیرگیر صنعتی",
+      "buy_policy": "used-inspected",
+      "buy_label": "دست‌دوم با گیربکس سالم قابل‌قبول است",
+      "inspection": "صدای گیربکس، آمپر موتور، دیگ و پارویی، تایمر و ظرفیت واقعی خمیر تست شود.",
+      "specs": {
+        "small": "ظرفیت اسمی ۱۵ تا ۲۰ کیلوگرم",
+        "medium": "ظرفیت ۳۰ تا ۴۰ کیلوگرم؛ تایمر و محافظ موتور",
+        "large": "دو بچ مستقل یا ظرفیت ۶۰ کیلوگرم به بالا"
+      }
+    },
+    "espresso": {
+      "name": "اسپرسوساز حرفه‌ای",
+      "icon": "☕",
+      "used_query": "اسپرسوساز صنعتی",
+      "new_query": "اسپرسوساز نیمه صنعتی",
+      "buy_policy": "used-inspected",
+      "buy_label": "دست‌دوم حرفه‌ای با سرویس معتبر ارزش بررسی دارد",
+      "inspection": "فشار پمپ و بویلر، رسوب، نشتی، المنت، قطعات یدکی و سابقه سرویس بررسی شود.",
+      "specs": {
+        "small": "تک‌گروپ حرفه‌ای؛ بویلر حداقل ۵ لیتر؛ اتصال مستقیم آب",
+        "medium": "دوگروپ؛ بویلر ۱۰ تا ۱۴ لیتر؛ دو نازل بخار",
+        "large": "دو یا سه‌گروپ با ظرفیت پیک و سرویس‌کار در دسترس"
+      }
+    },
+    "grinder": {
+      "name": "آسیاب قهوه",
+      "icon": "✹",
+      "used_query": "آسیاب قهوه صنعتی",
+      "new_query": "آسیاب قهوه نیمه صنعتی",
+      "buy_policy": "new-priority",
+      "buy_label": "نو یا تیغه تازه تعویض‌شده اولویت دارد",
+      "inspection": "یکنواختی پودر، عمر تیغه، دوزینگ، گرم‌شدن موتور و دسترسی به تیغه یدکی بررسی شود.",
+      "specs": {
+        "small": "تیغه ۶۴ میلی‌متر؛ دوز زمانی؛ یک آسیاب اصلی",
+        "medium": "تیغه ۶۴ تا ۷۵ میلی‌متر؛ یک آسیاب اصلی + گزینه دیکف",
+        "large": "دو آسیاب مستقل با توان کار پیوسته"
+      }
+    },
+    "ice_maker": {
+      "name": "یخ‌ساز",
+      "icon": "◇",
+      "used_query": "یخ ساز صنعتی",
+      "new_query": "یخ ساز صنعتی",
+      "buy_policy": "new-priority",
+      "buy_label": "نو و دارای خدمات پس از فروش بهتر است",
+      "inspection": "کمپرسور، پمپ آب، رسوب، ظرفیت واقعی در هوای گرم و امکان شست‌وشوی مدار بررسی شود.",
+      "specs": {
+        "small": "۲۰ تا ۳۰ کیلوگرم در شبانه‌روز",
+        "medium": "۴۰ تا ۶۰ کیلوگرم در شبانه‌روز",
+        "large": "۸۰ کیلوگرم به بالا با مخزن مستقل"
+      }
+    },
+    "blender": {
+      "name": "بلندر و تجهیزات بار سرد",
+      "icon": "⌬",
+      "used_query": "مخلوط کن صنعتی کافی شاپ",
+      "new_query": "مخلوط کن حرفه ای",
+      "buy_policy": "new-priority",
+      "buy_label": "نو با پارچ و تیغه یدکی پیشنهاد می‌شود",
+      "inspection": "توان موتور، قطعات یدکی، پارچ دوم، صدای دستگاه و تهویه موتور بررسی شود.",
+      "specs": {
+        "small": "یک دستگاه ۱۵۰۰ وات به بالا + پارچ دوم",
+        "medium": "دو بلندر یا یک دستگاه تجاری کم‌صدا",
+        "large": "دو ایستگاه مستقل بار سرد"
+      }
+    },
+    "kebab_grill": {
+      "name": "کباب‌پز صنعتی",
+      "icon": "≋",
+      "used_query": "کباب پز صنعتی",
+      "new_query": "کباب پز گازی صنعتی",
+      "buy_policy": "used-friendly",
+      "buy_label": "شاسی دست‌دوم سالم قابل‌استفاده است",
+      "inspection": "شعله، شبکه گاز، شیرها، سینی چربی و امکان اتصال ایمن به هود بررسی شود.",
+      "specs": {
+        "small": "دهانه ۱۲۰ سانتی‌متر؛ گاز شهری؛ سیخ‌گیر مناسب",
+        "medium": "دهانه ۱۸۰ سانتی‌متر؛ دو ناحیه شعله مستقل",
+        "large": "خط کباب مستقل با آماده‌سازی و پاس جدا"
+      }
+    },
+    "rice_cooker": {
+      "name": "پلوپز و دیگ پخت",
+      "icon": "◒",
+      "used_query": "پلوپز صنعتی دیگ چلوپز",
+      "new_query": "پلوپز صنعتی",
+      "buy_policy": "new-priority",
+      "buy_label": "نو برای ایمنی و مصرف انرژی بهتر است",
+      "inspection": "شیر و ترموکوپل، عایق، ظرفیت مفید و امکان شست‌وشو بررسی شود.",
+      "specs": {
+        "small": "ظرفیت ۵۰ تا ۷۰ پرس در هر بچ",
+        "medium": "دو دیگ مستقل؛ مجموع ۱۲۰ تا ۱۵۰ پرس",
+        "large": "خط پخت چنددیگ با برنامه پیک"
+      }
+    },
+    "dishwasher": {
+      "name": "ماشین ظرف‌شویی صنعتی",
+      "icon": "▣",
+      "used_query": "ماشین ظرفشویی صنعتی رستوران",
+      "new_query": "ماشین ظرفشویی صنعتی",
+      "buy_policy": "used-inspected",
+      "buy_label": "دست‌دوم فقط با تست کامل پمپ و هیتر",
+      "inspection": "پمپ، هیتر، دمای آبکشی، نشتی، سختی‌گیر و قطعات یدکی بررسی شود.",
+      "specs": {
+        "small": "زیرکانتری؛ حداقل ۳۰ سبد در ساعت",
+        "medium": "هودتایپ؛ ۵۰ تا ۶۰ سبد در ساعت",
+        "large": "هودتایپ یا ریلی متناسب با تعداد صندلی"
+      }
+    },
+    "packing": {
+      "name": "میز بسته‌بندی و نگهداری گرم",
+      "icon": "▱",
+      "used_query": "گرمخانه غذا میز بسته بندی",
+      "new_query": "گرمکن غذا بن ماری",
+      "buy_policy": "hybrid",
+      "buy_label": "میز دست‌دوم؛ گرمکن ترجیحاً نو",
+      "inspection": "دمای نگهداری، عایق، نظافت‌پذیری و مسیر کوتاه تا تحویل پیک بررسی شود.",
+      "specs": {
+        "small": "میز ۱۲۰ سانتی‌متر + گرمکن رومیزی",
+        "medium": "ایستگاه دوطرفه + بن‌ماری یا هیت‌لامپ",
+        "large": "دو خط تفکیک سفارش و قفسه پیک"
+      }
+    }
+  },
+  "kits": {
+    "burger": {
+      "equipment_share": 0.45,
+      "items": [
+        { "id": "griddle", "weight": 0.22, "priority": "essential" },
+        { "id": "fryer", "weight": 0.18, "priority": "essential" },
+        { "id": "hood", "weight": 0.18, "priority": "essential" },
+        { "id": "cold_storage", "weight": 0.2, "priority": "essential" },
+        { "id": "stainless_prep", "weight": 0.13, "priority": "essential" },
+        { "id": "pos", "weight": 0.09, "priority": "recommended" }
+      ]
+    },
+    "pizza": {
+      "equipment_share": 0.48,
+      "items": [
+        { "id": "pizza_oven", "weight": 0.32, "priority": "essential" },
+        { "id": "dough_mixer", "weight": 0.16, "priority": "essential" },
+        { "id": "hood", "weight": 0.15, "priority": "essential" },
+        { "id": "cold_storage", "weight": 0.17, "priority": "essential" },
+        { "id": "stainless_prep", "weight": 0.12, "priority": "essential" },
+        { "id": "pos", "weight": 0.08, "priority": "recommended" }
+      ]
+    },
+    "cafe": {
+      "equipment_share": 0.5,
+      "items": [
+        { "id": "espresso", "weight": 0.38, "priority": "essential" },
+        { "id": "grinder", "weight": 0.12, "priority": "essential" },
+        { "id": "ice_maker", "weight": 0.14, "priority": "essential" },
+        { "id": "cold_storage", "weight": 0.15, "priority": "essential" },
+        { "id": "blender", "weight": 0.09, "priority": "essential" },
+        { "id": "pos", "weight": 0.12, "priority": "recommended" }
+      ]
+    },
+    "iranian": {
+      "equipment_share": 0.46,
+      "items": [
+        { "id": "kebab_grill", "weight": 0.2, "priority": "essential" },
+        { "id": "rice_cooker", "weight": 0.18, "priority": "essential" },
+        { "id": "hood", "weight": 0.18, "priority": "essential" },
+        { "id": "cold_storage", "weight": 0.19, "priority": "essential" },
+        { "id": "dishwasher", "weight": 0.15, "priority": "essential" },
+        { "id": "stainless_prep", "weight": 0.1, "priority": "essential" }
+      ]
+    },
+    "delivery": {
+      "equipment_share": 0.44,
+      "items": [
+        { "id": "griddle", "weight": 0.2, "priority": "essential" },
+        { "id": "fryer", "weight": 0.17, "priority": "essential" },
+        { "id": "hood", "weight": 0.17, "priority": "essential" },
+        { "id": "cold_storage", "weight": 0.18, "priority": "essential" },
+        { "id": "packing", "weight": 0.17, "priority": "essential" },
+        { "id": "pos", "weight": 0.11, "priority": "essential" }
+      ]
+    }
+  }
+}
