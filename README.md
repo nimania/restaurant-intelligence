@@ -36,6 +36,8 @@ See [`METHODOLOGY.md`](METHODOLOGY.md) for the full methodology.
 
 The feasibility wizard now includes an experimental launch-planning layer: it ranks live commercial-property leads for the selected budget and creates a concept-specific equipment basket. Each equipment card can request current new and used marketplace leads. These results are leads for verification, not appraisals, supplier endorsements or technical inspections.
 
+Shortlisted live properties can also be expanded into a concept-specific readiness review. The review reads public ad details, separates confirmed facts from explicit risks and unknowns, generates a visit checklist, and recalculates capital commitment using that property's advertised deposit and rent.
+
 Because restaurant prices, menus, locations, hours, and ownership details can change, data should always be interpreted together with its collection date and source.
 
 ## Local preview
