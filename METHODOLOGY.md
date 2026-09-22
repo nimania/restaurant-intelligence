@@ -19,6 +19,38 @@ For information that can change over time, record or expose the collection date 
 
 Calculated values, rankings, scores, and classifications should be documented sufficiently for another contributor to understand the inputs and assumptions.
 
+## Launch planner: properties and equipment
+
+The launch planner combines three different kinds of information and keeps their roles separate:
+
+1. The existing feasibility model estimates a viable concept, location zone, setup cost and operating threshold.
+2. Divar MCP supplies current public asking-price leads for commercial properties and used equipment.
+3. Digikala MCP supplies current public product offers when its retail catalogue contains a sufficiently relevant match.
+
+The equipment catalogue in `data/equipment-catalog.json` is a planning template. Its weights divide the existing setup estimate; they do not add a second equipment cost on top of that estimate. Specifications are minimum planning prompts and must be confirmed against the final menu, expected peak throughput, utilities and selected property.
+
+### Property lead score
+
+Live property leads are ranked client-side using observable inputs only:
+
+- deposit plus three months of advertised rent relative to the user's capital;
+- area parsed from the ad title when explicitly present;
+- concept-relevant words in the title;
+- photo count;
+- exclusion of prices flagged as placeholders by the source.
+
+The score is a search-priority score, not a valuation or a prediction of restaurant success. Missing area is treated as unknown. The app does not claim that a removed ad was sold.
+
+### Equipment policy
+
+Each equipment item carries one of four planning policies: new-priority, used-inspected, used-friendly or hybrid. These are risk-management defaults, not endorsements of a particular listing. Gas, electrical, refrigeration, pressure-bearing and high-temperature equipment require qualified inspection before purchase.
+
+Live marketplace results are deliberately presented as leads. The app exposes their source and links back to the original listing or product page. A Digikala result that looks consumer-grade is explicitly warned about because retail search may only partially match an industrial query.
+
+### Source and freshness limits
+
+Both marketplace connectors read undocumented public upstream APIs that can change. Results are fetched in the browser when the user reaches the recommendation or requests offers. Asking prices can change and are not transaction prices. The application does not collect phone numbers, credentials or private seller information.
+
 ## Uncertainty
 
 Missing information is not evidence of absence. When coverage is incomplete or a source cannot be verified, the project should say so rather than silently infer a fact.
