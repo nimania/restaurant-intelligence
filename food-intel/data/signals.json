@@ -1,40 +1,24 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-09-22T00:24:03Z",
-  "articles_24h": 147,
-  "articles_previous_6d": 1086,
+  "generated_at": "2026-09-22T05:09:13Z",
+  "articles_24h": 144,
+  "articles_previous_6d": 1097,
   "images_24h": 39,
   "trending_topics": [
     {
-      "id": "POS",
-      "label_fa": "سیستم فروش",
-      "count_24h": 16,
-      "previous_daily_avg": 10.5,
-      "acceleration": 1.52,
+      "id": "food_safety",
+      "label_fa": "ایمنی غذا",
+      "count_24h": 11,
+      "previous_daily_avg": 8.33,
+      "acceleration": 1.32,
       "series_7d": [
-        11,
-        14,
-        13,
-        3,
-        0,
-        16,
-        0
-      ]
-    },
-    {
-      "id": "regulation",
-      "label_fa": "قانون‌گذاری و مقررات",
-      "count_24h": 20,
-      "previous_daily_avg": 13.83,
-      "acceleration": 1.45,
-      "series_7d": [
-        15,
         12,
-        34,
-        6,
-        6,
-        21,
-        0
+        8,
+        13,
+        5,
+        3,
+        10,
+        5
       ]
     },
     {
@@ -57,80 +41,80 @@
       "id": "qsr_fast_food",
       "label_fa": "فست‌فود و QSR",
       "count_24h": 42,
-      "previous_daily_avg": 33.83,
-      "acceleration": 1.24,
+      "previous_daily_avg": 33.67,
+      "acceleration": 1.25,
       "series_7d": [
         34,
         41,
         48,
         21,
         15,
-        42,
+        47,
+        0
+      ]
+    },
+    {
+      "id": "regulation",
+      "label_fa": "قانون‌گذاری و مقررات",
+      "count_24h": 18,
+      "previous_daily_avg": 14.5,
+      "acceleration": 1.24,
+      "series_7d": [
+        15,
+        12,
+        34,
+        6,
+        6,
+        22,
+        2
+      ]
+    },
+    {
+      "id": "POS",
+      "label_fa": "سیستم فروش",
+      "count_24h": 13,
+      "previous_daily_avg": 10.83,
+      "acceleration": 1.2,
+      "series_7d": [
+        11,
+        14,
+        13,
+        3,
+        0,
+        16,
+        1
+      ]
+    },
+    {
+      "id": "sustainability",
+      "label_fa": "پایداری",
+      "count_24h": 2,
+      "previous_daily_avg": 1.67,
+      "acceleration": 1.2,
+      "series_7d": [
+        2,
+        1,
+        6,
+        0,
+        0,
+        2,
         0
       ]
     },
     {
       "id": "beverage",
       "label_fa": "نوشیدنی",
-      "count_24h": 24,
-      "previous_daily_avg": 19.33,
-      "acceleration": 1.24,
+      "count_24h": 22,
+      "previous_daily_avg": 19.5,
+      "acceleration": 1.13,
       "series_7d": [
         23,
         22,
         18,
         9,
         13,
-        25,
+        27,
         0
-      ]
-    },
-    {
-      "id": "restaurant_technology_ai",
-      "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 20,
-      "previous_daily_avg": 17.33,
-      "acceleration": 1.15,
-      "series_7d": [
-        18,
-        26,
-        25,
-        5,
-        1,
-        20,
-        0
-      ]
-    },
-    {
-      "id": "restaurant_operations",
-      "label_fa": "عملیات رستوران",
-      "count_24h": 5,
-      "previous_daily_avg": 4.33,
-      "acceleration": 1.15,
-      "series_7d": [
-        3,
-        2,
-        4,
-        4,
-        4,
-        5,
-        0
-      ]
-    },
-    {
-      "id": "restaurant_industry",
-      "label_fa": "صنعت رستوران",
-      "count_24h": 20,
-      "previous_daily_avg": 17.67,
-      "acceleration": 1.13,
-      "series_7d": [
-        25,
-        17,
-        23,
-        6,
-        5,
-        20,
-        2
       ]
     },
     {
@@ -145,44 +129,44 @@
         15,
         1,
         0,
-        6,
+        7,
         0
       ]
     },
     {
-      "id": "food_safety",
-      "label_fa": "ایمنی غذا",
-      "count_24h": 9,
-      "previous_daily_avg": 8.33,
+      "id": "fast_casual",
+      "label_fa": "فست‌کژوال",
+      "count_24h": 14,
+      "previous_daily_avg": 13.0,
       "acceleration": 1.08,
       "series_7d": [
-        12,
-        8,
-        13,
+        19,
+        17,
+        18,
         5,
-        3,
-        9,
+        1,
+        14,
+        0
+      ]
+    },
+    {
+      "id": "franchising",
+      "label_fa": "فرنچایز",
+      "count_24h": 11,
+      "previous_daily_avg": 11.17,
+      "acceleration": 0.99,
+      "series_7d": [
+        13,
+        12,
+        22,
+        6,
+        5,
+        13,
         0
       ]
     }
   ],
   "trending_brands": [
-    {
-      "id": "tukas",
-      "label_fa": "توکاش",
-      "count_24h": 3,
-      "previous_daily_avg": 0.5,
-      "acceleration": 6.0,
-      "series_7d": [
-        0,
-        0,
-        0,
-        0,
-        2,
-        4,
-        0
-      ]
-    },
     {
       "id": "dunkin",
       "label_fa": "دانکین",
@@ -196,6 +180,22 @@
         1,
         2,
         8,
+        0
+      ]
+    },
+    {
+      "id": "zarr_group",
+      "label_fa": "گروه صنعتی زر",
+      "count_24h": 2,
+      "previous_daily_avg": 0.0,
+      "acceleration": 4.0,
+      "series_7d": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
         0
       ]
     },
@@ -216,82 +216,50 @@
       ]
     },
     {
-      "id": "tab_gida",
-      "label_fa": "تاب گیدا",
+      "id": "tukas",
+      "label_fa": "توکاش",
       "count_24h": 2,
-      "previous_daily_avg": 1.0,
-      "acceleration": 2.0,
+      "previous_daily_avg": 0.67,
+      "acceleration": 3.0,
       "series_7d": [
         0,
-        1,
-        4,
         0,
-        1,
+        0,
+        0,
         2,
+        4,
+        0
+      ]
+    },
+    {
+      "id": "chipotle",
+      "label_fa": "چیپوتله",
+      "count_24h": 8,
+      "previous_daily_avg": 5.0,
+      "acceleration": 1.6,
+      "series_7d": [
+        8,
+        7,
+        2,
+        3,
+        1,
+        8,
         0
       ]
     },
     {
       "id": "chickfila",
       "label_fa": "چیک‌فیل‌ای",
-      "count_24h": 8,
-      "previous_daily_avg": 4.33,
-      "acceleration": 1.85,
+      "count_24h": 7,
+      "previous_daily_avg": 4.5,
+      "acceleration": 1.56,
       "series_7d": [
         7,
         5,
         1,
         0,
         2,
-        8,
-        0
-      ]
-    },
-    {
-      "id": "popeyes",
-      "label_fa": "پاپایز",
-      "count_24h": 3,
-      "previous_daily_avg": 1.67,
-      "acceleration": 1.8,
-      "series_7d": [
-        2,
-        3,
-        0,
-        1,
-        1,
-        3,
-        0
-      ]
-    },
-    {
-      "id": "starbucks",
-      "label_fa": "استارباکس",
-      "count_24h": 9,
-      "previous_daily_avg": 6.0,
-      "acceleration": 1.5,
-      "series_7d": [
-        5,
-        10,
-        3,
-        3,
-        3,
-        10,
-        0
-      ]
-    },
-    {
-      "id": "mondelez",
-      "label_fa": "موندلیز",
-      "count_24h": 2,
-      "previous_daily_avg": 1.5,
-      "acceleration": 1.33,
-      "series_7d": [
-        2,
-        2,
-        2,
-        1,
-        1,
-        2,
+        9,
         0
       ]
     },
@@ -299,31 +267,63 @@
       "id": "general_mills",
       "label_fa": "جنرال میلز",
       "count_24h": 5,
-      "previous_daily_avg": 3.83,
-      "acceleration": 1.3,
+      "previous_daily_avg": 4.17,
+      "acceleration": 1.2,
       "series_7d": [
         5,
         5,
         5,
         2,
         3,
-        6,
+        8,
+        0
+      ]
+    },
+    {
+      "id": "popeyes",
+      "label_fa": "پاپایز",
+      "count_24h": 2,
+      "previous_daily_avg": 1.67,
+      "acceleration": 1.2,
+      "series_7d": [
+        2,
+        3,
+        0,
+        1,
+        1,
+        3,
         0
       ]
     },
     {
       "id": "wendys",
       "label_fa": "وندیز",
-      "count_24h": 7,
-      "previous_daily_avg": 6.83,
-      "acceleration": 1.02,
+      "count_24h": 8,
+      "previous_daily_avg": 7.0,
+      "acceleration": 1.14,
       "series_7d": [
         1,
         5,
         20,
         4,
         3,
-        7,
+        9,
+        0
+      ]
+    },
+    {
+      "id": "starbucks",
+      "label_fa": "استارباکس",
+      "count_24h": 7,
+      "previous_daily_avg": 6.33,
+      "acceleration": 1.11,
+      "series_7d": [
+        5,
+        10,
+        3,
+        3,
+        3,
+        10,
         0
       ]
     }
@@ -332,29 +332,29 @@
     {
       "id": "iran_market",
       "label_fa": "بازار ایران",
-      "count_24h": 9,
+      "count_24h": 10,
       "series_7d": [
         29,
         7,
         39,
-        24,
-        19,
-        8,
-        1
+        25,
+        21,
+        9,
+        2
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 20,
+      "count_24h": 16,
       "series_7d": [
         18,
         26,
         25,
         5,
         1,
-        20,
-        0
+        21,
+        1
       ]
     },
     {
@@ -367,42 +367,42 @@
         15,
         1,
         0,
-        6,
+        7,
         0
       ]
     },
     {
       "id": "food_cost_pricing",
       "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 4,
+      "count_24h": 5,
       "series_7d": [
         7,
         2,
         12,
         2,
         5,
-        4,
+        5,
         0
       ]
     },
     {
       "id": "food_safety",
       "label_fa": "ایمنی غذا",
-      "count_24h": 9,
+      "count_24h": 11,
       "series_7d": [
         12,
         8,
         13,
         5,
         3,
-        9,
-        0
+        10,
+        5
       ]
     },
     {
       "id": "restaurant_operations",
       "label_fa": "عملیات رستوران",
-      "count_24h": 5,
+      "count_24h": 2,
       "series_7d": [
         3,
         2,
@@ -416,17 +416,17 @@
     {
       "id": "marketing_branding",
       "label_fa": "بازاریابی و برندینگ",
-      "count_24h": 6,
+      "count_24h": 4,
       "series_7d": [
         8,
         9,
         13,
         1,
         6,
-        6,
+        7,
         0
       ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: سیستم فروش، قانون‌گذاری و مقررات، بسته‌بندی و طراحی بسته‌بندی؛ برندهای پرتکرار: توکاش، دانکین، یو‌اس فودز."
+  "radar_fa": "موضوع‌های رو به رشد: ایمنی غذا، بسته‌بندی و طراحی بسته‌بندی، فست‌فود و QSR؛ برندهای پرتکرار: دانکین، گروه صنعتی زر، یو‌اس فودز."
 }
