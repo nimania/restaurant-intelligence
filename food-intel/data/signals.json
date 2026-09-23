@@ -1,64 +1,64 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-09-23T17:18:13Z",
-  "articles_24h": 144,
-  "articles_previous_6d": 1100,
-  "images_24h": 35,
+  "generated_at": "2026-09-23T21:45:06Z",
+  "articles_24h": 182,
+  "articles_previous_6d": 1106,
+  "images_24h": 45,
   "trending_topics": [
     {
       "id": "restaurant_operations",
       "label_fa": "عملیات رستوران",
-      "count_24h": 11,
-      "previous_daily_avg": 4.67,
-      "acceleration": 2.36,
-      "series_7d": [
-        2,
-        4,
-        4,
-        4,
-        8,
-        8,
-        9
-      ]
-    },
-    {
-      "id": "equipment_automation",
-      "label_fa": "تجهیزات و اتوماسیون",
-      "count_24h": 7,
+      "count_24h": 12,
       "previous_daily_avg": 4.83,
-      "acceleration": 1.45,
+      "acceleration": 2.48,
       "series_7d": [
         2,
-        15,
-        1,
-        0,
-        7,
-        5,
-        5
+        4,
+        4,
+        4,
+        8,
+        8,
+        11
       ]
     },
     {
-      "id": "consumer_behavior",
-      "label_fa": "رفتار مصرف‌کننده",
-      "count_24h": 13,
-      "previous_daily_avg": 9.17,
-      "acceleration": 1.42,
+      "id": "drive-thru",
+      "label_fa": "درایو‌ثرو",
+      "count_24h": 4,
+      "previous_daily_avg": 1.67,
+      "acceleration": 2.4,
       "series_7d": [
-        19,
-        11,
+        4,
+        2,
+        0,
+        0,
         1,
         3,
-        11,
-        8,
-        13
+        4
+      ]
+    },
+    {
+      "id": "branding",
+      "label_fa": "برندینگ",
+      "count_24h": 3,
+      "previous_daily_avg": 1.33,
+      "acceleration": 2.25,
+      "series_7d": [
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        3
       ]
     },
     {
       "id": "POS",
       "label_fa": "سیستم فروش",
-      "count_24h": 16,
-      "previous_daily_avg": 11.33,
-      "acceleration": 1.41,
+      "count_24h": 23,
+      "previous_daily_avg": 11.17,
+      "acceleration": 2.06,
       "series_7d": [
         14,
         13,
@@ -66,31 +66,15 @@
         0,
         19,
         19,
-        14
-      ]
-    },
-    {
-      "id": "restaurant_industry",
-      "label_fa": "صنعت رستوران",
-      "count_24h": 22,
-      "previous_daily_avg": 16.83,
-      "acceleration": 1.31,
-      "series_7d": [
-        17,
-        23,
-        6,
-        5,
-        27,
-        26,
-        17
+        21
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 22,
-      "previous_daily_avg": 18.33,
-      "acceleration": 1.2,
+      "count_24h": 31,
+      "previous_daily_avg": 18.17,
+      "acceleration": 1.71,
       "series_7d": [
         26,
         25,
@@ -98,31 +82,47 @@
         2,
         25,
         28,
-        19
+        28
       ]
     },
     {
-      "id": "drive-thru",
-      "label_fa": "درایو‌ثرو",
-      "count_24h": 2,
-      "previous_daily_avg": 1.67,
-      "acceleration": 1.2,
+      "id": "restaurant_industry",
+      "label_fa": "صنعت رستوران",
+      "count_24h": 29,
+      "previous_daily_avg": 17.0,
+      "acceleration": 1.71,
       "series_7d": [
-        4,
-        2,
-        0,
-        0,
+        17,
+        23,
+        6,
+        5,
+        27,
+        26,
+        26
+      ]
+    },
+    {
+      "id": "consumer_behavior",
+      "label_fa": "رفتار مصرف‌کننده",
+      "count_24h": 15,
+      "previous_daily_avg": 8.83,
+      "acceleration": 1.7,
+      "series_7d": [
+        19,
+        11,
         1,
         3,
-        2
+        11,
+        9,
+        14
       ]
     },
     {
       "id": "delivery",
       "label_fa": "دلیوری",
-      "count_24h": 15,
+      "count_24h": 18,
       "previous_daily_avg": 13.17,
-      "acceleration": 1.14,
+      "acceleration": 1.37,
       "series_7d": [
         16,
         7,
@@ -130,81 +130,81 @@
         6,
         13,
         36,
-        12
-      ]
-    },
-    {
-      "id": "retail_food",
-      "label_fa": "خرده‌فروشی غذا",
-      "count_24h": 6,
-      "previous_daily_avg": 5.83,
-      "acceleration": 1.03,
-      "series_7d": [
-        15,
-        4,
-        1,
-        3,
-        7,
-        4,
-        6
+        16
       ]
     },
     {
       "id": "delivery_drive_thru",
       "label_fa": "دلیوری و درایو‌ثرو",
-      "count_24h": 25,
-      "previous_daily_avg": 24.83,
-      "acceleration": 1.01,
+      "count_24h": 30,
+      "previous_daily_avg": 25.0,
+      "acceleration": 1.2,
       "series_7d": [
         26,
         38,
         4,
         13,
         20,
-        48,
-        22
+        50,
+        28
+      ]
+    },
+    {
+      "id": "ingredients_rd",
+      "label_fa": "مواد اولیه و تحقیق‌وتوسعه",
+      "count_24h": 8,
+      "previous_daily_avg": 6.67,
+      "acceleration": 1.2,
+      "series_7d": [
+        8,
+        6,
+        6,
+        5,
+        9,
+        6,
+        8
       ]
     }
   ],
   "trending_brands": [
     {
-      "id": "grubhub",
-      "label_fa": "گراب‌هاب",
-      "count_24h": 4,
-      "previous_daily_avg": 0.5,
-      "acceleration": 8.0,
+      "id": "dardanel",
+      "label_fa": "داردانل",
+      "count_24h": 6,
+      "previous_daily_avg": 0.0,
+      "acceleration": 12.0,
       "series_7d": [
-        1,
         0,
         0,
         0,
+        0,
+        0,
         1,
-        1,
-        4
+        5
       ]
     },
     {
-      "id": "dardanel",
-      "label_fa": "داردانل",
-      "count_24h": 2,
-      "previous_daily_avg": 0.0,
-      "acceleration": 4.0,
+      "id": "grubhub",
+      "label_fa": "گراب‌هاب",
+      "count_24h": 5,
+      "previous_daily_avg": 0.5,
+      "acceleration": 10.0,
       "series_7d": [
-        0,
-        0,
+        1,
         0,
         0,
         0,
         1,
-        1
+        1,
+        5
       ]
     },
     {
       "id": "general_mills",
       "label_fa": "جنرال میلز",
-      "count_24h": 19,
+      "count_24h": 23,
       "previous_daily_avg": 5.0,
-      "acceleration": 3.8,
+      "acceleration": 4.6,
       "series_7d": [
         5,
         5,
@@ -212,7 +212,7 @@
         3,
         8,
         7,
-        18
+        22
       ]
     },
     {
@@ -235,8 +235,8 @@
       "id": "pinar",
       "label_fa": "پینار",
       "count_24h": 2,
-      "previous_daily_avg": 1.0,
-      "acceleration": 2.0,
+      "previous_daily_avg": 0.83,
+      "acceleration": 2.4,
       "series_7d": [
         0,
         2,
@@ -250,9 +250,9 @@
     {
       "id": "shake_shack",
       "label_fa": "شیک شک",
-      "count_24h": 4,
+      "count_24h": 5,
       "previous_daily_avg": 2.83,
-      "acceleration": 1.41,
+      "acceleration": 1.76,
       "series_7d": [
         7,
         1,
@@ -260,47 +260,47 @@
         1,
         2,
         3,
-        4
+        5
       ]
     },
     {
       "id": "mcdonalds",
       "label_fa": "مک‌دونالدز",
+      "count_24h": 11,
+      "previous_daily_avg": 7.5,
+      "acceleration": 1.47,
+      "series_7d": [
+        11,
+        11,
+        6,
+        4,
+        7,
+        6,
+        11
+      ]
+    },
+    {
+      "id": "starbucks",
+      "label_fa": "استارباکس",
       "count_24h": 9,
       "previous_daily_avg": 7.33,
       "acceleration": 1.23,
       "series_7d": [
-        11,
-        11,
-        6,
-        4,
-        7,
-        6,
-        8
-      ]
-    },
-    {
-      "id": "chipotle",
-      "label_fa": "چیپوتله",
-      "count_24h": 4,
-      "previous_daily_avg": 3.83,
-      "acceleration": 1.04,
-      "series_7d": [
-        7,
-        2,
+        10,
         3,
-        1,
-        8,
-        4,
-        2
+        3,
+        3,
+        11,
+        13,
+        9
       ]
     },
     {
       "id": "wendys",
       "label_fa": "وندیز",
-      "count_24h": 8,
-      "previous_daily_avg": 8.0,
-      "acceleration": 1.0,
+      "count_24h": 10,
+      "previous_daily_avg": 8.17,
+      "acceleration": 1.22,
       "series_7d": [
         5,
         20,
@@ -308,23 +308,23 @@
         3,
         9,
         8,
-        7
+        10
       ]
     },
     {
-      "id": "mondelez",
-      "label_fa": "موندلیز",
-      "count_24h": 3,
-      "previous_daily_avg": 3.33,
-      "acceleration": 0.9,
+      "id": "doordash",
+      "label_fa": "دوردش",
+      "count_24h": 11,
+      "previous_daily_avg": 10.67,
+      "acceleration": 1.03,
       "series_7d": [
-        2,
-        2,
-        1,
-        1,
-        5,
         11,
-        1
+        8,
+        2,
+        5,
+        10,
+        29,
+        10
       ]
     }
   ],
@@ -332,21 +332,21 @@
     {
       "id": "iran_market",
       "label_fa": "بازار ایران",
-      "count_24h": 9,
+      "count_24h": 8,
       "series_7d": [
         7,
         39,
         31,
-        27,
+        28,
         15,
-        22,
+        25,
         8
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 22,
+      "count_24h": 31,
       "series_7d": [
         26,
         25,
@@ -354,13 +354,13 @@
         2,
         25,
         28,
-        19
+        28
       ]
     },
     {
       "id": "equipment_automation",
       "label_fa": "تجهیزات و اتوماسیون",
-      "count_24h": 7,
+      "count_24h": 6,
       "series_7d": [
         2,
         15,
@@ -368,7 +368,7 @@
         0,
         7,
         5,
-        5
+        6
       ]
     },
     {
@@ -388,7 +388,7 @@
     {
       "id": "food_safety",
       "label_fa": "ایمنی غذا",
-      "count_24h": 6,
+      "count_24h": 7,
       "series_7d": [
         8,
         13,
@@ -396,13 +396,13 @@
         3,
         11,
         7,
-        6
+        7
       ]
     },
     {
       "id": "restaurant_operations",
       "label_fa": "عملیات رستوران",
-      "count_24h": 11,
+      "count_24h": 12,
       "series_7d": [
         2,
         4,
@@ -410,23 +410,23 @@
         4,
         8,
         8,
-        9
+        11
       ]
     },
     {
       "id": "marketing_branding",
       "label_fa": "بازاریابی و برندینگ",
-      "count_24h": 6,
+      "count_24h": 9,
       "series_7d": [
         9,
         13,
         1,
         6,
         8,
-        16,
-        5
+        18,
+        8
       ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: عملیات رستوران، تجهیزات و اتوماسیون، رفتار مصرف‌کننده؛ برندهای پرتکرار: گراب‌هاب، داردانل، جنرال میلز."
+  "radar_fa": "موضوع‌های رو به رشد: عملیات رستوران، درایو‌ثرو، برندینگ؛ برندهای پرتکرار: داردانل، گراب‌هاب، جنرال میلز."
 }
