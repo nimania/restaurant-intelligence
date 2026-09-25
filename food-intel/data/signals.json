@@ -1,112 +1,32 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-09-25T12:08:20Z",
-  "articles_24h": 155,
-  "articles_previous_6d": 1143,
-  "images_24h": 40,
+  "generated_at": "2026-09-25T17:24:03Z",
+  "articles_24h": 134,
+  "articles_previous_6d": 1160,
+  "images_24h": 31,
   "trending_topics": [
     {
-      "id": "drive-thru",
-      "label_fa": "درایو‌ثرو",
-      "count_24h": 4,
-      "previous_daily_avg": 2.17,
-      "acceleration": 1.85,
+      "id": "branding",
+      "label_fa": "برندینگ",
+      "count_24h": 6,
+      "previous_daily_avg": 1.83,
+      "acceleration": 3.27,
       "series_7d": [
+        1,
+        2,
+        2,
         0,
-        0,
-        1,
-        3,
-        5,
-        6,
-        1
-      ]
-    },
-    {
-      "id": "fast_casual",
-      "label_fa": "فست‌کژوال",
-      "count_24h": 13,
-      "previous_daily_avg": 8.17,
-      "acceleration": 1.59,
-      "series_7d": [
-        5,
-        1,
-        15,
-        11,
-        8,
-        14,
-        3
-      ]
-    },
-    {
-      "id": "menu_product_innovation",
-      "label_fa": "نوآوری منو و محصول",
-      "count_24h": 17,
-      "previous_daily_avg": 11.17,
-      "acceleration": 1.52,
-      "series_7d": [
-        9,
-        9,
-        13,
-        17,
-        10,
-        19,
-        3
-      ]
-    },
-    {
-      "id": "menu",
-      "label_fa": "منو",
-      "count_24h": 15,
-      "previous_daily_avg": 10.0,
-      "acceleration": 1.5,
-      "series_7d": [
-        6,
-        9,
-        11,
-        16,
-        10,
-        17,
-        2
-      ]
-    },
-    {
-      "id": "consumer_behavior",
-      "label_fa": "رفتار مصرف‌کننده",
-      "count_24h": 13,
-      "previous_daily_avg": 9.0,
-      "acceleration": 1.44,
-      "series_7d": [
-        1,
-        3,
-        11,
-        9,
-        17,
-        17,
+        4,
+        4,
         4
-      ]
-    },
-    {
-      "id": "beverage",
-      "label_fa": "نوشیدنی",
-      "count_24h": 33,
-      "previous_daily_avg": 23.33,
-      "acceleration": 1.41,
-      "series_7d": [
-        9,
-        13,
-        29,
-        22,
-        25,
-        58,
-        11
       ]
     },
     {
       "id": "sustainability",
       "label_fa": "پایداری",
       "count_24h": 2,
-      "previous_daily_avg": 1.5,
-      "acceleration": 1.33,
+      "previous_daily_avg": 1.17,
+      "acceleration": 1.71,
       "series_7d": [
         0,
         1,
@@ -118,43 +38,27 @@
       ]
     },
     {
-      "id": "restaurant_industry",
-      "label_fa": "صنعت رستوران",
-      "count_24h": 25,
-      "previous_daily_avg": 20.33,
-      "acceleration": 1.23,
+      "id": "supply_chain",
+      "label_fa": "زنجیره تأمین",
+      "count_24h": 8,
+      "previous_daily_avg": 5.33,
+      "acceleration": 1.5,
       "series_7d": [
-        6,
+        3,
+        3,
+        8,
+        7,
+        7,
         5,
-        27,
-        26,
-        34,
-        30,
-        3
-      ]
-    },
-    {
-      "id": "branding",
-      "label_fa": "برندینگ",
-      "count_24h": 2,
-      "previous_daily_avg": 1.83,
-      "acceleration": 1.09,
-      "series_7d": [
-        1,
-        2,
-        2,
-        0,
-        4,
-        4,
-        0
+        7
       ]
     },
     {
       "id": "marketing_branding",
       "label_fa": "بازاریابی و برندینگ",
-      "count_24h": 11,
-      "previous_daily_avg": 10.33,
-      "acceleration": 1.06,
+      "count_24h": 15,
+      "previous_daily_avg": 10.67,
+      "acceleration": 1.41,
       "series_7d": [
         1,
         6,
@@ -162,7 +66,103 @@
         24,
         13,
         15,
-        2
+        9
+      ]
+    },
+    {
+      "id": "beverage",
+      "label_fa": "نوشیدنی",
+      "count_24h": 34,
+      "previous_daily_avg": 24.83,
+      "acceleration": 1.37,
+      "series_7d": [
+        9,
+        13,
+        29,
+        22,
+        25,
+        58,
+        26
+      ]
+    },
+    {
+      "id": "fast_casual",
+      "label_fa": "فست‌کژوال",
+      "count_24h": 10,
+      "previous_daily_avg": 8.33,
+      "acceleration": 1.2,
+      "series_7d": [
+        5,
+        1,
+        15,
+        11,
+        8,
+        14,
+        5
+      ]
+    },
+    {
+      "id": "restaurant_industry",
+      "label_fa": "صنعت رستوران",
+      "count_24h": 20,
+      "previous_daily_avg": 21.0,
+      "acceleration": 0.95,
+      "series_7d": [
+        6,
+        5,
+        27,
+        26,
+        34,
+        30,
+        14
+      ]
+    },
+    {
+      "id": "POS",
+      "label_fa": "سیستم فروش",
+      "count_24h": 13,
+      "previous_daily_avg": 14.0,
+      "acceleration": 0.93,
+      "series_7d": [
+        3,
+        0,
+        20,
+        20,
+        24,
+        17,
+        8
+      ]
+    },
+    {
+      "id": "retail_food",
+      "label_fa": "خرده‌فروشی غذا",
+      "count_24h": 4,
+      "previous_daily_avg": 4.67,
+      "acceleration": 0.86,
+      "series_7d": [
+        1,
+        3,
+        7,
+        4,
+        7,
+        6,
+        4
+      ]
+    },
+    {
+      "id": "consumer_behavior",
+      "label_fa": "رفتار مصرف‌کننده",
+      "count_24h": 8,
+      "previous_daily_avg": 9.5,
+      "acceleration": 0.84,
+      "series_7d": [
+        1,
+        3,
+        11,
+        9,
+        17,
+        18,
+        6
       ]
     }
   ],
@@ -170,9 +170,9 @@
     {
       "id": "espressolab",
       "label_fa": "اسپرسولب",
-      "count_24h": 11,
-      "previous_daily_avg": 0.33,
-      "acceleration": 22.0,
+      "count_24h": 21,
+      "previous_daily_avg": 0.5,
+      "acceleration": 42.0,
       "series_7d": [
         0,
         0,
@@ -180,95 +180,31 @@
         0,
         0,
         7,
-        4
-      ]
-    },
-    {
-      "id": "yum_brands",
-      "label_fa": "یام برندز",
-      "count_24h": 3,
-      "previous_daily_avg": 0.33,
-      "acceleration": 6.0,
-      "series_7d": [
-        0,
-        0,
-        0,
-        1,
-        1,
-        2,
-        1
-      ]
-    },
-    {
-      "id": "kfc",
-      "label_fa": "کی‌اف‌سی",
-      "count_24h": 11,
-      "previous_daily_avg": 2.17,
-      "acceleration": 5.08,
-      "series_7d": [
-        0,
-        2,
-        1,
-        5,
-        1,
-        12,
-        2
-      ]
-    },
-    {
-      "id": "starbucks",
-      "label_fa": "استارباکس",
-      "count_24h": 24,
-      "previous_daily_avg": 10.0,
-      "acceleration": 2.4,
-      "series_7d": [
-        3,
-        3,
-        11,
-        13,
-        13,
-        34,
-        6
-      ]
-    },
-    {
-      "id": "dardanel",
-      "label_fa": "داردانل",
-      "count_24h": 2,
-      "previous_daily_avg": 1.0,
-      "acceleration": 2.0,
-      "series_7d": [
-        0,
-        0,
-        0,
-        1,
-        5,
-        1,
-        1
+        15
       ]
     },
     {
       "id": "mcdonalds",
       "label_fa": "مک‌دونالدز",
       "count_24h": 15,
-      "previous_daily_avg": 7.83,
-      "acceleration": 1.91,
+      "previous_daily_avg": 8.67,
+      "acceleration": 1.73,
       "series_7d": [
         6,
         4,
         7,
         6,
         14,
-        19,
-        3
+        20,
+        10
       ]
     },
     {
       "id": "chipotle",
       "label_fa": "چیپوتله",
-      "count_24h": 4,
+      "count_24h": 5,
       "previous_daily_avg": 3.33,
-      "acceleration": 1.2,
+      "acceleration": 1.5,
       "series_7d": [
         3,
         1,
@@ -276,15 +212,31 @@
         4,
         2,
         5,
-        0
+        2
+      ]
+    },
+    {
+      "id": "starbucks",
+      "label_fa": "استارباکس",
+      "count_24h": 12,
+      "previous_daily_avg": 12.0,
+      "acceleration": 1.0,
+      "series_7d": [
+        3,
+        3,
+        11,
+        13,
+        13,
+        34,
+        7
       ]
     },
     {
       "id": "uber_eats",
       "label_fa": "اوبر ایتس",
       "count_24h": 4,
-      "previous_daily_avg": 4.0,
-      "acceleration": 1.0,
+      "previous_daily_avg": 4.17,
+      "acceleration": 0.96,
       "series_7d": [
         1,
         4,
@@ -292,15 +244,15 @@
         6,
         4,
         3,
-        2
+        3
       ]
     },
     {
       "id": "shake_shack",
       "label_fa": "شیک شک",
       "count_24h": 3,
-      "previous_daily_avg": 3.0,
-      "acceleration": 1.0,
+      "previous_daily_avg": 3.17,
+      "acceleration": 0.95,
       "series_7d": [
         3,
         1,
@@ -308,15 +260,63 @@
         3,
         7,
         3,
+        3
+      ]
+    },
+    {
+      "id": "sunich",
+      "label_fa": "سن‌ایچ",
+      "count_24h": 2,
+      "previous_daily_avg": 2.17,
+      "acceleration": 0.92,
+      "series_7d": [
+        6,
+        7,
+        0,
+        0,
+        0,
+        0,
         2
+      ]
+    },
+    {
+      "id": "kfc",
+      "label_fa": "کی‌اف‌سی",
+      "count_24h": 3,
+      "previous_daily_avg": 3.5,
+      "acceleration": 0.86,
+      "series_7d": [
+        0,
+        2,
+        1,
+        5,
+        1,
+        12,
+        3
+      ]
+    },
+    {
+      "id": "nestle",
+      "label_fa": "نستله",
+      "count_24h": 3,
+      "previous_daily_avg": 3.67,
+      "acceleration": 0.82,
+      "series_7d": [
+        2,
+        3,
+        7,
+        2,
+        3,
+        3,
+        3
       ]
     },
     {
       "id": "dunkin",
       "label_fa": "دانکین",
-      "count_24h": 5,
-      "previous_daily_avg": 5.33,
-      "acceleration": 0.94,
+      "count_24h": 4,
+      "previous_daily_avg": 5.5,
+      "acceleration": 0.73,
       "series_7d": [
         1,
         2,
@@ -324,7 +324,7 @@
         7,
         4,
         11,
-        2
+        3
       ]
     }
   ],
@@ -332,21 +332,21 @@
     {
       "id": "iran_market",
       "label_fa": "بازار ایران",
-      "count_24h": 3,
+      "count_24h": 5,
       "series_7d": [
         31,
         34,
         15,
-        42,
+        43,
         9,
-        10,
-        2
+        11,
+        4
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 19,
+      "count_24h": 15,
       "series_7d": [
         5,
         2,
@@ -354,13 +354,13 @@
         30,
         33,
         31,
-        5
+        9
       ]
     },
     {
       "id": "equipment_automation",
       "label_fa": "تجهیزات و اتوماسیون",
-      "count_24h": 4,
+      "count_24h": 1,
       "series_7d": [
         1,
         0,
@@ -374,7 +374,7 @@
     {
       "id": "food_cost_pricing",
       "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 2,
+      "count_24h": 4,
       "series_7d": [
         2,
         5,
@@ -382,27 +382,27 @@
         9,
         7,
         11,
-        0
+        3
       ]
     },
     {
       "id": "food_safety",
       "label_fa": "ایمنی غذا",
-      "count_24h": 7,
+      "count_24h": 6,
       "series_7d": [
         5,
         3,
         11,
         7,
         8,
-        11,
+        12,
         4
       ]
     },
     {
       "id": "restaurant_operations",
       "label_fa": "عملیات رستوران",
-      "count_24h": 6,
+      "count_24h": 4,
       "series_7d": [
         4,
         4,
@@ -410,13 +410,13 @@
         8,
         13,
         11,
-        1
+        2
       ]
     },
     {
       "id": "marketing_branding",
       "label_fa": "بازاریابی و برندینگ",
-      "count_24h": 11,
+      "count_24h": 15,
       "series_7d": [
         1,
         6,
@@ -424,9 +424,9 @@
         24,
         13,
         15,
-        2
+        9
       ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: درایو‌ثرو، فست‌کژوال، نوآوری منو و محصول؛ برندهای پرتکرار: اسپرسولب، یام برندز، کی‌اف‌سی."
+  "radar_fa": "موضوع‌های رو به رشد: برندینگ، پایداری، زنجیره تأمین؛ برندهای پرتکرار: اسپرسولب، مک‌دونالدز، چیپوتله."
 }
