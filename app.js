@@ -489,6 +489,20 @@ function renderSummary() {
     `<b>انتخاب‌های تو:</b><br>سرمایه: ${labels.budget[answers.budget] || "—"} · فضا: ${labels.size[answers.size] || "—"} · مدل: ${labels.concept[answers.concept] || "—"} · سبک کار: ${labels.operation[answers.operation] || "—"} · ریسک: ${labels.risk[answers.risk] || "—"}`;
 }
 function zoneAdvice(z) {
+  return esc(zoneAdviceText(z)) + rentNote(z);
+}
+function rentNote(z) {
+  if (!z.rent || !z.rent_basis || z.rent_basis === "previous") return "";
+  const where =
+    z.rent_basis === "main_street"
+      ? "ملک‌های بر خیابان اصلی یا نبش"
+      : "همه آگهی‌های مغازه";
+  const other = z.rent_other
+    ? `؛ آگهی‌هایی که بر اصلی بودنشان ذکر نشده حدود ${money(z.rent_other)}`
+    : "";
+  return `<br><small>اجاره آگهی دیوار برای هر متر: ${where} حدود ${money(z.rent)}${other} (${fmt(z.rent_sample)} آگهی مبنا).</small>`;
+}
+function zoneAdviceText(z) {
   if (z.advice) return z.advice;
   if (z.id === "Z04")
     return "اول محور امام رضا–دریاسر–شمع‌جاران را بررسی کن؛ در مدل فعلی ترکیب تقاضا و فشار اجاره متعادل‌تر است.";

@@ -70,35 +70,43 @@ Corrections should preserve traceability when practical. Source changes, methodo
 The project is intended for public-market and restaurant intelligence. It should not collect or expose private customer data, credentials, or sensitive personal information.
 
 
-## Karaj benchmark (preliminary, 2026-09-26)
+## Rent benchmark method (all cities, 2026-09-26)
 
-Karaj zone inputs in `app.js` (`KARAJ_ZONES`) come from a desk sample, not a field survey:
+Nowshahr, Karaj and Mashhad zone rents were re-measured on 2026-09-26 with one method:
 
-- **Rent and deposit per m²:** median asking prices of 25–150 m² shop ads on Divar neighbourhood pages for Azimieh, Jahanshahr, Gohardasht, Mehrshahr (phase 4), Baghestan and Golshahr, retrieved 2026-09-26. Samples are small (4–11 ads per zone). These are asking prices, not contract rents.
-- **Active venues and review volume:** a Google Maps sample of about 115 food-service venues found by zone-specific searches. Search results are capped, so counts show relative presence, not a full census.
-- **Demand index:** 0.6 × review-volume index + 0.4 × rent index (both scaled to the top zone = 100).
-- **Concept whitespace (`w`):** how much each concept family (fast food, café, traditional) is under-represented in a zone compared with the Karaj-wide sample mix.
-- **Confidence:** 0.58–0.72, scaled by rent-sample size. All values are below the 0.75 threshold, so **the low-risk mode shows no Karaj options** until the benchmark is checked on the ground.
-- **Shared assumptions:** concept setup cost, average check and payroll are the same as in Nowshahr. Karaj-specific check sizes and wages have not been measured yet.
+- **Sample:** all `shop-rent` ads on Divar for the zone's districts, 25–200 m², with rent and deposit of at least 1 million toman (full-rahn, placeholder and "agreed" prices are dropped). Each ad is assigned to a zone by the district Divar records on the ad itself, because Divar pads thin district pages with nearby ads. Nowshahr has no Divar districts, so ads are assigned by the street named in the ad's location, then its title and description; ads that name no zone street are left out.
+- **Main street vs. side street:** an ad counts as main-street when its title or description says so (حاشیه, بر خیابان/بلوار, نبش, دونبش, تابلوخور, خیابان اصلی, پرتردد …). Sellers rarely say "side street", so the other group is "not stated as main street" (side streets, malls and unclear ads).
+- **Zone rent (`rent`, `deposit`):** median asking rent and deposit per m² of main-street ads when there are at least 6, because a restaurant usually needs frontage; otherwise the median of all ads (`rent_basis`). `rent_other` is the median of the other group.
+- **Confidence:** `0.5 + 0.25 × min(1, n / 20) + 0.2 × clamp(1.5 − relative IQR, 0, 1)`, where `n` is the number of ads behind the rent and relative IQR is (Q3 − Q1) / median of their rent per m². With fewer than 12 ads the confidence is capped at 0.70, so a small sample never reaches the 0.75 low-risk threshold. Zones with fewer than 3 ads keep their previous rent and get at most 0.55.
+- **Demand index:** 0.6 × review-volume index + 0.4 × rent index (both scaled to the city's top zone = 100).
+- These are asking prices, not contract rents, and have not been checked on the ground.
 
-Next steps to raise confidence: a larger ad sample per zone, main-street versus side-street rent split, field counts of active venues, and Karaj average-check data.
+### Samples (ads behind the rent / all ads)
 
+| City | Zone | Basis | Ads |
+|---|---|---|---|
+| Mashhad | M01 Sajjad–Baharestan | main street | 35 / 49 |
+| Mashhad | M02 Ahmadabad–Kuhsangi–Rezashahr | main street | 47 / 75 |
+| Mashhad | M03 Vakilabad–Kowsar | main street | 50 / 69 |
+| Mashhad | M04 Haram–Imam Reza | main street | 15 / 43 |
+| Mashhad | M05 Ghasemabad–Shahed | main street | 34 / 49 |
+| Mashhad | M06 Tollab–Tabarsi | main street | 9 / 16 |
+| Karaj | K01 Azimieh | main street | 27 / 65 |
+| Karaj | K02 Jahanshahr | main street | 8 / 17 |
+| Karaj | K03 Gohardasht | main street | 68 / 120 |
+| Karaj | K04 Mehrshahr (all phases) | main street | 24 / 53 |
+| Karaj | K05 Baghestan–Shahinvilla | main street | 32 / 96 |
+| Karaj | K06 Golshahr–Mehrvilla | main street | 58 / 115 |
+| Nowshahr | Z01 15 Khordad | previous value | 1 |
+| Nowshahr | Z02 Karimi | main street | 6 / 9 |
+| Nowshahr | Z03 Ferdowsi–Saadi | previous value | 2 |
+| Nowshahr | Z04 Imam Reza–Daryasar | all ads | 7 |
+| Nowshahr | Z05 Haft-e Tir–Kargar | all ads | 5 |
+| Nowshahr | Z06 Airport–Amirrud | all ads | 6 |
 
-## Mashhad benchmark (preliminary, re-measured 2026-09-26)
+Mashhad Haram (M04) is tagged «بازار زائر · فصلی»: pilgrim demand peaks in holidays and religious occasions and is only partly reflected in local review volume. Active-venue counts, review volumes and concept whitespace (`w`) still come from the earlier Google Maps samples. Concept setup cost, average check and payroll are shared across cities.
 
-- **Rent and deposit per m²:** median asking rent and deposit per m² of 25–200 m² `shop-rent` ads on Divar, retrieved 2026-09-26. Each ad was assigned to a zone by the district Divar records on the ad itself, not by the search page it appeared on (Divar pads thin neighbourhood pages with nearby ads). Ads with rent or deposit under 1 million toman (full-rahn, placeholder or "agreed" prices) were dropped. Districts and sample sizes:
-  - M01 Sajjad–Baharestan: Sajjadshahr, Shahrak-e Baharestan — 49 ads
-  - M02 Ahmadabad–Kuhsangi–Rezashahr: Ahmadabad, Rezashahr, Kuhsangi — 75 ads
-  - M03 Vakilabad–Kowsar: Kuy-e Kowsar, Vakilabad — 63 ads (Hashemiyeh could not be queried separately)
-  - M04 Haram–Imam Reza: Imam Reza (AS) St, Onsori, Bala-Khiaban, Charbagh, Payin-Khiaban, Holy Shrine, Noghan — 43 ads
-  - M05 Ghasemabad–Shahrak-e Gharb–Shahed: Shahed, Shahrak-e Emam Hadi, Ghasemabad — 49 ads
-  - M06 Tollab–Tabarsi: North Tabarsi, Tollab, Tabarsi — 16 ads
-- These are asking prices, not contract rents. Spread inside each zone is wide (for example, Sajjad's interquartile range is roughly 0.6–4 million toman per m²), because main-street and side-street shops are still mixed.
-- This pass replaced the earlier Mashhad figures, which were several times lower than the current Divar medians and covered only three zones.
-- **Active venues and review volume:** a Google Maps sample of about 94 food-service venues found by zone-specific searches.
-- **Demand index:** 0.6 × review-volume index + 0.4 × rent index (both scaled to the top zone = 100).
-- **Pilgrim market:** the Haram zone is tagged «بازار زائر · فصلی». Pilgrim demand is concentrated in holidays and religious occasions and is only partly reflected in local review volume.
-- **Confidence:** 0.62 at 6 ads, rising linearly to a cap of 0.72 at 18+ ads (Tollab–Tabarsi: 0.70). All are below the 0.75 threshold, so the low-risk mode still shows no Mashhad options until main-street versus side-street rents are split and checked on the ground.
+Next steps: field checks of a few main-street rents per zone, more Nowshahr sources, and local average-check and wage data.
 
 ## Cross-city comparison
 
