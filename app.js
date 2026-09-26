@@ -1,204 +1,10 @@
 "use strict";
-const NOWSHAHR_ZONES = [
-  {
-    id: "Z01",
-    name: "۱۵ خرداد–چمران–همافران",
-    demand: 80,
-    active: 20,
-    reviews: 982,
-    rent: 916667,
-    deposit: 8750000,
-    confidence: 0.73,
-    w: { qsr: 20, cafe: 0, traditional: 28 },
-  },
-  {
-    id: "Z02",
-    name: "کریدور کریمی",
-    demand: 22,
-    active: 9,
-    reviews: 109,
-    rent: 719224,
-    deposit: 6560000,
-    confidence: 0.7,
-    w: { qsr: 0, cafe: 52, traditional: 60 },
-  },
-  {
-    id: "Z03",
-    name: "فردوسی–سعدی",
-    demand: 48,
-    active: 7,
-    reviews: 835,
-    rent: null,
-    deposit: null,
-    confidence: 0.37,
-    w: { qsr: 24, cafe: 38, traditional: 0 },
-  },
-  {
-    id: "Z04",
-    name: "امام رضا–دریاسر–شمع‌جاران",
-    demand: 92,
-    active: 16,
-    reviews: 1464,
-    rent: 312054,
-    deposit: 4960000,
-    confidence: 0.72,
-    w: { qsr: 1, cafe: 46, traditional: 0 },
-  },
-  {
-    id: "Z05",
-    name: "هفت‌تیر–کارگر–عدالت",
-    demand: 9,
-    active: 4,
-    reviews: 21,
-    rent: 673280,
-    deposit: 6840000,
-    confidence: 0.68,
-    w: { qsr: 34, cafe: 0, traditional: 0 },
-  },
-  {
-    id: "Z06",
-    name: "فرودگاه–امیررود–کمربندی",
-    demand: 19,
-    active: 5,
-    reviews: 221,
-    rent: 521815,
-    deposit: 5280000,
-    confidence: 0.77,
-    w: { qsr: 47, cafe: 0, traditional: 100 },
-  },
-];
-
-// Karaj zones — preliminary benchmark (Sep 2026).
-// rent / deposit: median asking price per m² of 25–150 m² shop ads on Divar
-// neighbourhood pages (retrieved 2026-09-26). active / reviews: Google Maps
-// sample of food-service venues per zone. demand = 0.6 × review-volume index
-// + 0.4 × rent index. w = under-representation of each concept family versus
-// the city-wide mix. confidence scales with the size of the rent sample and
-// stays below 0.75, so the conservative risk mode excludes Karaj until the
-// benchmark is verified. See METHODOLOGY.md.
-const KARAJ_ZONES = [
-  {
-    id: "K01",
-    name: "عظیمیه (کاج–گلستان–استقلال)",
-    demand: 65,
-    active: 16,
-    reviews: 1042,
-    rent: 314286,
-    deposit: 2500000,
-    confidence: 0.62,
-    w: { qsr: 40, cafe: 45, traditional: 35 },
-    advice:
-      "گران‌ترین محور نمونه است؛ فقط وقتی سراغش برو که ملک بر بلوار اصلی، دید خوب و امکان توقف داشته باشد. رقابت کافه و فست‌فود هم جدی است.",
-  },
-  {
-    id: "K02",
-    name: "جهانشهر–مولانا–بلوار جمهوری",
-    demand: 81,
-    active: 17,
-    reviews: 2485,
-    rent: 166667,
-    deposit: 1750000,
-    confidence: 0.58,
-    w: { qsr: 55, cafe: 42, traditional: 60 },
-    advice:
-      "بیشترین حجم نظر مشتری در نمونه را دارد و اجاره‌اش از عظیمیه منطقی‌تر است، ولی نمونه آگهی این محدوده کوچک است؛ قیمت چند ملک را حضوری بپرس.",
-  },
-  {
-    id: "K03",
-    name: "گوهردشت (رستاخیز–موذن–داریوش)",
-    demand: 45,
-    active: 10,
-    reviews: 1056,
-    rent: 154545,
-    deposit: 1506849,
-    confidence: 0.68,
-    w: { qsr: 47, cafe: 36, traditional: 41 },
-    advice:
-      "بازار محله‌ای و دانشجویی دارد؛ ملک بر خیابان رستاخیز یا نزدیک دانشگاه را با قیمت معقول و تمرکز روی بیرون‌بر ببین.",
-  },
-  {
-    id: "K04",
-    name: "مهرشهر (ارم–گلها–فاز ۴)",
-    demand: 67,
-    active: 18,
-    reviews: 2064,
-    rent: 130435,
-    deposit: 1521739,
-    confidence: 0.72,
-    w: { qsr: 40, cafe: 77, traditional: 55 },
-    advice:
-      "تقاضای خوب با اجاره متعادل؛ در نمونه، کافه نسبت به فست‌فود کمتر دیده شد. بلوار ارم و گلها را برای دید و پارک بررسی کن.",
-  },
-  {
-    id: "K05",
-    name: "باغستان–شاهین‌ویلا",
-    demand: 24,
-    active: 5,
-    reviews: 402,
-    rent: 116250,
-    deposit: 2091346,
-    confidence: 0.66,
-    w: { qsr: 47, cafe: 63, traditional: 67 },
-    advice:
-      "رقابت کمتر است ولی تقاضای ثبت‌شده هم کم است؛ ملک ارزان به‌تنهایی کافی نیست و تردد واقعی همان نقطه را باید دید.",
-  },
-  {
-    id: "K06",
-    name: "گلشهر–مهرویلا",
-    demand: 16,
-    active: 7,
-    reviews: 291,
-    rent: 71429,
-    deposit: 857143,
-    confidence: 0.72,
-    w: { qsr: 90, cafe: 27, traditional: 30 },
-    advice:
-      "ارزان‌ترین محدوده نمونه و کم‌رقابت برای فست‌فود و ارسال‌محور؛ بیشتر به درد مدل بیرون‌بر و دلیوری با اجاره پایین می‌خورد.",
-  },
-];
-const CITIES = {
-  nowshahr: {
-    id: "nowshahr",
-    name: "نوشهر",
-    zones: NOWSHAHR_ZONES,
-    propertiesFile: "./data/properties.json",
-    divarCity: "نوشهر",
-    usedMarketCities: ["نوشهر", "ساری", "آمل", "بابل", "رشت"],
-    dataNote: "غربال اولیه بر اساس داده فعلی نوشهر",
-    sources: [
-      ["دیوار — املاک تجاری نوشهر", "https://divar.ir/s/nowshahr/rent-commercial-property"],
-      ["MelkRadar — املاک نوشهر", "https://melkradar.com/dir/v1/4/2011/0/%D9%86%D9%88%D8%B4%D9%87%D8%B1"],
-      ["ShishDong — اجاره مغازه نوشهر", "https://shishdong.com/homes/c_Nowshahr/a_property/t_Shop/rent?orderBy=0"],
-    ],
-  },
-  karaj: {
-    id: "karaj",
-    name: "کرج",
-    zones: KARAJ_ZONES,
-    propertiesFile: null,
-    divarCity: "کرج",
-    usedMarketCities: ["کرج", "تهران", "فردیس", "هشتگرد"],
-    dataNote:
-      "غربال اولیه بر اساس بنچمارک مقدماتی کرج (شهریور ۱۴۰۵)؛ داده کرج هنوز راستی‌آزمایی میدانی نشده است",
-    sources: [
-      ["دیوار — مغازه عظیمیه", "https://divar.ir/s/karaj/rent-store/azimieh"],
-      ["دیوار — مغازه جهانشهر", "https://divar.ir/s/karaj/rent-store/jahanshahr"],
-      ["دیوار — مغازه گوهردشت", "https://divar.ir/s/karaj/rent-store/gohardasht"],
-      ["دیوار — مغازه مهرشهر فاز ۴", "https://divar.ir/s/karaj/rent-store/mehrshahr"],
-      ["دیوار — مغازه باغستان", "https://divar.ir/s/karaj/rent-store/baghestan"],
-      ["دیوار — مغازه گلشهر", "https://divar.ir/s/karaj/rent-store/golshahr"],
-    ],
-  },
-};
-function initialCity() {
-  try {
-    const q = new URLSearchParams(location.search).get("city");
-    if (q && CITIES[q]) return q;
-  } catch {}
-  return "nowshahr";
-}
-let city = CITIES[initialCity()],
-  zones = city.zones;
+// City benchmarks live in data/cities/<id>.json, listed in data/cities/index.json.
+// See README.md ("Cities") for the file format and how to add a city.
+let CITIES = {},
+  cityOrder = [],
+  city = null,
+  zones = [];
 const concepts = [
   {
     id: "burger",
@@ -453,20 +259,60 @@ const esc = (value) =>
         char
       ],
   );
-let maxRPB = Math.max(...zones.map((z) => z.reviews / z.active));
+let maxRPB = 1;
 let step = 1,
   answers = {},
   propertyData = { meta: null, properties: [] },
   equipmentData = { methodology: {}, items: {}, kits: {} },
   activePlannerKey = 0,
   propertyDetailCache = new Map();
+function cityMaxRPB(c) {
+  return Math.max(...c.zones.map((z) => z.reviews / z.active));
+}
+function requestedCity() {
+  try {
+    const q = new URLSearchParams(location.search).get("city");
+    if (q && CITIES[q]) return q;
+  } catch {}
+  return CITIES.nowshahr ? "nowshahr" : cityOrder[0];
+}
+async function loadCities() {
+  const index = await fetch("./data/cities/index.json", {
+    cache: "no-store",
+  }).then((r) => {
+    if (!r.ok) throw new Error(`city index ${r.status}`);
+    return r.json();
+  });
+  const loaded = await Promise.allSettled(
+    index.cities.map((entry) =>
+      fetch(`./data/cities/${entry.file}`, { cache: "no-store" }).then((r) => {
+        if (!r.ok) throw new Error(`city ${entry.id} ${r.status}`);
+        return r.json();
+      }),
+    ),
+  );
+  loaded.forEach((result, i) => {
+    if (result.status === "fulfilled" && result.value.zones?.length) {
+      CITIES[result.value.id] = result.value;
+      cityOrder.push(result.value.id);
+    } else console.warn("City data unavailable", index.cities[i], result.reason);
+  });
+  if (!cityOrder.length) throw new Error("no city data");
+  useCity(requestedCity());
+}
+function useCity(id) {
+  city = CITIES[id];
+  zones = city.zones;
+  maxRPB = cityMaxRPB(city);
+}
 async function loadCityProperties() {
-  if (!city.propertiesFile) return { meta: null, properties: [] };
-  const r = await fetch(city.propertiesFile, { cache: "no-store" });
+  if (!city.properties_file) return { meta: null, properties: [] };
+  const r = await fetch(`./${city.properties_file}`, { cache: "no-store" });
   if (!r.ok) throw new Error(`property data ${r.status}`);
   return r.json();
 }
 async function loadPlannerData() {
+  await loadCities();
   const [properties, equipment] = await Promise.allSettled([
     loadCityProperties(),
     fetch("./data/equipment-catalog.json", { cache: "no-store" }).then((r) => {
@@ -485,14 +331,20 @@ async function loadPlannerData() {
 function riskThreshold(r) {
   return r === "low" ? 0.75 : r === "high" ? 0.55 : 0.65;
 }
-function evaluate(a) {
+function evaluate(a, forCity = city) {
   if (!a.budget || !a.size || !a.concept || !a.operation || !a.risk) return [];
   const selected =
-    a.concept === "any" ? concepts : concepts.filter((c) => c.id === a.concept);
-  const maxRent = Math.max(...zones.filter((z) => z.rent).map((z) => z.rent)),
+      a.concept === "any"
+        ? concepts
+        : concepts.filter((c) => c.id === a.concept),
+    cityZones = forCity.zones,
+    cityRPB = forCity === city ? maxRPB : cityMaxRPB(forCity);
+  const maxRent = Math.max(
+      ...cityZones.filter((z) => z.rent).map((z) => z.rent),
+    ),
     rows = [];
   for (const c of selected)
-    for (const z of zones) {
+    for (const z of cityZones) {
       const monthlyRent = (z.rent || 0) * a.size,
         deposit = (z.deposit || 0) * a.size,
         scale = 0.65 + 0.35 * clamp(a.size / c.target, 0.55, 1.45),
@@ -504,7 +356,7 @@ function evaluate(a) {
           monthlyRent / 0.06,
         ),
         tickets = healthy / c.check / 30,
-        reviewIntensity = (100 * (z.reviews / z.active)) / maxRPB,
+        reviewIntensity = (100 * (z.reviews / z.active)) / cityRPB,
         zoneDemand = 0.75 * z.demand + 0.25 * reviewIntensity,
         opportunity = 0.8 * zoneDemand + 0.2 * z.w[c.white],
         supported = 40 * (0.5 + opportunity / 100) * c.mult,
@@ -541,8 +393,10 @@ function evaluate(a) {
           z.confidence >= riskThreshold(a.risk) &&
           z.rent !== null;
       rows.push({
+        city: forCity,
         concept: c,
         zone: z,
+        monthlyRent,
         capital,
         tickets,
         coverage,
@@ -555,13 +409,13 @@ function evaluate(a) {
     (x, y) => (x.eligible ? 0 : 1) - (y.eligible ? 0 : 1) || y.score - x.score,
   );
 }
-function viableCompletions(partial) {
+function viableCompletions(partial, forCity = city) {
   const missing = Object.keys(values).filter((k) => partial[k] === undefined);
   let count = 0;
   function walk(i, obj) {
     if (count > 5) return;
     if (i === missing.length) {
-      if (evaluate(obj).some((x) => x.eligible)) count++;
+      if (evaluate(obj, forCity).some((x) => x.eligible)) count++;
       return;
     }
     for (const v of values[missing[i]])
@@ -577,13 +431,33 @@ function refreshOptionAvailability() {
       const value = ["budget", "size"].includes(key)
           ? Number(btn.dataset.value)
           : btn.dataset.value,
-        count = viableCompletions({ ...answers, [key]: value });
-      btn.disabled = count === 0;
+        partial = { ...answers, [key]: value },
+        count = viableCompletions(partial),
+        elsewhere =
+          count === 0
+            ? cityOrder.filter(
+                (id) =>
+                  CITIES[id] !== city &&
+                  viableCompletions(partial, CITIES[id]) > 0,
+              )
+            : [];
+      btn.disabled = count === 0 && !elsewhere.length;
       btn.classList.toggle("limited", count > 0 && count <= 2);
-      btn.dataset.disabledReason =
-        count === 0
-          ? "با انتخاب‌های فعلی نتیجه قابل‌عرضه‌ای باقی نمی‌ماند"
-          : "";
+      btn.classList.toggle("elsewhere", elsewhere.length > 0);
+      let hint = btn.querySelector(".elsewhere-hint");
+      if (elsewhere.length) {
+        if (!hint) {
+          hint = document.createElement("em");
+          hint.className = "elsewhere-hint";
+          btn.appendChild(hint);
+        }
+        hint.textContent = `در ${city.name} نه؛ در ${elsewhere
+          .map((id) => CITIES[id].name)
+          .join(" و ")} شدنی`;
+      } else hint?.remove();
+      btn.dataset.disabledReason = btn.disabled
+        ? "با انتخاب‌های فعلی نتیجه قابل‌عرضه‌ای باقی نمی‌ماند"
+        : "";
       if (btn.disabled && btn.classList.contains("active")) {
         btn.classList.remove("active");
         delete answers[key];
@@ -659,8 +533,8 @@ function propertyHtml(row) {
   return `<div class="property-section"><h4>🏪 چند فایل ملک مرتبط برای شروع جست‌وجو</h4><div class="property-note">این فایل‌ها Lead هستند، نه توصیه قطعی. موجود بودن آگهی و قیمت را داخل دیوار دوباره کنترل کن؛ تا زمان تأیید تازه‌بودن وارد Benchmark جاری اجاره نمی‌شوند.</div><div class="property-list">${props.map((p) => `<a class="property-card" href="${p.url}" target="_blank" rel="noopener"><b>${p.title}</b><div class="price">رهن ${money(p.deposit)} · اجاره ${money(p.rent)} / ماه</div><small>${p.area ? `${fmt(p.area)} متر · ` : ""}${p.micro_area} · ${p.signal}</small></a>`).join("")}</div></div>`;
 }
 function sourceHtml() {
-  const general = city.sources;
-  return `<details><summary>🔗 منابع ملک و اجاره مورد استفاده</summary><div class="sources">${general.map((x) => `<a class="source" href="${x[1]}" target="_blank" rel="noopener"><b>${x[0]}</b><small>مشاهده منبع</small></a>`).join("")}</div><div class="sub">قیمت آگهی با اجاره قطعی قرارداد یکی نیست.</div></details>`;
+  const general = city.sources || [];
+  return `<details><summary>🔗 منابع ملک و اجاره مورد استفاده</summary><div class="sources">${general.map((x) => `<a class="source" href="${esc(x.url)}" target="_blank" rel="noopener"><b>${esc(x.label)}</b><small>مشاهده منبع</small></a>`).join("")}</div><div class="sub">قیمت آگهی با اجاره قطعی قرارداد یکی نیست.</div></details>`;
 }
 function equipmentSizeBand() {
   return answers.size <= 60
@@ -841,7 +715,7 @@ async function renderLiveProperties(row, plannerKey) {
   state.textContent = "در حال دریافت آگهی‌های زنده دیوار…";
   try {
     const result = await window.RestaurantMarket.searchProperties({
-      city: city.divarCity,
+      city: city.divar_city,
       pages: 2,
       limit: 20,
     });
@@ -903,7 +777,7 @@ async function loadEquipmentOffers(button, itemId, budget) {
   target.innerHTML =
     '<div class="coverage-note">آگهی‌های دست‌دوم دیوار و محصولات نوی دیجی‌کالا در حال بررسی‌اند.</div>';
   try {
-    const result = await window.RestaurantMarket.searchEquipment(item, budget, city.usedMarketCities);
+    const result = await window.RestaurantMarket.searchEquipment(item, budget, city.used_market_cities);
     target.innerHTML = `<div class="offer-columns">${offerColumn("دست‌دوم · دیوار", "used", result.used)}${offerColumn("نو · دیجی‌کالا", "new", result.new)}</div><div class="coverage-note">قیمت‌ها پیشنهادی و لحظه‌ای‌اند. پیش از خرید، مدل دقیق، ظرفیت، سلامت فنی، هزینه حمل و نصب را تأیید کن.</div>`;
     button.textContent = "به‌روزرسانی پیشنهادها";
   } catch (error) {
@@ -962,8 +836,8 @@ function renderResults() {
   if (!top.length) {
     overall.innerHTML = "";
     document.getElementById("launchIntelligence").hidden = true;
-    list.innerHTML =
-      '<div class="result"><b>با این شرایط فعلاً گزینه قابل‌عرضه‌ای نداریم.</b></div>';
+    list.innerHTML = `<div class="result"><b>با این شرایط فعلاً در ${esc(city.name)} گزینه قابل‌عرضه‌ای نداریم.</b></div>`;
+    renderCrossCity(null);
     return;
   }
   const first = top[0],
@@ -985,9 +859,59 @@ function renderResults() {
             : r.coverage >= 1
               ? "تقاضای تقریبی فعلاً از حداقل فروش لازم بالاتر است، اما حاشیه اطمینان زیاد نیست."
               : "برای رسیدن به فروش سالم فشار بیشتری روی جذب مشتری داری.";
-      return `<article class="result"><div class="result-top"><div class="rank">#${i + 1}</div><div><h3>${r.concept.emoji} ${r.concept.name}</h3><div class="sub">📍 ${r.zone.name}</div></div><div class="status ${cls}">${status}</div></div><div class="cards"><div class="metric"><small>پول تقریبی لازم</small><b>${money(r.capital)}</b><div class="bar"><i style="width:${clamp(((answers.budget - r.capital) / answers.budget) * 100 + 55)}%"></i></div></div><div class="metric"><small>فروش روزانه لازم</small><b>حدود ${fmt(r.tickets)} سفارش</b></div><div class="metric"><small>تقاضای منطقه</small><b>${r.coverage >= 1.5 ? "قوی" : r.coverage >= 1 ? "قابل‌قبول" : "ضعیف"}</b></div></div><div class="advisor"><h4>🧭 راهنمای عملی این پیشنهاد</h4><div class="advisor-grid"><div class="advisor-box"><b>کجای شهر را اول بگردم؟</b><p>${zoneAdvice(r.zone)}</p></div><div class="advisor-box"><b>چه جور ملکی دنبالش باشم؟</b><p>${conceptAdvice(r.concept)}</p></div><div class="advisor-box"><b>چرا پیشنهاد شده؟</b><p>${why}</p></div><div class="advisor-box"><b>موقع بازدید ملک چه چیزهایی مهم است؟</b><p>هود و مسیر اگزاست، برق و گاز کافی، اجازه کتبی مالک برای فعالیت غذایی و امکان توقف مشتری یا پیک را بررسی کن.</p></div></div><div class="action"><b>قدم‌های بعدی</b><ol><li>۳ تا ۵ ملک در همین محدوده ذخیره کن.</li><li>رهن، اجاره، متراژ واقعی و امکانات فنی را مقایسه کن.</li><li>قبل از قرارداد در دو زمان شلوغ و یک زمان خلوت، ۳۰ دقیقه تردد واقعی اطراف ملک را ببین.</li></ol></div></div>${propertyHtml(r)}${sourceHtml()}</article>`;
+      return `<article class="result"><div class="result-top"><div class="rank">#${i + 1}</div><div><h3>${r.concept.emoji} ${r.concept.name}</h3><div class="sub">📍 ${r.zone.name}${r.zone.tag ? ` <span class="zone-tag">${esc(r.zone.tag)}</span>` : ""}</div></div><div class="status ${cls}">${status}</div></div><div class="cards"><div class="metric"><small>پول تقریبی لازم</small><b>${money(r.capital)}</b><div class="bar"><i style="width:${clamp(((answers.budget - r.capital) / answers.budget) * 100 + 55)}%"></i></div></div><div class="metric"><small>فروش روزانه لازم</small><b>حدود ${fmt(r.tickets)} سفارش</b></div><div class="metric"><small>تقاضای منطقه</small><b>${r.coverage >= 1.5 ? "قوی" : r.coverage >= 1 ? "قابل‌قبول" : "ضعیف"}</b></div></div><div class="advisor"><h4>🧭 راهنمای عملی این پیشنهاد</h4><div class="advisor-grid"><div class="advisor-box"><b>کجای شهر را اول بگردم؟</b><p>${zoneAdvice(r.zone)}</p></div><div class="advisor-box"><b>چه جور ملکی دنبالش باشم؟</b><p>${conceptAdvice(r.concept)}</p></div><div class="advisor-box"><b>چرا پیشنهاد شده؟</b><p>${why}</p></div><div class="advisor-box"><b>موقع بازدید ملک چه چیزهایی مهم است؟</b><p>هود و مسیر اگزاست، برق و گاز کافی، اجازه کتبی مالک برای فعالیت غذایی و امکان توقف مشتری یا پیک را بررسی کن.</p></div></div><div class="action"><b>قدم‌های بعدی</b><ol><li>۳ تا ۵ ملک در همین محدوده ذخیره کن.</li><li>رهن، اجاره، متراژ واقعی و امکانات فنی را مقایسه کن.</li><li>قبل از قرارداد در دو زمان شلوغ و یک زمان خلوت، ۳۰ دقیقه تردد واقعی اطراف ملک را ببین.</li></ol></div></div>${propertyHtml(r)}${sourceHtml()}</article>`;
     })
     .join("");
+  renderCrossCity(first);
+}
+function crossCityReason(rows, a, forCity) {
+  if (!rows.length) return "داده‌ای برای این انتخاب‌ها نیست.";
+  const affordable = rows.some((r) => r.capital <= a.budget);
+  if (!affordable) return "با این سرمایه در این شهر مسیری پیدا نشد.";
+  if (forCity.zones.every((z) => z.confidence < riskThreshold(a.risk)))
+    return "داده این شهر برای این سطح ریسک هنوز کافی نیست؛ با ریسک «متوسط» یا «زیاد» امتحان کن.";
+  return "با این ترکیب انتخاب‌ها گزینه قابل‌عرضه‌ای نماند.";
+}
+function deltaText(value, base, unit) {
+  if (!base) return "";
+  const diff = value - base;
+  if (Math.abs(diff) / base < 0.05) return '<span class="delta same">تقریباً برابر</span>';
+  const txt = unit === "money" ? money(Math.abs(diff)) : `${fmt(Math.abs(diff))} سفارش`;
+  return diff < 0
+    ? `<span class="delta better">${txt} کمتر</span>`
+    : `<span class="delta worse">${txt} بیشتر</span>`;
+}
+function renderCrossCity(base) {
+  const root = document.getElementById("crossCity");
+  if (!root) return;
+  const others = cityOrder.filter((id) => id !== city.id);
+  if (!others.length) {
+    root.hidden = true;
+    root.innerHTML = "";
+    return;
+  }
+  const cards = others.map((id) => {
+    const other = CITIES[id],
+      rows = evaluate(answers, other),
+      best = rows.find((r) => r.eligible);
+    const head = `<div class="xc-head"><b>${esc(other.emoji || "📍")} ${esc(other.name)}</b><span class="quality q-${esc(other.quality)}">${esc(other.quality_label || "")}</span></div>`;
+    if (!best)
+      return `<article class="xc-card muted">${head}<p>${crossCityReason(rows, answers, other)}</p></article>`;
+    return `<article class="xc-card">${head}<p class="xc-pick">${best.concept.emoji} <b>${esc(best.concept.name)}</b> در ${esc(best.zone.name)}${best.zone.tag ? ` <span class="zone-tag">${esc(best.zone.tag)}</span>` : ""}</p><dl class="xc-metrics"><div><dt>پول تقریبی لازم</dt><dd>${money(best.capital)}</dd>${base ? deltaText(best.capital, base.capital, "money") : ""}</div><div><dt>اجاره ماهانه برآوردی</dt><dd>${money(best.monthlyRent)}</dd>${base ? deltaText(best.monthlyRent, base.monthlyRent, "money") : ""}</div><div><dt>فروش روزانه لازم</dt><dd>حدود ${fmt(Math.round(best.tickets))} سفارش</dd>${base ? deltaText(best.tickets, base.tickets, "orders") : ""}</div></dl><button class="btn secondary xc-go" data-city-go="${esc(id)}">دیدن نتیجه کامل در ${esc(other.name)}</button></article>`;
+  });
+  const title = base
+    ? "همین انتخاب‌ها در شهرهای دیگر"
+    : `در ${esc(city.name)} نشد؛ در شهرهای دیگر چطور؟`,
+    lead = base
+      ? `مقایسه با گزینه اول تو در ${esc(city.name)} (${esc(base.concept.name)}، ${esc(base.zone.name)}).`
+      : "با همین سرمایه، متراژ، مدل و سطح ریسک.";
+  root.hidden = false;
+  root.innerHTML = `<div class="xc-title"><h3>🗺️ ${title}</h3><p>${lead}</p></div><div class="xc-grid">${cards.join("")}</div><p class="xc-note">بازار هر شهر فرق دارد (مثلاً نوشهر فصلی و توریستی است و مشهد بازار زائر دارد). «تقاضای منطقه» هر شهر نسبت به محله‌های همان شهر سنجیده می‌شود، پس این‌جا فقط پول، اجاره و فروش لازم را کنار هم گذاشته‌ایم. هزینه راه‌اندازی، میانگین فاکتور و حقوق فعلاً برای همه شهرها یکسان فرض شده است.</p>`;
+  root.querySelectorAll("[data-city-go]").forEach((btn) =>
+    btn.addEventListener("click", () =>
+      setCity(btn.dataset.cityGo, { keepAnswers: true }),
+    ),
+  );
 }
 document.querySelectorAll("[data-key]").forEach((group) => {
   const key = group.dataset.key;
@@ -1034,26 +958,78 @@ function resetWizard() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 document.getElementById("restart").addEventListener("click", resetWizard);
+const normalizeFa = (t) =>
+  String(t || "")
+    .replace(/ي/g, "ی")
+    .replace(/ك/g, "ک")
+    .replace(/\u200c/g, " ")
+    .trim()
+    .toLowerCase();
+function renderCityList(filter = "") {
+  const list = document.getElementById("cityList");
+  const q = normalizeFa(filter);
+  const ids = cityOrder.filter(
+    (id) =>
+      !q ||
+      normalizeFa(`${CITIES[id].name} ${CITIES[id].province || ""} ${id}`).includes(q),
+  );
+  list.innerHTML = ids.length
+    ? ids
+        .map((id) => {
+          const c = CITIES[id];
+          return `<li><button role="option" aria-selected="${c === city}" data-city="${esc(id)}" class="${c === city ? "active" : ""}"><span>${esc(c.emoji || "📍")} <b>${esc(c.name)}</b><small>${esc(c.province || "")}</small></span><span class="quality q-${esc(c.quality)}">${esc(c.quality_label || "")}</span></button></li>`;
+        })
+        .join("")
+    : '<li class="empty">شهری با این نام هنوز اضافه نشده است.</li>';
+  list.querySelectorAll("[data-city]").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      closeCityPanel();
+      setCity(btn.dataset.city);
+    }),
+  );
+}
+function openCityPanel() {
+  const panel = document.getElementById("cityPanel"),
+    search = document.getElementById("citySearch");
+  panel.hidden = false;
+  document.getElementById("cityButton").setAttribute("aria-expanded", "true");
+  search.value = "";
+  renderCityList();
+  search.focus();
+}
+function closeCityPanel() {
+  document.getElementById("cityPanel").hidden = true;
+  document.getElementById("cityButton").setAttribute("aria-expanded", "false");
+}
 function applyCityText() {
   document.querySelectorAll("[data-city-name]").forEach((el) => {
     el.textContent = city.name;
   });
-  document.getElementById("resultsNote").textContent = city.dataNote;
-  document.getElementById("cityNotice").hidden = city.id !== "karaj";
+  document.getElementById("resultsNote").textContent = city.data_note || "";
+  const notice = document.getElementById("cityNotice");
+  notice.hidden = !city.notice;
+  notice.textContent = city.notice || "";
   document.title = `رستوران‌نما — امکان‌سنجی رستوران در ${city.name}`;
-  document.querySelectorAll(".city-tab").forEach((btn) => {
-    const on = btn.dataset.city === city.id;
-    btn.classList.toggle("active", on);
-    btn.setAttribute("aria-pressed", String(on));
-  });
-  const link = document.getElementById("propertiesLink");
-  if (link) link.href = `./properties.html?city=${city.id}`;
+  document.getElementById("cityButtonName").textContent =
+    `${city.emoji || ""} ${city.name}`.trim();
+  const quality = document.getElementById("cityQuality");
+  quality.textContent = city.quality_label || "";
+  quality.className = `quality q-${city.quality}`;
+  document.getElementById("cityCount").textContent = `${fmt(cityOrder.length)} شهر`;
 }
-async function setCity(id) {
+function markAnswers() {
+  document.querySelectorAll("[data-key]").forEach((group) => {
+    group.querySelectorAll(".option").forEach((btn) => {
+      const v = ["budget", "size"].includes(group.dataset.key)
+        ? Number(btn.dataset.value)
+        : btn.dataset.value;
+      btn.classList.toggle("active", answers[group.dataset.key] === v);
+    });
+  });
+}
+async function setCity(id, { keepAnswers = false } = {}) {
   if (!CITIES[id] || CITIES[id] === city) return;
-  city = CITIES[id];
-  zones = city.zones;
-  maxRPB = Math.max(...zones.map((z) => z.reviews / z.active));
+  useCity(id);
   propertyDetailCache = new Map();
   activePlannerKey++;
   try {
@@ -1068,10 +1044,33 @@ async function setCity(id) {
     propertyData = { meta: null, properties: [] };
     console.warn("Property data unavailable", error);
   }
-  resetWizard();
+  if (keepAnswers && stepKey && Object.values(stepKey).every((k) => answers[k] !== undefined)) {
+    markAnswers();
+    renderResults();
+    step = 6;
+    showStep();
+    document.querySelector(".results-head")?.scrollIntoView({ behavior: "smooth" });
+  } else resetWizard();
 }
-document.querySelectorAll(".city-tab").forEach((btn) =>
-  btn.addEventListener("click", () => setCity(btn.dataset.city)),
-);
-applyCityText();
-loadPlannerData().finally(showStep);
+document.getElementById("cityButton").addEventListener("click", () => {
+  if (document.getElementById("cityPanel").hidden) openCityPanel();
+  else closeCityPanel();
+});
+document
+  .getElementById("citySearch")
+  .addEventListener("input", (e) => renderCityList(e.target.value));
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".city-picker")) closeCityPanel();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeCityPanel();
+});
+loadPlannerData()
+  .then(applyCityText)
+  .catch((error) => {
+    console.error(error);
+    document.getElementById("cityNotice").hidden = false;
+    document.getElementById("cityNotice").textContent =
+      "داده شهرها بارگذاری نشد. صفحه را دوباره باز کن.";
+  })
+  .finally(() => city && showStep());

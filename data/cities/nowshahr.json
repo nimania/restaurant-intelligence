@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "id": "nowshahr",
+  "name": "نوشهر",
+  "province": "مازندران",
+  "emoji": "🌊",
+  "quality": "benchmark",
+  "quality_label": "بنچمارک پایه",
+  "retrieved_at": "2026-09-13",
+  "notice": null,
+  "divar_city": "نوشهر",
+  "used_market_cities": [
+    "نوشهر",
+    "ساری",
+    "آمل",
+    "بابل",
+    "رشت"
+  ],
+  "properties_file": "data/properties.json",
+  "data_note": "غربال اولیه بر اساس داده فعلی نوشهر",
+  "sources": [
+    {
+      "label": "دیوار — املاک تجاری نوشهر",
+      "url": "https://divar.ir/s/nowshahr/rent-commercial-property"
+    },
+    {
+      "label": "MelkRadar — املاک نوشهر",
+      "url": "https://melkradar.com/dir/v1/4/2011/0/%D9%86%D9%88%D8%B4%D9%87%D8%B1"
+    },
+    {
+      "label": "ShishDong — اجاره مغازه نوشهر",
+      "url": "https://shishdong.com/homes/c_Nowshahr/a_property/t_Shop/rent?orderBy=0"
+    }
+  ],
+  "zones": [
+    {
+      "id": "Z01",
+      "name": "۱۵ خرداد–چمران–همافران",
+      "demand": 80,
+      "active": 20,
+      "reviews": 982,
+      "rent": 916667,
+      "deposit": 8750000,
+      "confidence": 0.73,
+      "w": {
+        "qsr": 20,
+        "cafe": 0,
+        "traditional": 28
+      },
+      "advice": "بازار جاافتاده‌تر است ولی اجاره بالاتر؛ فقط برای ملک با دید و دسترسی واقعاً خوب هزینه کن."
+    },
+    {
+      "id": "Z02",
+      "name": "کریدور کریمی",
+      "demand": 22,
+      "active": 9,
+      "reviews": 109,
+      "rent": 719224,
+      "deposit": 6560000,
+      "confidence": 0.7,
+      "w": {
+        "qsr": 0,
+        "cafe": 52,
+        "traditional": 60
+      },
+      "advice": "در کریدور کریمی روی بر خیابان، دید مناسب و امکان توقف تمرکز کن."
+    },
+    {
+      "id": "Z03",
+      "name": "فردوسی–سعدی",
+      "demand": 48,
+      "active": 7,
+      "reviews": 835,
+      "rent": null,
+      "deposit": null,
+      "confidence": 0.37,
+      "w": {
+        "qsr": 24,
+        "cafe": 38,
+        "traditional": 0
+      },
+      "advice": "پتانسیل دارد اما اطلاعات ملک این محدوده هنوز برای تصمیم قطعی کافی نیست."
+    },
+    {
+      "id": "Z04",
+      "name": "امام رضا–دریاسر–شمع‌جاران",
+      "demand": 92,
+      "active": 16,
+      "reviews": 1464,
+      "rent": 312054,
+      "deposit": 4960000,
+      "confidence": 0.72,
+      "w": {
+        "qsr": 1,
+        "cafe": 46,
+        "traditional": 0
+      },
+      "advice": "اول محور امام رضا–دریاسر–شمع‌جاران را بررسی کن؛ در مدل فعلی ترکیب تقاضا و فشار اجاره متعادل‌تر است."
+    },
+    {
+      "id": "Z05",
+      "name": "هفت‌تیر–کارگر–عدالت",
+      "demand": 9,
+      "active": 4,
+      "reviews": 21,
+      "rent": 673280,
+      "deposit": 6840000,
+      "confidence": 0.68,
+      "w": {
+        "qsr": 34,
+        "cafe": 0,
+        "traditional": 0
+      },
+      "advice": "بازار کوچک‌تر است؛ ارزان بودن ملک به‌تنهایی کافی نیست و جریان مشتری همان نقطه مهم است."
+    },
+    {
+      "id": "Z06",
+      "name": "فرودگاه–امیررود–کمربندی",
+      "demand": 19,
+      "active": 5,
+      "reviews": 221,
+      "rent": 521815,
+      "deposit": 5280000,
+      "confidence": 0.77,
+      "w": {
+        "qsr": 47,
+        "cafe": 0,
+        "traditional": 100
+      },
+      "advice": "در کمربندی–امیررود–فرودگاه دسترسی خودرو، دلیوری و قیمت ملک مزیت دارد؛ تردد را حضوری چک کن."
+    }
+  ]
+}

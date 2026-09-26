@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "cities": [
+    { "id": "nowshahr", "file": "nowshahr.json" },
+    { "id": "karaj", "file": "karaj.json" },
+    { "id": "mashhad", "file": "mashhad.json" }
+  ]
+}

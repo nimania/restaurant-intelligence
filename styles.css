@@ -951,9 +951,46 @@ summary {
   }
 }
 
-.city-switch{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;background:#fff;border:1px solid #e2ded5;border-radius:999px;padding:5px;margin-bottom:16px;font-size:13px}
-.city-switch>span{padding:0 8px;color:#6e777d}
-.city-tab{font:inherit;border:0;background:transparent;border-radius:999px;padding:8px 16px;cursor:pointer;color:inherit}
-.city-tab.active{background:#18232b;color:#fff;font-weight:700}
-.city-tab:focus-visible{outline:3px solid #315f7d;outline-offset:2px}
+.city-picker{position:relative;display:inline-block;margin-bottom:16px;z-index:5}
+.city-button{font:inherit;display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e2ded5;border-radius:999px;padding:9px 16px;cursor:pointer;color:#18232b;font-size:14px}
+.city-button:hover{border-color:#b8c7bf}
+.city-button .lbl{color:#6e777d}
+.city-button .chev{color:#6e777d;font-size:11px}
+.city-button:focus-visible,.city-panel button:focus-visible,.city-panel input:focus-visible,.xc-go:focus-visible{outline:3px solid #315f7d;outline-offset:2px}
+.city-panel{position:absolute;top:calc(100% + 6px);right:50%;transform:translateX(50%);width:min(340px,calc(100vw - 32px));background:#fff;border:1px solid #e2ded5;border-radius:16px;box-shadow:0 12px 32px rgba(24,35,43,.14);padding:10px;text-align:right}
+.city-panel-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.city-panel input{flex:1;font:inherit;font-size:14px;padding:10px 12px;border:1px solid #e2ded5;border-radius:10px;background:#faf9f6;min-width:0}
+.city-panel-head small{color:#6e777d;font-size:11px;white-space:nowrap}
+.city-panel ul{list-style:none;margin:0;padding:0;max-height:300px;overflow:auto}
+.city-panel li button{width:100%;font:inherit;display:flex;justify-content:space-between;align-items:center;gap:8px;background:none;border:0;border-radius:10px;padding:10px;cursor:pointer;text-align:right;color:#18232b}
+.city-panel li button:hover{background:#f6f3ec}
+.city-panel li button.active{background:#eef4f1}
+.city-panel li button small{display:block;color:#6e777d;font-size:11px;margin-top:2px}
+.city-panel li.empty{color:#6e777d;font-size:13px;padding:12px}
+.quality{font-size:11px;font-weight:700;border-radius:999px;padding:3px 9px;white-space:nowrap}
+.quality:empty{display:none}
+.q-benchmark{background:#e2f0e8;color:#2d6a4f}
+.q-preliminary{background:#fff5d8;color:#8b5e13}
+.zone-tag{display:inline-block;font-size:11px;font-weight:700;background:#f3e8ff;color:#6b3fa0;border-radius:999px;padding:2px 8px;margin-inline-start:4px;vertical-align:middle}
+.cross-city{margin-top:22px;background:#fff;border:1px solid #e2ded5;border-radius:20px;padding:18px}
+.xc-title h3{margin:0 0 4px;font-size:18px}
+.xc-title p{margin:0 0 14px;color:#6e777d;font-size:13px;line-height:1.8}
+.xc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.xc-card{border:1px solid #e2ded5;border-radius:16px;padding:14px;background:#faf9f6;display:flex;flex-direction:column;gap:8px}
+.xc-card.muted p{color:#6e777d;font-size:13px;line-height:1.8;margin:0}
+.xc-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.xc-head b{font-size:16px}
+.xc-pick{margin:0;font-size:13.5px;line-height:1.8}
+.xc-metrics{margin:0;display:grid;gap:6px}
+.xc-metrics div{background:#fff;border-radius:10px;padding:8px 10px;display:grid;grid-template-columns:1fr auto;gap:2px 8px;align-items:center}
+.xc-metrics dt{font-size:11px;color:#6e777d}
+.xc-metrics dd{margin:0;font-size:14px;font-weight:700;grid-column:1}
+.delta{grid-column:2;grid-row:1/3;font-size:11px;font-weight:700;border-radius:999px;padding:3px 8px;white-space:nowrap}
+.delta.better{background:#e2f0e8;color:#2d6a4f}
+.delta.worse{background:#f8e4df;color:#934b3e}
+.delta.same{background:#eef0f2;color:#5b6570}
+.xc-go{margin-top:auto;width:100%}
+.xc-note{margin:14px 0 0;color:#6e777d;font-size:12px;line-height:1.9}
 .city-notice{margin-top:14px;background:#fff5d8;border:1px solid #ead7a1;border-radius:14px;padding:12px 14px;color:#6f531e;font-size:13px;line-height:1.9}
+.option.elsewhere{border-style:dashed;opacity:.85}
+.elsewhere-hint{display:block;font-style:normal;font-size:10.5px;color:#315f7d;margin-top:4px;line-height:1.5}

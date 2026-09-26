@@ -82,3 +82,18 @@ Karaj zone inputs in `app.js` (`KARAJ_ZONES`) come from a desk sample, not a fie
 - **Shared assumptions:** concept setup cost, average check and payroll are the same as in Nowshahr. Karaj-specific check sizes and wages have not been measured yet.
 
 Next steps to raise confidence: a larger ad sample per zone, main-street versus side-street rent split, field counts of active venues, and Karaj average-check data.
+
+
+## Mashhad benchmark (preliminary, 2026-09-26)
+
+Built with the same method as the Karaj benchmark:
+
+- **Rent and deposit per m²:** median asking prices of 25–200 m² shop ads on Divar neighbourhood pages. Measured zones: Sajjad (6 ads), Vakilabad–Hashemiyeh (18 ads) and Ghasemabad (6 ads). Ahmadabad–Kuhsangi, Haram–Imam Reza and Tollab–Tabarsi could not be sampled in this pass. Their `rent` is `null`, so they are **excluded from results** until measured, and their confidence is set to 0.4.
+- **Active venues and review volume:** a Google Maps sample of about 94 food-service venues found by zone-specific searches.
+- **Demand index:** 0.6 × review-volume index + 0.4 × rent index for measured zones, and the review index alone for unmeasured zones.
+- **Pilgrim market:** the Haram zone is tagged «بازار زائر · فصلی». Pilgrim demand is concentrated in holidays and religious occasions and is only partly reflected in local review volume.
+- **Confidence:** 0.62–0.72 for measured zones. All are below the 0.75 threshold, so the low-risk mode shows no Mashhad options.
+
+## Cross-city comparison
+
+Demand and whitespace scores are relative to each city's own zones, so they are **not** compared across cities. The cross-city card compares only absolute figures from the same model: capital needed, estimated monthly rent and daily orders needed to break even. Concept economics are shared across cities, so differences come from rent, deposit and zone mix. They do not come from local prices or wages.

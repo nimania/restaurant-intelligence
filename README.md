@@ -19,12 +19,32 @@ This repository combines a lightweight public interface with documented methodol
 
 ## Cities
 
-The feasibility wizard covers two cities, chosen with the switch at the top of the page (or `?city=nowshahr` / `?city=karaj` in the URL):
+The feasibility wizard covers several cities, chosen with the searchable city picker at the top of the page (or `?city=<id>` in the URL, e.g. `?city=karaj`).
 
-- **Nowshahr** — the original benchmark, with six zones and a saved file of property leads (`data/properties.json`).
-- **Karaj** — added September 2026 with six zones (Azimieh, Jahanshahr–Molana, Gohardasht, Mehrshahr, Baghestan–Shahinvila, Golshahr–Mehrvila). Its benchmark is **preliminary**: see *Karaj benchmark* in `METHODOLOGY.md`. Live Divar property leads and the equipment market work for Karaj. Saved property leads for Karaj are not yet included.
+| City | Zones | Quality | Notes |
+| --- | --- | --- | --- |
+| Nowshahr (`nowshahr`) | 6 | Benchmark | Original benchmark, with saved property leads in `data/properties.json`. |
+| Karaj (`karaj`) | 6 | Preliminary | Added September 2026. |
+| Mashhad (`mashhad`) | 6 | Preliminary | Added September 2026. Three zones have no rent data yet and are excluded from results. The Haram zone is tagged as a seasonal pilgrim market. |
 
-Zone data for each city lives in the `CITIES` object at the top of `app.js`. To add another city, add a zone list and a `CITIES` entry. Concept economics (setup cost, average check, payroll) are shared across cities.
+Preliminary benchmarks are explained in `METHODOLOGY.md`. Live Divar property leads and the equipment market work for every city.
+
+### Cross-city comparison
+
+After the results, a card shows the best option for the same answers in every other city, next to the user's top pick: capital needed, estimated monthly rent and daily orders needed. These are the only figures compared, because each city's demand score is relative to its own zones. If an answer rules out every option in the current city but not elsewhere, the option stays selectable and says which city it works in.
+
+### Adding a city
+
+1. Create `data/cities/<id>.json` (copy an existing file). Main fields:
+   - `id`, `name`, `province`, `emoji`
+   - `quality` (`benchmark` or `preliminary`) and `quality_label`
+   - `notice` — shown under the headline, or `null`
+   - `data_note`, `retrieved_at`, `divar_city`, `used_market_cities`, `properties_file` (or `null`), `sources` (`{label, url}` list)
+   - `zones`: `id`, `name`, `demand` (0–100), `active`, `reviews`, `rent` and `deposit` (toman per m², or `null` if unmeasured), `confidence` (0–1), `w` (`qsr`, `cafe`, `traditional` whitespace, 0–100), `advice`, and optional `tag` (e.g. a seasonal market).
+2. Add `{ "id": "<id>", "file": "<id>.json" }` to `data/cities/index.json`.
+3. Document the sources and method in `METHODOLOGY.md`.
+
+Concept economics (setup cost, average check, payroll) are shared across cities and live in `app.js`.
 
 ## Methodology principles
 
