@@ -110,12 +110,15 @@
     return call("divar", "ad_details", { token, detail: "full" }, 32000);
   }
 
-  async function searchEquipment(item, budget) {
+  async function searchEquipment(item, budget, cities) {
     const safeBudget = Math.max(1000000, Math.round(Number(budget) || 0));
     const usedPromise = call("divar", "find_best_value", {
       query: item.used_query,
       category: "cafe-and-restaurant",
-      cities: ["نوشهر", "ساری", "آمل", "بابل", "رشت"],
+      cities:
+        Array.isArray(cities) && cities.length
+          ? cities
+          : ["نوشهر", "ساری", "آمل", "بابل", "رشت"],
       budget_toman: safeBudget,
       include_negotiable: false,
       limit: 3,

@@ -1,5 +1,5 @@
 "use strict";
-const zones = [
+const NOWSHAHR_ZONES = [
   {
     id: "Z01",
     name: "۱۵ خرداد–چمران–همافران",
@@ -67,6 +67,138 @@ const zones = [
     w: { qsr: 47, cafe: 0, traditional: 100 },
   },
 ];
+
+// Karaj zones — preliminary benchmark (Sep 2026).
+// rent / deposit: median asking price per m² of 25–150 m² shop ads on Divar
+// neighbourhood pages (retrieved 2026-09-26). active / reviews: Google Maps
+// sample of food-service venues per zone. demand = 0.6 × review-volume index
+// + 0.4 × rent index. w = under-representation of each concept family versus
+// the city-wide mix. confidence scales with the size of the rent sample and
+// stays below 0.75, so the conservative risk mode excludes Karaj until the
+// benchmark is verified. See METHODOLOGY.md.
+const KARAJ_ZONES = [
+  {
+    id: "K01",
+    name: "عظیمیه (کاج–گلستان–استقلال)",
+    demand: 65,
+    active: 16,
+    reviews: 1042,
+    rent: 314286,
+    deposit: 2500000,
+    confidence: 0.62,
+    w: { qsr: 40, cafe: 45, traditional: 35 },
+    advice:
+      "گران‌ترین محور نمونه است؛ فقط وقتی سراغش برو که ملک بر بلوار اصلی، دید خوب و امکان توقف داشته باشد. رقابت کافه و فست‌فود هم جدی است.",
+  },
+  {
+    id: "K02",
+    name: "جهانشهر–مولانا–بلوار جمهوری",
+    demand: 81,
+    active: 17,
+    reviews: 2485,
+    rent: 166667,
+    deposit: 1750000,
+    confidence: 0.58,
+    w: { qsr: 55, cafe: 42, traditional: 60 },
+    advice:
+      "بیشترین حجم نظر مشتری در نمونه را دارد و اجاره‌اش از عظیمیه منطقی‌تر است، ولی نمونه آگهی این محدوده کوچک است؛ قیمت چند ملک را حضوری بپرس.",
+  },
+  {
+    id: "K03",
+    name: "گوهردشت (رستاخیز–موذن–داریوش)",
+    demand: 45,
+    active: 10,
+    reviews: 1056,
+    rent: 154545,
+    deposit: 1506849,
+    confidence: 0.68,
+    w: { qsr: 47, cafe: 36, traditional: 41 },
+    advice:
+      "بازار محله‌ای و دانشجویی دارد؛ ملک بر خیابان رستاخیز یا نزدیک دانشگاه را با قیمت معقول و تمرکز روی بیرون‌بر ببین.",
+  },
+  {
+    id: "K04",
+    name: "مهرشهر (ارم–گلها–فاز ۴)",
+    demand: 67,
+    active: 18,
+    reviews: 2064,
+    rent: 130435,
+    deposit: 1521739,
+    confidence: 0.72,
+    w: { qsr: 40, cafe: 77, traditional: 55 },
+    advice:
+      "تقاضای خوب با اجاره متعادل؛ در نمونه، کافه نسبت به فست‌فود کمتر دیده شد. بلوار ارم و گلها را برای دید و پارک بررسی کن.",
+  },
+  {
+    id: "K05",
+    name: "باغستان–شاهین‌ویلا",
+    demand: 24,
+    active: 5,
+    reviews: 402,
+    rent: 116250,
+    deposit: 2091346,
+    confidence: 0.66,
+    w: { qsr: 47, cafe: 63, traditional: 67 },
+    advice:
+      "رقابت کمتر است ولی تقاضای ثبت‌شده هم کم است؛ ملک ارزان به‌تنهایی کافی نیست و تردد واقعی همان نقطه را باید دید.",
+  },
+  {
+    id: "K06",
+    name: "گلشهر–مهرویلا",
+    demand: 16,
+    active: 7,
+    reviews: 291,
+    rent: 71429,
+    deposit: 857143,
+    confidence: 0.72,
+    w: { qsr: 90, cafe: 27, traditional: 30 },
+    advice:
+      "ارزان‌ترین محدوده نمونه و کم‌رقابت برای فست‌فود و ارسال‌محور؛ بیشتر به درد مدل بیرون‌بر و دلیوری با اجاره پایین می‌خورد.",
+  },
+];
+const CITIES = {
+  nowshahr: {
+    id: "nowshahr",
+    name: "نوشهر",
+    zones: NOWSHAHR_ZONES,
+    propertiesFile: "./data/properties.json",
+    divarCity: "نوشهر",
+    usedMarketCities: ["نوشهر", "ساری", "آمل", "بابل", "رشت"],
+    dataNote: "غربال اولیه بر اساس داده فعلی نوشهر",
+    sources: [
+      ["دیوار — املاک تجاری نوشهر", "https://divar.ir/s/nowshahr/rent-commercial-property"],
+      ["MelkRadar — املاک نوشهر", "https://melkradar.com/dir/v1/4/2011/0/%D9%86%D9%88%D8%B4%D9%87%D8%B1"],
+      ["ShishDong — اجاره مغازه نوشهر", "https://shishdong.com/homes/c_Nowshahr/a_property/t_Shop/rent?orderBy=0"],
+    ],
+  },
+  karaj: {
+    id: "karaj",
+    name: "کرج",
+    zones: KARAJ_ZONES,
+    propertiesFile: null,
+    divarCity: "کرج",
+    usedMarketCities: ["کرج", "تهران", "فردیس", "هشتگرد"],
+    dataNote:
+      "غربال اولیه بر اساس بنچمارک مقدماتی کرج (شهریور ۱۴۰۵)؛ داده کرج هنوز راستی‌آزمایی میدانی نشده است",
+    sources: [
+      ["دیوار — مغازه عظیمیه", "https://divar.ir/s/karaj/rent-store/azimieh"],
+      ["دیوار — مغازه جهانشهر", "https://divar.ir/s/karaj/rent-store/jahanshahr"],
+      ["دیوار — مغازه گوهردشت", "https://divar.ir/s/karaj/rent-store/gohardasht"],
+      ["دیوار — مغازه مهرشهر فاز ۴", "https://divar.ir/s/karaj/rent-store/mehrshahr"],
+      ["دیوار — مغازه باغستان", "https://divar.ir/s/karaj/rent-store/baghestan"],
+      ["دیوار — مغازه گلشهر", "https://divar.ir/s/karaj/rent-store/golshahr"],
+    ],
+  },
+};
+function initialCity() {
+  try {
+    const q = new URLSearchParams(location.search).get("city");
+    if (q && CITIES[q]) return q;
+  } catch {}
+  return "nowshahr";
+}
+let city = CITIES[initialCity()],
+  zones = city.zones;
 const concepts = [
   {
     id: "burger",
@@ -321,26 +453,32 @@ const esc = (value) =>
         char
       ],
   );
-const maxRPB = Math.max(...zones.map((z) => z.reviews / z.active));
+let maxRPB = Math.max(...zones.map((z) => z.reviews / z.active));
 let step = 1,
   answers = {},
   propertyData = { meta: null, properties: [] },
   equipmentData = { methodology: {}, items: {}, kits: {} },
   activePlannerKey = 0,
   propertyDetailCache = new Map();
+async function loadCityProperties() {
+  if (!city.propertiesFile) return { meta: null, properties: [] };
+  const r = await fetch(city.propertiesFile, { cache: "no-store" });
+  if (!r.ok) throw new Error(`property data ${r.status}`);
+  return r.json();
+}
 async function loadPlannerData() {
   const [properties, equipment] = await Promise.allSettled([
-    fetch("./data/properties.json", { cache: "no-store" }).then((r) => {
-      if (!r.ok) throw new Error(`property data ${r.status}`);
-      return r.json();
-    }),
+    loadCityProperties(),
     fetch("./data/equipment-catalog.json", { cache: "no-store" }).then((r) => {
       if (!r.ok) throw new Error(`equipment data ${r.status}`);
       return r.json();
     }),
   ]);
   if (properties.status === "fulfilled") propertyData = properties.value;
-  else console.warn("Property data unavailable", properties.reason);
+  else {
+    propertyData = { meta: null, properties: [] };
+    console.warn("Property data unavailable", properties.reason);
+  }
   if (equipment.status === "fulfilled") equipmentData = equipment.value;
   else console.warn("Equipment data unavailable", equipment.reason);
 }
@@ -477,6 +615,7 @@ function renderSummary() {
     `<b>انتخاب‌های تو:</b><br>سرمایه: ${labels.budget[answers.budget] || "—"} · فضا: ${labels.size[answers.size] || "—"} · مدل: ${labels.concept[answers.concept] || "—"} · سبک کار: ${labels.operation[answers.operation] || "—"} · ریسک: ${labels.risk[answers.risk] || "—"}`;
 }
 function zoneAdvice(z) {
+  if (z.advice) return z.advice;
   if (z.id === "Z04")
     return "اول محور امام رضا–دریاسر–شمع‌جاران را بررسی کن؛ در مدل فعلی ترکیب تقاضا و فشار اجاره متعادل‌تر است.";
   if (z.id === "Z01")
@@ -520,20 +659,7 @@ function propertyHtml(row) {
   return `<div class="property-section"><h4>🏪 چند فایل ملک مرتبط برای شروع جست‌وجو</h4><div class="property-note">این فایل‌ها Lead هستند، نه توصیه قطعی. موجود بودن آگهی و قیمت را داخل دیوار دوباره کنترل کن؛ تا زمان تأیید تازه‌بودن وارد Benchmark جاری اجاره نمی‌شوند.</div><div class="property-list">${props.map((p) => `<a class="property-card" href="${p.url}" target="_blank" rel="noopener"><b>${p.title}</b><div class="price">رهن ${money(p.deposit)} · اجاره ${money(p.rent)} / ماه</div><small>${p.area ? `${fmt(p.area)} متر · ` : ""}${p.micro_area} · ${p.signal}</small></a>`).join("")}</div></div>`;
 }
 function sourceHtml() {
-  const general = [
-    [
-      "دیوار — املاک تجاری نوشهر",
-      "https://divar.ir/s/nowshahr/rent-commercial-property",
-    ],
-    [
-      "MelkRadar — املاک نوشهر",
-      "https://melkradar.com/dir/v1/4/2011/0/%D9%86%D9%88%D8%B4%D9%87%D8%B1",
-    ],
-    [
-      "ShishDong — اجاره مغازه نوشهر",
-      "https://shishdong.com/homes/c_Nowshahr/a_property/t_Shop/rent?orderBy=0",
-    ],
-  ];
+  const general = city.sources;
   return `<details><summary>🔗 منابع ملک و اجاره مورد استفاده</summary><div class="sources">${general.map((x) => `<a class="source" href="${x[1]}" target="_blank" rel="noopener"><b>${x[0]}</b><small>مشاهده منبع</small></a>`).join("")}</div><div class="sub">قیمت آگهی با اجاره قطعی قرارداد یکی نیست.</div></details>`;
 }
 function equipmentSizeBand() {
@@ -715,7 +841,7 @@ async function renderLiveProperties(row, plannerKey) {
   state.textContent = "در حال دریافت آگهی‌های زنده دیوار…";
   try {
     const result = await window.RestaurantMarket.searchProperties({
-      city: "نوشهر",
+      city: city.divarCity,
       pages: 2,
       limit: 20,
     });
@@ -777,7 +903,7 @@ async function loadEquipmentOffers(button, itemId, budget) {
   target.innerHTML =
     '<div class="coverage-note">آگهی‌های دست‌دوم دیوار و محصولات نوی دیجی‌کالا در حال بررسی‌اند.</div>';
   try {
-    const result = await window.RestaurantMarket.searchEquipment(item, budget);
+    const result = await window.RestaurantMarket.searchEquipment(item, budget, city.usedMarketCities);
     target.innerHTML = `<div class="offer-columns">${offerColumn("دست‌دوم · دیوار", "used", result.used)}${offerColumn("نو · دیجی‌کالا", "new", result.new)}</div><div class="coverage-note">قیمت‌ها پیشنهادی و لحظه‌ای‌اند. پیش از خرید، مدل دقیق، ظرفیت، سلامت فنی، هزینه حمل و نصب را تأیید کن.</div>`;
     button.textContent = "به‌روزرسانی پیشنهادها";
   } catch (error) {
@@ -842,7 +968,7 @@ function renderResults() {
   }
   const first = top[0],
     second = top[1];
-  overall.innerHTML = `<div class="overall"><h3>جمع‌بندی ساده</h3><p>با انتخاب‌های تو، فعلاً بهترین مسیر <b>${first.concept.name}</b> در محدوده <b>${first.zone.name}</b> است. ${second ? `گزینه دوم <b>${second.concept.name}</b> در <b>${second.zone.name}</b> است. ` : ""}بهتر است در دو محدوده اول چند ملک واقعی ذخیره کنی و بعد قیمت، امکانات فنی و تردد را مقایسه کنی. <a href="./properties.html">دیدن فایل‌های ملک نوشهر</a></p></div>`;
+  overall.innerHTML = `<div class="overall"><h3>جمع‌بندی ساده</h3><p>با انتخاب‌های تو، فعلاً بهترین مسیر <b>${first.concept.name}</b> در محدوده <b>${first.zone.name}</b> است. ${second ? `گزینه دوم <b>${second.concept.name}</b> در <b>${second.zone.name}</b> است. ` : ""}بهتر است در دو محدوده اول چند ملک واقعی ذخیره کنی و بعد قیمت، امکانات فنی و تردد را مقایسه کنی. <a href="./properties.html?city=${city.id}">دیدن فایل‌های ملک ${city.name}</a></p></div>`;
   renderLaunchIntelligence(first);
   list.innerHTML = top
     .map((r, i) => {
@@ -898,7 +1024,7 @@ document.getElementById("prev").addEventListener("click", () => {
     showStep();
   }
 });
-document.getElementById("restart").addEventListener("click", () => {
+function resetWizard() {
   answers = {};
   document
     .querySelectorAll(".option")
@@ -906,5 +1032,46 @@ document.getElementById("restart").addEventListener("click", () => {
   step = 1;
   showStep();
   window.scrollTo({ top: 0, behavior: "smooth" });
-});
+}
+document.getElementById("restart").addEventListener("click", resetWizard);
+function applyCityText() {
+  document.querySelectorAll("[data-city-name]").forEach((el) => {
+    el.textContent = city.name;
+  });
+  document.getElementById("resultsNote").textContent = city.dataNote;
+  document.getElementById("cityNotice").hidden = city.id !== "karaj";
+  document.title = `رستوران‌نما — امکان‌سنجی رستوران در ${city.name}`;
+  document.querySelectorAll(".city-tab").forEach((btn) => {
+    const on = btn.dataset.city === city.id;
+    btn.classList.toggle("active", on);
+    btn.setAttribute("aria-pressed", String(on));
+  });
+  const link = document.getElementById("propertiesLink");
+  if (link) link.href = `./properties.html?city=${city.id}`;
+}
+async function setCity(id) {
+  if (!CITIES[id] || CITIES[id] === city) return;
+  city = CITIES[id];
+  zones = city.zones;
+  maxRPB = Math.max(...zones.map((z) => z.reviews / z.active));
+  propertyDetailCache = new Map();
+  activePlannerKey++;
+  try {
+    const url = new URL(location.href);
+    url.searchParams.set("city", id);
+    history.replaceState(null, "", url);
+  } catch {}
+  applyCityText();
+  try {
+    propertyData = await loadCityProperties();
+  } catch (error) {
+    propertyData = { meta: null, properties: [] };
+    console.warn("Property data unavailable", error);
+  }
+  resetWizard();
+}
+document.querySelectorAll(".city-tab").forEach((btn) =>
+  btn.addEventListener("click", () => setCity(btn.dataset.city)),
+);
+applyCityText();
 loadPlannerData().finally(showStep);

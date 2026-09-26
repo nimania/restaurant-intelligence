@@ -17,6 +17,15 @@ This repository combines a lightweight public interface with documented methodol
 - `GOVERNANCE.md` — project governance.
 - `SECURITY.md` — security reporting and operational guidance.
 
+## Cities
+
+The feasibility wizard covers two cities, chosen with the switch at the top of the page (or `?city=nowshahr` / `?city=karaj` in the URL):
+
+- **Nowshahr** — the original benchmark, with six zones and a saved file of property leads (`data/properties.json`).
+- **Karaj** — added September 2026 with six zones (Azimieh, Jahanshahr–Molana, Gohardasht, Mehrshahr, Baghestan–Shahinvila, Golshahr–Mehrvila). Its benchmark is **preliminary**: see *Karaj benchmark* in `METHODOLOGY.md`. Live Divar property leads and the equipment market work for Karaj. Saved property leads for Karaj are not yet included.
+
+Zone data for each city lives in the `CITIES` object at the top of `app.js`. To add another city, add a zone list and a `CITIES` entry. Concept economics (setup cost, average check, payroll) are shared across cities.
+
 ## Methodology principles
 
 Restaurant Intelligence is built around a few explicit rules:

@@ -68,3 +68,17 @@ Corrections should preserve traceability when practical. Source changes, methodo
 ## Privacy and responsible use
 
 The project is intended for public-market and restaurant intelligence. It should not collect or expose private customer data, credentials, or sensitive personal information.
+
+
+## Karaj benchmark (preliminary, 2026-09-26)
+
+Karaj zone inputs in `app.js` (`KARAJ_ZONES`) come from a desk sample, not a field survey:
+
+- **Rent and deposit per m²:** median asking prices of 25–150 m² shop ads on Divar neighbourhood pages for Azimieh, Jahanshahr, Gohardasht, Mehrshahr (phase 4), Baghestan and Golshahr, retrieved 2026-09-26. Samples are small (4–11 ads per zone). These are asking prices, not contract rents.
+- **Active venues and review volume:** a Google Maps sample of about 115 food-service venues found by zone-specific searches. Search results are capped, so counts show relative presence, not a full census.
+- **Demand index:** 0.6 × review-volume index + 0.4 × rent index (both scaled to the top zone = 100).
+- **Concept whitespace (`w`):** how much each concept family (fast food, café, traditional) is under-represented in a zone compared with the Karaj-wide sample mix.
+- **Confidence:** 0.58–0.72, scaled by rent-sample size. All values are below the 0.75 threshold, so **the low-risk mode shows no Karaj options** until the benchmark is checked on the ground.
+- **Shared assumptions:** concept setup cost, average check and payroll are the same as in Nowshahr. Karaj-specific check sizes and wages have not been measured yet.
+
+Next steps to raise confidence: a larger ad sample per zone, main-street versus side-street rent split, field counts of active venues, and Karaj average-check data.

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
       name="description"
-      content="رستوران‌نما؛ ابزار آزمایشی امکان‌سنجی رستوران در نوشهر"
+      content="رستوران‌نما؛ ابزار آزمایشی امکان‌سنجی رستوران در نوشهر و کرج"
     />
     <title>رستوران‌نما — امکان‌سنجی رستوران در نوشهر</title>
     <link rel="stylesheet" href="./styles.css" />
@@ -21,12 +21,23 @@
       </header>
 
       <section class="hero">
-        <h1>با شرایط تو، چه رستورانی و کجای نوشهر منطقی‌تر است؟</h1>
+        <div class="city-switch" role="group" aria-label="انتخاب شهر">
+          <span>شهر:</span>
+          <button class="city-tab active" data-city="nowshahr" aria-pressed="true">🌊 نوشهر</button>
+          <button class="city-tab" data-city="karaj" aria-pressed="false">🏙️ کرج</button>
+        </div>
+        <h1>با شرایط تو، چه رستورانی و کجای <span data-city-name>نوشهر</span> منطقی‌تر است؟</h1>
         <p>
           چند انتخاب ساده انجام بده. سیستم گزینه‌های ناممکن را کنار می‌گذارد و
           در پایان پیشنهاد عملی، ملک‌های زنده و سبد تجهیزات نو و دست‌دوم متناسب
           با سرمایه را نشان می‌دهد.
         </p>
+        <div class="city-notice" id="cityNotice" hidden>
+          <b>کرج تازه اضافه شده است.</b> بنچمارک اجاره و تقاضای کرج از نمونه
+          آگهی‌های دیوار و نقشه در شهریور ۱۴۰۵ ساخته شده و هنوز راستی‌آزمایی
+          میدانی نشده؛ برای همین در حالت ریسک «کم» گزینه‌ای برای کرج نمایش
+          داده نمی‌شود. ملک‌های زنده و بازار تجهیزات برای کرج فعال است.
+        </div>
       </section>
 
       <section class="wizard">
@@ -169,7 +180,7 @@
         <section class="screen" data-step="6">
           <div class="results-head">
             <h2>نتیجه پیشنهادی برای تو</h2>
-            <p>غربال اولیه بر اساس داده فعلی نوشهر</p>
+            <p id="resultsNote">غربال اولیه بر اساس داده فعلی نوشهر</p>
           </div>
           <div id="overallReport"></div>
           <section

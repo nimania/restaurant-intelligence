@@ -950,3 +950,10 @@ summary {
     width: max-content;
   }
 }
+
+.city-switch{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;background:#fff;border:1px solid #e2ded5;border-radius:999px;padding:5px;margin-bottom:16px;font-size:13px}
+.city-switch>span{padding:0 8px;color:#6e777d}
+.city-tab{font:inherit;border:0;background:transparent;border-radius:999px;padding:8px 16px;cursor:pointer;color:inherit}
+.city-tab.active{background:#18232b;color:#fff;font-weight:700}
+.city-tab:focus-visible{outline:3px solid #315f7d;outline-offset:2px}
+.city-notice{margin-top:14px;background:#fff5d8;border:1px solid #ead7a1;border-radius:14px;padding:12px 14px;color:#6f531e;font-size:13px;line-height:1.9}
