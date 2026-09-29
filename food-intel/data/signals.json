@@ -1,16 +1,16 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-09-29T18:22:21Z",
-  "articles_24h": 121,
-  "articles_previous_6d": 1154,
-  "images_24h": 47,
+  "generated_at": "2026-09-29T22:37:05Z",
+  "articles_24h": 167,
+  "articles_previous_6d": 1152,
+  "images_24h": 49,
   "trending_topics": [
     {
       "id": "equipment_automation",
       "label_fa": "تجهیزات و اتوماسیون",
       "count_24h": 11,
-      "previous_daily_avg": 5.5,
-      "acceleration": 2.0,
+      "previous_daily_avg": 5.67,
+      "acceleration": 1.94,
       "series_7d": [
         8,
         6,
@@ -18,23 +18,23 @@
         1,
         4,
         9,
-        8
+        11
       ]
     },
     {
       "id": "POS",
       "label_fa": "سیستم فروش",
-      "count_24h": 18,
-      "previous_daily_avg": 12.0,
-      "acceleration": 1.5,
+      "count_24h": 21,
+      "previous_daily_avg": 12.33,
+      "acceleration": 1.7,
       "series_7d": [
         24,
         18,
         11,
         4,
         2,
-        14,
-        14
+        15,
+        20
       ]
     },
     {
@@ -54,43 +54,11 @@
       ]
     },
     {
-      "id": "supply_chain",
-      "label_fa": "زنجیره تأمین",
-      "count_24h": 7,
-      "previous_daily_avg": 6.17,
-      "acceleration": 1.14,
-      "series_7d": [
-        7,
-        5,
-        10,
-        4,
-        1,
-        10,
-        6
-      ]
-    },
-    {
-      "id": "restaurant_technology_ai",
-      "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 24,
-      "previous_daily_avg": 22.33,
-      "acceleration": 1.07,
-      "series_7d": [
-        33,
-        32,
-        23,
-        13,
-        10,
-        25,
-        18
-      ]
-    },
-    {
       "id": "restaurant_industry",
       "label_fa": "صنعت رستوران",
-      "count_24h": 22,
+      "count_24h": 28,
       "previous_daily_avg": 20.83,
-      "acceleration": 1.06,
+      "acceleration": 1.34,
       "series_7d": [
         34,
         30,
@@ -98,47 +66,63 @@
         5,
         4,
         31,
-        17
+        27
       ]
     },
     {
-      "id": "food_safety",
-      "label_fa": "ایمنی غذا",
-      "count_24h": 7,
-      "previous_daily_avg": 7.17,
-      "acceleration": 0.98,
+      "id": "supply_chain",
+      "label_fa": "زنجیره تأمین",
+      "count_24h": 8,
+      "previous_daily_avg": 6.0,
+      "acceleration": 1.33,
       "series_7d": [
-        8,
-        12,
+        7,
+        5,
+        10,
         4,
-        9,
-        5,
-        5,
+        1,
+        10,
         7
       ]
     },
     {
-      "id": "food_manufacturing",
-      "label_fa": "تولید صنایع غذایی",
-      "count_24h": 11,
-      "previous_daily_avg": 12.17,
-      "acceleration": 0.9,
+      "id": "labor",
+      "label_fa": "نیروی انسانی",
+      "count_24h": 3,
+      "previous_daily_avg": 2.33,
+      "acceleration": 1.29,
       "series_7d": [
-        21,
-        15,
-        20,
         4,
         2,
-        10,
+        1,
+        3,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "id": "fast_casual",
+      "label_fa": "فست‌کژوال",
+      "count_24h": 10,
+      "previous_daily_avg": 7.83,
+      "acceleration": 1.28,
+      "series_7d": [
+        8,
+        14,
+        8,
+        1,
+        2,
+        14,
         10
       ]
     },
     {
       "id": "delivery_drive_thru",
       "label_fa": "دلیوری و درایو‌ثرو",
-      "count_24h": 17,
+      "count_24h": 24,
       "previous_daily_avg": 19.67,
-      "acceleration": 0.86,
+      "acceleration": 1.22,
       "series_7d": [
         35,
         32,
@@ -146,37 +130,53 @@
         6,
         12,
         11,
-        14
+        22
       ]
     },
     {
-      "id": "consumer_behavior",
-      "label_fa": "رفتار مصرف‌کننده",
-      "count_24h": 9,
-      "previous_daily_avg": 11.33,
-      "acceleration": 0.79,
+      "id": "menu",
+      "label_fa": "منو",
+      "count_24h": 16,
+      "previous_daily_avg": 13.17,
+      "acceleration": 1.22,
       "series_7d": [
-        17,
-        18,
         11,
-        7,
-        6,
+        18,
         9,
-        8
+        7,
+        8,
+        27,
+        15
+      ]
+    },
+    {
+      "id": "menu_product_innovation",
+      "label_fa": "نوآوری منو و محصول",
+      "count_24h": 17,
+      "previous_daily_avg": 14.83,
+      "acceleration": 1.15,
+      "series_7d": [
+        11,
+        20,
+        12,
+        7,
+        10,
+        30,
+        16
       ]
     }
   ],
   "trending_brands": [
     {
-      "id": "grubhub",
-      "label_fa": "گراب‌هاب",
+      "id": "wingstop",
+      "label_fa": "وینگ‌استاپ",
       "count_24h": 5,
-      "previous_daily_avg": 1.17,
-      "acceleration": 4.29,
+      "previous_daily_avg": 0.83,
+      "acceleration": 6.0,
       "series_7d": [
-        5,
+        2,
         1,
-        1,
+        2,
         0,
         0,
         0,
@@ -184,35 +184,83 @@
       ]
     },
     {
-      "id": "pegah",
-      "label_fa": "پگاه",
-      "count_24h": 2,
-      "previous_daily_avg": 0.0,
-      "acceleration": 4.0,
-      "series_7d": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        0
-      ]
-    },
-    {
       "id": "kalleh",
       "label_fa": "کاله",
-      "count_24h": 2,
+      "count_24h": 3,
       "previous_daily_avg": 0.17,
-      "acceleration": 4.0,
+      "acceleration": 6.0,
       "series_7d": [
         0,
         0,
         0,
         0,
         1,
-        2,
+        3,
         0
+      ]
+    },
+    {
+      "id": "pegah",
+      "label_fa": "پگاه",
+      "count_24h": 3,
+      "previous_daily_avg": 0.0,
+      "acceleration": 6.0,
+      "series_7d": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "grubhub",
+      "label_fa": "گراب‌هاب",
+      "count_24h": 6,
+      "previous_daily_avg": 1.17,
+      "acceleration": 5.14,
+      "series_7d": [
+        5,
+        1,
+        1,
+        0,
+        0,
+        0,
+        6
+      ]
+    },
+    {
+      "id": "sweetgreen",
+      "label_fa": "سوییت‌گرین",
+      "count_24h": 2,
+      "previous_daily_avg": 0.5,
+      "acceleration": 4.0,
+      "series_7d": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "dominos",
+      "label_fa": "دومینوز",
+      "count_24h": 2,
+      "previous_daily_avg": 0.67,
+      "acceleration": 3.0,
+      "series_7d": [
+        0,
+        1,
+        2,
+        1,
+        0,
+        0,
+        2
       ]
     },
     {
@@ -232,11 +280,27 @@
       ]
     },
     {
+      "id": "pinar",
+      "label_fa": "پینار",
+      "count_24h": 2,
+      "previous_daily_avg": 1.17,
+      "acceleration": 1.71,
+      "series_7d": [
+        3,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
       "id": "mondelez",
       "label_fa": "موندلیز",
       "count_24h": 3,
-      "previous_daily_avg": 2.17,
-      "acceleration": 1.38,
+      "previous_daily_avg": 1.83,
+      "acceleration": 1.64,
       "series_7d": [
         3,
         3,
@@ -244,31 +308,15 @@
         0,
         0,
         5,
-        3
-      ]
-    },
-    {
-      "id": "dunkin",
-      "label_fa": "دانکین",
-      "count_24h": 3,
-      "previous_daily_avg": 3.67,
-      "acceleration": 0.82,
-      "series_7d": [
-        4,
-        11,
-        3,
-        1,
-        1,
-        2,
         3
       ]
     },
     {
       "id": "pizza_hut",
       "label_fa": "پیتزا هات",
-      "count_24h": 2,
+      "count_24h": 4,
       "previous_daily_avg": 2.5,
-      "acceleration": 0.8,
+      "acceleration": 1.6,
       "series_7d": [
         5,
         2,
@@ -276,54 +324,6 @@
         1,
         1,
         4,
-        2
-      ]
-    },
-    {
-      "id": "kfc",
-      "label_fa": "کی‌اف‌سی",
-      "count_24h": 4,
-      "previous_daily_avg": 6.0,
-      "acceleration": 0.67,
-      "series_7d": [
-        1,
-        12,
-        7,
-        4,
-        5,
-        8,
-        2
-      ]
-    },
-    {
-      "id": "pepsico",
-      "label_fa": "پپسی‌کو",
-      "count_24h": 5,
-      "previous_daily_avg": 7.83,
-      "acceleration": 0.64,
-      "series_7d": [
-        2,
-        13,
-        3,
-        4,
-        8,
-        17,
-        4
-      ]
-    },
-    {
-      "id": "doordash",
-      "label_fa": "دوردش",
-      "count_24h": 4,
-      "previous_daily_avg": 6.83,
-      "acceleration": 0.59,
-      "series_7d": [
-        14,
-        14,
-        3,
-        1,
-        5,
-        2,
         4
       ]
     }
@@ -337,24 +337,24 @@
         9,
         20,
         8,
-        39,
-        20,
-        6,
+        42,
+        21,
+        7,
         4
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 24,
+      "count_24h": 25,
       "series_7d": [
         33,
         32,
         23,
         13,
         10,
-        25,
-        18
+        26,
+        24
       ]
     },
     {
@@ -368,7 +368,21 @@
         1,
         4,
         9,
-        8
+        11
+      ]
+    },
+    {
+      "id": "food_cost_pricing",
+      "label_fa": "هزینه غذا و قیمت‌گذاری",
+      "count_24h": 1,
+      "series_7d": [
+        7,
+        11,
+        7,
+        3,
+        3,
+        3,
+        1
       ]
     },
     {
@@ -388,7 +402,7 @@
     {
       "id": "restaurant_operations",
       "label_fa": "عملیات رستوران",
-      "count_24h": 4,
+      "count_24h": 8,
       "series_7d": [
         13,
         11,
@@ -396,13 +410,13 @@
         3,
         5,
         12,
-        3
+        8
       ]
     },
     {
       "id": "marketing_branding",
       "label_fa": "بازاریابی و برندینگ",
-      "count_24h": 2,
+      "count_24h": 6,
       "series_7d": [
         13,
         15,
@@ -410,9 +424,9 @@
         1,
         2,
         5,
-        2
+        6
       ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: تجهیزات و اتوماسیون، سیستم فروش، پایداری؛ برندهای پرتکرار: گراب‌هاب، پگاه، کاله."
+  "radar_fa": "موضوع‌های رو به رشد: تجهیزات و اتوماسیون، سیستم فروش، پایداری؛ برندهای پرتکرار: وینگ‌استاپ، کاله، پگاه."
 }
