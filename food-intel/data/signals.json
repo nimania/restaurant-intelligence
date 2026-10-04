@@ -1,56 +1,72 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-10-04T06:03:49Z",
-  "articles_24h": 41,
-  "articles_previous_6d": 1128,
-  "images_24h": 9,
+  "generated_at": "2026-10-04T12:34:43Z",
+  "articles_24h": 46,
+  "articles_previous_6d": 1137,
+  "images_24h": 10,
   "trending_topics": [
-    {
-      "id": "food_cost_pricing",
-      "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 3,
-      "previous_daily_avg": 5.17,
-      "acceleration": 0.58,
-      "series_7d": [
-        4,
-        6,
-        12,
-        6,
-        1,
-        3,
-        0
-      ]
-    },
     {
       "id": "food_safety",
       "label_fa": "ایمنی غذا",
       "count_24h": 4,
-      "previous_daily_avg": 7.67,
-      "acceleration": 0.52,
+      "previous_daily_avg": 7.83,
+      "acceleration": 0.51,
       "series_7d": [
         5,
         7,
         5,
         8,
         13,
-        10,
-        0
+        11,
+        2
+      ]
+    },
+    {
+      "id": "labor",
+      "label_fa": "نیروی انسانی",
+      "count_24h": 3,
+      "previous_daily_avg": 5.83,
+      "acceleration": 0.51,
+      "series_7d": [
+        4,
+        7,
+        5,
+        6,
+        9,
+        6,
+        1
       ]
     },
     {
       "id": "restaurant_operations",
       "label_fa": "عملیات رستوران",
       "count_24h": 5,
-      "previous_daily_avg": 11.0,
-      "acceleration": 0.45,
+      "previous_daily_avg": 11.33,
+      "acceleration": 0.44,
       "series_7d": [
         12,
         11,
         14,
         13,
         10,
-        10,
+        12,
         0
+      ]
+    },
+    {
+      "id": "food_manufacturing",
+      "label_fa": "تولید صنایع غذایی",
+      "count_24h": 4,
+      "previous_daily_avg": 12.0,
+      "acceleration": 0.33,
+      "series_7d": [
+        10,
+        16,
+        18,
+        15,
+        12,
+        2,
+        3
       ]
     },
     {
@@ -63,106 +79,90 @@
         10,
         9,
         4,
-        7,
+        8,
         6,
         2,
         1
       ]
     },
     {
-      "id": "consumer_behavior",
-      "label_fa": "رفتار مصرف‌کننده",
+      "id": "retail_food",
+      "label_fa": "خرده‌فروشی غذا",
       "count_24h": 3,
-      "previous_daily_avg": 9.83,
-      "acceleration": 0.31,
-      "series_7d": [
-        10,
-        14,
-        10,
-        13,
-        7,
-        5,
-        0
-      ]
-    },
-    {
-      "id": "restaurant_technology_ai",
-      "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 8,
-      "previous_daily_avg": 30.33,
-      "acceleration": 0.26,
-      "series_7d": [
-        27,
-        31,
-        40,
-        42,
-        30,
-        14,
-        0
-      ]
-    },
-    {
-      "id": "regulation",
-      "label_fa": "قانون‌گذاری و مقررات",
-      "count_24h": 4,
-      "previous_daily_avg": 17.33,
-      "acceleration": 0.23,
+      "previous_daily_avg": 10.67,
+      "acceleration": 0.28,
       "series_7d": [
         12,
-        24,
-        16,
-        28,
-        18,
-        7,
-        0
-      ]
-    },
-    {
-      "id": "qsr_fast_food",
-      "label_fa": "فست‌فود و QSR",
-      "count_24h": 7,
-      "previous_daily_avg": 35.5,
-      "acceleration": 0.2,
-      "series_7d": [
-        49,
-        31,
-        51,
-        36,
-        29,
         8,
-        0
-      ]
-    },
-    {
-      "id": "food_industry",
-      "label_fa": "صنعت غذا",
-      "count_24h": 24,
-      "previous_daily_avg": 125.5,
-      "acceleration": 0.19,
-      "series_7d": [
-        153,
-        143,
-        163,
-        113,
-        100,
-        42,
-        0
+        23,
+        9,
+        6,
+        2,
+        2
       ]
     },
     {
       "id": "restaurant_industry",
       "label_fa": "صنعت رستوران",
-      "count_24h": 5,
-      "previous_daily_avg": 26.5,
-      "acceleration": 0.19,
+      "count_24h": 7,
+      "previous_daily_avg": 26.83,
+      "acceleration": 0.26,
       "series_7d": [
         31,
         32,
         36,
         29,
         27,
-        8,
-        0
+        11,
+        1
+      ]
+    },
+    {
+      "id": "labor_management",
+      "label_fa": "نیروی انسانی و مدیریت",
+      "count_24h": 3,
+      "previous_daily_avg": 11.33,
+      "acceleration": 0.26,
+      "series_7d": [
+        11,
+        13,
+        9,
+        12,
+        18,
+        7,
+        1
+      ]
+    },
+    {
+      "id": "AI",
+      "label_fa": "هوش مصنوعی",
+      "count_24h": 16,
+      "previous_daily_avg": 67.33,
+      "acceleration": 0.24,
+      "series_7d": [
+        82,
+        67,
+        96,
+        62,
+        57,
+        34,
+        4
+      ]
+    },
+    {
+      "id": "marketing_branding",
+      "label_fa": "بازاریابی و برندینگ",
+      "count_24h": 2,
+      "previous_daily_avg": 8.33,
+      "acceleration": 0.24,
+      "series_7d": [
+        9,
+        10,
+        13,
+        13,
+        3,
+        2,
+        1
       ]
     }
   ],
@@ -171,96 +171,80 @@
       "id": "nestle",
       "label_fa": "نستله",
       "count_24h": 5,
-      "previous_daily_avg": 2.17,
-      "acceleration": 2.31,
+      "previous_daily_avg": 2.83,
+      "acceleration": 1.76,
       "series_7d": [
         4,
         3,
         0,
         0,
         3,
-        7,
+        10,
+        2
+      ]
+    },
+    {
+      "id": "mondelez",
+      "label_fa": "موندلیز",
+      "count_24h": 2,
+      "previous_daily_avg": 1.67,
+      "acceleration": 1.2,
+      "series_7d": [
+        5,
+        3,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "chipotle",
+      "label_fa": "چیپوتله",
+      "count_24h": 2,
+      "previous_daily_avg": 3.5,
+      "acceleration": 0.57,
+      "series_7d": [
+        5,
+        5,
+        3,
+        4,
+        4,
+        2,
         0
       ]
     },
     {
       "id": "taco_bell",
       "label_fa": "تاکو بل",
-      "count_24h": 4,
-      "previous_daily_avg": 5.5,
-      "acceleration": 0.73,
-      "series_7d": [
-        4,
-        3,
-        6,
-        9,
-        8,
-        4,
-        0
-      ]
-    },
-    {
-      "id": "burger_king",
-      "label_fa": "برگر کینگ",
-      "count_24h": 2,
-      "previous_daily_avg": 5.17,
-      "acceleration": 0.39,
-      "series_7d": [
-        9,
-        6,
-        4,
-        3,
-        8,
-        2,
-        0
-      ]
-    },
-    {
-      "id": "pepsico",
-      "label_fa": "پپسی‌کو",
       "count_24h": 3,
-      "previous_daily_avg": 8.67,
-      "acceleration": 0.35,
+      "previous_daily_avg": 5.67,
+      "acceleration": 0.53,
       "series_7d": [
-        17,
-        13,
-        6,
-        8,
-        2,
         4,
-        0
-      ]
-    },
-    {
-      "id": "mcdonalds",
-      "label_fa": "مک‌دونالدز",
-      "count_24h": 2,
-      "previous_daily_avg": 7.83,
-      "acceleration": 0.26,
-      "series_7d": [
-        11,
-        8,
-        10,
-        7,
         3,
-        2,
+        6,
+        9,
+        8,
+        5,
         0
       ]
     },
     {
-      "id": "starbucks",
-      "label_fa": "استارباکس",
-      "count_24h": 3,
-      "previous_daily_avg": 17.17,
-      "acceleration": 0.17,
+      "id": "doordash",
+      "label_fa": "دوردش",
+      "count_24h": 2,
+      "previous_daily_avg": 8.0,
+      "acceleration": 0.25,
       "series_7d": [
-        21,
-        17,
-        19,
-        12,
-        15,
-        9,
-        0
+        2,
+        6,
+        18,
+        16,
+        4,
+        1,
+        1
       ]
     }
   ],
@@ -268,7 +252,7 @@
     {
       "id": "iran_market",
       "label_fa": "بازار ایران",
-      "count_24h": 9,
+      "count_24h": 12,
       "series_7d": [
         10,
         4,
@@ -276,13 +260,13 @@
         11,
         6,
         12,
-        2
+        11
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 8,
+      "count_24h": 4,
       "series_7d": [
         27,
         31,
@@ -290,21 +274,7 @@
         42,
         30,
         14,
-        0
-      ]
-    },
-    {
-      "id": "food_cost_pricing",
-      "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 3,
-      "series_7d": [
-        4,
-        6,
-        12,
-        6,
-        1,
-        3,
-        0
+        1
       ]
     },
     {
@@ -317,8 +287,8 @@
         5,
         8,
         13,
-        10,
-        0
+        11,
+        2
       ]
     },
     {
@@ -331,14 +301,14 @@
         14,
         13,
         10,
-        10,
+        12,
         0
       ]
     },
     {
       "id": "marketing_branding",
       "label_fa": "بازاریابی و برندینگ",
-      "count_24h": 1,
+      "count_24h": 2,
       "series_7d": [
         9,
         10,
@@ -346,9 +316,9 @@
         13,
         3,
         2,
-        0
+        1
       ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: هزینه غذا و قیمت‌گذاری، ایمنی غذا، عملیات رستوران؛ برندهای پرتکرار: نستله، تاکو بل، برگر کینگ."
+  "radar_fa": "موضوع‌های رو به رشد: ایمنی غذا، نیروی انسانی، عملیات رستوران؛ برندهای پرتکرار: نستله، موندلیز، چیپوتله."
 }
