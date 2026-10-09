@@ -1,32 +1,16 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-10-09T01:24:36Z",
-  "articles_24h": 195,
-  "articles_previous_6d": 988,
-  "images_24h": 41,
+  "generated_at": "2026-10-09T10:55:12Z",
+  "articles_24h": 130,
+  "articles_previous_6d": 1015,
+  "images_24h": 40,
   "trending_topics": [
-    {
-      "id": "fast_casual",
-      "label_fa": "فست‌کژوال",
-      "count_24h": 31,
-      "previous_daily_avg": 7.5,
-      "acceleration": 4.13,
-      "series_7d": [
-        3,
-        3,
-        13,
-        6,
-        10,
-        31,
-        0
-      ]
-    },
     {
       "id": "equipment_automation",
       "label_fa": "تجهیزات و اتوماسیون",
-      "count_24h": 8,
+      "count_24h": 10,
       "previous_daily_avg": 4.5,
-      "acceleration": 1.78,
+      "acceleration": 2.22,
       "series_7d": [
         1,
         0,
@@ -34,296 +18,312 @@
         5,
         7,
         8,
-        0
+        3
       ]
     },
     {
-      "id": "beverage",
-      "label_fa": "نوشیدنی",
-      "count_24h": 42,
-      "previous_daily_avg": 25.83,
-      "acceleration": 1.63,
-      "series_7d": [
-        14,
-        12,
-        31,
-        35,
-        34,
-        42,
-        0
-      ]
-    },
-    {
-      "id": "menu",
-      "label_fa": "منو",
-      "count_24h": 22,
-      "previous_daily_avg": 14.83,
-      "acceleration": 1.48,
+      "id": "fast_casual",
+      "label_fa": "فست‌کژوال",
+      "count_24h": 19,
+      "previous_daily_avg": 8.67,
+      "acceleration": 2.19,
       "series_7d": [
         3,
-        12,
-        24,
-        21,
-        18,
-        22,
-        0
-      ]
-    },
-    {
-      "id": "menu_product_innovation",
-      "label_fa": "نوآوری منو و محصول",
-      "count_24h": 23,
-      "previous_daily_avg": 15.83,
-      "acceleration": 1.45,
-      "series_7d": [
         3,
-        12,
-        26,
-        24,
-        18,
-        23,
-        0
-      ]
-    },
-    {
-      "id": "AI",
-      "label_fa": "هوش مصنوعی",
-      "count_24h": 83,
-      "previous_daily_avg": 60.17,
-      "acceleration": 1.38,
-      "series_7d": [
-        38,
-        33,
-        86,
-        69,
-        76,
-        84,
-        0
+        13,
+        6,
+        10,
+        32,
+        1
       ]
     },
     {
       "id": "POS",
       "label_fa": "سیستم فروش",
-      "count_24h": 18,
+      "count_24h": 17,
       "previous_daily_avg": 13.17,
-      "acceleration": 1.37,
+      "acceleration": 1.29,
       "series_7d": [
         3,
         4,
         16,
         23,
         18,
-        19,
-        0
+        21,
+        3
       ]
     },
     {
-      "id": "ingredients_rd",
-      "label_fa": "مواد اولیه و تحقیق‌وتوسعه",
-      "count_24h": 12,
-      "previous_daily_avg": 8.83,
-      "acceleration": 1.36,
+      "id": "food_manufacturing",
+      "label_fa": "تولید صنایع غذایی",
+      "count_24h": 10,
+      "previous_daily_avg": 9.17,
+      "acceleration": 1.09,
+      "series_7d": [
+        3,
+        6,
+        15,
+        19,
+        8,
+        8,
+        4
+      ]
+    },
+    {
+      "id": "beverage",
+      "label_fa": "نوشیدنی",
+      "count_24h": 26,
+      "previous_daily_avg": 27.33,
+      "acceleration": 0.95,
+      "series_7d": [
+        14,
+        12,
+        31,
+        36,
+        34,
+        45,
+        2
+      ]
+    },
+    {
+      "id": "delivery",
+      "label_fa": "دلیوری",
+      "count_24h": 6,
+      "previous_daily_avg": 6.33,
+      "acceleration": 0.95,
       "series_7d": [
         1,
-        2,
-        17,
-        16,
+        3,
         10,
-        12,
-        0
-      ]
-    },
-    {
-      "id": "food_industry",
-      "label_fa": "صنعت غذا",
-      "count_24h": 144,
-      "previous_daily_avg": 108.83,
-      "acceleration": 1.32,
-      "series_7d": [
-        64,
-        78,
-        147,
-        122,
-        127,
-        146,
-        0
+        10,
+        7,
+        8,
+        3
       ]
     },
     {
       "id": "qsr_fast_food",
       "label_fa": "فست‌فود و QSR",
-      "count_24h": 41,
-      "previous_daily_avg": 32.17,
-      "acceleration": 1.27,
+      "count_24h": 29,
+      "previous_daily_avg": 33.83,
+      "acceleration": 0.86,
       "series_7d": [
         14,
         26,
         47,
-        34,
+        35,
         41,
-        41,
-        0
+        49,
+        2
+      ]
+    },
+    {
+      "id": "franchising",
+      "label_fa": "فرنچایز",
+      "count_24h": 9,
+      "previous_daily_avg": 10.5,
+      "acceleration": 0.86,
+      "series_7d": [
+        1,
+        4,
+        15,
+        15,
+        20,
+        10,
+        2
+      ]
+    },
+    {
+      "id": "food_cost_pricing",
+      "label_fa": "هزینه غذا و قیمت‌گذاری",
+      "count_24h": 6,
+      "previous_daily_avg": 7.17,
+      "acceleration": 0.84,
+      "series_7d": [
+        4,
+        3,
+        9,
+        8,
+        14,
+        7,
+        3
+      ]
+    },
+    {
+      "id": "AI",
+      "label_fa": "هوش مصنوعی",
+      "count_24h": 53,
+      "previous_daily_avg": 63.83,
+      "acceleration": 0.83,
+      "series_7d": [
+        38,
+        33,
+        86,
+        70,
+        76,
+        95,
+        9
       ]
     }
   ],
   "trending_brands": [
     {
-      "id": "sweetgreen",
-      "label_fa": "سوییت‌گرین",
-      "count_24h": 6,
-      "previous_daily_avg": 0.33,
-      "acceleration": 12.0,
-      "series_7d": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        6,
-        0
-      ]
-    },
-    {
       "id": "chipotle",
       "label_fa": "چیپوتله",
-      "count_24h": 17,
-      "previous_daily_avg": 2.83,
-      "acceleration": 6.0,
+      "count_24h": 15,
+      "previous_daily_avg": 3.17,
+      "acceleration": 4.74,
       "series_7d": [
         2,
         1,
         6,
         2,
         3,
-        17,
-        0
+        18,
+        1
       ]
     },
     {
-      "id": "mondelez",
-      "label_fa": "موندلیز",
-      "count_24h": 4,
-      "previous_daily_avg": 1.33,
-      "acceleration": 3.0,
+      "id": "tamek",
+      "label_fa": "تامک",
+      "count_24h": 2,
+      "previous_daily_avg": 0.33,
+      "acceleration": 4.0,
       "series_7d": [
+        0,
+        0,
         1,
         1,
-        2,
+        0,
         1,
-        2,
-        4,
-        0
+        1
       ]
     },
     {
-      "id": "dunkin",
-      "label_fa": "دانکین",
-      "count_24h": 6,
-      "previous_daily_avg": 2.33,
-      "acceleration": 2.57,
-      "series_7d": [
-        2,
-        3,
-        3,
-        2,
-        1,
-        6,
-        0
-      ]
-    },
-    {
-      "id": "cava",
-      "label_fa": "کاوا",
-      "count_24h": 3,
+      "id": "pinar",
+      "label_fa": "پینار",
+      "count_24h": 2,
       "previous_daily_avg": 1.17,
-      "acceleration": 2.57,
+      "acceleration": 1.71,
       "series_7d": [
-        1,
-        1,
-        3,
         1,
         0,
-        3,
-        0
-      ]
-    },
-    {
-      "id": "pepsico",
-      "label_fa": "پپسی‌کو",
-      "count_24h": 20,
-      "previous_daily_avg": 8.33,
-      "acceleration": 2.4,
-      "series_7d": [
-        4,
-        6,
-        12,
-        10,
-        15,
-        20,
-        0
-      ]
-    },
-    {
-      "id": "sunich",
-      "label_fa": "سن‌ایچ",
-      "count_24h": 11,
-      "previous_daily_avg": 4.67,
-      "acceleration": 2.36,
-      "series_7d": [
         0,
-        9,
-        8,
+        3,
         1,
         3,
-        11,
-        0
-      ]
-    },
-    {
-      "id": "coca_cola",
-      "label_fa": "کوکاکولا",
-      "count_24h": 12,
-      "previous_daily_avg": 5.33,
-      "acceleration": 2.25,
-      "series_7d": [
-        1,
-        1,
-        11,
-        9,
-        6,
-        13,
         0
       ]
     },
     {
       "id": "starbucks",
       "label_fa": "استارباکس",
-      "count_24h": 23,
+      "count_24h": 18,
       "previous_daily_avg": 11.5,
-      "acceleration": 2.0,
+      "acceleration": 1.57,
       "series_7d": [
         10,
         8,
         14,
         5,
         17,
-        23,
+        25,
+        1
+      ]
+    },
+    {
+      "id": "chickfila",
+      "label_fa": "چیک‌فیل‌ای",
+      "count_24h": 7,
+      "previous_daily_avg": 5.5,
+      "acceleration": 1.27,
+      "series_7d": [
+        1,
+        6,
+        6,
+        5,
+        7,
+        11,
+        1
+      ]
+    },
+    {
+      "id": "coca_cola",
+      "label_fa": "کوکاکولا",
+      "count_24h": 6,
+      "previous_daily_avg": 6.83,
+      "acceleration": 0.88,
+      "series_7d": [
+        1,
+        1,
+        11,
+        9,
+        6,
+        15,
+        1
+      ]
+    },
+    {
+      "id": "nestle",
+      "label_fa": "نستله",
+      "count_24h": 3,
+      "previous_daily_avg": 3.67,
+      "acceleration": 0.82,
+      "series_7d": [
+        12,
+        4,
+        3,
+        1,
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "burger_king",
+      "label_fa": "برگر کینگ",
+      "count_24h": 5,
+      "previous_daily_avg": 6.17,
+      "acceleration": 0.81,
+      "series_7d": [
+        5,
+        8,
+        7,
+        7,
+        4,
+        7,
         0
       ]
     },
     {
-      "id": "popeyes",
-      "label_fa": "پاپایز",
-      "count_24h": 3,
-      "previous_daily_avg": 1.5,
-      "acceleration": 2.0,
+      "id": "pepsico",
+      "label_fa": "پپسی‌کو",
+      "count_24h": 8,
+      "previous_daily_avg": 10.33,
+      "acceleration": 0.77,
       "series_7d": [
-        0,
-        1,
         4,
+        6,
+        12,
+        10,
+        15,
+        21,
+        1
+      ]
+    },
+    {
+      "id": "mcdonalds",
+      "label_fa": "مک‌دونالدز",
+      "count_24h": 6,
+      "previous_daily_avg": 8.0,
+      "acceleration": 0.75,
+      "series_7d": [
         3,
-        0,
-        3,
+        7,
+        14,
+        5,
+        13,
+        10,
         0
       ]
     }
@@ -332,35 +332,35 @@
     {
       "id": "iran_market",
       "label_fa": "بازار ایران",
-      "count_24h": 17,
+      "count_24h": 10,
       "series_7d": [
         12,
         21,
         17,
         8,
-        14,
-        17,
-        0
+        15,
+        23,
+        3
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 27,
+      "count_24h": 22,
       "series_7d": [
         15,
         12,
         34,
         32,
         39,
-        28,
-        0
+        32,
+        4
       ]
     },
     {
       "id": "equipment_automation",
       "label_fa": "تجهیزات و اتوماسیون",
-      "count_24h": 8,
+      "count_24h": 10,
       "series_7d": [
         1,
         0,
@@ -368,21 +368,21 @@
         5,
         7,
         8,
-        0
+        3
       ]
     },
     {
       "id": "food_cost_pricing",
       "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 5,
+      "count_24h": 6,
       "series_7d": [
         4,
         3,
-        8,
+        9,
         8,
         14,
-        6,
-        0
+        7,
+        3
       ]
     },
     {
@@ -395,38 +395,38 @@
         12,
         13,
         6,
-        7,
-        0
+        8,
+        4
       ]
     },
     {
       "id": "restaurant_operations",
       "label_fa": "عملیات رستوران",
-      "count_24h": 8,
+      "count_24h": 7,
       "series_7d": [
         13,
         3,
         12,
         17,
         12,
-        8,
-        0
+        9,
+        4
       ]
     },
     {
       "id": "marketing_branding",
       "label_fa": "بازاریابی و برندینگ",
-      "count_24h": 9,
+      "count_24h": 6,
       "series_7d": [
         2,
         5,
         16,
         13,
         12,
-        9,
+        10,
         0
       ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: فست‌کژوال، تجهیزات و اتوماسیون، نوشیدنی؛ برندهای پرتکرار: سوییت‌گرین، چیپوتله، موندلیز."
+  "radar_fa": "موضوع‌های رو به رشد: تجهیزات و اتوماسیون، فست‌کژوال، سیستم فروش؛ برندهای پرتکرار: چیپوتله، تامک، پینار."
 }
