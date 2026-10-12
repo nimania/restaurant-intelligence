@@ -1,168 +1,168 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-10-11T19:44:38Z",
-  "articles_24h": 43,
-  "articles_previous_6d": 1140,
-  "images_24h": 6,
+  "generated_at": "2026-10-12T00:43:54Z",
+  "articles_24h": 51,
+  "articles_previous_6d": 1148,
+  "images_24h": 9,
   "trending_topics": [
+    {
+      "id": "automation",
+      "label_fa": "اتوماسیون",
+      "count_24h": 2,
+      "previous_daily_avg": 0.83,
+      "acceleration": 2.4,
+      "series_7d": [
+        0,
+        4,
+        0,
+        1,
+        0,
+        2,
+        0
+      ]
+    },
     {
       "id": "pricing",
       "label_fa": "قیمت‌گذاری",
-      "count_24h": 4,
+      "count_24h": 5,
       "previous_daily_avg": 4.33,
-      "acceleration": 0.92,
+      "acceleration": 1.15,
       "series_7d": [
-        4,
         3,
         9,
         3,
         5,
         2,
-        4
+        5,
+        0
       ]
     },
     {
       "id": "food_cost_pricing",
       "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 5,
-      "previous_daily_avg": 8.33,
-      "acceleration": 0.6,
+      "count_24h": 7,
+      "previous_daily_avg": 8.5,
+      "acceleration": 0.82,
       "series_7d": [
-        9,
         8,
         14,
         7,
         9,
         4,
-        4
-      ]
-    },
-    {
-      "id": "labor",
-      "label_fa": "نیروی انسانی",
-      "count_24h": 2,
-      "previous_daily_avg": 3.33,
-      "acceleration": 0.6,
-      "series_7d": [
-        2,
-        5,
-        4,
-        2,
         7,
-        1,
-        1
+        0
       ]
     },
     {
       "id": "regulation",
       "label_fa": "قانون‌گذاری و مقررات",
       "count_24h": 10,
-      "previous_daily_avg": 18.17,
+      "previous_daily_avg": 18.33,
       "acceleration": 0.55,
       "series_7d": [
-        24,
         25,
         22,
         19,
         13,
         6,
-        8
+        11,
+        0
+      ]
+    },
+    {
+      "id": "consumer_behavior",
+      "label_fa": "رفتار مصرف‌کننده",
+      "count_24h": 6,
+      "previous_daily_avg": 11.0,
+      "acceleration": 0.55,
+      "series_7d": [
+        17,
+        14,
+        13,
+        9,
+        2,
+        6,
+        0
+      ]
+    },
+    {
+      "id": "menu",
+      "label_fa": "منو",
+      "count_24h": 10,
+      "previous_daily_avg": 18.83,
+      "acceleration": 0.53,
+      "series_7d": [
+        21,
+        18,
+        24,
+        18,
+        7,
+        11,
+        0
+      ]
+    },
+    {
+      "id": "menu_product_innovation",
+      "label_fa": "نوآوری منو و محصول",
+      "count_24h": 10,
+      "previous_daily_avg": 20.17,
+      "acceleration": 0.5,
+      "series_7d": [
+        24,
+        18,
+        25,
+        19,
+        8,
+        11,
+        0
       ]
     },
     {
       "id": "food_safety",
       "label_fa": "ایمنی غذا",
       "count_24h": 4,
-      "previous_daily_avg": 8.17,
-      "acceleration": 0.49,
+      "previous_daily_avg": 8.0,
+      "acceleration": 0.5,
       "series_7d": [
-        12,
         13,
         6,
         9,
         8,
         1,
-        4
+        4,
+        0
       ]
     },
     {
-      "id": "menu",
-      "label_fa": "منو",
-      "count_24h": 7,
-      "previous_daily_avg": 19.0,
-      "acceleration": 0.37,
-      "series_7d": [
-        24,
-        21,
-        18,
-        24,
-        18,
-        7,
-        7
-      ]
-    },
-    {
-      "id": "consumer_behavior",
-      "label_fa": "رفتار مصرف‌کننده",
-      "count_24h": 4,
-      "previous_daily_avg": 11.0,
-      "acceleration": 0.36,
-      "series_7d": [
-        11,
-        17,
-        14,
-        13,
-        9,
-        2,
-        4
-      ]
-    },
-    {
-      "id": "menu_product_innovation",
-      "label_fa": "نوآوری منو و محصول",
-      "count_24h": 7,
-      "previous_daily_avg": 20.33,
-      "acceleration": 0.34,
-      "series_7d": [
-        26,
-        24,
-        18,
-        25,
-        19,
-        8,
-        7
-      ]
-    },
-    {
-      "id": "labor_management",
-      "label_fa": "نیروی انسانی و مدیریت",
+      "id": "supply_chain",
+      "label_fa": "زنجیره تأمین",
       "count_24h": 3,
-      "previous_daily_avg": 8.83,
-      "acceleration": 0.34,
+      "previous_daily_avg": 7.67,
+      "acceleration": 0.39,
       "series_7d": [
-        8,
-        12,
-        11,
-        6,
-        14,
-        2,
-        2
+        7,
+        19,
+        4,
+        7,
+        1,
+        3,
+        0
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 8,
-      "previous_daily_avg": 29.0,
-      "acceleration": 0.28,
+      "count_24h": 11,
+      "previous_daily_avg": 29.17,
+      "acceleration": 0.38,
       "series_7d": [
-        34,
         32,
         39,
         32,
         29,
         8,
-        6
+        12,
+        0
       ]
     }
   ],
@@ -170,65 +170,81 @@
     {
       "id": "pinar",
       "label_fa": "پینار",
-      "count_24h": 3,
-      "previous_daily_avg": 1.5,
-      "acceleration": 2.0,
+      "count_24h": 2,
+      "previous_daily_avg": 1.67,
+      "acceleration": 1.2,
       "series_7d": [
-        0,
         3,
         1,
         3,
         1,
         2,
-        2
+        2,
+        0
+      ]
+    },
+    {
+      "id": "dunkin",
+      "label_fa": "دانکین",
+      "count_24h": 2,
+      "previous_daily_avg": 2.67,
+      "acceleration": 0.75,
+      "series_7d": [
+        2,
+        1,
+        6,
+        3,
+        1,
+        2,
+        0
       ]
     },
     {
       "id": "mcdonalds",
       "label_fa": "مک‌دونالدز",
-      "count_24h": 3,
-      "previous_daily_avg": 8.33,
-      "acceleration": 0.36,
+      "count_24h": 5,
+      "previous_daily_avg": 8.5,
+      "acceleration": 0.59,
       "series_7d": [
-        14,
         5,
         13,
         10,
         4,
         5,
-        2
+        5,
+        0
       ]
     },
     {
       "id": "chickfila",
       "label_fa": "چیک‌فیل‌ای",
-      "count_24h": 2,
+      "count_24h": 3,
       "previous_daily_avg": 6.5,
-      "acceleration": 0.31,
+      "acceleration": 0.46,
       "series_7d": [
-        6,
         5,
         7,
         11,
         6,
         3,
-        2
+        4,
+        0
       ]
     },
     {
       "id": "pepsico",
       "label_fa": "پپسی‌کو",
       "count_24h": 3,
-      "previous_daily_avg": 11.67,
-      "acceleration": 0.26,
+      "previous_daily_avg": 11.0,
+      "acceleration": 0.27,
       "series_7d": [
-        12,
         10,
         15,
         21,
         8,
         1,
-        3
+        3,
+        0
       ]
     },
     {
@@ -238,13 +254,29 @@
       "previous_daily_avg": 7.83,
       "acceleration": 0.26,
       "series_7d": [
-        11,
         9,
         6,
         15,
         6,
         0,
-        2
+        2,
+        0
+      ]
+    },
+    {
+      "id": "starbucks",
+      "label_fa": "استارباکس",
+      "count_24h": 3,
+      "previous_daily_avg": 14.17,
+      "acceleration": 0.21,
+      "series_7d": [
+        5,
+        17,
+        25,
+        17,
+        7,
+        3,
+        0
       ]
     }
   ],
@@ -252,43 +284,43 @@
     {
       "id": "iran_market",
       "label_fa": "بازار ایران",
-      "count_24h": 5,
+      "count_24h": 7,
       "series_7d": [
-        17,
         8,
-        28,
-        42,
+        31,
+        46,
         7,
-        16,
-        5
+        19,
+        6,
+        1
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 8,
+      "count_24h": 11,
       "series_7d": [
-        34,
         32,
         39,
         32,
         29,
         8,
-        6
+        12,
+        0
       ]
     },
     {
       "id": "food_cost_pricing",
       "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 5,
+      "count_24h": 7,
       "series_7d": [
-        9,
         8,
         14,
         7,
         9,
         4,
-        4
+        7,
+        0
       ]
     },
     {
@@ -296,13 +328,27 @@
       "label_fa": "ایمنی غذا",
       "count_24h": 4,
       "series_7d": [
-        12,
         13,
         6,
         9,
         8,
         1,
-        4
+        4,
+        0
+      ]
+    },
+    {
+      "id": "restaurant_operations",
+      "label_fa": "عملیات رستوران",
+      "count_24h": 1,
+      "series_7d": [
+        17,
+        12,
+        9,
+        17,
+        2,
+        1,
+        0
       ]
     },
     {
@@ -310,15 +356,15 @@
       "label_fa": "بازاریابی و برندینگ",
       "count_24h": 1,
       "series_7d": [
-        16,
         13,
         12,
         11,
         9,
         2,
-        1
+        1,
+        0
       ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: قیمت‌گذاری، هزینه غذا و قیمت‌گذاری، نیروی انسانی؛ برندهای پرتکرار: پینار، مک‌دونالدز، چیک‌فیل‌ای."
+  "radar_fa": "موضوع‌های رو به رشد: اتوماسیون، قیمت‌گذاری، هزینه غذا و قیمت‌گذاری؛ برندهای پرتکرار: پینار، دانکین، مک‌دونالدز."
 }
