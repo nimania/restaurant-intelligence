@@ -1,26 +1,10 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-10-16T16:51:23Z",
-  "articles_24h": 119,
-  "articles_previous_6d": 923,
-  "images_24h": 35,
+  "generated_at": "2026-10-16T21:31:41Z",
+  "articles_24h": 132,
+  "articles_previous_6d": 937,
+  "images_24h": 31,
   "trending_topics": [
-    {
-      "id": "packaging",
-      "label_fa": "بسته‌بندی",
-      "count_24h": 3,
-      "previous_daily_avg": 0.0,
-      "acceleration": 6.0,
-      "series_7d": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        2
-      ]
-    },
     {
       "id": "kiosk",
       "label_fa": "کیوسک سفارش",
@@ -38,27 +22,43 @@
       ]
     },
     {
-      "id": "automation",
-      "label_fa": "اتوماسیون",
+      "id": "packaging",
+      "label_fa": "بسته‌بندی",
       "count_24h": 2,
-      "previous_daily_avg": 0.5,
+      "previous_daily_avg": 0.17,
       "acceleration": 4.0,
       "series_7d": [
         0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "labor",
+      "label_fa": "نیروی انسانی",
+      "count_24h": 5,
+      "previous_daily_avg": 2.17,
+      "acceleration": 2.31,
+      "series_7d": [
+        1,
+        1,
         2,
-        0,
+        4,
+        3,
         1,
-        0,
-        1,
-        1
+        5
       ]
     },
     {
       "id": "supply_chain",
       "label_fa": "زنجیره تأمین",
-      "count_24h": 19,
-      "previous_daily_avg": 6.67,
-      "acceleration": 2.85,
+      "count_24h": 16,
+      "previous_daily_avg": 7.67,
+      "acceleration": 2.09,
       "series_7d": [
         1,
         3,
@@ -66,79 +66,15 @@
         11,
         9,
         16,
-        13
-      ]
-    },
-    {
-      "id": "equipment_automation",
-      "label_fa": "تجهیزات و اتوماسیون",
-      "count_24h": 7,
-      "previous_daily_avg": 3.5,
-      "acceleration": 2.0,
-      "series_7d": [
-        0,
-        0,
-        7,
-        4,
-        5,
-        7,
-        3
-      ]
-    },
-    {
-      "id": "labor",
-      "label_fa": "نیروی انسانی",
-      "count_24h": 4,
-      "previous_daily_avg": 2.17,
-      "acceleration": 1.85,
-      "series_7d": [
-        1,
-        1,
-        2,
-        4,
-        3,
-        1,
-        4
-      ]
-    },
-    {
-      "id": "beverage",
-      "label_fa": "نوشیدنی",
-      "count_24h": 37,
-      "previous_daily_avg": 26.83,
-      "acceleration": 1.38,
-      "series_7d": [
-        8,
-        9,
-        37,
-        36,
-        33,
-        46,
-        25
-      ]
-    },
-    {
-      "id": "branding",
-      "label_fa": "برندینگ",
-      "count_24h": 2,
-      "previous_daily_avg": 1.5,
-      "acceleration": 1.33,
-      "series_7d": [
-        0,
-        1,
-        0,
-        5,
-        1,
-        2,
-        1
+        16
       ]
     },
     {
       "id": "labor_management",
       "label_fa": "نیروی انسانی و مدیریت",
-      "count_24h": 9,
+      "count_24h": 11,
       "previous_daily_avg": 6.83,
-      "acceleration": 1.32,
+      "acceleration": 1.61,
       "series_7d": [
         2,
         3,
@@ -146,22 +82,86 @@
         9,
         8,
         10,
-        8
+        11
       ]
     },
     {
-      "id": "food_safety",
-      "label_fa": "ایمنی غذا",
-      "count_24h": 9,
-      "previous_daily_avg": 7.0,
-      "acceleration": 1.29,
+      "id": "equipment_automation",
+      "label_fa": "تجهیزات و اتوماسیون",
+      "count_24h": 6,
+      "previous_daily_avg": 3.83,
+      "acceleration": 1.57,
       "series_7d": [
-        1,
+        0,
+        0,
+        7,
         4,
+        5,
+        7,
+        6
+      ]
+    },
+    {
+      "id": "beverage",
+      "label_fa": "نوشیدنی",
+      "count_24h": 38,
+      "previous_daily_avg": 28.17,
+      "acceleration": 1.35,
+      "series_7d": [
         8,
         9,
+        37,
+        35,
+        33,
+        46,
+        36
+      ]
+    },
+    {
+      "id": "POS",
+      "label_fa": "سیستم فروش",
+      "count_24h": 16,
+      "previous_daily_avg": 12.67,
+      "acceleration": 1.26,
+      "series_7d": [
+        2,
+        3,
+        13,
+        15,
+        21,
+        23,
+        14
+      ]
+    },
+    {
+      "id": "restaurant_technology_ai",
+      "label_fa": "فناوری رستوران و هوش مصنوعی",
+      "count_24h": 25,
+      "previous_daily_avg": 21.17,
+      "acceleration": 1.18,
+      "series_7d": [
         8,
-        10,
+        13,
+        20,
+        25,
+        32,
+        30,
+        22
+      ]
+    },
+    {
+      "id": "restaurant_operations",
+      "label_fa": "عملیات رستوران",
+      "count_24h": 8,
+      "previous_daily_avg": 6.83,
+      "acceleration": 1.17,
+      "series_7d": [
+        2,
+        4,
+        5,
+        7,
+        16,
+        8,
         7
       ]
     }
@@ -170,9 +170,9 @@
     {
       "id": "mado",
       "label_fa": "مادو",
-      "count_24h": 4,
+      "count_24h": 6,
       "previous_daily_avg": 0.17,
-      "acceleration": 8.0,
+      "acceleration": 12.0,
       "series_7d": [
         1,
         0,
@@ -180,15 +180,15 @@
         0,
         0,
         0,
-        4
+        6
       ]
     },
     {
       "id": "kfc",
       "label_fa": "کی‌اف‌سی",
-      "count_24h": 21,
-      "previous_daily_avg": 4.67,
-      "acceleration": 4.5,
+      "count_24h": 23,
+      "previous_daily_avg": 5.33,
+      "acceleration": 4.31,
       "series_7d": [
         0,
         1,
@@ -196,15 +196,15 @@
         1,
         8,
         20,
-        17
+        23
       ]
     },
     {
       "id": "pepsico",
       "label_fa": "پپسی‌کو",
       "count_24h": 24,
-      "previous_daily_avg": 6.17,
-      "acceleration": 3.89,
+      "previous_daily_avg": 7.0,
+      "acceleration": 3.43,
       "series_7d": [
         1,
         3,
@@ -212,15 +212,15 @@
         3,
         8,
         22,
-        18
+        23
       ]
     },
     {
       "id": "coca_cola",
       "label_fa": "کوکاکولا",
-      "count_24h": 22,
-      "previous_daily_avg": 6.33,
-      "acceleration": 3.47,
+      "count_24h": 23,
+      "previous_daily_avg": 6.83,
+      "acceleration": 3.37,
       "series_7d": [
         0,
         3,
@@ -228,7 +228,7 @@
         7,
         5,
         19,
-        18
+        23
       ]
     },
     {
@@ -264,27 +264,27 @@
       ]
     },
     {
-      "id": "nestle",
-      "label_fa": "نستله",
-      "count_24h": 8,
-      "previous_daily_avg": 4.17,
-      "acceleration": 1.92,
+      "id": "caykur",
+      "label_fa": "چای‌کور",
+      "count_24h": 3,
+      "previous_daily_avg": 1.67,
+      "acceleration": 1.8,
       "series_7d": [
-        2,
-        0,
+        3,
         1,
         2,
-        13,
-        10,
-        5
+        3,
+        1,
+        0,
+        3
       ]
     },
     {
       "id": "mondelez",
       "label_fa": "موندلیز",
       "count_24h": 3,
-      "previous_daily_avg": 1.67,
-      "acceleration": 1.8,
+      "previous_daily_avg": 1.83,
+      "acceleration": 1.64,
       "series_7d": [
         0,
         2,
@@ -292,39 +292,39 @@
         1,
         2,
         5,
-        2
+        3
       ]
     },
     {
-      "id": "sysco",
-      "label_fa": "سیسکو",
+      "id": "pinar",
+      "label_fa": "پینار",
       "count_24h": 2,
-      "previous_daily_avg": 1.17,
-      "acceleration": 1.71,
+      "previous_daily_avg": 1.5,
+      "acceleration": 1.33,
       "series_7d": [
+        2,
+        2,
         0,
+        2,
         1,
         2,
-        2,
-        0,
-        4,
-        0
+        2
       ]
     },
     {
-      "id": "chickfila",
-      "label_fa": "چیک‌فیل‌ای",
-      "count_24h": 6,
-      "previous_daily_avg": 4.17,
-      "acceleration": 1.44,
+      "id": "dunkin",
+      "label_fa": "دانکین",
+      "count_24h": 3,
+      "previous_daily_avg": 2.67,
+      "acceleration": 1.12,
       "series_7d": [
-        3,
-        5,
+        1,
         2,
-        3,
+        0,
+        2,
+        7,
         4,
-        12,
-        2
+        3
       ]
     }
   ],
@@ -334,33 +334,33 @@
       "label_fa": "بازار ایران",
       "count_24h": 6,
       "series_7d": [
-        37,
+        39,
         6,
         7,
         7,
-        14,
+        15,
         11,
-        4
+        6
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 18,
+      "count_24h": 25,
       "series_7d": [
         8,
         13,
         20,
         25,
         32,
-        29,
-        13
+        30,
+        22
       ]
     },
     {
       "id": "equipment_automation",
       "label_fa": "تجهیزات و اتوماسیون",
-      "count_24h": 7,
+      "count_24h": 6,
       "series_7d": [
         0,
         0,
@@ -368,13 +368,13 @@
         4,
         5,
         7,
-        3
+        6
       ]
     },
     {
       "id": "food_cost_pricing",
       "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 5,
+      "count_24h": 3,
       "series_7d": [
         4,
         10,
@@ -382,13 +382,13 @@
         8,
         7,
         10,
-        2
+        3
       ]
     },
     {
       "id": "food_safety",
       "label_fa": "ایمنی غذا",
-      "count_24h": 9,
+      "count_24h": 7,
       "series_7d": [
         1,
         4,
@@ -402,21 +402,21 @@
     {
       "id": "restaurant_operations",
       "label_fa": "عملیات رستوران",
-      "count_24h": 5,
+      "count_24h": 8,
       "series_7d": [
         2,
         4,
         5,
         7,
         16,
-        7,
-        4
+        8,
+        7
       ]
     },
     {
       "id": "marketing_branding",
       "label_fa": "بازاریابی و برندینگ",
-      "count_24h": 9,
+      "count_24h": 6,
       "series_7d": [
         2,
         2,
@@ -428,5 +428,5 @@
       ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: بسته‌بندی، کیوسک سفارش، اتوماسیون؛ برندهای پرتکرار: مادو، کی‌اف‌سی، پپسی‌کو."
+  "radar_fa": "موضوع‌های رو به رشد: کیوسک سفارش، بسته‌بندی، نیروی انسانی؛ برندهای پرتکرار: مادو، کی‌اف‌سی، پپسی‌کو."
 }
