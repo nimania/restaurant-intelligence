@@ -1,9 +1,9 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-10-24T21:03:28Z",
-  "articles_24h": 40,
-  "articles_previous_6d": 1139,
-  "images_24h": 7,
+  "generated_at": "2026-10-24T23:30:28Z",
+  "articles_24h": 43,
+  "articles_previous_6d": 1143,
+  "images_24h": 6,
   "trending_topics": [
     {
       "id": "pricing",
@@ -22,19 +22,19 @@
       ]
     },
     {
-      "id": "retail_food",
-      "label_fa": "خرده‌فروشی غذا",
-      "count_24h": 3,
-      "previous_daily_avg": 4.33,
-      "acceleration": 0.69,
+      "id": "food_cost_pricing",
+      "label_fa": "هزینه غذا و قیمت‌گذاری",
+      "count_24h": 4,
+      "previous_daily_avg": 5.67,
+      "acceleration": 0.71,
       "series_7d": [
-        7,
-        3,
-        0,
-        9,
+        2,
+        6,
+        12,
+        8,
         4,
-        4,
-        2
+        2,
+        4
       ]
     },
     {
@@ -54,6 +54,22 @@
       ]
     },
     {
+      "id": "retail_food",
+      "label_fa": "خرده‌فروشی غذا",
+      "count_24h": 2,
+      "previous_daily_avg": 4.5,
+      "acceleration": 0.44,
+      "series_7d": [
+        7,
+        3,
+        0,
+        9,
+        4,
+        4,
+        2
+      ]
+    },
+    {
       "id": "supply_chain",
       "label_fa": "زنجیره تأمین",
       "count_24h": 2,
@@ -70,43 +86,11 @@
       ]
     },
     {
-      "id": "food_cost_pricing",
-      "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 2,
-      "previous_daily_avg": 5.67,
-      "acceleration": 0.35,
-      "series_7d": [
-        2,
-        6,
-        12,
-        8,
-        4,
-        2,
-        2
-      ]
-    },
-    {
-      "id": "restaurant_technology_ai",
-      "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 9,
-      "previous_daily_avg": 27.17,
-      "acceleration": 0.33,
-      "series_7d": [
-        7,
-        35,
-        30,
-        32,
-        39,
-        20,
-        8
-      ]
-    },
-    {
       "id": "food_safety",
       "label_fa": "ایمنی غذا",
       "count_24h": 2,
-      "previous_daily_avg": 6.5,
-      "acceleration": 0.31,
+      "previous_daily_avg": 6.33,
+      "acceleration": 0.32,
       "series_7d": [
         6,
         5,
@@ -118,55 +102,103 @@
       ]
     },
     {
-      "id": "POS",
-      "label_fa": "سیستم فروش",
-      "count_24h": 5,
-      "previous_daily_avg": 18.17,
-      "acceleration": 0.28,
+      "id": "restaurant_technology_ai",
+      "label_fa": "فناوری رستوران و هوش مصنوعی",
+      "count_24h": 8,
+      "previous_daily_avg": 27.33,
+      "acceleration": 0.29,
       "series_7d": [
-        2,
+        7,
+        35,
+        30,
+        32,
+        39,
         21,
-        22,
-        22,
-        26,
+        8
+      ]
+    },
+    {
+      "id": "menu",
+      "label_fa": "منو",
+      "count_24h": 4,
+      "previous_daily_avg": 15.5,
+      "acceleration": 0.26,
+      "series_7d": [
+        6,
+        15,
+        19,
         16,
+        17,
+        20,
         4
       ]
     },
     {
-      "id": "fast_casual",
-      "label_fa": "فست‌کژوال",
-      "count_24h": 3,
-      "previous_daily_avg": 11.0,
-      "acceleration": 0.27,
+      "id": "beverage",
+      "label_fa": "نوشیدنی",
+      "count_24h": 8,
+      "previous_daily_avg": 33.67,
+      "acceleration": 0.24,
       "series_7d": [
-        2,
-        15,
-        10,
-        15,
-        12,
-        13,
-        2
+        9,
+        37,
+        34,
+        54,
+        45,
+        23,
+        8
       ]
     },
     {
-      "id": "food_industry",
-      "label_fa": "صنعت غذا",
-      "count_24h": 27,
-      "previous_daily_avg": 136.0,
-      "acceleration": 0.2,
+      "id": "menu_product_innovation",
+      "label_fa": "نوآوری منو و محصول",
+      "count_24h": 4,
+      "previous_daily_avg": 16.67,
+      "acceleration": 0.24,
       "series_7d": [
-        82,
-        142,
-        132,
-        153,
-        192,
-        111,
-        23
+        6,
+        18,
+        20,
+        19,
+        17,
+        20,
+        4
       ]
     }
   ],
   "trending_brands": [
+    {
+      "id": "tak_macaron",
+      "label_fa": "تک ماکارون",
+      "count_24h": 2,
+      "previous_daily_avg": 1.0,
+      "acceleration": 2.0,
+      "series_7d": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        2
+      ]
+    },
+    {
+      "id": "kalleh",
+      "label_fa": "کاله",
+      "count_24h": 2,
+      "previous_daily_avg": 1.67,
+      "acceleration": 1.2,
+      "series_7d": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        6,
+        2
+      ]
+    },
     {
       "id": "wingstop",
       "label_fa": "وینگ‌استاپ",
@@ -184,11 +216,43 @@
       ]
     },
     {
+      "id": "sunich",
+      "label_fa": "سن‌ایچ",
+      "count_24h": 2,
+      "previous_daily_avg": 3.5,
+      "acceleration": 0.57,
+      "series_7d": [
+        16,
+        0,
+        0,
+        1,
+        0,
+        4,
+        2
+      ]
+    },
+    {
+      "id": "starbucks",
+      "label_fa": "استارباکس",
+      "count_24h": 4,
+      "previous_daily_avg": 9.17,
+      "acceleration": 0.44,
+      "series_7d": [
+        4,
+        11,
+        8,
+        12,
+        14,
+        6,
+        4
+      ]
+    },
+    {
       "id": "chipotle",
       "label_fa": "چیپوتله",
-      "count_24h": 3,
-      "previous_daily_avg": 4.67,
-      "acceleration": 0.64,
+      "count_24h": 2,
+      "previous_daily_avg": 4.83,
+      "acceleration": 0.41,
       "series_7d": [
         1,
         6,
@@ -197,22 +261,6 @@
         5,
         7,
         2
-      ]
-    },
-    {
-      "id": "pizza_hut",
-      "label_fa": "پیتزا هات",
-      "count_24h": 2,
-      "previous_daily_avg": 3.67,
-      "acceleration": 0.55,
-      "series_7d": [
-        1,
-        2,
-        0,
-        6,
-        12,
-        2,
-        1
       ]
     },
     {
@@ -235,8 +283,8 @@
       "id": "kfc",
       "label_fa": "کی‌اف‌سی",
       "count_24h": 2,
-      "previous_daily_avg": 7.67,
-      "acceleration": 0.26,
+      "previous_daily_avg": 7.5,
+      "acceleration": 0.27,
       "series_7d": [
         1,
         6,
@@ -248,19 +296,19 @@
       ]
     },
     {
-      "id": "starbucks",
-      "label_fa": "استارباکس",
+      "id": "taco_bell",
+      "label_fa": "تاکو بل",
       "count_24h": 2,
-      "previous_daily_avg": 9.0,
-      "acceleration": 0.22,
+      "previous_daily_avg": 11.33,
+      "acceleration": 0.18,
       "series_7d": [
-        4,
-        11,
-        8,
-        12,
-        14,
         6,
-        1
+        13,
+        2,
+        11,
+        24,
+        12,
+        2
       ]
     }
   ],
@@ -268,35 +316,35 @@
     {
       "id": "iran_market",
       "label_fa": "بازار ایران",
-      "count_24h": 9,
+      "count_24h": 12,
       "series_7d": [
         45,
         6,
         2,
         9,
-        34,
-        25,
-        9
+        36,
+        29,
+        12
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 9,
+      "count_24h": 8,
       "series_7d": [
         7,
         35,
         30,
         32,
         39,
-        20,
+        21,
         8
       ]
     },
     {
       "id": "food_cost_pricing",
       "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 2,
+      "count_24h": 4,
       "series_7d": [
         2,
         6,
@@ -304,7 +352,7 @@
         8,
         4,
         2,
-        2
+        4
       ]
     },
     {
@@ -334,7 +382,21 @@
         7,
         1
       ]
+    },
+    {
+      "id": "marketing_branding",
+      "label_fa": "بازاریابی و برندینگ",
+      "count_24h": 1,
+      "series_7d": [
+        2,
+        4,
+        7,
+        15,
+        13,
+        11,
+        1
+      ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: قیمت‌گذاری، خرده‌فروشی غذا، مواد اولیه و تحقیق‌وتوسعه؛ برندهای پرتکرار: وینگ‌استاپ، چیپوتله، پیتزا هات."
+  "radar_fa": "موضوع‌های رو به رشد: قیمت‌گذاری، هزینه غذا و قیمت‌گذاری، مواد اولیه و تحقیق‌وتوسعه؛ برندهای پرتکرار: تک ماکارون، کاله، وینگ‌استاپ."
 }
