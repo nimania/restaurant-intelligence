@@ -1,32 +1,32 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-10-24T16:12:28Z",
-  "articles_24h": 41,
-  "articles_previous_6d": 1127,
+  "generated_at": "2026-10-24T21:03:28Z",
+  "articles_24h": 40,
+  "articles_previous_6d": 1139,
   "images_24h": 7,
   "trending_topics": [
     {
-      "id": "equipment_automation",
-      "label_fa": "تجهیزات و اتوماسیون",
-      "count_24h": 4,
-      "previous_daily_avg": 3.67,
-      "acceleration": 1.09,
+      "id": "pricing",
+      "label_fa": "قیمت‌گذاری",
+      "count_24h": 2,
+      "previous_daily_avg": 2.33,
+      "acceleration": 0.86,
       "series_7d": [
-        0,
-        5,
         1,
-        6,
-        8,
-        6,
-        0
+        4,
+        5,
+        4,
+        0,
+        0,
+        2
       ]
     },
     {
       "id": "retail_food",
       "label_fa": "خرده‌فروشی غذا",
-      "count_24h": 2,
+      "count_24h": 3,
       "previous_daily_avg": 4.33,
-      "acceleration": 0.46,
+      "acceleration": 0.69,
       "series_7d": [
         7,
         3,
@@ -34,15 +34,15 @@
         9,
         4,
         4,
-        1
+        2
       ]
     },
     {
       "id": "ingredients_rd",
       "label_fa": "مواد اولیه و تحقیق‌وتوسعه",
-      "count_24h": 3,
-      "previous_daily_avg": 7.5,
-      "acceleration": 0.4,
+      "count_24h": 4,
+      "previous_daily_avg": 7.33,
+      "acceleration": 0.55,
       "series_7d": [
         1,
         10,
@@ -50,31 +50,15 @@
         9,
         10,
         7,
-        3
-      ]
-    },
-    {
-      "id": "fast_casual",
-      "label_fa": "فست‌کژوال",
-      "count_24h": 4,
-      "previous_daily_avg": 10.5,
-      "acceleration": 0.38,
-      "series_7d": [
-        2,
-        15,
-        10,
-        15,
-        12,
-        13,
-        0
+        4
       ]
     },
     {
       "id": "supply_chain",
       "label_fa": "زنجیره تأمین",
       "count_24h": 2,
-      "previous_daily_avg": 5.67,
-      "acceleration": 0.35,
+      "previous_daily_avg": 5.0,
+      "acceleration": 0.4,
       "series_7d": [
         3,
         5,
@@ -82,7 +66,39 @@
         4,
         7,
         7,
-        1
+        2
+      ]
+    },
+    {
+      "id": "food_cost_pricing",
+      "label_fa": "هزینه غذا و قیمت‌گذاری",
+      "count_24h": 2,
+      "previous_daily_avg": 5.67,
+      "acceleration": 0.35,
+      "series_7d": [
+        2,
+        6,
+        12,
+        8,
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "restaurant_technology_ai",
+      "label_fa": "فناوری رستوران و هوش مصنوعی",
+      "count_24h": 9,
+      "previous_daily_avg": 27.17,
+      "acceleration": 0.33,
+      "series_7d": [
+        7,
+        35,
+        30,
+        32,
+        39,
+        20,
+        8
       ]
     },
     {
@@ -102,42 +118,10 @@
       ]
     },
     {
-      "id": "restaurant_technology_ai",
-      "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 8,
-      "previous_daily_avg": 27.0,
-      "acceleration": 0.3,
-      "series_7d": [
-        7,
-        35,
-        30,
-        32,
-        39,
-        20,
-        4
-      ]
-    },
-    {
-      "id": "delivery_drive_thru",
-      "label_fa": "دلیوری و درایو‌ثرو",
-      "count_24h": 5,
-      "previous_daily_avg": 17.83,
-      "acceleration": 0.28,
-      "series_7d": [
-        5,
-        26,
-        23,
-        24,
-        14,
-        17,
-        1
-      ]
-    },
-    {
       "id": "POS",
       "label_fa": "سیستم فروش",
       "count_24h": 5,
-      "previous_daily_avg": 17.83,
+      "previous_daily_avg": 18.17,
       "acceleration": 0.28,
       "series_7d": [
         2,
@@ -146,65 +130,65 @@
         22,
         26,
         16,
+        4
+      ]
+    },
+    {
+      "id": "fast_casual",
+      "label_fa": "فست‌کژوال",
+      "count_24h": 3,
+      "previous_daily_avg": 11.0,
+      "acceleration": 0.27,
+      "series_7d": [
+        2,
+        15,
+        10,
+        15,
+        12,
+        13,
         2
       ]
     },
     {
-      "id": "food_manufacturing",
-      "label_fa": "تولید صنایع غذایی",
-      "count_24h": 4,
-      "previous_daily_avg": 16.17,
-      "acceleration": 0.25,
+      "id": "food_industry",
+      "label_fa": "صنعت غذا",
+      "count_24h": 27,
+      "previous_daily_avg": 136.0,
+      "acceleration": 0.2,
       "series_7d": [
-        7,
-        23,
-        9,
-        12,
-        34,
-        10,
-        2
+        82,
+        142,
+        132,
+        153,
+        192,
+        111,
+        23
       ]
     }
   ],
   "trending_brands": [
     {
-      "id": "snappfood",
-      "label_fa": "اسنپ‌فود",
-      "count_24h": 3,
-      "previous_daily_avg": 0.17,
-      "acceleration": 6.0,
+      "id": "wingstop",
+      "label_fa": "وینگ‌استاپ",
+      "count_24h": 2,
+      "previous_daily_avg": 1.83,
+      "acceleration": 1.09,
       "series_7d": [
-        0,
-        0,
-        0,
-        0,
         0,
         4,
-        0
-      ]
-    },
-    {
-      "id": "zarr_group",
-      "label_fa": "گروه صنعتی زر",
-      "count_24h": 2,
-      "previous_daily_avg": 1.33,
-      "acceleration": 1.5,
-      "series_7d": [
-        0,
-        0,
-        0,
         1,
-        7,
         2,
-        0
+        3,
+        1,
+        2
       ]
     },
     {
       "id": "chipotle",
       "label_fa": "چیپوتله",
       "count_24h": 3,
-      "previous_daily_avg": 4.33,
-      "acceleration": 0.69,
+      "previous_daily_avg": 4.67,
+      "acceleration": 0.64,
       "series_7d": [
         1,
         6,
@@ -212,7 +196,23 @@
         5,
         5,
         7,
-        0
+        2
+      ]
+    },
+    {
+      "id": "pizza_hut",
+      "label_fa": "پیتزا هات",
+      "count_24h": 2,
+      "previous_daily_avg": 3.67,
+      "acceleration": 0.55,
+      "series_7d": [
+        1,
+        2,
+        0,
+        6,
+        12,
+        2,
+        1
       ]
     },
     {
@@ -232,34 +232,34 @@
       ]
     },
     {
-      "id": "coca_cola",
-      "label_fa": "کوکاکولا",
+      "id": "kfc",
+      "label_fa": "کی‌اف‌سی",
       "count_24h": 2,
-      "previous_daily_avg": 10.17,
-      "acceleration": 0.2,
+      "previous_daily_avg": 7.67,
+      "acceleration": 0.26,
       "series_7d": [
-        0,
+        1,
+        6,
+        6,
         10,
-        14,
-        9,
-        19,
-        7,
-        1
+        20,
+        2,
+        2
       ]
     },
     {
-      "id": "taco_bell",
-      "label_fa": "تاکو بل",
+      "id": "starbucks",
+      "label_fa": "استارباکس",
       "count_24h": 2,
-      "previous_daily_avg": 11.17,
-      "acceleration": 0.18,
+      "previous_daily_avg": 9.0,
+      "acceleration": 0.22,
       "series_7d": [
-        6,
-        13,
-        2,
+        4,
         11,
-        24,
+        8,
         12,
+        14,
+        6,
         1
       ]
     }
@@ -268,21 +268,21 @@
     {
       "id": "iran_market",
       "label_fa": "بازار ایران",
-      "count_24h": 11,
+      "count_24h": 9,
       "series_7d": [
         45,
         6,
         2,
         9,
-        32,
-        21,
-        6
+        34,
+        25,
+        9
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 8,
+      "count_24h": 9,
       "series_7d": [
         7,
         35,
@@ -290,27 +290,13 @@
         32,
         39,
         20,
-        4
-      ]
-    },
-    {
-      "id": "equipment_automation",
-      "label_fa": "تجهیزات و اتوماسیون",
-      "count_24h": 4,
-      "series_7d": [
-        0,
-        5,
-        1,
-        6,
-        8,
-        6,
-        0
+        8
       ]
     },
     {
       "id": "food_cost_pricing",
       "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 1,
+      "count_24h": 2,
       "series_7d": [
         2,
         6,
@@ -318,7 +304,7 @@
         8,
         4,
         2,
-        1
+        2
       ]
     },
     {
@@ -338,7 +324,7 @@
     {
       "id": "restaurant_operations",
       "label_fa": "عملیات رستوران",
-      "count_24h": 2,
+      "count_24h": 1,
       "series_7d": [
         2,
         6,
@@ -348,21 +334,7 @@
         7,
         1
       ]
-    },
-    {
-      "id": "marketing_branding",
-      "label_fa": "بازاریابی و برندینگ",
-      "count_24h": 1,
-      "series_7d": [
-        2,
-        4,
-        7,
-        15,
-        13,
-        11,
-        0
-      ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: تجهیزات و اتوماسیون، خرده‌فروشی غذا، مواد اولیه و تحقیق‌وتوسعه؛ برندهای پرتکرار: اسنپ‌فود، گروه صنعتی زر، چیپوتله."
+  "radar_fa": "موضوع‌های رو به رشد: قیمت‌گذاری، خرده‌فروشی غذا، مواد اولیه و تحقیق‌وتوسعه؛ برندهای پرتکرار: وینگ‌استاپ، چیپوتله، پیتزا هات."
 }
