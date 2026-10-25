@@ -1,56 +1,40 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-10-25T11:43:46Z",
-  "articles_24h": 43,
-  "articles_previous_6d": 1124,
-  "images_24h": 11,
+  "generated_at": "2026-10-25T16:36:21Z",
+  "articles_24h": 42,
+  "articles_previous_6d": 1141,
+  "images_24h": 14,
   "trending_topics": [
     {
       "id": "supply_chain",
       "label_fa": "زنجیره تأمین",
-      "count_24h": 5,
-      "previous_daily_avg": 5.0,
-      "acceleration": 1.0,
+      "count_24h": 6,
+      "previous_daily_avg": 4.83,
+      "acceleration": 1.24,
       "series_7d": [
         5,
         4,
         4,
         7,
         7,
+        2,
+        5
+      ]
+    },
+    {
+      "id": "food_safety",
+      "label_fa": "ایمنی غذا",
+      "count_24h": 4,
+      "previous_daily_avg": 6.17,
+      "acceleration": 0.65,
+      "series_7d": [
+        5,
+        5,
+        8,
+        9,
+        5,
         2,
         4
-      ]
-    },
-    {
-      "id": "food_cost_pricing",
-      "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 5,
-      "previous_daily_avg": 5.83,
-      "acceleration": 0.86,
-      "series_7d": [
-        6,
-        12,
-        8,
-        4,
-        2,
-        5,
-        1
-      ]
-    },
-    {
-      "id": "pricing",
-      "label_fa": "قیمت‌گذاری",
-      "count_24h": 2,
-      "previous_daily_avg": 2.5,
-      "acceleration": 0.8,
-      "series_7d": [
-        4,
-        5,
-        4,
-        0,
-        0,
-        3,
-        0
       ]
     },
     {
@@ -66,31 +50,47 @@
         20,
         8,
         4,
+        6
+      ]
+    },
+    {
+      "id": "food_manufacturing",
+      "label_fa": "تولید صنایع غذایی",
+      "count_24h": 7,
+      "previous_daily_avg": 17.17,
+      "acceleration": 0.41,
+      "series_7d": [
+        23,
+        9,
+        12,
+        39,
+        16,
+        5,
         5
       ]
     },
     {
-      "id": "food_safety",
-      "label_fa": "ایمنی غذا",
-      "count_24h": 3,
+      "id": "food_cost_pricing",
+      "label_fa": "هزینه غذا و قیمت‌گذاری",
+      "count_24h": 2,
       "previous_daily_avg": 6.33,
-      "acceleration": 0.47,
+      "acceleration": 0.32,
       "series_7d": [
-        5,
-        5,
+        6,
+        12,
         8,
-        9,
-        5,
+        4,
         2,
-        3
+        5,
+        2
       ]
     },
     {
       "id": "franchising",
       "label_fa": "فرنچایز",
-      "count_24h": 4,
+      "count_24h": 3,
       "previous_daily_avg": 11.17,
-      "acceleration": 0.36,
+      "acceleration": 0.27,
       "series_7d": [
         9,
         16,
@@ -102,50 +102,18 @@
       ]
     },
     {
-      "id": "beverage",
-      "label_fa": "نوشیدنی",
-      "count_24h": 10,
-      "previous_daily_avg": 33.5,
-      "acceleration": 0.3,
-      "series_7d": [
-        37,
-        34,
-        54,
-        44,
-        23,
-        14,
-        1
-      ]
-    },
-    {
-      "id": "food_manufacturing",
-      "label_fa": "تولید صنایع غذایی",
+      "id": "delivery_drive_thru",
+      "label_fa": "دلیوری و درایو‌ثرو",
       "count_24h": 5,
-      "previous_daily_avg": 17.0,
-      "acceleration": 0.29,
-      "series_7d": [
-        23,
-        9,
-        12,
-        38,
-        15,
-        5,
-        3
-      ]
-    },
-    {
-      "id": "fast_casual",
-      "label_fa": "فست‌کژوال",
-      "count_24h": 3,
-      "previous_daily_avg": 11.33,
+      "previous_daily_avg": 19.17,
       "acceleration": 0.26,
       "series_7d": [
-        15,
-        10,
-        15,
-        12,
-        13,
-        2,
+        26,
+        23,
+        24,
+        14,
+        22,
+        7,
         2
       ]
     },
@@ -153,8 +121,8 @@
       "id": "ingredients_rd",
       "label_fa": "مواد اولیه و تحقیق‌وتوسعه",
       "count_24h": 2,
-      "previous_daily_avg": 7.83,
-      "acceleration": 0.26,
+      "previous_daily_avg": 8.0,
+      "acceleration": 0.25,
       "series_7d": [
         10,
         7,
@@ -162,49 +130,49 @@
         10,
         7,
         5,
-        1
+        2
+      ]
+    },
+    {
+      "id": "beverage",
+      "label_fa": "نوشیدنی",
+      "count_24h": 8,
+      "previous_daily_avg": 34.67,
+      "acceleration": 0.23,
+      "series_7d": [
+        37,
+        34,
+        54,
+        45,
+        23,
+        16,
+        5
+      ]
+    },
+    {
+      "id": "qsr_fast_food",
+      "label_fa": "فست‌فود و QSR",
+      "count_24h": 10,
+      "previous_daily_avg": 44.83,
+      "acceleration": 0.22,
+      "series_7d": [
+        66,
+        38,
+        48,
+        62,
+        43,
+        9,
+        8
       ]
     }
   ],
   "trending_brands": [
     {
-      "id": "sunich",
-      "label_fa": "سن‌ایچ",
-      "count_24h": 4,
-      "previous_daily_avg": 1.17,
-      "acceleration": 3.43,
-      "series_7d": [
-        0,
-        0,
-        1,
-        0,
-        6,
-        4,
-        0
-      ]
-    },
-    {
-      "id": "wingstop",
-      "label_fa": "وینگ‌استاپ",
-      "count_24h": 2,
-      "previous_daily_avg": 2.0,
-      "acceleration": 1.0,
-      "series_7d": [
-        4,
-        1,
-        2,
-        3,
-        1,
-        3,
-        0
-      ]
-    },
-    {
       "id": "chickfila",
       "label_fa": "چیک‌فیل‌ای",
       "count_24h": 2,
-      "previous_daily_avg": 3.0,
-      "acceleration": 0.67,
+      "previous_daily_avg": 3.17,
+      "acceleration": 0.63,
       "series_7d": [
         6,
         2,
@@ -212,23 +180,23 @@
         1,
         1,
         2,
-        0
+        1
       ]
     },
     {
-      "id": "chipotle",
-      "label_fa": "چیپوتله",
+      "id": "mcdonalds",
+      "label_fa": "مک‌دونالدز",
       "count_24h": 3,
-      "previous_daily_avg": 5.0,
-      "acceleration": 0.6,
+      "previous_daily_avg": 6.33,
+      "acceleration": 0.47,
       "series_7d": [
+        11,
         6,
-        5,
-        5,
-        5,
-        7,
+        4,
         2,
-        2
+        11,
+        3,
+        3
       ]
     },
     {
@@ -248,35 +216,51 @@
       ]
     },
     {
-      "id": "starbucks",
-      "label_fa": "استارباکس",
-      "count_24h": 3,
-      "previous_daily_avg": 8.83,
-      "acceleration": 0.34,
+      "id": "chipotle",
+      "label_fa": "چیپوتله",
+      "count_24h": 2,
+      "previous_daily_avg": 5.0,
+      "acceleration": 0.4,
       "series_7d": [
-        11,
-        8,
-        12,
-        14,
         6,
-        4,
-        0
+        5,
+        5,
+        5,
+        7,
+        2,
+        2
       ]
     },
     {
-      "id": "mcdonalds",
-      "label_fa": "مک‌دونالدز",
+      "id": "nestle",
+      "label_fa": "نستله",
       "count_24h": 2,
-      "previous_daily_avg": 6.17,
-      "acceleration": 0.32,
+      "previous_daily_avg": 8.33,
+      "acceleration": 0.24,
       "series_7d": [
-        11,
+        9,
         6,
-        4,
+        12,
+        18,
+        3,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "taco_bell",
+      "label_fa": "تاکو بل",
+      "count_24h": 2,
+      "previous_daily_avg": 10.67,
+      "acceleration": 0.19,
+      "series_7d": [
+        13,
         2,
         11,
-        3,
-        1
+        24,
+        12,
+        2,
+        2
       ]
     }
   ],
@@ -284,35 +268,35 @@
     {
       "id": "iran_market",
       "label_fa": "بازار ایران",
-      "count_24h": 12,
+      "count_24h": 8,
       "series_7d": [
         6,
         2,
-        11,
-        39,
-        37,
-        17,
+        12,
+        41,
+        41,
+        19,
         8
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 2,
+      "count_24h": 4,
       "series_7d": [
         35,
         30,
         32,
         39,
         21,
-        9,
-        0
+        11,
+        2
       ]
     },
     {
       "id": "food_cost_pricing",
       "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 5,
+      "count_24h": 2,
       "series_7d": [
         6,
         12,
@@ -320,13 +304,13 @@
         4,
         2,
         5,
-        1
+        2
       ]
     },
     {
       "id": "food_safety",
       "label_fa": "ایمنی غذا",
-      "count_24h": 3,
+      "count_24h": 4,
       "series_7d": [
         5,
         5,
@@ -334,7 +318,7 @@
         9,
         5,
         2,
-        3
+        4
       ]
     },
     {
@@ -354,7 +338,7 @@
     {
       "id": "marketing_branding",
       "label_fa": "بازاریابی و برندینگ",
-      "count_24h": 2,
+      "count_24h": 1,
       "series_7d": [
         4,
         7,
@@ -366,5 +350,5 @@
       ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: زنجیره تأمین، هزینه غذا و قیمت‌گذاری، قیمت‌گذاری؛ برندهای پرتکرار: سن‌ایچ، وینگ‌استاپ، چیک‌فیل‌ای."
+  "radar_fa": "موضوع‌های رو به رشد: زنجیره تأمین، ایمنی غذا، قانون‌گذاری و مقررات؛ برندهای پرتکرار: چیک‌فیل‌ای، مک‌دونالدز، اوبر ایتس."
 }
