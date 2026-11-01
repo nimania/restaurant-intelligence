@@ -1,32 +1,16 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-11-01T00:21:55Z",
-  "articles_24h": 55,
-  "articles_previous_6d": 1243,
-  "images_24h": 6,
+  "generated_at": "2026-11-01T06:22:34Z",
+  "articles_24h": 46,
+  "articles_previous_6d": 1259,
+  "images_24h": 5,
   "trending_topics": [
-    {
-      "id": "food_safety",
-      "label_fa": "ایمنی غذا",
-      "count_24h": 4,
-      "previous_daily_avg": 5.5,
-      "acceleration": 0.73,
-      "series_7d": [
-        4,
-        6,
-        9,
-        5,
-        4,
-        4,
-        0
-      ]
-    },
     {
       "id": "ingredients_rd",
       "label_fa": "مواد اولیه و تحقیق‌وتوسعه",
-      "count_24h": 4,
-      "previous_daily_avg": 7.33,
-      "acceleration": 0.55,
+      "count_24h": 3,
+      "previous_daily_avg": 7.17,
+      "acceleration": 0.42,
       "series_7d": [
         12,
         6,
@@ -34,70 +18,6 @@
         9,
         6,
         4,
-        0
-      ]
-    },
-    {
-      "id": "regulation",
-      "label_fa": "قانون‌گذاری و مقررات",
-      "count_24h": 5,
-      "previous_daily_avg": 12.17,
-      "acceleration": 0.41,
-      "series_7d": [
-        7,
-        13,
-        13,
-        14,
-        18,
-        5,
-        0
-      ]
-    },
-    {
-      "id": "beverage",
-      "label_fa": "نوشیدنی",
-      "count_24h": 11,
-      "previous_daily_avg": 27.83,
-      "acceleration": 0.4,
-      "series_7d": [
-        34,
-        41,
-        25,
-        22,
-        31,
-        12,
-        0
-      ]
-    },
-    {
-      "id": "menu",
-      "label_fa": "منو",
-      "count_24h": 7,
-      "previous_daily_avg": 17.67,
-      "acceleration": 0.4,
-      "series_7d": [
-        25,
-        19,
-        22,
-        18,
-        15,
-        7,
-        0
-      ]
-    },
-    {
-      "id": "menu_product_innovation",
-      "label_fa": "نوآوری منو و محصول",
-      "count_24h": 7,
-      "previous_daily_avg": 18.5,
-      "acceleration": 0.38,
-      "series_7d": [
-        27,
-        19,
-        24,
-        19,
-        15,
-        7,
         0
       ]
     },
@@ -105,8 +25,8 @@
       "id": "franchising",
       "label_fa": "فرنچایز",
       "count_24h": 3,
-      "previous_daily_avg": 8.0,
-      "acceleration": 0.38,
+      "previous_daily_avg": 7.67,
+      "acceleration": 0.39,
       "series_7d": [
         10,
         11,
@@ -118,100 +38,148 @@
       ]
     },
     {
-      "id": "qsr_fast_food",
-      "label_fa": "فست‌فود و QSR",
-      "count_24h": 13,
-      "previous_daily_avg": 41.0,
+      "id": "food_safety",
+      "label_fa": "ایمنی غذا",
+      "count_24h": 2,
+      "previous_daily_avg": 5.33,
+      "acceleration": 0.38,
+      "series_7d": [
+        4,
+        6,
+        9,
+        5,
+        4,
+        4,
+        0
+      ]
+    },
+    {
+      "id": "food_manufacturing",
+      "label_fa": "تولید صنایع غذایی",
+      "count_24h": 5,
+      "previous_daily_avg": 14.33,
+      "acceleration": 0.35,
+      "series_7d": [
+        31,
+        16,
+        13,
+        13,
+        6,
+        4,
+        2
+      ]
+    },
+    {
+      "id": "menu",
+      "label_fa": "منو",
+      "count_24h": 6,
+      "previous_daily_avg": 17.83,
+      "acceleration": 0.34,
+      "series_7d": [
+        25,
+        19,
+        22,
+        18,
+        15,
+        8,
+        0
+      ]
+    },
+    {
+      "id": "menu_product_innovation",
+      "label_fa": "نوآوری منو و محصول",
+      "count_24h": 6,
+      "previous_daily_avg": 18.67,
       "acceleration": 0.32,
       "series_7d": [
-        42,
-        46,
-        53,
-        45,
-        40,
-        14,
+        27,
+        19,
+        24,
+        19,
+        15,
+        8,
         0
       ]
     },
     {
       "id": "food_industry",
       "label_fa": "صنعت غذا",
-      "count_24h": 43,
-      "previous_daily_avg": 149.17,
-      "acceleration": 0.29,
+      "count_24h": 38,
+      "previous_daily_avg": 151.33,
+      "acceleration": 0.25,
       "series_7d": [
-        194,
+        195,
         151,
-        166,
-        189,
-        127,
-        45,
+        167,
+        193,
+        130,
+        58,
+        3
+      ]
+    },
+    {
+      "id": "delivery_drive_thru",
+      "label_fa": "دلیوری و درایو‌ثرو",
+      "count_24h": 9,
+      "previous_daily_avg": 36.17,
+      "acceleration": 0.25,
+      "series_7d": [
+        58,
+        39,
+        36,
+        43,
+        32,
+        12,
         0
       ]
     },
     {
-      "id": "restaurant_technology_ai",
-      "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 8,
-      "previous_daily_avg": 28.83,
-      "acceleration": 0.28,
+      "id": "regulation",
+      "label_fa": "قانون‌گذاری و مقررات",
+      "count_24h": 3,
+      "previous_daily_avg": 11.83,
+      "acceleration": 0.25,
       "series_7d": [
-        30,
-        40,
-        35,
-        31,
-        31,
+        7,
+        13,
+        13,
+        14,
+        18,
+        5,
+        0
+      ]
+    },
+    {
+      "id": "fast_casual",
+      "label_fa": "فست‌کژوال",
+      "count_24h": 3,
+      "previous_daily_avg": 13.67,
+      "acceleration": 0.22,
+      "series_7d": [
+        16,
+        20,
+        18,
+        19,
         9,
+        3,
         0
       ]
     }
   ],
   "trending_brands": [
     {
-      "id": "chickfila",
-      "label_fa": "چیک‌فیل‌ای",
-      "count_24h": 6,
-      "previous_daily_avg": 4.17,
-      "acceleration": 1.44,
+      "id": "zarr_group",
+      "label_fa": "گروه صنعتی زر",
+      "count_24h": 2,
+      "previous_daily_avg": 0.33,
+      "acceleration": 4.0,
       "series_7d": [
-        6,
+        0,
+        0,
         2,
-        9,
-        4,
-        3,
-        6,
-        0
-      ]
-    },
-    {
-      "id": "caykur",
-      "label_fa": "چای‌کور",
-      "count_24h": 6,
-      "previous_daily_avg": 4.17,
-      "acceleration": 1.44,
-      "series_7d": [
-        6,
-        5,
-        4,
-        4,
-        4,
-        6,
-        0
-      ]
-    },
-    {
-      "id": "kfc",
-      "label_fa": "کی‌اف‌سی",
-      "count_24h": 5,
-      "previous_daily_avg": 3.5,
-      "acceleration": 1.43,
-      "series_7d": [
-        3,
-        3,
-        4,
-        3,
-        7,
-        5,
+        0,
+        0,
+        2,
         0
       ]
     },
@@ -219,8 +187,8 @@
       "id": "dunkin",
       "label_fa": "دانکین",
       "count_24h": 2,
-      "previous_daily_avg": 1.83,
-      "acceleration": 1.09,
+      "previous_daily_avg": 1.67,
+      "acceleration": 1.2,
       "series_7d": [
         1,
         2,
@@ -232,98 +200,130 @@
       ]
     },
     {
-      "id": "shirin_asal",
-      "label_fa": "شیرین عسل",
-      "count_24h": 2,
-      "previous_daily_avg": 1.83,
-      "acceleration": 1.09,
+      "id": "chickfila",
+      "label_fa": "چیک‌فیل‌ای",
+      "count_24h": 4,
+      "previous_daily_avg": 4.33,
+      "acceleration": 0.92,
       "series_7d": [
-        0,
-        0,
-        0,
+        6,
+        2,
         9,
+        4,
+        3,
+        6,
+        0
+      ]
+    },
+    {
+      "id": "mondelez",
+      "label_fa": "موندلیز",
+      "count_24h": 2,
+      "previous_daily_avg": 2.17,
+      "acceleration": 0.92,
+      "series_7d": [
+        3,
+        0,
+        1,
+        6,
+        3,
         2,
-        2,
+        0
+      ]
+    },
+    {
+      "id": "caykur",
+      "label_fa": "چای‌کور",
+      "count_24h": 3,
+      "previous_daily_avg": 4.83,
+      "acceleration": 0.62,
+      "series_7d": [
+        6,
+        5,
+        4,
+        4,
+        4,
+        9,
         0
       ]
     },
     {
       "id": "pizza_hut",
       "label_fa": "پیتزا هات",
-      "count_24h": 5,
-      "previous_daily_avg": 5.0,
-      "acceleration": 1.0,
+      "count_24h": 3,
+      "previous_daily_avg": 5.17,
+      "acceleration": 0.58,
       "series_7d": [
         7,
         3,
         6,
         5,
         4,
-        5,
-        0
-      ]
-    },
-    {
-      "id": "popeyes",
-      "label_fa": "پاپایز",
-      "count_24h": 2,
-      "previous_daily_avg": 5.5,
-      "acceleration": 0.36,
-      "series_7d": [
-        4,
         6,
-        4,
-        9,
-        8,
-        3,
         0
       ]
     },
     {
       "id": "chipotle",
       "label_fa": "چیپوتله",
-      "count_24h": 2,
-      "previous_daily_avg": 5.67,
-      "acceleration": 0.35,
+      "count_24h": 3,
+      "previous_daily_avg": 5.33,
+      "acceleration": 0.56,
       "series_7d": [
         9,
         2,
         9,
         11,
         1,
-        2,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "kfc",
+      "label_fa": "کی‌اف‌سی",
+      "count_24h": 2,
+      "previous_daily_avg": 4.0,
+      "acceleration": 0.5,
+      "series_7d": [
+        3,
+        3,
+        4,
+        3,
+        7,
+        5,
         0
       ]
     },
     {
       "id": "snappfood",
       "label_fa": "اسنپ‌فود",
-      "count_24h": 2,
-      "previous_daily_avg": 7.67,
-      "acceleration": 0.26,
+      "count_24h": 3,
+      "previous_daily_avg": 7.83,
+      "acceleration": 0.38,
       "series_7d": [
         21,
         10,
-        12,
+        13,
         0,
         0,
-        2,
+        3,
         0
       ]
     },
     {
-      "id": "doordash",
-      "label_fa": "دوردش",
-      "count_24h": 3,
-      "previous_daily_avg": 12.83,
-      "acceleration": 0.23,
+      "id": "uber_eats",
+      "label_fa": "اوبر ایتس",
+      "count_24h": 2,
+      "previous_daily_avg": 6.0,
+      "acceleration": 0.33,
       "series_7d": [
-        18,
-        13,
-        4,
-        27,
-        14,
-        3,
+        8,
+        7,
+        8,
+        7,
+        6,
+        2,
         0
       ]
     }
@@ -332,35 +332,49 @@
     {
       "id": "iran_market",
       "label_fa": "بازار ایران",
-      "count_24h": 8,
+      "count_24h": 10,
       "series_7d": [
-        43,
+        44,
         15,
-        24,
-        47,
-        9,
-        8,
-        0
+        25,
+        51,
+        11,
+        11,
+        3
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 8,
+      "count_24h": 4,
       "series_7d": [
         30,
         40,
         35,
         31,
-        31,
+        32,
+        12,
+        0
+      ]
+    },
+    {
+      "id": "food_cost_pricing",
+      "label_fa": "هزینه غذا و قیمت‌گذاری",
+      "count_24h": 1,
+      "series_7d": [
+        7,
+        8,
         9,
+        8,
+        7,
+        1,
         0
       ]
     },
     {
       "id": "food_safety",
       "label_fa": "ایمنی غذا",
-      "count_24h": 4,
+      "count_24h": 2,
       "series_7d": [
         4,
         6,
@@ -370,7 +384,35 @@
         4,
         0
       ]
+    },
+    {
+      "id": "restaurant_operations",
+      "label_fa": "عملیات رستوران",
+      "count_24h": 1,
+      "series_7d": [
+        17,
+        14,
+        14,
+        12,
+        11,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "marketing_branding",
+      "label_fa": "بازاریابی و برندینگ",
+      "count_24h": 1,
+      "series_7d": [
+        23,
+        14,
+        13,
+        17,
+        8,
+        1,
+        0
+      ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: ایمنی غذا، مواد اولیه و تحقیق‌وتوسعه، قانون‌گذاری و مقررات؛ برندهای پرتکرار: چیک‌فیل‌ای، چای‌کور، کی‌اف‌سی."
+  "radar_fa": "موضوع‌های رو به رشد: مواد اولیه و تحقیق‌وتوسعه، فرنچایز، ایمنی غذا؛ برندهای پرتکرار: گروه صنعتی زر، دانکین، چیک‌فیل‌ای."
 }
