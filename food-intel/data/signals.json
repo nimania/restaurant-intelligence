@@ -1,194 +1,178 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-11-22T01:32:44Z",
-  "articles_24h": 69,
-  "articles_previous_6d": 1176,
-  "images_24h": 5,
+  "generated_at": "2026-11-22T11:36:19Z",
+  "articles_24h": 39,
+  "articles_previous_6d": 1194,
+  "images_24h": 1,
   "trending_topics": [
     {
       "id": "beverage",
       "label_fa": "نوشیدنی",
-      "count_24h": 17,
-      "previous_daily_avg": 27.0,
-      "acceleration": 0.63,
+      "count_24h": 10,
+      "previous_daily_avg": 28.0,
+      "acceleration": 0.36,
       "series_7d": [
         30,
-        35,
-        25,
+        36,
+        26,
         27,
         36,
         18,
-        0
+        1
       ]
     },
     {
-      "id": "delivery",
-      "label_fa": "دلیوری",
-      "count_24h": 7,
-      "previous_daily_avg": 13.17,
-      "acceleration": 0.53,
+      "id": "restaurant_operations",
+      "label_fa": "عملیات رستوران",
+      "count_24h": 4,
+      "previous_daily_avg": 12.83,
+      "acceleration": 0.31,
       "series_7d": [
-        13,
-        22,
-        19,
-        8,
-        16,
-        7,
-        0
-      ]
-    },
-    {
-      "id": "branding",
-      "label_fa": "برندینگ",
-      "count_24h": 2,
-      "previous_daily_avg": 3.83,
-      "acceleration": 0.52,
-      "series_7d": [
-        2,
-        2,
-        6,
-        5,
-        4,
-        2,
-        0
-      ]
-    },
-    {
-      "id": "food_industry",
-      "label_fa": "صنعت غذا",
-      "count_24h": 57,
-      "previous_daily_avg": 131.17,
-      "acceleration": 0.43,
-      "series_7d": [
-        150,
-        168,
-        122,
-        124,
-        146,
-        59,
-        0
-      ]
-    },
-    {
-      "id": "food_safety",
-      "label_fa": "ایمنی غذا",
-      "count_24h": 3,
-      "previous_daily_avg": 8.0,
-      "acceleration": 0.38,
-      "series_7d": [
-        8,
         9,
-        6,
-        13,
-        9,
-        3,
-        0
-      ]
-    },
-    {
-      "id": "food_manufacturing",
-      "label_fa": "تولید صنایع غذایی",
-      "count_24h": 5,
-      "previous_daily_avg": 13.83,
-      "acceleration": 0.36,
-      "series_7d": [
-        14,
         16,
-        12,
-        16,
-        20,
-        5,
-        0
-      ]
-    },
-    {
-      "id": "delivery_drive_thru",
-      "label_fa": "دلیوری و درایو‌ثرو",
-      "count_24h": 9,
-      "previous_daily_avg": 25.67,
-      "acceleration": 0.35,
-      "series_7d": [
         18,
-        48,
-        31,
-        26,
-        26,
-        10,
+        17,
+        14,
+        5,
         0
       ]
     },
     {
-      "id": "supply_chain",
-      "label_fa": "زنجیره تأمین",
-      "count_24h": 2,
-      "previous_daily_avg": 5.67,
-      "acceleration": 0.35,
+      "id": "restaurant_industry",
+      "label_fa": "صنعت رستوران",
+      "count_24h": 7,
+      "previous_daily_avg": 26.5,
+      "acceleration": 0.26,
       "series_7d": [
+        26,
+        33,
+        38,
+        27,
+        31,
         7,
-        7,
-        5,
+        2
+      ]
+    },
+    {
+      "id": "consumer_behavior",
+      "label_fa": "رفتار مصرف‌کننده",
+      "count_24h": 3,
+      "previous_daily_avg": 11.33,
+      "acceleration": 0.26,
+      "series_7d": [
         10,
-        4,
-        2,
-        0
+        15,
+        14,
+        12,
+        14,
+        3,
+        2
       ]
     },
     {
       "id": "marketing_branding",
       "label_fa": "بازاریابی و برندینگ",
-      "count_24h": 4,
-      "previous_daily_avg": 13.17,
-      "acceleration": 0.3,
+      "count_24h": 3,
+      "previous_daily_avg": 12.0,
+      "acceleration": 0.25,
       "series_7d": [
         8,
         17,
         16,
         16,
         11,
-        5,
+        7,
         0
       ]
     },
     {
-      "id": "AI",
-      "label_fa": "هوش مصنوعی",
-      "count_24h": 19,
-      "previous_daily_avg": 67.67,
-      "acceleration": 0.28,
+      "id": "fast_casual",
+      "label_fa": "فست‌کژوال",
+      "count_24h": 2,
+      "previous_daily_avg": 9.5,
+      "acceleration": 0.21,
       "series_7d": [
-        75,
-        103,
-        82,
-        54,
-        72,
-        22,
+        13,
+        13,
+        12,
+        5,
+        13,
+        3,
         0
+      ]
+    },
+    {
+      "id": "food_industry",
+      "label_fa": "صنعت غذا",
+      "count_24h": 24,
+      "previous_daily_avg": 133.5,
+      "acceleration": 0.18,
+      "series_7d": [
+        150,
+        170,
+        127,
+        124,
+        152,
+        65,
+        4
+      ]
+    },
+    {
+      "id": "franchising",
+      "label_fa": "فرنچایز",
+      "count_24h": 3,
+      "previous_daily_avg": 18.83,
+      "acceleration": 0.16,
+      "series_7d": [
+        14,
+        23,
+        29,
+        25,
+        20,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "delivery_drive_thru",
+      "label_fa": "دلیوری و درایو‌ثرو",
+      "count_24h": 4,
+      "previous_daily_avg": 26.5,
+      "acceleration": 0.15,
+      "series_7d": [
+        18,
+        48,
+        31,
+        26,
+        26,
+        13,
+        0
+      ]
+    },
+    {
+      "id": "qsr_fast_food",
+      "label_fa": "فست‌فود و QSR",
+      "count_24h": 6,
+      "previous_daily_avg": 42.0,
+      "acceleration": 0.14,
+      "series_7d": [
+        40,
+        44,
+        59,
+        51,
+        39,
+        13,
+        1
       ]
     }
   ],
   "trending_brands": [
     {
-      "id": "dardanel",
-      "label_fa": "داردانل",
-      "count_24h": 6,
-      "previous_daily_avg": 0.5,
-      "acceleration": 12.0,
-      "series_7d": [
-        0,
-        1,
-        0,
-        1,
-        1,
-        6,
-        0
-      ]
-    },
-    {
       "id": "caykur",
       "label_fa": "چای‌کور",
-      "count_24h": 10,
-      "previous_daily_avg": 1.33,
-      "acceleration": 7.5,
+      "count_24h": 6,
+      "previous_daily_avg": 1.83,
+      "acceleration": 3.27,
       "series_7d": [
         0,
         2,
@@ -200,114 +184,18 @@
       ]
     },
     {
-      "id": "minoo_group",
-      "label_fa": "گروه صنعتی مینو",
+      "id": "sunich",
+      "label_fa": "سن‌ایچ",
       "count_24h": 2,
-      "previous_daily_avg": 0.5,
-      "acceleration": 4.0,
+      "previous_daily_avg": 1.67,
+      "acceleration": 1.2,
       "series_7d": [
         0,
-        0,
-        1,
         0,
         2,
-        2,
-        0
-      ]
-    },
-    {
-      "id": "uludag_icecek",
-      "label_fa": "اولوداغ ایچجک",
-      "count_24h": 3,
-      "previous_daily_avg": 0.83,
-      "acceleration": 3.6,
-      "series_7d": [
         0,
-        0,
-        0,
-        0,
-        5,
-        3,
-        0
-      ]
-    },
-    {
-      "id": "wonder",
-      "label_fa": "واندر",
-      "count_24h": 4,
-      "previous_daily_avg": 1.5,
-      "acceleration": 2.67,
-      "series_7d": [
-        0,
-        0,
-        0,
-        0,
-        9,
-        4,
-        0
-      ]
-    },
-    {
-      "id": "grubhub",
-      "label_fa": "گراب‌هاب",
-      "count_24h": 3,
-      "previous_daily_avg": 2.0,
-      "acceleration": 1.5,
-      "series_7d": [
-        0,
-        2,
-        1,
-        1,
         8,
-        3,
-        0
-      ]
-    },
-    {
-      "id": "doordash",
-      "label_fa": "دوردش",
-      "count_24h": 4,
-      "previous_daily_avg": 3.5,
-      "acceleration": 1.14,
-      "series_7d": [
-        5,
-        5,
-        4,
-        3,
-        3,
-        4,
-        0
-      ]
-    },
-    {
-      "id": "shake_shack",
-      "label_fa": "شیک شک",
-      "count_24h": 2,
-      "previous_daily_avg": 3.0,
-      "acceleration": 0.67,
-      "series_7d": [
-        3,
-        5,
-        5,
-        3,
         2,
-        2,
-        0
-      ]
-    },
-    {
-      "id": "burger_king",
-      "label_fa": "برگر کینگ",
-      "count_24h": 7,
-      "previous_daily_avg": 11.0,
-      "acceleration": 0.64,
-      "series_7d": [
-        13,
-        10,
-        14,
-        18,
-        9,
-        8,
         0
       ]
     },
@@ -315,15 +203,31 @@
       "id": "chipotle",
       "label_fa": "چیپوتله",
       "count_24h": 2,
-      "previous_daily_avg": 3.17,
-      "acceleration": 0.63,
+      "previous_daily_avg": 3.33,
+      "acceleration": 0.6,
       "series_7d": [
         3,
         2,
         5,
         1,
         8,
-        2,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "burger_king",
+      "label_fa": "برگر کینگ",
+      "count_24h": 4,
+      "previous_daily_avg": 11.83,
+      "acceleration": 0.34,
+      "series_7d": [
+        13,
+        10,
+        14,
+        18,
+        10,
+        9,
         0
       ]
     }
@@ -332,28 +236,28 @@
     {
       "id": "iran_market",
       "label_fa": "بازار ایران",
-      "count_24h": 5,
+      "count_24h": 8,
       "series_7d": [
         4,
         14,
         15,
         5,
-        17,
-        5,
-        0
+        20,
+        7,
+        4
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 5,
+      "count_24h": 4,
       "series_7d": [
         32,
-        39,
+        40,
         40,
         33,
         32,
-        8,
+        10,
         0
       ]
     },
@@ -372,23 +276,9 @@
       ]
     },
     {
-      "id": "food_cost_pricing",
-      "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 1,
-      "series_7d": [
-        8,
-        4,
-        11,
-        8,
-        7,
-        2,
-        0
-      ]
-    },
-    {
       "id": "food_safety",
       "label_fa": "ایمنی غذا",
-      "count_24h": 3,
+      "count_24h": 1,
       "series_7d": [
         8,
         9,
@@ -396,37 +286,37 @@
         13,
         9,
         3,
-        0
+        1
       ]
     },
     {
       "id": "restaurant_operations",
       "label_fa": "عملیات رستوران",
-      "count_24h": 1,
+      "count_24h": 4,
       "series_7d": [
         9,
         16,
         18,
         17,
         14,
-        1,
+        5,
         0
       ]
     },
     {
       "id": "marketing_branding",
       "label_fa": "بازاریابی و برندینگ",
-      "count_24h": 4,
+      "count_24h": 3,
       "series_7d": [
         8,
         17,
         16,
         16,
         11,
-        5,
+        7,
         0
       ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: نوشیدنی، دلیوری، برندینگ؛ برندهای پرتکرار: داردانل، چای‌کور، گروه صنعتی مینو."
+  "radar_fa": "موضوع‌های رو به رشد: نوشیدنی، عملیات رستوران، صنعت رستوران؛ برندهای پرتکرار: چای‌کور، سن‌ایچ، چیپوتله."
 }
