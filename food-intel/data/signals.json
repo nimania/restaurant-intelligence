@@ -1,168 +1,168 @@
 {
   "schema_version": "0.5",
-  "generated_at": "2026-11-24T14:00:18Z",
-  "articles_24h": 96,
-  "articles_previous_6d": 1010,
-  "images_24h": 30,
+  "generated_at": "2026-11-25T00:07:28Z",
+  "articles_24h": 138,
+  "articles_previous_6d": 991,
+  "images_24h": 45,
   "trending_topics": [
     {
-      "id": "protein",
-      "label_fa": "پروتئین",
+      "id": "pricing",
+      "label_fa": "قیمت‌گذاری",
+      "count_24h": 9,
+      "previous_daily_avg": 3.17,
+      "acceleration": 2.84,
+      "series_7d": [
+        4,
+        5,
+        2,
+        0,
+        2,
+        9,
+        0
+      ]
+    },
+    {
+      "id": "loyalty",
+      "label_fa": "وفاداری مشتری",
       "count_24h": 4,
-      "previous_daily_avg": 1.33,
-      "acceleration": 3.0,
+      "previous_daily_avg": 1.83,
+      "acceleration": 2.18,
       "series_7d": [
         2,
-        1,
+        3,
         0,
         1,
-        1,
+        2,
+        4,
+        0
+      ]
+    },
+    {
+      "id": "consumer_behavior",
+      "label_fa": "رفتار مصرف‌کننده",
+      "count_24h": 17,
+      "previous_daily_avg": 9.0,
+      "acceleration": 1.89,
+      "series_7d": [
+        12,
+        14,
         3,
-        2
+        4,
+        7,
+        17,
+        0
+      ]
+    },
+    {
+      "id": "food_cost_pricing",
+      "label_fa": "هزینه غذا و قیمت‌گذاری",
+      "count_24h": 12,
+      "previous_daily_avg": 6.33,
+      "acceleration": 1.89,
+      "series_7d": [
+        8,
+        12,
+        2,
+        0,
+        5,
+        12,
+        0
       ]
     },
     {
       "id": "drive-thru",
       "label_fa": "درایو‌ثرو",
-      "count_24h": 6,
-      "previous_daily_avg": 2.83,
-      "acceleration": 2.12,
+      "count_24h": 5,
+      "previous_daily_avg": 3.0,
+      "acceleration": 1.67,
       "series_7d": [
-        7,
         4,
         3,
         0,
         0,
         4,
-        4
+        5,
+        0
+      ]
+    },
+    {
+      "id": "automation",
+      "label_fa": "اتوماسیون",
+      "count_24h": 3,
+      "previous_daily_avg": 1.83,
+      "acceleration": 1.64,
+      "series_7d": [
+        2,
+        4,
+        1,
+        0,
+        3,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "robotics",
+      "label_fa": "رباتیک",
+      "count_24h": 2,
+      "previous_daily_avg": 1.33,
+      "acceleration": 1.5,
+      "series_7d": [
+        0,
+        3,
+        1,
+        0,
+        3,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "protein",
+      "label_fa": "پروتئین",
+      "count_24h": 2,
+      "previous_daily_avg": 1.33,
+      "acceleration": 1.5,
+      "series_7d": [
+        1,
+        0,
+        1,
+        1,
+        3,
+        2,
+        0
       ]
     },
     {
       "id": "equipment_automation",
       "label_fa": "تجهیزات و اتوماسیون",
       "count_24h": 6,
-      "previous_daily_avg": 3.67,
-      "acceleration": 1.64,
+      "previous_daily_avg": 4.33,
+      "acceleration": 1.38,
       "series_7d": [
-        8,
         1,
-        10,
-        1,
-        0,
-        5,
-        1
-      ]
-    },
-    {
-      "id": "loyalty",
-      "label_fa": "وفاداری مشتری",
-      "count_24h": 3,
-      "previous_daily_avg": 1.83,
-      "acceleration": 1.64,
-      "series_7d": [
-        3,
-        2,
-        3,
-        0,
-        1,
-        2,
-        1
-      ]
-    },
-    {
-      "id": "supply_chain",
-      "label_fa": "زنجیره تأمین",
-      "count_24h": 6,
-      "previous_daily_avg": 4.17,
-      "acceleration": 1.44,
-      "series_7d": [
-        5,
-        10,
-        4,
-        2,
-        1,
-        3,
-        4
-      ]
-    },
-    {
-      "id": "food_safety",
-      "label_fa": "ایمنی غذا",
-      "count_24h": 9,
-      "previous_daily_avg": 7.17,
-      "acceleration": 1.26,
-      "series_7d": [
-        6,
-        13,
-        9,
-        3,
-        3,
-        8,
-        8
-      ]
-    },
-    {
-      "id": "pricing",
-      "label_fa": "قیمت‌گذاری",
-      "count_24h": 4,
-      "previous_daily_avg": 3.33,
-      "acceleration": 1.2,
-      "series_7d": [
-        6,
-        4,
-        5,
-        2,
-        0,
-        2,
-        4
-      ]
-    },
-    {
-      "id": "food_cost_pricing",
-      "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 6,
-      "previous_daily_avg": 6.17,
-      "acceleration": 0.97,
-      "series_7d": [
         11,
-        8,
-        12,
-        2,
+        1,
         0,
         5,
-        4
-      ]
-    },
-    {
-      "id": "beverage",
-      "label_fa": "نوشیدنی",
-      "count_24h": 21,
-      "previous_daily_avg": 23.67,
-      "acceleration": 0.89,
-      "series_7d": [
-        27,
-        27,
-        36,
-        18,
-        9,
-        21,
-        15
-      ]
-    },
-    {
-      "id": "ingredients_rd",
-      "label_fa": "مواد اولیه و تحقیق‌وتوسعه",
-      "count_24h": 4,
-      "previous_daily_avg": 4.5,
-      "acceleration": 0.89,
-      "series_7d": [
-        7,
-        4,
         6,
-        1,
+        0
+      ]
+    },
+    {
+      "id": "POS",
+      "label_fa": "سیستم فروش",
+      "count_24h": 16,
+      "previous_daily_avg": 12.83,
+      "acceleration": 1.25,
+      "series_7d": [
+        18,
+        17,
         2,
-        5,
-        2
+        2,
+        19,
+        16,
+        0
       ]
     }
   ],
@@ -179,152 +179,152 @@
         0,
         0,
         0,
+        4,
+        0
+      ]
+    },
+    {
+      "id": "ncr_voyix",
+      "label_fa": "ان‌سی‌آر وُیکس",
+      "count_24h": 3,
+      "previous_daily_avg": 0.0,
+      "acceleration": 6.0,
+      "series_7d": [
         0,
-        4
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
       ]
     },
     {
       "id": "ulker",
       "label_fa": "اولکر",
-      "count_24h": 2,
-      "previous_daily_avg": 0.67,
-      "acceleration": 3.0,
-      "series_7d": [
-        1,
-        2,
-        0,
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    {
-      "id": "wingstop",
-      "label_fa": "وینگ‌استاپ",
       "count_24h": 3,
-      "previous_daily_avg": 1.5,
-      "acceleration": 2.0,
-      "series_7d": [
-        0,
-        3,
-        3,
-        0,
-        1,
-        3,
-        2
-      ]
-    },
-    {
-      "id": "tyson_foods",
-      "label_fa": "تایسون فودز",
-      "count_24h": 2,
-      "previous_daily_avg": 1.33,
-      "acceleration": 1.5,
+      "previous_daily_avg": 0.67,
+      "acceleration": 4.5,
       "series_7d": [
         2,
-        3,
-        2,
-        1,
+        0,
+        0,
         0,
         1,
-        1
+        3,
+        0
       ]
     },
     {
       "id": "wendys",
       "label_fa": "وندیز",
-      "count_24h": 2,
+      "count_24h": 8,
       "previous_daily_avg": 1.83,
-      "acceleration": 1.09,
+      "acceleration": 4.36,
       "series_7d": [
-        5,
         0,
         1,
         0,
         4,
         1,
-        2
-      ]
-    },
-    {
-      "id": "starbucks",
-      "label_fa": "استارباکس",
-      "count_24h": 5,
-      "previous_daily_avg": 5.83,
-      "acceleration": 0.86,
-      "series_7d": [
         8,
-        8,
-        7,
-        3,
-        5,
-        5,
-        2
-      ]
-    },
-    {
-      "id": "mcdonalds",
-      "label_fa": "مک‌دونالدز",
-      "count_24h": 4,
-      "previous_daily_avg": 5.17,
-      "acceleration": 0.77,
-      "series_7d": [
-        12,
-        3,
-        6,
-        1,
-        3,
-        8,
-        2
-      ]
-    },
-    {
-      "id": "uber_eats",
-      "label_fa": "اوبر ایتس",
-      "count_24h": 5,
-      "previous_daily_avg": 6.67,
-      "acceleration": 0.75,
-      "series_7d": [
-        10,
-        6,
-        7,
-        3,
-        3,
-        10,
         0
       ]
     },
     {
-      "id": "general_mills",
-      "label_fa": "جنرال میلز",
+      "id": "behnoush",
+      "label_fa": "بهنوش",
       "count_24h": 2,
-      "previous_daily_avg": 2.67,
-      "acceleration": 0.75,
+      "previous_daily_avg": 0.0,
+      "acceleration": 4.0,
       "series_7d": [
-        5,
+        0,
+        0,
+        0,
+        0,
+        0,
         2,
-        4,
-        1,
-        2,
-        1,
-        2
+        0
       ]
     },
     {
-      "id": "chipotle",
-      "label_fa": "چیپوتله",
-      "count_24h": 2,
-      "previous_daily_avg": 3.17,
-      "acceleration": 0.63,
+      "id": "caykur",
+      "label_fa": "چای‌کور",
+      "count_24h": 6,
+      "previous_daily_avg": 3.0,
+      "acceleration": 2.0,
       "series_7d": [
+        2,
+        1,
+        10,
+        2,
+        2,
+        6,
+        0
+      ]
+    },
+    {
+      "id": "chickfila",
+      "label_fa": "چیک‌فیل‌ای",
+      "count_24h": 5,
+      "previous_daily_avg": 2.5,
+      "acceleration": 2.0,
+      "series_7d": [
+        6,
+        1,
+        0,
+        1,
+        1,
         5,
+        0
+      ]
+    },
+    {
+      "id": "nestle",
+      "label_fa": "نستله",
+      "count_24h": 3,
+      "previous_daily_avg": 2.0,
+      "acceleration": 1.5,
+      "series_7d": [
+        2,
+        7,
+        0,
+        1,
+        1,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "grubhub",
+      "label_fa": "گراب‌هاب",
+      "count_24h": 4,
+      "previous_daily_avg": 2.83,
+      "acceleration": 1.41,
+      "series_7d": [
         1,
         8,
         3,
-        0,
+        2,
+        2,
+        4,
+        0
+      ]
+    },
+    {
+      "id": "kraft_heinz",
+      "label_fa": "کرفت هاینز",
+      "count_24h": 2,
+      "previous_daily_avg": 1.5,
+      "acceleration": 1.33,
+      "series_7d": [
         3,
-        1
+        0,
+        1,
+        1,
+        0,
+        2,
+        0
       ]
     }
   ],
@@ -332,29 +332,29 @@
     {
       "id": "iran_market",
       "label_fa": "بازار ایران",
-      "count_24h": 5,
+      "count_24h": 7,
       "series_7d": [
-        16,
         5,
-        30,
+        31,
         13,
-        11,
-        8,
-        5
+        12,
+        10,
+        7,
+        0
       ]
     },
     {
       "id": "restaurant_technology_ai",
       "label_fa": "فناوری رستوران و هوش مصنوعی",
-      "count_24h": 16,
+      "count_24h": 30,
       "series_7d": [
-        40,
         33,
-        33,
+        34,
         11,
         5,
         32,
-        10
+        30,
+        0
       ]
     },
     {
@@ -362,71 +362,71 @@
       "label_fa": "تجهیزات و اتوماسیون",
       "count_24h": 6,
       "series_7d": [
-        8,
         1,
-        10,
+        11,
         1,
         0,
         5,
-        1
+        6,
+        0
       ]
     },
     {
       "id": "food_cost_pricing",
       "label_fa": "هزینه غذا و قیمت‌گذاری",
-      "count_24h": 6,
+      "count_24h": 12,
       "series_7d": [
-        11,
         8,
         12,
         2,
         0,
         5,
-        4
+        12,
+        0
       ]
     },
     {
       "id": "food_safety",
       "label_fa": "ایمنی غذا",
-      "count_24h": 9,
+      "count_24h": 8,
       "series_7d": [
-        6,
         13,
         9,
         3,
         3,
         8,
-        8
+        8,
+        0
       ]
     },
     {
       "id": "restaurant_operations",
       "label_fa": "عملیات رستوران",
-      "count_24h": 6,
+      "count_24h": 10,
       "series_7d": [
-        18,
         17,
         14,
         7,
         6,
         11,
-        5
+        10,
+        0
       ]
     },
     {
       "id": "marketing_branding",
       "label_fa": "بازاریابی و برندینگ",
-      "count_24h": 2,
+      "count_24h": 10,
       "series_7d": [
-        16,
         16,
         11,
         8,
         2,
         6,
-        1
+        10,
+        0
       ]
     }
   ],
-  "radar_fa": "موضوع‌های رو به رشد: پروتئین، درایو‌ثرو، تجهیزات و اتوماسیون؛ برندهای پرتکرار: اسپرسولب، اولکر، وینگ‌استاپ."
+  "radar_fa": "موضوع‌های رو به رشد: قیمت‌گذاری، وفاداری مشتری، رفتار مصرف‌کننده؛ برندهای پرتکرار: اسپرسولب، ان‌سی‌آر وُیکس، اولکر."
 }
